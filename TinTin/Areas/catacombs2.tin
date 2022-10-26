@@ -1,0 +1,47 @@
+#class {bot} {open}
+
+#var {no_loop} {0}
+#var {no_home} {0}
+#var {hardmode} {0}
+#var {shouldVacuum} {1}
+
+#var {botpath} {n;n;e;e;se;nw;n;n;e;w;w;w;w;n;n;w;n;w;e;s;e;s;s;e;e;e;n;d;s;e;s;e;n;e;w;s;w;s;w;s;e;w;w;s;n;w;w;e;n;e;w;n;n;w;e;n;e;w;s;s;s;w;d;n;e;e;n;s;e;s;e;s;w;e;n;w;w;w;w;s;s;e;e;n;w;e;s;s;n;e;e;s;w;e;n;e;n;n;n;w;d;e;e;n;w;e;n;s;e;w;s;e;s;w;s;e;w;s;e;w;n;w;n;s;w;n;n;w;w;s;s;e;w;w;w;n;e;n;w;archway;{se;trace north rune;trace east rune;trace south rune;trace west rune;#delay {0.5} {gl}};nw;stairs;e;n;e;e;n;e;s;s;u;e;s;s;s;w;w;w;w;w;n;n;u;e;n;n;n;e;e;u;s;w;w;s;s;s;s}
+
+#NOP Good mobs
+#NOP A Guide of Catacombs|A happy Dwarf|An old Druid
+#act {^=M= {A large Rat|A goblin warrior|A Goblin Lord|A statue of a dwarf|A rotting corpse|A huge rotting corpse|An ancient skeleton|The powerful Sorceress|A hideous demon from the lower planes|A ghoul|A Ghoul Militia|The Ghoul Battle Master|A Vampire|A vampire soldier|A wandering vampire|Duke of Vampires|A cloaked figure|A massive creature of iron|A massive creature of shimmering crystal|A featureless stone statue|A statue crafted of wood}} {
+	#switch {"%1"} {
+		#NOP Good;
+		#NOP #case {"A Guide of Catacombs"}			{#var shouldKill guide};
+		#NOP #case {"A happy Dwarf"}				{#var shouldKill dwarf};
+		#NOP #case {"An old Druid"}				{#var shouldKill druid};
+		#NOP Neutral;
+		#case {"A statue of a dwarf"}				{#var shouldKill statue};
+		#case {"A small skeleton"}				{#var shouldKill skeleton};
+		#case {"A massive creature of iron"}			{#var shouldKill golem};
+		#case {"A massive creature of shimmering crystal"}	{#var shouldKill golem};
+		#case {"A featureless stone statue"}			{#var shouldKill golem};
+		#case {"A statue crafted of wood"}			{#var shouldKill golem};
+		#NOP Evil;
+		#case {"A large Rat"}					{#var shouldKill rat};
+		#case {"A goblin warrior"}				{#var shouldKill warrior};
+		#case {"A Goblin Lord"}					{#var shouldKill lord};
+		#case {"A rotting corpse"}				{#var shouldKill corpse};
+		#case {"A huge rotting corpse"}				{#var shouldKill corpse};
+		#case {"An ancient skeleton"}				{#var shouldKill skeleton};
+		#case {"A huge skeleton"}				{#var shouldKill skeleton};
+		#case {"The powerful Sorceress"}			{#var shouldKill sorceress};
+		#case {"A hideous demon from the lower planes"}		{#var shouldKill demon};
+		#case {"A ghoul"}					{#var shouldKill ghoul};
+		#case {"A Ghoul Militia"}				{#var shouldKill militia};
+		#case {"The Ghoul Battle Master"}			{#var shouldKill master};
+		#case {"A Vampire"}					{#var shouldKill vampire};
+		#case {"A vampire soldier"}				{#var shouldKill vampire};
+		#case {"A wandering vampire"}				{#var shouldKill vampire};
+		#case {"Duke of Vampires"}				{#var shouldKill duke};
+		#case {"A cloaked figure"}				{#var shouldKill spy}
+	};
+	_check_mob
+}
+
+#class {bot} {close}

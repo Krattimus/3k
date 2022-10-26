@@ -1,0 +1,236 @@
+#showme READING LOCALIZER
+
+#class {mapper} {open}
+
+/*************************************************************
+	Localizers are unique landmarks that are arrived at
+	from more than a simple exit. Taxi's, Shuttles, with timers
+	are one example. In order for the map to stay current, we
+	identify these messages and set the map to specific locations.
+	For example: If there is only 1 bay station in the game,
+	and we see  "Arrived at bay station", then set the map to
+	a baystation. In general this means knowing the vnum of the room
+*************************************************************/
+
+/* Transports */
+#NOP Amazon Research Center
+#act {^Stretching your somewhat stiff legs you head out of the plane.} {#map goto 32571}
+#act {^A Small Airfield (leave)} {#map goto 32570} {1}
+
+#NOP Android
+#act {BING! The button light goes off and the elevator doors open.} {enter elevator}
+#act {The elevator jerks to a halt and the doors open.} {out}
+#act {The elevator is already here. How about you enter it?} {enter elevator}
+
+#NOP Ao
+#act {** The Docks of Ao ** (se)} {#map goto 15463} {1}
+
+#NOP Ascended
+#act {Arid environment (sw,n,s,e,climb)} {#map goto 16718} {1}
+
+#NOP Ashridge Acres
+#act {AREA NAME: Ashridge Acres} {
+	#map get {roomvnum} {ashridge_room};
+	#map goto 22486
+} {4}
+
+#NOP Battlestar Galactica
+#act {^The simulation screens fade to black.} {#map goto 29532}
+
+#NOP Calvin and Hobbes
+#act {^on the snow calls to you, and you dread another day at school.} {#map goto 23824}
+#act {^and eagerly await the freedom of the afternoon.} {#map goto 23814}
+
+#NOP Chaos TV
+#act {AREA NAME: Simpsons [Doh]} {
+	#if {"$area" != "Simpsons"} {
+		#var {area} {Simpsons};
+		#map get {roomvnum} {tvroom};
+		#map goto 8315;
+	}
+} {4}
+
+#act {AREA NAME: Simpsons Expansion [Lostar]} {
+	#var {area} {Simpsons};
+} {4}
+
+#act {AREA NAME: Simpsons Expansion [Frank]} {
+	#var {area} {Simpsons Expansion};
+	#map get {roomvnum} {tvroom};
+	#map goto 8227
+} {4}
+#act {^   You dive cleanly through the computer screen!} {
+	#map goto $tvroom
+}
+
+#NOP Death
+#act {^You die.$} {#map goto 6247}
+
+#NOP Death Taco
+#act {^You shoot through a graceful arc, and feel weightless for the} {#map goto {roomnote} roaches}
+
+#NOP Dexter's Laboratory
+#act {^Entrance Hallway (s,e,w)} {#map goto 29055}
+
+#NOP Dragon Realms
+#act {^You have to retreat against the onslaught of fire!} {#map move vortex}
+
+#NOP Dragonball Z
+#act {Capsule Corp Lobby \(nw\)} {#map goto 28835;} {1}
+#act {^S P L A S H!} {#map goto 29792}
+
+#NOP Einstein
+#act {^Standing on the bench, you relax and the stagedive through the rift} {#map goto 7039}
+
+#NOP Funkytown
+#act {^The intense gravity of the sun pulls the coaster to its surface where you} {#map goto 17497}
+
+#NOP Global Merc Training Theatre
+#act {^You have exited the simulation, thank you for playing.} {#map goto 15144}
+
+#NOP Good Humor Truck
+#act {^You enter the truck with one thing on your mind} {#map goto 25241}
+
+#NOP Greenhouse
+#act {^You embrace the plant and lose yourself among the vines.} 
+{
+	#map get {roomvnum} {greenhouse_room};
+	#map goto 22315
+}
+
+#act {^You follow the trail away from the field.} 
+{
+	#map goto $greenhouse_room
+}
+
+#NOP Kayos Portal
+#act {^You leap into the unknown!} 
+{
+	#map get {roomvnum} {num};
+	#if {$num == 10278} 
+	{
+		#map goto $plungeroom
+	};
+	else
+	{
+		#var plungeroom $num;
+		#map goto 10278
+	}
+}
+#act {^You touch the beacon, and a friendly ship belonging to The Vigilant swings by.} {#map goto 10278}
+
+#NOP Kyoto
+#act {^=S=A Poorly-lit Street} {
+	#var kyoto yes
+}
+#act {^=I= A large sign.} {
+	#if {"$kyoto" == "yes"} {
+		#map goto 25904;
+		#var kyoto no
+	}
+}
+
+#NOP Lost City
+#act {^With a final THUD, you fly out into a pile of metal!} {#map goto 24299}
+#act {^With a bit of difficulty you make your way back up the shaft} {#map goto 24297}
+#act {The electric field blocks you from going that way.} { #map goto 35391}
+
+#NOP The Lost Village of Willothorn
+#act {^You swim for your life for the surface and end up back where} {#map goto 14087}
+
+#NOP Necromancers
+#act {^You tumble down the river and find yourself on a rocky bank inside} {#map goto 7613}
+
+#NOP Night of Colour
+#act {^The balloon softly touches down, basket bumps lightly.} {exit}
+#act {^You step out of the basket, into forest.} {
+	#map get {roomarea} {area};
+	#if {"$area" == "Night of Colour"} 
+	{
+		#map goto 16359
+	};
+	#else
+	{
+		#map goto  16530
+	}
+}
+#act {^You step out of the basket, into chaos.} 
+{
+	#map get {roomarea} {area};
+	#if {"$area" == "Night of Colour"} 
+	{
+		#map goto 16307
+	};
+	#else
+	{
+		#map goto 16527
+	}
+}
+
+#NOP Overlands
+#act {^After an unknown amount of time, you wake up and find yourself on} {#map goto 26024}
+#act {^=S=At an underground lake} {
+	#var overlands_raft yes
+}
+#act {^=I= A wooden sign.} {
+	#if {"$overlands_raft" == "yes"} {
+		#map goto 26022;
+		#var overlands_raft no
+	}
+}
+
+#NOP PG
+#act {^You eat the hamburger and your environment changes!} {
+	#map get {roomvnum} {pg_room};
+	#map goto 22330
+}
+#act {^As you exit the joint you seem to reappear back in CHAOS!} {
+	#map goto $pg_room
+}
+
+#NOP Phantom Ship
+#act {^The ship finally reaches a small cove where it gradually} {#map goto 25844}
+
+#NOP The Princess Bride
+#act {^At last, the Cliffs of Insanity tower above you!} {#map goto 23763}
+#act {^At last, the shore of Florin!} {#map goto 23737}
+
+#NOP Puddle
+#act {^You sink deep into the mud puddle!  The mud presses in on you from all} {
+	#map get {roomvnum} {puddle_room};
+	#map goto 22485
+}
+
+#NOP Ravenloft
+#act {^You find yourself complete once more.$} {#map goto 4315}
+
+#NOP Ravenloft Castle
+#act {^You warily step out onto the cold, damp ground.} {#map goto 20756}
+#act {^You then step out of the coach and find yourself back} {#map goto 4631}
+
+#NOP Sausage Dimensions
+#act {^The frankfurter SMACKS you so hard you wake up somewhere else!} {#map goto 17561}
+
+#NOP Science Shuttle
+#act {^The captain announces: Welcome to Midway Space Station.$} {exit}
+#act {^The captain announces: Welcome to Houston Transport Center.$} {exit2}
+
+#NOP Serinth
+#act {^=I= The World of Serinth Board containing } {#map goto 16722}
+
+#NOP Starcraft:Broodwar
+#act {^Door number: 3, Access Code: %1$} {#var starcraft_code %1}
+
+#NOP Xaxis
+#act {^Welcome to Xaxis!} {#map goto 15875}
+#act {^Here we are folks. Welcome to the Isle of Equinity!} {#map goto 15913}
+
+#NOP Wayhaven Ferry
+#act {^The ferryman says: Well, here you are.} {#map goto 7354}
+
+#NOP Worm's Talon Airship
+#act {^Here we are folks. Welcome to the City of Westersea!} {#map goto 4756}
+#act {^You hop out onto the deck.} {#map goto 15875}
+
+
+#class {mapper} {close}

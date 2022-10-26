@@ -1,0 +1,34 @@
+#class {bot} {open}
+
+#var {no_loop} {0}
+#var {no_home} {0}
+#var {hardmode} {0}
+#var {shouldVacuum} {1}
+
+#var {botpath} {w;w;w;s;e;e;e;s;w;w;w;s;s;e;n;e;s;e;n;e;s;e;n;e;s;e;n;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s}
+
+#act {^=M= {A|An} {archer|banshee|basilisk|benevolent wizard|djinni|dragon|evil looking juggernaut|evil sorceress|goblin|Huge Fire Elemental|knight|manticore|phoenix|stone golem|troll|unicorn|valkyrie}} {
+	#switch {"%2"} {
+		#case {"archer"}			{#var shouldKill archer};
+		#case {"banshee"}			{#var shouldKill banshee};
+		#case {"basilisk"}			{#var shouldKill basilisk};
+		#case {"benevolent wizard"}		{#var shouldKill wizard};
+		#case {"djinni"}			{#var shouldKill djinni};
+		#case {"dragon"}			{#var shouldKill dragon};
+		#case {"evil looking changeling"}	{#var shouldKill changeling};
+		#case {"evil looking juggernaut"}	{#var shouldKill juggernaut};
+		#case {"evil sorceress"}		{#var shouldKill sorceress};
+		#case {"goblin"}			{#var shouldKill goblin};
+		#case {"Huge Fire Elemental"}		{#var shouldKill elemental};
+		#case {"knight"}			{#var shouldKill knight};
+		#case {"manticore"}			{#var shouldKill manticore};
+		#case {"phoenix"}			{#var shouldKill phoenix};
+		#case {"stone golem"}			{#var shouldKill golem};
+		#case {"troll"}				{#var shouldKill troll};
+		#case {"unicorn"}			{#var shouldKill unicorn};
+		#case {"valkyrie"}			{#var shouldKill valkyrie}
+	};
+	_check_mob
+}
+
+#class {bot} {close}

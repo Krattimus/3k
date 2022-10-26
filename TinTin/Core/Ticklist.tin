@@ -1,0 +1,47 @@
+#showme READING TICKLIST
+#class {ticklist} {open}
+
+#alias {ticklist} 
+{
+        #info tickers save;
+
+        #echo {<128>%-20s %+20s %+20s} {Name} {Interval} {Remaining};
+        #draw Yellow scroll line 1 1 1 62;
+        #format utime %U;
+
+        #loop 1 &info[TICKERS][] index
+        {
+                #math uval $info[TICKERS][+$index][arg3] * 1000000;
+
+                #echo {%-20s %+20s %+20m}
+                        {$info[TICKERS][+$index][arg1]}
+                        {$info[TICKERS][+$index][arg3]}
+                        {($uval - ($utime - $info[TICKERS][+$index][arg4]) % $uval) / 1000000}
+        }
+}
+
+
+#TICKER {idle} 
+{
+	#math {idle} {$idle + 1};
+	#if {$idle > 900 && "$draw[alert]" == "on"} 
+        {
+		#draw tile $split[top]+1 1 -$split[bottom]-2 $alert[width] {<BF00>}
+	};
+        #elseif {$idle > 840 && "$draw[alert]" == "on"} 
+        {
+		#draw tile $split[top]+1 1 -$split[bottom]-2 $alert[width] {<BFF0>}
+	}; 
+        #elseif {$idle > 600 && "$draw[alert]" == "on"} 
+        {
+		#draw tile $split[top]+1 1 -$split[bottom]-2 $alert[width] {<B0F0>}
+	}; 
+        #elseif {$idle < 600 && "$draw[alert]" == "on"} 
+        {
+		#screen clear square $split[top]+1 1 -$split[bottom]-2 $alert[width]
+	};
+
+	#nop .renderServerBar
+} {1}
+
+#class {ticklist} {close}

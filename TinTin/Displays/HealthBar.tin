@@ -1,0 +1,18 @@
+#showme READING Health Bar
+
+#class {healthbar} {open}
+
+#alias {.renderHPBar}
+{
+	#draw {line} -$hpbar[height]-$gline[height]-2 1 -$hpbar[height]-$gline[height]-2 -1;
+	#draw {line} -$hpbar[height]-2 1 -$hpbar[height]-2 -1;
+
+	#var guildRender .render;
+	#cat {guildRender} {$guild};
+	#cat {guildRender} {Bar};
+	
+	$guildRender;
+	
+}
+
+#class {healthbar} {close}

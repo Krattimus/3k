@@ -1,0 +1,62 @@
+#showme READING CYCLER DISPLAY
+#class {patrolspanel} {open}
+
+/***********************************************************************
+	Renders a nice box into the Controllers panel for the patrol list
+***********************************************************************/
+#alias {.renderPatrols} 
+{
+	#draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
+	#showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
+	#showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
+		
+	#NOP Clear previous drawing;
+	#screen clear square $chat[height]+$caption[height]+1 -$canvas[width]+1 -$status[height]-2 -1;
+
+	#if {&{patrols[]} == 0} 
+	{
+		#var botareas 
+		{
+			<178>            Nothing Yet <088>
+		};
+		#var botheight 1;
+	};
+	#else
+	{
+			#var botheight &{inventory[]};
+			#var botareas {};
+			#local itemID 0;
+			#while {$itemID < &{inventory[]}} 
+			{
+				#math {itemID} {$itemID + 1};
+				#var botareas {$botareas\n$itemIDnum $area_display}
+			};
+
+			#format {area_display} {%-13s} {<158>%1 is <168>%2<088>};
+	};
+	
+	#draw green rounded box $chat[height]+$caption[height]+2 -$canvas[width]+2 $chat[height]+$caption[height]+4 -3 
+	{
+			<138>              Inventory    <088>
+	};
+		
+	#draw green rounded box $chat[height]+$caption[height]+4 -$canvas[width]+2 $chat[height]+$caption[height]+5+$botheight -3 
+	{
+			$botareas
+	};
+
+	#showme {<228>\u251C} $chat[height]+$caption[height]+4 -$canvas[width]+2;
+	#showme {<228>\u2524} $chat[height]+$caption[height]+4 -3;
+}
+
+#event {VARIABLE UPDATE currentitemID} 
+{
+	#delay 0 .renderPatrols
+}
+
+#event {VARIABLE UPDATE patrols} 
+{
+	#delay 0 .renderPatrols
+}
+
+#class {patrolspanel} {close}

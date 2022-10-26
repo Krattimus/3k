@@ -1,0 +1,158 @@
+#showme READING MINIMAP
+
+#class {minimap} {open}
+
+/*************************************************************
+	Map Data
+*************************************************************/
+#var map[height] 17;
+#var map[width] 42;
+
+/*************************************************************
+	Events
+*************************************************************/
+.registerEvent onMapUpdated onMapUpdatedMiniMapResponder;
+.registerEvent onEnteredRoom onEnteredRoomMiniMapResponder;
+.registerEvent onExitedRoom onExitedRoomMiniMapResponder;
+
+#event {CLASS DESTROYED minimap}
+{
+	.unregisterEvent onMapUpdated onMapUpdatedMiniMapResponder;
+	.unregisterEvent onEnteredRoom onEnteredRoomMiniMapResponder;
+	.unregisterEvent onExitedRoom onExitedRoomMiniMapResponder;
+}
+
+/*************************************************************
+ TinTin Events, redraw the map when the map changes
+*************************************************************/
+#alias {onMapUpdatedMiniMapResponder} 
+{
+	.renderMap;
+}
+
+/*************************************************************
+ TinTin Events, redraw the map when the map data changes
+*************************************************************/
+#alias {onEnteredRoomMiniMapResponder} 
+{
+	.renderMap;
+}
+
+/*************************************************************
+ TinTin Events, redraw the map when the map data changes
+*************************************************************/
+#alias {onExitedRoomMiniMapResponder} 
+{
+	#list nouns clear
+}
+
+/*************************************************************
+	Draws the mini map in big window
+*************************************************************/
+#alias {.map}
+{
+	#map map;
+}
+
+/*************************************************************
+	Draws the mini map
+*************************************************************/
+#alias {.renderMap} 
+{
+	#if {"$draw[map]" == "on"} 
+	{
+		#map {get} {ROOMVNUM} {roomvnum};
+		#map {get} {ROOMAREA} {roomarea};
+		#map {get} {ROOMNAME} {roomname};
+		#map {get} {ROOMDESC} {roomdesc};
+		#format {roomname_len}	{%L} {$roomname};
+		#format {roomvnum_len}	{%L} {$roomvnum};
+		#format {roomarea_len}	{%L} {$roomarea};
+		#format {roomdesc_len}	{%L} {$roomdesc};
+		#math {name_len} {42-$roomvnum_len-3};
+		#format {name_trunc} {%.${name_len}s} {$roomname};
+		#unvar area_mapped;
+		#map list {} {} {} {$roomarea} {variable} {area_mapped};
+		#var {room_cnt} {&area_mapped[]};
+
+		#if {"$map[position]" == "top"} 
+		{
+			#draw {tile} $map[height]-1 -$map[width] $map[height]-1 -1 {<029>$roomarea <149>(<129>$room_cnt<149>)<099>};
+			#draw {tile} $map[height] -$map[width] $map[height] -1 {<149>[<039>$roomvnum<149>] <139>$name_trunc<099>}
+		}; 
+		#elseif { "$map[position]" == "bottom" } 
+		{
+			#draw {tile} -$status[height]-$map[height]-3 -$map[width] -$status[height]-$map[height]-3 -1 {<029>$roomarea <149>(<129>$room_cnt<149>)<099>};
+			#draw {tile} -$status[height]-$map[height]-2 -$map[width] -$status[height]-$map[height]-2 -1 {<149>[<039>$roomvnum<149>] <139>$name_trunc<099>}
+		}
+	}
+}
+
+/*************************************************************
+	Renders a frame for the mini map
+*************************************************************/
+#alias {.renderMiniMap}
+{
+	#if {"$draw[map]" == "on"} 
+	{
+		#if {"$map[position]" == "top"} 
+		{
+			#draw line 1 -$map[width]-1 $map[height] -$map[width]-1;
+			#if {"$draw[caption]" == "on"} 
+			{
+				#showme {<228>\u2534<088>} $map[height]+1 -$map[width]-1
+			};
+			
+			#map flag vtmap on;
+			#map offset 1 -$map[width] $map[height] -1;
+			#delay 0 #draw {tile} $map[height]-1 -$map[width] $map[height]-1 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
+			#delay 0 #draw {tile} $map[height] -$map[width] $map[height] -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}
+		}; 
+		#elseif {"$map[position]" == "bottom"} 
+		{
+			#draw line -$status[height]-$map[height]-4 -$map[width] -$status[height]-$map[height]-4 -1;
+			#showme {\u251C} -$status[height]-$map[height]-4 -$canvas[width];
+			#map flag vtmap on;
+			#map offset -$status[height]-$map[height]-1 -$map[width] -$status[height]-1 -1;
+			#delay 0 #draw {tile} -$status[height]-$map[height]-3 -$map[width] -$status[height]-$map[height]-3 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
+			#delay 0 #draw {tile} -$status[height]-$map[height]-2 -$map[width] -$status[height]-$map[height]-2 -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}
+		}; 
+		#else 
+		{
+			#echo {"!INVALID MAP POSITION!"}
+		}
+	};
+}
+
+/*************************************************************
+	Helper Calls - Not Available colorizer
+*************************************************************/
+#alias nacolor 
+{
+	#loop 1 20000 {cnt} 
+	{
+		#map at {$cnt} 
+		{
+			#map get {roomarea} {cntarea};
+			#if {"$cntarea" == ""} {#map set roomcolor <118>}
+		}
+	};
+
+	#map get {roomvnum} {gonum};
+	#map goto $gonum;
+	#if {"$draw[map]" == "on"} 
+	{
+		#if { "$map[position]" == "top" } 
+		{
+			#draw {tile} $map[height]-1 -$map[width] $map[height]-1 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
+			#draw {tile} $map[height] -$map[width] $map[height] -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}
+		}; 
+		#elseif { "$map[position]" == "bottom" } 
+		{
+			#draw {tile} -$status[height]-$map[height]-3 -$map[width] -$status[height]-$map[height]-3 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
+			#draw {tile} -$status[height]-$map[height]-2 -$map[width] -$status[height]-$map[height]-2 -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}
+		}
+	}
+}
+
+#class {minimap} {close}

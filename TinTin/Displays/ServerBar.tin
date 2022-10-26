@@ -1,0 +1,51 @@
+#showme READING SERVER BAR
+
+#class {serverbar} {open}
+
+#alias {.renderServerBar} 
+{
+	#draw {green} {line} $chat[height]+$caption[height] 1 $chat[height]+$caption[height] -1;
+	#draw {green} {line} $chat[height]+$caption[height] 1 $chat[height]+$caption[height] -1;
+
+	#format {world_cap}	{%-8s}	{$ourCharacter};
+	#format {world_cap}	{%n}	{$world_cap};
+	#format {uptime_cap}	{%+8s}	{$session[uptime]};
+	#format {reboot_cap}	{%+5s}	{$session[reboot]};
+	#format {lag_cap}	{%+4s}	{$session[lag]};
+	#math	{idle_hr}	{$idle / 3600};
+	#math	{idle_min}	{$idle % 3600 / 60};
+	#math	{idle_sec}	{$idle % 60};
+	#if	{$idle_hr < 10}	{#var idle_hr  0$idle_hr};
+	#if	{$idle_min < 10}{#var idle_min 0$idle_min};
+	#if	{$idle_sec < 10}{#var idle_sec 0$idle_sec};
+
+	#format {idle_cap}	{%+4s}	{<268>[<128>$idle_hr<268>:<128>$idle_min<268>:<128>$idle_sec<268>]<088>};
+	
+	#if	{&{patrols[]} > 0} 
+	{
+		#var {areacap} {<148>Cycle: <168>$currentPatrolID<148>\-<168>$patrols[$currentPatrolID]<088>}
+	};
+	#else
+	{
+		#var areacap {};	
+	};
+	
+	#if	{${tao[page]} > 0} 
+	{
+		#math {tao[book]} {$tao[page] / 81 + 1};
+		#math {tao[chap]} {$tao[page] - (($tao[book] - 1) * 81)};
+		#var taocap {<258>Tao: <158>$tao[book]-$tao[chap]<088>}
+	};
+	#else
+	{
+		#var taocap {};
+	};
+
+	#if {"$draw[caption]" == "on"} 
+	{
+		#SHOWME {<088> <128>$world_cap <068>Uptime: <168>$uptime_cap  <038>Reboot: <138>$reboot_cap  <fca>Lag: <fcb>$lag_cap  <228>Idle: $idle_cap<088>  $areacap $taocap<088>} {$chat[height]+1}
+	};
+}
+
+
+#class {serverbar} {close}

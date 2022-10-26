@@ -1,0 +1,135 @@
+#showme READING OBSTACLES
+
+#class {mapper} {open}
+
+/*************************************************************
+	Obstacles are custom messages, usually from zone designs
+	that cause a failed movement to occur. So this is putting
+	all the watchers on these messages so we can tell the map
+	that it needs to undo the last movement it made.
+*************************************************************/
+#act {The spirit of Waldo appears before you.} {.triggerEvent onFailedMovement; } {1}
+
+#act {You are too powerful to pass this gate.} {.triggerEvent onFailedMovement; }
+#NOP Juggernauts
+#act {^The room is locked.} {.triggerEvent onFailedMovement;}
+#act {^Dirk says: This area is for Wolves not } {.triggerEvent onFailedMovement;}
+#act {^Harlow says: You are not allowed here please turn around and leave at once} {.triggerEvent onFailedMovement;}
+#act {^Only members of clan jade falcon can go this way.} {.triggerEvent onFailedMovement;}
+
+#NOP Bards
+#act {^You can't go there!} {.triggerEvent onFailedMovement;}
+
+#NOP Abbey
+#act {^A feeling of fear and dread washes over you, preventing you from going} {.triggerEvent onFailedMovement;}
+#act {^A feeling of dread washes over you, preventing you from going any further east.} {.triggerEvent onFailedMovement;}
+
+#NOP Body Mansion
+#act {^You bump into a locked door.} {.triggerEvent onFailedMovement;}
+
+#NOP Calvin and Hobbes
+#act {^Calvin defends his fort!} {.triggerEvent onFailedMovement;}
+#act {^Hobbes will not let you into G.R.O.S.S. headquarters!} {.triggerEvent onFailedMovement;}
+
+#NOP Carnegie
+#act {^Woody Allen says: You're going to have to wait for security!} {.triggerEvent onFailedMovement;}
+#act {^Mel Brooks blocks the exit.} {.triggerEvent onFailedMovement;}
+#act {^Jay-Z says: You're going to have to wait for security!} {.triggerEvent onFailedMovement;}
+#act {^Jay-Z says: Where do you think you're going?} {.triggerEvent onFailedMovement;}
+#act {^Jay-Z stops you leaving.} {.triggerEvent onFailedMovement;}
+#act {^Jay-Z blocks the exit.} {.triggerEvent onFailedMovement;}
+#act {^Trixie Hilton blocks the exit.} {.triggerEvent onFailedMovement;}
+
+#NOP Chaos Cinemaplex
+#act {^The movie usher asks for your movie ticket. When you fail to come up with} {.triggerEvent onFailedMovement;}
+
+#NOP Cove of the Three (Lost Soul)
+#act {^A magical force pushes you back, and you hear a voice} {.triggerEvent onFailedMovement;}
+
+#NOP Crystal Stairway
+#act {^The Warrior will not let you invade her home any further.} {.triggerEvent onFailedMovement;}
+#act {^The warrior will not let you pass.} {.triggerEvent onFailedMovement;}
+
+#NOP Detroit
+#act {^Officer yells: Get him, he must be stealing something!!!!} {.triggerEvent onFailedMovement;}
+
+#NOP Dundee
+#act {^The foliage in this part of the swamp is extremely thick and will take} {.triggerEvent onFailedMovement;}
+
+#NOP Dragon Realms
+#act {^You cannot get past the dragon guards.} {.triggerEvent onFailedMovement;}
+
+#NOP Elven Woods
+#act {^The elf {pushes|shoves} you back, refusing to let you pass{!|.}} {.triggerEvent onFailedMovement;}
+
+#NOP Fallout Shelter
+#act {^Core Guard jumps in your way, blocking your path!} {.triggerEvent onFailedMovement;}
+
+#NOP Faunist Guild
+#act {^You move slowly %w through the murky black water.} {.triggerEvent onFailedMovement;}
+
+#NOP Ice Fishing
+#act {^You are unable to climb the bank here.  It is very steep, and with all} {.triggerEvent onFailedMovement;}
+#act {^You can't go through a solid wall.  Try going around the shack, and} {.triggerEvent onFailedMovement;}
+
+#NOP Ice Mountains (Verbeeg)
+#act {^The magical barrier is impenetrable.$} {.triggerEvent onFailedMovement;}
+#act {^The cryohydra snaps one of its heads at you as you try and approach} {.triggerEvent onFailedMovement;}
+
+#NOP Land
+#act {^You are caught like a fly in a spider web, burning and twisting as} {.triggerEvent onFailedMovement;}
+
+#NOP Longshadow
+#act {^The drawbridge is currently upright denying you access to the castle.} {.triggerEvent onFailedMovement;}
+
+#NOP Mage Tower
+#act {^The guard blocks your passage.} {.triggerEvent onFailedMovement;}
+
+#NOP Night of Colour
+#act {^Impediment slaps you back, thorns tearing.} {.triggerEvent onFailedMovement;}
+#act {^Serrated sword extended, Bulwark stops your progress.} {.triggerEvent onFailedMovement;}
+
+#NOP The Princess Bride
+#act {^The guard won't allow you to pass!} {.triggerEvent onFailedMovement;}
+
+#NOP Rabbit Fields
+#act {^The rabbit prevents you from going that way.} {.triggerEvent onFailedMovement;}
+
+#NOP Ravenloft
+#act {^You try to go down, but suddenly feel more terrified than} {.triggerEvent onFailedMovement;}
+#act {^The trees move together and bar your path!} {.triggerEvent onFailedMovement;}
+#act {^A deathly chill blows from the south, blasting into} {.triggerEvent onFailedMovement;}
+#act {^Four dragons swoop down from the rafters and attack, blocking the way west!} {.triggerEvent onFailedMovement;}
+
+#NOP Rocky Hill
+#act {^Waving their rusty scimitars and growling loudly, the jackalmen} {.triggerEvent onFailedMovement;}
+
+#NOP Section Z
+#act {^The %1 will not let you pass!} {.triggerEvent onFailedMovement;}
+#act {^The portal %w is electrified and ZAPS you!} {.triggerEvent onFailedMovement;}
+
+#NOP Simpsons
+#act {^   The Guard stops you and says: Aww no...you can't go in there.} {.triggerEvent onFailedMovement;}
+
+#NOP SolChem
+#act {^The gang member shoves you back.} {.triggerEvent onFailedMovement;}
+
+#NOP Tao Te Cheng
+#act {^Your understanding fails you and you cannot flee!!} {.triggerEvent onFailedMovement;}
+
+#NOP Theatre of Souls
+#act {^A closed door blocks your way.} {.triggerEvent onFailedMovement;}
+
+#NOP Tomb of Kingn Alaren
+#act {^The skeletal royal guard steps in front of you barring your progress.} {.triggerEvent onFailedMovement;}
+#act {^The skeletal guard steps in front of you barring your progress.} {.triggerEvent onFailedMovement;}
+
+#NOP Underdark
+#act {^The {drow|guard} prevents you from going that way.} {.triggerEvent onFailedMovement;}
+#act {^The troll will not let you pass.} {.triggerEvent onFailedMovement;}
+
+#NOP Whorehouse
+#act {^Doh shoves you backwards with a scowl.} {.triggerEvent onFailedMovement;}
+#act {^Your feet are mired in the bird poop, you can't seem to move!!} {.triggerEvent onFailedMovement;}
+
+#class {mapper} {close}

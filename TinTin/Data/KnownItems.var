@@ -1,0 +1,5 @@
+#CLASS {itemsvar} OPEN
+
+#VARIABLE {items} {}
+
+#CLASS {itemsvar} CLOSE

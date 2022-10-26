@@ -1,0 +1,10 @@
+#showme READING shopbot
+#class {shopbot} {open};
+
+#var whichShop chaos
+
+
+
+
+
+#class {shopbot} {close}

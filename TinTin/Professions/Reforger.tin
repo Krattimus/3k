@@ -1,0 +1,51 @@
+#class {reforger} {open}
+
+/* forge alias */
+#NOP Type:  forge <item> <from> <to>
+#NOP It will attempt loads, then lots, then some, then little.
+#alias forge {
+	#var reforged no;
+	#var reforge_amt loads;
+	#var reforge_item %1;
+	#var reforge_from %2;
+	#var reforge_to %3;
+	forge_do
+}
+
+/* reforge <item> <amount> from <ac> to <defense> */
+#alias {forge_do} {
+	#if {"$reforged" == "no"} {
+                reforge $reforge_item with $reforge_amt from $reforge_from to $reforge_to;
+		#switch {"$reforge_amt"} {
+			#case {"loads"} {#var reforge_amt lots};
+			#case {"lots"} {#var reforge_amt some};
+			#case {"some"} {#var reforge_amt little};
+			#case {"little"} {#var reforged yes}
+		}
+	}
+}
+
+/* Burn reforger charges for pxp */
+#NOP Must have Westersea access to get to Bern
+#NOP This will go to Bern, buy 12 knives and reforge them, then deconstruct or dispose of them
+#alias rburn {
+        go bern;
+        #12 {
+                buy knife;
+                reforge knife with little from edged to penetrate;
+		#if {"$guild" == "juggernaut"} {
+			#send !deconstruct knife
+		} {
+			#send !dispose knife
+		}
+        };
+        go monk
+}
+
+/* Triggers here for failure/success messages */
+#act {^BOOM SHAKA LAKA!  You} {#var reforged yes}
+#act {^That item has already been reforged\.} {#var reforged yes}
+#act {^The {.*} does not have sufficient } {forge_do}
+#act {^You are not yet powerful enough to reforge } {forge_do}
+
+#class {reforger} {close}

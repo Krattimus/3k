@@ -1,0 +1,107 @@
+#showme READING CORPSES.TIN
+#class {corpses} {open}
+
+/* Initialize vars */
+#var corpses[inventory] 0
+#var corpses[coffin] 0
+#var corpses[cooler] 0
+#var corpses[freezer] 0
+#var corpses[truck] 0
+
+/* Coffin Counter */
+#act {{You keep An enchanted coffin \((\d+) corpses?\)  \[(?:[\.\|\&]+)\]  \[[\w\s]+\]\.}} {#var corpses[coffin] %2}
+#act {The Mortician says: Your generous donation of } {#var {corpses[coffin]} {0}}
+#act {There are no corpses in the coffin!} {#var {corpses[coffin]} {0}}
+#act {^You pick up %* and wrap it up into} {#math {corpses[coffin]} {$corpses[coffin] + 1}}
+#act {into the coffin's protective hold!} {#math {corpses[coffin]} {$corpses[coffin] + 1}}
+#act {The coffin expels all its corpses!} {#var {corpses[coffin]} {0}}
+#act {{The coffin expels (a|your selected) corpse!}} {
+	#if {$corpses[coffin] > 0} {
+		#math {corpses[coffin]} {$corpses[coffin] - 1}
+	} {
+		#var {corpses[coffin]} {0}
+	}
+}
+
+/* Freezer Counter */
+#act {{You keep \*?Death\'s Freezer \((\d+) corpses\)\.}} {#var corpses[freezer] %2}
+#act {{causing it to get sucked in!}} {#math {corpses[freezer]} {$corpses[freezer] + 1}}
+#act {You shake the frame and out drops } {
+	#if {$corpses[freezer] > 0} {
+		#math {corpses[freezer]} {$corpses[freezer] - 1}
+	} {
+		#var {corpses[freezer]} {0}
+	}
+}
+
+/* Tech Ultra-Cooler Counter */
+#act {{The Tech Ultra-Cooler contains:}} {#var corpses[cooler] 0;corpsecount cooler}
+#act {{The cooler does not contain a corpse\.}} {#var corpses[cooler] 0}
+#act {{There is no reason to \'uncooler\' here\.}} {
+	#var cooler off;
+	#var corpses[cooler] 0
+}
+#act {{There is no more room in the Ultra-Cooler}} {#var corpses[cooler] 50}
+#act {{You place the corpse into the Ultra-Cooler and seal the lid}} {
+	#var cooler on;
+	#math {corpses[cooler]} {$corpses[cooler] + 1};
+	#if {$corpses[inventory] > 0} {
+		#math {corpses[inventory]} {$corpses[inventory] - 1}
+	} {
+		#var corpses[inventory] 0
+	}
+}
+#act {{You activate the Ultra-Cooler to retrieve }} {#math {corpses[cooler]} {$corpses[cooler] - 1}}
+
+/* Inventory Counter */
+#act {{You keep (?:.*) corpse of }} {#math {corpses[inventory]} {$corpses[inventory] + 1}}
+#act {{You drop (?:.*) corpse of }} {
+	#if {$corpses[inventory] > 0} {
+		#math {corpses[inventory]} {$corpses[inventory] - 1}
+	} {
+		#var corpses[inventory] 0
+	}
+}
+#alias {kac} {#var corpses[inventory] 0;#send !keep all corpse}
+
+/* Truck Counter */
+#NOP Variable truck[name] and truck[first_cap] set in Juggernaut player file
+#act {^A {jeep|truck|ambulance|tank} named $truck[name]} {#var corpses[truck] 0;corpsecount truck}
+#act {$truck[first_cap] takes: %+ corpse of } {#math {corpses[truck]} {$corpses[truck] + 1}}
+#act {$truck[first_cap] drops %+ {[corpse|preservation|remains]}} {
+	#if {$corpses[truck] > 0} {
+		#math {corpses[truck]} {$corpses[truck] - 1}
+	}
+}
+
+/* Corpse Regex */
+#alias corpsecount {
+	#class {corpse_count} {open};
+	#var {corpse_cnt} {0};
+	#act {{^(?:=I= )?[\[\(](?:.*) corpse of (?:[\w\d\s]+)\{?(\d*)\}?}} {
+			#if {%%2} {
+				#var corpse_stack %%2
+			} {
+				#var corpse_stack 1
+			};
+			#math {corpse_cnt} {$corpse_cnt + $corpse_stack}
+	};
+	#act {^>$} {
+		#var {corpses[%1]} {$corpse_cnt};
+		#class {corpse_count} {kill}
+	};
+	#class {corpse_count} {close}
+}
+
+/* Aliases */
+#alias {cc} 
+{
+	kac;
+	#send !keep coffin;
+	#send !keep freezer;
+	#if {"$guild" == "juggernaut"} {
+		#send !exa $truck[name]
+	};
+	#send !exa cooler
+}
+#class {corpses} {close}

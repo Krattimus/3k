@@ -1,0 +1,14 @@
+#CLASS {botvar} OPEN
+
+#ACTION {^Just a reminder, your continue code for Section %d is %w}
+{
+    #variable {sectionz[%1]} {%2}
+}
+
+#ACTION {^You press PAUSE on the game, saving the rest for later.}
+{
+    #map goto 24785
+}
+
+
+#CLASS {botvar} CLOSE

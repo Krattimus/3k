@@ -1,0 +1,26 @@
+#showme READING PARTY
+#class {party} open
+
+/*************************************************************
+  pwho output
+*************************************************************/
+#action {^Name         Location                                  Creator$} 
+{
+	#action {^%w %+ (%w%s)} 
+	{
+		#var {party_member} {%%1};
+		#var party_found 0;
+		#list party find $party_member party_found;
+		#if { $party_found == 0 } 
+		{
+			#list party add $party_member
+		}
+	} {1};
+
+	#delay {party_capture} 
+	{
+		#unaction {^%w %+ (%w%s)};
+	} {0.5}
+}
+
+#class {party} close

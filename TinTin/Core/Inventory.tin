@@ -1,0 +1,276 @@
+#showme READING Inventory
+
+/************************************************
+    A class to manage the inventory from the
+    game since it is difficult to deal with
+    the guess work of which ring and which sowrd
+    you are trying to wear, drop or keep. Here,
+    we can use a client side index that converts
+    the index to the proper named item
+************************************************/
+#class {inventory} {open}
+
+#var isShop 0;
+#var inventoryOpen 0;
+
+.registerEvent onItemDropped onItemDroppedInventoryResponder;
+.registerEvent onItemTaken onItemTakenInventoryResponder;
+
+#event {CLASS DESTROYED inventory}
+{
+    .unregisterEvent onItemDropped onItemDroppedInventoryResponder;
+    .unregisterEvent onItemTaken onItemTakenInventoryResponder;
+};
+
+/************************************************
+    Parse Inventory Output, this can change
+    depending on where you are, like a shop, 
+    which does its own indexing. TODO: Find all
+    examples here...
+************************************************/
+#alias {i}
+{
+    #if { $inventoryOpen == 0 }
+    {
+        #if { "$draw[canvas]" == "off" }
+        {
+            .togglePanel canvas;
+        };
+
+        #list inventory clear;
+        #list inventoryCount clear;
+        #send !i;
+
+        #read 3k/TinTin/Core/InventoryHelper.tin;
+        #var inventoryOpen 1;        
+    };
+    #else
+    {
+        #var inventoryOpen 0;
+        #showme Closing Inventory;
+
+        #if { "$draw[canvas]" == "on" }
+        {
+            .togglePanel canvas;
+        };
+
+        #class inventoryhelper kill;
+    };
+};
+
+/************************************************
+    The inventory screen is done when the
+    carrying of coins is output. we should 
+    probably also make a deadman timer here....
+************************************************/
+#action {^%1 coins %2}
+{
+    #var carryingCoins %1;
+    #var weightLoad %2;
+    #class inventoryhelper kill;
+} {1};
+
+/************************************************
+    
+***********************************************/
+#alias idToItem
+{
+    #var inventoryID %1;
+
+
+
+};
+
+/************************************************
+    Over ride the keep command to use our
+    indexed inventory.
+************************************************/
+#alias {keep}
+{
+    #send !keep %0;
+}
+
+/************************************************
+    Over ride unkeep
+************************************************/
+#alias {unkeep}
+{
+    #send !keep %0;
+}
+
+/************************************************
+    Over ride wear
+************************************************/
+#alias {wear}
+{
+    #send !wear %0;
+}
+
+/************************************************
+    Over ride remove
+************************************************/
+#alias {remove}
+{
+    #send !remove %0;
+}
+
+/************************************************
+    Over ride the drop command to use our
+    indexed inventory.
+************************************************/
+#alias {drop}
+{
+    #var inventoryID %1;
+
+    #REGEXP {$inventoryID} {{^([0-9]*)}$}
+    {
+        #if { $inventoryID > 0 && $inventoryID <= &{inventory[]} }
+        {
+            #var canDrop 0;            
+            #var itemToDrop $inventory[$digit];
+            #REGEXP {$itemToDrop} {*%*} 
+            {
+                #showme Can't drop #itemToDrop;
+            } 
+            {
+                #var canDrop 1;
+            };
+
+            #if { $canDrop }
+            {
+                #send !drop $inventory[$digit];            
+            }
+        };
+    } 
+    { 
+        #send !drop %0;
+    };
+}
+
+/************************************************
+    Main bot says we dropped something
+************************************************/
+#alias onItemDroppedInventoryResponder
+{
+    #if { $inventoryOpen }
+    { 
+        .removeItemFromInventory $itemDropped; 
+        .renderInventory;
+    };
+}
+
+/************************************************
+    Main bot says we took something
+************************************************/
+#alias onItemTakenInventoryResponder
+{
+    #if { $inventoryOpen }
+    { 
+        .addItemToInventory $itemTaken; 
+        .renderInventory;
+    };
+}
+
+/************************************************
+    Remove item from inventory
+************************************************/
+#alias .removeItemFromInventory
+{
+    #local itemID 0;
+    #local foundItemID 0;
+    #local similarCount 0;
+
+    #while {$itemID < &{inventory[]} && $foundItemID == 0} 
+    {
+        #math {itemID} {$itemID + 1};
+
+        #NOP {If name matches exactly};
+        #REGEXP {$inventory[$itemID]} {%i%0}
+        {
+            #var foundItemID $itemID;
+        }
+        {
+            #REGEXP {%0} {%i$inventory[$itemID]}
+            { 
+                #var foundItemID $itemID;
+                #math {similarCount} {$similarCount + 1};
+            } { #NOP {Do nothing};};
+        };
+    };
+
+    #if { $similarCount > 1 }
+    { #var foundItemID 0; };
+
+    #showme $foundItemID;
+    #if { $foundItemID != 0 }
+    {
+        #if { $inventoryCount[$foundItemID] == 1 }
+        {
+            #list inventory del $foundItemID;
+            #list inventoryCount del $foundItemID;
+        };
+        #else
+        {
+            #math {inventoryCount[+$foundItemID]} {$inventoryCount[$foundItemID]-1};
+        };
+    };
+};
+
+/************************************************
+    Add item to known items we have
+************************************************/
+#alias .addItemToInventory
+{
+    #var alreadyHave 0;
+    #local itemID 0;
+    #local foundItemID 0;
+    #local similarCount 0;
+    #while {$itemID < &{inventory[]} && !$alreadyHave}  
+    {
+        #math {itemID} {$itemID + 1};
+
+        #NOP {If name matches exactly};
+        #REGEXP {$inventory[$itemID]} {%i%0}
+        {
+            #math {inventoryCount[+$itemID]} {$inventoryCount[$itemID]+1};
+            #var alreadyHave 1;
+        }
+        {
+            #REGEXP {$inventory[$itemID]} {%0} 
+            { 
+                #math {similarCount} {$similarCount + 1};
+                #var foundItemID $itemID;
+            } { #NOP {Do nothing}; };
+        };
+    };
+
+    #NOP {
+        Only one item was similar as a substring
+        ie: 'get sword' ->  'A super long sword'
+        So it is safe to increase the quantity
+    };
+    #if { $similarCount == 1 && $foundItemID != 0 }
+    {
+        #math {inventoryCount[+$foundItemID]} {$inventoryCount[$foundItemID]+1};
+        #var alreadyHave 1;        
+    };
+
+    #if { !$alreadyHave }
+    {
+        #list inventory add {%0};
+        #list inventoryCount add {1};
+    };
+};
+
+
+
+
+
+
+#alias {.cls}
+{
+    #buffer clear;
+    .render;
+}
+
+#class {inventory} {close}

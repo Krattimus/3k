@@ -1,0 +1,54 @@
+#class {bot} {open}
+
+#var {no_loop} {0}
+#var {no_home} {0}
+#var {hardmode} {0}
+#var {shouldVacuum} {1}
+
+#var {botpath} {w;s;w;n;n;w;s;s;w;n;n;w;s;s;w;n;n;w;s;s;w;n;n;w;s;s;n;n;e;e;e;e;e;e;e;e;s;e}
+
+#act {^=M= {An annoying little girl|The Trix Rabbit|A Thirsty Girl|The Kool-Aid Man|The famous Ray Charles|A very health conscious cow|A Keebler Elf|Frito Bandito|Jay Leno|A Blonde|A Brunette|Kelly Lebrock|A Screaming Baby|A Booming Voice|Madge|A Lady who wishes she were Madge|Mr. Clean|A Cute Little Boy|A Really Fat Man|A Rather Slim Lady|A Chorus|Northern Bath Tissue Girl|Brawny, the Paper Towel Giant|Mr. Whipple|Polar Bear|A Weight Watcher's Lady|Bill Cosby|Campbell's Soup Kid|Chef Boyardee|Sprout|Jolly Green Giant|Mr. Lucky Charm|Snuggles the Bear|The Cashier}} {
+	#switch {"%1"} {
+		#case {"An annoying little girl"}		{#var shouldKill girl};
+		#case {"The Trix Rabbit"}			{#var shouldKill rabbit};
+		#case {"A Thirsty Girl"}			{#var shouldKill girl};
+		#case {"The Kool-Aid Man"}			{#var shouldKill man};
+		#case {"The famous Ray Charles"}		{#var shouldKill ray};
+		#case {"A very health conscious cow"}		{#var shouldKill cow};
+		#case {"A Keebler Elf"}				{#var shouldKill elf};
+		#case {"Frito Bandito"}				{#var shouldKill frito};
+		#case {"Jay Leno"}				{#var shouldKill leno};
+		#case {"A Blonde"}				{#var shouldKill blonde};
+		#case {"A Brunette"}				{#var shouldKill brunette};
+		#case {"Kelly Lebrock"}				{#var shouldKill kelly};
+		#case {"A Screaming Baby"}			{#var shouldKill baby};
+		#case {"A Booming Voice"}			{#var shouldKill voice};
+		#case {"Madge"}					{#var shouldKill madge};
+		#case {"A Lady who wishes she were Madge"}	{#var shouldKill lady};
+		#case {"Mr. Clean"}				{#var shouldKill clean};
+		#case {"A Cute Little Boy"}			{#var shouldKill boy};
+		#case {"A Really Fat Man"}			{#var shouldKill man};
+		#case {"A Rather Slim Lady"}			{#var shouldKill lady};
+		#case {"A Chorus"}				{#var shouldKill chorus};
+		#case {"Northern Bath Tissue Girl"}		{#var shouldKill girl};
+		#case {"Brawny, the Paper Towel Giant"}		{#var shouldKill giant};
+		#case {"Mr. Whipple"}				{#var shouldKill whipple};
+		#case {"Polar Bear"}				{#var shouldKill bear};
+		#case {"A Weight Watcher's Lady"}		{#var shouldKill lady};
+		#case {"Bill Cosby"}				{#var shouldKill bill};
+		#case {"Campbell's Soup Kid"}			{#var shouldKill kid};
+		#case {"Chef Boyardee"}				{#var shouldKill chef};
+		#case {"Sprout"}				{#var shouldKill sprout};
+		#case {"Jolly Green Giant"}			{#var shouldKill giant};
+		#case {"Mr. Lucky Charm"}			{#var shouldKill charm};
+		#case {"Snuggles the Bear"}			{#var shouldKill bear};
+		#case {"The Cashier"}				{#var shouldKill cashier}
+	};
+	_check_mob
+}
+
+#act {^=M= Toucan Sam <?>} {mission ask}
+#act {^=M= Toucan Sam <!>} {mission return}
+#act {^You have been offered the mission} {mission accept}
+
+#class {bot} {close}

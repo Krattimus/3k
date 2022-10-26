@@ -1,0 +1,108 @@
+#showme READING Settins
+
+#class {settings} {open}
+
+#alias {.displaySettings} { .showSettings; }
+#alias {.showSettings}
+{
+        .showSetting {Auto Selling} $autoSell;
+        .showSetting {Corpse Donations} $corpseDonations;
+        .showSetting {Should Pickup All Items} $shouldVacuum;
+        .showSetting {Should Loot Corpses} $shouldLoot;
+        .showSetting {Should Process Corpses} $shouldProcessCorpse;
+};
+
+#alias {.showHeader}
+{
+        #format {area_display} {%-35s} {<228> %1 <228>|<088>};
+
+        #echo {<228> +-------------------+}<088>;
+        #echo {<228> |<138> %1<088>};
+        #echo {<228> +-------------------+}<088>;
+};
+
+#alias {.showSetting}
+{
+        #format {area_display} {%-35s} {<158>%1 is <168>%2<088>};
+        #echo { <228>| $area_display <088>};
+
+};
+
+#alias {.toggleProcessCorpse}
+{
+        #if { $shouldProcessCorpse == 1 }
+        {
+                #var shouldProcessCorpse 0;
+        };
+        #else
+        {
+                #var shouldProcessCorpse 1;
+        };
+        
+        .showSetting {Should Process Corpses} $shouldProcessCorpse;
+};
+
+
+#alias {.toggleLooting}
+{
+        #if { $shouldLoot == 1 }
+        {
+                #var shouldLoot 0;
+        };
+        #else
+        {
+                #var shouldLoot 1;
+        };
+        
+        .showSetting {Should Loot Corpses} $shouldLoot;
+};
+
+
+#alias {.toggleVacuum}
+{
+        #if { $shouldVacuum == 1 }
+        {
+                #var shouldVacuum 0;
+        };
+        #else
+        {
+                #var shouldVacuum 1;
+        };
+        
+        .showSetting {Auto Pickup Items} $shouldVacuum;
+};
+
+#alias {.toggleSelling}
+{
+        #if { "$autoSell" == "on" }
+        {
+                #class shopbot kill;
+                #var autoSell off;
+        };
+        #else
+        {
+                #read 3k/TinTin/Bot/ShopBot.tin;
+                #var autoSell on;
+        };
+        
+        .showSetting {Auto Selling} $autoSell;
+};
+
+#alias {.toggleCorpseDonations}
+{
+        #if { "$corpseDonations" == "on" }
+        {
+                #class corpsebot kill;
+                #var corpseDonations off;
+        };
+        #else
+        {
+                #read 3k/TinTin/Bot/CorpseBot.tin;
+                #var corpseDonations on;
+        };
+
+        .showSetting {Corpse Donations} $corpseDonations;
+
+};
+
+#class {settings} {close}

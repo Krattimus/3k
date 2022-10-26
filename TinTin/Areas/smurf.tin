@@ -1,0 +1,35 @@
+#class {bot} {open}
+
+#var {no_loop} {1}
+#var {no_home} {1}
+#var {hardmode} {0}
+#var {shouldVacuum} {1}
+
+#NOP TRIM PATH - Avoids smurf-eaters and squirrel
+#var {botpath} {s;s;s;w;e;e;w;s;w;e;e;e;w;sw;se;w;e;s;w;w;n;s;e;e;e;s;s;s;s;s;enter;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;s;w;e;e;w;n;e;out;n}
+#NOP FULL PATH #var {botpath} {s;s;s;w;e;e;w;s;w;e;e;e;w;sw;se;w;e;s;w;w;n;s;e;e;n;e;s;s;s;s;e;w;w;w;w;e;e;e;s;s;enter;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;s;w;e;e;w;n;e;out;n}
+
+#act {=M= %*{Smurf|A very large rat|A large furry spider|Azrael|Gargamel}} {
+	#switch {"%2"} {
+		#case {"Smurf"}			{#var shouldKill smurf};
+		#case {"A very large rat"}	{#var shouldKill rat};
+		#case {"A large furry spider"}	{#var shouldKill spider};
+		#case {"Azrael"}		{#var shouldKill azrael};
+		#case {"Gargamel"}		{#var shouldKill gargamel}
+	};
+	#if {"$shouldKill" == "smurf"} {
+		#REGEX {"%0"} {Papa Smurf} {
+			#NOP
+		} {
+			_check_mob
+		}
+	} {
+		_check_mob
+	}
+}
+
+#act {=M= Papa Smurf <?>} {mission ask;mission accept}
+#act {=M= Papa Smurf <!>} {mission return}
+#act {=M= Papa Smurf <.>} {#nop}
+
+#class {bot} {close}

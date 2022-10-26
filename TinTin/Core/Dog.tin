@@ -1,0 +1,58 @@
+#showme READING DOG.TIN
+#class {dog} {open}
+
+#var dog[corpse] no
+#var dog[name] Kerensky
+
+#act {{^$dog[name] :: HP: (\d+)/(\d+)  Happy: ([\d\-]+)\%  Hungry: ([\d\-]+)\%  Level: (\d+)/(\d+)\%}} {
+	#var {dog[hp]}	{%2};
+	#var {dog[mhp]}	{%3};
+	#var {dog[hap]}	{%4};
+	#var {dog[hun]}	{%5};
+	#var {dog[lvl]}	{%6};
+	#var {dog[tnl]}	{%7};
+	#if {$dog[hp] < $dog[mhp]*.75} {
+		#echo <001>!DOGGIE IS HURTING!<088>;
+		#bell
+	};
+	#if {$dog[hap] < 95} {#send !dog pet};
+	#if {$dog[hun] > 40} {
+		#if 	{$corpses[inventory] > 10} {
+			#send !drop corpse;
+			#var dog[corpse] yes
+		}; #elseif {$corpses[truck] > 0} {
+			#send !truck drop corpse;
+			#var dog[corpse] yes
+		}; #elseif {$corpses[cooler] > 0} {
+			#send !uncooler corpse;
+			#var dog[corpse] yes
+		}; #elseif {$corpses[inventory] > 0} {
+			#send !drop corpse;
+			#var dog[corpse] yes
+		}; #elseif {$corpses[freezer] > 0} {
+			#send !deslab;
+			#var dog[corpse] yes
+		}; #elseif {$corpses[coffin] > 0} {
+			#send !unwrap;
+			#var dog[corpse] yes
+		}; #else {
+			#echo {<001>!NO CORPSES!<088>}
+		};
+		#if {"$dog[corpse]" == "yes"} {
+			#send !dog eat;
+			#var dog[corpse] no
+		}
+	}
+}
+
+#act {{(?:\w+) command(?:s)? (?:everyone|your audience) to HEEL\!}} {#send !dog heel}
+#act {has commanded you to HEEL!} {#send !dog heel}
+#act {woofs at you} {#send !dog stay}
+#act {You woof.$} {#send !dog stay}
+#act {woofs.$} {#send !dog stay}
+#act {Your dog lays down and places his head on his paws, looking sad\.$} {#send !say $dog[name] is staying here.}
+#act {Your dog is so happy he can hardly stand it and runs around in circles\.$} {#send !say $dog[name] is following me.}
+#act {Your dog looks disappointed, but slowly moves behind you\.$} {#send !say $dog[name] is no longer assisting me in combat.}
+#act {Your dog is so happy he can hardly stand it and bounds in front of you\.$} {#send !say $dog[name] is now assisting me in combat.}
+
+#class {dog} {close}

@@ -1,0 +1,24 @@
+#class {bot} {open}
+
+#var {no_loop} {0}
+#var {no_home} {0}
+#var {hardmode} {0}
+#var {shouldVacuum} {1}
+
+#var {botpath} {e;n;n;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;n;n;n;n;n;w}
+
+#act {^=M= {Swamp Crocodile|Marsh Frog|Armadillo|Platypus|Black-bellied Snake|Osprey}} {
+	#switch {"%1"} {
+		#case {"Marsh Frog"}		{#var shouldKill frog};
+		#case {"Swamp Crocodile"}	{#var shouldKill crocodile};
+		#case {"Armadillo"}		{#var shouldKill armadillo};
+		#case {"Platypus"}		{#var shouldKill platypus};
+		#case {"Black-bellied Snake"}	{#var shouldKill snake};
+		#case {"Osprey"}		{#var shouldKill osprey};
+		#case {"Drop bear"}		{#var shouldKill bear};
+		#case {"Orinoco Crocodile"}	{#var shouldKill crocodile};
+	};
+	_check_mob
+}
+
+#class {bot} {close}

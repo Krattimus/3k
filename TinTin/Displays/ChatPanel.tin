@@ -1,0 +1,88 @@
+#showme reading CHAT PANEL
+
+#var chat[max] 100
+#var chat[offset] 0
+#var chat[page] 1
+#var chat[rows] 17
+#var chat[scroll] page
+
+#class {chatpanel} {open}
+
+#alias {.renderChat} 
+{
+	#math chat[start]	{$chat[rows] + $chat[offset]};
+	#math chat[end]		{$chat[offset] + 1};
+	#if {"$draw[chat]" == "on"} 
+	{
+		#line sub var #line sub esc #draw {tile} 1 1 $chat[rows] $chat[right] $chat[log][-$chat[start]..-$chat[end]]
+	}
+}
+
+#alias {.logChat} 
+{
+	#format {timestamp} {%t} {<108>[<268>%H<108>:<268>%M<108>]<088> };
+	#if {&chat[log][] > $chat[max]} {
+		#list chat[log] del 1
+	};
+	#NOP remove esc chars;
+	#var chat[text] %0;
+	#replace {chat[text]} {\\x7B} {\uFF5B};
+	#replace {chat[text]} {\\x7D} {\uFF5D};
+	#list chat[log] ins -1 {${timestamp}$chat[text]};
+
+	#class {chat} {write} {3k/TinTin/Data/${mud}chat.var};
+	.renderChat
+}
+
+#alias {chatup} 
+{
+	#if {"$chat[scroll]" == "page"} 
+	{
+		#if {$chat[rows]*{$chat[page]+1} <= $chat[max] && $chat[rows]*{$chat[page]+1} <= &chat[log][]} 
+		{
+			#math chat[page] {$chat[page] + 1};
+			#math chat[offset] {$chat[page] * $chat[rows] - $chat[rows]};
+			.renderChat
+		}
+	}; 
+	#elseif {"$chat[scroll]" == "line"} 
+	{
+		#if {$chat[offset] <= $chat[max] && $chat[offset] <= &chat[log][]}
+		{
+			#math chat[offset] {$chat[offset] + 1};
+			.renderChat
+		}
+	}
+}
+
+#alias {chatdown} 
+{
+	#if {"$chat[scroll]" == "page"} 
+	{
+		#if {$chat[page] > 1} 
+		{
+			#math chat[page] {$chat[page] - 1};
+			#math chat[offset] {$chat[page] * $chat[rows] - $chat[rows]};
+			.renderChat
+		}
+	}; 
+	#elseif {"$chat[scroll]" == "line"} 
+	{
+		#if {$chat[offset] > 0} 
+		{
+			#math chat[offset] {$chat[offset] - 1};
+			.renderChat
+		}
+	}
+}
+
+#alias {chatend} 
+{
+	#draw {green} {line} $chat[height] 1 $chat[height] -1;	
+	#var chat[page] 1;
+	#var chat[offset] 0;
+	.renderChat
+}
+
+
+#class {chatpanel} {close}

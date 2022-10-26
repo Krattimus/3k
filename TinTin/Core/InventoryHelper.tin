@@ -1,0 +1,34 @@
+#class {inventoryhelper} {open}
+
+/******************************************************
+    Detects an item in the inventory. I Put this in
+    a class because it is easier to #class ... kill
+    Than it is to mantain the right syntax for 
+    #unalias {{^[\s]*([0-9]+)\s(.*).}$} everywhere.
+    And I am not sure tintin always did. With a class
+    it was more guarnteed.
+******************************************************/
+#action {{^[\s]*([0-9]+)\s(.*).}$}
+{           
+    #REGEXP {%3} {coins} 
+    {
+        #NOP {nothing   };
+    } {
+        #list inventory add {%3};
+        #list inventoryCount add {%2};
+        .renderInventory;            
+    };
+} {1};
+
+/******************************************************
+    Cancel reading the inventory while in a shop since
+    the output is not the same. TODO: Load up a better
+    shop panel that filters out the keeping
+******************************************************/
+#action {#    Items                                        Sell Value}
+{
+    #var isShop 1;
+    #class inventoryhelper kill;
+};
+
+#class {inventoryhelper} {close}

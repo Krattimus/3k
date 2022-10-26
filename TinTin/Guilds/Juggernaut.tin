@@ -1,0 +1,276 @@
+#class {juggernaut} {open}
+
+/* Variable Initialization */
+#var guild juggernaut
+#var clan 0
+#var nukes 0
+#var reset 0
+#var rod 0
+#var support[damage] fire
+
+#NOP Jugger HP Bar Configuration
+#NOP hp set HP:[$HP$] SP:[$SP$] S:[$STIM$%] HE:[$HEAT$%] HT:[$HITS$] M/C:[$NUKES$/$MNUKES$][$CP$/$MCP$][$RESET$%] G:$GXP$%$N$Ammo:[$AMMO$] SHP:[$SHP$] SNL:[$SNL$] SM:[$SMD$] SA:[$SMF$] SD:[$SAF$] E:$STATUS$
+
+#act {HP:\[%d/%d\] SP:\[%d/%d\] S:\[%d\%\] HE:\[%d\%\] HT:\[%d\] M/C:\[%d/%d\]\[%d/%d\]\[%d\%\] G:{[\d\.]+}\%} {
+	#var {my[hp][current]}		{%1};
+	#var {my[hp][max]}		{%2};
+	#var {my[sp][current]}		{%3};
+	#var {my[sp][max]}		{%4};
+	#var {my[gp1][current]}		{%5};
+	#var {my[gp2][current]}		{%6};
+	#var {hits}		{%7};
+	#var {nukes}		{%8};
+	#var {nukes_max}	{%9};
+	#var {clan}		{%10};
+	#var {clan_max}		{%11};
+	#var {reset}		{%12};
+	#var {gxp}		{%13};
+	#if {$my[gp1][current] < 60} {stimheal};
+	#if {$my[gp1][current] < 50} {stimheal};
+	#if {$my[gp1][current] < 40} {stimheal};
+	#if {$my[gp1][current] < 30} {stimheal};
+	#if {$my[gp1][current] < 20} {stimheal};
+	#if {$my[gp1][current] < 25} {#bell};
+	#if {$my[gp1][current] < 95 && $my[sp][current] > 50} {
+		#if {$my[gp2][current] > 70} {#send !dissipate};
+		#send !transpose max;
+	};
+	#if {$rod > 10} {
+		#if {$my[sp][current] < $my[sp][max] * .5} {
+			#math {rod} {$rod - 1};
+			#delay {spark} {#send !touch spark rune} {0.5}
+		}
+	};
+	#if {$reset >= 98} {
+		#if {$clan > 0} {
+			#send !frenzy
+		}; #elseif {$nukes > 0 && $mip[round]} {
+			fire $nukes
+		}
+	}
+}
+
+#act {{^Ammo:\[(\d+)?/?(\d+)?/?(\d+)?/?(\d+)?/?(\d+)?\] SHP:\[\s*(\d+)\] SNL:\[([\d\.]*)\] SM:\[(\w+)\] SA:\[(\w+)\] SD:\[(\w+)\] E:([\d\w]+)?\%?}} {
+	#var {ammo[1]}		{%2};
+	#var {ammo[2]}		{%3};
+	#var {ammo[3]}		{%4};
+	#var {ammo[4]}		{%5};
+	#var {ammo[5]}		{%6};
+	#var {support[hp]}	{%7};
+	#var {support[tnl]}	{%8};
+	#var {support[mode]}	{%9};
+	#var {support[assault]}	{%10};
+	#var {support[defend]}	{%11};
+	#var {ehealth}		{%12};
+	#format {ammo_len} {%L} {$ammo};
+	#if {"$ammo_buy" == "on" && $ammo_len > 0} {
+		#if {$ammo[1] < 100} {
+			#send !truck ammo vbuy $weapon_type $ammo_type 1 $ammo_buy_amount
+		}; #elseif {$ammo[2] < 100} {
+			#send !truck ammo vbuy $weapon_type $ammo_type 2 $ammo_buy_amount
+		}; #elseif {$ammo[3] < 100} {
+			#send !truck ammo vbuy $weapon_type $ammo_type 3 $ammo_buy_amount
+		}; #elseif {$ammo[4] < 100} {
+			#send !truck ammo vbuy $weapon_type $ammo_type 4 $ammo_buy_amount
+		}; #elseif {$ammo[5] < 100} {
+			#send !truck ammo vbuy $weapon_type $ammo_type 5 $ammo_buy_amount
+		}
+	};
+	#if {$support[hp] > 0 && $support[hp] < 9} {dismiss};
+	#if {$support[hp] == 0 && $clan > 0} {
+		support summon;
+		#if {"$support[auto_defend]" == "on"} {
+			#delay {support_resummon_defend} {support defend} {2};
+			#delay {support_resummon_defend2} {support defend} {4}
+		}
+	};
+	#if {"$support[assault]" == "No"} {support assault $support[damage]};
+	.renderHPBar
+}
+
+#alias {.renderJuggernautBar} {
+	#if {"$cooler" == "on" || $corpses[cooler] > 0} {
+		#format {sb1_cooler} {%+2s} {$corpses[cooler]};
+		#var {sb1_cooler} { CL:<139>$sb1_cooler<088>}
+	} {
+		#var {sb1_cooler} {}
+	};
+	#if {"$freezer" == "on" || $corpses[freezer] > 0} {
+		#format {sb2_freezer} {%+2s} {$corpses[freezer]};
+		#var {sb2_freezer} { FZ:<139>$sb2_freezer<088>}
+	} {
+		#var {sb2_freezer} {}
+	};
+	#var {my[hp][graph]}	{@graph{$my[hp][current];$my[hp][max]}};
+	#var {my[sp][graph]}	{@graph{$my[sp][current];$my[sp][max]}};
+	#var {my[gp1][graph]}	{@graph{$my[gp1][current];$my[gp1][max]}};
+	#var {my[gp2][graph]}	{@graph{$my[gp2][current];$my[gp2][max]}};
+	#var {gxp_graph}	{@graph{$gxp;100}};
+	#var {shp_graph}	{@graph{$support[hp];100}};
+	#var {enemy[graph]}	{@graph{$enemy[hp];100}};
+	#format {hp}		{%+5s} {@colscale{$my[hp][current];$my[hp][max]}};
+	#format {hp_max}	{%+5s} {<128>$my[hp][max]<088>};
+	#format {sp} 		{%+4s} {@colscale{$my[sp][current];$my[sp][max]}};
+	#format {sp_max}	{%+4s} {<128>$my[sp][max]<088>};
+	#format {gp1}		{%+3s} {@colscale{$my[gp1][current];$my[gp1][max]}};
+	#format {ehealth}	{%+6s} {@colscale{$enemy[hp];100}};
+	#format {nukes}		{%+2s} {$nukes};
+	#format {gxp_col}	{%+9s} {@colscale{$gxp;100}};
+	#format {reset}		{%+2s} {$reset};
+	#format {corpses[inventory]}	{%+2s} {$corpses[inventory]};
+	#format {corpses[truck]}	{%+2s} {$corpses[truck]};
+	#format {corpses[coffin]}	{%+2s} {$corpses[coffin]};
+	#format {corpses[freezer]}	{%+2s} {$corpses[freezer]};
+	#if {"$draw[hpbar]" == "on"} {
+		#showme {<088>HP:$hp/$hp_max SP:$sp/$sp_max ST:   $gp1\%    G:$gxp_col\%  N: $nukes/$clan/$reset\%   E:$ehealth\%    IC:<139>${corpses[inventory]}<088> TC:<139>${corpses[truck]}<088>${sb1_cooler}} {-4};
+		#showme {HP:${my[hp][graph]}  S:${my[sp][graph]} ST:${my[gp1][graph]} G:${gxp_graph} SH:${shp_graph}  E:${enemy[graph]} CF:<139>${corpses[coffin]}<088>${sb2_freezer}} {-3};
+	};
+	#if {"$draw[gline]" == "on"} {
+		#showme {$mip[gline][1]  $mip[gline][2]} {-6}
+	}
+}
+
+#alias {stimheal} {
+	#if {$corpses[inventory] > 10} {
+		#math {corpses[inventory]} {$corpses[inventory] - 1}
+	}; #elseif {$corpses[truck] > 0} {
+		#send !get corpse from cl;
+		#math {corpses[truck]} {$corpses[truck] -1}
+	}; #elseif {$corpses[cooler] > 0} {
+		#send !uncooler corpse
+	}; #else {
+		#if {"$bot" == "on"} {
+			.stop;
+		};
+		#bell
+	};
+	#send !fdeener
+}
+
+/* Set truck name */
+#var truck[name] {CanisLupus}
+#format {truck[lower]} {%l} {$truck[name]}
+#format {truck[first_cap]} {%n} {$truck[lower]}
+
+/* Set Ammo Defaults */
+#var {ammo_buy_amount}	{5000}
+#var {weapon_type}	{missile}
+#var {ammo_type}	{6}
+#var {ammo_buy}		{on}
+#var {ammo_donate}	{off}
+
+/* Disable ammo_buy for energy mounts */
+#act {^That gun is full already.} {
+	#var ammo_buy off
+}
+
+#act {After your discount, it will cost %1 coins.} {
+	#if {"$ammo_donate" == "on"} {
+		#send !give %1 coins to cl;
+		#send !truck vault
+	}
+}
+
+/* CREPORT */
+#act {[%1%s] [%s%d] [{\s*}%d] $} {
+	#format {cr_class} {%p} {%4};
+	#format {cr_rnds} {%p} {%6};
+	#if {$cr_rnds == 0} {
+		#var {cr_hr} {Undefined}
+	} {
+		#math {cr_hr} {1.0*${cr_class}/${cr_rnds}*1800*.8};
+		#format {cr_hr} {%d} {${cr_hr}};
+		#format {cr_hr} {%g} {${cr_hr}}
+	};
+	#math {cr_class_tot} {${cr_class_tot} + ${cr_class}};
+	#math {cr_rnds_tot} {${cr_rnds_tot} + ${cr_rnds}};
+	#math {cr_count} {${cr_count} + 1};
+	#format {cr_hr} {%+14s} {<078>${cr_hr}<088>};
+	#var {cr_str} {[<078>%1%2<088>] [<078>%3%4<088>] [<138>%5%6<088>] [$cr_hr]};
+	#line gag;
+	#echo {<178> $cr_str<088>}
+}
+#substitute { .--------------------------. .------------. .----.}
+	    {<038> .-------------------------. .------------. .----. .--------------.<088>}
+#substitute {   Monster\'s Name                  Class      Rnds}
+	    {    Monster's Name                Class      Rnds      Exp/Hour}
+#act {^  Current Enemy: } {
+	#math	{cr_avg_class}	{1.0*${cr_class_tot}/${cr_count}};
+	#format	{cr_avg_class}	{%d}	{${cr_avg_class}};
+	#math	{cr_avg_rnds}	{1.0*${cr_rnds_tot}/${cr_count}};
+	#format	{cr_avg_rnds}	{%d}	{${cr_avg_rnds}};
+	#math 	{cr_avg_hr}	{1.0*${cr_class_tot}/${cr_rnds_tot}*1800*.8};
+	#format	{cr_avg_hr}	{%d}	{${cr_avg_hr}};
+	#format	{cr_avg_hr}	{%g}	{${cr_avg_hr}};
+	#var	cr_class_tot	0;
+	#var	cr_rnds_tot	0;
+	#var	cr_count	0;
+	#format	{cr_avg_class}	{%+32s}	{${cr_avg_class}};
+	#format	{cr_avg_rnds}	{%+7s}	{${cr_avg_rnds}};
+	#format	{cr_avg_hr}	{%+17s}	{${cr_avg_hr}};
+	#format	{cr_avg_xp}	{%d}	{${cr_avg_xp}};
+	#format	{cr_avg_xp}	{%+64s}	{${cr_avg_xp}};
+	#var	{cr_str}	{  Average:${cr_avg_class}${cr_avg_rnds}${cr_avg_hr}};
+	#showme {${cr_str}};
+	#NOP #showme {${cr_avg_xp}}
+}
+
+
+/* Eval Enhancer */
+#act {^[EDGE] [BLUN] [HEAT] [COLD] [ACID] [ELEC] [PSI ] [ENER] [TOXI] [RADI]} {
+	#echo {<172> EVAL MATCH <088>};
+	#var eval %0
+}
+
+
+/* ROLM */
+#NOP Set ROLM rune count *UNDER CONSTRUCTION*
+#act {^Warming in your grasp, fifty-six twinkling points of turquoise light come into} {
+	#var rod 56
+}
+
+
+/* Aliases */
+#NOP gwho
+#alias gwho {juggs}
+
+#NOP No killtrig because I have ktrig!
+#alias corpsetrig {#nop}
+
+#NOP Fire all nukes at current enemy
+#alias ff {fire $nukes}
+
+#NOP Support Defend
+#alias sdef {
+	#switch {"%1"} {
+		#case	{""}	{
+			#if {"$support[auto_defend]" == "on"} {
+				#var support[auto_defend] off;
+				#untick support_defend
+			} {
+				#var support[auto_defend] on;
+				#tick {support_defend} {
+					#if {$mip[round] > 0 && $mip[round] < 4} {
+						support defend
+					}
+				} {2}
+			}
+		};
+		#case	{"on"}	{
+			#var support[auto_defend] on;
+			#tick {support_defend} {
+				#if {$mip[round] > 0 && $mip[round] < 4} {
+					support defend
+				}
+			} {2}
+		};
+		#case	{"off"}	{
+			#var support[auto_defend] off;
+			#untick support_defend
+		};
+		#default	{#echo {<202> Invalid input!  Use: on or off <099>}}
+	}
+
+}
+
+#class {juggernaut} {close}

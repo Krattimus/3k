@@ -1,0 +1,13 @@
+#showme READING corpsebot
+#class {corpsebot} {open};
+
+#act {All your corpses are already bigger than what is here.}
+{
+	.goDonateCoffin;
+}
+#act {^The coffin is full!} 
+{
+	.goDonateCoffin;
+}
+
+#class {corpsebot} {close}

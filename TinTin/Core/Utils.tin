@@ -1,0 +1,67 @@
+#CLASS {utils} OPEN
+
+/*****************************************************************
+	String helper, gets length of string
+*****************************************************************/
+#function strlen
+{
+	#var {result} 0;
+	#format {result} {%L} {%1};
+};
+
+/*****************************************************************
+	Everything from index N-1-x to N-1.
+	Also known as the last x items.
+	Ex:  @tail{ {something} {2} };
+		$result => ng
+*****************************************************************/
+#function tail 
+{
+	#var result {%1};
+	#replace {result} {{.(?=.{%2})}} {};
+};
+
+/*****************************************************************
+	Everything from index 0 to X
+	Ex:  @head{ {something} {2} };
+		$result => so
+*****************************************************************/
+#function head 
+{
+	#var result {%1};
+	#format {result} {%.%2s} {$result};
+};
+
+/*****************************************************************
+	Substring. 
+	The two parameters here represent a starting index and a length
+		Ex:  @substr{ {something} {2} {5} };
+		$result => methi	 
+*****************************************************************/
+#function substr 
+{
+	#var {result} {%1};
+	#format {len} {%L} {%1};
+	#math {d} {$len - %2};
+	#var {result} {@head{{@tail{{$result};$d}};%3}};
+};
+
+/*****************************************************************
+	Loops through param1 list variable name and removes el: parm2
+		%1 - Name of list
+		%2 - Element in list
+*****************************************************************/
+#alias removeItemFromList 
+{
+	#showme 1 [%1] 2 [%2];
+
+}
+
+
+
+
+
+#function slice {#format slice_len %L {%1};#local a {%2};#local b {%3};#if {$a<0} {#math a {$slice_len+$a};};#if {$b<0} {#math b {$slice_len+$b};};#math slice_len {$b-$a+1};#var result {@substr{{%1};$a;$slice_len}};};
+
+
+#CLASS {vars} CLOSE

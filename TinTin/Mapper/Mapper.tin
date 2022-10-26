@@ -1,0 +1,451 @@
+#showme READING MAPPER
+#read 3k/TinTin/Mapper/Localizer.tin
+
+#class {mapper} {open}
+
+/*************************************************************
+	Map Data
+*************************************************************/
+#map read 3k/TinTin/Data/3k.map
+#var longcap off;
+#var finding_here off;
+#var mapstatic 1;
+#var area ????;
+#var mapping off;
+#var room_cnt 0;
+#map flag static on
+
+/*************************************************************
+	Events
+*************************************************************/
+.registerEvent onFollowerFollowed onFollowerFollowedMapResponder;
+.registerEvent onPostWimpy onWimpyMapResponder;
+.registerEvent onFailedMovement onFailedMovementMapResponder;
+
+#event {CLASS DESTROYED mapper}
+{
+	.unregisterEvent onFollowerFollowed onFollowerFollowedMapResponder;
+	.unregisterEvent onPostWimpy onWimpyMapResponder;
+	.unregisterEvent onFailedMovement onFailedMovementMapResponder;
+}
+
+/*************************************************************
+	Set the map to our last known location, although
+	it is probably better to do a localizer check here
+*************************************************************/
+#map goto 1;
+#send rating;
+#send pwho;
+#send cc;
+
+/*************************************************************
+ TinTin Events, redraw the map when the map changes
+*************************************************************/
+#event {MAP UPDATED VTMAP} 
+{
+	.triggerEvent onMapUpdated;
+}
+
+/*************************************************************
+ TinTin Events, redraw the map when the map data changes
+*************************************************************/
+#event {MAP ENTER ROOM} 
+{
+	.triggerEvent onEnteredRoom;
+}
+
+/*************************************************************
+ TinTin Events, player exited room
+*************************************************************/
+#event {MAP EXIT ROOM} 
+{
+	.triggerEvent onExitedRoom;
+}
+
+/*************************************************************
+  Handling a response due to a wimpy flee
+*************************************************************/
+#alias onWimpyMapResponder
+{
+	#map move $wimpyDirection;
+};
+
+/*************************************************************
+  Handling following someone
+*************************************************************/
+#alias onFollowerFollowed
+{
+	#map move $followDirection;
+};
+
+/*************************************************************
+	Data grab trigger
+*************************************************************/
+#function cartcheck 
+{
+	#format cart {%.40s} {%0};
+	#if {"$cart" == "                                        " || "$cart" == ""} 
+	{
+		#return 1
+	};
+	#else
+	{
+		#return 0
+	};
+}
+
+
+/*************************************************************
+	This action tries to find a room description combined 
+	with exits
+*************************************************************/
+#act {{=S=(.*) \((.*)\)\s*=S=}} 
+{
+	#var room %2;
+	#var exits %3;
+	#if {"$mapping" == "on"} 
+	{
+		#if {"$finding_here" == "off"} 
+		{
+			#replace exits {,} {;};
+			#foreach {$exits} {eachexit} 
+			{
+				#switch {"$eachexit"} 
+				{
+					#case {"north"}		{#map dig n};
+					#case {"east"}		{#map dig e};
+					#case {"south"}		{#map dig s};
+					#case {"west"}		{#map dig w};
+					#case {"northwest"}	{#map dig nw};
+					#case {"northeast"}	{#map dig ne};
+					#case {"southeast"}	{#map dig se};
+					#case {"southwest"}	{#map dig sw};
+					#case {"up"}		{#map dig u};
+					#case {"down"}		{#map dig d};
+					#default		{#map dig $eachexit}
+				}
+			};
+			#map get {roomexit} {rexit};
+			#foreach {$rexit} {eachexit} 
+			{
+				#map at {$eachexit} 
+				{
+					#map get {roomarea} {eacharea};
+					#if {"$eacharea" == ""} 
+					{
+						#map set {roomcolor} {<118>}
+					}
+				}
+			}
+		};
+		#if {$roomname_len == 0} 
+		{
+			#map set roomname {%2 (%3)}
+		};
+		#if {$roomarea_len == 0} 
+		{
+			#map set roomarea {$area};
+			#map set roomcolor
+		};
+		#if {$roomdesc_len == 0 || "$finding_here" == "on"} 
+		{
+			#var longcap on;
+			#var long {};
+			#act {%%1} 
+			{
+				#if {@cartcheck{%%1}} 
+				{
+					#nop
+				};
+				#else
+				{
+					#var long { ${long}%%1 }
+				}
+			} {2}
+		};
+		#delay 0 .renderMap
+	}
+}
+
+/*************************************************************
+	Expression for finding the room description, no exits
+*************************************************************/
+#act {=S=%1%s=S=} 
+{
+	#var room %1;
+
+	#if { "$mapping" == "on" } 
+	{
+		#if { $roomname_len == 0 }
+		{
+			#map set roomname {%1}
+		};
+
+		#if {$roomarea_len == 0} 
+		{
+			#map set roomarea {$area};
+			#map set roomcolor
+		};
+
+		#if { $roomdesc_len == 0 || "$finding_here" == "on" } 
+		{
+			#var longcap on;
+			#unvar long;
+			#act {%%1} 
+			{
+				#if {@cartcheck{%%1}} 
+				{
+					#nop
+				};
+				#else
+				{
+					#var long { ${long}%%1 }
+				}
+			} {2}
+		};
+
+		#map get {roomvnum} {gonum};
+		#map goto $gonum;
+	}
+} {6}
+
+/*************************************************************
+This action is to find the room exits after a long description
+Once we see this, we can conclude the room description is over
+*************************************************************/
+#act {=X={.*}} 
+{
+	#if {"$longcap" == "on"} 
+	{
+		#var longcap off;
+		#unact {%%1};
+		#if {"$finding_here" == "off"} 
+		{
+			#map set roomdesc {$long}
+		}
+	}
+} {1}
+
+/*************************************************************
+The area has changed 
+*************************************************************/
+#act {AREA NAME: %1 [%2]} 
+{
+	#var area %1
+}
+
+/*************************************************************
+ Responding to blocked exits in general. 
+*************************************************************/
+#alias onFailedMovementMapResponder
+{
+	#if { $mapstatic }  
+	{
+		#map undo;
+	};
+};
+
+/*************************************************************
+	Helper Calls - Mapped Area Counter
+*************************************************************/
+#alias {area_mapped %1} 
+{
+	#unvar area_mapped;
+	#map list {} {} {} {%1} {variable} {area_mapped};
+	#showme {&area_mapped[] rooms mapped.};
+};
+
+
+#alias {gonum}
+{
+	#map run %1;
+};
+
+/*************************************************************
+	Map actions
+*************************************************************/
+#alias {go} 
+{
+	#map run {{roomnote} {%0}};
+}
+
+#alias {mapgo} {#map goto {roomnote} {%0}}
+
+#alias {findhere} 
+{
+	#var finding_here on;
+	rating;
+	#delay 0 mapon;
+	#delay 0.1 look;
+	#delay 0.2
+	{
+		#var findexits $exits;
+		#replace findexits {,} {;};
+		#map list {roomarea} {$area} {roomname} {$room%*} {roomexits} {$findexits} {roomdesc} {$long};
+		#map list {roomarea} {$area} {roomname} {$room%*} {roomexits} {$findexits} {roomdesc} {$long} {variable} {findroom};
+		#if {&findroom[] == 1} 
+		{
+			#map goto *findroom[1..1]
+		};
+		#var finding_here off;
+		mapoff
+	}
+}
+
+#alias {describeroom}
+{
+	#map {get} {ROOMVNUM} {original};
+	#map go %1;
+
+	#map {get} {ROOMNAME} {roomname};
+	#map {get} {ROOMVNUM} {roomvnum};
+	#map {get} {ROOMAREA} {roomarea};
+	#map {get} {ROOMDESC} {roomdesc};
+	#showme {Describing: [$roomvnum] - [$roomname] in [$roomarea]};
+	#showme $roomdesc;
+	#map go $original;
+}
+
+#alias {displayroom} 
+{
+	#map {get} {ROOMVNUM} {original};
+	
+	#map go %1;
+	
+	#map {get} {ROOMNAME} {roomname};
+	#map {get} {ROOMVNUM} {roomvnum};
+	#map {get} {ROOMAREA} {roomarea};
+	#showme {Candidate: [$roomvnum] - [$roomname] in [$roomarea]};
+
+	#map go $original;
+};
+
+#alias {sss} 
+{
+	#script {python3 ~/3k/TinTin/Tools/findme.py "%0"};
+}
+
+
+#alias {mapsearch} 
+{
+	#show <129>Name matches:<088>;
+	#map list {%i%*%0%*};
+	#show \n;
+	#show <129>Note matches:<088>;
+	#map list {} {} {} {} {%i%*%0%*};
+}
+
+#alias {mapsave} 
+{
+	#map write 3k/TinTin/Data/3k.map;
+}
+
+#alias {.mapAnchor} 
+{
+	#map get {roomvnum} {mapAnchor};
+}
+
+#alias {.mapReturn}
+{
+	#map run $mapAnchor;
+}
+
+#alias {mapon} 
+{
+	#send !brief off yes;
+	#map flag static off;
+	#var mapstatic 0;
+	#var area %1;
+	#var mapping on;
+}
+
+#alias {mapoff}
+{
+	#send !brief on yes;
+	#map flag static on;
+	#var mapstatic 1;	
+	#unvar mapping;
+}
+
+#alias {ma} {#map set roomarea {$area}}
+
+#NOP List all Roomnotes for 'go' alias
+#alias {.notelist} 
+{
+	#map list {roomnote} {%+} {variable} {noterooms};
+	#foreach {*noterooms[]} {room} {#map get {roomnote} {notes[$room]} {$room}};
+	#list notes sort;
+	#var notes
+}
+
+#NOP Search Room Nouns (built by MIP)
+#alias {sn} 
+{
+	#var noun_cnt &{nouns[]};
+	#loop 1 &{nouns[]} cnt 
+	{
+		#showme Searching Noun [$nouns[$cnt]];
+		look at $nouns[$cnt];
+		search $nouns[$cnt];
+	};
+	#delay 0.5 
+	{
+		#if {$noun_cnt < &{nouns[]}} 
+		{
+			#echo {<128>New items found!  Search again!<088>}
+		}
+	}
+}
+
+#NOP Link rooms with a void insert
+#alias voidlink 
+{
+	#var dir %1;
+	#var dest_num %2;
+	#map link $dir $dest_num both;
+	#map insert $dir void
+}
+
+/* Highmortal Portals Toggles */
+#alias hmavoid 
+{
+	#map at 148 {#map exitflag {portal road} avoid on};
+	#map at 148 {#map exitflag {portal eforest} avoid on};
+	#map at 148 {#map exitflag {portal wforest} avoid on};
+	#map at 148 {#map exitflag {efor} avoid on};
+	#map at 148 {#map exitflag {portal desert} avoid on};
+	#map at 148 {#map exitflag {portal ice} avoid on}
+}
+
+#alias hmfollow 
+{
+	#map at 148 {#map exitflag {portal road} avoid off};
+	#map at 148 {#map exitflag {portal eforest} avoid off};
+	#map at 148 {#map exitflag {portal wforest} avoid off};
+	#map at 148 {#map exitflag {efor} avoid off};
+	#map at 148 {#map exitflag {portal desert} avoid off};
+	#map at 148 {#map exitflag {portal ice} avoid off}
+}
+
+/* House avoid for followers */
+#NOP Using high weight instead of avoid so paths into house will still work, but pathing will avoid it going through town
+#alias homeavoid 
+{
+	#map at 152 {#map set roomweight 100};
+}
+
+#alias homefollow 
+{
+	#map at 152 {#map set roomweight 1};
+}
+
+/* Area Specific Actions */
+#NOP Section Z
+#ACTION {^Just a reminder, your continue code for Section %d is %w}
+{
+    #variable {sectionz[%1]} {%2}
+}
+
+
+
+#class {mapper} {close}

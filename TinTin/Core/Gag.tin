@@ -1,0 +1,137 @@
+#showme READING GAG.TIN
+#class {gags} {open}
+
+/* Blank Line */
+#gag {^$}
+
+/* Guilds */
+#NOP Juggernauts
+#gag {YOU FRENZY!!!}
+#gag {Your feral rage allows you to shrug off some of the blow.}
+
+#NOP Priests
+#gag { screams in agony!$}
+#gag { soul to a foray of crippling mind subversion!$}
+#gag { recites ancient verses of his deity.$}
+
+/* Item Gags */
+#NOP CMC
+#gag {The armour infuses you with chemicals, augmenting your abilities.}
+#gag {A flash of light from the CMC-660 fills everyone in your party with invigorating warmth!}
+#gag {The CMC-660 infuses you with adrenaline!}
+#gag {A flicker in the containment field surrounding the CMC's plasma tank}
+#gag {results in a plasma leak within your suit, causing you great pain.}
+#gag {The CMC-660 blocks the entire attack!!}
+#gag {The CMC-660 REFLECTS the entire attack!!}
+
+#NOP Cocoon
+#gag {The sticky cocoon absorbs part of the attack!}
+#gag {The cocoon fuses with the attack and grows stronger!}
+
+#NOP Redaxe
+#gag {Chopping violently, the axe draws {rancor|crimson|blood} from }
+#gag {You slice, and a flow of rancor falls from }
+#gag {You slice, and a flow of blood falls from }
+#gag {You slice, and a flow of crimson falls from }
+#gag {The blood from the wound flows into your soul through the Axe.}
+
+#NOP Powerstone
+#gag {The energy of the powerstone flows through you.}
+#gag {Magical energies course through your body.}
+
+#NOP Zelligar's Headband
+#gag {Zelligar's Headband warms you with a radiant glow.}
+
+
+/* Mskills */
+#NOP Dodge
+#gag {You nimbly dodge }
+
+#NOP Critical Hit
+#gag {You critically hit }
+
+#NOP Penetrate
+#gag {You drive your attack past %*'s resistances!}
+
+#NOP Shield Block
+#gag {Your shield blocks %* attack!}
+
+
+/* Professions */
+#NOP Assassin
+#gag {Your insidious inspiration flows through you as you make the most of each attack!}
+#gag {Your insidious inspiration fades.}
+
+#NOP Big Game Hunter
+#gag {Your crazed ambition overflows!}
+#gag {Your ambition overflows as you try to bring down the big game with a spell!}
+#gag {Your ambition overflows as you try to bring down the big game with a ferocious attack!}
+#gag {Your wild ambition drives you ever onward!}
+#gag {Your wild ambition takes a back seat to prudence.}
+
+#NOP Lumberjack
+#gag {You sing: }
+#gag {Yes, you're a lumberjack and you're ok, but you're done singing for now.}
+
+#NOP Tactician
+#gag {You outfox your opponent and take advantage of it!}
+#gag {You press your advantage on your outsmarted foe!}
+#gag {Your tactical advantage ends.}
+
+#class {gags} {close}
+
+
+/* Eternals */
+#NOP Energy Well
+#gag {^The brilliant sphere flashes brightly.}
+#NOP Immunity
+#gag {^The assault glances harmlessly off your aura.}
+
+
+/* Dog */
+#gag {Your dog tears a chunk of flesh from }
+
+/* Mobs/Areas */
+#NOP Cubes
+#gag {^Angered, the small cube sprays you with poison.}
+#gag {^The small cube tries to roll over you. Failing, it settles with}
+#gag {^infecting part of your leg instead.}
+
+#gag {^Strange and alien energies race around the edges of the cube.}
+
+#NOP Rimalkins
+#gag {^The small Rimalkin lunges at you with its needle-like fangs!}
+#gag {^The small Rimalkin scratches about the room.}
+#gag {^The small Rimalkin slashes at you with tis razor sharp claws!}
+
+#NOP Night of Colour
+#gag {^Impediment shakes, fire burning.}
+#gag {^Impediment feels, but thinks not.}
+#gag {^Impediment crashes its boughs together.}
+#gag {^Thorns shine darkly in the moonlight, Impediment rakes}
+#gag {^soft flesh!}
+
+#gag {^Hostile hisses with pain, padding the wrong way.}
+#gag {^Hostile slides past, the blow slipping off its pelt.}
+#gag {^Fast and fearless, Hostile takes the blow.}
+#gag {^Such speed, Hostile pads to the left.}
+
+#gag {^Shadow sees the light, frenzied screeching!}
+#gag {^Shadow seeps into the ground, reappearing momentarily.}
+#gag {^Shadow slows, light sinking in, time flowing out.}
+#gag {^Shadow scrapes you with its icy claws!}
+#gag {^Shadow pierces you with the cold of death!}
+#gag {^Shadow slides up your leg.}
+#gag {^Caught in the light, Shadow withers.}
+
+#gag {^Shield askew, Bulwark screams, black blood flows.}
+#gag {^Glancing blow, Shield shudders.}
+#gag {^Serrated sword sweeping in front, Bulwark rolls.}
+#gag {^Bulwark pulls his shield up, struck low.  Oopse}
+
+#gag {^Stuck in his own trap, Furtive squeals.}
+#gag {^Furtive darts behind his web, protected by the silk.}
+
+#gag {^Tough as steel, Resilient feels nothing.}
+
+#class {gags} {close}

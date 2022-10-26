@@ -1,0 +1,46 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Controller Behavior Settings
+*******************************************************************************/
+#var {loopCount} {0}
+#var {shouldVacuum} {1}
+#var autoSell {off};
+#var corpseDonations {off};
+#var whichShop {wayhaven};
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrolStart 6746;
+#var patrolArea {Portal of Life};
+#var {botpath} {n;n;n;nw;nw;n;se;se;n;nw;nw;ne;n;se;ne;s;sw;se;ne;s;sw;s;s;ne;n;se;ne;ne;ne;nw;nw;nw;n;nw;ne;se;s;se;se;n;nw;n;se;se;s;s;se;n;n;n;n;n;n;n;n;nw;s;s;s;sw;n;n;n;sw;s;s;sw;sw;nw;n;se;ne;nw;ne;nw;ne;ne;ne;nw;nw;nw;nw;nw;s;se;sw;se;sw;se;sw;s;s;nw;sw;n;ne;nw;nw;n;se;se;n;nw;ne;n;n;sw;s;sw;n;sw;sw;sw;sw;sw;sw;s;ne;s;se;n;n;ne;s;s;s;ne;n;n;se;s;se;sw;se;sw;nw;sw;nw;nw;nw;s;s;s;s;s;s;ne;se;n;nw;n;ne;ne;se;ne;se;sw;sw;nw;sw;se;se;sw;s;se;se;se;se;se;s;s}
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+.registerEvent onMonsterFound onMobAreaResponder;
+#alias {onMobAreaResponder}
+{
+	#REGEXP {"$foundMobName"} {"%*Faerie Lizard%*"} {#var shouldKill lizard};
+	#REGEXP {"$foundMobName"} {"%*Queen's Elite Guardswoman%*"} {#var shouldKill guard};
+	#REGEXP {"$foundMobName"} {"%*Black Patrol Guard%*"} {#var shouldKill guard};
+	#REGEXP {"$foundMobName"} {"%*Black Patrol Leader%*"} {#var shouldKill guard};
+	#REGEXP {"$foundMobName"} {"%*Wild Stag%*"} {#var shouldKill stag};
+	#REGEXP {"$foundMobName"} {"%*Faerie Lizard%*"} {#var shouldKill lizard};
+	#REGEXP {"$foundMobName"} {"%*Baby Dragon%*"} {#var shouldKill dragon};
+	#REGEXP {"$foundMobName"} {"%*Rabid Wolf%*"}	{#var shouldKill wolf};
+	#REGEXP {"$foundMobName"} {"%*Ragged Peasant%*"} {#var shouldKill peasant};
+	#REGEXP {"$foundMobName"} {"%*Sylvan Elf%*"} {#var shouldKill elf};
+	#REGEXP {"$foundMobName"} {"%*Wyvern%*"} {#var shouldKill wyvern};
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+
+
+#class {bot} {close}

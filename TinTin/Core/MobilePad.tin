@@ -1,0 +1,24 @@
+#showme READING MOBILE PAD
+#class {numpad} {open}
+#NOP If using PuTTy, be sure "Disable application keypad mode" is unchecked in Settings -> Terminal -> Features
+
+/* Number Pad Movement */
+#macro {\e[4~} {sw}
+#macro {\e[B} {s}
+#macro {\e[6~} {se}
+#macro {\e[D} {w}
+#macro {\eOE} {look;search}
+#macro {\e[C} {e}
+#macro {\e[1~} {nw}
+#macro {\e[A} {n}
+#macro {\e[5~} {ne}
+#macro {\e0p} {d}
+#macro {\e0n} {u}
+
+#macro {\eOP} {search}
+
+/* Alternate up/down using - for up and + for down */
+#NOP #macro {\eOS} {u}
+#NOP #macro {\eOl} {d}
+
+#class {numpad} {close}

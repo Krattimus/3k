@@ -1,0 +1,52 @@
+#showme READING START.TIN
+
+#alias {load3k} 
+{
+	#NOP { *********** Base Core ************ };
+	#read 3k/TinTin/Core/Utils.tin;	
+	#read 3k/TinTin/Core/Ticklist.tin;
+	#read 3k/TinTin/Core/Vars.tin;
+	#read 3k/TinTin/Core/Core.tin;
+	#read 3k/TinTin/Core/Settings.tin;
+	#read 3k/TinTin/Core/Ansi.tin;
+	#read 3k/TinTin/Core/Events.tin;
+	#read 3k/TinTin/Core/Graph.tin;
+	
+	#NOP { *********** Basic Mechanics ************ };
+	#read 3k/TinTin/Core/ChatMonitors.tin;
+	#read 3k/TinTin/Core/Gag.tin;
+	#read 3k/TinTin/Core/Corpses.tin;
+	#read 3k/TinTin/Core/Dog.tin;
+	#read 3k/TinTin/Core/Mip.tin;
+	#read 3k/TinTin/Core/Inventory.tin;
+
+	#NOP { *********** Profession ************ };
+	#read 3k/TinTin/Professions/Transmuter.tin;
+
+	#NOP { *********** Displays ************ };
+	#read 3k/TinTin/Displays/ServerBar.tin;
+	#read 3k/TinTin/Displays/HealthBar.tin;
+	#read 3k/TinTin/Displays/ChatPanel.tin;
+	#read 3k/TinTin/Displays/MiniMap.tin;
+	#read 3k/TinTin/Displays/PatrolDisplay.tin;
+	#read 3k/TinTin/Displays/InventoryPanel.tin;
+
+	#NOP { *********** Mapper ************ };
+	#read 3k/TinTin/Mapper/Mapper.tin;
+	#read 3k/TinTin/Mapper/Obstacles.tin;
+	#read 3k/TinTin/Core/Party.tin;
+	
+	#NOP { *********** Controllers ************ };
+	#read 3k/TinTin/Bot/PatrolList.tin;
+	#read 3k/TinTin/Bot/PatrolBot.tin;
+	#read 3k/TinTin/Bot/ShopBot.tin;
+	#read 3k/TinTin/Bot/CorpseBot.tin;
+	#read 3k/TinTin/Bot/BotMain.tin;
+}
+
+load3k;
+#delay 0.1 .render;
+#delay 0.15 look;
+
+
+#sub {~\t} {       }
