@@ -239,7 +239,7 @@ The area has changed
 *************************************************************/
 #alias onFailedMovementMapResponder
 {
-	#if { $mapstatic }  
+	#if { !$mapstatic }  
 	{
 		#map undo;
 	};

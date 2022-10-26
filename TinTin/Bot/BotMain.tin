@@ -93,7 +93,7 @@ mapoff;
 
 	#if { $nonPartyPlayerFound || $playerFound } 
 	{
-			.showSetting {Other Player} {"$otherPlayer"};
+		.showSetting {Other Player} {"$otherPlayer"};
 	};
 };
 
@@ -119,6 +119,7 @@ mapoff;
 ************************************************************/
 #action { gold coins.$} 
 {
+	#var goldFound 1;
 	.triggerEvent onGoldFound;
 }
 
@@ -158,9 +159,9 @@ mapoff;
 /************************************************************
 	Detects a monster
 ************************************************************/
-#action {^=M=%1$}
+#action {^=M= %*.$}
 {
-	#var foundMob 1;
+	#var mobFound 1;
 	#var foundMobName %1;
 
 	.triggerEvent onMonsterFound;

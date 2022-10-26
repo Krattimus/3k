@@ -8,9 +8,9 @@
 	all the watchers on these messages so we can tell the map
 	that it needs to undo the last movement it made.
 *************************************************************/
-#act {The spirit of Waldo appears before you.} {.triggerEvent onFailedMovement; } {1}
+#act {The spirit of Waldo appears before you.} { #map undo;} {1}
 
-#act {You are too powerful to pass this gate.} {.triggerEvent onFailedMovement; }
+#act {You are too powerful to pass this gate.} { #map undo; }
 #NOP Juggernauts
 #act {^The room is locked.} {.triggerEvent onFailedMovement;}
 #act {^Dirk says: This area is for Wolves not } {.triggerEvent onFailedMovement;}

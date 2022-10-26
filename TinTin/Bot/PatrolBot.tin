@@ -110,10 +110,13 @@
 ************************************************************/
 #alias .doBehaviorAttack
 {
-	#var attacking 1;
-	#var canWalk 0;
-	#var deadManCount = 0;
-	#send !kill $shouldKill;
+	#if { !$attacking }
+	{
+		#var attacking 1;
+		#var canWalk 0;
+		#var deadManCount = 0;
+		#send !kill $shouldKill;
+	};
 };
 
 /************************************************************

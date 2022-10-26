@@ -6,20 +6,6 @@
 #var currentController {none};
 #var resumeController {none};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #alias {.debugLog}
 {
         .triggerEvent onDebugLog;
@@ -119,7 +105,7 @@
         patrol list. If a parameter is added, it will over
         ride the current position and go patrolling there
 **************************************************************/
-#alias {.go}
+#alias .goPatrolling
 {
         .stop;
 

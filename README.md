@@ -22,14 +22,7 @@
 	Welcome, this is a code base to MMO-ify my experiences while mudding and to try and 
 provide a higher level control over a character.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Inix Repo »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+
   </p>
 </div>
 
