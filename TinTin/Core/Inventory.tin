@@ -127,18 +127,18 @@
         #if { $inventoryID > 0 && $inventoryID <= &{inventory[]} }
         {
             #var canDrop 0;            
-            #var itemToDrop $inventory[$digit];
+            #var itemToDrop $inventory[$inventoryID];
             #REGEXP {$itemToDrop} {*%*} 
             {
-                #showme Can't drop #itemToDrop;
+                #showme Can't drop $itemToDrop;
             } 
             {
                 #var canDrop 1;
-            };
+            };i
 
             #if { $canDrop }
             {
-                #send !drop $inventory[$digit];            
+                #send !drop $inventory[$inventoryID];            
             }
         };
     } 
