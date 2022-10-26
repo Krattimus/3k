@@ -14,13 +14,13 @@
 /*********************************************************
 	Stops controllers
 *********************************************************/
-#alias {.stop} 
+#alias {.stop}
 {
         #undelay {doLoadPatrollStart};
         #undelay {doPatrolStart};
 
         #var stoppedController $currentController;
-        .triggerEvent requestStop;
+        .triggerEvent onRequestStop;
 } {1};
 
 /*********************************************************
@@ -29,7 +29,7 @@
 #alias {.resume}
 {
         #var resumeController $stoppedController;
-        .triggerEvent requestResume;
+        .triggerEvent onRequestResume;
 } {1};
 
 /*********************************************************

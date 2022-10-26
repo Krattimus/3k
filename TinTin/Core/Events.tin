@@ -2,12 +2,12 @@
 #class {events} {open}
 
 
-#alias {.registerEvent}
+#alias .registerEvent
 {
 	#list %1 ADD %2;
 };
 
-#alias {.unregisterEvent}
+#alias .unregisterEvent
 {
 	#if { &{%1} != 0 }
 	{
@@ -22,7 +22,7 @@
 };
 
 
-#alias {.triggerEvent}
+#alias .triggerEvent
 {
 	
 	#var suffix @substr{{%0};{0};{2}};

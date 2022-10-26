@@ -20,8 +20,8 @@
 .registerEvent onRoomSeen onRoomSeenCycleResponder;
 .registerEvent onFailedMovement onFailedMovementCyclerResponder;
 .registerEvent onDebugLog onDebugLogCycleResponder;
-.registerEvent requestStop requestStopPatroller;
-.registerEvent requestResume requestResumePatroller;
+.registerEvent onRequestStop requestStopPatroller;
+.registerEvent onRequestResume requestResumePatroller;
 
 #event {CLASS DESTROYED patrolbot}
 {
@@ -31,8 +31,8 @@
 	.unregisterEvent onFailedAttack onFailedAttackCycleResponder;
 	.unregisterEvent onFailedMovement onFailedMovementCyclerResponder;
 	.unregisterEvent onDebugLog onDebugLogCycleResponder;
-	.unregisterEvent requestStop requestStopPatroller;
-	.unregisterEvent requestResume requestResumePatroller;
+	.unregisterEvent onRequestStop requestStopPatroller;
+	.unregisterEvent onRequestResume requestResumePatroller;
 };
 
 #alias onDebugLogCycleResponder
@@ -90,10 +90,22 @@
 ************************************************************/
 #alias .determineState 
 {
-	#NOP { We see mobs since our last update };
-	#if { $mobFound && "$shouldKill" == "" }
+	#if { $attacking }
 	{
-		#var canWalk 1;
+		#undelay {decisionStall};
+		#var canWalk 0;
+	};
+	#else
+	{
+		#NOP { We see mobs since our last update };
+		#if { $mobFound && "$shouldKill" == "" }
+		{
+			#var canWalk 0;
+		};
+		#elseif { !$mobFound }
+		{
+			#var canWalk 1;
+		};
 	};
 
 	#NOP { We were attacked since our last update };
@@ -112,6 +124,7 @@
 {
 	#if { !$attacking }
 	{
+		#undelay {decisionStall};
 		#var attacking 1;
 		#var canWalk 0;
 		#var deadManCount = 0;
@@ -124,6 +137,7 @@
 ************************************************************/
 #alias .doBehaviorPatrol
 {
+	#undelay {decisionStall};
 	#var deadManCount 0;
 	#var canWalk 0;
 	#path walk;
@@ -184,7 +198,7 @@
 
 	#if { $patrolling }
 	{
-		#delay 0.2 { glance; };
+		#delay {0.2} { glance; };
 	};
 };
 
@@ -225,7 +239,7 @@
 		};
 	
 		glance;
-	} {5};
+	} {30};
 };
 
 /***********************************************************
@@ -252,7 +266,7 @@
 	#if { $patrolling }
 	{
 		#echo {<202> Patrol Stopped Due to Completion <088>};
-		#undelay decisionStall;
+		#undelay {decisionStall};
 		#var patrolling 0;
 		.mapAnchor;
 		#var patrol[anchored] $mapAnchor;
