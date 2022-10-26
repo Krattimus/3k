@@ -77,7 +77,7 @@
 			.doBehaviorPatrol;
 		};
 	};
-} {0.2};
+} {0.5};
 
 /************************************************************
 	DetermineState
@@ -98,13 +98,9 @@
 	#else
 	{
 		#NOP { We see mobs since our last update };
-		#if { $mobFound && "$shouldKill" == "" }
+		#if { !$playerFound && $mobFound && "$shouldKill" != "" }
 		{
 			#var canWalk 0;
-		};
-		#elseif { !$mobFound }
-		{
-			#var canWalk 1;
 		};
 	};
 
