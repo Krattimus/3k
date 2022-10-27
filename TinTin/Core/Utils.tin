@@ -47,14 +47,181 @@
 };
 
 /*****************************************************************
+	Begins with.
+	This returns true if the 2nd parameter occurs in the first
+	string starting at the 0th index
+*****************************************************************/
+#function beginsWith
+{	
+	#var result 0;
+	#local len  @strlen{%2};
+	#local front @substr{{%1} {0} {$len}};
+
+	#if { "$front" == "%i%2" }
+	{
+		#return 1;
+	};
+	#else
+	{
+		#return 0;
+	};
+}
+
+/*****************************************************************
+	Returns the number of elements in a #list
+*****************************************************************/
+#function getNumElements
+{
+	#var result &{%0[]};
+}
+
+/*****************************************************************
+	Returns true if the 2nd string is found in the first
+*****************************************************************/
+#function contains
+{
+	#if { "%1" == "%*%2%*" }
+	{
+		#return 1;
+	};
+	#else
+	{
+		#return 0;
+	}
+};
+
+/*****************************************************************
+	Returns true if the 2nd string is found in the first
+*****************************************************************/
+#function containsNoCase
+{
+	#if { "%1" == "%i%*%2%*" }
+	{
+		#return 1;
+	};
+	#else
+	{
+		#return 0;
+	}
+};
+
+/*****************************************************************
+	Returns true if the 2 strings match
+		Match is a case insensitive equality
+*****************************************************************/
+#function equalsIgnoreCase
+{
+	#if { %2 == %1 }
+	{
+		#return 1;
+	};
+
+	#if { "%2" == "%i%1" }
+	{
+		#return 1;
+	};
+	#else
+	{
+		#return 0;
+	}
+};
+
+/*****************************************************************
+	Is Digit
+*****************************************************************/
+#function isDigit
+{
+    #if { "%0" == "%d" }
+	{
+		#return 1;
+	};
+	#else
+	{
+		#return 0;
+	};
+};
+
+/*****************************************************************
+	True if the variable is empty
+*****************************************************************/
+#function isEmpty
+{
+	#if { "%0" == "" }
+	{
+		#return 1;
+	};
+	#else
+	{
+		#return 0;
+	}
+};
+
+/*****************************************************************
+	Returns indexOf where the 2nd string was found inside
+	the first string
+*****************************************************************/
+#function indexOf
+{
+	#local lpsz %2;
+	#local start 0;
+	#local thisLength @strlen{%0};
+	#local length @strlen{$lpsz};
+	#local lpsz2 {};
+	#local lpsz3 {};
+	
+	#if { $length == 0 }
+	{ #return {-1}; };
+	
+	#math {maxTestingIndex} {$thisLength-$length};
+	
+	#while { $start <= $maxTestingIndex }
+	{
+		#local testedLength 1;
+		#local lpsz3 @substr{{%1}{$start}{$testedLength}};
+
+		#while { @containsNoCase{ {$lpsz} {$lpsz3} } }
+		{
+			#math {testedLength} {$testedLength+1};
+			#local lpsz3 @substr{{%1}{$start}{$testedLength}};
+
+			#if { @equalsIgnoreCase{ {"$lpsz3"} {"$lpsz"} } }
+			{
+				#return $start;
+			};			
+		};
+
+		#if { @equalsIgnoreCase{ {$lpsz3} {$lpsz} } }
+		{
+			#return $start;
+		};			
+	
+
+		#math {start} {$start+1};
+	};
+
+	#return -1;
+}
+
+/*****************************************************************
 	Loops through param1 list variable name and removes el: parm2
 		%1 - Name of list
 		%2 - Element in list
 *****************************************************************/
 #alias removeItemFromList 
 {
-	#showme 1 [%1] 2 [%2];
+	#local list $%1;
+	#local itemID 1;
+	#while {$itemID <= @getNumElements{list}} 
+	{
+		#local item $list[$itemID];
 
+		#if { @equalsIgnoreCase{ {$item} {%2}} }
+		{
+			#list %1 {DEL} {$itemID};
+		};
+
+		#math {itemID} {$itemID+1};
+	};
 }
 
 

@@ -24,9 +24,8 @@
 
 #alias .triggerEvent
 {
-	
-	#var suffix @substr{{%0};{0};{2}};
-	#var name @substr{{%0};{2};{@strlen{%0}-2}};
+	#local suffix @substr{{%0};{0};{2}};
+	#local name @substr{{%0};{2};{@strlen{%0}-2}};
 	
 	#format preCall {onPre%s} {$name};
 	#format call {on%s} {$name};
@@ -34,7 +33,7 @@
 
 	#if { &{$preCall} != 0 }
 	{
-		#var list ${$preCall};
+		#local list ${$preCall};
 		#foreach {$list[%*]} {callback} 
 		{
 			#if { "$callback" != "" }
@@ -46,7 +45,7 @@
 
 	#if { &{$call} != 0 }
 	{
-		#var list ${$call};
+		#local list ${$call};
 		#foreach {$list[%*]} {callback} 
 		{
 			#if { "$callback" != "" }
@@ -58,7 +57,7 @@
 
 	#if { &{$postCall} != 0 }
 	{
-		#var list ${$postCall};
+		#local list ${$postCall};
 		#foreach {$list[%*]} {callback} 
 		{
 			#if { "$callback" != "" }

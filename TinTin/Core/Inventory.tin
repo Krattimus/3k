@@ -120,28 +120,30 @@
 ************************************************/
 #alias {drop}
 {
-    #var inventoryID %1;
-
-    #REGEXP {$inventoryID} {{^([0-9]*)}$}
+    #local inventoryID %1;
+    #if { @isDigit{$inventoryID} }
     {
-        #if { $inventoryID > 0 && $inventoryID <= &{inventory[]} }
+        #if { $inventoryID > 0 && $inventoryID <= @getNumElements{inventory} }
         {
             #var canDrop 0;            
             #var itemToDrop $inventory[$inventoryID];
-            #REGEXP {$itemToDrop} {*%*} 
+
+            #if { @beginsWith{ {$itemToDrop} {*} } }
             {
                 #showme Can't drop $itemToDrop;
-            } 
+            };
+            #else
             {
                 #var canDrop 1;
-            };i
+            };
 
             #if { $canDrop }
             {
                 #send !drop $inventory[$inventoryID];            
             }
         };
-    } 
+    };
+    #else
     { 
         #send !drop %0;
     };
@@ -154,7 +156,7 @@
 {
     #if { $inventoryOpen }
     { 
-        .removeItemFromInventory $itemDropped; 
+        .removeItemFromInventory {$itemDropped}; 
         .renderInventory;
     };
 }
@@ -166,7 +168,7 @@
 {
     #if { $inventoryOpen }
     { 
-        .addItemToInventory $itemTaken; 
+        .addItemToInventory {$itemTaken}; 
         .renderInventory;
     };
 }
@@ -180,28 +182,28 @@
     #local foundItemID 0;
     #local similarCount 0;
 
-    #while {$itemID < &{inventory[]} && $foundItemID == 0} 
+    #while {$itemID <= @getNumElements{inventory} && $foundItemID == 0} 
     {
         #math {itemID} {$itemID + 1};
 
         #NOP {If name matches exactly};
-        #REGEXP {$inventory[$itemID]} {%i%0}
+        #if { @matches{ {$inventory[$itemID]} {%0}} }
         {
             #var foundItemID $itemID;
-        }
+        };
+        #else
         {
-            #REGEXP {%0} {%i$inventory[$itemID]}
+            #if { @containsNoCase{{%0} {$inventory[$itemID]}}}
             { 
                 #var foundItemID $itemID;
                 #math {similarCount} {$similarCount + 1};
-            } { #NOP {Do nothing};};
+            };
         };
     };
 
     #if { $similarCount > 1 }
     { #var foundItemID 0; };
 
-    #showme $foundItemID;
     #if { $foundItemID != 0 }
     {
         #if { $inventoryCount[$foundItemID] == 1 }
@@ -225,22 +227,24 @@
     #local itemID 0;
     #local foundItemID 0;
     #local similarCount 0;
-    #while {$itemID < &{inventory[]} && !$alreadyHave}  
+
+    #while {$itemID <= @getNumElements{inventory} && !$alreadyHave}  
     {
         #math {itemID} {$itemID + 1};
 
         #NOP {If name matches exactly};
-        #REGEXP {$inventory[$itemID]} {%i%0}
+        #if { @matches{ {$inventory[$itemID]} {%0} } }
         {
             #math {inventoryCount[+$itemID]} {$inventoryCount[$itemID]+1};
             #var alreadyHave 1;
-        }
+        };
+        #else
         {
-            #REGEXP {$inventory[$itemID]} {%0} 
+            #if { @containsNoCase{ {$inventory[$itemID]} {%0} } }
             { 
                 #math {similarCount} {$similarCount + 1};
                 #var foundItemID $itemID;
-            } { #NOP {Do nothing}; };
+            }
         };
     };
 

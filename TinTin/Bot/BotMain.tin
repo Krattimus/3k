@@ -183,7 +183,7 @@ mapoff;
 {
 	#NOP {Any player detected};
 	#var playerFound 1;
-	#var otherPlayer %0;
+	#var otherPlayer %1;
 
 	#NOP {Non party member detected};
 	#var simplifiedParty $party;
@@ -357,7 +357,7 @@ mapoff;
     #REGEXP {%1} {coins} { #NOP {nothing};} 
     {
 		#var itemTaken %1;
-		removeItemFromList {items} $itemDropped;
+		removeItemFromList {items} {$itemDropped};
 		.triggerEvent onItemTaken;
     };
 };
