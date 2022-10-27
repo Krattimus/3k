@@ -30,6 +30,7 @@
 	#read 3k/TinTin/Displays/MiniMap.tin;
 	#read 3k/TinTin/Displays/PatrolDisplay.tin;
 	#read 3k/TinTin/Displays/InventoryPanel.tin;
+	#read 3k/TinTin/Displays/MiningPanel.tin;
 
 	#NOP { *********** Mapper ************ };
 	#read 3k/TinTin/Mapper/Mapper.tin;
@@ -42,6 +43,8 @@
 	#read 3k/TinTin/Bot/ShopBot.tin;
 	#read 3k/TinTin/Bot/CorpseBot.tin;
 	#read 3k/TinTin/Bot/BotMain.tin;
+	#read 3k/TinTin/Bot/Miner.tin;
+	
 }
 
 load3k;

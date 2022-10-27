@@ -39,6 +39,7 @@
 #var itemDropped {};
 #var itemTaken {};
 #var items {};
+#var lastItemFound {};
 
 /************************************************************
 	Register events
@@ -131,7 +132,7 @@ mapoff;
 {
 	#var foundItem 1;
 	#list {items} {add} {%1};
-
+	#var lastItemFound %1;
 	.triggerEvent onItemFound;
 }
 
@@ -142,7 +143,7 @@ mapoff;
 {
 	#var foundItem 1;
 	#list {items} {add} {%1};
-
+	#var lastItemFound %1;
 	.triggerEvent onItemFound;
 }
 
@@ -153,7 +154,7 @@ mapoff;
 {
 	#var foundItem 1;
 	#list {items} {add} {%1};
-	
+	#var lastItemFound %1;
 	.triggerEvent onItemFound;
 }
 
@@ -488,6 +489,14 @@ mapoff;
 		};
 	}
 };
+
+/************************************************************
+	Detect TinTin's end of #path walking
+************************************************************/
+#action {#PATH WALK: #END OF PATH} 
+{
+	.triggerEvent onPathFinished;
+}
 
 /************************************************************
 	Maybe another player picked them up or they got reset

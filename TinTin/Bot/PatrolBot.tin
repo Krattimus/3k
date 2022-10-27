@@ -22,6 +22,7 @@
 .registerEvent onDebugLog onDebugLogCycleResponder;
 .registerEvent onRequestStop requestStopPatroller;
 .registerEvent onRequestResume requestResumePatroller;
+.registerEvent onPathFinished onPathFinishedPatrolResponder;
 
 #event {CLASS DESTROYED patrolbot}
 {
@@ -166,7 +167,7 @@
 	{
 		#echo {<202> Patrol Stopped Due To Failed Movement <088>};
 		#var patrolling 0;
-		.triggerEvent patrolStopped;
+		.triggerEvent onPatrolStopped;
 	};
 };
 
@@ -179,7 +180,7 @@
 	{
 		#echo {<202> Patrol Stopped Due To Wimpy <088>};
 		#var patrolling 0;
-		.triggerEvent patrolStopped;
+		.triggerEvent onPatrolStopped;
 	};
 };
 
@@ -231,7 +232,7 @@
 			#undelay {decisionStall};
 			#echo {<202> Patrol Stopped Due to Indecision <088>};
 			#var patrolling 0;
-			.triggerEvent patrolStopped;
+			.triggerEvent onPatrolStopped;
 		};
 	
 		glance;
@@ -257,7 +258,7 @@
 /***********************************************************
 	The loaded patrol has been finished!
 ***********************************************************/
-#action {#PATH WALK: #END OF PATH} 
+#alias onPathFinishedPatrolResponder
 {
 	#if { $patrolling }
 	{
@@ -313,7 +314,7 @@
 	#else
 	{
 		#echo {<202> Patrol Start Cancelled, We are not in the right area <088>};
-		.triggerEvent patrolStopped;
+		.triggerEvent onPatrolStopped;
 	}
 };
 

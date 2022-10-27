@@ -1,0 +1,41 @@
+#showme reading miningpanel
+#class {miningpanel} {open}
+
+#alias {.renderMiningPanel}
+{
+    #if { "$draw[canvas]" == "on"}
+    {
+        #draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
+        #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
+        #showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
+            
+        #NOP Clear previous drawing;
+        #screen clear square $chat[height]+$caption[height]+1 -$canvas[width]+1 -$status[height]-2 -1;
+
+        #var botareas { 
+            \n
+            Materials Gathered: <138>$miner[matsGathered]\n
+            Ore Gathered: <138>$miner[oreGathered]<088>\n
+
+            \n\n
+            Rooms Spelunked: <138>$miner[roomsSpelunked]<088>\n
+            Deposits Found: <138>$miner[depositsFound]<088>\n
+            Mobs Found: <138>$miner[mobsFound]<088>\n
+            Steps To Go: <138>$miner[totalRooms]<088>\n
+            Current Progress: <138>$miner[roomsVisited]<088>\n
+            \n
+        };
+
+        #draw green rounded box $chat[height]+$caption[height]+1 -$canvas[width]+1 $chat[height]+$caption[height]+3 -1
+        {
+                <138>              Mining Status    <088>
+        };
+            
+        #draw green rounded box $chat[height]+$caption[height]+4 -$canvas[width]+1 $chat[height]+$caption[height]+5+20 -1
+        {
+                $botareas
+        };
+    };
+};
+
+#class {miningpanel} {close}

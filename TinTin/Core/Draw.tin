@@ -81,6 +81,9 @@
 #var split[bottom]	$status[height]
 #var split[left]	$alert[width]
 #var split[right]	$canvas[width]
+#draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
+#showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
+#showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
 
 /************************************************************
 	Split
@@ -118,7 +121,12 @@
 
 #if {"$draw[canvas]" == "on"} 
 {
-	#if { $inventoryOpen }
+
+	#if { $miner[isMining] }
+	{
+		.renderMiningPanel;
+	};
+	#elseif { $inventoryOpen }
 	{
 		.renderInventory;
 	};

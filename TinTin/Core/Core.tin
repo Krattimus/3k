@@ -16,6 +16,7 @@
 *********************************************************/
 #alias {.stop}
 {
+        #undelay {doMiningStart};
         #undelay {doLoadPatrollStart};
         #undelay {doPatrolStart};
 
@@ -139,10 +140,14 @@
 #alias {.goMining}
 {
         .stop;
-        go mine;
-        #delay 1.8 #showme {<202>MINER BOT IS ASSUMING CONTROL<088>};
-        #delay 2 #read 3k/TinTin/Bot/Miner.tin;
-        #delay 3 mines %1;
+
+        #if { @isDigit{{%1}} }
+        {
+                #var miner[miningLevel] %1;
+        }
+
+        go mines;
+        #delay {doMiningStart} { .startMining; } {4};
 };
 
 /**************************************************************
