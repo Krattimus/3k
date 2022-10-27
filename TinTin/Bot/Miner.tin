@@ -2,12 +2,14 @@
 
 /* Initialize vars */
 #var miner[match] no
-#var miner[status] on
 #var miner[deposit] none
 #var miner[monster] 0
 #var miner[prompt] 1
 
-#echo {<202> MINER BOT LOADED <088>}
+#var canWalk 1;
+#var shouldMine 1;
+#var shouldSpelunk 1;
+#var shouldAttack 1;
 
 /* Set target ore */
 #var miner[mining] {copper bronze adamantium obsidian nethernium}
@@ -118,42 +120,6 @@
 
 #NOP #act {^You should try to mine this instead.$} {#NOP mine}
 
-/* Mine mob kblow logic */
-#act {^=K=%1 dealt the killing blow to} 
-{
-	#echo {<202> MINER KBLOW <088>};
-	#var miner[monster] 0;
-	#if {"$miner[match]" == "yes"} 
-	{
-		mine;
-	};
-	#else
-	{
-		#var miner[prompt] 1;
-		get all;
-	}
-} {1}
-
-#act {^>$} 
-{
-	#if { $miner[prompt] == 1 } 
-	{
-		#var miner[prompt] 0;
-		#if { $miner[monster] == 1 }
-		{
-			#NOP
-		};
-		#elseif {"$miner[match]" == "yes"} 
-		{
-			mine
-		};
-		#else 
-		{
-			#path walk;
-			spelunk;
-		}
-	}
-};
 
 /* Unload mining bot on path end */
 #act {#END OF PATH} {#class miner kill;killbot} {1}

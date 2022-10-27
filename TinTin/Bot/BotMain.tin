@@ -39,6 +39,7 @@
 #var itemDropped {};
 #var itemTaken {};
 #var items {};
+
 /************************************************************
 	Register events
 ************************************************************/
@@ -283,7 +284,7 @@ mapoff;
 			#case {"west"}			{#var followDirection w};
 			#case {"down"}			{#var followDirection d};
 			#case {"up"}			{#var followDirection u};
-			#case {"northeast"} 		{#var followDirection ne};
+			#case {"northeast"} 	{#var followDirection ne};
 			#case {"northwest"}		{#var followDirection nw};
 			#case {"southeast"}		{#var followDirection se};
 			#case {"southwest"}		{#var followDirection sw};
@@ -301,7 +302,6 @@ mapoff;
 #action {^Your legs run away with you %w.} 
 {
 	#var wimpyDirection %1;
-
 	.triggerEvent onWimpy;
 };
 
@@ -312,7 +312,7 @@ mapoff;
 {
 	#if {"%1" == "$following"} 
 	{
-		#unvar following
+		#unvar following;
 	}
 
 	.triggerEvent onPlayerUnfollowed;
@@ -326,8 +326,8 @@ mapoff;
 	#format {whichPlayer} {%l} {%1};
 	#if {"$whichPlayer" == "$ourCharacter"} 
 	{
-		#var {following} {%2}
-	}
+		#var {following} {%2};
+	};
 
 	.triggerEvent onPlayerFollowed;
 };

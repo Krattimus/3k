@@ -21,7 +21,8 @@
 #alias {.logChat} 
 {
 	#format {timestamp} {%t} {<108>[<268>%H<108>:<268>%M<108>]<088> };
-	#if {&chat[log][] > $chat[max]} {
+	#if {&chat[log][] > $chat[max]} 
+	{
 		#list chat[log] del 1
 	};
 	#NOP remove esc chars;
@@ -30,7 +31,7 @@
 	#replace {chat[text]} {\\x7D} {\uFF5D};
 	#list chat[log] ins -1 {${timestamp}$chat[text]};
 
-	#class {chat} {write} {3k/TinTin/Data/${mud}chat.var};
+	#class {chat} {write} {3k/TinTin/Data/3kchat.var};
 	.renderChat
 }
 

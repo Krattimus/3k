@@ -2,6 +2,7 @@
 #CLASS {mip} {kill}
 #CLASS {mip} {open}
 
+#var renderingOff 0;
 /* !NOTE! */
 #NOP If your guild hides the hpbar with MIP turned on, try using the mud command 'forcehp'
 
@@ -133,7 +134,7 @@
 		#DEFAULT {#NOP Every other non-handled flag}
 	};
 	#NOP update_status alias defined in personal hpbar trigger;
-	.renderHPBar
+	.renderHPBar;
 }
 
 #NOP ***** Combat Mob Name *****;
@@ -760,7 +761,7 @@
 				#var mip[comm][twoway] {to};
 				#line log {3k/TinTin/Data/Logs/3k.chat} {$timestamp\};
 				#line log {3k/TinTin/Data/Logs/3k.chat} {<178>To &3<088>: &4};
-				.logChat <178>To $mip[comm][source]<088>: $mip[comm][data]
+				.logChat {<178>To $mip[comm][source]<088>: $mip[comm][data]};
 			};
 			#else
 			{
@@ -768,7 +769,7 @@
 				#var mip[comm][twoway] {from};
 				#line log {3k/TinTin/Data/Logs/3k.chat} {$timestamp\};
 				#line log {3k/TinTin/Data/Logs/3k.chat} {<178>&3<088>: &4};
-				.logChat <178>$mip[comm][source]<088>: $mip[comm][data];
+				.logChat {<178>$mip[comm][source]<088>: $mip[comm][data]};
 				#bell;
 			}
 		}
@@ -867,62 +868,7 @@
 
 		#line log {3k/TinTin/Data/Logs/3k.chat} {$timestamp\};
 		#line log {3k/TinTin/Data/Logs/3k.chat} {$mip[comm][cdata]};
-		.logChat $mip[comm][cdata];
-
-		#if {$idle <= 900} {
-			#NOP 8Inix;
-			#if {"$v8inix" == "on"} {
-				#regex {$mip[comm][data]} {%i: 8inix} {
-					do8inix
-				}
-			};
-
-			#NOP IDefine;
-			#if {"$idefine" == "on"} {
-				#regex {$mip[comm][data]} {%i: idefine} {
-					dodefine
-				}
-			};
-
-			#NOP UDefine;
-			#if {"$udefine" == "on"} {
-				#regex {$mip[comm][data]} {%i: udefine} {
-					doudefine
-				}
-			};
-
-			#NOP Google Wiki Search;
-			#if {"$google" == "on"} {
-				#regex {$mip[comm][data]} {%iigoogle} {
-					dogoogle
-				}
-			};
-
-			#NOP ADDS;
-			#if {"$adds" == "on"} {
-				#regex {$mip[comm][data]} {%i: iwx} {
-					doadds
-				}
-			};
-
-			#NOP Stocks;
-			#if {"$stocks" == "on"} {
-				#regex {$mip[comm][data]} {%i: istocks} {
-					dostocks
-				} {
-					#regex {$mip[comm][data]} {%i: istock} {
-						dostock
-					}
-				}
-			};
-
-			#NOP Crypto;
-			#if {"$crypto" == "on"} {
-				#regex {$mip[comm][data]} {%i: icrypto} {
-					docrypto
-				}
-			}
-		}
+		.logChat {$mip[comm][cdata]};
 	}
 }
 

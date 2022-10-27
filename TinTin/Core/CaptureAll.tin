@@ -1,0 +1,8 @@
+#class {capture} {open}
+
+#action {%1}
+{
+	#var capturedText { ${capturedText}%1 }
+} {8};
+
+#class {capture} {close}

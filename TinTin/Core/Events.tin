@@ -2,6 +2,23 @@
 #class {events} {open}
 
 
+#alias .captureUntil
+{
+	#var capturedText {};	
+	#var renderingOff 1;
+	#read 3k/TinTin/Core/CaptureAll.tin;
+	#delay {create_capture} 
+	{
+		#ACTION {%1} 
+		{
+			#var renderingOff 0;
+			#delay {0} {%2;};
+			#CLASS {capture} {kill};
+			#UNACTION {%1};
+		} {1};
+	} {0};
+};
+
 #alias .registerEvent
 {
 	#list %1 ADD %2;
