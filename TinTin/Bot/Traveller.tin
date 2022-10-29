@@ -13,9 +13,7 @@
 	Events
 *********************************************************/
 .registerEvent onDebugLog onDebugLogTraveller;
-.registerEvent onRequestLoadController onRequestLoadTraveller;
 .registerEvent onRequestStartController onRequestStartTraveller;
-.registerEvent onRequestPrepareController onRequestPrepareTraveller;
 
 
 #alias onDebugLogTraveller
@@ -26,41 +24,27 @@
 
 #event {MAP END OF RUN}
 {
+	#echo {<202> Travel Ended <088>};
+	.triggerEvent onControllerStopped {$traveller[controllerID]};
+	#var traveller[isTravelling] 0;
 
-
-};
-
-/***********************************************************
-	Load travel plans
-***********************************************************/
-#alias {onRequestLoadTraveller%*}
-{
-	#if { "$controllers[toStart]" == "$traveller[controllerID]" }
-	{
-		#showme REQUESTING LOAD: %1;
-	};
 };
 
 /***********************************************************
 	Start travelling!
 ***********************************************************/
-#alias {onRequestStartTraveller%*}
+#alias {onRequestStartTraveller %1}
 {
 	#if { "$controllers[toStart]" == "$traveller[controllerID]" }
 	{
-		#showme REQUESTING TRAVEL: %1;
+		#echo {<202> Traveling to %1 <088>};
+		.triggerEvent onControllerStarted {$traveller[controllerID]};
+		#var traveller[isTravelling] 1;
+
+		#showme trying to [go %1];
+		go %1;
 	};
 };
 
-/***********************************************************
-	We are being prepared to travel
-***********************************************************/
-#alias {onRequestPrepareTraveller%*}
-{
-	#if { "$controllers[toStart]" == "$traveller[controllerID]" }
-	{
-		#showme REQUESTING PREPARE: %1;
-	};
-};
 
 #class {traveller} {close}

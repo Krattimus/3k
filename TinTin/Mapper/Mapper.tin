@@ -13,7 +13,7 @@
 #var area ????;
 #var mapping off;
 #var room_cnt 0;
-#map flag static on
+#map flag static on;
 #map flag vtmap on;
 /*************************************************************
 	Events

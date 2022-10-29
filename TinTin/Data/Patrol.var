@@ -2,13 +2,13 @@
 
 #VARIABLE {patrol}
 {
-    {anchored} {25057}
-    {area} {Section Z}
-    {mapname} {sectionz}
-    {path} {press start;w;s;n;n;se;e;n;s;s;d;w;w;s;e;w;s;e;e;u;s;s;e;e;d;n;n;se;e;nw;e;d;w;e;e;w;n;ne;w;w;u;n;n;sw;nw;s;s;u;n;e;e;s;n;nw;u;e;e;w;s;s;u;se;nw;ne;w;w;s;s;d;s;n;n;se;se;n;n;s;d;e;e;w;s;sw;e;e;d;e;e;sw;s;d;n;n;sw;w;s;d;w;w;s;s;e;e;n;w;u;w;w;e;s;s;d;s;s;e;w;ne;ne;w;e;s;s;u;w;w;n;n;e;s;n;e;u;n;n;e;sw;e;se;nw;ne;d;w;w;s;s;e;e;d;se;s;n;w;w;s;d;s;n;n;s;e;e;s;n;n;se;e;e;se;se;proceed;se;s;nw;w;s;u;e;e;sw;s;u;n;n;se;se;n;n;u;s;s;nw;sw;n;n;u;s;s;e;w;ne;ne;w;e;s;s;u;e;e;sw;w;s;e;e;d;s;e;n;n;w;w;s;s;n;u;s;s;e;e;n;n;u;e;e;sw;s;u;w;w;s;e;e;s;w;w;d;sw;s;d;n;e;se;n;n;d;e;e;w;s;s;e;w;w;d;e;ne;w;w;n;e;d;w;ne;e;w;w;s;s;e;e;d;n;ne;w;w;d;s;s;n;w;nw;s;s;d;sw;s;u;se;s;d;e;w;w;n;e;nw;e;e;d;s;n;ne;se;w;se;u;w;w;s;s;e;e;n;w;u;n;n;se;ne;s;s;d;e;w;w;s;e;sw;e;e;e;e;proceed;ne;w;w;e;s;s;e;w;w;u;w;w;s;e;sw;e;e;u;s;se;n;e;n;u;w;w;s;e;w;s;e;e;d;e;e;w;w;n;e;nw;e;e;d;s;n;n;se;se;n;n;u;e;sw;s;e;ne;sw;u;w;w;s;e;w;s;e;e;d;n;n;s;w;nw;s;s;enter portal;w;w;n;n;u;s;se;ne;n;d;w;n;e;se;nw;ne;w;w;d;se;n;n;s;w;w;s;n;n;d;w;n;n;se;se;n;n;w;d;w;w;s;e;e;s;w;w;d;nw;e;nw;sw;s;d;sw;s;n;n;w;enter portal;n;e;s;w;w;n;n;e;e;d;e;e;w;w;se;w;s;e;e;d;s;e;nw;ne;w;w;s;s;n;d;n;nw;se;ne;e;e;e;se;se;e;e;ne;e}
-    {position} {0}
-    {startedAt} {25057}
-    {startingLocation} {24786}
+    {anchored} {6898}
+    {area} {Portal of Life}
+    {mapname} {pol}
+    {path} {n;n;n;nw;nw;n;se;se;n;nw;nw;ne;n;se;ne;s;sw;se;ne;s;sw;s;s;ne;n;se;ne;ne;ne;nw;nw;nw;n;nw;ne;se;s;se;se;n;nw;n;se;se;s;s;se;n;n;n;n;n;n;n;n;nw;s;s;s;sw;n;n;n;sw;s;s;sw;sw;nw;n;se;ne;nw;ne;nw;ne;ne;ne;nw;nw;nw;nw;nw;s;se;sw;se;sw;se;sw;s;s;nw;sw;n;ne;nw;nw;n;se;se;n;nw;ne;n;n;sw;s;sw;n;sw;sw;sw;sw;sw;sw;s;ne;s;se;n;n;ne;s;s;s;ne;n;n;se;s;se;sw;se;sw;nw;sw;nw;nw;nw;s;s;s;s;s;s;ne;se;n;nw;n;ne;ne;se;ne;se;sw;sw;nw;sw;se;se;sw;s;se;se;se;se;se;s;s}
+    {position} {11}
+    {startedAt} {6746}
+    {startingLocation} {6746}
 }
 
 #CLASS {patrolvar} CLOSE

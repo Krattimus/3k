@@ -29,12 +29,12 @@
 /*********************************************************
 	Events
 *********************************************************/
-.registerEvent onDebugLog onDebugLogMinerResponder;
+.registerEvent onDebugLog onDebugLogMiner;
 .registerEvent onRequestStop requestStopMiner;
-.registerEvent onPathFinished onPathFinishedMinerResponder;
-.registerEvent onRoomSeen onRoomSeenMinerResponder;
-.registerEvent onKilledMob onKilledMobMinerResponse;
-.registerEvent onItemFound onItemFoundMinerResponse;
+.registerEvent onPathFinished onPathFinishedMiner;
+.registerEvent onRoomSeen onRoomSeenMiner;
+.registerEvent onMobKilled onMobKilledMiner;
+.registerEvent onItemFound onItemFoundMiner;
 .registerEvent onDarkness onDarknessMiner;
 .registerEvent onRequestStartController onRequestStartMiner;
 .registerEvent onRequestPrepareController onRequestPrepareMiner;
@@ -66,7 +66,7 @@
 /***********************************************************************
 	DebugLog responder
 ***********************************************************************/
-#alias onDebugLogMinerResponder
+#alias onDebugLogMiner
 {
 	.showHeader Mining;
 	#var miner;
@@ -144,7 +144,7 @@
 /***********************************************************
 	Called whenever we get a look at the world
 ***********************************************************/
-#alias onRoomSeenMinerResponder
+#alias onRoomSeenMiner
 {
 	#if { $miner[isMining] }
 	{
@@ -178,7 +178,7 @@
 /***********************************************************************
 	Monster is killed
 ***********************************************************************/
-#alias {onKilledMobMinerResponse}
+#alias {onMobKilledMiner}
 {
 	#if { $miner[isMining] }
 	{
@@ -190,7 +190,7 @@
 /***********************************************************************
 	On item found, if it is a deposit, stop and mine it
 ***********************************************************************/
-#alias {onItemFoundMinerResponse}
+#alias {onItemFoundMiner}
 {
 	#if { $miner[isMining] }
 	{
@@ -404,7 +404,7 @@
 /***********************************************************************
 	An aggro mob comes forth
 ***********************************************************************/
-#alias {onPathFinishedMinerResponder}
+#alias {onPathFinishedMiner}
 {
 	#if { $miner[isMining] }
 	{

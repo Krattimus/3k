@@ -19,7 +19,7 @@
 		{
 			#var botareas 
 			{
-				<178>            No areas loaded<088>
+				<178>            No Controllers<088>
 			};
 			#var botheight 1;
 		};
@@ -58,7 +58,7 @@
 		
 		#draw green rounded box $chat[height]+$caption[height]+2 -$canvas[width]+2 $chat[height]+$caption[height]+4 -3 
 		{
-				<138>              Patrols    <088>
+				<138>              $controllers    <088>
 		};
 		
 		#draw green rounded box $chat[height]+$caption[height]+4 -$canvas[width]+2 $chat[height]+$caption[height]+5+$botheight -3 

@@ -33,6 +33,7 @@
         #if { "%1" == "$controllers[current]" }
         {
 	        #showme {<202> Controller [$controllers[current]] has stopped.  <088>};
+                #var controllers[stopped] $controllers[toStop];
                 #var controllers[toStop] {};
                 #var controllers[current] {};
         }
@@ -72,7 +73,7 @@
 *********************************************************/
 #alias {.resume}
 {
-        #var controllers[toResume] $stoppedController;
+        #var controllers[toResume] $controllers[stopped];
         .triggerEvent onRequestResume;
 } {1};
 
