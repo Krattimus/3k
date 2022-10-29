@@ -3,22 +3,22 @@
 #var {no_loop} {1}
 #var {no_home} {0}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var {botpath} {n;w;e;e;n;n;e;stairs;s;w;e;n;stairs;w;w;n;{w;search rings;get key};s;s;w;n;out;e;e;s;s}
+#var {patrol[path]} {n;w;e;e;n;n;e;stairs;s;w;e;n;stairs;w;w;n;{w;search rings;get key};s;s;w;n;out;e;e;s;s}
 
 #act {^=M= {A rude tourist|A tourist that looks confused|A tourist who forgot to shower|A wandering tourist|Carina the leading Astronomer|Cepheus the Stargazer|Observatory scientist|Observatory specialist|Observatory technician|Observatory Tour Guide}} {
 	#switch {"%1"} {
-		#case {"A rude tourist"}			{#var shouldKill tourist};
-		#case {"A tourist that looks confused"}		{#var shouldKill tourist};
-		#case {"A tourist who forgot to shower"}	{#var shouldKill tourist};
-		#case {"A wandering tourist"}			{#var shouldKill tourist};
-		#case {"Carina the leading Astronomer"}		{#var shouldKill carina};
-		#case {"Cepheus the Stargazer"}			{#var shouldKill cepheus};
-		#case {"Observatory scientist"}			{#var shouldKill scientist};
-		#case {"Observatory specialist"}		{#var shouldKill specialist};
-		#case {"Observatory technician"}		{#var shouldKill technician};
-		#case {"Observatory Tour Guide"}		{#var shouldKill guide}
+		#case {"A rude tourist"}			{#var patroller[shouldKill] tourist};
+		#case {"A tourist that looks confused"}		{#var patroller[shouldKill] tourist};
+		#case {"A tourist who forgot to shower"}	{#var patroller[shouldKill] tourist};
+		#case {"A wandering tourist"}			{#var patroller[shouldKill] tourist};
+		#case {"Carina the leading Astronomer"}		{#var patroller[shouldKill] carina};
+		#case {"Cepheus the Stargazer"}			{#var patroller[shouldKill] cepheus};
+		#case {"Observatory scientist"}			{#var patroller[shouldKill] scientist};
+		#case {"Observatory specialist"}		{#var patroller[shouldKill] specialist};
+		#case {"Observatory technician"}		{#var patroller[shouldKill] technician};
+		#case {"Observatory Tour Guide"}		{#var patroller[shouldKill] guide}
 	};
         _check_mob
 }

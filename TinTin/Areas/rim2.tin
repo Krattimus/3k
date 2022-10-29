@@ -3,16 +3,16 @@
 #var {no_loop} {0}
 #var {no_home} {0}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var {botpath} {e;ne;se;n;nw;se;s;se;nw;w;s;w;s;e;ne;n;w;s;d;n;nw;ne;sw;se;s;u;n;w;w}
+#var {patrol[path]} {e;ne;se;n;nw;se;s;se;nw;w;s;w;s;e;ne;n;w;s;d;n;nw;ne;sw;se;s;u;n;w;w}
 
 #act {^=M= {A small|A large|A very large} Rimalkin} {
 	#var mobhard 0;
 	#switch {"%1"} {
-		#case {"A small"}	{#var shouldKill {small rimalkin}};
-		#case {"A large"}	{#var shouldKill {large rimalkin};#var mobhard 1};
-		#case {"A very large" }	{#var shouldKill {very large rimalkin};#var mobhard 1}
+		#case {"A small"}	{#var patroller[shouldKill] {small rimalkin}};
+		#case {"A large"}	{#var patroller[shouldKill] {large rimalkin};#var mobhard 1};
+		#case {"A very large" }	{#var patroller[shouldKill] {very large rimalkin};#var mobhard 1}
 	};
 	#if {$mobhard} {
 		#if {$hardmode} {

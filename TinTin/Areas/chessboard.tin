@@ -4,42 +4,42 @@
 	Controller Behavior Settings
 *******************************************************************************/
 #var {loopCount} {0}
-#var {shouldVacuum} {1}
-#var autoSell {off};
-#var corpseDonations {off};
-#var whichShop {chaos};
+#var {settings[shouldVacuum]} {1}
+#var settings[autoSell] {off};
+#var settings[corpseDonations] {off};
+#var seller[whichShop] {chaos};
 
 /******************************************************************************
 	Data to be used for this patrol
 	w;w;w;s;e;e;e;e;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s
 *******************************************************************************/
-#var patrolStart 1209;
-#var patrolArea {Chess Board};
-#var {botpath} {w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;e;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s}
+#var patrol[startingLocation] 1209;
+#var patrol[area] {Chess Board};
+#var {patrol[path]} {w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;e;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s}
 
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMonsterFound onMobAreaResponder;
+.registerEvent onMobFound onMobAreaResponder;
 #alias {onMobAreaResponder}
 {
-	#REGEXP {"$foundMobName"} {"%*A Refugee%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*A War Correspondent%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Red Cross Medic%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Red Charioteer%*"}	{#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Red Counsellor%*"}	{#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Red Foot Soldier%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Red Horseman%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Red King%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Red Priest%*"}	{#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*White Charioteer%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*White Counsellor%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*White Foot Soldier%*"}	{#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*White Horseman%*"}	{#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*White King%*"}	{#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*White Priest%*"} {#var shouldKill human};
-	#REGEXP {"$foundMobName"} {"%*Angry Horse%*"} {#var shouldKill {angry horse};};
-	#REGEXP {"$foundMobName"} {"%*Angry War Elephant%*"}	{#var shouldKill elephant};
+	#REGEXP {"$event[foundMobName]"} {"%*A Refugee%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*A War Correspondent%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Red Cross Medic%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Red Charioteer%*"}	{#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Red Counsellor%*"}	{#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Red Foot Soldier%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Red Horseman%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Red King%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Red Priest%*"}	{#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*White Charioteer%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*White Counsellor%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*White Foot Soldier%*"}	{#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*White Horseman%*"}	{#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*White King%*"}	{#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*White Priest%*"} {#var patroller[shouldKill] human};
+	#REGEXP {"$event[foundMobName]"} {"%*Angry Horse%*"} {#var patroller[shouldKill] {angry horse};};
+	#REGEXP {"$event[foundMobName]"} {"%*Angry War Elephant%*"}	{#var patroller[shouldKill] elephant};
 };
 
 /******************************************************************************

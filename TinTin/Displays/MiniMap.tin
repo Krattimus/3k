@@ -27,7 +27,7 @@
 *************************************************************/
 #alias {onMapUpdatedMiniMapResponder} 
 {
-	.renderMap;
+	.renderMapInfo;
 }
 
 /*************************************************************
@@ -35,7 +35,7 @@
 *************************************************************/
 #alias {onEnteredRoomMiniMapResponder} 
 {
-	.renderMap;
+	.renderMapInfo;
 }
 
 /*************************************************************
@@ -57,7 +57,7 @@
 /*************************************************************
 	Draws the mini map
 *************************************************************/
-#alias {.renderMap} 
+#alias {.renderMapInfo} 
 {
 	#if {"$draw[map]" == "on"} 
 	{
@@ -75,17 +75,10 @@
 		#map list {} {} {} {$roomarea} {variable} {area_mapped};
 		#var {room_cnt} {&area_mapped[]};
 
-		#if {"$map[position]" == "top"} 
-		{
-			#draw {tile} $map[height]-1 -$map[width] $map[height]-1 -1 {<029>$roomarea <149>(<129>$room_cnt<149>)<099>};
-			#draw {tile} $map[height] -$map[width] $map[height] -1 {<149>[<039>$roomvnum<149>] <139>$name_trunc<099>}
-		}; 
-		#elseif { "$map[position]" == "bottom" } 
-		{
-			#draw {tile} -$status[height]-$map[height]-3 -$map[width] -$status[height]-$map[height]-3 -1 {<029>$roomarea <149>(<129>$room_cnt<149>)<099>};
-			#draw {tile} -$status[height]-$map[height]-2 -$map[width] -$status[height]-$map[height]-2 -1 {<149>[<039>$roomvnum<149>] <139>$name_trunc<099>}
-		}
+		#draw {tile} $map[height]-1 -$map[width] $map[height]-1 -1 {<029>$roomarea <149>(<129>$room_cnt<149>)<099>};
+		#draw {tile} $map[height] -$map[width] $map[height] -1 {<149>[<039>$roomvnum<149>] <139>$name_trunc<099>}
 	}
+
 }
 
 /*************************************************************
@@ -93,36 +86,9 @@
 *************************************************************/
 #alias {.renderMiniMap}
 {
-	#if {"$draw[map]" == "on"} 
-	{
-		#if {"$map[position]" == "top"} 
-		{
-			#draw line 1 -$map[width]-1 $map[height] -$map[width]-1;
-			#if {"$draw[caption]" == "on"} 
-			{
-				#showme {<228>\u2534<088>} $map[height]+1 -$map[width]-1
-			};
-			
-			#map flag vtmap on;
-			#map offset 1 -$map[width] $map[height] -1;
-			#delay 0 #draw {tile} $map[height]-1 -$map[width] $map[height]-1 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
-			#delay 0 #draw {tile} $map[height] -$map[width] $map[height] -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}
-		}; 
-		#elseif {"$map[position]" == "bottom"} 
-		{
-			#draw line -$status[height]-$map[height]-4 -$map[width] -$status[height]-$map[height]-4 -1;
-			#showme {\u251C} -$status[height]-$map[height]-4 -$canvas[width];
-			#map flag vtmap on;
-			#map offset -$status[height]-$map[height]-1 -$map[width] -$status[height]-1 -1;
-			#delay 0 #draw {tile} -$status[height]-$map[height]-3 -$map[width] -$status[height]-$map[height]-3 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
-			#delay 0 #draw {tile} -$status[height]-$map[height]-2 -$map[width] -$status[height]-$map[height]-2 -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}
-		}; 
-		#else 
-		{
-			#echo {"!INVALID MAP POSITION!"}
-		}
-	};
-}
+	#draw line 1 -$map[width]-1 $map[height] -$map[width]-1;
+	#map offset 1 -$map[width] $map[height] -1;
+};
 
 /*************************************************************
 	Helper Calls - Not Available colorizer

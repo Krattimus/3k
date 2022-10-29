@@ -168,7 +168,7 @@
 {
     #if { $inventoryOpen }
     { 
-        .addItemToInventory {$itemTaken}; 
+        .addItemToInventory {$event[itemTaken]}; 
         .renderInventory;
     };
 }
@@ -265,7 +265,6 @@
         #list inventoryCount add {1};
     };
 };
-
 
 
 

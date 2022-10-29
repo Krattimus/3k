@@ -3,12 +3,12 @@
 #var {no_loop} {0}
 #var {no_home} {1}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var {botpath} {out;w;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;e;n;n;n;n;n;enter}
+#var {patrol[path]} {out;w;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;e;n;n;n;n;n;enter}
 
 #act {=M= {A|An} {Baby|Young|Mature|Old} Chinchilla} {
-	#var shouldKill chinchilla;
+	#var patroller[shouldKill] chinchilla;
 	_check_mob
 }
 

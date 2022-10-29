@@ -5,11 +5,11 @@
 #alias {.displaySettings} { .showSettings; }
 #alias {.showSettings}
 {
-        .showSetting {Auto Selling} $autoSell;
-        .showSetting {Corpse Donations} $corpseDonations;
-        .showSetting {Should Pickup All Items} $shouldVacuum;
-        .showSetting {Should Loot Corpses} $shouldLoot;
-        .showSetting {Should Process Corpses} $shouldProcessCorpse;
+        .showSetting {Auto Selling} $settings[autoSell];
+        .showSetting {Corpse Donations} $settings[corpseDonations];
+        .showSetting {Should Pickup All Items} $settings[shouldVacuum];
+        .showSetting {Should Loot Corpses} $settings[shouldLoot];
+        .showSetting {Should Process Corpses} $settings[shouldProcessCorpse];
 };
 
 #alias {.showHeader}
@@ -30,78 +30,74 @@
 
 #alias {.toggleProcessCorpse}
 {
-        #if { $shouldProcessCorpse == 1 }
+        #if { $settings[shouldProcessCorpse] == 1 }
         {
-                #var shouldProcessCorpse 0;
+                #var settings[shouldProcessCorpse] 0;
         };
         #else
         {
-                #var shouldProcessCorpse 1;
+                #var settings[shouldProcessCorpse] 1;
         };
         
-        .showSetting {Should Process Corpses} $shouldProcessCorpse;
+        .showSetting {Should Process Corpses} $settings[shouldProcessCorpse];
 };
 
 
 #alias {.toggleLooting}
 {
-        #if { $shouldLoot == 1 }
+        #if { $settings[shouldLoot] == 1 }
         {
-                #var shouldLoot 0;
+                #var settings[shouldLoot] 0;
         };
         #else
         {
-                #var shouldLoot 1;
+                #var settings[shouldLoot] 1;
         };
         
-        .showSetting {Should Loot Corpses} $shouldLoot;
+        .showSetting {Should Loot Corpses} $settings[shouldLoot];
 };
 
 
 #alias {.toggleVacuum}
 {
-        #if { $shouldVacuum == 1 }
+        #if { $settings[shouldVacuum] == 1 }
         {
-                #var shouldVacuum 0;
+                #var settings[shouldVacuum] 0;
         };
         #else
         {
-                #var shouldVacuum 1;
+                #var settings[shouldVacuum] 1;
         };
         
-        .showSetting {Auto Pickup Items} $shouldVacuum;
+        .showSetting {Auto Pickup Items} $settings[shouldVacuum];
 };
 
 #alias {.toggleSelling}
 {
-        #if { "$autoSell" == "on" }
+        #if { "$settings[autoSell]" == "on" }
         {
-                #class shopbot kill;
-                #var autoSell off;
+                #var settings[autoSell] off;
         };
         #else
         {
-                #read 3k/TinTin/Bot/ShopBot.tin;
-                #var autoSell on;
+                #var settings[autoSell] on;
         };
         
-        .showSetting {Auto Selling} $autoSell;
+        .showSetting {Auto Selling} $settings[autoSell];
 };
 
-#alias {.toggleCorpseDonations}
+#alias {.togglesettings[corpseDonations]}
 {
-        #if { "$corpseDonations" == "on" }
+        #if { "$settings[corpseDonations]" == "on" }
         {
-                #class corpsebot kill;
-                #var corpseDonations off;
+                #var settings[corpseDonations] off;
         };
         #else
         {
-                #read 3k/TinTin/Bot/CorpseBot.tin;
-                #var corpseDonations on;
+                #var settings[corpseDonations] on;
         };
 
-        .showSetting {Corpse Donations} $corpseDonations;
+        .showSetting {Corpse Donations} $settings[corpseDonations];
 
 };
 

@@ -3,25 +3,25 @@
 #var {no_loop} {0}
 #var {no_home} {0}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var botpath {}
+#var patrol[path] {}
 
 #act {^=M= %1\.} {
-	#var shouldKill demon;
+	#var patroller[shouldKill] demon;
 	#regex {%0} {attacking you}		{#alias {k} {#NOP}};
-	#regex {%1} {A jeep named}		{#var shouldKill {}};
-	#regex {%1} {A truck named}		{#var shouldKill {}};
-	#regex {%1} {A cargo truck named}	{#var shouldKill {}};
-	#regex {%1} {A ambulance named}		{#var shouldKill {}};
-	#regex {%1} {A rover named}		{#var shouldKill {}};
-	#regex {%1} {Jugger Support Mech}	{#var shouldKill {}};
-	#regex {%1} {A tank named}		{#var shouldKill {}};
-	#regex {%1} {small fire mite}		{#var shouldKill {}};
-	#regex {%1} {bound by}			{#var shouldKill {}};
-	#regex {%1} {Blob the blob golem}	{#var shouldKill {}};
+	#regex {%1} {A jeep named}		{#var patroller[shouldKill] {}};
+	#regex {%1} {A truck named}		{#var patroller[shouldKill] {}};
+	#regex {%1} {A cargo truck named}	{#var patroller[shouldKill] {}};
+	#regex {%1} {A ambulance named}		{#var patroller[shouldKill] {}};
+	#regex {%1} {A rover named}		{#var patroller[shouldKill] {}};
+	#regex {%1} {Jugger Support Mech}	{#var patroller[shouldKill] {}};
+	#regex {%1} {A tank named}		{#var patroller[shouldKill] {}};
+	#regex {%1} {small fire mite}		{#var patroller[shouldKill] {}};
+	#regex {%1} {bound by}			{#var patroller[shouldKill] {}};
+	#regex {%1} {Blob the blob golem}	{#var patroller[shouldKill] {}};
 
-	#if {"$shouldKill" == ""} {
+	#if {"$patroller[shouldKill]" == ""} {
 		#nop
 	} {
 		_check_mob

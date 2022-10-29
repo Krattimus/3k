@@ -6,7 +6,6 @@
 	#read 3k/TinTin/Core/Utils.tin;	
 	#read 3k/TinTin/Core/Ticklist.tin;
 	#read 3k/TinTin/Core/Vars.tin;
-	#read 3k/TinTin/Core/Core.tin;
 	#read 3k/TinTin/Core/Settings.tin;
 	#read 3k/TinTin/Core/Ansi.tin;
 	#read 3k/TinTin/Core/Events.tin;
@@ -38,11 +37,13 @@
 	#read 3k/TinTin/Core/Party.tin;
 	
 	#NOP { *********** Controllers ************ };
+	#read 3k/TinTin/Bot/Controllers.tin;
+	#read 3k/TinTin/Bot/BaseController.tin;
 	#read 3k/TinTin/Bot/PatrolList.tin;
-	#read 3k/TinTin/Bot/PatrolBot.tin;
-	#read 3k/TinTin/Bot/ShopBot.tin;
-	#read 3k/TinTin/Bot/CorpseBot.tin;
-	#read 3k/TinTin/Bot/BotMain.tin;
+	#read 3k/TinTin/Bot/Patroller.tin;
+	#read 3k/TinTin/Bot/Seller.tin;
+	#read 3k/TinTin/Bot/Traveller.tin;
+	#read 3k/TinTin/Bot/Donater.tin;
 	#read 3k/TinTin/Bot/Miner.tin;
 	
 }

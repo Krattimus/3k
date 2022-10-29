@@ -1,6 +1,6 @@
 #CONFIG           {AUTO TAB}		{5000}
 #CONFIG           {BUFFER SIZE}		{1000000}
-#CONFIG           {CHARSET}		{UTF-8}
+#CONFIG           {CHARSET}			{UTF-8}
 #CONFIG           {COLOR MODE}		{TRUE}
 #CONFIG           {COLOR PATCH}		{ON}
 #CONFIG           {COMMAND COLOR}	{<078>}
@@ -8,7 +8,7 @@
 #CONFIG           {CONNECT RETRY}	{15}
 #CONFIG           {HISTORY SIZE}	{1000}
 #CONFIG           {LOG MODE}		{RAW}
-#CONFIG           {MOUSE}		{ON}
+#CONFIG           {MOUSE}			{ON}
 #CONFIG           {PACKET PATCH}	{0.80}
 #CONFIG           {REPEAT CHAR}		{!}
 #CONFIG           {REPEAT ENTER}	{ON}

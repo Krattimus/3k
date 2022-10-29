@@ -6,7 +6,9 @@
 /* Initialize Variables */
 #var monk[g2n][prev] 0
 
-.registerEvent onPreKilledMob onKilledMobMonkResponder;
+.registerEvent onPreKilledMob onMobKilledMonk;
+.registerEvent onMobAttacked onMobAttackedMonk;
+
 
 /* HP Bars */
 #NOP Default Monk HP Bar
@@ -73,19 +75,13 @@
 	}
 };
 
-#act {You are already attacking that}
+#alias {onMobAttackedMonk}
 {
 	pressure;
 	palm;
 }
 
-#act {You attack} 
-{
-	pressure;
-	palm;
-}
-
-#alias onKilledMobMonkResponder
+#alias {onMobKilledMonk}
 {
 	study corpse;
 };

@@ -184,6 +184,11 @@
 			#math {testedLength} {$testedLength+1};
 			#local lpsz3 @substr{{%1}{$start}{$testedLength}};
 
+			#if { "$lpsz3" == "$lpsz" }
+			{
+				#return $start;
+			};
+
 			#if { @equalsIgnoreCase{ {"$lpsz3"} {"$lpsz"} } }
 			{
 				#return $start;
@@ -225,6 +230,35 @@
 }
 
 
+/**************************************************************
+        
+**************************************************************/
+#alias {.calc} 
+{
+        #math {math} {%1};
+        #format {math_format} {%g} {$math};
+        #echo $math_format
+}
+
+#alias {.run} 
+{
+        #config speedwalk on;
+        %0;
+        #config speedwalk off
+}
+
+/**************************************************************
+        Testing graveyard here
+**************************************************************/
+#alias {findme} 
+{
+        #map go $room ($exits);
+};
+
+#alias {nouns} 
+{
+    #script {python3 3k/TinTin/Tools/nountest.py "$roomdesc"};
+};
 
 
 

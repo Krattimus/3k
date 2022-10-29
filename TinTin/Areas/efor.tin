@@ -4,26 +4,26 @@
 	Controller Behavior Settings
 *******************************************************************************/
 #var {loopCount} {0}
-#var {shouldVacuum} {1}
-#var autoSell {off};
-#var corpseDonations {off};
-#var whichShop {chaos};
+#var {settings[shouldVacuum]} {1}
+#var settings[autoSell] {off};
+#var settings[corpseDonations] {off};
+#var seller[whichShop] {chaos};
 #var area Fantasy;
 
 /******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
-#var patrolStart 4297;
-#var patrolArea {Fantasy};
-#var {botpath} {e;e;e;s;s;s};
+#var patrol[startingLocation] 4297;
+#var patrol[area] {Fantasy};
+#var {patrol[path]} {e;e;e;s;s;s};
 
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMonsterFound onMobAreaResponder;
+.registerEvent onMobFound onMobAreaResponder;
 #alias {onMobAreaResponder}
 {
-	#REGEXP {"$foundMobName"} {"%*large timber wolf%*"} 		{#var shouldKill wolf};
+	#REGEXP {"$event[foundMobName]"} {"%*large timber wolf%*"} 		{#var patroller[shouldKill] wolf};
 
 };
 

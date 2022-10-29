@@ -3,37 +3,36 @@
 /******************************************************************************
 	Controller Behavior Settings
 *******************************************************************************/
-#var {loopCount} {0}
-#var {shouldVacuum} {1}
-#var autoSell {off};
-#var corpseDonations {off};
-#var whichShop {chaos};
+#var settings[shouldVacuum] {1}
+#var settings[autoSell] {off};
+#var settings[corpseDonations] {off};
+#var seller[whichShop] {chaos};
 
 /******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
-#var patrolStart 24786;
-#var patrolArea {Section Z};
-#var {botpath} {press start;w;s;n;n;se;e;n;s;s;d;w;w;s;e;w;s;e;e;u;s;s;e;e;d;n;n;se;e;nw;e;d;w;e;e;w;n;ne;w;w;u;n;n;sw;nw;s;s;u;n;e;e;s;n;nw;u;e;e;w;s;s;u;se;nw;ne;w;w;s;s;d;s;n;n;se;se;n;n;s;d;e;e;w;s;sw;e;e;d;e;e;sw;s;d;n;n;sw;w;s;d;w;w;s;s;e;e;n;w;u;w;w;e;s;s;d;s;s;e;w;ne;ne;w;e;s;s;u;w;w;n;n;e;s;n;e;u;n;n;e;sw;e;se;nw;ne;d;w;w;s;s;e;e;d;se;s;n;w;w;s;d;s;n;n;s;e;e;s;n;n;se;e;e;se;se;proceed;se;s;nw;w;s;u;e;e;sw;s;u;n;n;se;se;n;n;u;s;s;nw;sw;n;n;u;s;s;e;w;ne;ne;w;e;s;s;u;e;e;sw;w;s;e;e;d;s;e;n;n;w;w;s;s;n;u;s;s;e;e;n;n;u;e;e;sw;s;u;w;w;s;e;e;s;w;w;d;sw;s;d;n;e;se;n;n;d;e;e;w;s;s;e;w;w;d;e;ne;w;w;n;e;d;w;ne;e;w;w;s;s;e;e;d;n;ne;w;w;d;s;s;n;w;nw;s;s;d;sw;s;u;se;s;d;e;w;w;n;e;nw;e;e;d;s;n;ne;se;w;se;u;w;w;s;s;e;e;n;w;u;n;n;se;ne;s;s;d;e;w;w;s;e;sw;e;e;e;e;proceed;ne;w;w;e;s;s;e;w;w;u;w;w;s;e;sw;e;e;u;s;se;n;e;n;u;w;w;s;e;w;s;e;e;d;e;e;w;w;n;e;nw;e;e;d;s;n;n;se;se;n;n;u;e;sw;s;e;ne;sw;u;w;w;s;e;w;s;e;e;d;n;n;s;w;nw;s;s;enter portal;w;w;n;n;u;s;se;ne;n;d;w;n;e;se;nw;ne;w;w;d;se;n;n;s;w;w;s;n;n;d;w;n;n;se;se;n;n;w;d;w;w;s;e;e;s;w;w;d;nw;e;nw;sw;s;d;sw;s;n;n;w;enter portal;n;e;s;w;w;n;n;e;e;d;e;e;w;w;se;w;s;e;e;d;s;e;nw;ne;w;w;s;s;n;d;n;nw;se;ne;e;e;e;se;se;e;e;ne;e}
+#var patrol[startingLocation] 24786;
+#var patrol[area] {Section Z};
+#var patrol[path] {press start;w;s;n;n;se;e;n;s;s;d;w;w;s;e;w;s;e;e;u;s;s;e;e;d;n;n;se;e;nw;e;d;w;e;e;w;n;ne;w;w;u;n;n;sw;nw;s;s;u;n;e;e;s;n;nw;u;e;e;w;s;s;u;se;nw;ne;w;w;s;s;d;s;n;n;se;se;n;n;s;d;e;e;w;s;sw;e;e;d;e;e;sw;s;d;n;n;sw;w;s;d;w;w;s;s;e;e;n;w;u;w;w;e;s;s;d;s;s;e;w;ne;ne;w;e;s;s;u;w;w;n;n;e;s;n;e;u;n;n;e;sw;e;se;nw;ne;d;w;w;s;s;e;e;d;se;s;n;w;w;s;d;s;n;n;s;e;e;s;n;n;se;e;e;se;se;proceed;se;s;nw;w;s;u;e;e;sw;s;u;n;n;se;se;n;n;u;s;s;nw;sw;n;n;u;s;s;e;w;ne;ne;w;e;s;s;u;e;e;sw;w;s;e;e;d;s;e;n;n;w;w;s;s;n;u;s;s;e;e;n;n;u;e;e;sw;s;u;w;w;s;e;e;s;w;w;d;sw;s;d;n;e;se;n;n;d;e;e;w;s;s;e;w;w;d;e;ne;w;w;n;e;d;w;ne;e;w;w;s;s;e;e;d;n;ne;w;w;d;s;s;n;w;nw;s;s;d;sw;s;u;se;s;d;e;w;w;n;e;nw;e;e;d;s;n;ne;se;w;se;u;w;w;s;s;e;e;n;w;u;n;n;se;ne;s;s;d;e;w;w;s;e;sw;e;e;e;e;proceed;ne;w;w;e;s;s;e;w;w;u;w;w;s;e;sw;e;e;u;s;se;n;e;n;u;w;w;s;e;w;s;e;e;d;e;e;w;w;n;e;nw;e;e;d;s;n;n;se;se;n;n;u;e;sw;s;e;ne;sw;u;w;w;s;e;w;s;e;e;d;n;n;s;w;nw;s;s;enter portal;w;w;n;n;u;s;se;ne;n;d;w;n;e;se;nw;ne;w;w;d;se;n;n;s;w;w;s;n;n;d;w;n;n;se;se;n;n;w;d;w;w;s;e;e;s;w;w;d;nw;e;nw;sw;s;d;sw;s;n;n;w;enter portal;n;e;s;w;w;n;n;e;e;d;e;e;w;w;se;w;s;e;e;d;s;e;nw;ne;w;w;s;s;n;d;n;nw;se;ne;e;e;e;se;se;e;e;ne;e}
 
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMonsterFound onMobAreaResponder;
+.registerEvent onMobFound onMobAreaResponder;
 #alias {onMobAreaResponder}
 {
-        #REGEXP {"$foundMobName"} {"%*Clone Soldier%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Cloud Eye%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Groma%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Leago%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Leeva%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Massive Generator%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Ripper%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Spiral Gun%*"}	{#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Balba%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Brain%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Galga%*"} {#var shouldKill balangool};
-        #REGEXP {"$foundMobName"} {"%*Zamuza%*"} {#var shouldKill balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Clone Soldier%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Cloud Eye%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Groma%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Leago%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Leeva%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Massive Generator%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Ripper%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Spiral Gun%*"}	{#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Balba%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Brain%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Galga%*"} {#var patroller[shouldKill] balangool};
+        #REGEXP {"$event[foundMobName]"} {"%*Zamuza%*"} {#var patroller[shouldKill] balangool};
 };
 
 /******************************************************************************

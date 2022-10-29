@@ -25,7 +25,7 @@
 		
 		#if	{&{patrols[]} > 0} 
 		{
-			#var {areacap} {<148>Cycle: <168>$currentPatrolID<148>\-<168>$patrols[$currentPatrolID]<088>}
+			#var {areacap} {<148>Patrolling: <168><148>\-<168>$patrols[$currentPatrolID]<088>}
 		};
 		#else
 		{

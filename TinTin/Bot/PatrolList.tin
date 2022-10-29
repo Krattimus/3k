@@ -1,4 +1,4 @@
-#showme READING PATROLLER
+#showme READING patrollist
 
 /***********************************************************************************
 	Manages a list of patrols that patrol bot can string in a sequence,

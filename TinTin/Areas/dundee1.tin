@@ -3,19 +3,19 @@
 #var {no_loop} {0}
 #var {no_home} {0}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var {botpath} {e;n;n;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;n;n;n;n;n;w}
+#var {patrol[path]} {e;n;n;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;n;n;n;n;n;w}
 
 #act {^=M= {Swamp Crocodile|Red-bellied Watersnake|Drop bear|Cane Toad|Marbled Reed Frog|Swamp Sparrow|Tricolored Heron}} {
 	#switch {"%1"} {
-		#case {"Red-bellied Watersnake"}	{#var shouldKill snake};
-		#case {"Drop Bear"}			{#var shouldKill bear};
-		#case {"Cane Toad"}			{#var shouldKill toad};
-		#case {"Marbled Reed Frog"}		{#var shouldKill frog};
-		#case {"Swamp Sparrow"}			{#var shouldKill sparrow};
-		#case {"Tricolored Heron"}		{#var shouldKill heron};
-		#case {"Swamp Crocodile"}		{#var shouldKill crocodile}
+		#case {"Red-bellied Watersnake"}	{#var patroller[shouldKill] snake};
+		#case {"Drop Bear"}			{#var patroller[shouldKill] bear};
+		#case {"Cane Toad"}			{#var patroller[shouldKill] toad};
+		#case {"Marbled Reed Frog"}		{#var patroller[shouldKill] frog};
+		#case {"Swamp Sparrow"}			{#var patroller[shouldKill] sparrow};
+		#case {"Tricolored Heron"}		{#var patroller[shouldKill] heron};
+		#case {"Swamp Crocodile"}		{#var patroller[shouldKill] crocodile}
 	};
 	_check_mob
 }

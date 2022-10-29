@@ -1,11 +1,5 @@
 #showme reading CHAT PANEL
 
-#var chat[max] 100
-#var chat[offset] 0
-#var chat[page] 1
-#var chat[rows] 17
-#var chat[scroll] page
-
 #class {chatpanel} {open}
 
 #alias {.renderChat} 
@@ -31,8 +25,8 @@
 	#replace {chat[text]} {\\x7D} {\uFF5D};
 	#list chat[log] ins -1 {${timestamp}$chat[text]};
 
-	#class {chat} {write} {3k/TinTin/Data/3kchat.var};
-	.renderChat
+	#class {chatvar} {write} {3k/TinTin/Data/3kchat.var};
+	.renderChat;
 }
 
 #alias {chatup} 
@@ -48,7 +42,8 @@
 	}; 
 	#elseif {"$chat[scroll]" == "line"} 
 	{
-		#if {$chat[offset] <= $chat[max] && $chat[offset] <= &chat[log][]}
+		#MATH {limit} { $chat[max]-$chat[end] };
+		#if { $limit > $chat[rows] && $chat[offset] <= $chat[max] && $chat[offset] <= &chat[log][]}
 		{
 			#math chat[offset] {$chat[offset] + 1};
 			.renderChat

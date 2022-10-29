@@ -49,10 +49,6 @@
 	}
 }
 
-#EVENT {RECEIVED INPUT} {
-	#var idle 0;
-}
-
 #NOP ***** Individual Data Sections *****
 #ALIAS {.mipProcessFlag} {
 	#SWITCH {"%1"} {
@@ -179,6 +175,7 @@
 			#CASE {"knight"}	{.mipProcessGlineKnight {%1}};
 			#CASE {"mage"}		{.mipProcessGlineMage {%1}};
 			#CASE {"monk"}		{.mipProcessGlineMonk {%1}};
+			#CASE {"Monk"}		{.mipProcessGlineMonk {%1}};
 			#CASE {"necromancer"}	{.mipProcessGlineNecromancer {%1}};
 			#CASE {"priest"}	{.mipProcessGlinePriest {%1}};
 			#CASE {"psicorp"}	{.mipProcessGlinePsicorp {%1}};

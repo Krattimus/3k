@@ -3,17 +3,17 @@
 #var {no_loop} {0}
 #var {no_home} {0}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var {botpath} {ne;e;n;n;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;n;n;w;w;w;w;w;w;w;w;sw}
+#var {patrol[path]} {ne;e;n;n;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;n;n;w;w;w;w;w;w;w;w;sw}
 
 #act {^=M= {Mature Swamp Crocodile|Star-nosed Mole|Three-toed Amphiuma|Purple Swamphen|Purple Swamphen|Golden-Crowned Snake}} {
 	#switch {"%1"} {
-		#case {"Mature Swamp Crocodile"}	{#var shouldKill crocodile};
-		#case {"Star-nosed Mole"}		{#var shouldKill mole};
-		#case {"Three-toed Amphiuma"}		{#var shouldKill amphiuma};
-		#case {"Golden-Crowned Snake"}		{#var shouldKill snake};
-		#case {"Purple Swamphen"}		{#var shouldKill swamphen};
+		#case {"Mature Swamp Crocodile"}	{#var patroller[shouldKill] crocodile};
+		#case {"Star-nosed Mole"}		{#var patroller[shouldKill] mole};
+		#case {"Three-toed Amphiuma"}		{#var patroller[shouldKill] amphiuma};
+		#case {"Golden-Crowned Snake"}		{#var patroller[shouldKill] snake};
+		#case {"Purple Swamphen"}		{#var patroller[shouldKill] swamphen};
 	};
 	_check_mob
 

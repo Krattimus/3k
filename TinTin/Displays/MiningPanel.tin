@@ -14,8 +14,8 @@
 
         #var botareas { 
             \n
-            Materials Gathered: <138>$miner[matsGathered]\n
-            Ore Gathered: <138>$miner[oreGathered]<088>\n
+            <228>Materials Gathered: <138>$miner[matsGathered]<088>\n
+            <228>Ore Gathered: <138>$miner[oreGathered]<088>\n
 
             \n\n
             Rooms Spelunked: <138>$miner[roomsSpelunked]<088>\n

@@ -3,84 +3,25 @@
 /* Load draw variables */
 #read 3k/TinTin/Data/Draw.var
 
+#var panelsOpen 0;
+
 /************************************************************
 	Determine Dimensions
 ************************************************************/
-#if {"$draw[alert]" == "on"} 
-{
-	#var alert[width] 1
-};
-#else
-{
-	#var alert[width] 0
-}
-
-#if {"$draw[canvas]" == "on"} 
-{
-	#var canvas[width] 43;
-	#if {"$map[position]" == "bottom"} 
-	{
-		#if {$map[width] + 1 < $canvas[width]} 
-		{
-			#math {canvas[width} {$map[width] + 1}
-		}
-	}
-};
-#else
-{
-	#var canvas[width] 0
-}
-
-#if {"$draw[caption]" == "on"} 
-{
-	#var caption[height] 2
-};
-#else
-{
-	#var caption[height] 0
-}
-
-#if {"$draw[chat]" == "on"} 
-{
-	#math chat[height] {$chat[rows] + 1};
-	#if {"$draw[map]" == "on" && "$map[position]" == "top"} 
-	{
-		#math {chat[right]} {-$map[width]-2}
-	};
-	#else
-	{
-		#var chat[right] -1
-	}
-};
-#else
-{
-	#var chat[height] 0
-}
-
-#if {"$draw[gline]" == "on"} 
-{
-	#var gline[height] 2
-};
-#else
-{
-	#var gline[height] 0
-}
-
-#if {"$draw[hpbar]" == "on"} 
-{
-	#var hpbar[height] 3
-};
-#else
-{
-	#var hpbar[height] 0
-}
-
+#var alert[width] 1
+#var canvas[width] 43;
+#var caption[height] 2
+#math chat[height] {$chat[rows] + 1};
+#math {chat[right]} {-$map[width]-2}
+#var gline[height] 2
+#var hpbar[height] 3
 
 #math status[height] {$hpbar[height] + $gline[height] + 1}
 #math split[top]	{$chat[height] + $caption[height]}
 #var split[bottom]	$status[height]
 #var split[left]	$alert[width]
 #var split[right]	$canvas[width]
+
 #draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
 #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
 #showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
@@ -90,34 +31,16 @@
 ************************************************************/
 #split $split[top] $split[bottom] $split[left] $split[right]
 #screen clear split
-#buffer end
 
+#draw {line} -2 1 -2 -1;
 /************************************************************
 	Render our displays
 		foreach display in display ( render );
 ************************************************************/
-#if {"$draw[caption]" == "on"} 
-{
-	.renderServerBar
-}
+.renderServerBar;
+chatend;
+.renderHPBar;
 
-
-#if {"$draw[chat]" == "on"} 
-{
-	chatend
-}
-
-#if {"$draw[gline]" == "on"} 
-{
-	
-}
-
-#if {"$draw[hpbar]" == "on"} 
-{
-	.renderHPBar
-}
-
-#draw {line} -2 1 -2 -1;
 
 #if {"$draw[canvas]" == "on"} 
 {
@@ -136,19 +59,7 @@
 	};
 }
 
-#if {"$draw[map]" == "on"}	
-{
-	.renderMiniMap;
-};
-#else
-{
-	#map flag vtmap off
-}
-
-
-
-
-
+.renderMiniMap;
 
 
 #alias .togglePanel

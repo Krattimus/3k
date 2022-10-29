@@ -1,6 +1,9 @@
 #showme READING EVENTS.TIN
 #class {events} {open}
 
+#screen get rows screen[rows];
+#screen get cols screen[cols];
+#var screen[scroll] line;
 
 #alias .captureUntil
 {
@@ -38,71 +41,52 @@
 	};
 };
 
-
-#alias .triggerEvent
+#alias {.doTrigger}
 {
-	#local suffix @substr{{%0};{0};{2}};
-	#local name @substr{{%0};{2};{@strlen{%0}-2}};
-	
-	#format preCall {onPre%s} {$name};
-	#format call {on%s} {$name};
-	#format postCall {onPost%s} {$name};
-
-	#if { &{$preCall} != 0 }
+	#if { &{%1} != 0 }
 	{
-		#local list ${$preCall};
+		#local list ${%1};
 		#foreach {$list[%*]} {callback} 
 		{
-			#if { "$callback" != "" }
+			#if {"%2" == ""}
 			{
-				$callback;
+				#var makeCall $callback;
+				$makeCall;
 			};
-		};
-	};
-
-	#if { &{$call} != 0 }
-	{
-		#local list ${$call};
-		#foreach {$list[%*]} {callback} 
-		{
-			#if { "$callback" != "" }
+			#else
 			{
-				$callback;
-			};
-		};
-	};
-
-	#if { &{$postCall} != 0 }
-	{
-		#local list ${$postCall};
-		#foreach {$list[%*]} {callback} 
-		{
-			#if { "$callback" != "" }
-			{
-				$callback;
+				#var makeCall $callback {%2};
+				$makeCall;
 			};
 		};
 	};
 };
 
+#alias {.triggerEvent}
+{
+	#math {endIndex} {@strlen{%1}-2};
+	#local name @substr{{%1};{2};{$endIndex}};
+	
+	#format preCall {onPre%s} {$name};
+	#format call {on%s} {$name};
+	#format postCall {onPost%s} {$name};
+
+	
+	.doTrigger $preCall {%2};
+	.doTrigger $call {%2};
+	.doTrigger $postCall {%2};
+};
+
 /* Screen Sizing */
 #event {SCREEN RESIZE} 
 {
-    .render;
 	#var screen[rows] %0;
 	#var screen[cols] %1;
 	#var screen[height] %2;
 	#var screen[width] %3;
-}
+    .render;
+};
 
-/* Initialize Screen Variables */
-#screen get rows screen[rows]
-#screen get cols screen[cols]
-#NOP #screen get height screen[height]
-#NOP #screen get width screen[width]
-
-/* Mouse input/buffer/chat scrolling */
-#var screen[scroll] page
 #event {SCROLLED MOUSE WHEEL UP} 
 {
 	#if {%0 > $screen[rows] - $split[bottom]} 
@@ -118,13 +102,13 @@
 		#elseif {"$screen[scroll]" == "line"} 
 		{
 			#buffer up 1
-		}
+		};
 	};
 	#if {%0 < $split[top]} 
 	{
 		chatup
-	}
-}
+	};
+};
 
 #event {SCROLLED MOUSE WHEEL DOWN} 
 {
@@ -149,100 +133,56 @@
 	{
 		chatdown
 	}
-}
+};
 
-/* Double Click to toggle scrolling method per pane */
-#event {DOUBLE-CLICKED MOUSE BUTTON ONE} 
+#event {SESSION DISCONNECTED} 
 {
-	#if {%0 > $screen[rows] - $split[bottom]} 
-	{
-		#return
-	};
-	#if {%0 > $split[top] && %0 < $screen[rows] - $split[bottom]} 
-	{
-		#if {"$screen[scroll]" == "page"} 
-		{
-			#var screen[scroll] line
-		};
-		#else
-		{
-			#var screen[scroll] page
-		}
-	};
-	#if {%0 < $split[top]} 
-	{
-		#if {"$chat[scroll]" == "page"} 
-		{
-			#var chat[scroll] line
-		};
-		#else
-		{
-			#var chat[scroll] page
-		}
-	}
-}
-
-
-/* Screen Split resize on Mouse drag */
-#EVENT {PRESSED MOUSE BUTTON ONE} 
-{
-	#if {%0 == $split[top]} 
-	{
-		#if {%3 == -$split[right]} 
-		{
-			#var DRAG 2
-		};
-		#else
-		{
-			#var DRAG 1
-		}
-	}
-}
-
-#EVENT {RELEASED MOUSE BUTTON ONE} 
-{
-	#variable DRAG 0;
-	#NOP #screen raise SCREEN RESIZE
-}
-
-#EVENT {MOVED MOUSE BUTTON ONE} 
-{
-	#switch {$DRAG} 
-	{
-		#case {0} {
-			#return
-		};
-		#case {1} {
-			#screen clear square 1 1 $split[top] -1;
-			#variable split[top] %0
-		};
-		#case {2} {
-			#screen clear square 1 1 $split[top] -1;
-			#screen clear square $split[top] -$split[right] -$split[bottom]-2 -1;
-			#var split[top] %0;
-			#var canvas[width] -%3
-		}
-	};
-}
+	#NOP Save Map vnum per world;
+	#map get roomvnum {map[$ourCharacter][position]};
+	#NOP Save Map (updated exits for unpause);
+	#NOP #map write .tt/map/3k.map;
+	mapsave;
+	#NOP Write var classes;
+	#class patrolvar write 3k/TinTin/Data/Patrol.var;
+	#class botvar write 3k/TinTin/Data/Bots.var;
+	#class mapvar write 3k/TinTin/Data/Map.var;
+	#class chatvar write 3k/TinTin/Data/3kchat.var;
+	#class farmvar write 3k/TinTin/Data/KnownFarms.var;	
+	#class pubvar write 3k/TinTin/Data/KnownPubs.var;
+	#class shopvar write 3k/TinTin/Data/KnownShops.var;
+	#class itemsvar write 3k/TinTin/Data/KnownItems.var;
+	#class mobsvar write 3k/TinTin/Data/KnownMobs.var;
+};
 
 /* Map mouse clicks*/
+#event {MAP UPDATED VTMAP} 
+{
+	.triggerEvent onMapUpdated;
+};
 
 #NOP Display room info on single-click
 #event {MAP SHORT-CLICKED MOUSE BUTTON ONE} 
 {
+	#showme RECEIVED!;
 	#map at %0 #map info
-}
+} {1};
 
 #NOP Map goto room on double-click
 #event {MAP DOUBLE-CLICKED MOUSE BUTTON ONE} 
 {
 	#map goto %0
-}
+};
 
 #NOP Map run on right-click
 #event {MAP SHORT-CLICKED MOUSE BUTTON THREE} 
 {
 	#map run %0
-}
+};
+
+#EVENT {RECEIVED INPUT} 
+{
+	#var idle 0;
+};
+
 
 #class {events} {close}

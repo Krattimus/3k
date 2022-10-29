@@ -1,0 +1,19 @@
+#showme READING corpsebot
+
+#class {corpsebot} {open};
+
+
+#var corpsebot[isDonating];
+
+
+
+#action {All your corpses are already bigger than what is here.}
+{
+	.goDonateCoffin;
+}
+#action {^The coffin is full!} 
+{
+	.goDonateCoffin;
+}
+
+#class {corpsebot} {close}

@@ -14,7 +14,7 @@
 #var mapping off;
 #var room_cnt 0;
 #map flag static on
-
+#map flag vtmap on;
 /*************************************************************
 	Events
 *************************************************************/
@@ -33,18 +33,15 @@
 	Set the map to our last known location, although
 	it is probably better to do a localizer check here
 *************************************************************/
-#map goto 1;
 #send rating;
 #send pwho;
 #send cc;
 
-/*************************************************************
- TinTin Events, redraw the map when the map changes
-*************************************************************/
-#event {MAP UPDATED VTMAP} 
+#if { @isDigit{$map[$ourCharacter][position]} }
 {
-	.triggerEvent onMapUpdated;
-}
+	#map goto {$map[$ourCharacter][position]};
+};
+
 
 /*************************************************************
  TinTin Events, redraw the map when the map data changes
@@ -67,7 +64,7 @@
 *************************************************************/
 #alias onWimpyMapResponder
 {
-	#map move $wimpyDirection;
+	#map move $event[wimpyDirection];
 };
 
 /*************************************************************
@@ -75,7 +72,7 @@
 *************************************************************/
 #alias onFollowerFollowed
 {
-	#map move $followDirection;
+	#map move $event[followDirection];
 };
 
 /*************************************************************
@@ -163,7 +160,7 @@
 				}
 			} {2}
 		};
-		#delay 0 .renderMap
+		#delay 0 .renderMapInfo
 	}
 }
 

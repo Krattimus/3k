@@ -1,0 +1,66 @@
+#showme READING traveller
+
+#class {traveller} {open}
+
+/*********************************************************
+	Bot Data
+*********************************************************/
+#var traveller[isTravelling] 0;
+#var traveller[controllerID] {traveller};
+#var deadManCount 0;
+
+/*********************************************************
+	Events
+*********************************************************/
+.registerEvent onDebugLog onDebugLogTraveller;
+.registerEvent onRequestLoadController onRequestLoadTraveller;
+.registerEvent onRequestStartController onRequestStartTraveller;
+.registerEvent onRequestPrepareController onRequestPrepareTraveller;
+
+
+#alias onDebugLogTraveller
+{
+	.showHeader Traveller;
+	#var traveller;
+};
+
+#event {MAP END OF RUN}
+{
+
+
+};
+
+/***********************************************************
+	Load travel plans
+***********************************************************/
+#alias {onRequestLoadTraveller%*}
+{
+	#if { "$controllers[toStart]" == "$traveller[controllerID]" }
+	{
+		#showme REQUESTING LOAD: %1;
+	};
+};
+
+/***********************************************************
+	Start travelling!
+***********************************************************/
+#alias {onRequestStartTraveller%*}
+{
+	#if { "$controllers[toStart]" == "$traveller[controllerID]" }
+	{
+		#showme REQUESTING TRAVEL: %1;
+	};
+};
+
+/***********************************************************
+	We are being prepared to travel
+***********************************************************/
+#alias {onRequestPrepareTraveller%*}
+{
+	#if { "$controllers[toStart]" == "$traveller[controllerID]" }
+	{
+		#showme REQUESTING PREPARE: %1;
+	};
+};
+
+#class {traveller} {close}

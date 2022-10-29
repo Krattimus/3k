@@ -1,0 +1,12 @@
+#showme READING seller
+#class {seller} {open};
+
+#var seller[isSelling] 0;
+#var seller[whichShop] chaos;
+
+
+
+
+
+
+#class {seller} {close}

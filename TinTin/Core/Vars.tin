@@ -4,7 +4,7 @@
 #class botvar kill
 #read 3k/TinTin/Data/Bots.var
 
-#class chat kill
+#class chatvar kill
 #read 3k/TinTin/Data/3kchat.var
 
 #class drawvar kill
@@ -28,21 +28,7 @@
 #class mobsvar kill
 #read 3k/TinTin/Data/KnownMobs.var
 
-#event {SESSION DISCONNECTED} 
-{
-	#NOP Save Map vnum per world;
-	#map get roomvnum {map[$ourCharacter][position]};
-	#NOP Save Map (updated exits for unpause);
-	#NOP #map write .tt/map/3k.map;
-	mapsave;
-	#NOP Write var classes;
-	#class botvar write 3k/TinTin/Data/Bots.var;
-	#class mapvar write 3k/TinTin/Data/Map.var;
-	#class farmvar write 3k/TinTin/Data/KnownFarms.var;	
-	#class pubvar write 3k/TinTin/Data/KnownPubs.var;
-	#class shopvar write 3k/TinTin/Data/KnownShops.var;
-	#class itemsvar write 3k/TinTin/Data/KnownItems.var;
-	#class mobsvar write 3k/TinTin/Data/KnownMobs.var;
-}
+#class patrolvar kill
+#read 3k/TinTin/Data/Patrol.var
 
 #CLASS {vars} CLOSE

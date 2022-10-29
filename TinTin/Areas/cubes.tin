@@ -3,16 +3,16 @@
 #var {no_loop} {0}
 #var {no_home} {0}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var {botpath} {e;n;s;e;w;w;w;w;n;s;nw;w;e;s;w;w;n;s;s;n;e;se;w;e;ne;s;d;s;s;n;ne;sw;se;nw;e;e;e;w;w;w;n;u;n;e;e}
+#var {patrol[path]} {e;n;s;e;w;w;w;w;n;s;nw;w;e;s;w;w;n;s;s;n;e;se;w;e;ne;s;d;s;s;n;ne;sw;se;nw;e;e;e;w;w;w;n;u;n;e;e}
 
 #act {^=M= {A massive ochre jelly|A small gelatinous cube|A gigantic gelatinous cube}} {
 	#switch {"%1"} {
-		#case {"A massive ochre jelly"}		{#var shouldKill jelly};
-		#case {"A small gelatinous cube"}	{#var shouldKill cube};
-		#case {"A gigantic gelatinous cube"}	{#var shouldKill cube};
-		#default				{#var shouldKill slime}
+		#case {"A massive ochre jelly"}		{#var patroller[shouldKill] jelly};
+		#case {"A small gelatinous cube"}	{#var patroller[shouldKill] cube};
+		#case {"A gigantic gelatinous cube"}	{#var patroller[shouldKill] cube};
+		#default				{#var patroller[shouldKill] slime}
 	};
 	_check_mob
 }

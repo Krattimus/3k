@@ -1,5 +1,8 @@
 #class {miner} open
 
+/*********************************************************
+	State data
+*********************************************************/
 #var miner[canWalk] 0;
 #var miner[shouldMine] 1;
 #var miner[shouldSpelunk] 1;
@@ -8,7 +11,10 @@
 #var miner[miningLevel] 1;
 #var miner[position] 0;
 #var miner[startedAt] 0;
-
+#var miner[controllerID] {miner};
+/*********************************************************
+	Result stats
+*********************************************************/
 #var miner[roomsSpelunked] 0;
 #var miner[depositsFound] 0;
 #var miner[mobsFound] 0;
@@ -17,29 +23,54 @@
 #var miner[matsGathered] 0;
 #var miner[oreGathered] 0;
 
-#var miner[mining] {copper bronze adamantium obsidian nethernium}
+
+#var miner[ores] {copper bronze adamantium obsidian nethernium}
 
 /*********************************************************
 	Events
 *********************************************************/
 .registerEvent onDebugLog onDebugLogMinerResponder;
-.registerEvent onRequestStop requestStopPatroller;
+.registerEvent onRequestStop requestStopMiner;
 .registerEvent onPathFinished onPathFinishedMinerResponder;
 .registerEvent onRoomSeen onRoomSeenMinerResponder;
-.registerEvent onKilledMob onMobKilledMinerResponse;
+.registerEvent onKilledMob onKilledMobMinerResponse;
 .registerEvent onItemFound onItemFoundMinerResponse;
+.registerEvent onDarkness onDarknessMiner;
+.registerEvent onRequestStartController onRequestStartMiner;
+.registerEvent onRequestPrepareController onRequestPrepareMiner;
 
-#event {CLASS DESTROYED miner}
+/***********************************************************
+	To prepare for mining, we must go to the mines
+***********************************************************/
+#alias {onRequestPrepareMiner%1}
 {
-
+	#if { "$controllers[toStart]" == "$miner[controllerID]" }
+	{	
+		#echo {<202> Preparing to Mine <088>};
+		go mines;
+	};
 };
 
+/***********************************************************
+	Start mining!
+***********************************************************/
+#alias {onRequestStartMiner%1}
+{
+	#if { "$controllers[toStart]" == "$miner[controllerID]" }
+	{	
+		#echo {<202> Starting to Mine <088>};
+		.startMining;
+	};
+};
+
+/***********************************************************************
+	DebugLog responder
+***********************************************************************/
 #alias onDebugLogMinerResponder
 {
 	.showHeader Mining;
 	#var miner;
 };
-
 
 /***********************************************************************
 	Heart beat, every .1 second run our decision making tree
@@ -72,7 +103,9 @@
 	};
 } {0.5};
 
-
+/***********************************************************
+	Mine
+***********************************************************/
 #alias {.doBehaviorMine}
 {
 	#UNDELAY {decisionStall};
@@ -81,6 +114,9 @@
 	#send !mine;
 }
 
+/***********************************************************
+	Spelunks
+***********************************************************/
 #alias {.doBehaviorSpelunk}
 {
 	#UNDELAY {decisionStall};
@@ -92,6 +128,9 @@
 	.renderMiningPanel;
 }
 
+/***********************************************************
+	Walks the path
+***********************************************************/
 #alias .doBehaviorWalkMine
 {
 	#undelay {decisionStall};
@@ -101,12 +140,9 @@
 	#math {miner[roomsVisited]} {$miner[roomsVisited]+1};
 	.renderMiningPanel;
 }
+
 /***********************************************************
-	Allow movement again only until we see a room again
-	Ideally, it wouldn't be until a room was seen AND a
-	prompt was received, but sometimes the fast movement
-	back buffers the prompt outputs, and you may get 
-	multiple outputs, so this is a better truth for movement
+	Called whenever we get a look at the world
 ***********************************************************/
 #alias onRoomSeenMinerResponder
 {
@@ -118,13 +154,9 @@
 };
 
 /***********************************************************
-	Does a stall check, if for whatever reason, our 
-	data doesn't match the world and we DON'T catch it,
-	or if a decision hits an unforseen case, then this
-	stall check will check again. If we can make a decision
-	the check is stopped. So either a stallCheck goes or
-	a decisionGoes. If we stall more than 4-5 times, something
-	is wrong and we don't know what to do, so deadman the patrol
+	Either a stallCheck goes or	a decisionGoes. In case 
+	all decisions are set to false, we need an out or we
+	sit
 ***********************************************************/
 #alias .doMinerStallCheck
 {
@@ -136,21 +168,33 @@
 			#undelay {decisionStall};
 			#echo {<202> Mining Stopped Due to Indecision <088>};
 			#var miner[isMining] 0;
-			.triggerEvent onMiningStopped;
+			.triggerEvent onControllerStopped {$miner[controllerID]};
 		};
 	
 		glance;
-	} {30};
+	} {20};
 };
 
 /***********************************************************************
+	Monster is killed
+***********************************************************************/
+#alias {onKilledMobMinerResponse}
+{
+	#if { $miner[isMining] }
+	{
+		#var miner[beingAttacked] 0;
+		.doMinerStallCheck;
+	};
+};
 
+/***********************************************************************
+	On item found, if it is a deposit, stop and mine it
 ***********************************************************************/
 #alias {onItemFoundMinerResponse}
 {
 	#if { $miner[isMining] }
 	{
-		#if { @containsNoCase{{$lastItemFound}{deposit}} }
+		#if { @containsNoCase{{$event[lastItemFound]}{deposit}} }
 		{
 			#var miner[shouldSpelunk] 0;
 			#var miner[shouldMine] 1;
@@ -158,6 +202,20 @@
 		};
 	};
 } {2};
+
+/***********************************************************
+	Stop if we hit a place that is too dark
+***********************************************************/
+#alias onDarknessMiner
+{
+	#if { $miner[isMining] }
+	{
+		#echo {<202> Miner Stopped Due to Darkness <088>};
+		#undelay {decisionStall};
+		#var miner[isMining] 0;
+	};
+};
+
 
 /***********************************************************************
 	Load path based on which mine was entered
@@ -195,25 +253,23 @@
 	};
 }
 
-#alias {onMobKilledMinerResponse}
-{
-	#if { $miner[isMining] }
-	{
-		#var miner[beingAttacked] 0;
-		.doMinerStallCheck;
-	};
-};
-
 /***********************************************************************
-	
+	The core is saying to stop	
 ***********************************************************************/
-#alias requestStopPatroller
+#alias requestStopMiner
 {
 	#if { $miner[isMining] }
 	{
 		.stopMining;
 	};
 };
+
+
+
+
+
+
+
 
 /***********************************************************************
 	stop
@@ -229,6 +285,8 @@
 	#var patrol[anchored] $mapAnchor;
 	#path save forward miner[path];
 	#path save position miner[position];
+
+	.triggerEvent onControllerStopped {$miner[controllerID]};
 };
 
 /***********************************************************************
@@ -241,9 +299,6 @@
 	#NOP "$patrolArea" == "$patrol[area]";
 	#if { $miner[startedAt] == 40 }
 	{
-		#showme {<202> Mines Level to $miner[miningLevel]  <088>};
-		.showSettings; 
-
 		#var deadManCount 0;
 		#var miner[canWalk] 1;
 		#var miner[beingAttacked] 0;
@@ -251,29 +306,37 @@
 		#var miner[shouldMine] 1;
 		#var miner[isMining] 1;
 		#var currentController miner;
+		.triggerEvent onControllerStarted {$miner[controllerID]};
 		#send mines $miner[miningLevel];
 	};
 	#else
 	{
-		#echo {<202> Patrol Start Cancelled, We are not in the right area <088>};
-		.triggerEvent onMiningStopped;
+		#echo {<202> Miner Start Cancelled, we are not in the right area <088>};
+		.triggerEvent onControllerStopped {$miner[controllerID]};
 	}
 };
 
+/***********************************************************************
+	Detect gathered ore
+***********************************************************************/
 #action {^You have successfully gathered some}
 {
 	#math {miner[oreGathered]} {$miner[oreGathered]+1};
 	.renderMiningPanel;
 };
 
-
+/***********************************************************************
+	Detect gathered materials
+***********************************************************************/
 #action {^You found %1 hidden inside!!}
 {
 	#math {miner[matsGathered]} {$miner[matsGathered]+1};
 	.renderMiningPanel;
 };
 
-/* Deposit Found logic */
+/***********************************************************************
+	Detect deposit found
+***********************************************************************/
 #action {^You have found a deposit of %1 ore!} 
 {
 	#math {miner[depositsFound]} {$miner[depositsFound]+1};
@@ -281,20 +344,28 @@
 	#var miner[shouldMine] 1;
 } {1};
 
-/* Empty room logic */
+/***********************************************************************
+	Detect 
+***********************************************************************/
 #action {^You have found nothing.} 
 {
+	#var miner[shouldSpelunk] 1;
 	#var miner[shouldMine] 0;
+	#var miner[canWalk] 1;
 }
 
-/* Searched room logic */
+/***********************************************************************
+	Spelunking response
+***********************************************************************/
 #action {^It appears this part of the shaft has already been searched.} 
 {
 	#var miner[shouldSpelunk] 0;
 	#var miner[canWalk] 1;
 }
 
-/* Mining complete logic */
+/***********************************************************************
+	Post mining response
+***********************************************************************/
 #action {^You have exhausted the supply of %w ore.$} 
 {
 	#send get all;
@@ -302,20 +373,27 @@
 	#var miner[canWalk] 1;
 }
 
-/* Spelunk with deposit present */
+/***********************************************************************
+	Spelunking response
+***********************************************************************/
 #action {^There is already a deposit here!} 
 {
 	#var miner[shouldSpelunk] 0;
 	#var miner[shouldMine] 1;
 }
 
-/* Mob active logic */
+/***********************************************************************
+	Spelunking while being attacked, although this should not happen
+***********************************************************************/
 #action {^You cannot spelunk while you're being attacked!} 
 {
 	#var miner[shouldSpelunk] 1;
 	#var miner[beingAttacked] 1;
 }
 
+/***********************************************************************
+	An aggro mob comes forth
+***********************************************************************/
 #action {^You have disturbed} 
 {
 	#var miner[beingAttacked] 1;
@@ -323,13 +401,21 @@
 	.renderMiningPanel;
 }
 
+/***********************************************************************
+	An aggro mob comes forth
+***********************************************************************/
 #alias {onPathFinishedMinerResponder}
 {
-	#echo {<202> Mining Stopped due to completion <088>};
-	#var miner[isMining] 0;
-
+	#if { $miner[isMining] }
+	{
+		#echo {<202> Mining Stopped due to completion <088>};
+		#var miner[isMining] 0;
+	};
 } {1};
 
+/***********************************************************************
+	Left mine
+***********************************************************************/
 #action {^You hop in the exit chute and fly out of the mine shaft!} 
 {
 	#echo {<202> Mining Stopped due to leaving mine <088>};

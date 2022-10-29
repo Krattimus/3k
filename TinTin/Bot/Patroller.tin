@@ -1,0 +1,438 @@
+#showme READING PATROLLER
+
+#class {patroller} {open}
+
+/*********************************************************
+	Bot Data
+*********************************************************/
+#var patroller[shouldKill] {}
+#var patroller[attacking] 0;
+#var patroller[isPatrolling] 0;
+#var patroller[canWalk] 1;
+#var patroller[playerAttacked] 0;
+#var patroller[controllerID] {patrol};
+#var deadManCount 0;
+
+/*********************************************************
+	Events
+*********************************************************/
+.registerEvent onMobKilled onMobKilledPatroller;
+.registerEvent onWimpy onWimpyPatroller;
+.registerEvent onFailedAttack onFailedAttackPatroller;
+.registerEvent onRoomSeen onRoomSeenPatroller;
+.registerEvent onFailedMovement onFailedMovementPatroller;
+.registerEvent onDebugLog onDebugLogPatroller;
+.registerEvent onRequestStop requestStopPatroller;
+.registerEvent onRequestResume requestResumePatroller;
+.registerEvent onPathFinished onPathFinishedPatroller;
+.registerEvent onClearData onClearDataPatroller;
+.registerEvent onPlayerAttacked onPlayerAttackedPatroller;
+.registerEvent onDarkness onDarknessPatroller;
+.registerEvent onRequestLoadController onRequestLoadPatroller;
+.registerEvent onRequestStartController onRequestStartPatroller;
+.registerEvent onRequestPrepareController onRequestPreparePatroller;
+
+
+#alias onDebugLogPatroller
+{
+	.showHeader Patroller;
+	#var patroller;
+	.showHeader Patrol;
+	#var patrol;
+};
+
+/***********************************************************
+	We have arrived at our patrol start, lets load the data
+***********************************************************/
+#alias {onRequestLoadPatroller%1}
+{
+	#if { "$controllers[toStart]" == "$patroller[controllerID]" }
+	{
+		.loadPatrol $patrols[$currentPatrolID];
+		.showSettings;
+		#var patrol;
+	};
+};
+
+/***********************************************************
+	Start patrolling!
+***********************************************************/
+#alias {onRequestStartPatroller%1}
+{
+	#if { "$controllers[toStart]" == "$patroller[controllerID]" }
+	{
+		.startPatrol;
+	};
+};
+
+/***********************************************************
+	We are being prepared to go patrol
+***********************************************************/
+#alias {onRequestPreparePatroller%1}
+{
+	#if { "$controllers[toStart]" == "$patroller[controllerID]" }
+	{
+		#showme {<202> Going to patrol [$patrols[$currentPatrolID]]  <088>};
+		go $patrols[$currentPatrolID];
+	};
+};
+
+/***********************************************************
+	Heart beat, run our decision making	tree
+***********************************************************/
+#ticker {patrolHeartBeat} 
+{
+	#NOP { Is the patrol bot active ? };
+	#if { $patroller[isPatrolling] }
+	{
+		.determineState;
+
+		#NOP { Are we by ourselves? };
+		#if { !$found[player] }
+		{
+			#NOP { If there is a mob that should be killed, attack it };
+			#if { $found[mob] && "$patroller[shouldKill]" != "" }
+			{
+				.doBehaviorAttack;
+			};
+			#elseif { $patroller[canWalk] }
+			{
+				.doBehaviorPatrol;
+			}
+		};
+		#NOP { There are other players here, we should just move along};
+		#else
+		{
+			.doBehaviorPatrol;
+		};
+	};
+} {0.5};
+
+/************************************************************
+	DetermineState
+		This is called after all the data collection
+		has been given and before the state machine runs.
+		It lets us add logic to correct assumptions from data.
+		For example: If we are told not to walk because a mob
+		 	was found... But, what if the mob isn't what
+			we were suppose to kill?
+************************************************************/
+#alias .determineState 
+{
+	#if { $patroller[attacking] }
+	{
+		#undelay {decisionStall};
+		#var patroller[canWalk] 0;
+	};
+	#else
+	{
+		#NOP { We see mobs since our last update };
+		#if { !$found[player] && $found[mob] && "$patroller[shouldKill]" != "" }
+		{
+			#var patroller[canWalk] 0;
+		};
+	};
+
+	#NOP { We were attacked since our last update };
+	#if { $playerAttacked }
+	{
+		#NOP { We can do several things here, kill it, flee, stop the patrol, etc... };
+		#var patroller[canWalk] 0;
+		#var patroller[attacking] 1;
+		#var patroller[playerAttacked] 0;
+	}
+};
+
+/************************************************************
+	Behavior Attack: kill mob
+************************************************************/
+#alias .doBehaviorAttack
+{
+	#if { !$patroller[attacking] }
+	{
+		#undelay {decisionStall};
+		#var patroller[attacking] 1;
+		#var patroller[canWalk] 0;
+		#var deadManCount = 0;
+		#send !kill $patroller[shouldKill];
+	};
+};
+
+/************************************************************
+	Behavior Patrol: Walk the path
+************************************************************/
+#alias .doBehaviorPatrol
+{
+	#undelay {decisionStall};
+	#var deadManCount 0;
+	#var patroller[canWalk] 0;
+	#path walk;
+}
+
+/************************************************************
+	Between the time we decided to kill, and and time we
+	tried to kill, we moved or the mob moved. Therefore
+	we should no longer mark ourselves as trying to attack
+	and shoudl look around to re-establish
+************************************************************/
+#alias onFailedAttackPatroller
+{
+	#var patroller[attacking] 0;
+
+	#if { $patroller[isPatrolling] }
+	{
+		glance;
+	};
+};
+
+/***********************************************************
+    We tried moving somewhere and it was blocked, this
+	probalby shouldn't happen in a patrol logic, so just 
+	stop. Perhaps even 'go home'
+***********************************************************/
+#alias onFailedMovementPatroller
+{
+	#if { $patroller[isPatrolling] }
+	{
+		#echo {<202> Failed Movement <088>};
+		#var patroller[isPatrolling] 0;
+		.triggerEvent onControllerStopped {$patroller[controllerID]};
+	};
+};
+
+/***********************************************************
+	Called when we look around
+***********************************************************/
+#alias onClearDataPatroller
+{
+	#var patroller[shouldKill] {};
+};
+
+/***********************************************************
+	We wimpyed
+***********************************************************/
+#alias onWimpyPatroller
+{
+	#if { $patroller[isPatrolling] }
+	{
+		#echo {<202> Wimpy <088>};
+		#var patroller[isPatrolling] 0;
+		.triggerEvent onControllerStopped {$patroller[controllerID]};
+	};
+};
+
+/***********************************************************
+	A mob died, lets take a look around
+***********************************************************/
+#alias onMobKilledPatroller
+{	
+	#var patroller[shouldKill] {};
+	#var found[mob] 0;
+	#var patroller[attacking] 0;
+
+	#if { $patroller[isPatrolling] }
+	{
+		#delay {0.2} { glance; };
+	};
+};
+
+/***********************************************************
+	We are being attacked, stop and look
+***********************************************************/
+#alias onPlayerAttackedPatroller
+{
+	#var patroller[playerAttacked] 1;
+};
+
+/***********************************************************
+	Stop if we hit a place that is too dark
+***********************************************************/
+#alias onDarknessPatroller
+{
+	#if { $patroller[isPatrolling] }
+	{
+		#echo {<202> Darkness <088>};
+		#undelay {decisionStall};
+		#var patroller[isPatrolling] 0;
+		.triggerEvent onControllerStopped {$patroller[controllerID]};
+	};
+};
+
+/***********************************************************
+	Does a stall check, if for whatever reason, our 
+	data doesn't match the world and we DON'T catch it,
+	or if a decision hits an unforseen case, then this
+	stall check will check again. If we can make a decision
+	the check is stopped. So either a stallCheck goes or
+	a decisionGoes. If we stall more than 4-5 times, something
+	is wrong and we don't know what to do, so deadman the patrol
+***********************************************************/
+#alias .doStallCheck
+{
+	#delay {decisionStall} 
+	{
+		#math {deadManCount} {$deadManCount+1};
+		#if { $deadManCount == 5 }
+		{
+			#undelay {decisionStall};
+			#echo {<202> Indecision <088>};
+			#var patroller[isPatrolling] 0;
+			.triggerEvent onControllerStopped {$patroller[controllerID]};
+		};
+	
+		glance;
+	} {30};
+};
+
+/***********************************************************
+	Allow movement again only until we see a room again
+	Ideally, it wouldn't be until a room was seen AND a
+	prompt was received, but sometimes the fast movement
+	back buffers the prompt outputs, and you may get 
+	multiple outputs, so this is a better truth for movement
+***********************************************************/
+#alias onRoomSeenPatroller
+{
+	#if { $patroller[isPatrolling] }
+	{
+		.doStallCheck;
+		#var patroller[canWalk] 1;
+	}
+};
+
+/***********************************************************
+	The loaded patrol has been finished!
+***********************************************************/
+#alias onPathFinishedPatroller
+{
+	#if { $patroller[isPatrolling] }
+	{
+		#echo {<202> Patrol Stopped Due to Completion <088>};
+		#undelay {decisionStall};
+		#var patroller[isPatrolling] 0;
+		.mapAnchor;
+		#var patrol[anchored] $mapAnchor;
+		.triggerEvent onControllerFinished;
+	};
+};
+
+/*********************************************************
+	Loads a patrol, called when it arrives at an area
+	that was designated to be patrolled
+*********************************************************/
+#alias {.loadPatrol %1} 
+{
+	#echo {<202> Loading Patrol for [%1] <088>};
+
+	.unregisterEvent onMobFound onMobAreaResponder;
+
+	#map get {roomvnum} {startedAt};
+	#read  3k/TinTin/Areas/%1.tin;
+
+	#var patrol[startedAt] $startedAt;
+	#var patrol[anchored] $startedAt;
+	#var patrol[mapname] %1;
+	#var patrol[position] 0;
+	
+	#path load patrol[path];
+};
+
+/*********************************************************
+	Sets the variables to begin patroller[isPatrolling]
+*********************************************************/
+#alias {.startPatrol}
+{
+	#NOP "$patrolArea" == "$patrol[area]";
+	#if { "$patrol[startingLocation]" == "$patrol[startedAt]" }
+	{
+		#echo {<202> Patrol Started <088>};
+
+		.triggerEvent onControllerStarted {$patroller[controllerID]};
+		#var deadManCount 0;
+		#var patroller[canWalk] 0;
+		#var patroller[attacking] 0;
+		#var patroller[isPatrolling] 1;
+		#var currentController patrol;
+		glance;
+	};
+	#else
+	{
+		#echo {<202> We are not in the right area <088>};
+		.triggerEvent onControllerStopped {$patroller[controllerID]};
+	}
+};
+
+/*********************************************************
+	Stop doesn't necessarily 'stop', it just sets
+	variables such that the patroller doesn't actively
+	process. Perhaps a 'pause' is a better term, but I
+	think people will think more like:  
+		goPatrol, 
+		stop patroller[isPatrolling],
+		goSell,
+		goMining,
+		go back to patroller[isPatrolling]
+*********************************************************/
+#alias {.stopPatrol}
+{
+	#echo {<202> Patrol Stopped <088>};
+
+	#var patroller[isPatrolling] 0;
+	#var currentController none;
+	.mapAnchor;
+
+	#var patrol[anchored] $mapAnchor;
+	#path save forward patrol[path];
+	#path save position patrol[position];
+	.triggerEvent onControllerStopped {$patroller[controllerID]};
+};
+
+/*********************************************************
+	This is similar to start patrol, except that it
+	uses the variables already filled in
+*********************************************************/
+#alias {.resumePatrol}
+{
+	#var mapAnchor $patrol[anchored];
+	.mapReturn;
+	
+	#delay {3}
+	{
+		#echo {<202> Resuming Patrol <088>};
+
+		#path load $patrol[path];
+		#path goto $patrol[position];
+
+		#var patroller[attacking] 0;	
+		#var patroller[isPatrolling] 1;
+		#var currentController patrol;
+
+		.triggerEvent onControllerStarted {$patroller[controllerID]};
+		glance;
+	};
+};
+
+/*********************************************************
+	Parent Controller telling us to stop
+*********************************************************/
+#alias requestStopPatroller
+{
+	#if { $patroller[isPatrolling] }
+	{
+		.stopPatrol;
+	};
+};
+
+/*********************************************************
+	Parent is telling the controllers to resume
+*********************************************************/
+#alias requestResumePatroller
+{
+	#if { "$controllers[toResume]" == "patrol" }
+	{
+		.resumePatrol;
+	}
+};
+
+
+#class {patroller} {close}

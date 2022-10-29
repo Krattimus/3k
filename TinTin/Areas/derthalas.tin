@@ -3,42 +3,42 @@
 #var {no_loop} {0}
 #var {no_home} {0}
 #var {hardmode} {0}
-#var {shouldVacuum} {1}
+#var {settings[shouldVacuum]} {1}
 
-#var {botpath} {s;sw;s;s;s;s;sw;w;e;s;sw;s;se;w;ne;n;ne;s;n;sw;se;nw;sw;n;w;n;sw;n;w;s;w;n;ne;e;ne;s;se;nw;n;e;n;n;sw;n;n;w;s;n;w;w;s;s;s;ne;n;s;e;w;s;e;w;w;s;w;s;s;w;n;n;w;s;w;w;e;s;w;e;e;s;e;sw;nw;s;e;e;s;n;n;e;s;s;n;ne;sw;e;e;s;n;n;e;e;w;s;e;s;w;e;e;s;e;n;s;s;ne;e;s;w;s;e;w;n;nw;w;sw;w;ne;w;sw;n;nw;s;sw;s;ne;se;e;w;sw;e;w;n;s;w;nw;n;s;s;n;w;e;se;se;s;n;w;sw;w;sw;w;w;e;s;e;e;e;nw;e;n;ne;s;s;s;e;n;s;e;e;w;s;s;w;n;sw;n;w;w;w;s;w;sw;ne;se;ne;s;e;n;s;e;e;s;n;e;se;e;e;e;e;e;n;e;n;e;n;e;s;s;e;s;n;e;n;w;n;e;e;s;e;s;e;s;s;w;n;s;s;w;n;w;s;s;e;s;s;s;w;s;w;w;n;e;e;n;n;n;w;s;s;s;w;n;n;n;n;e;n;w;w;s;s;s;s;s;n;n;n;n;w;n;n;w;s;n;w;w;w;w;w;nw;w;w;s;sw;n;w;w;e;s;s;e;w;s;w;n;w;s;w;n;w;s;s;e;w;w;n;n;w;s;s;s;w;n;n;n;n;w;s;s;s;s;w;w;n;w;e;e;n;w;n;e;n;w;w;n;w;w;w;w;w;w;w;w;w;s;e;s;e;e;n;e;e;e;e;e;e;s;w;s;w;n;s;w;w;n;w;s;s;e;e;e;s;e;w;w;w;w;s;w;w;n;n;w;w;w;n;n;e;n;w;w;n;w;s;w;n;w;s;w;w;s;w;e;s;e;e;e;n;e;e;s;w;s;e;s;w;w;w;n;w;s;w;s;w;e;e;e;e;e;s;w;w;w;w;e;s;e;e;e;e;n;e;n;n;e;e;s;w;s;e;s;s;s;w;n;n;w;s;s;w;n;w;w;s;e;w;w;s;w;s;w;s;w;s;e;n;e;s;s;w;e;e;e;s;e;e;e;n;w;w;n;w;n;n;w;n;e;e;e;e;s;e;w;s;w;w;n;s;e;s;e;e;s;e;e;n;n;w;e;s;e;n;w;n;n;w;n;e;n;e;n;n;e;e;n;s;e;e;n;e;e;e;s;e;w;w;w;s;w;w;w;w;s;e;w;s;w;s;s;e;n;e;e;e;e;n;e;s;e;s;e;e;w;w;w;w;w;w;s;w;s;w;s;e;e;n;s;e;e;n;n;w;e;e;s;e;w;s;s;s;s;w;w;n;e;n;w;s;w;w;n;w;w;w;w;s;e;e;e;e;s;w;w;w;w;w;w;w;w;w;s;w;s;e;n;e;e;e;s;s;w;n;w;s;e;s;e;e;e;s;e;e;s;e;e;n;w;n;n;w;n;w;w;w;e;n;e;e;e;e;e;e;s;w;w;s;s;e;n;s;s;e;n;e;e;n;n;w;e;n;e;s;s;s;e;n;n;n;e;s;s;e;n;e;s;e;e;e;e;n;e;w;n;w;n;s;s;w;w;n;e;n;w;w;s;n;w;n;w;w;s;w;n;n;e;e;n;w;e;n;e;s;e;s;e;e;w;n;n;w;e;e;e;s;s;e;e;n;n;w;e;e;n;s;s;s;e;n;n;s;e;e;e;n;w;n;w;e;n;n;e;s;s;e;s;s;e;n;n;e;s;n;e;e;n;e;s;s;e;s;e;e;n;e;n;w;w;s;w;n;n;e;e;n;e;e;w;w;n;w;s;n;w;w;w;s;w;s;w;w;w;n;e;e;e;n;w;n;w;s;w;n;n;n;e;w;n;w;s;s;s;w;n;n;n;n;w;s;s;s;w;n;n;s;w;s;n;w;w;w;w;n;w;s;w;n;w;s;w;n;n;n;n;n;e;e;e;e;e;e;e;ne;n;n;e;e;ne;n;n;n;w;n;n;ne;ne;n;ne;ne;e;ne;nw;n;ne;n;ne;n;n;n;n;ne;n}
+#var {patrol[path]} {s;sw;s;s;s;s;sw;w;e;s;sw;s;se;w;ne;n;ne;s;n;sw;se;nw;sw;n;w;n;sw;n;w;s;w;n;ne;e;ne;s;se;nw;n;e;n;n;sw;n;n;w;s;n;w;w;s;s;s;ne;n;s;e;w;s;e;w;w;s;w;s;s;w;n;n;w;s;w;w;e;s;w;e;e;s;e;sw;nw;s;e;e;s;n;n;e;s;s;n;ne;sw;e;e;s;n;n;e;e;w;s;e;s;w;e;e;s;e;n;s;s;ne;e;s;w;s;e;w;n;nw;w;sw;w;ne;w;sw;n;nw;s;sw;s;ne;se;e;w;sw;e;w;n;s;w;nw;n;s;s;n;w;e;se;se;s;n;w;sw;w;sw;w;w;e;s;e;e;e;nw;e;n;ne;s;s;s;e;n;s;e;e;w;s;s;w;n;sw;n;w;w;w;s;w;sw;ne;se;ne;s;e;n;s;e;e;s;n;e;se;e;e;e;e;e;n;e;n;e;n;e;s;s;e;s;n;e;n;w;n;e;e;s;e;s;e;s;s;w;n;s;s;w;n;w;s;s;e;s;s;s;w;s;w;w;n;e;e;n;n;n;w;s;s;s;w;n;n;n;n;e;n;w;w;s;s;s;s;s;n;n;n;n;w;n;n;w;s;n;w;w;w;w;w;nw;w;w;s;sw;n;w;w;e;s;s;e;w;s;w;n;w;s;w;n;w;s;s;e;w;w;n;n;w;s;s;s;w;n;n;n;n;w;s;s;s;s;w;w;n;w;e;e;n;w;n;e;n;w;w;n;w;w;w;w;w;w;w;w;w;s;e;s;e;e;n;e;e;e;e;e;e;s;w;s;w;n;s;w;w;n;w;s;s;e;e;e;s;e;w;w;w;w;s;w;w;n;n;w;w;w;n;n;e;n;w;w;n;w;s;w;n;w;s;w;w;s;w;e;s;e;e;e;n;e;e;s;w;s;e;s;w;w;w;n;w;s;w;s;w;e;e;e;e;e;s;w;w;w;w;e;s;e;e;e;e;n;e;n;n;e;e;s;w;s;e;s;s;s;w;n;n;w;s;s;w;n;w;w;s;e;w;w;s;w;s;w;s;w;s;e;n;e;s;s;w;e;e;e;s;e;e;e;n;w;w;n;w;n;n;w;n;e;e;e;e;s;e;w;s;w;w;n;s;e;s;e;e;s;e;e;n;n;w;e;s;e;n;w;n;n;w;n;e;n;e;n;n;e;e;n;s;e;e;n;e;e;e;s;e;w;w;w;s;w;w;w;w;s;e;w;s;w;s;s;e;n;e;e;e;e;n;e;s;e;s;e;e;w;w;w;w;w;w;s;w;s;w;s;e;e;n;s;e;e;n;n;w;e;e;s;e;w;s;s;s;s;w;w;n;e;n;w;s;w;w;n;w;w;w;w;s;e;e;e;e;s;w;w;w;w;w;w;w;w;w;s;w;s;e;n;e;e;e;s;s;w;n;w;s;e;s;e;e;e;s;e;e;s;e;e;n;w;n;n;w;n;w;w;w;e;n;e;e;e;e;e;e;s;w;w;s;s;e;n;s;s;e;n;e;e;n;n;w;e;n;e;s;s;s;e;n;n;n;e;s;s;e;n;e;s;e;e;e;e;n;e;w;n;w;n;s;s;w;w;n;e;n;w;w;s;n;w;n;w;w;s;w;n;n;e;e;n;w;e;n;e;s;e;s;e;e;w;n;n;w;e;e;e;s;s;e;e;n;n;w;e;e;n;s;s;s;e;n;n;s;e;e;e;n;w;n;w;e;n;n;e;s;s;e;s;s;e;n;n;e;s;n;e;e;n;e;s;s;e;s;e;e;n;e;n;w;w;s;w;n;n;e;e;n;e;e;w;w;n;w;s;n;w;w;w;s;w;s;w;w;w;n;e;e;e;n;w;n;w;s;w;n;n;n;e;w;n;w;s;s;s;w;n;n;n;n;w;s;s;s;w;n;n;s;w;s;n;w;w;w;w;n;w;s;w;n;w;s;w;n;n;n;n;n;e;e;e;e;e;e;e;ne;n;n;e;e;ne;n;n;n;w;n;n;ne;ne;n;ne;ne;e;ne;nw;n;ne;n;ne;n;n;n;n;ne;n}
 
 #act {^=M= {A bear|A deer|A ghoul|A skeletal bear|A zombie deer|An elf|An elven ghoul|Dark treant|Elven hunter|Elven Hunter-killer|Elven Huntress-killer|Elven skeleton|Elven zombie|Elvish ghoul|Mountain lion|Rotted deer buck|Shadow creature|Skeletal bat|Skeletal elf|Skeletal elven hunter|Undead bear|Undead elf|Undead elven hunter|Undead elven huntress|Undead wolf|Will o' wisp|Wolf beast|Wolf zombie|Zombie elf}} {
 	#switch {"%1"} {
-		#case {"A bear"}			{#var shouldKill bear};
-		#case {"A deer"}			{#var shouldKill deer};
-		#case {"A ghoul"}			{#var shouldKill ghoul};
-		#case {"A skeletal bear"}		{#var shouldKill bear};
-		#case {"A zombie deer"}			{#var shouldKill deer};
-		#case {"An elf"}			{#var shouldKill elf};
-		#case {"An elven ghoul"}		{#var shouldKill elf};
-		#case {"Dark treant"}			{#var shouldKill treant};
-		#case {"Elven hunter"}			{#var shouldKill elf};
-		#case {"Elven Hunter-killer"}		{#var shouldKill elf};
-		#case {"Elven Huntress-killer"}		{#var shouldKill elf};
-		#case {"Elven skeleton"}		{#var shouldKill elf};
-		#case {"Elven zombie"}			{#var shouldKill elf};
-		#case {"Elvish ghoul"}			{#var shouldKill elf};
-		#case {"Mountain lion"}			{#var shouldKill lion};
-		#case {"Rotted deer buck"}		{#var shouldKill deer};
-		#case {"Shadow creature"}		{#var shouldKill creature};
-		#case {"Skeletal bat"}			{#var shouldKill bat};
-		#case {"Skeletal elf"}			{#var shouldKill elf};
-		#case {"Skeletal elven hunter"}		{#var shouldKill elf};
-		#case {"Undead bear"}			{#var shouldKill bear};
-		#case {"Undead elf"}			{#var shouldKill elf};
-		#case {"Undead elven hunter"}		{#var shouldKill elf};
-		#case {"Undead elven huntress"}		{#var shouldKill elf};
-		#case {"Undead wolf"}			{#var shouldKill wolf};
-		#case {"Will o' wisp"}			{#var shouldKill wisp};
-		#case {"Wolf beast"}			{#var shouldKill wolf};
-		#case {"Wolf zombie"}			{#var shouldKill wolf};
-		#case {"Zombie elf"}			{#var shouldKill elf};
-		#default				{#var shouldKill elf}
+		#case {"A bear"}			{#var patroller[shouldKill] bear};
+		#case {"A deer"}			{#var patroller[shouldKill] deer};
+		#case {"A ghoul"}			{#var patroller[shouldKill] ghoul};
+		#case {"A skeletal bear"}		{#var patroller[shouldKill] bear};
+		#case {"A zombie deer"}			{#var patroller[shouldKill] deer};
+		#case {"An elf"}			{#var patroller[shouldKill] elf};
+		#case {"An elven ghoul"}		{#var patroller[shouldKill] elf};
+		#case {"Dark treant"}			{#var patroller[shouldKill] treant};
+		#case {"Elven hunter"}			{#var patroller[shouldKill] elf};
+		#case {"Elven Hunter-killer"}		{#var patroller[shouldKill] elf};
+		#case {"Elven Huntress-killer"}		{#var patroller[shouldKill] elf};
+		#case {"Elven skeleton"}		{#var patroller[shouldKill] elf};
+		#case {"Elven zombie"}			{#var patroller[shouldKill] elf};
+		#case {"Elvish ghoul"}			{#var patroller[shouldKill] elf};
+		#case {"Mountain lion"}			{#var patroller[shouldKill] lion};
+		#case {"Rotted deer buck"}		{#var patroller[shouldKill] deer};
+		#case {"Shadow creature"}		{#var patroller[shouldKill] creature};
+		#case {"Skeletal bat"}			{#var patroller[shouldKill] bat};
+		#case {"Skeletal elf"}			{#var patroller[shouldKill] elf};
+		#case {"Skeletal elven hunter"}		{#var patroller[shouldKill] elf};
+		#case {"Undead bear"}			{#var patroller[shouldKill] bear};
+		#case {"Undead elf"}			{#var patroller[shouldKill] elf};
+		#case {"Undead elven hunter"}		{#var patroller[shouldKill] elf};
+		#case {"Undead elven huntress"}		{#var patroller[shouldKill] elf};
+		#case {"Undead wolf"}			{#var patroller[shouldKill] wolf};
+		#case {"Will o' wisp"}			{#var patroller[shouldKill] wisp};
+		#case {"Wolf beast"}			{#var patroller[shouldKill] wolf};
+		#case {"Wolf zombie"}			{#var patroller[shouldKill] wolf};
+		#case {"Zombie elf"}			{#var patroller[shouldKill] elf};
+		#default				{#var patroller[shouldKill] elf}
 	};
        _check_mob
 }
