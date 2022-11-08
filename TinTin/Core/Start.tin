@@ -46,6 +46,8 @@
 	#read 3k/TinTin/Bot/Donater.tin;
 	#read 3k/TinTin/Bot/Miner.tin;
 	
+	#NOP { *********** Vaf Addons ************ };
+	#read 3k/TinTin/Vaf/Damage.tin;
 }
 
 load3k;

@@ -22,6 +22,8 @@
 #act {The elevator jerks to a halt and the doors open.} {out}
 #act {The elevator is already here. How about you enter it?} {enter elevator}
 
+
+#action {^Cool!  It has your sign!  Today is a %*} { #map go 29557; }
 #NOP Ao
 #act {** The Docks of Ao ** (se)} {#map goto 15463} {1}
 

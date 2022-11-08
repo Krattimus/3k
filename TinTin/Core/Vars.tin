@@ -31,4 +31,7 @@
 #class patrolvar kill
 #read 3k/TinTin/Data/Patrol.var
 
+#class damagevar kill
+#read 3k/TinTin/Data/Damage.var
+
 #CLASS {vars} CLOSE

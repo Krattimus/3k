@@ -2,15 +2,6 @@
 #class {basecontroller} {open};
 
 /************************************************************
-	Core settings
-************************************************************/
-#var settings[autoSell] on;
-#var settings[corpseDonations] on;
-#var settings[shouldVacuum] 0;
-#var settings[shouldLoot] 0;
-#var settings[shouldProcessCorpse] 1;
-
-/************************************************************
 	Flags to show what was detected
 ************************************************************/
 #var found[player] 0;
@@ -158,8 +149,35 @@ mapoff;
 		#var event[attackedBy] $attackedBy;
 		#var event[foundMobName] $attackedBy;
 	};
+
 	.triggerEvent onMobFound;
+
+	#if { $settings[acceptMissions] }
+	{
+		#if { @containsNoCase{{$event[foundMobName]}{\?}}}
+		{
+			mission ask;
+		};
+
+		#if { @containsNoCase{{$event[foundMobName]}{\!}}}
+		{
+			mission return;
+		};
+	};
 };
+
+/************************************************************
+	Detects missions
+************************************************************/
+#action {^You have been offered the mission}
+{
+	#if { $settings[acceptMissions] }
+	{
+		mission accept;
+	}
+
+	.triggerEvent onOfferedMission;
+}
 
 /************************************************************
 	To detect when a monster is killed, we could compare
@@ -188,7 +206,7 @@ mapoff;
 	#var isInParty 0;
 	#foreach {$simplifiedParty} {partyMember} 
 	{
-		#REGEX {%0} {$partyMember} {#var isInParty 1}
+		#REGEX {%0} {$partyMember} {#var isInParty 1;}
 	};
 	
 	#if { !${isInParty} }
@@ -202,7 +220,7 @@ mapoff;
 /************************************************************
 	We attacked
 ************************************************************/
-#action {You attack %1} 
+#action {You attack %1\.} 
 {
 	#var event[mobAttacked] %1;
 	.triggerEvent onMobAttacked;
@@ -213,6 +231,7 @@ mapoff;
 ************************************************************/
 #action {You are already attacking that} 
 {
+	#var event[mobAttacked] $event[attackedBy];
 	.triggerEvent onMobAttacked;
 };
 
@@ -286,7 +305,7 @@ mapoff;
 {
 	#format {whichPlayer} {%l} {%1};
 	
-	#if { "$whichPlayer" == "$following" }
+	#if { "$whichPlayer" == "$event[followed]" }
 	{
 		#var event[followDirection] %2;
 
@@ -491,6 +510,9 @@ mapoff;
 ************************************************************/
 #alias onMobKilledBase
 {
+	#var event[mobAttacked] {};
+	#var event[foundMobName] {};
+
 	#if { !$found[player] }
 	{
 		#if { $settings[shouldLoot] }
@@ -544,10 +566,10 @@ mapoff;
 	glance;
 };
 
-#alias {look}
+#alias {look%0}
 {
 	.clearData; 
-	#send !look;
+	#send !look%0;
 };
 
 #alias {ls%*}

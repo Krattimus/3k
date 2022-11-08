@@ -12,8 +12,10 @@
 {           
     #REGEXP {%3} {coins} 
     {
-        #NOP {nothing   };
-    } {
+        #NOP {nothing};
+    };
+    #else
+    {
         #list inventory add {%3};
         #list inventoryCount add {%2};
         .renderInventory;            

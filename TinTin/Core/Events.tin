@@ -84,7 +84,7 @@
 	#var screen[cols] %1;
 	#var screen[height] %2;
 	#var screen[width] %3;
-    .render;
+    #delay 0 {.render};
 };
 
 #event {SCROLLED MOUSE WHEEL UP} 
@@ -152,6 +152,7 @@
 	#class shopvar write 3k/TinTin/Data/KnownShops.var;
 	#class itemsvar write 3k/TinTin/Data/KnownItems.var;
 	#class mobsvar write 3k/TinTin/Data/KnownMobs.var;
+	#class damagevar write 3k/TinTin/Data/Damage.var;
 };
 
 /* Map mouse clicks*/
@@ -163,7 +164,6 @@
 #NOP Display room info on single-click
 #event {MAP SHORT-CLICKED MOUSE BUTTON ONE} 
 {
-	#showme RECEIVED!;
 	#map at %0 #map info
 } {1};
 

@@ -106,7 +106,7 @@
 			.doBehaviorPatrol;
 		};
 	};
-} {0.5};
+} {0.1};
 
 /************************************************************
 	DetermineState
@@ -140,7 +140,7 @@
 		#var patroller[canWalk] 0;
 		#var patroller[attacking] 1;
 		#var patroller[playerAttacked] 0;
-	}
+	};
 };
 
 /************************************************************

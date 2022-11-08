@@ -162,7 +162,10 @@
 		};
 		#delay 0 .renderMapInfo
 	}
-}
+
+	.triggerEvent onRoomSeen;
+
+} {1};
 
 /*************************************************************
 	Expression for finding the room description, no exits

@@ -2,6 +2,20 @@
 
 #class {settings} {open}
 
+/************************************************************
+	Core settings
+************************************************************/
+#var settings[autoSell] 1;
+#var settings[corpseDonations] 1;
+#var settings[shouldVacuum] 0;
+#var settings[shouldLoot] 1;
+#var settings[shouldProcessCorpse] 1;
+#var settings[acceptMissions] 1;
+
+/************************************************************
+	Shows current settings
+************************************************************/
+#alias {.viewSettings} { .showSettings; }
 #alias {.displaySettings} { .showSettings; }
 #alias {.showSettings}
 {
@@ -10,8 +24,27 @@
         .showSetting {Should Pickup All Items} $settings[shouldVacuum];
         .showSetting {Should Loot Corpses} $settings[shouldLoot];
         .showSetting {Should Process Corpses} $settings[shouldProcessCorpse];
+        .showSetting {Auto Accept Missions} $settings[acceptMissions];
 };
 
+/************************************************************
+	Toggles a specific Setting
+************************************************************/
+#alias {.toggle}
+{
+        #if { $settings[%1] == 1 }
+        {
+                #var settings[%1] 0;
+        };
+        #else
+        {
+                #var settings[%1] 1;
+        };
+};
+
+/************************************************************
+	Display alias
+************************************************************/
 #alias {.showHeader}
 {
         #format {area_display} {%-35s} {<228> %1 <228>|<088>};
@@ -21,84 +54,49 @@
         #echo {<228> +-------------------+}<088>;
 };
 
+/************************************************************
+	Displays if a setting is on or off
+************************************************************/
 #alias {.showSetting}
 {
         #format {area_display} {%-35s} {<158>%1 is <168>%2<088>};
         #echo { <228>| $area_display <088>};
+};
 
+#alias {.toggleMissions}
+{
+        .toggle acceptMissions;
+        .showSetting {Auto Accept Missions} $settings[acceptMissions];
 };
 
 #alias {.toggleProcessCorpse}
 {
-        #if { $settings[shouldProcessCorpse] == 1 }
-        {
-                #var settings[shouldProcessCorpse] 0;
-        };
-        #else
-        {
-                #var settings[shouldProcessCorpse] 1;
-        };
-        
+        .toggle shouldProcessCorpse;        
         .showSetting {Should Process Corpses} $settings[shouldProcessCorpse];
 };
 
-
 #alias {.toggleLooting}
 {
-        #if { $settings[shouldLoot] == 1 }
-        {
-                #var settings[shouldLoot] 0;
-        };
-        #else
-        {
-                #var settings[shouldLoot] 1;
-        };
-        
+        .toggle shouldLoot;  
         .showSetting {Should Loot Corpses} $settings[shouldLoot];
 };
 
-
 #alias {.toggleVacuum}
 {
-        #if { $settings[shouldVacuum] == 1 }
-        {
-                #var settings[shouldVacuum] 0;
-        };
-        #else
-        {
-                #var settings[shouldVacuum] 1;
-        };
-        
+        .toggle shouldVacuum;
         .showSetting {Auto Pickup Items} $settings[shouldVacuum];
 };
 
 #alias {.toggleSelling}
 {
-        #if { "$settings[autoSell]" == "on" }
-        {
-                #var settings[autoSell] off;
-        };
-        #else
-        {
-                #var settings[autoSell] on;
-        };
-        
+        .toggle autoSell;
         .showSetting {Auto Selling} $settings[autoSell];
 };
 
-#alias {.togglesettings[corpseDonations]}
+#alias {.toggleCorpseDonations}
 {
-        #if { "$settings[corpseDonations]" == "on" }
-        {
-                #var settings[corpseDonations] off;
-        };
-        #else
-        {
-                #var settings[corpseDonations] on;
-        };
-
+        .toggle corpseDonations;
         .showSetting {Corpse Donations} $settings[corpseDonations];
-
 };
 
 #class {settings} {close}

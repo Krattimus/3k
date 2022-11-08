@@ -9,11 +9,18 @@
 
 #action {All your corpses are already bigger than what is here.}
 {
-	.goDonateCoffin;
+	#if { "$settings[corpseDonations]" == "on" }
+	{
+		.goDonateCoffin;
+	};
 }
+
 #action {^The coffin is full!} 
 {
-	.goDonateCoffin;
+	#if { "$settings[corpseDonations]" == "on" }
+	{
+		.goDonateCoffin;
+	};
 }
 
 #class {corpsebot} {close}

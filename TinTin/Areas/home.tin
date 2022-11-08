@@ -1,5 +1,5 @@
 #class {bot} {open}
 
-#var {patrol[path]} {killbot}
+#var {patrol[path]} {.stop}
 
 #class {bot} {close}

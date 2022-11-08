@@ -1,79 +1,208 @@
 #class {damage} {open}
 
-#NOP This file assumes you have the numbers VAF and are using mip.tin
-#NOP It will highlight the damage portion of the numbers output and track numbers data
+/*************************************************************************
+	Using the numbers vaf, track and record damage data
+*************************************************************************/
+.registerEvent onMobAttacked onMobAttackedDamage
+.registerEvent onMobKilled onMobKilledDamage
 
-/* Set numbers ansi for tracking */
-#NOP aset numbers_pref [31;1m[Dmg]: [0m
-#alias {dmgaset} {#send {aset numbers_pref [31;1m[Dmg]: [0m}}
+/*************************************************************************
+	Resets variables as combat starts to record before combat ends
+*************************************************************************/
+#alias {resetDamage}
+{
+	#var dmg[roundID] 0;
+	#var dmg[numberOfRounds] 0;
+	#var dmg[maxHit] 0;
+	#var dmg[minHit] 0;
+	#var dmg[currentHit] 0;
+	#var dmg[damageThisRound] 0;
+	#var dmg[averageDamage] 0;
+	#var dmg[totalDamage] 0;
+	#var dmg[rating] 0;
+	#var dmg[palm] 0;
+	#var dmg[brawler] 0;
+	#var dmg[pressure] 0;
+	#var dmg[scaler] 48;
+	#var dmg[totalHits] 0;
+	#var dmg[insight] 0;
+}
 
-/* Hightlight Numbers */
-#sub {[Dmg]: You hit %* %d time%*for %d damage.} {<118>[DMG]:<088> You hit %1 %2 time%3for <118>%4<088> damage.}
+#gag {Electricity crackles through your fingers.};
+#gag {You take an instant to gather your thoughts, clear your mind%*};
+#gag {You quickly tumble to avoid the brunt of the attack.};
+#gag {You lay hands upon yourself and feel healed.};
+#gag {With skill and speed you dodge the attack!};
+/*************************************************************************
+	Highlight 
+*************************************************************************/
+#sub {You hit %* %d time%*for %d damage.} {<088> You hit %1 %2 time%3for <118>%4<088> damage.}
 
-/* Initialize variables */
-#var dmg[rnd][cur] 0
-#var dmg[rnd][tot] 0
-#var dmg[max][hit] 0
-#var dmg[max][rnd] 0
-#var dmg[cur][hit] 0
-#var dmg[cur][rnd] 0
-#var dmg[avg] 0
-#var dmg[tot] 0
+/*************************************************************************
+	Detect assassin perk
+*************************************************************************/
+#action {A flash of insidious insight strikes you!}
+{
+	#var dmg[insight] 1;
+};
 
-/* Action to capture dmg msg */
-#act {[Dmg]: You hit %* %d time%*for %d damage.} {
+/*************************************************************************
+	Detect brawler perk
+*************************************************************************/
+#action {You enter a state of unarmed frenzy!}
+{
+	#var dmg[brawler] 1;
+};
+
+/*************************************************************************
+	Detect monster rating
+*************************************************************************/
+#action {^Monster class: %d}
+{
+	#var dmg[rating] %1;
+};
+
+/*************************************************************************
+	Monster killed
+*************************************************************************/
+#alias {onMobKilledDamage}
+{
+	#class damagevar write 3k/TinTin/Data/Damage.var;
+	#delay {0.1} {.miniReport};
+	.logToDatabase;
+};	
+
+/*************************************************************************
+	Mob was attacked
+*************************************************************************/
+#alias {onMobAttackedDamage}
+{
+	#map get {roomvnum} {currentRoom};
+	#var dmg[currentRoom] $currentRoom;
+	resetDamage;
+
+	#if { "$patroller[shouldKill]" != "" }
+	{
+		#var event[mobAttacked] $patroller[shouldKill];
+	};
+
+	#var dmg[mob] $event[mobAttacked];
+	#send !consider $event[mobAttacked];
+};
+
+/*************************************************************************
+	Detect monk pressure
+*************************************************************************/
+#action {^You find a pressure point and bore down!$}
+{
+	#var dmg[pressure] 1;
+};
+
+/*************************************************************************
+	Detect monk palm
+*************************************************************************/
+#action {^You reach out and touch your foe, sending death bringing vibrations}
+{
+	#var dmg[palm] 1;
+};
+
+/*************************************************************************
+	Send data to mysql
+*************************************************************************/
+#alias .logToDatabase
+{
+    #script {python3 3k/TinTin/Tools/combatLogger.py "$dmg[averageDamage]" "$dmg[averagePerHit]" "$dmg[brawler]" "$dmg[currentRoom]" "$dmg[maxHit]" "$dmg[minHit]" "$dmg[mob]" "$dmg[palm]" "$dmg[pressure]" "$dmg[rating]" "$dmg[scaler]" "$dmg[totalDamage]" "$dmg[totalHits]" "32"  "108" "26" "75" "41" "10" "5" "370" "$monk[method]" "$monk[chifocus]" "$dmg[insight]" "$dmg[numberOfRounds]"};
+};
+
+/*************************************************************************
+	Main damage parser
+*************************************************************************/
+#action {You hit %* %d time%*for %d damage.} 
+{
 	#NOP Set current hit dmg;
-	#var dmg[cur][hit] %4;
+	#var currentHit %4;
+	#var hitCount %2;
 
 	#NOP Determine if this is an additional dmg msg for the same or different rnd;
-	#if {$dmg[rnd][cur] == $mip[round]} {
+	#if {$dmg[roundID] == $mip[round]} 
+	{
 		#NOP Additional dmg msg in same rnd, add to rnd total;
-		#math {dmg[cur][rnd]} {$dmg[cur][rnd] + $dmg[cur][hit]}
-	} {
+		#math {dmg[damageThisRound]} {$dmg[damageThisRound] + $currentHit};
+		#math {dmg[totalHits]} {$dmg[totalHits] + $hitCount};
+	};
+	#else
+	{
 		#NOP Current rnd differs from previous round;
 		#NOP Set current rnd to rnd counter from MIP and increment total rnds;
-		#math {dmg[rnd][tot]} {$dmg[rnd][tot] + 1};
-		#var dmg[rnd][cur] $mip[round];
+		#math {dmg[numberOfRounds]} {$dmg[numberOfRounds] + 1};
+		#var dmg[roundID] $mip[round];
+		#var dmg[damageThisRound] $currentHit;
+		#math {dmg[totalHits]} {$dmg[totalHits] + $hitCount};
+	};
 
-		#var dmg[cur][rnd] $dmg[cur][hit]
+	#NOP Determine if min hit;
+	#if {$currentHit < $dmg[minHit] || $dmg[minHit] == 0 } 
+	{
+		#var dmg[minHit] $currentHit;
 	};
 
 	#NOP Determine if max hit;
-	#if {$dmg[cur][hit] > $dmg[max][hit]} {
-		#var dmg[max][hit] $dmg[cur][hit]
-	};
-
-	#NOP Determine max rnd dmg based on previous rnd;
-	#if {$dmg[cur][rnd] > $dmg[max][rnd]} {
-		#var dmg[max][rnd] $dmg[cur][rnd]
+	#if {$currentHit > $dmg[maxHit]} 
+	{
+		#var dmg[maxHit] $currentHit;
 	};
 
 	#NOP Add dmg for current msg to the total;
-	#math {dmg[tot]} {$dmg[tot] + %4};
+	#math {dmg[totalDamage]} {$dmg[totalDamage] + $currentHit};
 
 	#NOP Calculate new average;
-	#math {dmg[avg]} {$dmg[tot]/$dmg[rnd][tot]}
-}
+	#math {dmg[averageDamage]} {$dmg[totalDamage]/$dmg[numberOfRounds]};
 
-/* Alias to display dmg data */
-#alias {dmg} {
-	#echo {<128>%-6s %+9s %+9s %+9s} {Rounds} {Average} {Max Hit} {Max Rnd};
+	#math {dmg[averagePerHit]} {$dmg[totalDamage]/$dmg[totalHits]};
+};
 
-	#draw Yellow scroll line 1 1 1 36;
+/*************************************************************************
+	Displays results 
+*************************************************************************/
+#alias {.miniReport} 
+{
+	#echo {<128>%-25s %-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s<088> } {Mob} {Rating} {Damage} {Rounds} {Per Round} {Hits} {Per Hit} {Min Hit} {Max Round} {Combat};
+	#draw Yellow scroll line 1 1 1 120;
 
-	#echo {%+6s %+9s %+9s %+9s} {$dmg[rnd][tot]} {$dmg[avg]} {$dmg[max][hit]} {$dmg[max][rnd]}
-}
+	#math {index} {$damageLogSize-1};
+	#var pastDmg $dmg;
 
-/* Alias to reset damage variables */
-#alias {dmgreset} {
-	#var dmg[rnd][cur] 0;
-	#var dmg[rnd][tot] 0;
-	#var dmg[max][hit] 0;
-	#var dmg[max][rnd] 0;
-	#var dmg[cur][hit] 0;
-	#var dmg[cur][rnd] 0;
-	#var dmg[avg] 0;
-	#var dmg[tot] 0
-}
+	#format {pastDmg[mob]} {%.20s} {$pastDmg[mob]};
+
+	#local combatOptions {};
+	#if { $pastDmg[brawler] }
+	{
+		#local combatOptions {$combatOptions B};
+	};
+	#else
+	{
+		#local combatOptions {$combatOptions -};
+	};
+
+	#if { $pastDmg[pressure] }
+	{
+		#local combatOptions {$combatOptions P};
+	};
+	#else
+	{
+		#local combatOptions {$combatOptions -};
+	};
+	#if { $pastDmg[palm] }
+	{
+		#local combatOptions {$combatOptions P};
+	};
+	#else
+	{
+		#local combatOptions {$combatOptions -};
+	};
+
+	#echo {<128>%-25s %-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s<088> } {$pastDmg[mob]} {$pastDmg[rating]} {$pastDmg[totalDamage]} {$pastDmg[numberOfRounds]} {$pastDmg[averageDamage]} {$pastDmg[totalHits]} {$pastDmg[averagePerHit]} {$pastDmg[minHit]} {$pastDmg[maxHit]} {$combatOptions};
+	#draw Yellow scroll line 1 1 1 120;
+};
 
 #class {damage} {close}

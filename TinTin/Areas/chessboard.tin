@@ -3,11 +3,10 @@
 /******************************************************************************
 	Controller Behavior Settings
 *******************************************************************************/
-#var {loopCount} {0}
-#var {settings[shouldVacuum]} {1}
-#var settings[autoSell] {off};
-#var settings[corpseDonations] {off};
-#var seller[whichShop] {chaos};
+#var settings[shouldVacuum] 	{1}
+#var settings[autoSell] 		{0};
+#var settings[corpseDonations] 	{0};
+#var seller[whichShop] 			{chaos};
 
 /******************************************************************************
 	Data to be used for this patrol

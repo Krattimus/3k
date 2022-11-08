@@ -10,6 +10,21 @@
 *************************************************************/
 #act {The spirit of Waldo appears before you.} { #map undo;} {1}
 
+#action {^Azrael gives you a small scratch, reminding you of her guard duty$} { #map undo; }
+#action {^The guard blocks your passage.$} { #map undo; }
+
+#action {^The gate is down, you must raise it first.$} { #map undo; }
+#action {^The guard pushes you back.$} { #map undo; }
+#action {^The guard shoves you back.$} { #map undo; }
+
+#action {^The golem shoves you back.$} { #map undo; }
+
+
+
+#action {^The door is closed.$} { #map undo; }
+#action {^The knight bars your way west.$} { #map undo; }
+
+
 #act {You are too powerful to pass this gate.} { #map undo; }
 #NOP Juggernauts
 #act {^The room is locked.} {.triggerEvent onFailedMovement;}

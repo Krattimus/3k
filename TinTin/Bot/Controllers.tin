@@ -92,14 +92,7 @@
 **************************************************************/
 #alias {.goDonateCoffin}
 {
-        #if { $bot == 0 }
-        {
-                .mapAnchor;
-        }; 
-        #else
-        {
-                .stop;
-        };
+        .stop;
 
         #delay {corpse_sell} 
         {
@@ -109,14 +102,7 @@
 
         #delay {corpse_return} 
         {
-                #if { $bot == 0 }
-                {
-                        .return;
-                }; 
-                #else
-                {
-                        .resume;
-                };
+                .resume;
         } {2};
 }
 

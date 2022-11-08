@@ -2,120 +2,120 @@
 
 #VARIABLE {chat}
 {
-    {end} {1}
+    {end} {5}
     {height} {18}
     {log} 
     {
-        {1} {<108>[<268>18<108>:<268>08<108>]<088> <108>Pdog <HM-Crusader>:<099> imakillurdog<099>}
-        {2} {<108>[<268>18<108>:<268>08<108>]<088> <108>Leianne <HM-Legend>:<099> heh. now all you guys can go around killing dogs :p<099>}
-        {3} {<108>[<268>18<108>:<268>09<108>]<088> <108>Stasis <HM-Luminary>:<099> the skyblade one was almost definitely related to qoh anchor, i assume, since there's some aggro mechanic in there.<099>}
-        {4} {<108>[<268>18<108>:<268>10<108>]<088> <108>Apocalypse <HM-Legend>:<099> only reason it showed as qoh killing him was we were fighting it, he had a contrsct for the dog, so when u killed it  he died<099>}
-        {5} {<108>[<268>18<108>:<268>11<108>]<088> <108>Stasis <HM-Luminary>:<099> right, but there's an additional mechanic in the area that makes stuff aggro to the player that 1st kills qoh<099>}
-        {6} {<108>[<268>18<108>:<268>11<108>]<088> <108>Stasis <HM-Luminary>:<099> which was me<099>}
-        {7} {<108>[<268>18<108>:<268>12<108>]<088> <108>Apocalypse <HM-Legend>:<099> doesnt explain why you attacked his dog unless u did an area atk<099>}
-        {8} {<108>[<268>18<108>:<268>12<108>]<088> <108>Stasis <HM-Luminary>:<099> i melee hit the dog immediately on entering the room with the init was called. i couldn't do that if i tried<099>}
-        {9} {<108>[<268>18<108>:<268>13<108>]<088> <108>Leianne <HM-Legend>:<099> I remember 'kill dog' will do the trick as I saw it once when trying to kill hell hound and someone walked in with a dog. Thought I asked Stasis in for a test<099>}
-        {10} {<108>[<268>18<108>:<268>14<108>]<088> <108>Nameless <HM-Oracle>:<099> we are all becoming jojo villains<099>}
-        {11} {<108>[<268>18<108>:<268>14<108>]<088> <108>Turnhold <HM-Solar>:<099> You thought it was Stasis, but it was I, Dio!<099>}
-        {12} {<108>[<268>18<108>:<268>14<108>]<088> <108>Leianne <HM-Legend>:<099> Now Stasis has me as best pk kill - but 0 class??<099>}
-        {13} {<108>[<268>18<108>:<268>14<108>]<088> <108>Nameless <HM-Oracle>:<099> sounds about right!<099>}
-        {14} {<108>[<268>18<108>:<268>14<108>]<088> <108>Stasis <HM-Luminary>:<099> you have class, Leianne<099>}
-        {15} {<108>[<268>18<108>:<268>15<108>]<088> <108>Leianne <HM-Legend>:<099> anyway, going to ld for weekend kids drop-off.. leave it in the capable hands of the wizzes :p<099>}
-        {16} {<108>[<268>18<108>:<268>16<108>]<088> <108>Vagrant <HM-Inquisitor>:<099> take me wit you<099>}
-        {17} {<108>[<268>18<108>:<268>16<108>]<088> <108>Vagrant <HM-Inquisitor>:<099> bussin'<099>}
-        {18} {<108>[<268>18<108>:<268>16<108>]<088> <108>Turnhold <HM-Solar>:<099> laf, already told you what I checked, i seen no reason for it. I just think stasis is evil.<099>}
-        {19} {<108>[<268>18<108>:<268>16<108>]<088> <108>Nameless <HM-Oracle>:<099> fr fr 100<099>}
-        {20} {<108>[<268>18<108>:<268>16<108>]<088> <108>Turnhold <HM-Solar>:<099> no keezy<099>}
-        {21} {<108>[<268>18<108>:<268>16<108>]<088> <108>Stasis <HM-Luminary>:<099> i prefer cats<099>}
-        {22} {<108>[<268>18<108>:<268>32<108>]<088> <178>Pdog shouts:<099> Pokey has arrived!<099>}
-        {23} {<108>[<268>18<108>:<268>33<108>]<088> <178>Pdog flaps :<099> and he is gone :(<099>}
-        {24} {<108>[<268>18<108>:<268>33<108>]<088> <178>Pdog flaps :<099> *sobs*<099>}
-        {25} {<108>[<268>18<108>:<268>49<108>]<088> <168><- ! The Vigilant ! -> :<099>  A destabilization Kayos event has been detected in Deserts of Fantasy!  We are localizing it now - get ready!<099>}
-        {26} {<108>[<268>18<108>:<268>51<108>]<088> <108>Maverick <HM-Champion>:<099> we doin inductor tonight?<099>}
-        {27} {<108>[<268>18<108>:<268>51<108>]<088> <108>Ender <HM-Sage>:<099> i'd go<099>}
-        {28} {<108>[<268>18<108>:<268>52<108>]<088> <108>Mugen <HM-Oracle>:<099> i can die in there as easily as anywhere else i suppose<099>}
-        {29} {<108>[<268>18<108>:<268>52<108>]<088> <108>Rand <HM-Oracle>:<099> i'm in<099>}
-        {30} {<108>[<268>18<108>:<268>52<108>]<088> <108>Liskerlol <HM-Oracle>:<099> i<099>}
-        {31} {<108>[<268>18<108>:<268>52<108>]<088> <108>Liskerlol <HM-Oracle>:<099> i can go if needed<099>}
-        {32} {<108>[<268>18<108>:<268>52<108>]<088> <168><- ! 5m ! -> :<099>  The Vigilant report that they're getting close to stabilizing the portal.  Soldiers be ready!<099>}
-        {33} {<108>[<268>18<108>:<268>53<108>]<088> <108>Agni <HM-Oracle>:<099> i want to go<099>}
-        {34} {<108>[<268>18<108>:<268>54<108>]<088> <108>Maverick <HM-Champion>:<099> 10PM?<099>}
-        {35} {<108>[<268>18<108>:<268>54<108>]<088> <178>Vat flaps :<099> is an inductor party lining up tonight?<099>}
-        {36} {<108>[<268>18<108>:<268>55<108>]<088> <178>Maverick flaps :<099> nog 10 mins<099>}
-        {37} {<108>[<268>18<108>:<268>56<108>]<088> <108>Pdog <HM-Crusader>:<099> i have my clock set to the righ ttime tonight<099>}
-        {38} {<108>[<268>18<108>:<268>56<108>]<088> <108>Pdog <HM-Crusader>:<099> my power went out yesterday :(<099>}
-        {39} {<108>[<268>18<108>:<268>56<108>]<088> <108>Pdog <HM-Crusader>:<099> GOOD TIMES<099>}
-        {40} {<108>[<268>18<108>:<268>56<108>]<088> <108>Pdog <HM-Crusader>:<099> THANKS BLUEBONNET ELECTRIC<099>}
-        {41} {<108>[<268>18<108>:<268>56<108>]<088> <108>Mugen <HM-Oracle>:<099> ... the butter company?<099>}
-        {42} {<108>[<268>18<108>:<268>57<108>]<088> <108>Mugen <HM-Oracle>:<099> sounds sus<099>}
-        {43} {<108>[<268>18<108>:<268>57<108>]<088> <108>Rand <HM-Oracle>:<099> tx power grid runs on butter<099>}
-        {44} {<108>[<268>18<108>:<268>57<108>]<088> <168><- !!! -> :<099> The portal has been stabilized!  Make your way to Deserts of Fantasy and assault the forces of Kayos!<099>}
-        {45} {<108>[<268>19<108>:<268>02<108>]<088> <108>Nameless <HM-Oracle>:<099> gotta keep things running smoothly<099>}
-        {46} {<108>[<268>19<108>:<268>02<108>]<088> <108>Nameless <HM-Oracle>:<099> smooth as butter<099>}
-        {47} {<108>[<268>19<108>:<268>02<108>]<088> <108>Voodoo <HM-Questor>:<099> smooth as eggs<099>}
-        {48} {<108>[<268>19<108>:<268>06<108>]<088> <108>Maverik <HM-Champion>:<099> anyone gotta orange cap handy?<099>}
-        {49} {<108>[<268>19<108>:<268>08<108>]<088> <108>Liskerlol <HM-Oracle>:<099> starting maze<099>}
-        {50} {<108>[<268>19<108>:<268>09<108>]<088> <108>Pdog <HM-Crusader>:<099> OMW<099>}
-        {51} {<108>[<268>19<108>:<268>09<108>]<088> <108>Pdog <HM-Crusader>:<099> DON"T INDUCT WITHOUT MEEEEE<099>}
-        {52} {<108>[<268>19<108>:<268>16<108>]<088> <108>Maverik <HM-Champion>:<099> sure could use a few more guns over here if any of you are on the fence<099>}
-        {53} {<108>[<268>19<108>:<268>16<108>]<088> <108>Shenanigans <HM-Questor>:<099> who we shooting?<099>}
-        {54} {<108>[<268>19<108>:<268>16<108>]<088> <108>Maverik <HM-Champion>:<099> inductor<099>}
-        {55} {<108>[<268>19<108>:<268>16<108>]<088> <108>Mugen <HM-Oracle>:<099> INDUCTOR TIME<099>}
-        {56} {<108>[<268>19<108>:<268>16<108>]<088> <178>Mugen shouts:<099> INDUCTOR TIME<099>}
-        {57} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Robert :<099> Up for bids:<099> A strangely dense, very blue wooden ring \uFF5Bradiant\uFF5D [<*/*(O)*\\*>].<099>}
-        {58} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Robert :<099> Xiu has requested 0 as the opening offer.<099>}
-        {59} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Robert :<099> Got 0 from Shenanigans(gent).  Do I hear 50?<099>}
-        {60} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Shenanigans (gent) :<099> free blue lights!<099>}
-        {61} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Robert :<099> Got 50 from Mugen(monk).  Do I hear 100?<099>}
-        {62} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Robert :<099> Got 5,000 from Shenanigans(gent).  Do I hear 5,100?<099>}
-        {63} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Robert :<099> Got 50,000 from Mugen(monk).  Do I hear 52,500?<099>}
-        {64} {<108>[<268>19<108>:<268>21<108>]<088> <108>[Auction] Shenanigans (gent) :<099> that guy, and his coins<099>}
-        {65} {<108>[<268>19<108>:<268>22<108>]<088> <108>[Auction] Robert :<099> 50,000 going once!<099>}
-        {66} {<108>[<268>19<108>:<268>22<108>]<088> <108>[Auction] Robert :<099> 50,000 going twice!<099>}
-        {67} {<108>[<268>19<108>:<268>22<108>]<088> <108>[Auction] Robert :<099> Sold to Mugen for 50,000 coins!<099>}
-        {68} {<108>[<268>19<108>:<268>45<108>]<088> <108>Pdog <HM-Crusader>:<099> :(<099>}
-        {69} {<108>[<268>19<108>:<268>45<108>]<088> <108>Pdog <HM-Crusader>:<099> HERE LIES MUGEN. HE WAS GR8<099>}
-        {70} {<108>[<268>19<108>:<268>46<108>]<088> <108>Pdog <HM-Crusader>:<099> HURRY BACK PLZ<099>}
-        {71} {<108>[<268>19<108>:<268>50<108>]<088> <108>Pdog <HM-Crusader>:<099> YEEEEEOUWCH<099>}
-        {72} {<108>[<268>19<108>:<268>50<108>]<088> <108>Pdog <HM-Crusader>:<099> i had to run away like a little mansy pansy girl<099>}
-        {73} {<108>[<268>19<108>:<268>51<108>]<088> <108>Messremb <HM-Oracle>:<099> soo.... French<099>}
-        {74} {<108>[<268>19<108>:<268>59<108>]<088> <108>Pdog <HM-Crusader>:<099> thx frends<099>}
-        {75} {<108>[<268>19<108>:<268>59<108>]<088> <108>Pdog <HM-Crusader>:<099> it's nap time for me :)<099>}
-        {76} {<108>[<268>20<108>:<268>00<108>]<088> <108>[Auction] Agni (gent) :<099> heh.. vapor screwed up auro shield<099>}
-        {77} {<108>[<268>20<108>:<268>00<108>]<088> <108>[Auction] Messremb (ange) :<099> oh vapor<099>}
-        {78} {<108>[<268>20<108>:<268>00<108>]<088> <108>[Auction] Apocalypse (gent) :<099> tar and feather him!<099>}
-        {79} {<108>[<268>20<108>:<268>00<108>]<088> <108>Maverick <HM-Champion>:<099> nice job team<099>}
-        {80} {<108>[<268>20<108>:<268>00<108>]<088> <108>Pdog <HM-Crusader>:<099> *high5*<099>}
-        {81} {<108>[<268>20<108>:<268>01<108>]<088> <108>[Auction] Pdog (frem) :<099> lets get another?<099>}
-        {82} {<108>[<268>20<108>:<268>01<108>]<088> <108>[Auction] Pdog (frem) :<099> oh wait nm not it, sleepy time hahah bye<099>}
-        {83} {<108>[<268>20<108>:<268>01<108>]<088> <108>[Auction] Pdog (frem) :<099> :.<099>}
-        {84} {<108>[<268>20<108>:<268>29<108>]<088> <178>Messremb flaps :<099> Mortal Kombat is based on an old Scandinavian church song.  It's a Finnish hymn!<099>}
-        {85} {<108>[<268>20<108>:<268>30<108>]<088> <178>Stasis flaps :<099> viking techno!<099>}
-        {86} {<108>[<268>20<108>:<268>46<108>]<088> Your transmuter's stone bursts with 4 new colours!}
-        {87} {<108>[<268>21<108>:<268>19<108>]<088> <108>Kichi <HM-Champion>:<099> DotA TI finals weekend starting now - so it begins :D<099>}
-        {88} {<108>[<268>21<108>:<268>19<108>]<088> <108>Kichi <HM-Champion>:<099> intro from Gabe was as autistic as ever<099>}
-        {89} {<108>[<268>21<108>:<268>20<108>]<088> <108>Kichi <HM-Champion>:<099> what a hero<099>}
-        {90} {<108>[<268>21<108>:<268>35<108>]<088> <108>Kichi <HM-Champion>:<099> go team liquid go<099>}
-        {91} {<108>[<268>21<108>:<268>47<108>]<088> Your transmuter's stone bursts with 4 new colours!}
-        {92} {<108>[<268>21<108>:<268>55<108>]<088> <178>Crolack shouts:<099> Woo team playing against the Astros!<099>}
-        {93} {<108>[<268>22<108>:<268>00<108>]<088> <108>[Auction] Slink (prie) :<099> who has og mask?<099>}
-        {94} {<108>[<268>22<108>:<268>26<108>]<088> <108>Sarge <HM-Sage>:<099> Do we know who may or may not have OG mask?<099>}
-        {95} {<108>[<268>22<108>:<268>47<108>]<088> Your transmuter's stone bursts with 4 new colours!}
-        {96} {<108>[<268>23<108>:<268>48<108>]<088> Your transmuter's stone bursts with 2 new colours!}
-        {97} {<108>[<268>00<108>:<268>54<108>]<088> Your transmuter's stone bursts with 5 new colours!}
-        {98} {<108>[<268>01<108>:<268>01<108>]<088> <168><- ! 5m ! -> :<099>  The portal to A Noisy Battleground is destabilizing!  We won't be able to hold it - make your way to safety!<099>}
-        {99} {<108>[<268>01<108>:<268>06<108>]<088> <178>Jasmine shouts:<099> DIRTY FILTHY MEMORY!<099>}
-        {100} {<108>[<268>01<108>:<268>06<108>]<088> <168><- !!! -> :<099> The portal to A Noisy Battleground has collapsed!  That's it - we're done here.  Rest and recover - there will be another soon!<099>}
-        {101} {<108>[<268>01<108>:<268>54<108>]<088> Your transmuter's stone bursts with 5 new colours!}
+        {1} {<108>[<268>12<108>:<268>01<108>]<088> <178>To Messremb<088>: you nod to Messremb.}
+        {2} {<108>[<268>12<108>:<268>16<108>]<088> <108>Turnhold <HM-Solar>:<099> Hey nerds, just found out I'm going to be in California the 1st week of December(4th-9th), if you're near Newport Beach/Fashion Island area, hollar at me:P<099>}
+        {3} {<108>[<268>12<108>:<268>16<108>]<088> <108>Simonz <HM-Crusader>:<099> I'll wave at you as you fly over<099>}
+        {4} {<108>[<268>12<108>:<268>17<108>]<088> <108>Simonz <HM-Crusader>:<099> pls drop some scotch for me!<099>}
+        {5} {<108>[<268>12<108>:<268>19<108>]<088> <108>Mugen <HM-Oracle>:<099> the trick is to stand near him at the nightclubs, he sweats pure scotch when he is out of his zipcode<099>}
+        {6} {<108>[<268>12<108>:<268>20<108>]<088> <108>Turnhold <HM-Solar>:<099> probably<099>}
+        {7} {<108>[<268>12<108>:<268>20<108>]<088> <108>Simonz <HM-Crusader>:<099> not licking the TH.<099>}
+        {8} {<108>[<268>12<108>:<268>21<108>]<088> <108>Turnhold <HM-Solar>:<099> ALL HAIL THE HYPNOTOAD<099>}
+        {9} {<108>[<268>12<108>:<268>21<108>]<088> <108>Mugen <HM-Oracle>:<099> some park just released a statement asking people to stop licking the toads =/<099>}
+        {10} {<108>[<268>12<108>:<268>21<108>]<088> <108>Simonz <HM-Crusader>:<099> someone's been watching to much Avatar<099>}
+        {11} {<108>[<268>12<108>:<268>21<108>]<088> <108>Pdog <HM-Crusader>:<099> the toads like it<099>}
+        {12} {<108>[<268>12<108>:<268>21<108>]<088> <108>Simonz <HM-Crusader>:<099> *too<099>}
+        {13} {<108>[<268>12<108>:<268>33<108>]<088> <178>Crolack flaps :<099> Star Trek transporters kill you then clone you at a different location.<099>}
+        {14} {<108>[<268>12<108>:<268>33<108>]<088> <178>Cable flaps :<099> close<099>}
+        {15} {<108>[<268>12<108>:<268>34<108>]<088> <178>Cable flaps :<099> They actually keep the original and thats the 'synthesized meat' they make<099>}
+        {16} {<108>[<268>12<108>:<268>34<108>]<088> <178>Simonz flaps :<099> no, because W. Thomas Riker<099>}
+        {17} {<108>[<268>12<108>:<268>49<108>]<088> <178>Brasky flaps :<099> can you guys have this discussion in Klingon, it's not nerdy enough yet<099>}
+        {18} {<108>[<268>12<108>:<268>49<108>]<088> <178>Cable flaps :<099> RUuuu chukan daa sabath tak<099>}
+        {19} {<108>[<268>12<108>:<268>49<108>]<088> <178>Brasky flaps :<099> how do you say, "Um, actually..." in Klingon?<099>}
+        {20} {<108>[<268>12<108>:<268>58<108>]<088> <178>Simonz flaps :<099> sorry, I'm not even fluent in Javascript, let alone Klingon<099>}
+        {21} {<108>[<268>13<108>:<268>01<108>]<088> <178>Crolack flaps :<099> Duolingo has Klingon<099>}
+        {22} {<108>[<268>13<108>:<268>05<108>]<088> <178>Taleast flaps :<099> something made by a nerd has nerdy things<099>}
+        {23} {<108>[<268>13<108>:<268>05<108>]<088> <178>Taleast flaps :<099> and it was called 3k<099>}
+        {24} {<108>[<268>13<108>:<268>28<108>]<088> <108>Motivation <HM-Sleuth>:<099> MJ reset in 2 min<099>}
+        {25} {<108>[<268>13<108>:<268>30<108>]<088> <108>Motivation <HM-Sleuth>:<099> last call<099>}
+        {26} {<108>[<268>14<108>:<268>02<108>]<088> <178>Flaxen shouts:<099> hi all<099>}
+        {27} {<108>[<268>14<108>:<268>02<108>]<088> <178>Flaxen shouts:<099> cookies for everyone<099>}
+        {28} {<108>[<268>14<108>:<268>02<108>]<088> <178>Orthas shouts:<099> whee<099>}
+        {29} {<108>[<268>14<108>:<268>02<108>]<088> <178>Pdog shouts:<099> what kind of cookies<099>}
+        {30} {<108>[<268>14<108>:<268>03<108>]<088> <178>Esper shouts:<099> candy corn cookies<099>}
+        {31} {<108>[<268>14<108>:<268>03<108>]<088> <178>Flaxen shouts:<099> shut your face kind<099>}
+        {32} {<108>[<268>14<108>:<268>04<108>]<088> <178>Cable shouts:<099> COOOKIES!<099>}
+        {33} {<108>[<268>14<108>:<268>47<108>]<088> <178>Murmandamus shouts:<099> No I didn't, it was a nurse!<099>}
+        {34} {<108>[<268>14<108>:<268>47<108>]<088> <178>Morion shouts:<099> I'm a freaking loser and I eat maggots.<099>}
+        {35} {<108>[<268>14<108>:<268>48<108>]<088> <178>Pdog shouts:<099> how do they taste?<099>}
+        {36} {<108>[<268>14<108>:<268>48<108>]<088> <178>Esper shouts:<099> like peanut butter<099>}
+        {37} {<108>[<268>14<108>:<268>48<108>]<088> <178>Cable shouts:<099> chunky peanut butter with slimy bits.<099>}
+        {38} {<108>[<268>14<108>:<268>49<108>]<088> <178>Esper shouts:<099> so peanut butter before you stir it up<099>}
+        {39} {<108>[<268>14<108>:<268>49<108>]<088> <178>Cable shouts:<099> slimy not oily<099>}
+        {40} {<108>[<268>14<108>:<268>50<108>]<088> <178>Cable shouts:<099> more like pus<099>}
+        {41} {<108>[<268>14<108>:<268>50<108>]<088> <178>Nameless shouts:<099> was there a hole cut out down the middle<099>}
+        {42} {<108>[<268>15<108>:<268>39<108>]<088> <178>[Clan] Pdog :<099> rolm is nobreak too<099>}
+        {43} {<108>[<268>15<108>:<268>40<108>]<088> <168><- ! 5m ! -> :<099>  The portal to A Noisy Battleground is destabilizing!  We won't be able to hold it - make your way to safety!<099>}
+        {44} {<108>[<268>15<108>:<268>40<108>]<088> <178>[Clan] Mugen :<099> yes, if you have the dupes<099>}
+        {45} {<108>[<268>15<108>:<268>45<108>]<088> <168><- !!! -> :<099> The portal to A Noisy Battleground has collapsed!  That's it - we're done here.  Rest and recover - there will be another soon!<099>}
+        {46} {<108>[<268>16<108>:<268>27<108>]<088> <178>Zethrak flaps :<099> as i sit here finishing off my bag of candy corn and 2nd tube of pizza pringles, i think, what can i possibly do to to lower my blood pressure?<099>}
+        {47} {<108>[<268>16<108>:<268>27<108>]<088> <178>Simonz flaps :<099> unblock the pol line and start a friendly conversation there<099>}
+        {48} {<108>[<268>16<108>:<268>28<108>]<088> <178>Nameless flaps :<099> oo yeah<099>}
+        {49} {<108>[<268>16<108>:<268>28<108>]<088> <178>Zethrak flaps :<099> ah yes, that would definitely be relaxing.<099>}
+        {50} {<108>[<268>16<108>:<268>28<108>]<088> <178>Simonz flaps :<099> bonus points if you're the only one there and you manage to have an unfriendly conversation<099>}
+        {51} {<108>[<268>16<108>:<268>29<108>]<088> <178>Zethrak flaps :<099> rofl<099>}
+        {52} {<108>[<268>16<108>:<268>43<108>]<088> <178>Pdog shouts:<099> woo<099>}
+        {53} {<108>[<268>16<108>:<268>43<108>]<088> <178>Rand shouts:<099> :)<099>}
+        {54} {<108>[<268>16<108>:<268>44<108>]<088> <178>Simonz shouts:<099> I don't think that fremen recode was any good, it seems like they got rid of the fremports =/<099>}
+        {55} {<108>[<268>16<108>:<268>45<108>]<088> <178>Rand shouts:<099> my deaths since recode > deaths in the 20 years prior<099>}
+        {56} {<108>[<268>16<108>:<268>45<108>]<088> <178>Inquisitor shouts:<099> Your xp gainz in the past year > 19 years prior...<099>}
+        {57} {<108>[<268>16<108>:<268>46<108>]<088> <178>Rand shouts:<099> also true!<099>}
+        {58} {<108>[<268>16<108>:<268>46<108>]<088> <178>Pdog shouts:<099> I still die all the time :p<099>}
+        {59} {<108>[<268>16<108>:<268>46<108>]<088> <178>Esper shouts:<099> the Necromancer guild thanks you for your service<099>}
+        {60} {<108>[<268>17<108>:<268>00<108>]<088> <178>Nameless shouts:<099> fremen are just dry bards<099>}
+        {61} {<108>[<268>17<108>:<268>01<108>]<088> <178>Omalley shouts:<099> Dry bards are just a myth!<099>}
+        {62} {<108>[<268>06<108>:<268>29<108>]<088> <178>Flaxen shouts:<099> ITS PEANUT BUTTER JELLY TIME!<099>}
+        {63} {<108>[<268>06<108>:<268>38<108>]<088> <178>Krat flaps :<099> someone has like a dozen+ puppies at the shop<099>}
+        {64} {<108>[<268>06<108>:<268>39<108>]<088> <178>Frank flaps :<099> sounds like someone got logged out :P<099>}
+        {65} {<108>[<268>06<108>:<268>55<108>]<088> <178>Volt flaps :<099> https://tinyurl.com/3aswkbsn We have such sights to show you<099>}
+        {66} {<108>[<268>06<108>:<268>56<108>]<088> <178>Volt flaps :<099> walmart vending LeMerchand's box<099>}
+        {67} {<108>[<268>07<108>:<268>18<108>]<088> <178>[Clan] Ephemeral :<099> yo!<099>}
+        {68} {<108>[<268>07<108>:<268>18<108>]<088> <108>Nightrider <HM-Legend>:<099> FYI powervall numbers have been pulled<099>}
+        {69} {<108>[<268>07<108>:<268>19<108>]<088> <108>Nightrider <HM-Legend>:<099> jackpot swells to 2.2b as noone won the lotto<099>}
+        {70} {<108>[<268>07<108>:<268>19<108>]<088> <108>Turnhold <HM-Solar>:<099> If I win, scotch for everyone. I will hand deliver a bottle to your house.<099>}
+        {71} {<108>[<268>07<108>:<268>19<108>]<088> <108>Ephemeral <HM-Champion>:<099> uhh no. that would be enabling. we shall not<099>}
+        {72} {<108>[<268>07<108>:<268>19<108>]<088> <108>Nightrider <HM-Legend>:<099> lol I doubt you would come to the hood TH<099>}
+        {73} {<108>[<268>07<108>:<268>20<108>]<088> <108>Turnhold <HM-Solar>:<099> laf<099>}
+        {74} {<108>[<268>07<108>:<268>20<108>]<088> <108>Ephemeral <HM-Champion>:<099> I'll take a Big Red tho<099>}
+        {75} {<108>[<268>07<108>:<268>20<108>]<088> <108>Turnhold <HM-Solar>:<099> cant be any worse than north philly or camden, NJ<099>}
+        {76} {<108>[<268>07<108>:<268>20<108>]<088> <178>[Clan] Mugen :<099> hour wait to vote =!transpose max<099>}
+        {77} {<108>[<268>07<108>:<268>20<108>]<088> <108>Nightrider <HM-Legend>:<099> about the same really<099>}
+        {78} {<108>[<268>07<108>:<268>25<108>]<088> <108>Psyron <HM-Oracle>:<099> If i win the powerball im gonna buy your mom a house<099>}
+        {79} {<108>[<268>07<108>:<268>25<108>]<088> <108>Turnhold <HM-Solar>:<099> woo<099>}
+        {80} {<108>[<268>07<108>:<268>25<108>]<088> <108>Turnhold <HM-Solar>:<099> so she can move outta mine!<099>}
+        {81} {<108>[<268>07<108>:<268>25<108>]<088> <108>Psyron <HM-Oracle>:<099> Im getting tired of shoo'ing her out from under the porch<099>}
+        {82} {<108>[<268>07<108>:<268>26<108>]<088> <108>Kyoujin <HM-Seeker>:<099> buy her a tiny home<099>}
+        {83} {<108>[<268>07<108>:<268>26<108>]<088> <108>Locrian <HM-Oracle>:<099> t-t-t-TINY!<099>}
+        {84} {<108>[<268>07<108>:<268>45<108>]<088> <108>Mugen <HM-Oracle>:<099> idk how anyone can spend over an hour in line to vote and not support mail in boting<099>}
+        {85} {<108>[<268>07<108>:<268>45<108>]<088> <108>Mugen <HM-Oracle>:<099> or voting, mail in botting is next<099>}
+        {86} {<108>[<268>07<108>:<268>46<108>]<088> <108>Pdog <HM-Crusader>:<099> nice, here's my list of moves. process them and hopefully it works :)<099>}
+        {87} {<108>[<268>07<108>:<268>46<108>]<088> <108>Pdog <HM-Crusader>:<099> getting mask dupes would be an art form<099>}
+        {88} {<108>[<268>07<108>:<268>48<108>]<088> <108>Gaidin <HM-Inquisitor>:<099> I love that they just mail everyone a ballot, here.<099>}
+        {89} {<108>[<268>07<108>:<268>50<108>]<088> <108>Locrian <HM-Oracle>:<099> they just mail us a piece of paper that says it's voting time. :/<099>}
+        {90} {<108>[<268>07<108>:<268>52<108>]<088> <108>Esper <HM-Oracle>:<099> Yeah, they try to actively get us not to vote over here<099>}
+        {91} {<108>[<268>08<108>:<268>11<108>]<088> <108>Mugen <HM-Oracle>:<099> this is a thrill to wait woth a 3 year old too<099>}
+        {92} {<108>[<268>08<108>:<268>19<108>]<088> <108>Gaidin <HM-Inquisitor>:<099> Why bother?  THree-year-olds can't vote.<099>}
+        {93} {<108>[<268>08<108>:<268>21<108>]<088> <108>Locrian <HM-Oracle>:<099> "You have unlocked the 'Patience is a Virtue' skill."<099>}
+        {94} {<108>[<268>08<108>:<268>22<108>]<088> <178>Locrian<088>: grins at you.}
+        {95} {<108>[<268>08<108>:<268>23<108>]<088> <178>To Locrian<088>: I haven't opened it up, just confirmed its there, so pretty sure its still there for a period of time, shrug}
+        {96} {<108>[<268>08<108>:<268>24<108>]<088> <178>Locrian<088>: i super duper appreciate you finding it and helping me to finish my map!!!!!!!!!!!!!!}
+        {97} {<108>[<268>08<108>:<268>24<108>]<088> <178>To Locrian<088>: no worries, this is the kind of stuff I have fun doing... the idle clicker game is always there :)}
+        {98} {<108>[<268>08<108>:<268>25<108>]<088> <178>Locrian<088>: smiles at you.}
+        {99} {<108>[<268>08<108>:<268>33<108>]<088> <108>Mugen <HM-Oracle>:<099> 1 hour is the lit before 3 year olds start bawling, just in case we needed the data point<099>}
+        {100} {<108>[<268>08<108>:<268>33<108>]<088> <108>Mugen <HM-Oracle>:<099> limit*<099>}
+        {101} {<108>[<268>09<108>:<268>09<108>]<088> <178>Esper shouts:<099> build a wall!<099>}
     }
     {max} {100}
-    {offset} {0}
+    {offset} {4}
     {page} {1}
     {right} {-44}
     {rows} {17}
     {scroll} {line}
-    {start} {17}
-    {text} {Your transmuter's stone bursts with 5 new colours!}
+    {start} {21}
+    {text} {<178>Esper shouts:<099> build a wall!<099>}
 }
 
 #CLASS {chatvar} CLOSE
