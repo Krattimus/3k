@@ -1,14 +1,4 @@
 #CLASS {patrolvar} OPEN
 
-#VARIABLE {patrol}
-{
-    {anchored} {1215}
-    {area} {Chess Board}
-    {mapname} {chessboard}
-    {path} {w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;e;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s}
-    {position} {13}
-    {startedAt} {1209}
-    {startingLocation} {1209}
-}
 
 #CLASS {patrolvar} CLOSE

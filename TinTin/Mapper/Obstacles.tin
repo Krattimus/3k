@@ -12,14 +12,14 @@
 
 #action {^Azrael gives you a small scratch, reminding you of her guard duty$} { #map undo; }
 #action {^The guard blocks your passage.$} { #map undo; }
-
+#action {^The blue security field repels your attempts to enter the hall.} { #map undo; }
 #action {^The gate is down, you must raise it first.$} { #map undo; }
 #action {^The guard pushes you back.$} { #map undo; }
 #action {^The guard shoves you back.$} { #map undo; }
 
 #action {^The golem shoves you back.$} { #map undo; }
-
-
+#action {^Policeman says: No one is allowed outside the city limits.} {#map undo; }
+#action {^The closed security gate blocks your path.} {#map undo; }
 
 #action {^The door is closed.$} { #map undo; }
 #action {^The knight bars your way west.$} { #map undo; }

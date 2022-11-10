@@ -1,5 +1,4 @@
 #CLASS {mobsvar} OPEN
 
-#VARIABLE {mobs} {}
 
 #CLASS {mobsvar} CLOSE

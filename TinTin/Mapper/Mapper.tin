@@ -227,6 +227,24 @@ Once we see this, we can conclude the room description is over
 } {1}
 
 /*************************************************************
+Allows us to drop map interest pins in an area to travel to
+*************************************************************/
+#alias {.mapInterest %1 %*}
+{
+	#map get roomvnum {roomID};
+	#map set roomsymbol %1;
+	#script {python3 3k/TinTin/Tools/mapInterest.py "%2" "$roomID" "$area" "%1"};
+};
+
+/*************************************************************
+Displays a list of map interests for an area
+*************************************************************/
+#alias .getInterests
+{
+	#script {python3 3k/TinTin/Tools/getInterests.py "$area"};
+};
+
+/*************************************************************
 The area has changed 
 *************************************************************/
 #act {AREA NAME: %1 [%2]} 
@@ -256,17 +274,20 @@ The area has changed
 };
 
 
-#alias {gonum}
-{
-	#map run %1;
-};
 
 /*************************************************************
 	Map actions
 *************************************************************/
 #alias {go} 
 {
-	#map run {{roomnote} {%0}};
+	#if { "%1" == "%d" }
+	{
+		#map run %1;
+	};
+	#else
+	{
+		#script {python3 3k/TinTin/Tools/mapGo.py "$area" "%0"};
+	};
 }
 
 #alias {mapgo} {#map goto {roomnote} {%0}}
@@ -320,10 +341,7 @@ The area has changed
 	#map go $original;
 };
 
-#alias {sss} 
-{
-	#script {python3 ~/3k/TinTin/Tools/findme.py "%0"};
-}
+#alias {sss} { #script {python3 3k/TinTin/Tools/findme.py "%0"}; }
 
 
 #alias {mapsearch} 

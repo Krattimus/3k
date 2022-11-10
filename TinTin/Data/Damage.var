@@ -1,8 +1,4 @@
 #CLASS {damagevar} OPEN
 
-#VARIABLE {damageLog} {}
-#VARIABLE {damageLogSize} {472}
-#VARIABLE {roundLog} {}
-#VARIABLE {roundLogSize} {13395}
 
 #CLASS {damagevar} CLOSE

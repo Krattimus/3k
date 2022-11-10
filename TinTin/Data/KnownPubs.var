@@ -1,39 +1,4 @@
 #CLASS {pubvar} OPEN
 
-#VARIABLE {pubs}
-{
-    {atlanta} {16202}
-    {balooga} {23520}
-    {blingdenwood} {19841}
-    {covenant} {34911}
-    {cowville} {30705}
-    {darkmoore} {21244}
-    {dead_pub} {16079}
-    {detroit} {14924}
-    {devilsisle} {28420}
-    {dragonlance} {34793}
-    {dragonsisle2} {28325}
-    {elm_street} {18098}
-    {harfain} {23333}
-    {knivur} {30558}
-    {kyoto} {25927}
-    {lally} {4100}
-    {lazarian} {26607}
-    {lostknights} {28799}
-    {megatech} {543}
-    {musicland_express} {24182}
-    {oldlondon} {19427}
-    {palisade} {17537}
-    {pulp_fiction} {17870}
-    {reservoir} {17625}
-    {simpsons} {8421}
-    {sodajerk} {16308}
-    {stoneinn2} {28361}
-    {tall_and_short} {25768}
-    {tookwich} {30332}
-    {waff} {28730}
-    {wayhaven} {25838}
-    {zoo} {22627}
-}
 
 #CLASS {pubvar} CLOSE

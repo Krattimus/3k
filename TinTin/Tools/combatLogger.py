@@ -2,9 +2,14 @@ import sys
 import mysql.connector
 import mysql.connector
 from mysql.connector import errorcode
+import os
+
+filename = os.path.expanduser('~') + '/3kdb.txt'
+file = open(filename, 'r')
+content = file.read().splitlines()
 
 dbConfig = {'user':'krattimus',
-            'password':'qp3Nz8^jM',
+            'password':content[0],
             'host':'localhost',
             'database':'3kDB',
             'autocommit':'True'}

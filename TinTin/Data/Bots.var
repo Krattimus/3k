@@ -1,9 +1,4 @@
 #CLASS {botvar} OPEN
 
-#ACTION {^Just a reminder, your continue code for Section %d is %w}
-{
-    #variable {sectionz[%1]} {%2}
-}
-
 
 #CLASS {botvar} CLOSE

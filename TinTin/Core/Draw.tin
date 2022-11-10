@@ -11,7 +11,7 @@
 #var alert[width] 1
 #var canvas[width] 43;
 #var caption[height] 2
-#math chat[height] {$chat[rows] + 1};
+#math chat[height] {18};
 #math {chat[right]} {-$map[width]-2}
 #var gline[height] 2
 #var hpbar[height] 3

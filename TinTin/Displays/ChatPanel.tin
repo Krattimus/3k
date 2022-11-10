@@ -4,6 +4,7 @@
 
 #alias {.renderChat} 
 {
+	#var chat[rows] 17;
 	#math chat[start]	{$chat[rows] + $chat[offset]};
 	#math chat[end]		{$chat[offset] + 1};
 	#if {"$draw[chat]" == "on"} 
