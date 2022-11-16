@@ -1,4 +1,14 @@
 #CLASS {mapvar} OPEN
 
+#VARIABLE {map}
+{
+    {height} {17}
+    {krat} 
+    {
+        {position} {1267}
+    }
+    {position} {top}
+    {width} {42}
+}
 
 #CLASS {mapvar} CLOSE

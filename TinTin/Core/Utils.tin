@@ -1,10 +1,5 @@
 #CLASS {utils} OPEN
 
-
-#alias {sl %0} {
-	#send look at %0;
-	#send search %0;
-}
 /*****************************************************************
 	String helper, gets length of string
 *****************************************************************/
@@ -235,35 +230,12 @@
 }
 
 
-/**************************************************************
-        
-**************************************************************/
-#alias {.calc} 
-{
-        #math {math} {%1};
-        #format {math_format} {%g} {$math};
-        #echo $math_format
-}
-
 #alias {.run} 
 {
         #config speedwalk on;
         %0;
         #config speedwalk off
 }
-
-/**************************************************************
-        Testing graveyard here
-**************************************************************/
-#alias {findme} 
-{
-        #map go $room ($exits);
-};
-
-#alias {nouns} 
-{
-    #script {python3 3k/TinTin/Tools/nountest.py "$roomdesc"};
-};
 
 
 

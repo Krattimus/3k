@@ -1,0 +1,41 @@
+#CLASS {stats} OPEN
+
+#var stats[str] {};
+#var stats[dex] {};
+#var stats[wis] {};
+#var stats[int] {};
+#var stats[con] {};
+#var stats[int] {};
+
+
+#action {Strength     :    %1  \(%2\)}
+{
+	#var stats[str] %1;
+};
+
+#action {^Dexterity    :   %1  \(%2\)}
+{
+	#var stats[dex] %1;
+};
+
+#action {^Wisdom       :    %1  \(%2\)}
+{
+	#var stats[wis] %1;
+};
+
+#action {^Intelligence :    %1  \(%2\)}
+{
+	#var stats[int] %1;
+};
+
+#action {^Constitution :    %1  \(%2\)}
+{
+	#var stats[con] %1;
+};
+
+#action {^Charisma     :    %1  \(%2\)}
+{
+	#var stats[cha] %1;
+};
+
+#CLASS {stats} CLOSE

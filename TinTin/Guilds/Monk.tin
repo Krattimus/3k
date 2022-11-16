@@ -5,10 +5,27 @@
 
 /* Initialize Variables */
 #var monk[g2n][prev] 0
+#var monk[speed] {};
+#var monk[power] {};
 
 .registerEvent onPreKilledMob onMobKilledMonk;
 .registerEvent onMobAttacked onMobAttackedMonk;
 
+
+/**********************************************************************************
+	Read speed and power from guild score
+**********************************************************************************/
+#action {Combat Method: %1 Speed: %2 Power: %3 Chi Focus: %4}
+{
+	#local speed {};
+	#local power {};
+
+	#format speed {%p} {%2};
+	#format power {%p} {%3};
+
+	#var monk[speed] $speed;
+	#var monk[power] $power;
+};
 
 /* HP Bars */
 #NOP Default Monk HP Bar

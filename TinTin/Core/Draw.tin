@@ -4,6 +4,9 @@
 #read 3k/TinTin/Data/Draw.var
 
 #var panelsOpen 0;
+#screen get rows screen[rows];
+#screen get cols screen[cols];
+#var screen[scroll] line;
 
 /************************************************************
 	Determine Dimensions

@@ -1,53 +1,21 @@
 #showme READING EVENTS.TIN
 #class {events} {open}
 
-#screen get rows screen[rows];
-#screen get cols screen[cols];
-#var screen[scroll] line;
+/***************************************************************
+	Registers a callback alias to be called when triggered
+	ex: .registerEvent onMobKilled myCustomAlias
 
-#alias testT
-{
-	#port init commander 3333;
-	#EVENT {PORT RECEIVED MESSAGE} { #krat #showme %0 name %1 ip %2 port %3 data %4 plain data; };
-	#session krat;
-	.render;
-};
-
-#alias {.mapInterest %1 %*}
-{
-	#map get roomvnum {roomID};
-	#map set roomsymbol %1;
-	#script {python3 3k/TinTin/Tools/mapInterest.py "%2" "$roomID" "$area" "%1"};
-};
-
-#alias .getInterests
-{
-	#script {python3 3k/TinTin/Tools/getInterests.py "$area"};
-};
-
-
-#alias .captureUntil
-{
-	#var capturedText {};	
-	#var renderingOff 1;
-	#read 3k/TinTin/Core/CaptureAll.tin;
-	#delay {create_capture} 
-	{
-		#ACTION {%1} 
-		{
-			#var renderingOff 0;
-			#delay {0} {%2;};
-			#CLASS {capture} {kill};
-			#UNACTION {%1};
-		} {1};
-	} {0};
-};
-
+	The alias 'myCustomAlias' will get called when anyone:
+		.triggerEvent onMobKilled
+***************************************************************/
 #alias .registerEvent
 {
 	#list %1 ADD %2;
 };
 
+/***************************************************************
+	Removes the callback
+***************************************************************/
 #alias .unregisterEvent
 {
 	#if { &{%1} != 0 }
@@ -62,6 +30,9 @@
 	};
 };
 
+/***************************************************************
+	Actually does the call
+***************************************************************/
 #alias {.doTrigger}
 {
 	#if { &{%1} != 0 }
@@ -83,6 +54,10 @@
 	};
 };
 
+/***************************************************************
+	Triggers an event. 
+		onSomethingOccured
+***************************************************************/
 #alias {.triggerEvent}
 {
 	#math {endIndex} {@strlen{%1}-2};

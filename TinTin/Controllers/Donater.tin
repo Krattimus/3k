@@ -1,0 +1,26 @@
+#showme READING corpsebot
+
+#class {corpsebot} {open};
+
+
+#var corpsebot[isDonating];
+
+
+
+#action {All your corpses are already bigger than what is here.}
+{
+	#if { "$settings[corpseDonations]" == "on" }
+	{
+		.goDonateCoffin;
+	};
+}
+
+#action {^The coffin is full!} 
+{
+	#if { "$settings[corpseDonations]" == "on" }
+	{
+		.goDonateCoffin;
+	};
+}
+
+#class {corpsebot} {close}

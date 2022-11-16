@@ -1,5 +1,8 @@
 #class {capture} {open}
 
+/***************************************************************
+	Lowest priority capture action, keep appending to var
+***************************************************************/
 #action {%1}
 {
 	#var capturedText { ${capturedText}%1 }

@@ -1,0 +1,216 @@
+#showme READING controllers 
+
+#class {controllers} {open}
+
+#var controllers[current] {};
+#var controllers[toStop] {};
+#var controllers[toStart] {};
+#var controllers[toResume] {};
+
+.registerEvent onControllerStarted onControllerStartedResponder;
+.registerEvent onControllerStopped onControllerStoppedResponder;
+.registerEvent onDebugLog onDebugLogControllers;
+
+#alias {.debugLog}
+{
+        .triggerEvent onDebugLog;
+};
+
+/*********************************************************
+	A controller is saying they are wanting control
+*********************************************************/
+#alias onDebugLogControllers
+{
+        .showHeader Controllers;
+        #var controllers;
+};
+
+/*********************************************************
+	A controller says they stopped
+*********************************************************/
+#alias {onControllerStoppedResponder}
+{
+        #if { "%1" == "$controllers[current]" }
+        {
+	        #showme {<202> Controller [$controllers[current]] has stopped.  <088>};
+                #var controllers[stopped] $controllers[toStop];
+                #var controllers[toStop] {};
+                #var controllers[current] {};
+        }
+};
+
+/*********************************************************
+	A controller is saying they are wanting control
+*********************************************************/
+#alias {onControllerStartedResponder}
+{
+        #var controllers[current] %1;
+        #var controllers[toStart] {};
+};
+
+/*********************************************************
+	Stops controllers
+*********************************************************/
+#alias {.stop}
+{
+        #undelay {doControllerLoad};
+        #undelay {doControllerStart};
+
+        #if { "$controllers[current]" == "" }
+        {
+	        #showme {<202> There are no active controllers  <088>};
+        };
+        #else
+        {
+                #var controllers[toStart] {};
+                #var controllers[toStop] $controllers[current];
+                .triggerEvent onRequestStop;
+        }
+} {1};
+
+/*********************************************************
+	Calls resume on a controller
+*********************************************************/
+#alias {.resume}
+{
+        #var controllers[toResume] $controllers[stopped];
+        .triggerEvent onRequestResume;
+} {1};
+
+/*********************************************************
+        Override
+*********************************************************/
+#alias {.clearControllers}
+{
+        #var controllers[current] {none};
+        #var controllers[toStop] {};
+        #var controllers[toResume] {};
+};
+
+/**************************************************************
+        Switches to a corpse donation controller
+**************************************************************/
+#alias {.goDonateCoffin}
+{
+        .stop;
+
+        #delay {corpse_sell} 
+        {
+                go morgue;
+                donate coffin;
+        } {1};
+
+        #delay {corpse_return} 
+        {
+                .resume;
+        } {2};
+}
+
+/**************************************************************
+        Travel
+**************************************************************/
+#alias {.goTravel}
+{
+        .goController $traveller[controllerID] {%1};
+
+};
+
+/**************************************************************
+        Switches to a selling controller
+**************************************************************/
+#alias {.goSell}
+{
+        .stop;
+	
+	#delay {shop_sell} 
+	{
+		gonum $shops[$seller[whichShop]];
+		sell all;
+	} {1};
+	
+	#delay {shop_return} 
+	{
+                #if { "$controllers[toResume]" != "none" }
+                {
+		        .resume;
+                }
+	} {2};
+};
+
+/**************************************************************
+        Sets the controller to GO GO GO !
+**************************************************************/
+#alias {.goController}
+{
+        #var controllers[toStart] %1;
+        #var controllers[parameter] %2;
+        
+        .triggerEvent onRequestPrepareController %2;
+        #delay {doControllerLoad} 
+        { 
+                .triggerEvent onRequestLoadController %2;
+        } {2.5};
+        #delay {doControllerStart} 
+        { 
+                .triggerEvent onRequestStartController %2;
+        } {4};
+};
+
+/**************************************************************
+        Go On Patrol, by itself it just goes through the
+        patrol list. If a parameter is added, it will over
+        ride the current position and go patrolling there
+**************************************************************/
+#alias {.goPatrolling}
+{
+        .stop;
+
+        #if { "%1" != "" }
+        {
+                #showme {<202> Doing a specific patrol. <088>};
+                .addPatrol %1;
+                #var currentPatrolID &{patrols[]};
+                .renderPatrols;
+                
+                .goController {$patroller[controllerID]};
+        };
+        #elseif { &{patrols[]} == 0 } 
+        {
+                #showme {<202> Patroller has no patrols type .addPatrol <notelist> <088>};
+        };
+        #else
+        {
+                .goController {$patroller[controllerID]};
+        };
+};
+
+/**************************************************************
+        Go mining, stops whatever controller is running and
+        gives active control to the miner
+**************************************************************/
+#alias {.goMining}
+{
+        .stop;
+
+        #var miner[miningLevel] %1;
+        .goController {$miner[controllerID]};
+};
+
+/**************************************************************
+        Redraw command
+**************************************************************/
+#alias {.render}
+{
+        #read 3k/TinTin/Core/Draw.tin
+};
+
+/**************************************************************
+
+**************************************************************/
+#alias {.onLoadCompleted}
+{
+        #showme ON LOAD COMPLETE;
+        .render;
+}
+
+#class {controllers} {close}

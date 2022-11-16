@@ -5,6 +5,7 @@
 *************************************************************************/
 .registerEvent onMobAttacked onMobAttackedDamage
 .registerEvent onMobKilled onMobKilledDamage
+.registerEvent onMobSpawned onMobSpawnedDamage
 
 /*************************************************************************
 	Resets variables as combat starts to record before combat ends
@@ -26,6 +27,8 @@
 	#var dmg[scaler] 48;
 	#var dmg[totalHits] 0;
 	#var dmg[insight] 0;
+	#var dmg[scaler] 0;
+	#var dmg[mob] {};
 }
 
 #gag {Electricity crackles through your fingers.};
@@ -67,6 +70,7 @@
 *************************************************************************/
 #alias {onMobKilledDamage}
 {
+	#var dmg[mob] $event[mobKilled];
 	#class damagevar write 3k/TinTin/Data/Damage.var;
 	#delay {0.1} {.miniReport};
 	.logToDatabase;
@@ -87,7 +91,7 @@
 	};
 
 	#var dmg[mob] $event[mobAttacked];
-	#send !consider $event[mobAttacked];
+	#send consider;
 };
 
 /*************************************************************************
@@ -107,11 +111,11 @@
 };
 
 /*************************************************************************
-	Send data to mysql
+	A mob was spawned
 *************************************************************************/
-#alias .logToDatabase
+#alias onMobSpawnedDamage
 {
-    #script {python3 3k/TinTin/Tools/combatLogger.py "$dmg[averageDamage]" "$dmg[averagePerHit]" "$dmg[brawler]" "$dmg[currentRoom]" "$dmg[maxHit]" "$dmg[minHit]" "$dmg[mob]" "$dmg[palm]" "$dmg[pressure]" "$dmg[rating]" "$dmg[scaler]" "$dmg[totalDamage]" "$dmg[totalHits]" "32"  "108" "26" "75" "41" "10" "5" "370" "$monk[method]" "$monk[chifocus]" "$dmg[insight]" "$dmg[numberOfRounds]"};
+	resetDamage;
 };
 
 /*************************************************************************

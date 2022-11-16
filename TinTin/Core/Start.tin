@@ -10,14 +10,17 @@
 	#read 3k/TinTin/Core/Ansi.tin;
 	#read 3k/TinTin/Core/Events.tin;
 	#read 3k/TinTin/Core/Graph.tin;
+	#read 3k/TinTin/Core/Base.tin;
 	
-	#NOP { *********** Basic Mechanics ************ };
+	#NOP { *********** Basic Game Mechanics ************ };
 	#read 3k/TinTin/Core/ChatMonitors.tin;
 	#read 3k/TinTin/Core/Gag.tin;
+	#read 3k/TinTin/Core/Stats.tin;
 	#read 3k/TinTin/Core/Corpses.tin;
 	#read 3k/TinTin/Core/Dog.tin;
 	#read 3k/TinTin/Core/Mip.tin;
 	#read 3k/TinTin/Core/Inventory.tin;
+	#read 3k/TinTin/Core/Party.tin;
 
 	#NOP { *********** Profession ************ };
 	#read 3k/TinTin/Professions/Transmuter.tin;
@@ -34,20 +37,23 @@
 	#NOP { *********** Mapper ************ };
 	#read 3k/TinTin/Mapper/Mapper.tin;
 	#read 3k/TinTin/Mapper/Obstacles.tin;
-	#read 3k/TinTin/Core/Party.tin;
 	
 	#NOP { *********** Controllers ************ };
-	#read 3k/TinTin/Bot/Controllers.tin;
-	#read 3k/TinTin/Bot/BaseController.tin;
-	#read 3k/TinTin/Bot/PatrolList.tin;
-	#read 3k/TinTin/Bot/Patroller.tin;
-	#read 3k/TinTin/Bot/Seller.tin;
-	#read 3k/TinTin/Bot/Traveller.tin;
-	#read 3k/TinTin/Bot/Donater.tin;
-	#read 3k/TinTin/Bot/Miner.tin;
+	#read 3k/TinTin/Controllers/Controllers.tin;
+	#read 3k/TinTin/Controllers/BaseController.tin;
+	#read 3k/TinTin/Controllers/PatrolList.tin;
+	#read 3k/TinTin/Controllers/Patroller.tin;
+	#read 3k/TinTin/Controllers/Seller.tin;
+	#read 3k/TinTin/Controllers/Traveller.tin;
+	#read 3k/TinTin/Controllers/Donater.tin;
+	#read 3k/TinTin/Controllers/Miner.tin;
 	
 	#NOP { *********** Vaf Addons ************ };
 	#read 3k/TinTin/Vaf/Damage.tin;
+
+	#NOP { *********** Tools ************ };
+	#read 3k/TinTin/Core/Logger.tin;
+	#read 3k/TinTin/Core/TestBin.tin;
 }
 
 load3k;

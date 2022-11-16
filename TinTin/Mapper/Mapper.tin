@@ -292,6 +292,14 @@ The area has changed
 
 #alias {mapgo} {#map goto {roomnote} {%0}}
 
+/**************************************************************
+        See if we can locate ourselves on the map
+**************************************************************/
+#alias {findme} 
+{
+        #map go $room ($exits);
+};
+
 #alias {findhere} 
 {
 	#var finding_here on;
@@ -313,7 +321,7 @@ The area has changed
 	}
 }
 
-#alias {describeroom}
+#alias {.describeRoom}
 {
 	#map {get} {ROOMVNUM} {original};
 	#map go %1;
@@ -322,8 +330,12 @@ The area has changed
 	#map {get} {ROOMVNUM} {roomvnum};
 	#map {get} {ROOMAREA} {roomarea};
 	#map {get} {ROOMDESC} {roomdesc};
-	#showme {Describing: [$roomvnum] - [$roomname] in [$roomarea]};
+	
+	#showme {Describing: [<139>$roomvnum<088>] - [<039>$roomname<088>] in [<039>$roomarea<088>]};
+	#draw Yellow scroll line 1 1 1 120;
 	#showme $roomdesc;
+	#draw Yellow scroll line 1 1 1 120;
+
 	#map go $original;
 }
 
@@ -341,8 +353,40 @@ The area has changed
 	#map go $original;
 };
 
-#alias {sss} { #script {python3 3k/TinTin/Tools/findme.py "%0"}; }
+/*****************************************************************************
+	Search map for rooms that have a substring in their long descriptions
+*****************************************************************************/
+#alias {.searchMapFor}  
+{	
+	#draw Yellow scroll line 1 1 1 120;
+	#map list {roomdesc} {%*%0%*} {variable} {rooms}; 
+	#foreach {*rooms[]} {roomID}  
+	{ 
+		#map at $roomID #map get all {roomdata};
+		#local exits {};
 
+		#foreach {*roomdata[exits][]} {exit} 
+		{
+			#if { "$exit" != "" }
+			{
+				#if { "$exits" == "" }
+				{
+					#local exits {$exit};
+				};
+				#ELSE 
+				{
+					#local exits {$exits,$exit};
+				};
+				
+			};
+		};
+
+
+		#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>Exits %.30s<088> } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits}
+	};
+	#draw Yellow scroll line 1 1 1 120;
+
+}
 
 #alias {mapsearch} 
 {

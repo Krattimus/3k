@@ -1,0 +1,92 @@
+#showme READING Base.TIN
+#class {base} {open}
+
+/**************************************************************
+	Calculator
+**************************************************************/
+#alias {.calc} 
+{
+        #math {math} {%1};
+        #format {math_format} {%g} {$math};
+        #echo $math_format
+}
+
+#alias .timedCapture
+{
+	#var capturedText {};	
+	#var renderingOff 1;
+	#read 3k/TinTin/Core/CaptureAll.tin;
+
+	#delay {create_capture} 
+	{
+		#ACTION {%%1} 
+		{
+			#var renderingOff 0;
+			#delay {0} {%2;};
+			#CLASS {capture} {kill};
+			#UNACTION {%%1};
+		} {1};
+	} {%1};
+};
+
+/*************************************************************************
+	Captures all text until a grep is matched
+*************************************************************************/
+#alias .captureUntil
+{
+	#var capturedText {};	
+	#var renderingOff 1;
+	#read 3k/TinTin/Core/CaptureAll.tin;
+	#delay {backup_kill}
+	{
+		#UNACTION {%1};
+	} {1};
+
+	#delay {create_capture} 
+	{
+		#ACTION {%1} 
+		{
+			#var renderingOff 0;
+			#delay {0} {%2;};
+			#CLASS {capture} {kill};
+			#UNACTION {%1};
+		} {1};
+	} {0};
+};
+
+/*************************************************************************
+	Quickly reloads everything in the test bin
+*************************************************************************/
+#alias .testBin
+{
+	#class {testbin} {kill};
+	#read 3k/TinTin/Core/TestBin.tin;
+};
+
+/**************************************************************
+        Renders the display
+**************************************************************/
+#alias {.render}
+{
+        #read 3k/TinTin/Core/Draw.tin
+};
+
+/**************************************************************
+
+**************************************************************/
+#alias {.onLoadCompleted}
+{
+        #showme ON LOAD COMPLETE;
+        .render;
+}
+
+/**************************************************************
+	Search look, calls both
+**************************************************************/
+#alias {sl %0} 
+{
+	#send look at %0;
+	#send search %0;
+}
+
+#class {base} {close}
