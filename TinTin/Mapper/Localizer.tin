@@ -12,6 +12,7 @@
 	a baystation. In general this means knowing the vnum of the room
 *************************************************************/
 
+#act {^AREA RATING -> Caution is Advised [Mud]$} { #var area {Mud}; };
 /* Transports */
 #NOP Amazon Research Center
 #act {^Stretching your somewhat stiff legs you head out of the plane.} {#map goto 32571}
