@@ -1,3 +1,6 @@
 *.pass
 Data/Logs/*
+Data/3kchat.var
+3kchat.var
+3k.chat
 *.log
