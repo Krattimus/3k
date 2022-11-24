@@ -67,6 +67,18 @@
 	};
 }
 
+
+
+/*****************************************************************
+	Starts with.
+	This returns true if the 2nd parameter occurs in the first
+	string starting at the 0th index
+*****************************************************************/
+#function startsWith
+{	
+	#return @beginsWith{%0};
+}
+
 /*****************************************************************
 	Returns the number of elements in a #list
 *****************************************************************/
@@ -220,7 +232,7 @@
 	{
 		#local item $list[$itemID];
 
-		#if { @equalsIgnoreCase{ {$item} {%2}} }
+		#if { @equalsIgnoreCase{{$item} {%2}} }
 		{
 			#list %1 {DEL} {$itemID};
 		};

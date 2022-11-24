@@ -37,6 +37,7 @@
 	#NOP { *********** Mapper ************ };
 	#read 3k/TinTin/Mapper/Mapper.tin;
 	#read 3k/TinTin/Mapper/Obstacles.tin;
+	#read 3k/TinTin/Mapper/Terrain.tin;
 	
 	#NOP { *********** Controllers ************ };
 	#read 3k/TinTin/Controllers/Controllers.tin;
@@ -54,6 +55,8 @@
 	#NOP { *********** Tools ************ };
 	#read 3k/TinTin/Core/Logger.tin;
 	#read 3k/TinTin/Core/TestBin.tin;
+	#read 3k/TinTin/Core/Joystick.tin;
+
 }
 
 load3k;

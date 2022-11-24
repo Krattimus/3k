@@ -16,7 +16,7 @@
 #action {^The gate is down, you must raise it first.$} { #map undo; }
 #action {^The guard pushes you back.$} { #map undo; }
 #action {^The guard shoves you back.$} { #map undo; }
-
+#action {Two gnolls rush out of the cave and block your path!} {#map undo;};
 #action {^The golem shoves you back.$} { #map undo; }
 #action {^Policeman says: No one is allowed outside the city limits.} {#map undo; }
 #action {^The closed security gate blocks your path.} {#map undo; }
@@ -33,6 +33,18 @@
 #act {^Only members of clan jade falcon can go this way.} {.triggerEvent onFailedMovement;}
 
 #NOP Bards
+00
+30
+
+
+.
+
+
+
+
+
+023.
+
 #act {^You can't go there!} {.triggerEvent onFailedMovement;}
 
 #NOP Abbey

@@ -36,6 +36,8 @@
 #send rating;
 #send pwho;
 #send cc;
+#send stats;
+#send gs;
 
 #if { @isDigit{$map[$ourCharacter][position]} }
 {
@@ -90,6 +92,16 @@
 		#return 0
 	};
 }
+
+
+#alias {.makeForest}
+{
+	#map set roomsymbol <228>( *<088>;
+	#map set roomterrain
+
+
+};
+
 
 
 /*************************************************************
@@ -229,7 +241,7 @@ Once we see this, we can conclude the room description is over
 /*************************************************************
 Allows us to drop map interest pins in an area to travel to
 *************************************************************/
-#alias {.mapInterest %1 %*}
+#alias {.noteInterest %1 %*}
 {
 	#map get roomvnum {roomID};
 	#map set roomsymbol %1;
@@ -239,7 +251,7 @@ Allows us to drop map interest pins in an area to travel to
 /*************************************************************
 Displays a list of map interests for an area
 *************************************************************/
-#alias .getInterests
+#alias .describeInterests
 {
 	#script {python3 3k/TinTin/Tools/getInterests.py "$area"};
 };

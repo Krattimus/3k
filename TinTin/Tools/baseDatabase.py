@@ -38,7 +38,7 @@ class BaseDatabase(object):
         return self.__execute(query, parameters).rowcount
  
     def insert(self, query, parameters=[]):
-        self.__execute(query, parameters).rowcount
+        self.__execute(query, parameters)
         self.connection.commit()
         return self.cursor.lastrowid
 

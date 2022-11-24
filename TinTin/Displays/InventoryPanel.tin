@@ -1,6 +1,24 @@
 #showme reading inventorypanel
 #class {inventorypanel} {open}
 
+
+#function isFilteredFromInventory
+{
+    #if { @startsWith{{%0}{Clan Symbol of}} } { #return 1; };
+    #if { @startsWith{{%0}{A Crafter's Satchel}} } { #return 1; };
+    #if { @startsWith{{%0}{A ring of house keys}} } { #return 1; };
+    #if { @startsWith{{%0}{Assassin's Mark}} } { #return 1; };
+    #if { @startsWith{{%0}{A Crafter's Satchel}} } { #return 1; };
+    #if { @startsWith{{%0}{A charcoal-grey kimono}} } { #return 1; };
+    #if { @startsWith{{%0}{An enchanted coffin}} } { #return 1; };
+    #if { @startsWith{{%0}{Brass Knuckles}} } { #return 1; };    
+    #if { @startsWith{{%0}{Section Z High Score Button}} } { #return 1; };    
+    #if { @startsWith{{%0}{An auction line}} } { #return 1; };    
+    #if { @startsWith{{%0}{A Transmuter's Stone}} } { #return 1; };    
+
+    #return 0;
+};
+
 #alias {.renderInventory}
 {
     #if { "$draw[canvas]" == "on"}
@@ -33,7 +51,10 @@
                 #format {itemCount} {%+2s} {<138>$inventoryCount[$itemID]<088>};
                 #format {area_display} {%.30s} {<128>$inventory[$itemID]<088>};       
 
-                #var botareas {$botareas\n$itemIDnum$itemCount $area_display};
+                #if { !@startsWith{{$inventory[$itemID]}{*}} && !@isFilteredFromInventory{$inventory[$itemID]}}
+                {
+                    #var botareas {$botareas\n$itemIDnum$itemCount $area_display};
+                };
             };
         };
 

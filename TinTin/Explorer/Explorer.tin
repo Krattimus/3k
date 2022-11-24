@@ -1,0 +1,171 @@
+#showme READING Explorer
+#class {explorer} {open}
+
+/************************************************************************
+	LOL SEARCH
+************************************************************************/
+#alias {.lolSearch}
+{
+	.searchBeach;
+	.searchForest;
+	.searchDungeon;
+	.searchInside;
+};
+
+/************************************************************************
+	Search Common room for statistically likely common words
+************************************************************************/
+#alias {.searchCommon}
+{
+	#send !search;
+	#send !search floor;
+	#send !search ground;
+	#send !search ceiling;
+	#send !search outside;
+	#send !search wall;
+	#send !search walls;
+	#send !search stairs;
+	#send !search staircase;
+	#send !search light;
+	#send !search base;
+	#send !search hole;
+};
+
+/************************************************************************
+	Dungeons / Caves
+************************************************************************/
+#alias {.searchDungeon}
+{
+	.searchCommon;
+	#send !search mark;
+	#send !search markings;
+	#send !search cave;
+	#send !search pit;
+	#send !search gem;
+	#send !search scratch;
+	#send !search scratches;
+	#send !search torch;
+	#send !search sconce;
+	#send !search shadow;
+	#send !search darkness;
+	#send !search figure;
+};
+
+/************************************************************************
+	Search outside for common ones
+************************************************************************/
+#alias {.searchOutside}
+{
+	#send !search ground;
+	#send !search floor;
+	#send !search rock;
+	#send !search path;
+	#send !search sky;
+	#send !search clouds;
+	#send !search sun;
+	#send !search boulder;
+	#send !search canopy;
+	#send !search canopy;
+	#send !search canopy;
+	#send !search track;
+	#send !search tracks;
+	#send !search trail;
+	#send !search plant;
+	#send !search plants;
+};
+
+/************************************************************************
+	Search forest for common ones
+************************************************************************/
+#alias {.searchForest}
+{
+	.searchCommon;
+	.searchOutside;
+	#send !search tree;	
+	#send !search trees;
+	#send !search bush;
+	#send !search bushes;
+	#send !search trunk;
+	#send !search leaves;
+	#send !search forest;
+};
+
+/************************************************************************
+	Search a room that is a beach with statistically likely words
+************************************************************************/
+#alias {.searchBeach}
+{
+	.searchCommon;
+	#send !search sand;	
+	#send !search ocean;
+	#send !search water;
+	#send !search seaweed;
+	#send !search shell;
+	#send !search shells;
+};
+
+/************************************************************************
+	Search inside
+************************************************************************/
+#alias {.searchInside}
+{
+	.searchCommon;
+	#send !search chair;	
+	#send !search furniture;
+	#send !search table;
+	#send !search desk;
+	#send !search drawer;
+	#send !search drawers;
+	#send !search books;
+	#send !search scrolls;
+	#send !search book;
+	#send !search scroll;
+	#send !search pages;
+	#send !search map;
+	#send !search page;
+	#send !search papers;
+	#send !search paper;
+	#send !search chair;
+	#send !search chairs;
+	#send !search bed;
+	#send !search blankets;
+	#send !search pillow;
+	#send !search pillows;
+	#send !search sheet;
+};
+
+/************************************************************************
+	Loop through obvious cardinal directions and search each one for
+	unmarked hidden exits: Warning, use at own risk
+************************************************************************/
+#alias {.searchHidden}
+{
+	#local obviousExits $exits;
+	#replace obviousExits {,} {;};
+
+	#list dirs create;
+	#list dirs add n;
+	#list dirs add ne;
+	#list dirs add e;
+	#list dirs add se;
+	#list dirs add s;
+	#list dirs add sw;
+	#list dirs add w;
+	#list dirs add nw;
+	#list dirs add u;
+	#list dirs add d;
+	
+	#foreach {$obviousExits} {exit} 
+	{
+		removeItemFromList {dirs} {$exit};
+	};
+
+	#local directionIndex 0;
+    #while {$directionIndex <= @getNumElements{dirs}}  
+    {
+		#send $dirs[$directionIndex];
+        #math {directionIndex} {$directionIndex + 1};
+	};
+};
+
+#class {explorer} {close}

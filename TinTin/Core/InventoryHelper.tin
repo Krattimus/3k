@@ -16,7 +16,12 @@
     };
     #else
     {
-        #list inventory add {%3};
+        #local itemName %3;
+        #replace itemName {{\\x7B.*\\x7D}} {};
+        #replace itemName {{\(.*\)}} {};
+        #replace itemName {{\[.*\]}} {};
+
+        #list inventory add {$itemName};
         #list inventoryCount add {%2};
         .renderInventory;            
     };

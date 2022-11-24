@@ -1,6 +1,38 @@
 #class {terrain} {open}
 
-#alias {terrain} 
+
+#alias {.mapWell}
+{
+	.terrain well;
+};
+
+#alias {.mapForest}
+{
+	.terrain forest;
+};
+
+#alias {.mapBeach}
+{
+	.terrain beach;
+};
+
+#alias {.mapOcean}
+{
+	.terrain ocean;
+};
+
+#alias {.mapShore}
+{
+	.terrain shore;
+};
+
+#alias {.mapJungle}
+{
+	.terrain jungle;
+};
+
+
+#alias {.terrain} 
 {
 	#if {"%1" == ""} 
 	{

@@ -32,6 +32,8 @@ dmgType = sys.argv[23]
 insight = sys.argv[24]
 rounds = sys.argv[25]
 
+if not brawler:
+    brawler = 0
 if not currentRoom:
     currentRoom = -1
 if not maxHit:
@@ -46,7 +48,16 @@ if not rating:
     rating = -1
 if not scaler:
     scaler = 0
+if not rounds:
+    rounds = 1
+if not dmgType:
+    dmgType = "Normal"
+if not totalHits:
+    totalHits = 1
+if not totalDamage:
+    totalDamage = 1
 
+    
 insertQuery = ("INSERT INTO CombatLog (AverageDamage, AveragePerHit, BrawlerActive, RoomID, MaxHit, MinHit, Mob, PalmActive, PressureActive, Rating, Scaler, TotalDamage, TotalHits, Strength, Dex, Wis, Intelligence, Con, Cha, Speed, Power, InsightActive, Stance, DamageType, Rounds ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
 
 combatID = db3k.insert(insertQuery, [averageDamage, averagePerHit, brawler, currentRoom, 

@@ -1,6 +1,10 @@
 #showme READING Logger.TIN
 #class {logger} {open}
 
+
+.registerEvent onMobKilled onMobKilledLogger;
+.registerEvent onItemTaken onItemTakenLogger;
+
 /*************************************************************************
 	Send combat data to mysql
 *************************************************************************/
@@ -9,8 +13,181 @@
     #script {python3 3k/TinTin/Tools/combatLogger.py "$dmg[averageDamage]" "$dmg[averagePerHit]" "$dmg[brawler]" "$dmg[currentRoom]" "$dmg[maxHit]" "$dmg[minHit]" "$dmg[mob]" "$dmg[palm]" "$dmg[pressure]" "$dmg[rating]" "$dmg[scaler]" "$dmg[totalDamage]" "$dmg[totalHits]" "$stats[str]"  "$stats[dex]" "$stats[wis]" "$stats[int]" "$stats[con]" "$stats[cha]" "$monk[speed]" "$monk[power]" "$monk[method]" "$monk[chifocus]" "$dmg[insight]" "$dmg[numberOfRounds]"};
 };
 
+/**************************************************************
+	Describes rooms for the given area
+**************************************************************/
+#alias {.describeRooms}
+{
+	#local areaToSearch $area;
+	#if { "%0" != "" }
+	{
+		#local areaToSearch %0;
+	};
+
+	#draw Yellow scroll line 1 1 1 120;
+
+	#showme AREATO : $areaToSearch;
+	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
+	#foreach {*rooms[]} {roomID}  
+	{
+		#map at $roomID #map get all {roomdata};
+
+		#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>Exits %.30s<088>%.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]}
+
+	};
+	
+	#draw Yellow scroll line 1 1 1 120;
+};
+
+/**************************************************************
+	Describes all mobs in the given area
+**************************************************************/
+#alias {.describeMobs}
+{
+	#showme python3 3k/TinTin/Tools/getMobs.py "$area";
+	#draw Yellow scroll line 1 1 1 120;
+	#script {python3 3k/TinTin/Tools/getMobs.py "$area";};
+	#draw Yellow scroll line 1 1 1 120;
+};
+
+/**************************************************************
+	Describes all items found in a given area
+**************************************************************/
+#alias {.describeItems}
+{
+	#showme python3 3k/TinTin/Tools/getItems.py "$area";
+	#draw Yellow scroll line 1 1 1 120;
+	#script {python3 3k/TinTin/Tools/getItems.py "$area";};
+	#draw Yellow scroll line 1 1 1 120;
+};
+
+/**************************************************************
+	Logs a mob
+**************************************************************/
+#alias .noteMob
+{
+	#send consider;
+	#map get {roomvnum} {currentRoom};
+	#var rejectRoomID 0;
+	
+	#var recordedMobName %0;
+	#delay {1} { .logMobToDB {%0} {$currentRoom} {$area}; };
+};
+
+/**************************************************************
+	Logs where an item was found in the database
+**************************************************************/
+#alias .noteItems
+{
+	#map get {roomvnum} {currentRoom};
+	#var rejectRoomID 0;
+	noteItemIndexed 1;
+};
+
+/**************************************************************
+	Logs whatever "item" at the location you are in
+**************************************************************/
+#alias {.noteItem}
+{
+	#map get {roomvnum} {currentRoom};
+	#var rejectRoomID 0;
+	#var recordedItemName %0;
+	.logItemToDB {%0} {$currentRoom} {$area}; 
+};
+
+/**************************************************************
+    Save the map file of the area to file
+**************************************************************/
+#alias {.logMap %1 %2}
+{
+	#line logmode html #map map %1 %2 O map.html;
+	#map flag asciivnums on;
+	#line logmode html #map map %1 %2 O mapIDs.html;
+	#map flag asciivnums off;
+
+	.describeItems;
+	.describeMobs;
+	.describeInterests;
+};
+
+#alias {.logMobToDB}
+{
+	#send look at %1;
+	.captureUntil {^>$} {onMobDescriptionRead};
+};
+
+/**************************************************************
+    Auto log mobs when we kill them
+**************************************************************/
+#alias {onMobKilledLogger}
+{
+	#var allowRecording 1;
+	#delay 1.5 {#var allowRecording 0;};
+};
 
 
+#alias {onMobDescriptionRead}
+{
+	#script {python3 3k/TinTin/Tools/mobLogger.py "$recordedMobName" "$capturedText" "$currentRoom" "$area" "$dmg[rating]"};
+};
+
+#alias {onItemDescriptionRead}
+{
+	#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
+}
+
+#alias {onItemTakenLogger}
+{
+	#if { $allowRecording && !$patroller[isPatrolling] }
+	{
+		#var rejectRoomID $currentRoom;
+		#map get {roomvnum} {currentRoom};
+		#var recordedItemName $event[itemTaken];
+				
+		#delay {1} {
+			.logItemToDB {$recordedItemName} {$currentRoom} {$area};
+		};
+	};
+};
+
+
+
+#alias {noteItemIndexed}
+{
+	#local items $event[items];
+	#var itemIndex %1;
+	#if { $itemIndex <= @getNumElements{items} }
+	{
+		#var itemToRecord $items[$itemIndex];
+		#if { "$itemToRecord" != "" }
+		{
+			#local delayAmt 0;
+			#math {delayAmt} {($itemIndex-1)*2};
+			#delay {itemRecorder} 
+			{
+				#var recordedItemName $itemToRecord;
+				 .logItemToDB {$itemToRecord} {$currentRoom} {$area}; 
+				 #math {itemIndex} {$itemIndex+1};
+				noteItemIndexed $itemIndex;
+			} {$delayAmt};
+		};
+	};
+};
+
+
+#alias {onItemDescriptionRead}
+{
+	#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
+}
+
+#alias {.logItemToDB}
+{
+	#if { !@containsNoCase{{%1}{coins}} && !@containsNoCase{{%1}{corpse}} }
+	{
+		#send look at %1;
+		.captureUntil {^>$} {onItemDescriptionRead};
+	};
+};
 
 
 #class {logger} {close}

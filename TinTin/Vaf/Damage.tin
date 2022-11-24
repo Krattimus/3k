@@ -24,10 +24,9 @@
 	#var dmg[palm] 0;
 	#var dmg[brawler] 0;
 	#var dmg[pressure] 0;
-	#var dmg[scaler] 48;
+	#var dmg[scaler] 0;
 	#var dmg[totalHits] 0;
 	#var dmg[insight] 0;
-	#var dmg[scaler] 0;
 	#var dmg[mob] {};
 }
 
@@ -65,6 +64,15 @@
 	#var dmg[rating] %1;
 };
 
+#action {Monster class: Really Big} 
+{
+	 #var dmg[rating] 150000; 
+};
+
+#action {Your dungeon scaler is currently set to level: %1}
+{
+	#var dmg[scaler] %1;
+};
 /*************************************************************************
 	Monster killed
 *************************************************************************/

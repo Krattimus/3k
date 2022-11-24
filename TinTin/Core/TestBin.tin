@@ -1,8 +1,9 @@
 #showme READING testbin.TIN
 #class {testbin} {open}
 
-.registerEvent onMobKilled onMobKilledTestBed;
-.registerEvent onItemTaken onItemTakenTestBed;
+
+
+
 
 /**************************************************************
         See if we can locate ourselves on the map
@@ -20,100 +21,6 @@
 {
     #script {python3 3k/TinTin/Tools/nountest.py "$roomdesc"};
 };
-
-/**************************************************************
-	Testing ideas of "talking" to web servers
-**************************************************************/
-#alias testT
-{
-	#port init webListener 3333;
-	#EVENT {PORT RECEIVED MESSAGE} { #krat #showme %0 name %1 ip %2 port %3 data %4 plain data; };
-	#session krat;
-	.render;
-};
-
-#alias {onMobKilledTestBed}
-{
-	#var allowRecording 1;
-	#delay 1.5 {#var allowRecording 0;};
-};
-
-/**************************************************************
-	Logs where an item was found in the database
-**************************************************************/
-#alias .noteItems
-{
-	#map get {roomvnum} {currentRoom};
-	#var rejectRoomID 0;
-	noteItemIndexed 1;
-};
-
-
-#alias .noteItem
-{
-	#map get {roomvnum} {currentRoom};
-	#var rejectRoomID 0;
-	#var recordedItemName %1;
-	.logItemToDB {%1} {$currentRoom} {$area}; 
-};
-
-#alias {noteItemIndexed}
-{
-	#local items $event[items];
-	#var itemIndex %1;
-	#if { $itemIndex <= @getNumElements{items} }
-	{
-		#var itemToRecord $items[$itemIndex];
-		#if { "$itemToRecord" != "" }
-		{
-			#local delayAmt 0;
-			#math {delayAmt} {($itemIndex-1)*2};
-			#delay {itemRecorder} 
-			{
-				#var recordedItemName $itemToRecord;
-				 .logItemToDB {$itemToRecord} {$currentRoom} {$area}; 
-				 #math {itemIndex} {$itemIndex+1};
-				noteItemIndexed $itemIndex;
-			} {$delayAmt};
-		};
-	};
-};
-
-#alias {onItemTakenTestBed}
-{
-	#if { $allowRecording && !$patroller[isPatrolling] }
-	{
-		#var rejectRoomID $currentRoom;
-		#map get {roomvnum} {currentRoom};
-		#var recordedItemName $event[itemTaken];
-				
-		#delay {1} {
-			.logItemToDB {$recordedItemName} {$currentRoom} {$area};
-		};
-	};
-};
-
-#alias {.describeItems}
-{
-	#showme python3 3k/TinTin/Tools/getItems.py "$area";
-	#draw Yellow scroll line 1 1 1 120;
-	#script {python3 3k/TinTin/Tools/getItems.py "$area";};
-	#draw Yellow scroll line 1 1 1 120;
-};
-
-#alias {.logItemToDB}
-{
-	#if { !@containsNoCase{{%1}{coins}} && !@containsNoCase{{%1}{corpse}} }
-	{
-		#send look at %1;
-		.captureUntil {^>$} {onItemDescriptionRead};
-	};
-};
-
-#alias {onItemDescriptionRead}
-{
-	#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
-}
 
 
 #class {testbin} {close}
