@@ -1,0 +1,170 @@
+#class {area} {open}
+
+/**************************************************************
+	Mapping tool helpers for SeaHaven mapper
+
+	Create new room in Dir...
+	Link and back link the exits....
+	Remap up/down to North/south map directions
+	Mark terrain
+**************************************************************/
+#alias {push west boulder}
+{
+	#showme Pushing Boulder to the west;
+	#send push west boulder;
+	#map move w;
+};
+
+#alias cu
+{
+	#map exit n command u;
+};
+
+#alias cd
+{
+	#map exit s command d;
+};
+
+#alias {push east boulder}
+{
+	#showme Pushing Boulder to the East;
+	#send push east boulder;
+	#map move e;
+};
+
+#alias {dig west}
+{
+	#send dig west;
+	#map move w;
+};
+
+#alias {dig east}
+{
+	#send dig east;
+	#map move e;
+};
+
+#alias {dig down}
+{
+	#send dig down;
+	#map move s;
+};
+
+#alias {dig up}
+{
+	#send dig up;
+	#map move n;
+};
+
+#alias .markGeneral
+{
+	#var {newRoomDir} {%1};
+	#if { "%1" == "up" || "%1" == "n" || "%1" == "north" }
+	{
+		#var {newRoomDir} {u};
+	};
+
+	#if { "%1" == "down" || "%1" == "s" || "%1" == "south" }
+	{
+		#var {newRoomDir} {d};
+	};
+
+	#map get {roomvnum} {currentRoomID};
+	#map dig %1;
+	#map move %1;
+	#map get {roomvnum} {newRoomID};
+
+	#map set roomarea $area;
+	#map set roomname {Deep in the Snow};
+	#map set roomdesc {You are deep within a snow filled crevasse which severs the great glacier in an east-west direction. You have no way of knowing how far the crevasse descends into the depths of the earth, or how far above you is the warmth of the sun. It is cold and dark and you begin to wonder if this place is the last you will ever see.};
+	#map go $currentRoomID;
+
+	#if { "$newRoomDir" == "u" }
+	{
+		#map exit %1 dir n;
+		#map link n $newRoomID;
+		#map exit n command u;
+	};
+
+	#if { "$newRoomDir" == "d" }
+	{
+		#showme New room [$newRoomID] set to %1;
+		#map exit %1 dir s;
+		#map link s $newRoomID;
+		#map exit s command d;
+	};
+
+
+	#map go $newRoomID;
+	#if { "%1" == "w" }
+	{
+		#map link e $currentRoomID;
+	};
+	#if { "%1" == "e" }
+	{
+		#map link w $currentRoomID;
+	};
+	#if { "%1" == "u" }
+	{
+		#map link d $currentRoomID;
+		#map exit d dir s;
+		#map link s $currentRoomID;
+		#map exit s command d;
+	};
+	#if { "%1" == "d" }
+	{
+		#map link u $currentRoomID;
+		#map exit u dir n;
+		#map link n $currentRoomID;
+		#map exit n command u;
+	};
+};
+
+#alias .markBoulder
+{
+	.markGeneral %1;
+	.terrain rocks;
+	#map go $currentRoomID;
+
+	#if { "%1" == "u" }
+	{
+		cu;
+	};
+	#if { "%1" == "d" }
+	{
+		cd;
+	};
+
+};
+
+#alias .markSnow
+{
+	.markGeneral %1;
+	.terrain snow;
+	#map go $currentRoomID;
+	#if { "%1" == "u" }
+	{
+		cu;
+	};
+	#if { "%1" == "d" }
+	{
+		cd;
+	};
+};
+
+#alias .markIce
+{
+	.markGeneral %1;
+	.terrain ice;
+	#map go $currentRoomID;
+	#if { "%1" == "u" }
+	{
+		cu;
+	};
+	#if { "%1" == "d" }
+	{
+		cd;
+	};
+};
+
+#class {area} {close}

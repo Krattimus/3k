@@ -38,4 +38,10 @@
 	#var stats[cha] %1;
 };
 
+/************************************************
+    Quality of life to show resistance types
+	by Elminster
+************************************************/
+#action {{^Resistances:}} {#showme Resist Type:   Edge  Blnt  Fire   Ice  Acid  Elec  Mind  Enrg  Pois  Radi}
+
 #CLASS {stats} CLOSE

@@ -172,7 +172,7 @@
 		};
 	
 		glance;
-	} {20};
+	} {3};
 };
 
 /***********************************************************************
@@ -399,7 +399,7 @@
 	#var miner[beingAttacked] 1;
 	#math {miner[mobsFound]} {$miner[mobsFound]+1};
 	.renderMiningPanel;
-	triggerEvent onMobSpawned;
+	.triggerEvent onMobSpawned;
 }
 
 /***********************************************************************
@@ -411,6 +411,7 @@
 	{
 		#echo {<202> Mining Stopped due to completion <088>};
 		#var miner[isMining] 0;
+		mapgo mines;
 	};
 } {1};
 

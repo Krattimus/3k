@@ -13,6 +13,18 @@
 ************************************************************/
 #var alert[width] 1
 #var canvas[width] 43;
+
+#if { $miner[isMining] }
+{
+};
+#elseif { $inventoryOpen }
+{
+};
+#else
+{
+	#var canvas[width] 1;
+};
+
 #var caption[height] 2
 #math chat[height] {18};
 #math {chat[right]} {-$map[width]-2}
@@ -29,9 +41,17 @@
 #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
 #showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
 
+
+
 /************************************************************
 	Split
 ************************************************************/
+
+
+
+
+
+
 #split $split[top] $split[bottom] $split[left] $split[right]
 #screen clear split
 
@@ -45,22 +65,14 @@ chatend;
 .renderHPBar;
 
 
-#if {"$draw[canvas]" == "on"} 
+#if { $miner[isMining] }
 {
-
-	#if { $miner[isMining] }
-	{
-		.renderMiningPanel;
-	};
-	#elseif { $inventoryOpen }
-	{
-		.renderInventory;
-	};
-	#else
-	{
-		.renderPatrols;
-	};
-}
+	.renderMiningPanel;
+};
+#elseif { $inventoryOpen }
+{
+	.renderInventory;
+};
 
 .renderMiniMap;
 

@@ -61,6 +61,7 @@
 		#case {"cabin"}			{#var rmcol <238>;#var rmsym <238># #<088>};
 		#case {"cave"}			{#var rmcol <248>;#var rmsym <248>% %<088>};
 		#case {"castle"}		{#var rmcol <178>;#var rmsym <278>###<088>};
+		#case {"cell"}		{#var rmcol <208>;#var rmsym <208>|||<088>};
 		#case {"chaos_sea"}		{#var rmcol <258>;#var rmsym <258>~^~<088>};
 		#case {"chessblack"}		{#var rmcol <248>;#var rmsym <248>[ ]<088>};
 		#case {"chesswhite"}		{#var rmcol <178>;#var rmsym <178>[ ]<088>};
@@ -85,6 +86,7 @@
 		#case {"field2"}		{#var rmcol <228>;#var rmsym <228>. ^<088>};
 		#case {"field3"}		{#var rmcol <228>;#var rmsym <228>, .<088>};
 		#case {"field4"}		{#var rmcol <228>;#var rmsym <228>` ^<088>};
+		#case {"fire"}		{#var rmcol <118>;#var rmsym <118>` ^<088>};
 		#case {"flowers1"}		{#var rmcol <178>;#var rmsym <168>*<158>*<138>*<088>};
 		#case {"flowers2"}		{#var rmcol <178>;#var rmsym <158>*<168>*<138>*<088>};
 		#case {"forest"}		{#var rmcol <228>;#var rmsym <228>( *<088>};
@@ -112,6 +114,7 @@
 		#case {"moon"}			{#var rmcol <248>;#var rmsym <248> * <088>};
 		#case {"mountain"}		{#var rmcol <238>;#var rmsym <238>.^.<088>};
 		#case {"mountain_cyan"}		{#var rmcol <268>;#var rmsym <268>.^.<088>};
+		#case {"nest"}		{#var rmcol <238>;#var rmsym <238># ]<088>};
 		#case {"ocean1"}		{#var rmcol <148>;#var rmsym <148>~ ~<088>};
 		#case {"ocean2"}		{#var rmcol <148>;#var rmsym <148>~ ^<088>};
 		#case {"ocean3"}		{#var rmcol <148>;#var rmsym <148>^ ~<088>};
@@ -134,6 +137,7 @@
 		#case {"road_ns"}		{#var rmcol <278>;#var rmsym <278> | <088>};
 		#case {"rocks"}			{#var rmcol <238>;#var rmsym <238>^ ^<088>};
 		#case {"ruins"}			{#var rmcol <178>;#var rmsym <178>{<148>*<178>}<088>};
+		#case {"sewer"}			{#var rmcol <228>;#var rmsym {<228>= =<088>}};
 		#case {"ship"}			{#var rmcol <238>;#var rmsym <238>\_/<088>};
 		#case {"shore"}			{#var rmcol <268>;#var rmsym <268>~ ~<088>};
 		#case {"shop"}			{#var rmcol <138>;#var rmsym <138>*<128>$<138>*<088>};

@@ -3,19 +3,19 @@
 #NOP If using PuTTy, be sure "Disable application keypad mode" is unchecked in Settings -> Terminal -> Features
 
 /* Number Pad Movement */
-#macro {\eOq} {sw}
-#macro {\eOr} {s}
-#macro {\eOs} {se}
-#macro {\eOt} {w}
-#macro {\eOu} {look;search}
-#macro {\eOv} {e}
-#macro {\eOw} {nw}
-#macro {\eOx} {n}
-#macro {\eOy} {ne}
+#macro {\e[4~} {sw}
+#macro {\e[B} {s}
+#macro {\e[6~} {se}
+#macro {\e[D} {w}
+#macro {\eOE} {look;search}
+#macro {\e[C} {e}
+#macro {\e[1~} {nw}
+#macro {\e[A} {n}
+#macro {\e[5~} {ne}
 #macro {\e0p} {d}
 #macro {\e0n} {u}
 
-#macro {\eOP} {search}
+#macro {\eOP} {.terrain cave}
 
 /* Alternate up/down using - for up and + for down */
 #NOP #macro {\eOS} {u}

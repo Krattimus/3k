@@ -27,7 +27,7 @@
 #act {The elevator jerks to a halt and the doors open.} {out}
 #act {The elevator is already here. How about you enter it?} {enter elevator}
 
-
+#act {You slip and fall off the block of ice!} {#map go 37564; }
 #action {^Cool!  It has your sign!  Today is a %*} { #map go 29557; }
 #NOP Ao
 #act {** The Docks of Ao ** (se)} {#map goto 15463} {1}
@@ -35,6 +35,7 @@
 #NOP Ascended
 #act {Arid environment (sw,n,s,e,climb)} {#map goto 16718} {1}
 
+#act {SPLAT!  You've landed onto the floor of a remote and dark pit.} { #map goto 37410 }
 #NOP Ashridge Acres
 #act {AREA NAME: Ashridge Acres} {
 	#map get {roomvnum} {ashridge_room};

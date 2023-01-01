@@ -1,23 +1,44 @@
 #class {bot} {open}
 
-#var {no_loop} {1}
-#var {no_home} {1}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+/******************************************************************************
+	Controller Behavior Settings
+*******************************************************************************/
+#var settings[shouldVacuum] 	{1}
+#var settings[autoSell] 		{0};
+#var settings[corpseDonations] 	{0};
+#var seller[whichShop] 			{chaos};
 
-#var {zellgloves} {0}
+/******************************************************************************
+	Data to be used for this patrol
+	w;w;w;s;e;e;e;e;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s
+*******************************************************************************/
+#var patrol[startingLocation] 6558;
+#var patrol[area] {Zelligar's Castle};
+#var patrol[path] {n;n;e;w;w;n;nw;n;e;e;e;e;w;s;s;search shelves;take gloves;keep gloves;n;n;w;w;w;s;take key;e;e;s;n;w;n;e;e;s;s;e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;n;e;n;s;w;s;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}
 
-#var {patrol[path]} {n;n;e;w;w;n;nw;n;e;e;e;e;w;s;s;search shelves;take gloves;keep gloves;n;n;w;w;w;s;take key;e;e;s;n;w;n;e;e;s;s;e;e;e;n;n;n;n;e;e;s;s;w;w;s;e;e;e;n;n;n;n;w;w;w;w;s;s;s;s;unlock door;w;take key;e;n;n;n;n;e;e;e;e;s;s;s;s;w;w;w;s;w;w;w;n;n;w;n;e;n;s;w;s;w;n;unlock door;w;w;s;s;sw;w;w;w;n;nw;e;e;e;e;n;ne;e;e;e;w;w;w;sw;nw;nw;w;e;sw;e;se;w;w;s;w;se;e;e;e;s;ne;n;n;e;e;s;s;w;se;s;e;s;s}
-
-#act  {^=M= {Steel|Clay|Flesh|Stone|Mud|Straw|Glass} Golem} {
-	#var patroller[shouldKill] golem;
-	_check_mob
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+.registerEvent onMobFound onMobAreaResponder;
+#alias {onMobAreaResponder}
+{
+	#REGEXP {"$event[foundMobName]"} {"%*Steel Golem%*"} {#var patroller[shouldKill] golem};
+	#REGEXP {"$event[foundMobName]"} {"%*Clay Golem%*"}  {#var patroller[shouldKill] golem};
+	#REGEXP {"$event[foundMobName]"} {"%*Flesh Golem%*"} {#var patroller[shouldKill] golem};
+	#REGEXP {"$event[foundMobName]"} {"%*Stone Golem%*"} {#var patroller[shouldKill] golem};
+	#REGEXP {"$event[foundMobName]"} {"%*Mud Golem%*"}	 {#var patroller[shouldKill] golem};
+	#REGEXP {"$event[foundMobName]"} {"%*Straw Golem%*"} {#var patroller[shouldKill] golem};
+	#REGEXP {"$event[foundMobName]"} {"%*Glass Golem%*"} {#var patroller[shouldKill] golem};
 };
 
-#act {You sweep your hand over {one|some} of the higher shelves} {take gloves;keep gloves;#delay {1}{..}}
-#act {You reach in and snatch the key from the deadly acid.} {keep key;..}
-#act {There is no key here.} {..}
-#act {You slip the key into the lock and unlock the door.} {open door;..}
-#act {The door is already unlocked.} {..}
+/******************************************************************************
+	Additional scripting used for this area
+			...
+*******************************************************************************/
+#act {gloves: Taken.} {gl;}
+#act {You keep Gloves of Acid Protection.} {gl;}
+#act {You sweep your hand over {one|some} of the higher shelves} {gl;}
+#act {You reach in and snatch the key from the deadly acid.} {gl;}
+#act {You slip the key into the lock and unlock the door} {gl;}
 
 #class {bot} {close}

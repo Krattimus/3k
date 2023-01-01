@@ -23,7 +23,7 @@
 
 #action {^The door is closed.$} { #map undo; }
 #action {^The knight bars your way west.$} { #map undo; }
-
+#action {The guard prevents you from going that way.} {#map undo;}
 
 #act {You are too powerful to pass this gate.} { #map undo; }
 #NOP Juggernauts
@@ -33,18 +33,6 @@
 #act {^Only members of clan jade falcon can go this way.} {.triggerEvent onFailedMovement;}
 
 #NOP Bards
-00
-30
-
-
-.
-
-
-
-
-
-023.
-
 #act {^You can't go there!} {.triggerEvent onFailedMovement;}
 
 #NOP Abbey

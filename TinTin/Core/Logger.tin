@@ -10,7 +10,10 @@
 *************************************************************************/
 #alias .logToDatabase
 {
-    #script {python3 3k/TinTin/Tools/combatLogger.py "$dmg[averageDamage]" "$dmg[averagePerHit]" "$dmg[brawler]" "$dmg[currentRoom]" "$dmg[maxHit]" "$dmg[minHit]" "$dmg[mob]" "$dmg[palm]" "$dmg[pressure]" "$dmg[rating]" "$dmg[scaler]" "$dmg[totalDamage]" "$dmg[totalHits]" "$stats[str]"  "$stats[dex]" "$stats[wis]" "$stats[int]" "$stats[con]" "$stats[cha]" "$monk[speed]" "$monk[power]" "$monk[method]" "$monk[chifocus]" "$dmg[insight]" "$dmg[numberOfRounds]"};
+	#map get {roomvnum} {currentRoom};
+	#var recordedMobName $dmg[mob];
+	#var capturedText {Autokill};
+	#delay {0.2} { .logMobToDB {$dmg[mob]} {$currentRoom} {$area}; };
 };
 
 /**************************************************************

@@ -23,6 +23,17 @@
 };
 
 /************************************************
+    Quality of life improvement by Elminster
+************************************************/
+#act {^You are lightly burdened.} {#showme <129>15% <119>[<139>#####<269>-------------------------<119>]}
+#act {^You are burdened.} {#showme <129>30% <119>[<139>#########<269>---------------------<119>]}
+#act {^You are encumbered.} {#showme <129>45% <119>[<139>#############<269>-----------------<119>]}
+#act {^You are heavily loaded.} {#showme <139>60% <119>[<139>##################<269>------------<119>]}
+#act {^You are over taxed.} {#showme <139>75% <119>[<139>######################<269>--------<119>]}
+#act {^You are collapsing under your load.} {#showme <119>100% <119>[<139>##############################<269><119>]}
+
+
+/************************************************
     Parse Inventory Output, this can change
     depending on where you are, like a shop, 
     which does its own indexing. TODO: Find all

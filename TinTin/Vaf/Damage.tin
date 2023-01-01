@@ -75,12 +75,11 @@
 };
 /*************************************************************************
 	Monster killed
+	#NOP { #delay {0.1} {.miniReport}; };
 *************************************************************************/
 #alias {onMobKilledDamage}
 {
 	#var dmg[mob] $event[mobKilled];
-	#class damagevar write 3k/TinTin/Data/Damage.var;
-	#delay {0.1} {.miniReport};
 	.logToDatabase;
 };	
 

@@ -1,9 +1,6 @@
 #showme READING VARS
 #CLASS {vars} OPEN
 
-#class botvar kill
-#read 3k/TinTin/Data/Bots.var
-
 #class chatvar kill
 #read 3k/TinTin/Data/3kchat.var
 
@@ -27,11 +24,5 @@
 
 #class mobsvar kill
 #read 3k/TinTin/Data/KnownMobs.var
-
-#class patrolvar kill
-#read 3k/TinTin/Data/Patrol.var
-
-#class damagevar kill
-#read 3k/TinTin/Data/Damage.var
 
 #CLASS {vars} CLOSE

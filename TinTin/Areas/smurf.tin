@@ -14,7 +14,7 @@
 *******************************************************************************/
 #var patrol[startingLocation] 2005;
 #var patrol[area] {Smurfland};
-#var {patrol[path]} {s;s;s;w;e;e;w;s;w;e;e;e;w;sw;se;w;e;s;w;w;n;s;e;e;e;s;s;s;s;s;enter;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;s;w;e;e;w;n;e;out;n}
+#var patrol[path] {s;s;s;w;e;e;w;s;w;e;e;e;w;sw;se;w;e;s;w;w;n;s;e;e;e;s;s;s;s;s;enter;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;e;w;s;w;e;s;w;e;e;w;n;e;out;n}
 
 /******************************************************************************
 	What to attack

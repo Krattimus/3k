@@ -6,13 +6,14 @@
     {height} {18}
     {log} 
     {
-     }
+
+    }
     {offset} {0}
     {page} {1}
     {right} {-44}
     {rows} {17}
     {start} {17}
-    {text} {<178>Gik shouts:<099> playcult like a turkey!<099>}
+    {text} {}
 }
 
 #CLASS {chatvar} CLOSE

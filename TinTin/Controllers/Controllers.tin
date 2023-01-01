@@ -124,7 +124,7 @@
 	
 	#delay {shop_sell} 
 	{
-		gonum $shops[$seller[whichShop]];
+		go $shops[$seller[whichShop]];
 		sell all;
 	} {1};
 	
@@ -201,6 +201,7 @@
 **************************************************************/
 #alias {.render}
 {
+        #var renderingOff 0;
         #read 3k/TinTin/Core/Draw.tin
 };
 
