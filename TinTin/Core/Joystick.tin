@@ -182,7 +182,7 @@
 #alias showJoystickMapping
 {
 
-    #draw Yellow scroll line 1 1 1 120;
+    #draw Yellow scroll line 1 1 1 80;
     #showme <088>              <139>9<088>        <139>10<088>                            <139>11<088>          <139>12<088> ;
 	#showme <088>                _=====_                               _=====_ ;
 	#showme <088>               / _____ \\                             / _____ \\ ;
@@ -201,7 +201,7 @@
 	#showme <088>          |            /                            \\             | ;
 	#showme <088>           \\          /                              \\           / ;
 	#showme <088>            \\________/                                \\_________/ ;
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
     #echo {<129>    };
     #echo { [%-2s] %-20s <268>%.30s<088>} {<139>1<088>} {<129>DPad Up<088>} {$joystick[action][13]};
     #echo { [%-2s] %-20s <268>%.30s<088>} {<139>2<088>} {<129>DPad Left<088>}{$joystick[action][15]};
@@ -218,7 +218,7 @@
     #echo { [%-2s] %-20s <268>%.30s<088>} {<139>11<088>} {<129>Right Top Trigger<088>} {$joystick[action][5]};
     #echo { [%-2s] %-20s <268>%.30s<088>} {<139>12<088>} {<129>Right Bottom Trigger<088>}{$joystick[action][7]};
     #echo {<129>    };
-    #draw Yellow scroll line 1 1 1 120;
+    #draw Yellow scroll line 1 1 1 80;
     
 };
 

@@ -170,7 +170,7 @@
                 #showme {<202> Doing a specific patrol. <088>};
                 .addPatrol %1;
                 #var currentPatrolID &{patrols[]};
-                .renderPatrols;
+                #nop { .renderPatrols; };
                 
                 .goController {$patroller[controllerID]};
         };

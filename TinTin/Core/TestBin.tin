@@ -2,8 +2,65 @@
 #class {testbin} {open}
 
 
+#alias .tt2
+{
+
+        #var patrol[shouldKillList] 
+        {
+                {archer}{archer}
+                {banshee}{banshee}
+                {basilisk}{basilisk}
+                {benevolent wizard}{wizard}
+                {djinni}{djinni}
+                {dragon}{dragon}
+                {evil looking changeling}{changeling}
+                {evil looking juggernaut}{juggernaut}
+                {evil looking angel}{angel}
+                {evil sorceress}{sorceress}
+                {goblin}{goblin}
+                {knight}{knight}
+                {manticore}{manticore}
+                {stone golem}{golem}
+                {troll}{troll}
+                {unicorn}{unicorn}
+                {valkyrie}{valkyrie}
+        };
+
+        #foreach {*patrol[shouldKillList][]} {index}
+        {
+                #REGEXP {"%0"} {"%*$index%*"} { #var patroller[shouldKill] $patrol[shouldKillList][$index]; };
+        };
+
+};
 
 
+#alias .mapSetRoom
+{
+        #list maze add 39456;
+        #list maze add 39457;
+        #list maze add 39460;
+        #list maze add 39478;
+        #list maze add 39474;
+        #list maze add 39464;
+        #list maze add 39471;
+        #list maze add 39468;
+        #list maze add 39463;
+        #list maze add 39462;
+        #list maze add 39469;
+        #list maze add 39461;
+        #list maze add 39476;
+        #list maze add 39479;
+        #list maze add 39477;
+        #list maze add 39480;
+        #list maze add 39473;
+        #list maze add 39466;
+        #list maze add 39475;
+        #list maze add 39483;
+        
+        #map go $maze[+%1];
+        #map link %2 $maze[+%3];
+	#map go $maze[+%3];
+};
 
 /**************************************************************
         See if we can locate ourselves on the map

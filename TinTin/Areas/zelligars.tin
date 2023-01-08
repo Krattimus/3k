@@ -19,23 +19,17 @@
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMobFound onMobAreaResponder;
-#alias {onMobAreaResponder}
+#var patrol[shouldKillList] 
 {
-	#REGEXP {"$event[foundMobName]"} {"%*Steel Golem%*"} {#var patroller[shouldKill] golem};
-	#REGEXP {"$event[foundMobName]"} {"%*Clay Golem%*"}  {#var patroller[shouldKill] golem};
-	#REGEXP {"$event[foundMobName]"} {"%*Flesh Golem%*"} {#var patroller[shouldKill] golem};
-	#REGEXP {"$event[foundMobName]"} {"%*Stone Golem%*"} {#var patroller[shouldKill] golem};
-	#REGEXP {"$event[foundMobName]"} {"%*Mud Golem%*"}	 {#var patroller[shouldKill] golem};
-	#REGEXP {"$event[foundMobName]"} {"%*Straw Golem%*"} {#var patroller[shouldKill] golem};
-	#REGEXP {"$event[foundMobName]"} {"%*Glass Golem%*"} {#var patroller[shouldKill] golem};
+	{Golem}{golem}
 };
 
 /******************************************************************************
 	Additional scripting used for this area
 			...
 *******************************************************************************/
-#act {gloves: Taken.} {gl;}
+#act {key: Taken.} {gl;} {2};
+#act {gloves: Taken.} {gl;} {2};
 #act {You keep Gloves of Acid Protection.} {gl;}
 #act {You sweep your hand over {one|some} of the higher shelves} {gl;}
 #act {You reach in and snatch the key from the deadly acid.} {gl;}

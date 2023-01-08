@@ -19,10 +19,9 @@
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMobFound onMobAreaResponder;
-#alias {onMobAreaResponder}
+#var patrol[shouldKillList] 
 {
-	#REGEXP {"$event[foundMobName]"} {"%*Letter%*"} {#var patroller[shouldKill] letter};
+	{Letter}{letter}
 };
 
 /******************************************************************************

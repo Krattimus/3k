@@ -17,10 +17,10 @@
 	#read 3k/TinTin/Core/Gag.tin;
 	#read 3k/TinTin/Core/Stats.tin;
 	#read 3k/TinTin/Core/Corpses.tin;
-	#read 3k/TinTin/Core/Dog.tin;
 	#read 3k/TinTin/Core/Mip.tin;
 	#read 3k/TinTin/Core/Inventory.tin;
 	#read 3k/TinTin/Core/Party.tin;
+	#read 3k/TinTin/Explorer/Explorer.tin;
 
 	#NOP { *********** Profession ************ };
 	#read 3k/TinTin/Professions/Transmuter.tin;
@@ -57,6 +57,8 @@
 	#read 3k/TinTin/Core/TestBin.tin;
 	#read 3k/TinTin/Core/Joystick.tin;
 
+	#NOP { *********** Guild ************ };
+	#read 3k/TinTin/Guilds/Angel.tin;
 }
 
 load3k;

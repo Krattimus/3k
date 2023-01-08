@@ -2,7 +2,9 @@
 #CLASS {mip} {kill}
 #CLASS {mip} {open}
 
-#var renderingOff 0;
+#var currentRoundID 0;
+#var lastRoundID 0;
+
 /* !NOTE! */
 #NOP If your guild hides the hpbar with MIP turned on, try using the mud command 'forcehp'
 
@@ -39,15 +41,6 @@
 
 #var clockon 0
 #var IdleLimit 7200
-
-
-#alias {gohome_check} {
-	#if {$mip[round] == 0} {
-		go monk
-	} {
-		#delay {gohome} {gohome_check} {10}
-	}
-}
 
 #NOP ***** Individual Data Sections *****
 #ALIAS {.mipProcessFlag} {
@@ -126,8 +119,18 @@
 		#CASE {"K"} {#NOP Mob Fighting;.mipProcessFFFK {%2}};
 		#CASE {"L"} {#NOP Mob Health;#VAR {enemy[hp]} {%2}};
 		#CASE {"M"} {#NOP Mob Image File};
-		#CASE {"N"} {#NOP Combat Round Counter;#VAR {mip[round]} {%2}};
-		#DEFAULT {#NOP Every other non-handled flag}
+		#CASE {"N"} 
+		{
+			#var {lastRoundID} {$mip[round]};
+			#var {mip[round]} {%2};
+			#var {currentRoundID} {%2};
+
+			#if { $lastRoundID != $currentRoundID && $currentRoundID > 0 }
+			{
+				.triggerEvent onNewCombatRound;
+			};
+		};
+		#DEFAULT {#NOP Every other non-handled flag};
 	};
 	#NOP update_status alias defined in personal hpbar trigger;
 	.renderHPBar;
@@ -159,6 +162,7 @@
 			#CASE {"adventurer"}	{.mipProcessGlineAdventurer {%1}};
 			#CASE {"android"}	{.mipProcessGlineAndroid {%1}};
 			#CASE {"angel"}		{.mipProcessGlineAngel {%1}};
+			#CASE {"Angel"}		{.mipProcessGlineAngel {%1}};
 			#CASE {"ascended"}	{.mipProcessGlineAscended {%1}};
 			#CASE {"bard"}		{.mipProcessGlineBard {%1}};
 			#CASE {"bladesinger"}	{.mipProcessGlineBladesinger {%1}};
@@ -205,16 +209,21 @@
         }
 }
 
-
-#ALIAS {.mipProcessGlineAngel} {
-        #IF {%1 == 1} {
-                #NOP
-        }; #ELSEIF {%1 == 2} {
-                #NOP
-        }; #ELSE {
-                #ECHO {<171> Invalid Gline Number <088>}
-        }
-}
+#ALIAS {.mipProcessGlineAngel} 
+{
+        #IF {%1 == 1} 
+		{
+			.triggerEvent onNewMipGline;
+        }; 
+		#ELSEIF {%1 == 2} 
+		{
+			.triggerEvent onNewMipGline;
+        }; 
+		#ELSE 
+		{
+            #ECHO {<171> Invalid Gline Number <088>}
+        };
+};
 
 #ALIAS {.mipProcessGlineAscended} {
         #IF {%1 == 1} {
@@ -257,7 +266,8 @@
 }
 
 #ALIAS {.mipProcessGlineChangeling} {
-	#IF {%1 == 1} {
+	#IF {%1 == 1} 
+	{
 		#REGEX {$mip[gline][1]} {Chaos Flux: %d/%d} {
 			#VAR {my[relinquish][current]}	{&1};
 			#VAR {my[relinquish][reset]}	{&2}
@@ -274,7 +284,9 @@
 		#REGEX {$mip[gline][2]}	{\[Bioplasm: {[\d\.]+}\%\]} {#VAR {my[bioplasm]}	{&1}};
 		#REGEX {$mip[gline][2]} {\[REL: %d\%\]} {#VAR {my[relinquish][active]} 		{&1}}
 					{#VAR {my[relinquish][active]}				{0}}
-	}; #ELSE {
+	}; 
+	#ELSE 
+	{
 		#ECHO {<171> Invalid Gline Number <088>}
 	}
 }

@@ -13,25 +13,23 @@
 *******************************************************************************/
 #var patrol[startingLocation] 6746;
 #var patrol[area] {Portal of Life};
-#var {patrol[path]} {n;n;n;nw;nw;n;se;se;n;nw;nw;ne;n;se;ne;s;sw;se;ne;s;sw;s;s;ne;n;se;ne;ne;ne;nw;nw;nw;n;nw;ne;se;s;se;se;n;nw;n;se;se;s;s;se;n;n;n;n;n;n;n;n;nw;s;s;s;sw;n;n;n;sw;s;s;sw;sw;nw;n;se;ne;nw;ne;nw;ne;ne;ne;nw;nw;nw;nw;nw;s;se;sw;se;sw;se;sw;s;s;nw;sw;n;ne;nw;nw;n;se;se;n;nw;ne;n;n;sw;s;sw;n;sw;sw;sw;sw;sw;sw;s;ne;s;se;n;n;ne;s;s;s;ne;n;n;se;s;se;sw;se;sw;nw;sw;nw;nw;nw;s;s;s;s;s;s;ne;se;n;nw;n;ne;ne;se;ne;se;sw;sw;nw;sw;se;se;sw;s;se;se;se;se;se;s;s}
+#var patrol[path] {n;n;n;nw;nw;n;se;se;n;nw;nw;ne;n;se;ne;s;sw;se;ne;s;sw;s;s;ne;n;se;ne;ne;ne;nw;nw;nw;n;nw;ne;se;s;se;se;n;nw;n;se;se;s;s;se;n;n;n;n;n;n;n;n;nw;s;s;s;sw;n;n;n;sw;s;s;sw;sw;nw;n;se;ne;nw;ne;nw;ne;ne;ne;nw;nw;nw;nw;nw;s;se;sw;se;sw;se;sw;s;s;nw;sw;n;ne;nw;nw;n;se;se;n;nw;ne;n;n;sw;s;sw;n;sw;sw;sw;sw;sw;sw;s;ne;s;se;n;n;ne;s;s;s;ne;n;n;se;s;se;sw;se;sw;nw;sw;nw;nw;nw;s;s;s;s;s;s;ne;se;n;nw;n;ne;ne;se;ne;se;sw;sw;nw;sw;se;se;sw;s;se;se;se;se;se;s;s}
 
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMobFound onMobAreaResponder;
-#alias {onMobAreaResponder}
+#var patrol[shouldKillList] 
 {
-	#REGEXP {"$event[foundMobName]"} {"%*Faerie Lizard%*"} {#var patroller[shouldKill] lizard};
-	#REGEXP {"$event[foundMobName]"} {"%*Queen's Elite Guardswoman%*"} {#var patroller[shouldKill] guard};
-	#REGEXP {"$event[foundMobName]"} {"%*Black Patrol Guard%*"} {#var patroller[shouldKill] guard};
-	#REGEXP {"$event[foundMobName]"} {"%*Black Patrol Leader%*"} {#var patroller[shouldKill] guard};
-	#REGEXP {"$event[foundMobName]"} {"%*Wild Stag%*"} {#var patroller[shouldKill] stag};
-	#REGEXP {"$event[foundMobName]"} {"%*Faerie Lizard%*"} {#var patroller[shouldKill] lizard};
-	#REGEXP {"$event[foundMobName]"} {"%*Baby Dragon%*"} {#var patroller[shouldKill] dragon};
-	#REGEXP {"$event[foundMobName]"} {"%*Rabid Wolf%*"}	{#var patroller[shouldKill] wolf};
-	#REGEXP {"$event[foundMobName]"} {"%*Ragged Peasant%*"} {#var patroller[shouldKill] peasant};
-	#REGEXP {"$event[foundMobName]"} {"%*Sylvan Elf%*"} {#var patroller[shouldKill] elf};
-	#REGEXP {"$event[foundMobName]"} {"%*Wyvern%*"} {#var patroller[shouldKill] wyvern};
+	{Faerie Lizard}{lizard}
+    {Queen's Elite Guardswoman}{guard}
+    {Black Patrol Guard}{guard}
+    {Black Patrol Leader}{guard}
+    {Wild Stag}{stag}
+    {Baby Dragon}{dragon}
+    {Rabid Wolf}{wolf}
+    {Ragged Peasant}{peasant}
+    {Sylvan Elf}{elf}
+    {Wyvern}{wyvern}
 };
 
 /******************************************************************************

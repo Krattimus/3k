@@ -14,14 +14,12 @@
 #alias .timedCapture
 {
 	#var capturedText {};	
-	#var renderingOff 1;
 	#read 3k/TinTin/Core/CaptureAll.tin;
 
 	#delay {create_capture} 
 	{
 		#ACTION {%%1} 
 		{
-			#var renderingOff 0;
 			#delay {0} {%2;};
 			#CLASS {capture} {kill};
 			#UNACTION {%%1};
@@ -34,8 +32,9 @@
 *************************************************************************/
 #alias .captureUntil
 {
+	#class inventoryhelper kill;
+
 	#var capturedText {};	
-	#var renderingOff 1;
 	#read 3k/TinTin/Core/CaptureAll.tin;
 	#delay {backup_kill}
 	{
@@ -46,7 +45,6 @@
 	{
 		#ACTION {%1} 
 		{
-			#var renderingOff 0;
 			#delay {0} {%2;};
 			#CLASS {capture} {kill};
 			#UNACTION {%1};
@@ -78,7 +76,7 @@
 {
         #showme ON LOAD COMPLETE;
         .render;
-}
+};
 
 /**************************************************************
 	Search look, calls both
@@ -87,6 +85,34 @@
 {
 	#send look at %0;
 	#send search %0;
-}
+};
+
+/**************************************************************
+	Search Room Nouns (built by MIP)
+**************************************************************/
+#alias {sn} 
+{
+	#var noun_cnt &{nouns[]};
+	#loop 1 &{nouns[]} cnt 
+	{
+		#showme Searching Noun [$nouns[$cnt]];
+		look at $nouns[$cnt];
+		search $nouns[$cnt];
+	};
+	#delay 0.5 
+	{
+		#if {$noun_cnt < &{nouns[]}} 
+		{
+			#echo {<128>New items found!  Search again!<088>}
+		}
+	}
+};
+
+
+#alias {.cls}
+{
+    #buffer clear;
+    .render;
+};
 
 #class {base} {close}

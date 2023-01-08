@@ -26,10 +26,6 @@
 	#else
 	{
 		.goMining 1;
-        #if { "$draw[canvas]" == "off" }
-        {
-            .togglePanel canvas;
-        };
 	};
 };
 
@@ -49,86 +45,78 @@
 
 #alias {.renderServerBar} 
 {
-	#if { !$renderingOff }
+	#draw {green} {line} $chat[height]+$caption[height] 1 $chat[height]+$caption[height] -1;
+	#draw {green} {line} $chat[height]+$caption[height] 1 $chat[height]+$caption[height] -1;
+
+	#format {world_cap}	{%-8s}	{$ourCharacter};
+	#format {world_cap}	{%n}	{$world_cap};
+	
+	#format {reboot_cap}	{%+5s}	{$session[reboot]};
+	#format {lag_cap}	{%+4s}	{$session[lag]};
+	#math	{idle_hr}	{$idle / 3600};
+	#math	{idle_min}	{$idle % 3600 / 60};
+	#math	{idle_sec}	{$idle % 60};
+	#if	{$idle_hr < 10}	{#var idle_hr  0$idle_hr};
+	#if	{$idle_min < 10}{#var idle_min 0$idle_min};
+	#if	{$idle_sec < 10}{#var idle_sec 0$idle_sec};
+
+	#format {idle_cap}	{%+4s}	{<268>[<128>$idle_hr<268>:<128>$idle_min<268>:<128>$idle_sec<268>]<088>};
+	
+	#if	{ "$controllers[current]" != "" }
 	{
-		#draw {green} {line} $chat[height]+$caption[height] 1 $chat[height]+$caption[height] -1;
-		#draw {green} {line} $chat[height]+$caption[height] 1 $chat[height]+$caption[height] -1;
+		#var {areacap} {<148>Controller: <168><148><168>$controllers[current]<088>}
+	};
+	#else
+	{
+		#var {areacap} {<148>Controller: <168><148><168>None<088>}
+	};
+	
+	#if	{${tao[page]} > 0} 
+	{
+		#math {tao[book]} {$tao[page] / 81 + 1};
+		#math {tao[chap]} {$tao[page] - (($tao[book] - 1) * 81)};
+		#var taocap {<258>Tao: <158>$tao[book]-$tao[chap]<088>}
+	};
+	#else
+	{
+		#var taocap {};
+	};
 
-		#format {world_cap}	{%-8s}	{$ourCharacter};
-		#format {world_cap}	{%n}	{$world_cap};
-		
-		#format {reboot_cap}	{%+5s}	{$session[reboot]};
-		#format {lag_cap}	{%+4s}	{$session[lag]};
-		#math	{idle_hr}	{$idle / 3600};
-		#math	{idle_min}	{$idle % 3600 / 60};
-		#math	{idle_sec}	{$idle % 60};
-		#if	{$idle_hr < 10}	{#var idle_hr  0$idle_hr};
-		#if	{$idle_min < 10}{#var idle_min 0$idle_min};
-		#if	{$idle_sec < 10}{#var idle_sec 0$idle_sec};
+	#if {"$draw[caption]" == "on"} 
+	{
+		#SHOWME {<088> <128>$world_cap <038>Reboot: <138>$reboot_cap <228>$idle_cap<088>  $areacap $taocap<088>} {$chat[height]+1}
+	};
 
-		#format {idle_cap}	{%+4s}	{<268>[<128>$idle_hr<268>:<128>$idle_min<268>:<128>$idle_sec<268>]<088>};
-		
-		#if	{ "$controllers[current]" != "" }
-		{
-			#var {areacap} {<148>Controller: <168><148><168>$controllers[current]<088>}
-		};
-		#else
-		{
-			#var {areacap} {<148>Controller: <168><148><168>None<088>}
-		};
-		
-		#if	{${tao[page]} > 0} 
-		{
-			#math {tao[book]} {$tao[page] / 81 + 1};
-			#math {tao[chap]} {$tao[page] - (($tao[book] - 1) * 81)};
-			#var taocap {<258>Tao: <158>$tao[book]-$tao[chap]<088>}
-		};
-		#else
-		{
-			#var taocap {};
-		};
+	#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 61 20 68 {<038>🏠<088>};};
+	
+	#if { $inventoryOpen }
+	{
+		#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 70 20 77 {<168> 📦 <088>};};
+	};
+	#else
+	{
+		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 70 20 77 {<038> 📦 <088>};};
+	};
+	
+	#if	{ "$controllers[current]" == "miner" || "$controllers[toStart]" == "miner" }
+	{
+		#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 79 20 86 {<038>⛏️<088>};};
+	};
+	#else
+	{
+		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 79 20 86 {<038>⛏️<088>};};
+	};
 
-		#if {"$draw[caption]" == "on"} 
-		{
-			#SHOWME {<088> <128>$world_cap <038>Reboot: <138>$reboot_cap <228>$idle_cap<088>  $areacap $taocap<088>} {$chat[height]+1}
-		};
+	#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 88 20 95 {<038>🌎<088>};};
 
-		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 61 20 68 {<038>🏠<088>};};
-		
-		#if { $inventoryOpen }
-		{
-			#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 70 20 77 {<168> 📦 <088>};};
-		};
-		#else
-		{
-			#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 70 20 77 {<038> 📦 <088>};};
-		};
-		
-		#if	{ "$controllers[current]" == "miner" || "$controllers[toStart]" == "miner" }
-		{
-			#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 79 20 86 {<038>⛏️<088>};};
-		};
-		#else
-		{
-			#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 79 20 86 {<038>⛏️<088>};};
-		};
-
-		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 88 20 95 {<038>🌎<088>};};
-
-		
-		#if	{ "$controllers[current]" == "patrol" || "$controllers[toStart]" == "patrol" }
-		{
-			#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 97 20 104 {<038>🏞️<088>};};
-		};
-		#else
-		{
-			#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 97 20 104 {<038>🏞️<088>};};
-		};
-
-		
-		
-
-
+	
+	#if	{ "$controllers[current]" == "patrol" || "$controllers[toStart]" == "patrol" }
+	{
+		#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 97 20 104 {<038>🏞️<088>};};
+	};
+	#else
+	{
+		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 97 20 104 {<038>🏞️<088>};};
 	};
 };
 

@@ -20,11 +20,9 @@
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMobFound onMobAreaResponder;
-#alias {onMobAreaResponder}
+#var patrol[shouldKillList] 
 {
-	#REGEXP {"$event[foundMobName]"} {"%*large timber wolf%*"} 		{#var patroller[shouldKill] wolf};
-
+	{large timber wolf}{wolf}
 };
 
 /******************************************************************************

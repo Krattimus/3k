@@ -41,31 +41,20 @@
 ************************************************/
 #alias {i}
 {
-    #if { $inventoryOpen == 0 }
+    #if { !$inventoryOpen }
     {
-        #if { "$draw[canvas]" == "off" }
-        {
-            .togglePanel canvas;
-        };
-
         #list inventory clear;
         #list inventoryCount clear;
         #send !i;
 
-        #read 3k/TinTin/Core/InventoryHelper.tin;
-        #var inventoryOpen 1;        
+        #read 3k/TinTin/Core/InventoryHelper.tin;       
     };
     #else
     {
         #var inventoryOpen 0;
         #showme Closing Inventory;
-
-        #if { "$draw[canvas]" == "on" }
-        {
-            .togglePanel canvas;
-        };
-
         #class inventoryhelper kill;
+        .render;
     };
 };
 
@@ -74,11 +63,17 @@
     carrying of coins is output. we should 
     probably also make a deadman timer here....
 ************************************************/
-#action {^%1 coins %2}
+#action {^%1 coins \(%2\)$}
 {
-    #var carryingCoins %1;
-    #var weightLoad %2;
-    #class inventoryhelper kill;
+    #if { @isDigit{%1} }
+    {
+        #var carryingCoins %1;
+        #var weightLoad %2;
+        #class inventoryhelper kill;
+        #var inventoryOpen 1;    
+        .renderInventory;
+        .render;
+    };
 } {1};
 
 /************************************************
@@ -273,15 +268,5 @@
         #list inventoryCount add {1};
     };
 };
-
-
-
-
-
-#alias {.cls}
-{
-    #buffer clear;
-    .render;
-}
 
 #class {inventory} {close}

@@ -27,7 +27,7 @@
 		#local areaToSearch %0;
 	};
 
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 
 	#showme AREATO : $areaToSearch;
 	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
@@ -35,11 +35,17 @@
 	{
 		#map at $roomID #map get all {roomdata};
 
-		#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>Exits %.30s<088>%.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]}
+		#var exits {};
+		#foreach {*roomdata[exits][]} {exit}
+		{
+			#var exits {$exits $exit};
+		};
+
+		#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>%-30.20s<088> %.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]}
 
 	};
 	
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 };
 
 /**************************************************************
@@ -48,9 +54,9 @@
 #alias {.describeMobs}
 {
 	#showme python3 3k/TinTin/Tools/getMobs.py "$area";
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 	#script {python3 3k/TinTin/Tools/getMobs.py "$area";};
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 };
 
 /**************************************************************
@@ -59,9 +65,9 @@
 #alias {.describeItems}
 {
 	#showme python3 3k/TinTin/Tools/getItems.py "$area";
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 	#script {python3 3k/TinTin/Tools/getItems.py "$area";};
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 };
 
 /**************************************************************
@@ -131,12 +137,18 @@
 
 #alias {onMobDescriptionRead}
 {
-	#script {python3 3k/TinTin/Tools/mobLogger.py "$recordedMobName" "$capturedText" "$currentRoom" "$area" "$dmg[rating]"};
+	#if { !$patroller[isPatrolling] }
+	{
+		#script {python3 3k/TinTin/Tools/mobLogger.py "$recordedMobName" "$capturedText" "$currentRoom" "$area" "$dmg[rating]"};
+	};
 };
 
 #alias {onItemDescriptionRead}
 {
-	#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
+	#if { !$patroller[isPatrolling] }
+	{
+		#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
+	};
 }
 
 #alias {onItemTakenLogger}
@@ -147,7 +159,8 @@
 		#map get {roomvnum} {currentRoom};
 		#var recordedItemName $event[itemTaken];
 				
-		#delay {1} {
+		#delay {1} 
+		{
 			.logItemToDB {$recordedItemName} {$currentRoom} {$area};
 		};
 	};
@@ -177,10 +190,12 @@
 	};
 };
 
-
 #alias {onItemDescriptionRead}
 {
-	#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
+	#if { !$patroller[isPatrolling] }
+	{
+		#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
+	};
 }
 
 #alias {.logItemToDB}

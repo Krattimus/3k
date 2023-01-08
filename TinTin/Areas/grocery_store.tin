@@ -1,0 +1,65 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Controller Behavior Settings
+*******************************************************************************/
+#var settings[shouldVacuum]	 	{1};
+#var settings[autoSell] {1};
+#var settings[corpseDonations] 	{0};
+#var seller[whichShop] {wayhaven};
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 302;
+#var patrol[area] {Grocery Store};
+#var patrol[path] {w;s;w;n;n;w;s;s;w;n;n;w;s;s;w;n;n;w;s;s;w;n;n;w;s;s;n;n;e;e;e;e;e;e;e;e;s;e}
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{An annoying little girl}{girl}
+    {The Trix Rabbit}{rabbit}
+    {A Thirsty Girl}{girl}
+    {The Kool-Aid Man}{man}
+	{The famous Ray Charles}{ray}
+	{A very health conscious cow}{cow}
+	{A Keebler Elf}{elf}
+	{Frito Bandito}{frito}
+	{Jay Leno}{leno}
+	{A Blonde}{blonde}
+	{A Brunette}{brunette}
+	{Kelly Lebrock}{kelly}
+	{A Screaming Baby}{baby}
+	{A Booming Voice}{voice}
+	{Madge}	{madge}
+	{who wishes she were Madge}{lady}
+	{Mr. Clean}{clean}
+	{A Cute Little Boy}{boy}
+	{A Really Fat Man}{man}
+	{A Rather Slim Lady}{lady}
+	{A Chorus}{chorus}
+	{Northern Bath Tissue Girl}{girl}
+	{Brawny, the Paper Towel Giant}{giant}
+	{Mr. Whipple}{whipple}
+	{Polar Bear}{bear}
+	{A Weight Watcher's Lady}{lady}
+	{Bill Cosby}{bill}
+	{Campbell's Soup Kid}{kid}
+	{Chef Boyardee}{chef}
+	{Sprout}{sprout}
+	{Jolly Green Giant}{giant}
+	{Mr. Lucky Charm}{charm}
+	{Snuggles the Bear}{bear}
+	{The Cashier}{cashier}
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+...
+
+*******************************************************************************/
+#class {bot} {close}

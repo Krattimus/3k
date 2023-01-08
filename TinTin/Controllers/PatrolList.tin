@@ -63,8 +63,6 @@
 	};
 
 	#list {patrols} {add} {%1};
-
-	.renderPatrols;
 }
 
 #alias {.removePatrol}
@@ -74,8 +72,6 @@
 	{
 		#math {currentPatrolID} {$currentPatrolID - 1}
 	};
-
-	.renderPatrols;
 }
 
 #class {patrollist} {close}

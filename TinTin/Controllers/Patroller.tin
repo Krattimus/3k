@@ -31,7 +31,7 @@
 .registerEvent onRequestLoadController onRequestLoadPatroller;
 .registerEvent onRequestStartController onRequestStartPatroller;
 .registerEvent onRequestPrepareController onRequestPreparePatroller;
-
+.registerEvent onMobFound onMobFoundPatroller;
 
 #alias onDebugLogPatroller
 {
@@ -200,6 +200,24 @@
 	};
 };
 
+
+/***********************************************************
+	Called when we come across mob, see if its on killlist
+***********************************************************/
+#alias onMobFoundPatroller
+{
+	#if { $patroller[isPatrolling] }
+	{
+        #foreach {*patrol[shouldKillList][]} {index}
+        {
+            #REGEXP {"$event[foundMobName]"} {"%*$index%*"} { 
+				#var patroller[shouldKill] $patrol[shouldKillList][$index]; 
+				#var patroller[canWalk] 0;
+			};
+        };
+	};
+};
+
 /***********************************************************
 	Called when we look around
 ***********************************************************/
@@ -323,8 +341,6 @@
 #alias {.loadPatrol %1} 
 {
 	#echo {<202> Loading Patrol for [%1] <088>};
-
-	.unregisterEvent onMobFound onMobAreaResponder;
 
 	#map get {roomvnum} {startedAt};
 	#read  3k/TinTin/Areas/%1.tin;

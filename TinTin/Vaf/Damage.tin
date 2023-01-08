@@ -80,7 +80,11 @@
 #alias {onMobKilledDamage}
 {
 	#var dmg[mob] $event[mobKilled];
-	.logToDatabase;
+
+	#if { !$patroller[isPatrolling] }
+	{
+		.logToDatabase;
+	};
 };	
 
 /*************************************************************************
@@ -178,7 +182,7 @@
 #alias {.miniReport} 
 {
 	#echo {<128>%-25s %-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s<088> } {Mob} {Rating} {Damage} {Rounds} {Per Round} {Hits} {Per Hit} {Min Hit} {Max Round} {Combat};
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 
 	#math {index} {$damageLogSize-1};
 	#var pastDmg $dmg;
@@ -213,7 +217,7 @@
 	};
 
 	#echo {<128>%-25s %-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s <168>%-10s <268>%-10s<088> } {$pastDmg[mob]} {$pastDmg[rating]} {$pastDmg[totalDamage]} {$pastDmg[numberOfRounds]} {$pastDmg[averageDamage]} {$pastDmg[totalHits]} {$pastDmg[averagePerHit]} {$pastDmg[minHit]} {$pastDmg[maxHit]} {$combatOptions};
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 };
 
 #class {damage} {close}

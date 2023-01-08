@@ -71,14 +71,16 @@
 	}
 }
 
-#event {VARIABLE UPDATE currentPatrolID} 
-{
-	#delay 0 .renderPatrols
-}
+/*
+	#event {VARIABLE UPDATE currentPatrolID} 
+	{
+		#delay 0 .renderPatrols
+	}
 
-#event {VARIABLE UPDATE patrols} 
-{
-	#delay 0 .renderPatrols
-}
+	#event {VARIABLE UPDATE patrols} 
+	{
+		#delay 0 .renderPatrols
+	}
+*/
 
 #class {patrolspanel} {close}

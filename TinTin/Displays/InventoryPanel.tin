@@ -26,7 +26,7 @@
 
 #alias {.renderInventory}
 {
-    #if { "$draw[canvas]" == "on"}
+    #if { $inventoryOpen }
     {
         #draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
         #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];

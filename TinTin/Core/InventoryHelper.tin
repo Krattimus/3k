@@ -23,7 +23,6 @@
 
         #list inventory add {$itemName};
         #list inventoryCount add {%2};
-        .renderInventory;            
     };
 } {1};
 

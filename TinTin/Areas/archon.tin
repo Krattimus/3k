@@ -1,34 +1,48 @@
 #class {bot} {open}
 
-#var {no_loop} {0}
-#var {no_home} {0}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+/******************************************************************************
+	Controller Behavior Settings
+*******************************************************************************/
+#var settings[shouldVacuum] 	{1}
+#var settings[autoSell] 		{0};
+#var settings[corpseDonations] 	{0};
+#var seller[whichShop] 			{chaos};
 
-#var {patrol[path]} {w;w;w;s;e;e;e;s;w;w;w;s;s;e;n;e;s;e;n;e;s;e;n;e;s;e;n;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s}
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 1273;
+#var patrol[area] {Archon};
+#var patrol[path] {w;w;w;s;e;e;e;s;w;w;w;s;s;e;n;e;s;e;n;e;s;e;n;e;s;e;n;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s}
 
-#act {^=M= {A|An} {archer|banshee|basilisk|benevolent wizard|djinni|dragon|evil looking juggernaut|evil sorceress|goblin|Huge Fire Elemental|knight|manticore|phoenix|stone golem|troll|unicorn|valkyrie}} {
-	#switch {"%2"} {
-		#case {"archer"}			{#var patroller[shouldKill] archer};
-		#case {"banshee"}			{#var patroller[shouldKill] banshee};
-		#case {"basilisk"}			{#var patroller[shouldKill] basilisk};
-		#case {"benevolent wizard"}		{#var patroller[shouldKill] wizard};
-		#case {"djinni"}			{#var patroller[shouldKill] djinni};
-		#case {"dragon"}			{#var patroller[shouldKill] dragon};
-		#case {"evil looking changeling"}	{#var patroller[shouldKill] changeling};
-		#case {"evil looking juggernaut"}	{#var patroller[shouldKill] juggernaut};
-		#case {"evil sorceress"}		{#var patroller[shouldKill] sorceress};
-		#case {"goblin"}			{#var patroller[shouldKill] goblin};
-		#case {"Huge Fire Elemental"}		{#var patroller[shouldKill] elemental};
-		#case {"knight"}			{#var patroller[shouldKill] knight};
-		#case {"manticore"}			{#var patroller[shouldKill] manticore};
-		#case {"phoenix"}			{#var patroller[shouldKill] phoenix};
-		#case {"stone golem"}			{#var patroller[shouldKill] golem};
-		#case {"troll"}				{#var patroller[shouldKill] troll};
-		#case {"unicorn"}			{#var patroller[shouldKill] unicorn};
-		#case {"valkyrie"}			{#var patroller[shouldKill] valkyrie}
-	};
-	_check_mob
-}
+#var patrol[shouldKillList] 
+{
+	{elemental}{elemental}
+	{archer}{archer}
+	{banshee}{banshee}
+	{basilisk}{basilisk}
+	{benevolent wizard}{wizard}
+	{djinni}{djinni}
+	{dragon}{dragon}
+	{evil looking changeling}{changeling}
+	{evil looking juggernaut}{juggernaut}
+	{evil looking angel}{angel}
+	{evil sorceress}{sorceress}
+	{goblin}{goblin}
+	{knight}{knight}
+	{manticore}{manticore}
+	{stone golem}{golem}
+	{troll}{troll}
+	{unicorn}{unicorn}
+	{valkyrie}{valkyrie}
+	{phoenix}{phoenix}
+ };
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
 
 #class {bot} {close}

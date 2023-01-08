@@ -23,16 +23,6 @@
 };
 
 /***********************************************************
-	Arrived
-***********************************************************/
-#event {MAP END OF RUN}
-{
-	#echo {<202> Travel Ended <088>};
-	.triggerEvent onControllerStopped {$traveller[controllerID]};
-	#var traveller[isTravelling] 0;
-};
-
-/***********************************************************
 	Start travelling!
 ***********************************************************/
 #alias {onRequestStartTraveller%1}

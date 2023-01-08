@@ -18,21 +18,20 @@
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMobFound onMobAreaResponder;
-#alias {onMobAreaResponder}
+#var patrol[shouldKillList] 
 {
-        #REGEXP {"$event[foundMobName]"} {"%*Clone Soldier%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Cloud Eye%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Groma%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Leago%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Leeva%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Massive Generator%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Ripper%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Spiral Gun%*"}	{#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Balba%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Brain%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Galga%*"} {#var patroller[shouldKill] balangool};
-        #REGEXP {"$event[foundMobName]"} {"%*Zamuza%*"} {#var patroller[shouldKill] balangool};
+	{Soldier}{balangool}
+    {Eye}{balangool}
+    {Groma}{balangool}
+    {Leago}{balangool}
+    {Leeva}{balangool}
+    {Generator}{balangool}
+    {Ripper}{balangool}
+    {Gun}{balangool}
+    {Balba}{balangool}
+    {Brain}{balangool}
+    {Galga}{balangool}
+    {Zamuza}{balangool}
 };
 
 /******************************************************************************
@@ -41,5 +40,14 @@
 			...
 
 *******************************************************************************/
+/* Area Specific Actions */
+#NOP Section Z
+#ACTION {^Just a reminder, your continue code for Section %d is %w}
+{
+    #variable {sectionz[%1]} {%2}
+};
+
+
+
 
 #class {bot} {close}

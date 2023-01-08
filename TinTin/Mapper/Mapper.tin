@@ -21,12 +21,14 @@
 .registerEvent onFollowerFollowed onFollowerFollowedMapResponder;
 .registerEvent onPostWimpy onWimpyMapResponder;
 .registerEvent onFailedMovement onFailedMovementMapResponder;
+.registerEvent onBlockedMovement onBlockedMovementMapResponder;
 
 #event {CLASS DESTROYED mapper}
 {
 	.unregisterEvent onFollowerFollowed onFollowerFollowedMapResponder;
 	.unregisterEvent onPostWimpy onWimpyMapResponder;
 	.unregisterEvent onFailedMovement onFailedMovementMapResponder;
+	.unregisterEvent onBlockedMovement onBlockedMovementMapResponder;
 }
 
 /*************************************************************
@@ -44,12 +46,62 @@
 	#map goto {$map[$ourCharacter][position]};
 };
 
+/**************************************************************
+	Lists rooms that haven't been explicitly marked explored
+		Use: .describeUnexplored <areaname>
+		Where areaname matches the rating command.
+**************************************************************/
+#alias {.describeUnexplored}
+{
+	#local areaToSearch $area;
+	#if { "%0" != "" }
+	{
+		#local areaToSearch %0;
+	};
+
+	
+	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
+	#draw Yellow scroll line 1 1 1 80;
+	#var totalRooms @getNumElements{rooms};
+	#var exploredRooms 0;
+	
+	#foreach {*rooms[]} {roomID}  
+	{
+		#map get all {roomdata} $roomID;
+		
+		#if { $roomdata[id] == 1 }
+		{
+			#nop { DO NOTHING };
+		};
+		#else
+		{
+			#math {exploredRooms} {$exploredRooms+1};
+
+			#var exits {};
+			#foreach {*roomdata[exits][]} {exit}
+			{
+				#var exits {$exits $exit};
+			};
+
+
+			#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>%.30s<088> %.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]}
+		};
+
+	};
+	
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Left to explore [$exploredRooms] out of [$totalRooms];
+};
+
 
 /*************************************************************
  TinTin Events, redraw the map when the map data changes
 *************************************************************/
 #event {MAP ENTER ROOM} 
 {
+	#map get {roomvnum} {roomID};
+	#var event[enteredRoomID] $roomID;
+	#map set roomid 1;
 	.triggerEvent onEnteredRoom;
 }
 
@@ -58,6 +110,10 @@
 *************************************************************/
 #event {MAP EXIT ROOM} 
 {
+	#map get {roomvnum} {roomID};
+	#var event[leftRoomID] $roomID;
+	#var lastRoomID $roomID;
+
 	.triggerEvent onExitedRoom;
 }
 
@@ -92,17 +148,6 @@
 		#return 0
 	};
 }
-
-
-#alias {.makeForest}
-{
-	#map set roomsymbol <228>( *<088>;
-	#map set roomterrain
-
-
-};
-
-
 
 /*************************************************************
 	This action tries to find a room description combined 
@@ -276,6 +321,14 @@ The area has changed
 };
 
 /*************************************************************
+ Responding to blocked exits in general. 
+*************************************************************/
+#alias onBlockedMovementMapResponder
+{
+	#map undo;
+};
+
+/*************************************************************
 	Helper Calls - Mapped Area Counter
 *************************************************************/
 #alias {area_mapped %1} 
@@ -344,9 +397,9 @@ The area has changed
 	#map {get} {ROOMDESC} {roomdesc};
 	
 	#showme {Describing: [<139>$roomvnum<088>] - [<039>$roomname<088>] in [<039>$roomarea<088>]};
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 	#showme $roomdesc;
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 
 	#map go $original;
 }
@@ -368,9 +421,9 @@ The area has changed
 /*****************************************************************************
 	Search map for rooms that have a substring in their long descriptions
 *****************************************************************************/
-#alias {.searchMapFor}  
+#alias {.searchMapForDesc}  
 {	
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 	#map list {roomdesc} {%*%0%*} {variable} {rooms}; 
 	#foreach {*rooms[]} {roomID}  
 	{ 
@@ -396,52 +449,72 @@ The area has changed
 
 		#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>Exits %.30s<088> } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits}
 	};
-	#draw Yellow scroll line 1 1 1 120;
+	#draw Yellow scroll line 1 1 1 80;
 
-}
+};
 
-#alias {mapsearch} 
+/*****************************************************************************
+	Search map for rooms that have a substring in their name
+*****************************************************************************/
+#alias {.searchMapForRoom} 
 {
 	#show <129>Name matches:<088>;
 	#map list {%i%*%0%*};
 	#show \n;
 	#show <129>Note matches:<088>;
 	#map list {} {} {} {} {%i%*%0%*};
-}
+};
 
-#alias {mapsave} 
+/*****************************************************************************
+	Saves the map
+*****************************************************************************/
+#alias {.mapSave}
 {
 	#map write 3k/TinTin/Data/3k.map;
 }
 
+/*****************************************************************************
+	When you hit the no obvious exit cases, it breaks the parser
+*****************************************************************************/
+#alias {.mapSetRoomName}
+{
+	#map set roomarea $area;
+	#map set roomname %1;
+}
+
+#alias {.mapSetArea} 
+{
+	#map set roomarea {$area};
+};
+
 #alias {.mapAnchor} 
 {
 	#map get {roomvnum} {mapAnchor};
-}
+};
 
 #alias {.mapReturn}
 {
 	#map run $mapAnchor;
-}
+};
 
-#alias {mapon} 
+#alias {.mapOn} 
 {
 	#send !brief off yes;
 	#map flag static off;
 	#var mapstatic 0;
 	#var area %1;
 	#var mapping on;
-}
+};
 
-#alias {mapoff}
+#alias {.mapOff}
 {
 	#send !brief on yes;
 	#map flag static on;
 	#var mapstatic 1;	
 	#unvar mapping;
-}
+};
 
-#alias {ma} {#map set roomarea {$area}}
+
 
 #NOP List all Roomnotes for 'go' alias
 #alias {.notelist} 
@@ -450,26 +523,7 @@ The area has changed
 	#foreach {*noterooms[]} {room} {#map get {roomnote} {notes[$room]} {$room}};
 	#list notes sort;
 	#var notes
-}
-
-#NOP Search Room Nouns (built by MIP)
-#alias {sn} 
-{
-	#var noun_cnt &{nouns[]};
-	#loop 1 &{nouns[]} cnt 
-	{
-		#showme Searching Noun [$nouns[$cnt]];
-		look at $nouns[$cnt];
-		search $nouns[$cnt];
-	};
-	#delay 0.5 
-	{
-		#if {$noun_cnt < &{nouns[]}} 
-		{
-			#echo {<128>New items found!  Search again!<088>}
-		}
-	}
-}
+};
 
 #NOP Link rooms with a void insert
 #alias voidlink 
@@ -478,7 +532,7 @@ The area has changed
 	#var dest_num %2;
 	#map link $dir $dest_num both;
 	#map insert $dir void
-}
+};
 
 /* Highmortal Portals Toggles */
 #alias hmavoid 
@@ -489,7 +543,7 @@ The area has changed
 	#map at 148 {#map exitflag {efor} avoid on};
 	#map at 148 {#map exitflag {portal desert} avoid on};
 	#map at 148 {#map exitflag {portal ice} avoid on}
-}
+};
 
 #alias hmfollow 
 {
@@ -499,27 +553,18 @@ The area has changed
 	#map at 148 {#map exitflag {efor} avoid off};
 	#map at 148 {#map exitflag {portal desert} avoid off};
 	#map at 148 {#map exitflag {portal ice} avoid off}
-}
+};
 
 /* House avoid for followers */
 #NOP Using high weight instead of avoid so paths into house will still work, but pathing will avoid it going through town
 #alias homeavoid 
 {
 	#map at 152 {#map set roomweight 100};
-}
+};
 
 #alias homefollow 
 {
 	#map at 152 {#map set roomweight 1};
-}
-
-/* Area Specific Actions */
-#NOP Section Z
-#ACTION {^Just a reminder, your continue code for Section %d is %w}
-{
-    #variable {sectionz[%1]} {%2}
-}
-
-
+};
 
 #class {mapper} {close}
