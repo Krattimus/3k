@@ -30,9 +30,9 @@
 }
 
 #act {^Your fishing rod bends violenty and cracks in two!} {
-	go abes;
+	.go abes;
 	buy 6;
-	go fishing;
+	.go fishing;
 	fish $fish[pool];
 	thread rod;
 	bait rod;
@@ -40,18 +40,18 @@
 }
 
 #act {^You have nothing to bait the rod with!} {
-	go abes;
+	.go abes;
 	buy 5;
-	go fishing;
+	.go fishing;
 	fish $fish[pool];
 	bait rod;
 	fish
 }
 
 #act {^You have nothing to thread the rod with!} {
-	go abes;
+	.go abes;
 	buy 2;
-	go fishing;
+	.go fishing;
 	fish $fish[pool];
 	thread rod;
 	fish

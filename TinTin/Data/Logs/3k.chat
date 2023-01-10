@@ -3391,3 +3391,627 @@ $timestamp[1;37mTen[0m: HUT!
 [1;30m[[22;36m03[1;30m:[22;36m08[1;30m][0m [1;37m[Clan] Krat :[0;39;49m angels have been pretty easy so far, there are 2 bits of info mostly:  Distance to target, and Targget's Hit Chart,
 [1;30m[[22;36m03[1;30m:[22;36m09[1;30m][0m [1;37m[Clan] Krat :[0;39;49m the default bar didn't have endurance so I had to add it so I could determine when to rest
 [1;30m[[22;36m03[1;30m:[22;36m22[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised confidence to 4!
+[1;30m[[22;36m03[1;30m:[22;36m29[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 8!
+[1;30m[[22;36m03[1;30m:[22;36m38[1;30m][0m [1;37m[Clan] Krat :[0;39;49m I like the way glvl is handled in angels
+[1;30m[[22;36m03[1;30m:[22;36m50[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised rites to 3!
+[1;30m[[22;36m04[1;30m:[22;36m40[1;30m][0m [1;37mHoosegow shouts:[0;39;49m woot!
+[1;30m[[22;36m05[1;30m:[22;36m07[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Up for bids: Aluminum Ring of Stoneskin.
+[1;30m[[22;36m05[1;30m:[22;36m07[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Dalandra has requested 10 as the opening offer.
+[1;30m[[22;36m05[1;30m:[22;36m08[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Oh, come on... just 10 coins?
+[1;30m[[22;36m05[1;30m:[22;36m08[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 1,000 from Atticus(jugg).  Do I hear 1,050?
+[1;30m[[22;36m05[1;30m:[22;36m08[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 1,000 going once!
+[1;30m[[22;36m05[1;30m:[22;36m08[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 1,000 going twice!
+[1;30m[[22;36m05[1;30m:[22;36m08[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Sold to Atticus for 1,000 coins!
+[1;30m[[22;36m05[1;30m:[22;36m41[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised confidence to 5!
+[1;30m[[22;36m07[1;30m:[22;36m07[1;30m][0m [1;30m[Auction] Spekkio ( sii) :[0;39;49m rod on ahouse was a dupe...
+[1;30m[[22;36m07[1;30m:[22;36m09[1;30m][0m [1;30m[Auction] Ashen (gent) :[0;39;49m yeah, looks like something went wrong with my script and i have the og and it's fated
+[1;30m[[22;36m07[1;30m:[22;36m09[1;30m][0m [1;30m[Auction] Murmandamus (necr) :[0;39;49m good thing it can still be duped when it's fated to someone
+[1;30m[[22;36m07[1;30m:[22;36m09[1;30m][0m [1;30m[Auction] Killergate (elem) :[0;39;49m werd
+[1;30m[[22;36m07[1;30m:[22;36m10[1;30m][0m [1;30m[Auction] Atticus (jugg) :[0;39;49m 1000 lashes!
+[1;30m[[22;36m07[1;30m:[22;36m10[1;30m][0m [1;30m[Auction] Ashen (gent) :[0;39;49m not sure what happened and it has scrolled off.
+[1;30m[[22;36m07[1;30m:[22;36m10[1;30m][0m [1;30m[Auction] Gore (necr) :[0;39;49m hadrian is on the sigma grindset, he takes what he wants
+[1;30m[[22;36m07[1;30m:[22;36m16[1;30m][0m [1;37mAtticus flaps :[0;39;49m mj reset 3 mins
+[1;30m[[22;36m07[1;30m:[22;36m21[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 9!
+[1;30m[[22;36m07[1;30m:[22;36m45[1;30m][0m [1;36mVapor <.oO>:[0;39;49m congrats!
+[1;30m[[22;36m07[1;30m:[22;36m53[1;30m][0m [1;30m[Auction] Wiener (knig) :[0;39;49m can it still be AH'd after being fated?  I seem to recall people doing that before
+[1;30m[[22;36m07[1;30m:[22;36m53[1;30m][0m [1;30m[Auction] Mugen (gent) :[0;39;49m it can
+[1;30m[[22;36m07[1;30m:[22;36m53[1;30m][0m [1;30m[Auction] Wiener (knig) :[0;39;49m Well then, I'll burn a dup for Ashen so we can get back to normal operations
+[1;30m[[22;36m07[1;30m:[22;36m54[1;30m][0m [1;30m[Auction] Mugen (gent) :[0;39;49m doesnt work that way
+[1;30m[[22;36m07[1;30m:[22;36m54[1;30m][0m [1;30m[Auction] Mugen (gent) :[0;39;49m can only be fated to 1
+[1;30m[[22;36m07[1;30m:[22;36m54[1;30m][0m [1;30m[Auction] Toren (necr) :[0;39;49m he's stuck on that one until its destroyed
+[1;30m[[22;36m07[1;30m:[22;36m54[1;30m][0m [1;30m[Auction] Mugen (gent) :[0;39;49m so no rod for ashen
+[1;30m[[22;36m07[1;30m:[22;36m54[1;30m][0m [1;30m[Auction] Wiener (knig) :[0;39;49m Oh, right, he can't re-fate forgot that bit.
+[1;30m[[22;36m07[1;30m:[22;36m54[1;30m][0m [1;30m[Auction] Toren (necr) :[0;39;49m or no rod for anyone else :D
+[1;30m[[22;36m07[1;30m:[22;36m55[1;30m][0m [1;30m[Auction] Esper (necr) :[0;39;49m yeah gotta old school og it this boot
+[1;30m[[22;36m07[1;30m:[22;36m59[1;30m][0m [1;37mAkira shouts:[0;39;49m What is the highest WC crafted weapons can reach?
+[1;30m[[22;36m08[1;30m:[22;36m00[1;30m][0m [1;37mToren shouts:[0;39;49m 100
+[1;30m[[22;36m08[1;30m:[22;36m00[1;30m][0m [1;37mApocalypse shouts:[0;39;49m 1 beeeeeellllioooon
+[1;30m[[22;36m08[1;30m:[22;36m00[1;30m][0m [1;30m[Auction] Ashen (gent) :[0;39;49m i'm working on getting everything i need and can hopefully re-auction the rod then
+[1;30m[[22;36m08[1;30m:[22;36m00[1;30m][0m [1;30m[Auction] Ashen (gent) :[0;39;49m hoping i don't need to use it this boot
+[1;30m[[22;36m08[1;30m:[22;36m00[1;30m][0m [1;30m[Auction] Murmandamus (necr) :[0;39;49m want a 3notch runesword?
+[1;30m[[22;36m08[1;30m:[22;36m01[1;30m][0m [1;30m[Auction] Toren (necr) :[0;39;49m All you need is a good attitude and friendly disposition.
+[1;30m[[22;36m08[1;30m:[22;36m01[1;30m][0m [1;37mWiener shouts:[0;39;49m Unsure numberwise, but it can get the 'overmax' message for kniggit consider
+[1;30m[[22;36m08[1;30m:[22;36m08[1;30m][0m [1;30m[Auction] Merrick (gent) :[0;39;49m and a bunch of byron corpses to fuel your murder-hoboing.
+[1;30m[[22;36m08[1;30m:[22;36m11[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 10!
+[1;30m[[22;36m08[1;30m:[22;36m12[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised engage to 9!
+[1;30m[[22;36m08[1;30m:[22;36m12[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised divine strike to 6!
+[1;30m[[22;36m08[1;30m:[22;36m12[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised confidence to 6!
+[1;30m[[22;36m08[1;30m:[22;36m17[1;30m][0m [1;30mHeimdall <HM-Sage>:[0;39;49m anyone happen to have a sword of light on them or boxed and mind sharing the long description?
+[1;30m[[22;36m08[1;30m:[22;36m29[1;30m][0m [1;37mStormer flaps :[0;39;49m anyone run mj?
+[1;30m[[22;36m08[1;30m:[22;36m42[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised deftness to 6!
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Ashen (gent) :[0;39;49m your long nightmare is over
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Toren (necr) :[0;39;49m I don't want that one
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Toren (necr) :[0;39;49m It's filthy
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Toren (necr) :[0;39;49m Used
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Ashen (gent) :[0;39;49m for sure
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Esper (necr) :[0;39;49m like a shoe
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Esper (necr) :[0;39;49m worn by too many people
+[1;30m[[22;36m08[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Ashen (gent) :[0;39;49m covered in all kinds of... stuff...
+[1;30m[[22;36m08[1;30m:[22;36m45[1;30m][0m [1;30m[Auction] Al (chan) :[0;39;49m he probably hadn't even washed it
+[1;30m[[22;36m08[1;30m:[22;36m53[1;30m][0m [1;37mMurmandamus shouts:[0;39;49m you'll shoot your eye out!
+[1;30m[[22;36m09[1;30m:[22;36m08[1;30m][0m [1;37m[Clan] Ziphe :[0;39;49m murmandamus won't share :(
+[1;30m[[22;36m09[1;30m:[22;36m08[1;30m][0m [1;37m[Clan] Ziphe :[0;39;49m lol
+[1;30m[[22;36m09[1;30m:[22;36m09[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m are you tattling?
+[1;30m[[22;36m09[1;30m:[22;36m09[1;30m][0m [1;37m[Clan] Ziphe :[0;39;49m lol
+[1;30m[[22;36m09[1;30m:[22;36m27[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 11!
+[1;30m[[22;36m09[1;30m:[22;36m32[1;30m][0m [1;37mStormer flaps :[0;39;49m someone able to ftouch?
+[1;30m[[22;36m09[1;30m:[22;36m33[1;30m][0m [1;37m[Clan] Sarge :[0;39;49m see, i died from murmandamus not sharing the good stuff! :P
+[1;30m[[22;36m09[1;30m:[22;36m33[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m lol
+[1;30m[[22;36m09[1;30m:[22;36m33[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m don't blame me
+[1;30m[[22;36m09[1;30m:[22;36m33[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m I convinced ziphe to switch to moar pewpew
+[1;30m[[22;36m09[1;30m:[22;36m33[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m and now he's falling down the rabbit hole
+[1;30m[[22;36m09[1;30m:[22;36m34[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m also I rarely see death messages
+[1;30m[[22;36m09[1;30m:[22;36m34[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m because I don't have them go to my chatmonitor
+[1;30m[[22;36m09[1;30m:[22;36m35[1;30m][0m [1;37m[Clan] Sarge :[0;39;49m well, only half Murm's fault, my silly pocket priest picked work over helping me get eq as well...
+[1;30m[[22;36m09[1;30m:[22;36m35[1;30m][0m [1;37m[Clan] Sarge :[0;39;49m the nerve of some people!
+[1;30m[[22;36m09[1;30m:[22;36m37[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m bplate of timescape, is that really a knight artifact?
+[1;30m[[22;36m09[1;30m:[22;36m38[1;30m][0m [1;36m<- ! The Vigilant ! -> :[0;39;49m  A destabilization Kayos event has been detected in Deserts of Fantasy!  We are localizing it now - get ready!
+[1;30m[[22;36m09[1;30m:[22;36m38[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m nods
+[1;30m[[22;36m09[1;30m:[22;36m40[1;30m][0m [1;36m<- ! 5m ! -> :[0;39;49m  The Vigilant report that they're getting close to stabilizing the portal.  Soldiers be ready!
+[1;30m[[22;36m09[1;30m:[22;36m40[1;30m][0m [1;37m[Clan] Lena :[0;39;49m whats it even do for knights?
+[1;30m[[22;36m09[1;30m:[22;36m40[1;30m][0m [1;37m[Clan] Lena :[0;39;49m second wind buff it says
+[1;30m[[22;36m09[1;30m:[22;36m40[1;30m][0m [1;37m[Clan] Lena :[0;39;49m kinda vague
+[1;30m[[22;36m09[1;30m:[22;36m43[1;30m][0m [1;37mStormer flaps :[0;39;49m any xmutes for cocoon around?
+[1;30m[[22;36m09[1;30m:[22;36m45[1;30m][0m [1;36m<- !!! -> :[0;39;49m The portal has been stabilized!  Make your way to Deserts of Fantasy and assault the forces of Kayos!
+[1;30m[[22;36m09[1;30m:[22;36m46[1;30m][0m [1;37mZiphe shouts:[0;39;49m no murmandamus I will not touch your sack
+[1;30m[[22;36m09[1;30m:[22;36m46[1;30m][0m [1;37mSarge shouts:[0;39;49m oh please, you know you will
+[1;30m[[22;36m09[1;30m:[22;36m47[1;30m][0m [1;37mSarge shouts:[0;39;49m gotta show that token resistance first, huh?
+[1;30m[[22;36m09[1;30m:[22;36m47[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised accuracy to 7!
+[1;30m[[22;36m09[1;30m:[22;36m48[1;30m][0m [1;37mZethrak shouts:[0;39;49m *rolls a 1 on a d20* Did i win?
+[1;30m[[22;36m10[1;30m:[22;36m19[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 12!
+[1;30m[[22;36m10[1;30m:[22;36m37[1;30m][0m [1;37mZiphe shouts:[0;39;49m dingus majigger
+[1;30m[[22;36m10[1;30m:[22;36m53[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised engage to 10!
+[1;30m[[22;36m11[1;30m:[22;36m46[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised deftness to 7!
+[1;30m[[22;36m11[1;30m:[22;36m57[1;30m][0m [1;37mSquirrel flaps :[0;39;49m anyone near town with comprehend languages?
+[1;30m[[22;36m11[1;30m:[22;36m57[1;30m][0m [1;37mSquirrel flaps :[0;39;49m dark mystic cloak has that power too.
+[1;30m[[22;36m12[1;30m:[22;36m29[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 13!
+[1;30m[[22;36m12[1;30m:[22;36m29[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised divine strike to 7!
+[1;30m[[22;36m12[1;30m:[22;36m37[1;30m][0m [1;37mZethrak shouts:[0;39;49m it wasn't me!
+[1;30m[[22;36m13[1;30m:[22;36m00[1;30m][0m [1;37m[Clan] Asher :[0;39;49m beleive it reduces the cooldown on second wind...
+[1;30m[[22;36m13[1;30m:[22;36m00[1;30m][0m [1;37m[Clan] Asher :[0;39;49m Haven't used it in a while so I'd have to test it again to be sure.
+[1;30m[[22;36m13[1;30m:[22;36m01[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m i tossed it in our box
+[1;30m[[22;36m13[1;30m:[22;36m01[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m its pretty nice ac too
+[1;30m[[22;36m13[1;30m:[22;36m02[1;30m][0m [1;37m[Clan] Asher :[0;39;49m not sure if I have access to box.  very new to the whole clan thing.  played off and on since 96, but spent very little time in clans.
+[1;30m[[22;36m13[1;30m:[22;36m02[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m ohhh yes, we need to get you a key
+[1;30m[[22;36m13[1;30m:[22;36m05[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m ok, you have keys
+[1;30m[[22;36m13[1;30m:[22;36m06[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m home 481, big box in main room is free to grab, south room box is only for giving stuff to people, so dont take things out of that one
+[1;30m[[22;36m13[1;30m:[22;36m07[1;30m][0m [1;37m[Clan] Asher :[0;39;49m southbox is transfer box, main room box is free to grab. got it.
+[1;30m[[22;36m13[1;30m:[22;36m09[1;30m][0m [1;37m[Clan] Asher :[0;39;49m thank you!
+[1;30m[[22;36m13[1;30m:[22;36m10[1;30m][0m [1;37m[Clan] Asher :[0;39;49m I think bp of timescape has a skill bonus to it too...
+[1;30m[[22;36m13[1;30m:[22;36m23[1;30m][0m [1;30mStormer <HM-Questor>:[0;39;49m anyone resseting sz anytime soon?
+[1;30m[[22;36m13[1;30m:[22;36m28[1;30m][0m [1;37mHaggan shouts:[0;39;49m WOOT!
+[1;30m[[22;36m13[1;30m:[22;36m35[1;30m][0m [1;30m[Auction] Murmandamus (necr) :[0;39;49m flossy flossy
+[1;30m[[22;36m13[1;30m:[22;36m53[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 14!
+[1;30m[[22;36m13[1;30m:[22;36m53[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised speed to 7!
+[1;30m[[22;36m14[1;30m:[22;36m19[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised endurance to 7!
+[1;30m[[22;36m14[1;30m:[22;36m51[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Up for bids: Jasper Ring of Enhanced Protection.
+[1;30m[[22;36m14[1;30m:[22;36m51[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Pdog has requested 420 as the opening offer.
+[1;30m[[22;36m14[1;30m:[22;36m51[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 420 from Ksyraan(jugg).  Do I hear 470?
+[1;30m[[22;36m14[1;30m:[22;36m51[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 6,969 from Licklick(jedi).  Do I hear 7,108?
+[1;30m[[22;36m14[1;30m:[22;36m52[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 6,969 going once!
+[1;30m[[22;36m14[1;30m:[22;36m52[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 6,969 going twice!
+[1;30m[[22;36m14[1;30m:[22;36m52[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Sold to Licklick for 6,969 coins!
+[1;30m[[22;36m15[1;30m:[22;36m29[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised engage to 11!
+[1;30m[[22;36m15[1;30m:[22;36m44[1;30m][0m [1;36m<- ! 5m ! -> :[0;39;49m  The portal to A Noisy Battleground is destabilizing!  We won't be able to hold it - make your way to safety!
+[1;30m[[22;36m15[1;30m:[22;36m46[1;30m][0m [1;37mKrat flaps :[0;39;49m havent had pizza in over a uear, ordered 2 nediums and a 2 liter.... 70$
+[1;30m[[22;36m15[1;30m:[22;36m47[1;30m][0m [1;37mSylph flaps :[0;39;49m dang, where are you getting your pizza from?!?
+[1;30m[[22;36m15[1;30m:[22;36m47[1;30m][0m [1;37mSylph flaps :[0;39;49m 6.99 from Dominos for a medium
+[1;30m[[22;36m15[1;30m:[22;36m47[1;30m][0m [1;37mEsper flaps :[0;39;49m Saltbae
+[1;30m[[22;36m15[1;30m:[22;36m47[1;30m][0m [1;37mEsper flaps :[0;39;49m Gotta get them gold flecks
+[1;30m[[22;36m15[1;30m:[22;36m47[1;30m][0m [1;37mHaggan flaps :[0;39;49m oooh, saltbae, I love me some salt
+[1;30m[[22;36m15[1;30m:[22;36m48[1;30m][0m [1;37mAdalius flaps :[0;39;49m Yea, 2 medium thin crusts, a medium pan, 2 cheesy breads, a parm knot, 8 pc wings, a chicken parm sam, and chicken alfredo pasta for the entire fam last night from Dominos was $82
+[1;30m[[22;36m15[1;30m:[22;36m49[1;30m][0m [1;36m<- !!! -> :[0;39;49m The portal to A Noisy Battleground has collapsed!  That's it - we're done here.  Rest and recover - there will be another soon!
+[1;30m[[22;36m15[1;30m:[22;36m51[1;30m][0m [1;37mKrat flaps :[0;39;49m yeah but thats not pizza, thats flavored shoe leather lol
+[1;30m[[22;36m15[1;30m:[22;36m51[1;30m][0m [1;37mZethrak flaps :[0;39;49m that's so much money!
+[1;30m[[22;36m15[1;30m:[22;36m51[1;30m][0m [1;37mKrat flaps :[0;39;49m not sure how they are doing that around here but most places are 15 to 20$ a pixxa
+[1;30m[[22;36m15[1;30m:[22;36m52[1;30m][0m [1;37mNightbreed flaps :[0;39;49m meanwhile back at the ranch, two family 1 topping pizzas 73.00 bucks
+[1;30m[[22;36m15[1;30m:[22;36m52[1;30m][0m [1;37mZethrak flaps :[0;39;49m 4 years ago, i could get a medium 3 topping from papa johns for $12, delivered. total cost.
+[1;30m[[22;36m15[1;30m:[22;36m52[1;30m][0m [1;37mAdalius flaps :[0;39;49m Just looked, the pizza place down the street is $9 for a medium
+[1;30m[[22;36m15[1;30m:[22;36m52[1;30m][0m [1;37mEsper flaps :[0;39;49m Costco pizzas are huge too
+[1;30m[[22;36m15[1;30m:[22;36m52[1;30m][0m [1;37mEsper flaps :[0;39;49m I like the frozen Motor City Co pizzas, myself.
+[1;30m[[22;36m15[1;30m:[22;36m53[1;30m][0m [1;37mEsper flaps :[0;39;49m I keep one around for emergencies
+[1;30m[[22;36m15[1;30m:[22;36m53[1;30m][0m [1;37mZethrak flaps :[0;39;49m i don't think i've had pizza in 3 years.
+[1;30m[[22;36m15[1;30m:[22;36m53[1;30m][0m [1;37mTurnhold flaps :[0;39;49m Welcome to Costco, I love you.
+[1;30m[[22;36m15[1;30m:[22;36m53[1;30m][0m [1;37mMaybe flaps :[0;39;49m Antico is the best pizza I've ever had by A LOT and it's about $25 tops
+[1;30m[[22;36m15[1;30m:[22;36m54[1;30m][0m [1;37mSylph flaps :[0;39;49m Ginos East, Chicago! best pizza.... the end
+[1;30m[[22;36m15[1;30m:[22;36m54[1;30m][0m [1;37mAdalius flaps :[0;39;49m Blech
+[1;30m[[22;36m15[1;30m:[22;36m55[1;30m][0m [1;37mMotivation flaps :[0;39;49m no good?
+[1;30m[[22;36m15[1;30m:[22;36m55[1;30m][0m [1;37mSylph flaps :[0;39;49m deep dish
+[1;30m[[22;36m15[1;30m:[22;36m55[1;30m][0m [1;37mAdalius flaps :[0;39;49m Not a fan of Ginos, and I like deep dish
+[1;30m[[22;36m15[1;30m:[22;36m55[1;30m][0m [1;37mZethrak flaps :[0;39;49m Giordonos had good deep dish. 2" of mozzerella. Like actual 2 inches deep cheese.
+[1;30m[[22;36m15[1;30m:[22;36m56[1;30m][0m [1;37mAdalius flaps :[0;39;49m Wheres the cheese? "its under the sauce."
+[1;30m[[22;36m15[1;30m:[22;36m56[1;30m][0m [1;37mEsper flaps :[0;39;49m But have you eaten 40 pizzas in 30 days?!?
+[1;30m[[22;36m15[1;30m:[22;36m56[1;30m][0m [1;37mZethrak flaps :[0;39;49m yeah!
+[1;30m[[22;36m15[1;30m:[22;36m56[1;30m][0m [1;37mZethrak flaps :[0;39;49m yeah to cheese under sauce, no to 40 pizzas. :D
+[1;30m[[22;36m15[1;30m:[22;36m57[1;30m][0m [1;37mNightbreed flaps :[0;39;49m giordanos is good
+[1;30m[[22;36m15[1;30m:[22;36m57[1;30m][0m [1;37mKrat flaps :[0;39;49m no dominoes around here but 12 inch pizzahut is 14$ + the extra delivery taxes
+[1;30m[[22;36m15[1;30m:[22;36m57[1;30m][0m [1;37mZethrak flaps :[0;39;49m deep dish, where you're too full to breath after eating. Look for a place to lay down and question your life choices for a couple hours.
+[1;30m[[22;36m15[1;30m:[22;36m57[1;30m][0m [1;37mSylph flaps :[0;39;49m original ginos east was good, ginos not so much
+[1;30m[[22;36m15[1;30m:[22;36m58[1;30m][0m [1;37mAdalius flaps :[0;39;49m I liked Dominos old deep dish
+[1;30m[[22;36m15[1;30m:[22;36m58[1;30m][0m [1;37mNightbreed flaps :[0;39;49m no dominos? conskder yourself lucky
+[1;30m[[22;36m15[1;30m:[22;36m58[1;30m][0m [1;37mAdalius flaps :[0;39;49m Now its some stupid stuff where theres no dough 'lip' on the end
+[1;30m[[22;36m15[1;30m:[22;36m58[1;30m][0m [1;37mZethrak flaps :[0;39;49m D:
+[1;30m[[22;36m15[1;30m:[22;36m58[1;30m][0m [1;37mNightbreed flaps :[0;39;49m dominos ans little ceasars are horrible, then papa johns
+[1;30m[[22;36m15[1;30m:[22;36m59[1;30m][0m [1;37mAdalius flaps :[0;39;49m I wont eat Little Caesars after the time in highschool where we were finding out the foreign exchange student nailed this gross chick on the prep table there.
+[1;30m[[22;36m15[1;30m:[22;36m59[1;30m][0m [1;37mLocrian flaps :[0;39;49m i'm fine with shoe leather - gimme little caesars $5 pizzas.
+[1;30m[[22;36m15[1;30m:[22;36m59[1;30m][0m [1;37mEsper flaps :[0;39;49m I think Little Caesars is fine for the cost
+[1;30m[[22;36m15[1;30m:[22;36m59[1;30m][0m [1;37mTaris flaps :[0;39;49m There was a time you'd get jailed for that kind of talk.  //snicker snicker//
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mNightbreed flaps :[0;39;49m ok only if you eat it piping hot
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mZethrak flaps :[0;39;49m grew up on little ceasars. It always tasted like mustard was it's secret ingredient.
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mHoosegow flaps :[0;39;49m only cuz it was a gross chick though. nailing a not gross chick on the prep table woulda been fine
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mAdalius flaps :[0;39;49m Possibly.
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mHoosegow flaps :[0;39;49m hehe
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mEsper flaps :[0;39;49m There are times when I'm in the mood for a cheap, crappy pizza, and that's fine
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mHoosegow flaps :[0;39;49m or was it a foreign thing
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mMotivation flaps :[0;39;49m those kinds of pizzas, i like to take home and heat on the pan, get it crispy
+[1;30m[[22;36m16[1;30m:[22;36m00[1;30m][0m [1;37mZethrak flaps :[0;39;49m avoid the noid.
+[1;30m[[22;36m16[1;30m:[22;36m01[1;30m][0m [1;37mZethrak flaps :[0;39;49m ceasars was right next to video outlet. we'd get a pizza and some vhs quality entertainment. First vhs movie we watched, The Last Starfighter.
+[1;30m[[22;36m16[1;30m:[22;36m02[1;30m][0m [1;37mAdalius flaps :[0;39;49m Dominos has just kinda screwed themselves imo, over the last like 10 years. They changed their sauce, got rid of their old style deep dish/pan, now they dont have breadbowls for the pasta, which was the best part.
+[1;30m[[22;36m16[1;30m:[22;36m02[1;30m][0m [1;37mNightbreed flaps :[0;39;49m heh, if dominos spent as much on there product as they did on their commercials, they may have something
+[1;30m[[22;36m16[1;30m:[22;36m04[1;30m][0m [1;37mKrat flaps :[0;39;49m to put it into perspective a large combo#3 at McDonalds cost 18$+ here
+[1;30m[[22;36m16[1;30m:[22;36m04[1;30m][0m [1;37mAdalius flaps :[0;39;49m where is "here"
+[1;30m[[22;36m16[1;30m:[22;36m04[1;30m][0m [1;37mKrat flaps :[0;39;49m Seattle
+[1;30m[[22;36m16[1;30m:[22;36m04[1;30m][0m [1;37mAdalius flaps :[0;39;49m Oh, well then yea that makes sense.
+[1;30m[[22;36m16[1;30m:[22;36m04[1;30m][0m [1;37mMotivation flaps :[0;39;49m i wouldn't be surprised if it was that much here in LA
+[1;30m[[22;36m16[1;30m:[22;36m04[1;30m][0m [1;37mAdalius flaps :[0;39;49m Skip the pizza, just go over to Ivars.
+[1;30m[[22;36m16[1;30m:[22;36m05[1;30m][0m [1;37mAdalius flaps :[0;39;49m I could live at Ivar's Salmon House.
+[1;30m[[22;36m16[1;30m:[22;36m06[1;30m][0m [1;37mAdalius flaps :[0;39;49m Not for long, but I could...
+[1;30m[[22;36m16[1;30m:[22;36m07[1;30m][0m [1;37mKrat flaps :[0;39;49m ha, i gotta see if kids like chowder yet, last time was a fail
+[1;30m[[22;36m16[1;30m:[22;36m07[1;30m][0m [1;37mAdalius flaps :[0;39;49m When ever we're in town we get that northwest platter.
+[1;30m[[22;36m16[1;30m:[22;36m08[1;30m][0m [1;37mAdalius flaps :[0;39;49m Also like running down to Uwajimaya at least once every trip to get some fresh stuff.
+[1;30m[[22;36m16[1;30m:[22;36m08[1;30m][0m [1;37mNightbreed flaps :[0;39;49m all the food talk, now i want Texas Roadhouse
+[1;30m[[22;36m16[1;30m:[22;36m09[1;30m][0m [1;36mHaggan <.oO>:[0;39;49m welcome, welcome
+[1;30m[[22;36m16[1;30m:[22;36m09[1;30m][0m [1;37mNightbreed shouts:[0;39;49m woot! (cm welcome
+[1;30m[[22;36m16[1;30m:[22;36m10[1;30m][0m [1;36mNightbreed <.oO>:[0;39;49m welcome
+[1;30m[[22;36m16[1;30m:[22;36m11[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised confidence to 7!
+[1;30m[[22;36m16[1;30m:[22;36m11[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 15!
+[1;30m[[22;36m16[1;30m:[22;36m13[1;30m][0m [1;37mAdalius flaps :[0;39;49m Dang it, now I'm sad I probably wont be in Seattle until July
+[1;30m[[22;36m16[1;30m:[22;36m30[1;30m][0m [1;37mGidius shouts:[0;39;49m I has the special sauce
+[1;30m[[22;36m16[1;30m:[22;36m59[1;30m][0m [1;37mMurmandamus shouts:[0;39;49m Cheese is a racket
+[1;30m[[22;36m16[1;30m:[22;36m59[1;30m][0m [1;37mZiphe shouts:[0;39;49m a delicious racket
+[1;30m[[22;36m17[1;30m:[22;36m00[1;30m][0m [1;37mZiphe shouts:[0;39;49m also a raclette
+[1;30m[[22;36m17[1;30m:[22;36m00[1;30m][0m [1;37mZethrak shouts:[0;39;49m *puts down his grilled cheese sandwich to respond*
+[1;30m[[22;36m17[1;30m:[22;36m01[1;30m][0m [1;37mNightbreed shouts:[0;39;49m i love grilled cheese, or is it the grilled butter bread any meat and or cheese between it
+[1;30m[[22;36m17[1;30m:[22;36m01[1;30m][0m [1;37mTo Kyoujin[0m: online?
+[1;30m[[22;36m17[1;30m:[22;36m10[1;30m][0m [1;37mKyoujin[0m: nogs at you.
+[1;30m[[22;36m17[1;30m:[22;36m12[1;30m][0m [1;37mKyoujin[0m: goes 'blah sup sup slobber slobber' to you.
+[1;30m[[22;36m17[1;30m:[22;36m12[1;30m][0m [1;37mTo Kyoujin[0m: wanted to ask an angels question, i have combat all figured out, up. to 90 trains now... gxp rate is crawwwwling now. was curious if its because divine strike is going too often or if i shoukd wait for more advantage, or does that matter?
+[1;30m[[22;36m17[1;30m:[22;36m13[1;30m][0m [1;37mKyoujin[0m: the amount doesn't matter early on but eventually you'll want to strike at 100+, that way you dont have a chance to miss
+[1;30m[[22;36m17[1;30m:[22;36m17[1;30m][0m [1;37mKyoujin[0m: below a certain glvl it always hits anyways though so you can divine strike away
+[1;30m[[22;36m17[1;30m:[22;36m18[1;30m][0m [1;37mKyoujin[0m: also, using the newbie baton from the guild? it helps a bunch if you are solo
+[1;30m[[22;36m17[1;30m:[22;36m18[1;30m][0m [1;37mTo Kyoujin[0m: ok yeah, that amount is beyond me still, i have ny theshold at 40
+[1;30m[[22;36m17[1;30m:[22;36m18[1;30m][0m [1;37mKyoujin[0m: nods to you.
+[1;30m[[22;36m17[1;30m:[22;36m18[1;30m][0m [1;37mKyoujin[0m: yah may as well leave it low until you start to see them miss, then its time to move it up to 100
+[1;30m[[22;36m17[1;30m:[22;36m19[1;30m][0m [1;37mTo Kyoujin[0m: yeah, i am, but like deftness is yaking me a few hours now to bring up
+[1;30m[[22;36m17[1;30m:[22;36m19[1;30m][0m [1;37mKyoujin[0m: nods to you.
+[1;30m[[22;36m17[1;30m:[22;36m19[1;30m][0m [1;37mTo Kyoujin[0m: and its only at 7 so wanted to make sure i wasnt borking it
+[1;30m[[22;36m17[1;30m:[22;36m19[1;30m][0m [1;37mKyoujin[0m: they have to be used to get trained, so you want to try and organize your defenses so the ones that train that skill are first
+[1;30m[[22;36m17[1;30m:[22;36m19[1;30m][0m [1;37mKyoujin[0m: its a big help
+[1;30m[[22;36m17[1;30m:[22;36m20[1;30m][0m [1;37mTo Kyoujin[0m: yeah i only have block right now, parry is coming next
+[1;30m[[22;36m17[1;30m:[22;36m20[1;30m][0m [1;37mKyoujin[0m: nods to you.
+[1;30m[[22;36m17[1;30m:[22;36m20[1;30m][0m [1;37mKyoujin[0m: I believe the baton also gives a gxp bonus too, so may be worth using
+[1;30m[[22;36m17[1;30m:[22;36m21[1;30m][0m [1;37mKyoujin[0m: for the first 200 or so glvls I believe, and you must be 90ish?
+[1;30m[[22;36m17[1;30m:[22;36m21[1;30m][0m [1;37mTo Kyoujin[0m: aye 90
+[1;30m[[22;36m17[1;30m:[22;36m22[1;30m][0m [1;37mKyoujin[0m: nods to you.
+[1;30m[[22;36m17[1;30m:[22;36m22[1;30m][0m [1;37mTo Kyoujin[0m: it went from a pt every 20 minutes to about 1 to 2 hours lol this one being 2+
+[1;30m[[22;36m17[1;30m:[22;36m22[1;30m][0m [1;37mTo Kyoujin[0m: so glad to know im not missing anything so far, big thanks for explanations
+[1;30m[[22;36m17[1;30m:[22;36m23[1;30m][0m [1;37mKyoujin[0m: nods to you.
+[1;30m[[22;36m17[1;30m:[22;36m23[1;30m][0m [1;37mKyoujin[0m: it takes some work but the glvls do not slow down so you will always glvl at the same rate once you are out of newbie
+[1;30m[[22;36m17[1;30m:[22;36m24[1;30m][0m [1;37mTo Kyoujin[0m: aye lastQ: so i do miss divine strikes alot but has oonly when i do my perform, and my move is set to divine strike each target ho/hi/lo/li in a single perform lol   does this alot even if the advantage is high,
+[1;30m[[22;36m17[1;30m:[22;36m30[1;30m][0m [1;37mTo Kyoujin[0m: i just figured rng is at work there
+[1;30m[[22;36m17[1;30m:[22;36m31[1;30m][0m [1;37mTo Kyoujin[0m: ill keep fiddling with the thresholds though, tha ks again!
+[1;30m[[22;36m17[1;30m:[22;36m31[1;30m][0m [1;37mKyoujin[0m: nods to you.
+[1;30m[[22;36m17[1;30m:[22;36m45[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m is the B team doing an inductor run tonight?
+[1;30m[[22;36m17[1;30m:[22;36m46[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m didn't mean that in a derogatory way at all, was just wondering if ya'll were gonna want some help
+[1;30m[[22;36m17[1;30m:[22;36m46[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m To paraphrase Lenny Bruce.... 'You have a choice.'
+[1;30m[[22;36m17[1;30m:[22;36m47[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m hmm actually i can't finish that joke on this line
+[1;30m[[22;36m17[1;30m:[22;36m48[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m GO B TEAM!
+[1;30m[[22;36m17[1;30m:[22;36m48[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m no, Pdog, your dad told your mom "Go get Plan B!"
+[1;30m[[22;36m17[1;30m:[22;36m48[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m ZING
+[1;30m[[22;36m17[1;30m:[22;36m49[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m I was gunna say, You have an A team, and a B team
+[1;30m[[22;36m17[1;30m:[22;36m49[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m but the A stands for Assholes, and the B stands for Boobies!
+[1;30m[[22;36m17[1;30m:[22;36m49[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m C is for Clam Hat?
+[1;30m[[22;36m17[1;30m:[22;36m50[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m woo C team ftw
+[1;30m[[22;36m17[1;30m:[22;36m50[1;30m][0m [1;37m[Clan] Ziphe :[0;39;49m b is for bi...
+[1;30m[[22;36m17[1;30m:[22;36m50[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m 4 is for.... that's what it is, 4
+[1;30m[[22;36m17[1;30m:[22;36m50[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m i was trying to make the B team sound more appealing than the A team, ziphe :p
+[1;30m[[22;36m17[1;30m:[22;36m50[1;30m][0m [1;37m[Clan] Ziphe :[0;39;49m laf
+[1;30m[[22;36m17[1;30m:[22;36m53[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised divine strike to 8!
+[1;30m[[22;36m17[1;30m:[22;36m53[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 16!
+[1;30m[[22;36m17[1;30m:[22;36m59[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m You put Gambler's Dice into the box.
+[1;30m[[22;36m17[1;30m:[22;36m59[1;30m][0m [1;37m[Clan] Krat :[0;39;49m killing these smurfs are likely wrecking my alignment
+[1;30m[[22;36m18[1;30m:[22;36m01[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised deftness to 8!
+[1;30m[[22;36m18[1;30m:[22;36m07[1;30m][0m [1;30mSarge <HM-Sage>:[0;39;49m another inductor happening tonight?
+[1;30m[[22;36m18[1;30m:[22;36m08[1;30m][0m [1;30mSarge <HM-Sage>:[0;39;49m or am I gonna have to talk Murm into tanking it :P
+[1;30m[[22;36m18[1;30m:[22;36m08[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m i'm down if one of you fine people will let me follow
+[1;30m[[22;36m18[1;30m:[22;36m10[1;30m][0m [1;36m<ANGEL>:[0;39;49m Pantalones just returned from linkdeath!
+[1;30m[[22;36m18[1;30m:[22;36m10[1;30m][0m [1;36m<ANGEL>:[0;39;49m Pantalones just linkdied!
+[1;30m[[22;36m18[1;30m:[22;36m14[1;30m][0m [1;37mFluffy shouts:[0;39;49m they got sarge!
+[1;30m[[22;36m18[1;30m:[22;36m14[1;30m][0m [1;37mPdog shouts:[0;39;49m not again!
+[1;30m[[22;36m18[1;30m:[22;36m14[1;30m][0m [1;30mFluffy <HM-Legend>:[0;39;49m meeeeeeeeeedic!
+[1;30m[[22;36m18[1;30m:[22;36m14[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m we need 500mg of morphine STAT
+[1;30m[[22;36m18[1;30m:[22;36m19[1;30m][0m [1;37mRaest flaps :[0;39;49m ok, gonna run secz for fig/barrier for my hc, anyone want an xp ride?
+[1;30m[[22;36m18[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Raest :[0;39;49m breastplate of timescape?  what's that
+[1;30m[[22;36m18[1;30m:[22;36m21[1;30m][0m [1;37mRaest flaps :[0;39;49m no one?
+[1;30m[[22;36m18[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m sounds like some useless piece of shit item
+[1;30m[[22;36m18[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m :>
+[1;30m[[22;36m18[1;30m:[22;36m21[1;30m][0m [1;37mEsper flaps :[0;39;49m *crickets chirp*
+[1;30m[[22;36m18[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Brasky :[0;39;49m it's a knight artifact, so basically what pdog said
+[1;30m[[22;36m18[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Sarge :[0;39;49m supposedly knight artifact, according to previous convos
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mMaverik shouts:[0;39;49m do you even tae bo, bro?
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mAdalius shouts:[0;39;49m Boooooo. BOOOOO
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37m[Clan] Brasky :[0;39;49m it's decent for newb knights who can't get better gear
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mPdog shouts:[0;39;49m Are we BOOing this man?
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mAdalius shouts:[0;39;49m YES
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mHyuga shouts:[0;39;49m BOO
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mMurmandamus shouts:[0;39;49m you can Tae Bo and go kick rocks
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mKenny shouts:[0;39;49m BOO
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mMarley shouts:[0;39;49m BOO
+[1;30m[[22;36m18[1;30m:[22;36m22[1;30m][0m [1;37mRaest shouts:[0;39;49m BOO
+[1;30m[[22;36m18[1;30m:[22;36m23[1;30m][0m [1;37mCannabis shouts:[0;39;49m BOO
+[1;30m[[22;36m18[1;30m:[22;36m23[1;30m][0m [1;37mKoschei shouts:[0;39;49m BOO
+[1;30m[[22;36m18[1;30m:[22;36m23[1;30m][0m [1;37mFluffy shouts:[0;39;49m unga bunga
+[1;30m[[22;36m18[1;30m:[22;36m23[1;30m][0m [1;37m[Clan] Raest :[0;39;49m no one wants a ride through secz?
+[1;30m[[22;36m18[1;30m:[22;36m23[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m ok my work here is done
+[1;30m[[22;36m18[1;30m:[22;36m23[1;30m][0m [1;37m[Clan] Murmandamus :[0;39;49m literally just finished it
+[1;30m[[22;36m18[1;30m:[22;36m24[1;30m][0m [1;37mPdog shouts:[0;39;49m hmm
+[1;30m[[22;36m18[1;30m:[22;36m24[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m oh oops wl
+[1;30m[[22;36m18[1;30m:[22;36m24[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m i should probably follow you with one of my alts
+[1;30m[[22;36m18[1;30m:[22;36m24[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m how big are those secz mobs
+[1;30m[[22;36m18[1;30m:[22;36m24[1;30m][0m [1;37m[Clan] Raest :[0;39;49m if you want free xp, sure
+[1;30m[[22;36m18[1;30m:[22;36m24[1;30m][0m [1;37m[Clan] Raest :[0;39;49m uhh 90?
+[1;30m[[22;36m18[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m oh
+[1;30m[[22;36m18[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m oh, doh
+[1;30m[[22;36m18[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m i was looking for free owl progress
+[1;30m[[22;36m18[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m :(
+[1;30m[[22;36m18[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Raest :[0;39;49m what's needed for owl?
+[1;30m[[22;36m18[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m 100M i think
+[1;30m[[22;36m18[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Raest :[0;39;49m my owl is in the green, from running this
+[1;30m[[22;36m18[1;30m:[22;36m26[1;30m][0m [1;37m[Clan] Raest :[0;39;49m  ~._,-"'-._,-"'-.|,-"'-->
+[1;30m[[22;36m18[1;30m:[22;36m26[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m i want owl progress and also potentially other progress without losing any xp :P
+[1;30m[[22;36m18[1;30m:[22;36m26[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m cake is good
+[1;30m[[22;36m18[1;30m:[22;36m26[1;30m][0m [1;37m[Clan] Raest :[0;39;49m 31  a Groma                        83,893,150
+[1;30m[[22;36m18[1;30m:[22;36m26[1;30m][0m [1;37m[Clan] Raest :[0;39;49m scaled 144 is the best i can do
+[1;30m[[22;36m18[1;30m:[22;36m27[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m interesting
+[1;30m[[22;36m18[1;30m:[22;36m27[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m i believe it tho
+[1;30m[[22;36m18[1;30m:[22;36m27[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m ok one sec
+[1;30m[[22;36m18[1;30m:[22;36m28[1;30m][0m [1;37m[Clan] Raest :[0;39;49m that 100m mark seems weird because rolm was written before mobs got that size.  perhaps there's a formula based off player level:mob size ratio to determine if mob is big enough?
+[1;30m[[22;36m18[1;30m:[22;36m28[1;30m][0m [1;37mMarley shouts:[0;39;49m i stole all of your caps from Cancer's shop
+[1;30m[[22;36m18[1;30m:[22;36m28[1;30m][0m [1;37mMurmandamus shouts:[0;39;49m pill fiend
+[1;30m[[22;36m18[1;30m:[22;36m28[1;30m][0m [1;37m[Clan] Marley :[0;39;49m okies i'm at secz title
+[1;30m[[22;36m18[1;30m:[22;36m29[1;30m][0m [1;37m[Clan] Sarge :[0;39;49m ahh, i thought it was a new item version like lucanus 2.0, so didn't even think about that part
+[1;30m[[22;36m18[1;30m:[22;36m41[1;30m][0m [1;30mVagrant <HM-Inquisitor>:[0;39;49m im am an inducktor
+[1;30m[[22;36m18[1;30m:[22;36m41[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m INDUCTOR INDUCTOR MAN
+[1;30m[[22;36m18[1;30m:[22;36m41[1;30m][0m [1;30mVagrant <HM-Inquisitor>:[0;39;49m I WANT TO BE AN INDUCKTOR MAN
+[1;30m[[22;36m18[1;30m:[22;36m42[1;30m][0m [1;30mScaf <HM-Oracle>:[0;39;49m we doing inductor at 10?
+[1;30m[[22;36m18[1;30m:[22;36m43[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m hm nog
+[1;30m[[22;36m18[1;30m:[22;36m44[1;30m][0m [1;30mScaf <HM-Oracle>:[0;39;49m count me in
+[1;30m[[22;36m18[1;30m:[22;36m46[1;30m][0m [1;30mSer <HM-Seeker>:[0;39;49m i can come hit
+[1;30m[[22;36m18[1;30m:[22;36m49[1;30m][0m [1;30mTaleast <HM-Herald>:[0;39;49m I can come be another meat shield
+[1;30m[[22;36m18[1;30m:[22;36m50[1;30m][0m [1;30mSarge <HM-Sage>:[0;39;49m yay, more meat shield!
+[1;30m[[22;36m18[1;30m:[22;36m52[1;30m][0m [1;37m[Clan] Marley :[0;39;49m i think he was soloing over 20M an hour?
+[1;30m[[22;36m18[1;30m:[22;36m53[1;30m][0m [1;37m[Clan] Marley :[0;39;49m oops
+[1;30m[[22;36m18[1;30m:[22;36m54[1;30m][0m [1;30mSer <HM-Seeker>:[0;39;49m inductor didn't die until 10:15 last night, not sure if maze respawns b efore 24h or not but i had issues a couple boots ago
+[1;30m[[22;36m18[1;30m:[22;36m56[1;30m][0m [1;30mVagrant <HM-Inquisitor>:[0;39;49m ill throw my body too holler if going
+[1;30m[[22;36m18[1;30m:[22;36m57[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i feel like the 24 hr thing is not a thing
+[1;30m[[22;36m18[1;30m:[22;36m58[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m i'm down for verbeegs after too, holler if going
+[1;30m[[22;36m18[1;30m:[22;36m58[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m Last boot, it didn't reset either
+[1;30m[[22;36m18[1;30m:[22;36m58[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m it would be too easy to troll the B team if that were the case
+[1;30m[[22;36m19[1;30m:[22;36m00[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m no one has ever used (farsight on inductor to settle this once and for all?
+[1;30m[[22;36m19[1;30m:[22;36m00[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i'm drunk and high, what's YOUR excuse
+[1;30m[[22;36m19[1;30m:[22;36m00[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m :>
+[1;30m[[22;36m19[1;30m:[22;36m05[1;30m][0m [1;37mGidius shouts:[0;39;49m My skirt's fixed, thanks Ser!
+[1;30m[[22;36m19[1;30m:[22;36m05[1;30m][0m [1;37mAmish shouts:[0;39;49m Don't want those stray skirts breeding, good job.
+[1;30m[[22;36m19[1;30m:[22;36m10[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m I'm willing to donate (refresh area to try and help him load
+[1;30m[[22;36m19[1;30m:[22;36m10[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m if we have 2 more with the power
+[1;30m[[22;36m19[1;30m:[22;36m11[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m sure i got one i'll toss in the ring
+[1;30m[[22;36m19[1;30m:[22;36m11[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m this means everyone needs to not be in the maze though
+[1;30m[[22;36m19[1;30m:[22;36m11[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m i guess he isn't loaded according to (farsight inductor
+[1;30m[[22;36m19[1;30m:[22;36m12[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m (refresh room doesn't work on him?
+[1;30m[[22;36m19[1;30m:[22;36m12[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m (refresh area
+[1;30m[[22;36m19[1;30m:[22;36m12[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m unload
+[1;30m[[22;36m19[1;30m:[22;36m12[1;30m][0m [1;30mStout <HM-Oracle>:[0;39;49m would be cool for refresh area to work
+[1;30m[[22;36m19[1;30m:[22;36m13[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m I've never seen it do anything :P but haven't tried in this kind of situation
+[1;30m[[22;36m19[1;30m:[22;36m13[1;30m][0m [1;30mScaf <HM-Oracle>:[0;39;49m I have a refresh area
+[1;30m[[22;36m19[1;30m:[22;36m13[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m iirc, we've tried refresh area in the maze and not surprisingly... it did nothing
+[1;30m[[22;36m19[1;30m:[22;36m13[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m BOO
+[1;30m[[22;36m19[1;30m:[22;36m13[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m *shrug* down to give it a shot
+[1;30m[[22;36m19[1;30m:[22;36m14[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m nods
+[1;30m[[22;36m19[1;30m:[22;36m14[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m maybe the farsight is what's preventing the load?
+[1;30m[[22;36m19[1;30m:[22;36m14[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m :P
+[1;30m[[22;36m19[1;30m:[22;36m14[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m that would be cruel
+[1;30m[[22;36m19[1;30m:[22;36m14[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m I'm going to blame bards
+[1;30m[[22;36m19[1;30m:[22;36m15[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m seems legit
+[1;30m[[22;36m19[1;30m:[22;36m15[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m There was a bard last night.  Bards won the auction for fixin'.  Ergo, bards broke it.
+[1;30m[[22;36m19[1;30m:[22;36m15[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m you can blame me
+[1;30m[[22;36m19[1;30m:[22;36m15[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i'm a bard
+[1;30m[[22;36m19[1;30m:[22;36m15[1;30m][0m [1;30mPrism <HM-Oracle>:[0;39;49m gross why
+[1;30m[[22;36m19[1;30m:[22;36m15[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i wanted to be like Magius
+[1;30m[[22;36m19[1;30m:[22;36m15[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m Self hatred?
+[1;30m[[22;36m19[1;30m:[22;36m16[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m at one point, bards were pretty sick in PK
+[1;30m[[22;36m19[1;30m:[22;36m16[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m so i was just living a fantasy
+[1;30m[[22;36m19[1;30m:[22;36m16[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m in a fantasy guild
+[1;30m[[22;36m19[1;30m:[22;36m17[1;30m][0m [1;30mVagrant <HM-Inquisitor>:[0;39;49m bards are a science theme base guild change my mind!
+[1;30m[[22;36m19[1;30m:[22;36m17[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m but, time weathers all but the hardest stone, and i'm pretty stoned
+[1;30m[[22;36m19[1;30m:[22;36m17[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m bards combine all 3 realms
+[1;30m[[22;36m19[1;30m:[22;36m19[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m okay were going to try refresh area. if you're in the maze, clear out please
+[1;30m[[22;36m19[1;30m:[22;36m19[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m when are we hittin this up peeps?
+[1;30m[[22;36m19[1;30m:[22;36m20[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m ah k
+[1;30m[[22;36m19[1;30m:[22;36m22[1;30m][0m [1;37mMarley shouts:[0;39;49m #winning
+[1;30m[[22;36m19[1;30m:[22;36m27[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m  Murmandamus completes a powerful chant to unload the area!
+[1;30m[[22;36m19[1;30m:[22;36m27[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m hmm now do we have another (farsight? hehe
+[1;30m[[22;36m19[1;30m:[22;36m28[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m Swole Capacitor parted this realm by the hand of Liskerlol
+[1;30m[[22;36m19[1;30m:[22;36m28[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m so didn't unload
+[1;30m[[22;36m19[1;30m:[22;36m29[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m liskerlol hasn't been on since this morning, how would that interfere?
+[1;30m[[22;36m19[1;30m:[22;36m30[1;30m][0m [1;30mZiphe <HM-Champion>:[0;39;49m he's just saying the fact that it shows he killed it means it didn't unload
+[1;30m[[22;36m19[1;30m:[22;36m30[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m or am i just misunderstanding
+[1;30m[[22;36m19[1;30m:[22;36m30[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m oh, i see
+[1;30m[[22;36m19[1;30m:[22;36m30[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m my bad
+[1;30m[[22;36m19[1;30m:[22;36m30[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m yeah
+[1;30m[[22;36m19[1;30m:[22;36m31[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m the area was supposed to unload completely
+[1;30m[[22;36m19[1;30m:[22;36m31[1;30m][0m [1;30mMartyr <HM-Oracle>:[0;39;49m maybe the unload option doesnt work
+[1;30m[[22;36m19[1;30m:[22;36m31[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m well no mobs reset either
+[1;30m[[22;36m19[1;30m:[22;36m31[1;30m][0m [1;30mNightbreed <HM-Questor>:[0;39;49m is it a bug or just a waiting process
+[1;30m[[22;36m19[1;30m:[22;36m31[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m REFUND
+[1;30m[[22;36m19[1;30m:[22;36m31[1;30m][0m [1;30mMartyr <HM-Oracle>:[0;39;49m it's a feature
+[1;30m[[22;36m19[1;30m:[22;36m31[1;30m][0m [1;30mMartyr <HM-Oracle>:[0;39;49m probably
+[1;30m[[22;36m19[1;30m:[22;36m32[1;30m][0m [1;30mSarge <HM-Sage>:[0;39;49m has anyone EVER had it work, all i ever hear about is failure?
+[1;30m[[22;36m19[1;30m:[22;36m32[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m it works in NoC
+[1;30m[[22;36m19[1;30m:[22;36m32[1;30m][0m [1;30mNightbreed <HM-Questor>:[0;39;49m its a myth i tell ya
+[1;30m[[22;36m19[1;30m:[22;36m32[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m that's the only time I've ever used it tho
+[1;30m[[22;36m19[1;30m:[22;36m32[1;30m][0m [1;30mSarge <HM-Sage>:[0;39;49m ok, so it's not COMPLETELY useless then :P
+[1;30m[[22;36m19[1;30m:[22;36m33[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m I bet it works in verbeegs
+[1;30m[[22;36m19[1;30m:[22;36m33[1;30m][0m [1;30mSarge <HM-Sage>:[0;39;49m just apparently everywhere most ppl would want it to :P
+[1;30m[[22;36m19[1;30m:[22;36m33[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i dunno, it's argueably useless in NoC, depending on the situation
+[1;30m[[22;36m19[1;30m:[22;36m33[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m typically you don't want to interrupt the resetting process there, to maximise the yaddas
+[1;30m[[22;36m19[1;30m:[22;36m34[1;30m][0m [1;30mBadger <HM-Oracle>:[0;39;49m why cant we (reset inductor.. not like we can have more than 2 grafts
+[1;30m[[22;36m19[1;30m:[22;36m34[1;30m][0m [1;30mBadger <HM-Oracle>:[0;39;49m (refresh room rather
+[1;30m[[22;36m19[1;30m:[22;36m34[1;30m][0m [1;30mNightbreed <HM-Questor>:[0;39;49m so whats the turnaround on this area
+[1;30m[[22;36m19[1;30m:[22;36m35[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m so i realize after getting to the box room
+[1;30m[[22;36m19[1;30m:[22;36m35[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m there would probably have already been an update/revision to the eternal powers if they didn't completely ruin the wizards lives so much
+[1;30m[[22;36m19[1;30m:[22;36m35[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m even if you got inductor tag, there's no hostage
+[1;30m[[22;36m19[1;30m:[22;36m35[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m so maybe the box wouldn't work?
+[1;30m[[22;36m19[1;30m:[22;36m36[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m probably not
+[1;30m[[22;36m19[1;30m:[22;36m36[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i dunno mang, it's not like this happens every day, i smell a rat
+[1;30m[[22;36m19[1;30m:[22;36m36[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m since the box would need to be active
+[1;30m[[22;36m19[1;30m:[22;36m36[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m a big stinky dead rat
+[1;30m[[22;36m19[1;30m:[22;36m36[1;30m][0m [1;30mStout <HM-Oracle>:[0;39;49m box is prob still active if you have an inductor tag and no grafts
+[1;30m[[22;36m19[1;30m:[22;36m37[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m box activates for a limited time after untie tho
+[1;30m[[22;36m19[1;30m:[22;36m37[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m I bet whichever guild has that room watch that prevents (unload room from working dropped one into the maze
+[1;30m[[22;36m19[1;30m:[22;36m37[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m YAS
+[1;30m[[22;36m19[1;30m:[22;36m37[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m exactly what I was just saying in partychat esper
+[1;30m[[22;36m19[1;30m:[22;36m37[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m sounds plausible
+[1;30m[[22;36m19[1;30m:[22;36m37[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i have my pitchfork out back let me go get it
+[1;30m[[22;36m19[1;30m:[22;36m38[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m BURN THE WITCH
+[1;30m[[22;36m19[1;30m:[22;36m38[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m WHERE'S MAVERIK!?
+[1;30m[[22;36m19[1;30m:[22;36m38[1;30m][0m [1;30mPrism <HM-Oracle>:[0;39;49m WHERES NAMELESS
+[1;30m[[22;36m19[1;30m:[22;36m38[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m it's not my fault dammit!!
+[1;30m[[22;36m19[1;30m:[22;36m38[1;30m][0m [1;33mnewb Locrian [bard/133]:[0;39;49m those cyber mice are actually quite strong.
+[1;30m[[22;36m19[1;30m:[22;36m38[1;30m][0m [1;36m<ANGEL>:[0;39;49m Tehuti has returned to the front of the Cosmic War!
+[1;30m[[22;36m19[1;30m:[22;36m39[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m WHERE'S.... TARG or ZARTAN
+[1;30m[[22;36m19[1;30m:[22;36m39[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m lo siento mi amors
+[1;30m[[22;36m19[1;30m:[22;36m39[1;30m][0m [1;36m<ANGEL>:[0;39;49m Tehuti just linkdied!
+[1;30m[[22;36m19[1;30m:[22;36m40[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m perhaps someone can ask wizardfolk or kiki about this
+[1;30m[[22;36m19[1;30m:[22;36m40[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m i say we just rally the villagers and tar and feather whoever did it
+[1;30m[[22;36m19[1;30m:[22;36m40[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m no invites to inductor EVER AGAIN
+[1;30m[[22;36m19[1;30m:[22;36m40[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m it's fremen desert sandstorm power
+[1;30m[[22;36m19[1;30m:[22;36m41[1;30m][0m [1;30mMurmandamus <HM-Legend>:[0;39;49m that causes it
+[1;30m[[22;36m19[1;30m:[22;36m41[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m lies
+[1;30m[[22;36m19[1;30m:[22;36m41[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m that fades after 35 mins
+[1;30m[[22;36m19[1;30m:[22;36m41[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m and that's only if some pimp ass old fremen casts it
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m Time to start bootrunning inductor
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m It's not that bad of a solo, plenty have done it now!
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30mMarley <HM-Champion>:[0;39;49m don't threaten me with a good time
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Up for bids: Bihu Symbol.
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Xiu has requested 0 as the opening offer.
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30m[Auction] Xiu (blad) :[0;39;49m Breaking News: local mudder wears item all boot without maintenance, says "get that mic outa my face" when interviewed. film at 11.
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 0 from Esper(necr).  Do I hear 50?
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m hax
+[1;30m[[22;36m19[1;30m:[22;36m42[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 420 from Marley(bard).  Do I hear 470?
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 6,969 from Esper(necr).  Do I hear 7,108?
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m nothing to see here, just move along
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 6,969 going once!
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m ah, touche
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 12,345 from Marley(bard).  Do I hear 12,962?
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m take that!
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Esper (necr) :[0;39;49m I'm out!
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Esper (necr) :[0;39;49m too strongk
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 12,345 going once!
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 12,345 going twice!
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 15,000 from Nightbreed(necr).  Do I hear 16,500?
+[1;30m[[22;36m19[1;30m:[22;36m43[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m nuuuuuu
+[1;30m[[22;36m19[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 15,000 going once!
+[1;30m[[22;36m19[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m fkn NB
+[1;30m[[22;36m19[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 15,000 going twice!
+[1;30m[[22;36m19[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Nightbreed (necr) :[0;39;49m heh
+[1;30m[[22;36m19[1;30m:[22;36m44[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Sold to Nightbreed for 15,000 coins!
+[1;30m[[22;36m19[1;30m:[22;36m45[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m you completely ruined the whole feng shui
+[1;30m[[22;36m19[1;30m:[22;36m45[1;30m][0m [1;30m[Auction] Nightbreed (necr) :[0;39;49m well woosah my dude
+[1;30m[[22;36m19[1;30m:[22;36m46[1;30m][0m [1;30m[Auction] Marley (bard) :[0;39;49m i'm way ahead of you my homie
+[1;30m[[22;36m19[1;30m:[22;36m53[1;30m][0m [1;37mNightbreed flaps :[0;39;49m resetting secs if anyone interested
+[1;30m[[22;36m19[1;30m:[22;36m54[1;30m][0m [1;30mSer <HM-Seeker>:[0;39;49m take it it didnt work
+[1;30m[[22;36m19[1;30m:[22;36m54[1;30m][0m [1;30mScaf <HM-Oracle>:[0;39;49m sure didn't
+[1;30m[[22;36m19[1;30m:[22;36m56[1;30m][0m [1;30mMartyr <HM-Oracle>:[0;39;49m I saw maverick enter the maze
+[1;30m[[22;36m19[1;30m:[22;36m56[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m !!!!!
+[1;30m[[22;36m04[1;30m:[22;36m45[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 17!
+[1;30m[[22;36m05[1;30m:[22;36m05[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised power to 8!
+[1;30m[[22;36m05[1;30m:[22;36m25[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m ashen bound rolm to himself, probably wielding it, i believe he is hadrian
+[1;30m[[22;36m05[1;30m:[22;36m26[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Up for bids: A Length of Chain (enchanted).
+[1;30m[[22;36m05[1;30m:[22;36m26[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Xiu has requested 0 as the opening offer.
+[1;30m[[22;36m05[1;30m:[22;36m26[1;30m][0m [1;30m[Auction] Xiu (blad) :[0;39;49m let wimpy techbros try to block -this- chain!
+[1;30m[[22;36m05[1;30m:[22;36m27[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Got 0 from Mugen(gent).  Do I hear 50?
+[1;30m[[22;36m05[1;30m:[22;36m27[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 0 going once!
+[1;30m[[22;36m05[1;30m:[22;36m27[1;30m][0m [1;30m[Auction] Robert :[0;39;49m 0 going twice!
+[1;30m[[22;36m05[1;30m:[22;36m27[1;30m][0m [1;30m[Auction] Robert :[0;39;49m Sold to Mugen for 0 coins!
+[1;30m[[22;36m05[1;30m:[22;36m28[1;30m][0m [1;37mKrat flaps :[0;39;49m if you were born deft, what language do you think in ?
+[1;30m[[22;36m07[1;30m:[22;36m01[1;30m][0m [1;36mSally <.oO>:[0;39;49m lies :P i know.
+[1;30m[[22;36m07[1;30m:[22;36m33[1;30m][0m [1;37mAl shouts:[0;39;49m I WANNA SPEAK TO 3k's MANAGER!
+[1;30m[[22;36m07[1;30m:[22;36m33[1;30m][0m [1;37mFlaxen shouts:[0;39;49m k
+[1;30m[[22;36m07[1;30m:[22;36m33[1;30m][0m [1;37mApocalypse shouts:[0;39;49m Al, meet Hand.. talk..
+[1;30m[[22;36m07[1;30m:[22;36m49[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m yo
+[1;30m[[22;36m07[1;30m:[22;36m49[1;30m][0m [1;37m[Clan] Ephemeral :[0;39;49m yo!
+[1;30m[[22;36m07[1;30m:[22;36m55[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m hows everyone?
+[1;30m[[22;36m07[1;30m:[22;36m56[1;30m][0m [1;37m[Clan] Ephemeral :[0;39;49m another weekend come and gone. back to the grind
+[1;30m[[22;36m08[1;30m:[22;36m04[1;30m][0m [1;37mStormer flaps :[0;39;49m brail
+[1;30m[[22;36m08[1;30m:[22;36m59[1;30m][0m [1;37mToren flaps :[0;39;49m Did you guys know expired credit cards can still be charged?  Dropbox has been happily charging a card that expired three years ago.
+[1;30m[[22;36m09[1;30m:[22;36m00[1;30m][0m [1;37mMurmandamus flaps :[0;39;49m wish I could use expired cards
+[1;30m[[22;36m09[1;30m:[22;36m00[1;30m][0m [1;37mToren flaps :[0;39;49m Probably not in EU or places that have any sort of consumer protections, but fair game in the USA!
+[1;30m[[22;36m09[1;30m:[22;36m01[1;30m][0m [1;37mFrank flaps :[0;39;49m if the number is the same, and mm/yy code different yes.
+[1;30m[[22;36m09[1;30m:[22;36m01[1;30m][0m [1;37mFlaxen flaps :[0;39;49m I did not find any results for 'consumer protection'.  Did you mean 'consumer exploitation'?
+[1;30m[[22;36m09[1;30m:[22;36m03[1;30m][0m [1;37mGaidin flaps :[0;39;49m Did you sign up for a recurring subscription?  Sounds like it.  When there's a subscription authorization, you don't have to worry about updating expired cards.  Authorization will stay until you cancel it.
+[1;30m[[22;36m09[1;30m:[22;36m03[1;30m][0m [1;37mToren flaps :[0;39;49m Well, what I've come to learn is that there's just higher processing fees if you exclude that information (like expiraiton date/CVV/billing address)
+[1;30m[[22;36m09[1;30m:[22;36m03[1;30m][0m [1;37mToren flaps :[0;39;49m Of course, what isn't a subscription these days
+[1;30m[[22;36m09[1;30m:[22;36m03[1;30m][0m [1;37m[Clan] Marley :[0;39;49m ugh my network adapter went out last night
+[1;30m[[22;36m09[1;30m:[22;36m04[1;30m][0m [1;37mToren flaps :[0;39;49m Maybe I'm in the minority, but I find it highly unethical on both sides.
+[1;30m[[22;36m09[1;30m:[22;36m05[1;30m][0m [1;37mGaidin flaps :[0;39;49m So you canceled it but they still charged?
+[1;30m[[22;36m09[1;30m:[22;36m05[1;30m][0m [1;37mToren flaps :[0;39;49m I have no idea what I did in 2019
+[1;30m[[22;36m09[1;30m:[22;36m05[1;30m][0m [1;37mToren flaps :[0;39;49m But I went through the cancel process yesterday and it took 4 different screens/confirmations of me doing "CAncel my account"
+[1;30m[[22;36m09[1;30m:[22;36m06[1;30m][0m [1;37mToren flaps :[0;39;49m So, how many times do I have to cancel before it's cancelled?
+[1;30m[[22;36m09[1;30m:[22;36m06[1;30m][0m [1;37mGaidin flaps :[0;39;49m Apparently at least once.
+[1;30m[[22;36m09[1;30m:[22;36m07[1;30m][0m [1;37mPdog flaps :[0;39;49m i don't even know what i did last night
+[1;30m[[22;36m09[1;30m:[22;36m07[1;30m][0m [1;37mToren flaps :[0;39;49m I'm still not able to remove my credit card from the site - that has been "escalated to a specialty team".
+[1;30m[[22;36m09[1;30m:[22;36m15[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m anyone using mace?
+[1;30m[[22;36m09[1;30m:[22;36m19[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m rolm count?
+[1;30m[[22;36m09[1;30m:[22;36m20[1;30m][0m [1;37m[Clan] Nightrider :[0;39;49m i have maul
+[1;30m[[22;36m09[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m i just found 2 x +2 mace rohs
+[1;30m[[22;36m09[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Nightrider :[0;39;49m i think rolm is a mace
+[1;30m[[22;36m09[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m rolm is whatever rune you're using
+[1;30m[[22;36m09[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m so, star/crown are mace iirc offhand
+[1;30m[[22;36m09[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m all of the other runes are not mace
+[1;30m[[22;36m09[1;30m:[22;36m21[1;30m][0m [1;37m[Clan] Nightrider :[0;39;49m ok
+[1;30m[[22;36m09[1;30m:[22;36m22[1;30m][0m [1;30mNightrider <HM-Legend>:[0;39;49m if cali going to get flooded they shoukd move that water to the hoover dam
+[1;30m[[22;36m09[1;30m:[22;36m22[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m for instance, when i use it on kenny, i typically use dragon rune, because that benefits from sword mskill which i have maxed and can further boost with erah reps
+[1;30m[[22;36m09[1;30m:[22;36m22[1;30m][0m [1;30mNightrider <HM-Legend>:[0;39;49m problem solved
+[1;30m[[22;36m09[1;30m:[22;36m23[1;30m][0m [1;30mHoosegow <HM-Titan>:[0;39;49m I thought cali was having like a century long drought...
+[1;30m[[22;36m09[1;30m:[22;36m23[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m is there anyone that thinks cali is in peril of flooding rather than droughts?
+[1;30m[[22;36m09[1;30m:[22;36m23[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m i prefer draughts
+[1;30m[[22;36m09[1;30m:[22;36m23[1;30m][0m [1;30mHoosegow <HM-Titan>:[0;39;49m They just need to make up their minds.
+[1;30m[[22;36m09[1;30m:[22;36m23[1;30m][0m [1;30mHeimdall <HM-Sage>:[0;39;49m did they rake the leaves though?
+[1;30m[[22;36m09[1;30m:[22;36m23[1;30m][0m [1;37mPdog gshouts:[0;39;49m 3scapes is rebooting!
+[1;30m[[22;36m09[1;30m:[22;36m23[1;30m][0m [1;30mNightrider <HM-Legend>:[0;39;49m Wonder if voodoo is wear pants
+[1;30m[[22;36m09[1;30m:[22;36m24[1;30m][0m [1;30mHoosegow <HM-Titan>:[0;39;49m His pants were sent to cali to help soak up the floodwaters
+[1;30m[[22;36m09[1;30m:[22;36m24[1;30m][0m [1;30mVoodoo <HM-Questor>:[0;39;49m no pants, no problem
+[1;30m[[22;36m09[1;30m:[22;36m29[1;30m][0m [1;30mTaleast <HM-Herald>:[0;39;49m The year is 2130. Voodoo's mind has been merged with an advanced A.I. and uploaded into a satellite, which has taken over the global infrastructure. On his decree, all Pay-Day Loan locations are transitioned into Pants-Day Loans, which will pay you for your pants. The pants are then incinerated to create a low-grade fog for his Voodoo, The Great and Powerful smoke machines.
+[1;30m[[22;36m09[1;30m:[22;36m29[1;30m][0m [1;30mTaleast <HM-Herald>:[0;39;49m or something
+[1;30m[[22;36m09[1;30m:[22;36m30[1;30m][0m [1;30mTaleast <HM-Herald>:[0;39;49m you can probably tell when I'm trying to avoid doing work
+[1;30m[[22;36m09[1;30m:[22;36m31[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m In a world... FULL of pants. One man DARES to BARE it all. This summer, get ready for The Three Legged Man!
+[1;30m[[22;36m09[1;30m:[22;36m32[1;30m][0m [1;30mWhoknows <HM-Legend>:[0;39;49m stop using binoculars as glasses, you can clearly see it's a neutered dood
+[1;30m[[22;36m09[1;30m:[22;36m38[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m i don't remember the conversation last night, but i decided that someone must have dropped an anchor in the maze
+[1;30m[[22;36m09[1;30m:[22;36m38[1;30m][0m [1;30mEsper <HM-Oracle>:[0;39;49m You can't drop an anchor in the maze
+[1;30m[[22;36m09[1;30m:[22;36m39[1;30m][0m [1;30mToren <HM-Oracle>:[0;39;49m I'll drop anchor where I please
+[1;30m[[22;36m09[1;30m:[22;36m39[1;30m][0m [1;30mPdog <HM-Crusader>:[0;39;49m oh, well scratch that idea then :p
+[1;30m[[22;36m09[1;30m:[22;36m39[1;30m][0m [1;30mHadrian <HM-Herald>:[0;39;49m i would be an anchor if someone put me in the maze
+[1;30m[[22;36m09[1;30m:[22;36m43[1;30m][0m [1;37mKrat flaps :[0;39;49m lol at this email I got this morning: As most of you know (except new employees) at our annual Christmas Party we had raffle prizes, and the IRS mandates that we have to tax certain gifts. All premium and/or cash gifts (including gift cards $25 or more) must be included as income.  This will be reported under “Taxable Fringe Benefit” or “Other Earnings” on your pay, and you will have to pay the tax on the gift.  This will be reflected on your next pay check.
+[1;30m[[22;36m09[1;30m:[22;36m44[1;30m][0m [1;37mTurnhold flaps :[0;39;49m ayup
+[1;30m[[22;36m09[1;30m:[22;36m44[1;30m][0m [1;37mKichi flaps :[0;39;49m o.o
+[1;30m[[22;36m09[1;30m:[22;36m44[1;30m][0m [1;37mTurnhold flaps :[0;39;49m hospital i used to work at gave us a gift certificate to a local butcher shop/grocery store, and on your last paycheck of the yeah, its listed as "Other Earnings"
+[1;30m[[22;36m09[1;30m:[22;36m45[1;30m][0m [1;37mVasha flaps :[0;39;49m its stupid, but anything over $25 has to be reported to the irs..
+[1;30m[[22;36m09[1;30m:[22;36m45[1;30m][0m [1;37mKrat flaps :[0;39;49m No BigMac too big, No donut handout too small !
+[1;30m[[22;36m09[1;30m:[22;36m45[1;30m][0m [1;37mKsyraan flaps :[0;39;49m there's ways around it....but stinks that they can fall into the "bonus" category and get taxed at the outrageous rate that bonuses are taxed at
+[1;30m[[22;36m09[1;30m:[22;36m46[1;30m][0m [1;37mKsyraan flaps :[0;39;49m the classy thing to do would be to gross up to cover/offset the tax
+[1;30m[[22;36m09[1;30m:[22;36m47[1;30m][0m [1;37mSquirrel flaps :[0;39;49m Phone call incoming: Arrest warrant issued for you please answer and send gift cards
+[1;30m[[22;36m09[1;30m:[22;36m47[1;30m][0m [1;37mKrat flaps :[0;39;49m I just never realized the limit was 20 bucks, or that low really
+[1;30m[[22;36m09[1;30m:[22;36m49[1;30m][0m [1;37mToren flaps :[0;39;49m Just get paid in coins
+[1;30m[[22;36m09[1;30m:[22;36m49[1;30m][0m [1;37mFlaxen flaps :[0;39;49m bitcoin isn't taxable becuase it's not real
+[1;30m[[22;36m09[1;30m:[22;36m50[1;30m][0m [1;37mKsyraan flaps :[0;39;49m by that logic, neither is the dollar. :P
+[1;30m[[22;36m09[1;30m:[22;36m59[1;30m][0m [1;37mFlaxen flaps :[0;39;49m I can hold a dollar
+[1;30m[[22;36m10[1;30m:[22;36m00[1;30m][0m [1;37mFlaxen flaps :[0;39;49m dur
+[1;30m[[22;36m10[1;30m:[22;36m00[1;30m][0m [1;37mFlaxen flaps :[0;39;49m ;)
+[1;30m[[22;36m10[1;30m:[22;36m04[1;30m][0m [1;37mZethrak flaps :[0;39;49m but first you have to have a dollar to hold.
+[1;30m[[22;36m10[1;30m:[22;36m20[1;30m][0m [1;37mFlaxen flaps :[0;39;49m FIVE DOLLAH
+[1;30m[[22;36m10[1;30m:[22;36m21[1;30m][0m [1;37mWhoknows flaps :[0;39;49m makes someone holla?
+[1;30m[[22;36m10[1;30m:[22;36m21[1;30m][0m [1;37mFlaxen flaps :[0;39;49m I want by baby back baby back baby back ribs
+[1;30m[[22;36m10[1;30m:[22;36m24[1;30m][0m [1;37mFlaxen flaps :[0;39;49m I have social plans for 4 out of 5 weeknights :(
+[1;30m[[22;36m10[1;30m:[22;36m25[1;30m][0m [1;37mFlaxen flaps :[0;39;49m kill me now
+[1;30m[[22;36m10[1;30m:[22;36m25[1;30m][0m [1;37mHoosegow flaps :[0;39;49m eww.  social what?
+[1;30m[[22;36m10[1;30m:[22;36m26[1;30m][0m [1;37mFlaxen flaps :[0;39;49m zoom call with friends tonight, dinner with wife tomorrow night, dnd wed night (I'm DMing), dnd thu night (I'm playing)
+[1;30m[[22;36m10[1;30m:[22;36m29[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised engage to 12!
+[1;30m[[22;36m10[1;30m:[22;36m29[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 18!
+[1;30m[[22;36m10[1;30m:[22;36m31[1;30m][0m [1;37mPlankton flaps :[0;39;49m I understand your pain. I have two social events on this week and I'm questioning if I'm overbooked. :P
+[1;30m[[22;36m10[1;30m:[22;36m31[1;30m][0m [1;32m[PARTY] Lost our leader![0;39;49m
+[1;30m[[22;36m10[1;30m:[22;36m31[1;30m][0m [1;32m[PARTY] New leader for the party:[0;39;49m krat.
+[1;30m[[22;36m10[1;30m:[22;36m39[1;30m][0m [1;36mKrat <.oO>:[0;39;49m Does the eternal continuity also affect other guild cooldowns? Or just its own? Say like, hmblast, or a monks' ancient energy accrual
+[1;30m[[22;36m10[1;30m:[22;36m39[1;30m][0m [1;37mKyoujin[0m: just eternal powers
+[1;30m[[22;36m10[1;30m:[22;36m39[1;30m][0m [1;36mMerrick <.oO>:[0;39;49m only eternal stuff
+[1;30m[[22;36m10[1;30m:[22;36m39[1;30m][0m [1;36mTaleast <.oO>:[0;39;49m just epowers
+[1;30m[[22;36m10[1;30m:[22;36m39[1;30m][0m [1;37mTo Kyoujin[0m: you thank Kyoujin.
+[1;30m[[22;36m10[1;30m:[22;36m39[1;30m][0m [1;36mLeibniz <.oO>:[0;39;49m It's only internal to eternals
+[1;30m[[22;36m10[1;30m:[22;36m40[1;30m][0m [1;36mKrat <.oO>:[0;39;49m thanks, I kind of figured
+[1;30m[[22;36m10[1;30m:[22;36m41[1;30m][0m [1;37mTurnhold flaps :[0;39;49m Wife made me go out saturday to a movie(avatar2, 3hrs14 minutes) with one set of friends. THEN we drove an hour from there, to go eat dinner with another set of friends, then went to a rodeo.
+[1;30m[[22;36m10[1;30m:[22;36m41[1;30m][0m [1;37mTurnhold flaps :[0;39;49m I think she wants a divorce:/
+[1;30m[[22;36m10[1;30m:[22;36m42[1;30m][0m [1;37mHoosegow flaps :[0;39;49m That sounds like work...
+[1;30m[[22;36m10[1;30m:[22;36m42[1;30m][0m [1;37mHoosegow flaps :[0;39;49m actually, work sounds better
+[1;30m[[22;36m10[1;30m:[22;36m42[1;30m][0m [1;37mSally flaps :[0;39;49m sounds like you rode the bull
+[1;30m[[22;36m10[1;30m:[22;36m42[1;30m][0m [1;37mZorge flaps :[0;39;49m I went to a catle drive yesterday!
+[1;30m[[22;36m11[1;30m:[22;36m12[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m looks like nohearts corpse is even better than queen of hearts?
+[1;30m[[22;36m11[1;30m:[22;36m12[1;30m][0m [1;37m[Clan] Pdog :[0;39;49m noice
+[1;30m[[22;36m11[1;30m:[22;36m36[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised accuracy to 8!
+[1;30m[[22;36m11[1;30m:[22;36m53[1;30m][0m [1;37mHaggan shouts:[0;39;49m No Coke, Pepsi
+[1;30m[[22;36m12[1;30m:[22;36m01[1;30m][0m [1;37mWhoknows shouts:[0;39;49m both tastes nasty
+[1;30m[[22;36m12[1;30m:[22;36m03[1;30m][0m [1;37mMotivation shouts:[0;39;49m that's what she said
+[1;30m[[22;36m12[1;30m:[22;36m10[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m anyone familiar with georgism? sounds good in theory, but i'm wondering why existing land owners wouldn't fight it coming into practice
+[1;30m[[22;36m12[1;30m:[22;36m14[1;30m][0m [1;30mKyoujin <HM-Seeker>:[0;39;49m george likes ether
+[1;30m[[22;36m12[1;30m:[22;36m14[1;30m][0m [1;30mMaverik <HM-Champion>:[0;39;49m anyone with an alt with dungeon reset wanna do a trade?:)
+[1;30m[[22;36m12[1;30m:[22;36m17[1;30m][0m [1;30mNightrider <HM-Legend>:[0;39;49m i woukd but busy atm
+[1;30m[[22;36m12[1;30m:[22;36m32[1;30m][0m [1;30mEnder <HM-Sage>:[0;39;49m anyone need a sz reset?
+[1;30m[[22;36m12[1;30m:[22;36m32[1;30m][0m [1;30mEnder <HM-Sage>:[0;39;49m cabinet 1m:)
+[1;30m[[22;36m12[1;30m:[22;36m34[1;30m][0m [1;30mKrat <HM-Herald>:[0;39;49m they did fight it?
+[1;30m[[22;36m12[1;30m:[22;36m50[1;30m][0m [1;37m[Clan] Krat :[0;39;49m ugh this is gonna be a grind
+[1;30m[[22;36m12[1;30m:[22;36m59[1;30m][0m [1;36m<- ! The Vigilant ! -> :[0;39;49m  A destabilization Kayos event has been detected in Deserts of Fantasy!  We are localizing it now - get ready!
+[1;30m[[22;36m13[1;30m:[22;36m02[1;30m][0m [1;36m<- ! 5m ! -> :[0;39;49m  The Vigilant report that they're getting close to stabilizing the portal.  Soldiers be ready!
+[1;30m[[22;36m13[1;30m:[22;36m07[1;30m][0m [1;36m<- !!! -> :[0;39;49m The portal has been stabilized!  Make your way to Deserts of Fantasy and assault the forces of Kayos!
+[1;30m[[22;36m13[1;30m:[22;36m15[1;30m][0m [1;37mZethrak flaps :[0;39;49m anyone play the modded out mech warrior 5 game? if yes, can you capture planets for your faction, affecting the campaign galactic map?
+[1;30m[[22;36m13[1;30m:[22;36m17[1;30m][0m [1;37mSquirrel flaps :[0;39;49m original populus on pc xbox/ea pass
+[1;30m[[22;36m13[1;30m:[22;36m17[1;30m][0m [1;37mScaf flaps :[0;39;49m my tanking stamina isn't the best
+[1;30m[[22;36m13[1;30m:[22;36m17[1;30m][0m [1;37mScaf flaps :[0;39;49m wl
+[1;30m[[22;36m13[1;30m:[22;36m39[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m reset is ~2.1bil
+[1;30m[[22;36m13[1;30m:[22;36m39[1;30m][0m [1;37m[Clan] Mugen :[0;39;49m wl
+[1;30m[[22;36m13[1;30m:[22;36m55[1;30m][0m [1;37mGumby shouts:[0;39;49m not GUM ... I am gumby, damn it!
+[1;30m[[22;36m13[1;30m:[22;36m57[1;30m][0m [1;36mMaverik <.oO>:[0;39;49m zomgwtfbbqBOOM
+[1;30m[[22;36m14[1;30m:[22;36m54[1;30m][0m [1;37mHaggan shouts:[0;39;49m Woot!
+[1;30m[[22;36m14[1;30m:[22;36m54[1;30m][0m [1;37mMaverik shouts:[0;39;49m Syncro letters!
+[1;30m[[22;36m14[1;30m:[22;36m54[1;30m][0m [1;37mFluffy shouts:[0;39;49m stuff about stuff!
+[1;30m[[22;36m15[1;30m:[22;36m16[1;30m][0m [1;30mMugen <HM-Oracle>:[0;39;49m i might install WoW again... talk me off the cliff
+[1;30m[[22;36m15[1;30m:[22;36m17[1;30m][0m [1;30mAdalius <HM-Archon>:[0;39;49m Playing it now, so... no?
+[1;30m[[22;36m15[1;30m:[22;36m17[1;30m][0m [1;30mMotivation <HM-Sleuth>:[0;39;49m think about your beautiful wife and kids and your amazing job
+[1;30m[[22;36m15[1;30m:[22;36m17[1;30m][0m [1;30mMugen <HM-Oracle>:[0;39;49m is it a good expansion? do I want to be the new dragon race?
+[1;30m[[22;36m15[1;30m:[22;36m17[1;30m][0m [1;30mAdalius <HM-Archon>:[0;39;49m Just started the new dragon race literally 5 minutes ago, but played my biggest char in the xpac for a couple weeks now. I enjoy it. Flying dragons is fun.
+[1;30m[[22;36m15[1;30m:[22;36m18[1;30m][0m [1;30mMugen <HM-Oracle>:[0;39;49m I do like fun...
+[1;30m[[22;36m15[1;30m:[22;36m18[1;30m][0m [1;30mAdalius <HM-Archon>:[0;39;49m I've never done heroic/mythic crap, usually lose interest before that, so I cant comment on that stuff
+[1;30m[[22;36m15[1;30m:[22;36m18[1;30m][0m [1;30mMugen <HM-Oracle>:[0;39;49m I prefer more of the solo content myself
+[1;30m[[22;36m15[1;30m:[22;36m19[1;30m][0m [1;30mAdalius <HM-Archon>:[0;39;49m thats pretty much how I am. Was in a nice guild until Turnhold kicked me out.
+[1;30m[[22;36m15[1;30m:[22;36m19[1;30m][0m [1;30mKyoujin <HM-Seeker>:[0;39;49m better off not playing an mmo for that
+[1;30m[[22;36m15[1;30m:[22;36m30[1;30m][0m [1;30mMugen <HM-Oracle>:[0;39;49m WoW is sending me on a quest to light the Beacon of Turnhold?
+[1;30m[[22;36m15[1;30m:[22;36m38[1;30m][0m [1;30mLocrian <HM-Oracle>:[0;39;49m light it up!
+[1;30m[[22;36m15[1;30m:[22;36m41[1;30m][0m [1;37mFlaxen shouts:[0;39;49m eat my farts
+[1;30m[[22;36m15[1;30m:[22;36m43[1;30m][0m [1;30mTurnhold <HM-Solar>:[0;39;49m You called?
+[1;30m[[22;36m15[1;30m:[22;36m45[1;30m][0m [1;30mTurnhold <HM-Solar>:[0;39;49m lightsabers
+[1;30m[[22;36m15[1;30m:[22;36m45[1;30m][0m [1;30mTurnhold <HM-Solar>:[0;39;49m sith
+[1;30m[[22;36m15[1;30m:[22;36m45[1;30m][0m [1;30mTurnhold <HM-Solar>:[0;39;49m darkside that actually has cookies!
+[1;30m[[22;36m15[1;30m:[22;36m46[1;30m][0m [1;30mKikipopo <HM-Archon>:[0;39;49m Oh, I did not.
+[1;30m[[22;36m15[1;30m:[22;36m46[1;30m][0m [1;37mZethrak shouts:[0;39;49m D:
+[1;30m[[22;36m16[1;30m:[22;36m01[1;30m][0m [1;30mMugen <HM-Oracle>:[0;39;49m any of you crazies work at Deloitte?
+[1;30m[[22;36m16[1;30m:[22;36m05[1;30m][0m [1;36m<ANGEL>:[0;39;49m Krat just raised block to 19!
+[1;30m[[22;36m16[1;30m:[22;36m08[1;30m][0m [1;30mAdalius <HM-Archon>:[0;39;49m He asked at the start of tax season when they're probably all buried in their paperwork caverns.
+[1;30m[[22;36m16[1;30m:[22;36m08[1;30m][0m [1;30mMugen <HM-Oracle>:[0;39;49m well they do more than taxes...
+[1;30m[[22;36m16[1;30m:[22;36m08[1;30m][0m [1;30mAdalius <HM-Archon>:[0;39;49m Not from 1/1-4/15 :D

@@ -554,6 +554,25 @@ mapoff;
 {
 	#var found[gold] 0;
 }
+
+/*************************************************************************
+	Detect monster rating
+*************************************************************************/
+#action {^Monster class: %d}
+{
+	#var event[rating] %1;
+};
+
+#action {Monster class: Really Big \(%d\)} 
+{
+	#var event[rating] %1; 
+};
+
+#action {Your dungeon scaler is currently set to level: %1}
+{
+	#var scaler %1;
+};
+
 /************************************************************
 	If we are looking and glancing, lets not waste an 
 	opportunity to clear our data

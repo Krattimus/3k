@@ -50,7 +50,7 @@
 	#read 3k/TinTin/Controllers/Miner.tin;
 	
 	#NOP { *********** Vaf Addons ************ };
-	#read 3k/TinTin/Vaf/Damage.tin;
+	#NOP { #read 3k/TinTin/Vaf/Damage.tin };
 
 	#NOP { *********** Tools ************ };
 	#read 3k/TinTin/Core/Logger.tin;

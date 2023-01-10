@@ -20,6 +20,8 @@
     #if { @startsWith{{%0}{A bright shiny button that}} } { #return 1; };    
     #if { @startsWith{{%0}{Tactician's Manual}} } { #return 1; };    
     #if { @startsWith{{%0}{Social Network Device}} } { #return 1; };    
+    #if { @startsWith{{%0}{Spark of the Divine}} } { #return 1; };    
+    #if { @startsWith{{%0}{Safari Hat}} } { #return 1; };    
     
     #return 0;
 };

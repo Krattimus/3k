@@ -27,6 +27,23 @@
 	} {%1};
 };
 
+
+/*************************************************************************
+	Captures all text for a period of time... 
+*************************************************************************/
+#alias .captureFor 
+{
+	#class inventoryhelper kill;
+
+	#var capturedText {};	
+	#read 3k/TinTin/Core/CaptureAll.tin;
+	#delay {backup_kill}
+	{
+		#CLASS {capture} {kill};
+		#delay {0} {%2;};
+	} {%1};
+};
+
 /*************************************************************************
 	Captures all text until a grep is matched
 *************************************************************************/
@@ -39,7 +56,7 @@
 	#delay {backup_kill}
 	{
 		#UNACTION {%1};
-	} {1};
+	} {2};
 
 	#delay {create_capture} 
 	{

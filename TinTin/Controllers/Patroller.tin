@@ -73,7 +73,7 @@
 	#if { "$controllers[toStart]" == "$patroller[controllerID]" }
 	{
 		#showme {<202> Going to patrol [$patrols[$currentPatrolID]]  <088>};
-		go $patrols[$currentPatrolID];
+		.go $patrols[$currentPatrolID];
 	};
 };
 
@@ -210,7 +210,8 @@
 	{
         #foreach {*patrol[shouldKillList][]} {index}
         {
-            #REGEXP {"$event[foundMobName]"} {"%*$index%*"} { 
+            #REGEXP {"$event[foundMobName]"} {"%*$index%*"} 
+			{ 
 				#var patroller[shouldKill] $patrol[shouldKillList][$index]; 
 				#var patroller[canWalk] 0;
 			};

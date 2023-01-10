@@ -9,7 +9,7 @@
 
 #BUTTON {18 61 20 68} 
 {
-	go cot;
+	.go cot;
 } {5};
 
 #button {18 88 20 95}

@@ -34,7 +34,7 @@
 		#var traveller[isTravelling] 1;
 
 		#showme trying to [go %1];
-		go %1;
+		.go %1;
 	};
 };
 

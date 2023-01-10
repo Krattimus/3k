@@ -1,19 +1,44 @@
 #showme READING Logger.TIN
 #class {logger} {open}
 
+#var logger[isLogging] 0;
+#list logger[items] create;
 
 .registerEvent onMobKilled onMobKilledLogger;
 .registerEvent onItemTaken onItemTakenLogger;
+.registerEvent onMobAttacked onMobAttackedLogger;
 
 /*************************************************************************
 	Send combat data to mysql
 *************************************************************************/
-#alias .logToDatabase
+#alias onMobAttackedLogger
 {
-	#map get {roomvnum} {currentRoom};
-	#var recordedMobName $dmg[mob];
-	#var capturedText {Autokill};
-	#delay {0.2} { .logMobToDB {$dmg[mob]} {$currentRoom} {$area}; };
+	#send !consider;
+};
+
+/*************************************************************************
+	Auto log locations & Descriptions of all items grabbed
+*************************************************************************/
+#alias {onItemTakenLogger}
+{
+	#if { $allowRecording && !$patroller[isPatrolling] }
+	{
+		#if { !@containsNoCase{{%1}{coins}} && !@containsNoCase{{%1}{corpse}} }
+		{
+			#list {logger[items]} {add} {$event[itemTaken]};
+			.logItemToDB {$event[itemTaken]};
+		};
+	};
+};
+
+/**************************************************************
+    Auto log mobs when we kill them
+**************************************************************/
+#alias {onMobKilledLogger}
+{
+	#var allowRecording 1;
+	#delay 1.5 {#var allowRecording 0;};
+	.logKillToDatabase;
 };
 
 /**************************************************************
@@ -71,47 +96,21 @@
 };
 
 /**************************************************************
-	Logs a mob
-**************************************************************/
-#alias .noteMob
-{
-	#send consider;
-	#map get {roomvnum} {currentRoom};
-	#var rejectRoomID 0;
-	
-	#var recordedMobName %0;
-	#delay {1} { .logMobToDB {%0} {$currentRoom} {$area}; };
-};
-
-/**************************************************************
-	Logs where an item was found in the database
-**************************************************************/
-#alias .noteItems
-{
-	#map get {roomvnum} {currentRoom};
-	#var rejectRoomID 0;
-	noteItemIndexed 1;
-};
-
-/**************************************************************
-	Logs whatever "item" at the location you are in
-**************************************************************/
-#alias {.noteItem}
-{
-	#map get {roomvnum} {currentRoom};
-	#var rejectRoomID 0;
-	#var recordedItemName %0;
-	.logItemToDB {%0} {$currentRoom} {$area}; 
-};
-
-/**************************************************************
     Save the map file of the area to file
 **************************************************************/
-#alias {.logMap %1 %2}
+#alias .describeMap
 {
-	#line logmode html #map map %1 %2 O map.html;
+	#local width %1;
+	#local height %;
+
+	#if { "%1" == "" }
+	{
+		#local width 200;
+		#local height 200;
+	}
+	#line logmode html #map map $height $width O map.html;
 	#map flag asciivnums on;
-	#line logmode html #map map %1 %2 O mapIDs.html;
+	#line logmode html #map map $height $width O mapIDs.html;
 	#map flag asciivnums off;
 
 	.describeItems;
@@ -119,93 +118,96 @@
 	.describeInterests;
 };
 
-#alias {.logMobToDB}
+/**************************************************************
+	Manual command
+**************************************************************/
+#alias .noteMob
 {
-	#send look at %1;
-	.captureUntil {^>$} {onMobDescriptionRead};
+	#send !consider;
+	#delay {1} { .logMobToDB {%0}; };
+};
+
+
+/**************************************************************
+	Logs whatever "item" at the location you are in
+**************************************************************/
+#alias {.noteItem}
+{
+	.logItemToDB {%0};
 };
 
 /**************************************************************
-    Auto log mobs when we kill them
+	Triggers logging process
 **************************************************************/
-#alias {onMobKilledLogger}
+#alias {.logMobToDB}
 {
-	#var allowRecording 1;
-	#delay 1.5 {#var allowRecording 0;};
+	#var logger[isLogging] 1;
+	#var capturedText {NA};
+	#var recordedMobName %0;
+	#send look at %1;
+	.captureFor 2 {onMobDescriptionRead};
 };
 
+/**************************************************************
+	Triggers logging process
+**************************************************************/
+#alias {.logItemToDB}
+{
+	#if { !$logger[isLogging] }
+	{
+		#var logger[isLogging] 1;
+		#var capturedText {NA};
+		#var recordedItemName %1;
+		#send look at %1;
+		.captureFor 2 {onItemDescriptionRead};
+	};
+};
 
+/**************************************************************
+	Send to database
+**************************************************************/
 #alias {onMobDescriptionRead}
 {
 	#if { !$patroller[isPatrolling] }
 	{
-		#script {python3 3k/TinTin/Tools/mobLogger.py "$recordedMobName" "$capturedText" "$currentRoom" "$area" "$dmg[rating]"};
+		#script {python3 3k/TinTin/Tools/mobLogger.py "$recordedMobName" "$capturedText" "$currentRoomID" "$area" "$event[rating]"};
+		#var logger[isLogging] 0;
+		.checkItemBacklog;
 	};
 };
 
+/**************************************************************
+	Send to database
+**************************************************************/
 #alias {onItemDescriptionRead}
 {
 	#if { !$patroller[isPatrolling] }
 	{
-		#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
+		#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoomID" "$area"};
+		#var logger[isLogging] 0;
+
+		#list {logger[items]} {delete} {1};
+		.checkItemBacklog;
 	};
 }
 
-#alias {onItemTakenLogger}
+#alias .checkItemBacklog
 {
-	#if { $allowRecording && !$patroller[isPatrolling] }
+	#if { @getNumElements{logger[items]} > 0 }
 	{
-		#var rejectRoomID $currentRoom;
-		#map get {roomvnum} {currentRoom};
-		#var recordedItemName $event[itemTaken];
-				
-		#delay {1} 
-		{
-			.logItemToDB {$recordedItemName} {$currentRoom} {$area};
-		};
+		.logItemToDB $logger[items][1];
 	};
 };
 
-
-
-#alias {noteItemIndexed}
-{
-	#local items $event[items];
-	#var itemIndex %1;
-	#if { $itemIndex <= @getNumElements{items} }
-	{
-		#var itemToRecord $items[$itemIndex];
-		#if { "$itemToRecord" != "" }
-		{
-			#local delayAmt 0;
-			#math {delayAmt} {($itemIndex-1)*2};
-			#delay {itemRecorder} 
-			{
-				#var recordedItemName $itemToRecord;
-				 .logItemToDB {$itemToRecord} {$currentRoom} {$area}; 
-				 #math {itemIndex} {$itemIndex+1};
-				noteItemIndexed $itemIndex;
-			} {$delayAmt};
-		};
-	};
-};
-
-#alias {onItemDescriptionRead}
+/**************************************************************
+	Send to database
+**************************************************************/
+#alias .logKillToDatabase
 {
 	#if { !$patroller[isPatrolling] }
 	{
-		#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoom" "$area"};
-	};
-}
-
-#alias {.logItemToDB}
-{
-	#if { !@containsNoCase{{%1}{coins}} && !@containsNoCase{{%1}{corpse}} }
-	{
-		#send look at %1;
-		.captureUntil {^>$} {onItemDescriptionRead};
+		#script {python3 3k/TinTin/Tools/mobLogger.py "$event[mobKilled]" "NA" "$currentRoomID" "$area" "$event[rating]"};
 	};
 };
-
 
 #class {logger} {close}

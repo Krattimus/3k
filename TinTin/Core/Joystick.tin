@@ -35,7 +35,7 @@
 #var joystick[action][7] kill $event[foundMobName];
 #var joystick[action][8] showJoystickMapping;
 #var joystick[action][9] 0;
-#var joystick[action][10] go cot;
+#var joystick[action][10] .go cot;
 #var joystick[action][11] portal;
 #var joystick[action][12] enter;
 #var joystick[action][13] i;

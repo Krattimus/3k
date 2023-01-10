@@ -101,7 +101,9 @@
 {
 	#map get {roomvnum} {roomID};
 	#var event[enteredRoomID] $roomID;
+	#var currentRoomID $roomID;
 	#map set roomid 1;
+	
 	.triggerEvent onEnteredRoom;
 }
 
@@ -343,7 +345,7 @@ The area has changed
 /*************************************************************
 	Map actions
 *************************************************************/
-#alias {go} 
+#alias {.go} 
 {
 	#if { "%1" == "%d" }
 	{
@@ -355,7 +357,7 @@ The area has changed
 	};
 }
 
-#alias {mapgo} {#map goto {roomnote} {%0}}
+#alias {.mapGo} {#map goto {roomnote} {%0}}
 
 /**************************************************************
         See if we can locate ourselves on the map
@@ -417,6 +419,65 @@ The area has changed
 
 	#map go $original;
 };
+
+#alias .mapLastRoom 
+{ 
+	#if { "%2" != "" }
+	{
+		#map link {%1} $lastRoomID;
+		#map exit {%1} command {%2};
+	};
+	#else
+	{
+		#map link {%1} $lastRoomID;
+	};
+};
+
+/*****************************************************************************
+	Links a custom command to a direciton
+		exmapl: .mapCommand n flee
+*****************************************************************************/
+#alias .mapCommand 
+{
+        #if { @containsNoCase{ {%2} {\;} } }
+        {
+                #map at $currentRoomID #map get all {roomdata};
+                #var exitID $roomdata[exits][%1];
+
+                #if { "$exitID" == "" }
+                {
+                        #map dig {%1};
+                };
+
+                #map exit {%1} command {%2};	
+        };
+        #else
+        {
+                #map {get} {ROOMVNUM} {currentRoomID};
+                #map at $currentRoomID #map get all {roomdata};
+
+                #var exitID $roomdata[exits][%2];
+
+                #if { "$exitID" != "" }
+                {
+                        #map link {%1} $exitID;
+                        #map exit {%1} command {%2};
+                };
+                #else
+                {
+                        #map dig {%2};
+                        #map at $currentRoomID #map get all {roomdata};
+                        #var exitID $roomdata[exits][%2];
+
+                        #map link {%1} $exitID;
+                        #map exit {%1} command {%2};
+
+                };
+        };
+};
+
+
+
 
 /*****************************************************************************
 	Search map for rooms that have a substring in their long descriptions

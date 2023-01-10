@@ -96,7 +96,7 @@
 
         #delay {corpse_sell} 
         {
-                go morgue;
+                .go morgue;
                 donate coffin;
         } {1};
 
@@ -124,7 +124,7 @@
 	
 	#delay {shop_sell} 
 	{
-		go $shops[$seller[whichShop]];
+		.go $shops[$seller[whichShop]];
 		sell all;
 	} {1};
 	
@@ -201,7 +201,6 @@
 **************************************************************/
 #alias {.render}
 {
-        #var renderingOff 0;
         #read 3k/TinTin/Core/Draw.tin
 };
 

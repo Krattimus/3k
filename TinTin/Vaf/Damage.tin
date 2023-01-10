@@ -3,9 +3,6 @@
 /*************************************************************************
 	Using the numbers vaf, track and record damage data
 *************************************************************************/
-.registerEvent onMobAttacked onMobAttackedDamage
-.registerEvent onMobKilled onMobKilledDamage
-.registerEvent onMobSpawned onMobSpawnedDamage
 
 /*************************************************************************
 	Resets variables as combat starts to record before combat ends
@@ -20,7 +17,6 @@
 	#var dmg[damageThisRound] 0;
 	#var dmg[averageDamage] 0;
 	#var dmg[totalDamage] 0;
-	#var dmg[rating] 0;
 	#var dmg[palm] 0;
 	#var dmg[brawler] 0;
 	#var dmg[pressure] 0;
@@ -57,34 +53,12 @@
 };
 
 /*************************************************************************
-	Detect monster rating
-*************************************************************************/
-#action {^Monster class: %d}
-{
-	#var dmg[rating] %1;
-};
-
-#action {Monster class: Really Big} 
-{
-	 #var dmg[rating] 150000; 
-};
-
-#action {Your dungeon scaler is currently set to level: %1}
-{
-	#var dmg[scaler] %1;
-};
-/*************************************************************************
 	Monster killed
 	#NOP { #delay {0.1} {.miniReport}; };
 *************************************************************************/
 #alias {onMobKilledDamage}
 {
-	#var dmg[mob] $event[mobKilled];
 
-	#if { !$patroller[isPatrolling] }
-	{
-		.logToDatabase;
-	};
 };	
 
 /*************************************************************************
@@ -102,24 +76,8 @@
 	};
 
 	#var dmg[mob] $event[mobAttacked];
-	#send consider;
 };
 
-/*************************************************************************
-	Detect monk pressure
-*************************************************************************/
-#action {^You find a pressure point and bore down!$}
-{
-	#var dmg[pressure] 1;
-};
-
-/*************************************************************************
-	Detect monk palm
-*************************************************************************/
-#action {^You reach out and touch your foe, sending death bringing vibrations}
-{
-	#var dmg[palm] 1;
-};
 
 /*************************************************************************
 	A mob was spawned

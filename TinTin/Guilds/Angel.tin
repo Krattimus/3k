@@ -6,8 +6,8 @@
 #var angel[distanceBetween] 0;
 #var angel[distanceField] {};
 #var angel[lastAction] {};
-#var angel[threshold] 50;
-#var angel[smack] 25;
+#var angel[threshold] 80;
+#var angel[smack] 60;
 .registerEvent onPreKilledMob onMobKilledAngel;
 .registerEvent onMobAttacked onMobAttackedAngel;
 .registerEvent onNewCombatRound onNewCombatRoundAngel;
@@ -185,7 +185,7 @@
 	#if { "$enemy[name]" != "" }
 	{
 		#showme {<038>HO: <138>$angel[ds][ho]<088> <038>HI: <138>$angel[ds][hi]<088> <038>LO: <138>$angel[ds][lo]<088> <038>LI: <138>$angel[ds][li]<088> <048>$angel[distanceField]<088> <148>$angel[distanceBetween]<088>} {-4};
-		#showme {<148>$enemy[name]<088> <048>(<138>$dmg[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
+		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
 	};
 	#else
 	{

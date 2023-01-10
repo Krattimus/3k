@@ -29,7 +29,7 @@
 #NOP Must have Westersea access to get to Bern
 #NOP This will go to Bern, buy 12 knives and reforge them, then deconstruct or dispose of them
 #alias rburn {
-        go bern;
+        .go bern;
         #12 {
                 buy knife;
                 reforge knife with little from edged to penetrate;
@@ -39,7 +39,7 @@
 			#send !dispose knife
 		}
         };
-        go monk
+        .go monk
 }
 
 /* Triggers here for failure/success messages */

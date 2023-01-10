@@ -47,7 +47,7 @@
 	#if { "$controllers[toStart]" == "$miner[controllerID]" }
 	{	
 		#echo {<202> Preparing to Mine <088>};
-		go mines;
+		.go mines;
 	};
 };
 
@@ -411,7 +411,7 @@
 	{
 		#echo {<202> Mining Stopped due to completion <088>};
 		#var miner[isMining] 0;
-		mapgo mines;
+		.mapGo mines;
 	};
 } {1};
 
