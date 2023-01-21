@@ -340,13 +340,15 @@ The area has changed
 	#showme {&area_mapped[] rooms mapped.};
 };
 
-
-
 /*************************************************************
 	Map actions
 *************************************************************/
 #alias {.go} 
 {
+	#if { $settings[shouldVacuum] }
+	{ #DELAY {10} { #var settings[shouldVacuum] 1; }; };
+	#var settings[shouldVacuum] 0;
+
 	#if { "%1" == "%d" }
 	{
 		#map run %1;

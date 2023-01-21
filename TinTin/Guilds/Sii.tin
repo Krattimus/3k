@@ -64,17 +64,5 @@
 	#showme {H:${my[hp][graph]} S:${my[sp][graph]} F:${my[gp1][graph]} C:${my[control][graph]} O:${my[gp2][graph]} E:${enemy[graph]} CF:<138>${corpses[coffin]}<088>${sb2_freezer}} {-3};
 	#showme {$mip[gline][1]  $mip[gline][2]} {-6}
 }
-
-
-#alias {corpsetrig} {
-	envelop emanating;
-	wrap;
-	cdc;
-	get coins
-}
-
-#act {dealt the killing blow} {corpsetrig}
-
-
 #act {Your malicious attacks fade.} {malice}
 #class {sii} {close}

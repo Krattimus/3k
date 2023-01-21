@@ -1,0 +1,42 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Controller Behavior Settings
+*******************************************************************************/
+#var settings[shouldVacuum] 	{1}
+#var settings[autoSell] 		{0};
+#var settings[corpseDonations] 	{0};
+#var seller[whichShop] 			{atlanta};
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 24190;
+#var patrol[area] {Mantle Corps};
+#var patrol[path] {e;e;e;e;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;s;s;s;s;e;e;e;e;s;s;w;w;w;w;w;n;w;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;e;n;w;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;e;n;w;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;e;n;w;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;push button;search prisoners;search prisoners;search prisoners;search prisoners;search prisoners;e;s;s;s;s;}
+
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{gang}{member}
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+			...
+*******************************************************************************/
+#act {in the neck with a pen. Back to work} {gl;} {2};
+#act {The lights return to normal levels} {gl;} {2};
+#act {You don't need to apply for a job, you already work here} {gl;} {2};
+#act {You push the button and moments later} {gl;} {2};
+#act {You wave to the camera and a guard} {gl;} {2};
+#act {There are no prisoners in the pod at this time} {gl;} {2};
+#act {This place is a mess! You need to let the janitorial} {gl;} {2};
+
+#act {You've already got a group of prisoners} { #send search prisoners;} {2};
+
+
+#class {bot} {close}

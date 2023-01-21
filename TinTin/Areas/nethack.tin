@@ -1,0 +1,71 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Controller Behavior Settings
+*******************************************************************************/
+#var settings[shouldVacuum] 	{1}
+#var settings[autoSell] 		{0};
+#var settings[corpseDonations] 	{0};
+#var seller[whichShop] 			{chaos};
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 40107;
+#var patrol[area] {nethack};
+#var patrol[path] {e;e;e;n;e;e;e;e;e;s;e;e;e;e;n;e;e;e;e;s;w;w;w;w;w;w;w;w;s;e;e;e;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;s;e;e;e;e;w;w;w;w;n;w;w;w;w;w;w;s;w;w;w;w;e;e;e;e;n;n;n;n;e;e;e;e;e;s;s;e;e;e;w;w;w;n;e;e;e;e;e;e;e;e;s;s;s;w;w;stairs;n;n;n;e;n;s;w;s;s;s;w;w;n;e;n;n;n;w;w;n;s;s;s;s;w;w;s;w;w;w;s;n;w;w;w;nw;n;w;n;w;w;n;w;s;s;w;e;e;w;n;n;e;s;e;e;s;e;s;ne;n;e;e;n;e;n;e;e;e;s;e;e;s;s;s;w;w;s;w;w;w;n;n;e;e;e;stairs;w;w;w;w;se;s;e;e;n;e;e;se;ne;e;e;e;n;e;se;e;e;e;ne;n;nw;w;s;n;n;w;w;w;se;s;se;e;w;nw;n;nw;sw;s;w;w;s;s;n;n;e;e;n;ne;w;w;w;w;w;w;s;w;w;n;w;w;e;e;s;e;e;e;e;e;w;w;w;w;s;w;w;w;sw;e;e;e;e;stairs;w;w;w;s;s;e;e;e;n;e;e;n;n;n;e;e;s;s;s;w;s;e;e;stairs;e;e;n;n;n;w;w;w;w;w;w;w;w;n;w;w;w;w;w;s;w;w;w};
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+    {Golem}{golem}
+    {Succubus}{succubus}
+    {Jaguar}{jaguar}
+    {Orangutan}{orangutan}
+    {Dwarf}{dwarf}
+    {bat}{bat}
+    {Bat}{bat}
+    {Gibbon}{gibbon}
+    {Ant}{ant}
+    {Gecko}{gecko}
+    {Wolf}{wolf}
+    {Homunculus}{homunculus}
+    {High-elf}{elf}
+    {Mold}{mold}
+    {Uruk-hai}{uruk-hai}
+    {Imp}{imp}
+    {Kobold}{kobold}
+    {Orc}{orc}
+    {Monkey}{monkey}
+    {Newt}{newt}
+    {Shrieker}{Shrieker}
+    {Lord}{lord}
+    {Rat}{rat}
+    {Macaque}{macaque}
+    {Fungus}{fungus}
+    {Iguana}{iguana}
+    {Dog}{dog}
+    {Raven}{raven}
+    {Sewer Rat}{rat}
+    {Manes}{manes}
+    {Lynx}{lynx}
+    {Cube}{cube}
+    {Scorpion}{scorpion}
+    {Horse}{horse}
+    {Piercer}{piercer}
+    {Panther}{panther}
+    {Centaur}{centaur}
+    {Jelly}{jelly}
+    {Spider}{spider}
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+#action {Sight returns to your eyes, darkness becomes light again.} { gl; };
+#class {bot} {close}

@@ -17,6 +17,7 @@
 	{
 		#case {"air"}			{#var rmcol <268>;#var rmsym <268>. .<088>};
 		#case {"alley"}			{#var rmcol <248>;#var rmsym <248>. .<088>};
+		#case {"altar"}			{#var rmcol <248>;#var rmsym <248>.<118>@<248>.<088>};
 		#case {"ashen_field"}		{#var rmcol <278>;#var rmsym <278>, `<088>};
 		#case {"areaexit"}		{#var rmcol <168>;#var rmsym <168>[<278>?<168>]<088>};
 		#case {"aylorcity"}		{#var rmcol <278>;#var rmsym <278>[ ]<088>};

@@ -98,7 +98,7 @@ mapoff;
 /************************************************************
 	Detects when gold is found
 ************************************************************/
-#action { gold coins.$} 
+#action { gold coins.$}
 {
 	#var found[gold] 1;
 	.triggerEvent onGoldFound;
@@ -127,14 +127,30 @@ mapoff;
 }
 
 /************************************************************
+	Famous items we should discount as items
+************************************************************/
+#function isFilteredFromPickup
+{
+    #if { @startsWith{{%0}{The bashed up}} } { #return 1; };
+	#if { @startsWith{{%0}{The sliced up}} } { #return 1; };
+	#if { @startsWith{{%0}{slain corpse}} } { #return 1; };
+	#if { @startsWith{{%0}{A sign }} } { #return 1; };
+
+	#return 0;
+};
+
+/************************************************************
 	Detects when an Item is found
 ************************************************************/
 #action {^=I= %*.$} 
 {
-	#var found[item] 1;
-	#list {event[items]} {add} {%1};
-	#var event[lastItemFound] %1;
-	.triggerEvent onItemFound;
+	#if { !@isFilteredFromPickup{%0} }
+	{
+		#var found[item] 1;
+		#list {event[items]} {add} {%1};
+		#var event[lastItemFound] %1;
+		.triggerEvent onItemFound;
+	};
 }
 
 /************************************************************
@@ -156,12 +172,12 @@ mapoff;
 
 	#if { $settings[acceptMissions] }
 	{
-		#if { @containsNoCase{{$event[foundMobName]}{\?}}}
+		#if { @containsNoCase{{$event[foundMobName]}{\<\?\>}}}
 		{
 			mission ask;
 		};
 
-		#if { @containsNoCase{{$event[foundMobName]}{\!}}}
+		#if { @containsNoCase{{$event[foundMobName]}{\<\!\>}}}
 		{
 			mission return;
 		};
@@ -219,6 +235,7 @@ mapoff;
 
 	.triggerEvent onPlayerFound;
 } {6};
+
 
 /************************************************************
 	We attacked

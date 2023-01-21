@@ -2,11 +2,14 @@
 #class {logger} {open}
 
 #var logger[isLogging] 0;
+#var logger[recording] 0;
 #list logger[items] create;
+#list logger[input] create;
 
 .registerEvent onMobKilled onMobKilledLogger;
 .registerEvent onItemTaken onItemTakenLogger;
 .registerEvent onMobAttacked onMobAttackedLogger;
+.registerEvent onReceivedInput onReceivedInputLogger;	
 
 /*************************************************************************
 	Send combat data to mysql
@@ -17,16 +20,98 @@
 };
 
 /*************************************************************************
+	Input recorder
+*************************************************************************/
+#alias onReceivedInputLogger
+{
+	#if { $logger[recording] }
+	{
+		#if { !@containsNoCase{{$event[input]} {.recordOff} }}
+		{
+			#list logger[input] {add} {$event[input]};
+		};
+	};
+};
+
+/*************************************************************************
+	Start recording
+*************************************************************************/
+#alias .recordOn
+{
+	#var logger[recording] 1;
+	#list logger[input] {clear};
+};
+
+/*************************************************************************
+	Stop recording
+*************************************************************************/
+#alias .recordOff
+{
+	#var logger[recording] 0;
+};
+
+/*************************************************************************
+	History commend
+*************************************************************************/
+#alias .history
+{
+	#if { "%1" == "" }
+	{ #history get {logger[input]} 1 25; };
+	#else
+	{ #history get {logger[input]} 1 %1; };
+	
+	.describeRecordingAsMacro;
+	#var logger[recording] 0;
+};
+
+
+/*************************************************************************
+	Show the last recording
+*************************************************************************/
+#alias .describeRecordingAsMacro
+{
+	#var recording {};
+	#foreach {*logger[input][]} {index}
+	{
+		#if { "$recording" == "" }
+		{
+			#var recording $logger[input][$index];
+		};
+		#else
+		{
+			#var recording {$recording\;$logger[input][$index]};
+		};
+	};
+
+	#draw Yellow scroll line 1 1 1 80;
+	#showme <048>$recording<088>;
+	#draw Yellow scroll line 1 1 1 80;
+};
+
+/*************************************************************************
+	Shows recording, 1 line at a time
+*************************************************************************/
+#alias .describeRecording
+{
+	#draw Yellow scroll line 1 1 1 80;
+	#foreach {*logger[input][]} {index}
+	{
+		#showme <048>$logger[input][$index]<088>;
+	};
+	#draw Yellow scroll line 1 1 1 80;
+};
+
+/*************************************************************************
 	Auto log locations & Descriptions of all items grabbed
 *************************************************************************/
-#alias {onItemTakenLogger}
+#alias onItemTakenLogger
 {
 	#if { $allowRecording && !$patroller[isPatrolling] }
 	{
-		#if { !@containsNoCase{{%1}{coins}} && !@containsNoCase{{%1}{corpse}} }
+		#if { !@containsNoCase{{%0}{coins}} && !@containsNoCase{{%0}{corpse}} }
 		{
 			#list {logger[items]} {add} {$event[itemTaken]};
-			.logItemToDB {$event[itemTaken]};
+			.logItemToDB $event[itemTaken];
 		};
 	};
 };
@@ -107,7 +192,8 @@
 	{
 		#local width 200;
 		#local height 200;
-	}
+	};
+	
 	#line logmode html #map map $height $width O map.html;
 	#map flag asciivnums on;
 	#line logmode html #map map $height $width O mapIDs.html;
@@ -133,7 +219,8 @@
 **************************************************************/
 #alias {.noteItem}
 {
-	.logItemToDB {%0};
+	#list {logger[items]} {add} {%0};
+	.logItemToDB %0;
 };
 
 /**************************************************************
@@ -157,8 +244,8 @@
 	{
 		#var logger[isLogging] 1;
 		#var capturedText {NA};
-		#var recordedItemName %1;
-		#send look at %1;
+		#var recordedItemName %0;
+		#send look at %0;
 		.captureFor 2 {onItemDescriptionRead};
 	};
 };

@@ -2,12 +2,15 @@
 
 /* Set Guild Variable*/
 #var guild Angel
+
 #var angel[isEnabled] 1;
 #var angel[distanceBetween] 0;
 #var angel[distanceField] {};
 #var angel[lastAction] {};
 #var angel[threshold] 80;
 #var angel[smack] 60;
+#var angel[presage] 20;
+
 .registerEvent onPreKilledMob onMobKilledAngel;
 .registerEvent onMobAttacked onMobAttackedAngel;
 .registerEvent onNewCombatRound onNewCombatRoundAngel;
@@ -26,12 +29,7 @@
 *************************************************************************************/
 #alias onMobKilledAngel
 {
-	#var angel[ds][ho]		0;
-	#var angel[ds][hi]		0;
-	#var angel[ds][lo]		0;
-	#var angel[ds][li]		0;
-	#var angel[ds][max]		0;
-	#var angel[ds][type]	{--};
+	#NOP {nothing};
 };
 
 /*************************************************************************************
@@ -39,27 +37,52 @@
 *************************************************************************************/
 #alias onNewCombatRoundAngel
 {
+	#var angel[lastAction] {};
+
 	#if { $angel[isEnabled] }
 	{
+		#local max @getNumElements{angel[advantages]};
+
+		#NOP { DETERMINE ENGAGEMENT };
 		#if { $angel[distanceBetween] > 1 }
 		{
+			#var angel[lastAction] Engage;
 			#send !engage;
 		};
 		#else
 		{
-			#if { $angel[ds][ho] > $angel[smack] && $angel[ds][hi] > $angel[smack] && $angel[ds][lo] > $angel[smack] && $angel[ds][li] > $angel[smack] }
+			#NOP { DETERMINE A KRAT SMACK };
+			#if { *angel[advantages][+1] > $angel[smack] && *angel[advantages][+2] > $angel[smack] && *angel[advantages][+3] > $angel[smack] }
 			{
-				#send !perform KratSmack;
+				#var angel[lastAction] perform KratSmack;
+				#send !$angel[lastAction];
 			};
+			#NOP { DETERMINE A SINGLE DIVINE STRIKE };
+			#elseif { *angel[advantages][+$max] > $angel[threshold] }
+			{
+				#var angel[lastAction] divine strike $angel[advantages][+$max];
+				#send !$angel[lastAction];
+			};
+			#NOP { DETERMINE PRESAGE };
 			#else
 			{
-				#if { $angel[ds][max] > $angel[threshold] }
+				#math {runnerUp} {$max-1};
+				#math {runnerTwo} {$max-2};
+				#if { *angel[advantages][+$runnerUp] > $angel[presage] }
 				{
-					#send !divine strike $angel[ds][type];
+					#var angel[lastAction] presage $angel[advantages][+$runnerUp];
+					#send !$angel[lastAction];
+				};
+				#elseif { *angel[advantages][+$runnerTwo] > $angel[presage] }
+				{
+					#var angel[lastAction] presage $angel[advantages][+$runnerTwo];
+					#send !$angel[lastAction];
 				};
 			};
 		};
 	};
+
+	#UNVARIABLE {angel[advantages]};
 };
 
 /*************************************************************************************
@@ -67,36 +90,19 @@
 
 	hpset hpbar $FLAGS$HP:$HP$/$HPMAX$ | SP:$SP$/$SPMAX$ | TS:$TS$/$TSMAX$ | DV:$DV$/$DVMAX$ | EN:$EN$/$ENMAX$ $NL$ HO:$ADVHO$/$WKHO$ HI:$ADVHI$/$WKHI$ LO:$ADVLO$/$WKLO$ LI:$ADVLI$/$WKLI$ $NL$ Enemy:$ENEMY$ $DIST$
 	hpset gline2 [$FLAGS$]$DIST$ F:$FOCUSSTAT$|$FOCUSGXP$ | TS:$TS$/$TSMAX$ | DV:$DV$/$DVMAX$ | EN:$EN$/$ENMAX$
-
 *************************************************************************************/
 #alias onNewMipGlineAngel
 {
 	#REGEXP {$mip[gline][1]} {HO:%d.%d/%d HI:%d.%d/%d LO:%d.%d/%d LI:%d.%d/%d} 
 	{
-		#var angel[ds][ho]		{&1.&2};
-		#var angel[ds][hi]		{&4.&5};
-		#var angel[ds][lo]		{&7.&8};
-		#var angel[ds][li]		{&10.&11};
-		#var angel[ds][max]		{$angel[ds][ho]};
-		#var angel[ds][type]	{ho};
-		
-		#if {$angel[ds][hi] > $angel[ds][max]} 
-		{
-			#var angel[ds][max]	{$angel[ds][hi]};
-			#var angel[ds][type] {hi};
-		};
-	
-		#if {$angel[ds][lo] > $angel[ds][max]} 
-		{
-			#var angel[ds][max]	{$angel[ds][lo]};
-			#var angel[ds][type] {lo};
-		};
-	
-		#if {$angel[ds][li] > $angel[ds][max]} 
-		{
-			#var angel[ds][max]	{$angel[ds][li]};
-			#var angel[ds][type] {li};
-		};
+		#var angel[advantages][&1.&2] ho;
+		#var angel[advantages][&4.&5] hi;
+		#var angel[advantages][&7.&8] lo;
+		#var angel[advantages][&10.&11] li;
+		#var angel[ho]		{&1.&2};
+		#var angel[hi]		{&4.&5};
+		#var angel[lo]		{&7.&8};
+		#var angel[li]		{&10.&11};
 	} {
 		#NOP no response;
 	};
@@ -184,17 +190,29 @@
 
 	#if { "$enemy[name]" != "" }
 	{
-		#showme {<038>HO: <138>$angel[ds][ho]<088> <038>HI: <138>$angel[ds][hi]<088> <038>LO: <138>$angel[ds][lo]<088> <038>LI: <138>$angel[ds][li]<088> <048>$angel[distanceField]<088> <148>$angel[distanceBetween]<088>} {-4};
-		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
+		#showme {<038>HO: <138>$angel[ho]<088> <038>HI: <138>$angel[hi]<088> <038>LO: <138>$angel[lo]<088> <038>LI: <138>$angel[li]<088> <048>[<148>$angel[distanceBetween]<088><048>] <048>$angel[distanceField]<088>} {-4};
+		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088> <148>$angel[lastAction]<088>} {-6};
 	};
 	#else
 	{
 		#showme {  } {-6};
 		#showme {<048>$angel[focusSkill]<088> <138>$angel[focus]<088> <048>Corpses:  I <138>$corpses[inventory]<088> <048>C <138>$corpses[coffin]<088>} {-4};
 	};
-
 };
 
+/*************************************************************************************
+	Displays a 1 line gs
+*************************************************************************************/
+#alias .gxp
+{
+	#draw Yellow scroll line 1 1 1 80;
+	#showme { <048>$angel[focusSkill]<088> <138>$angel[focus]<088> };
+	#draw Yellow scroll line 1 1 1 80;
+};
+
+/*************************************************************************************
+	Corrective measure
+*************************************************************************************/
 #ACTION {You are already as close as you can get to your foe!} 
 {
 	#var angel[distanceBetween] 0;

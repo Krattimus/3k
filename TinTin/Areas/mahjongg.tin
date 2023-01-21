@@ -13,31 +13,30 @@
 *******************************************************************************/
 #var patrol[startingLocation] 1900;
 #var patrol[area] {Mahjongg};
-#var {patrol[path]} {n;portal;e;e;e;e;e;n;w;w;w;w;w;n;e;e;e;e;e;e;n;w;n;e;ne;w;n;n;s;sw;sw;s;w;w;w;n;nw;n;e;nw;sw;e;s;s;s;nw;s;w;w;n;nw;nw;n;s;s;w;se;e;s;w;s;e;e;e;e;s;w;w;w;s;e;e;e;e;portal;s}
+#var patrol[path] {n;portal;e;e;e;e;e;n;w;w;w;w;w;n;e;e;e;e;e;e;n;w;n;e;ne;w;n;n;s;sw;sw;s;w;w;w;n;nw;n;e;nw;sw;e;s;s;s;nw;s;w;w;n;nw;nw;n;s;s;w;se;e;s;w;s;e;e;e;e;s;w;w;w;s;e;e;e;e;portal;s}
 
 /******************************************************************************
 	What to attack
 *******************************************************************************/
-.registerEvent onMobFound onMobAreaResponder;
-#alias {onMobAreaResponder}
+#var patrol[shouldKillList] 
 {
-	#REGEXP {"$event[foundMobName]"} {"%*Blue Dolphin%*"} 		{#var patroller[shouldKill] dolphin};
-	#REGEXP {"$event[foundMobName]"} {"%*Green Chinese Dragon%*"}	{#var patroller[shouldKill] dragon};
-	#REGEXP {"$event[foundMobName]"} {"%*White Tiger%*"} 		{#var patroller[shouldKill] tiger};
-	#REGEXP {"$event[foundMobName]"} {"%*Black Tiger%*"} 		{#var patroller[shouldKill] tiger};
-	#REGEXP {"$event[foundMobName]"} {"%*Purple Butterfly%*"} 	{#var patroller[shouldKill] butterfly};
-	#REGEXP {"$event[foundMobName]"} {"%*Red Butterfly%*"} 	{#var patroller[shouldKill] butterfly};
-	#REGEXP {"$event[foundMobName]"} {"%*Sea Serpent%*"} 		{#var patroller[shouldKill] serpent};
-	#REGEXP {"$event[foundMobName]"} {"%*Golden Phoenix%*"} 	{#var patroller[shouldKill] phoenix};
-	#REGEXP {"$event[foundMobName]"} {"%*Leaping Rat%*"} 		{#var patroller[shouldKill] rat};
-	#REGEXP {"$event[foundMobName]"} {"%*Lumbering Ox%*"} 		{#var patroller[shouldKill] ox};
-	#REGEXP {"$event[foundMobName]"} {"%*Charging Ram%*"} 		{#var patroller[shouldKill] ram};
-	#REGEXP {"$event[foundMobName]"} {"%*Jade Phoenix%*"} 		{#var patroller[shouldKill] phoenix};
-	#REGEXP {"$event[foundMobName]"} {"%*Red Rabbit%*"} 		{#var patroller[shouldKill] rabbit};
-	#REGEXP {"$event[foundMobName]"} {"%*Red Chinese Dragon%*"} 	{#var patroller[shouldKill] dragon};
-	#REGEXP {"$event[foundMobName]"} {"%*Black Chinese Dragon%*"} 	{#var patroller[shouldKill] dragon};
-	#REGEXP {"$event[foundMobName]"} {"%*Gold Chinese Dragon%*"} 	{#var patroller[shouldKill] dragon};
-	#REGEXP {"$event[foundMobName]"} {"%*Winged Horse%*"} 		{#var patroller[shouldKill] {winged horse}}
+	{Blue Dolphin}{dolphin}
+    {Green Chinese Dragon}{dragon}
+    {White Tiger}{tiger}
+    {Black Tiger}{tiger}
+    {Purple Butterfly}{butterfly}
+    {Red Butterfly}{butterfly}
+    {Sea Serpent}{serpent}
+    {Golden Phoenix}{phoenix}
+    {Leaping Rat}{rat}
+    {Lumbering Ox}{ox}
+    {Charging Ram}{ram}
+    {Jade Phoenix}{phoenix}
+    {Red Rabbit}{rabbit}
+    {Red Chinese Dragon}{dragon}
+	{Black Chinese Dragon}{dragon}
+    {Gold Chinese Dragon}{dragon}	
+	{Winged Horse}{horse}	
 };
 
 /******************************************************************************

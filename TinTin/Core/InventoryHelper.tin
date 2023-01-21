@@ -4,26 +4,19 @@
     Detects an item in the inventory. I Put this in
     a class because it is easier to #class ... kill
     Than it is to mantain the right syntax for 
-    #unalias {{^[\s]*([0-9]+)\s(.*).}$} everywhere.
+    #unalias {{^[\s]*([0-9]+)\s(?!coins)(.*).}$} everywhere.
     And I am not sure tintin always did. With a class
     it was more guarnteed.
 ******************************************************/
-#action {{^[\s]*([0-9]+)\s(.*).}$}
+#action {{^[\s]*([0-9]+)\s(?!coins)(.*).}$}
 {           
-    #REGEXP {%3} {coins} 
-    {
-        #NOP {nothing};
-    };
-    #else
-    {
-        #local itemName %3;
-        #replace itemName {{\\x7B.*\\x7D}} {};
-        #replace itemName {{\(.*\)}} {};
-        #replace itemName {{\[.*\]}} {};
+    #local itemName %3;
+    #replace itemName {{\\x7B.*\\x7D}} {};
+    #replace itemName {{\(.*\)}} {};
+    #replace itemName {{\[.*\]}} {};
 
-        #list inventory add {$itemName};
-        #list inventoryCount add {%2};
-    };
+    #list inventory add {$itemName};
+    #list inventoryCount add {%2};
 } {1};
 
 /******************************************************

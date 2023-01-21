@@ -178,6 +178,8 @@
 #EVENT {RECEIVED INPUT} 
 {
 	#var idle 0;
+	#var event[input] %0;
+	.triggerEvent onReceivedInput;	
 };
 
 

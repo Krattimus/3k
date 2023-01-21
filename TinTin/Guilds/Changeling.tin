@@ -79,13 +79,4 @@
 	#showme {$mip[gline][1]  $mip[gline][2]} {-6}
 }
 
-#alias {corpsetrig} {
-	slab;
-	wrap;
-	bioextract;
-	get coins
-}
-
-#act {^=K=%1 dealt the killing blow to} {corpsetrig}
-
 #class {changeling} {close}

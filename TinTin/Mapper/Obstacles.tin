@@ -10,6 +10,8 @@
 *************************************************************/
 #act {The spirit of Waldo appears before you.} { #map undo;} {1}
 
+#action {You fight against the current but are unable to move!} {.triggerEvent onBlockedMovement; }
+#action {The weeds tangle up your legs and you are stuck!} {.triggerEvent onBlockedMovement;}
 #action {You bounce off the energy field. The field shimmers.} {.triggerEvent onBlockedMovement;}
 #action {You try to go back stage, but the actors keep getting in your way.}  {.triggerEvent onBlockedMovement;}
 #action {Enforcer says: Where do you think you're going?}  {.triggerEvent onBlockedMovement;}

@@ -166,6 +166,8 @@
 		#send $dirs[$directionIndex];
         #math {directionIndex} {$directionIndex + 1};
 	};
+
+	#list dirs clear;
 };
 
 #class {explorer} {close}

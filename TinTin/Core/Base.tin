@@ -27,7 +27,9 @@
 	} {%1};
 };
 
-
+#highlight {You search about, but fail to find anything.} {<038>};
+#highlight {You find nothing of interest.} {<038>};
+#highlight {You don't find anything of interest.} {<038>};
 /*************************************************************************
 	Captures all text for a period of time... 
 *************************************************************************/
@@ -124,7 +126,6 @@
 		}
 	}
 };
-
 
 #alias {.cls}
 {

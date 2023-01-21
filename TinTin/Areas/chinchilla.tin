@@ -1,21 +1,30 @@
 #class {bot} {open}
 
-#var {no_loop} {0}
-#var {no_home} {1}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+/******************************************************************************
+	Controller Behavior Settings
+*******************************************************************************/
+#var settings[shouldVacuum] 	{1}
+#var settings[autoSell] 		{0};
+#var settings[corpseDonations] 	{0};
+#var seller[whichShop] 			{chaos};
 
-#var {patrol[path]} {out;w;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;e;n;n;n;n;n;enter}
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 1273;
+#var patrol[area] {Happy Ed's Chinchilla Farm};
+#var patrol[path] {out;w;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;e;n;n;n;n;n;enter}
 
-#act {=M= {A|An} {Baby|Young|Mature|Old} Chinchilla} {
-	#var patroller[shouldKill] chinchilla;
-	_check_mob
-}
+#var patrol[shouldKillList] 
+{
+	{Chinchilla}{chinchilla}
+ };
 
-#act {=M= Manager <?>} {mission ask}
-#act {=M= Manager <!>} {mission return}
-#act {^You have been offered the mission} {mission accept}
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
 
 #class {bot} {close}
-
-
