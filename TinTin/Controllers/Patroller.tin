@@ -420,6 +420,7 @@
 		#path load $patrol[path];
 		#path goto $patrol[position];
 
+		#var settings[shouldVacuum] 1;
 		#var patroller[attacking] 0;	
 		#var patroller[isPatrolling] 1;
 		#var currentController patrol;

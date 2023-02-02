@@ -12,10 +12,6 @@
 	_check_mob
 }
 
-#act {=M= Manager <?>} {mission ask}
-#act {=M= Manager <!>} {mission return}
-#act {^You have been offered the mission} {mission accept}
-
 #class {bot} {close}
 
 

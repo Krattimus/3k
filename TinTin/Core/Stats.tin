@@ -8,27 +8,27 @@
 #var stats[int] {};
 
 
-#action {Strength     :    %1  \(%2\)}
+#action {Strength     :%s%1  \(%2\)}
 {
 	#var stats[str] %1;
 };
 
-#action {^Dexterity    :   %1  \(%2\)}
+#action {^Dexterity    :%s%1  \(%2\)}
 {
 	#var stats[dex] %1;
 };
 
-#action {^Wisdom       :    %1  \(%2\)}
+#action {^Wisdom       :%s%1  \(%2\)}
 {
 	#var stats[wis] %1;
 };
 
-#action {^Intelligence :    %1  \(%2\)}
+#action {^Intelligence :%s%1  \(%2\)}
 {
 	#var stats[int] %1;
 };
 
-#action {^Constitution :    %1  \(%2\)}
+#action {^Constitution :%s%1  \(%2\)}
 {
 	#var stats[con] %1;
 };

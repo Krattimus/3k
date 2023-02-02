@@ -51,7 +51,7 @@
 		Use: .describeUnexplored <areaname>
 		Where areaname matches the rating command.
 **************************************************************/
-#alias {.describeUnexplored}
+#alias {.mapUnexplored}
 {
 	#local areaToSearch $area;
 	#if { "%0" != "" }
@@ -345,10 +345,9 @@ The area has changed
 *************************************************************/
 #alias {.go} 
 {
-	#if { $settings[shouldVacuum] }
-	{ #DELAY {10} { #var settings[shouldVacuum] 1; }; };
-	#var settings[shouldVacuum] 0;
-
+	#var isTravelling 1;
+	#DELAY {4} { #var isTravelling 0; };
+	
 	#if { "%1" == "%d" }
 	{
 		#map run %1;
@@ -534,7 +533,7 @@ The area has changed
 #alias {.mapSave}
 {
 	#map write 3k/TinTin/Data/3k.map;
-}
+};
 
 /*****************************************************************************
 	When you hit the no obvious exit cases, it breaks the parser
@@ -557,6 +556,9 @@ The area has changed
 
 #alias {.mapReturn}
 {
+	#var isTravelling 1;
+	#DELAY {4} { #var isTravelling 0; };
+
 	#map run $mapAnchor;
 };
 

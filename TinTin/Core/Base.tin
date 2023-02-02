@@ -30,6 +30,23 @@
 #highlight {You search about, but fail to find anything.} {<038>};
 #highlight {You find nothing of interest.} {<038>};
 #highlight {You don't find anything of interest.} {<038>};
+#highlight {You search the area but fail to find anything out of the ordinary} {<038>};
+
+
+#alias {.save}
+{
+	#class patrolvar write 3k/TinTin/Data/Patrol.var;
+	#class botvar write 3k/TinTin/Data/Bots.var;
+	#class mapvar write 3k/TinTin/Data/Map.var;
+	#class chatvar write 3k/TinTin/Data/3kchat.var;
+	#class farmvar write 3k/TinTin/Data/KnownFarms.var;	
+	#class pubvar write 3k/TinTin/Data/KnownPubs.var;
+	#class shopvar write 3k/TinTin/Data/KnownShops.var;
+	#class itemsvar write 3k/TinTin/Data/KnownItems.var;
+	#class mobsvar write 3k/TinTin/Data/KnownMobs.var;
+	#class damagevar write 3k/TinTin/Data/Damage.var;
+};
+
 /*************************************************************************
 	Captures all text for a period of time... 
 *************************************************************************/

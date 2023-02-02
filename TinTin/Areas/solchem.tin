@@ -11,29 +11,27 @@
 /******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
-#var patrol[startingLocation] 6105;
-#var patrol[area] {The City of Westersea Sewer};
-#var {patrol[path]} {w;w;w;w;sw;se;s;se;s;w;w;w;w;nw;w;w;nw;w;w;w;nw;w;w;sw;ne;n;nw;se;s;e;e;se;e;e;e;ne;ne;e;e;e;e;ne;w;w;nw;w;nw;n;e;nw;ne;e;w;w;w;w;w;w;sw;sw;e;e;se;e;w;nw;w;w;w;w;nw;n;w;w;w;e;e;e;s;se;se;w;w;sw;sw;e;w;w;w;w;w;e;e;e;e;ne;ne;e;e;nw;e;e;ne;ne;e;e;e;e;e;sw;se;w;s;se;e;se;e;e;e;e;e;e;}
+#var patrol[startingLocation] 15372;
+#var patrol[area] {SolChem};
+#var patrol[path] {e;e;s;e;e;n;enter hole;out;n;w;w;s;w;n;u;e;e;s;s;n;w;n;w;d;s;w}
+
 
 /******************************************************************************
 	What to attack
 *******************************************************************************/
 #var patrol[shouldKillList] 
 {
-	{snake}{snake}
-	{spider}{spider}
-	{rat}{rat}
-	{crocodile}{crocodile}
-	{Longtooth}{longtooth}
-	{cockroach}{cockroach}
+	{member}{member}
+	{mantis}{mantis}
+	{leader}{leader}
+	{Leader}{leader}
 };
 
 /******************************************************************************
 	Additional scripting used for this area
 			...
 *******************************************************************************/
-#alias .doLock 
-{ 
-	#send !exchange %1; #send !get lockbox; #send !pick lockbox; #send !open lockbox; 
-};
+#action {Level Alpha entry card: Ok} {gl;};
+#action {Level Beta entry card: Ok} {gl;};
+`
 #class {bot} {close}

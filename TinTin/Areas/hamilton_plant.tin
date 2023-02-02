@@ -11,29 +11,29 @@
 /******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
-#var patrol[startingLocation] 6105;
-#var patrol[area] {The City of Westersea Sewer};
-#var {patrol[path]} {w;w;w;w;sw;se;s;se;s;w;w;w;w;nw;w;w;nw;w;w;w;nw;w;w;sw;ne;n;nw;se;s;e;e;se;e;e;e;ne;ne;e;e;e;e;ne;w;w;nw;w;nw;n;e;nw;ne;e;w;w;w;w;w;w;sw;sw;e;e;se;e;w;nw;w;w;w;w;nw;n;w;w;w;e;e;e;s;se;se;w;w;sw;sw;e;w;w;w;w;w;e;e;e;e;ne;ne;e;e;nw;e;e;ne;ne;e;e;e;e;e;sw;se;w;s;se;e;se;e;e;e;e;e;e;}
+#var patrol[startingLocation] 3009;
+#var patrol[area] {Hamilton Plant};
+#var patrol[path] {e;e;s;s;e;e;e;n;n;e;e;e;e;e;n;u;e;w;d;n;n;s;s;s;w;w;w;w;w;s;s;w;w;w;n;n;w;w}
+
 
 /******************************************************************************
 	What to attack
 *******************************************************************************/
 #var patrol[shouldKillList] 
 {
-	{snake}{snake}
-	{spider}{spider}
-	{rat}{rat}
-	{crocodile}{crocodile}
-	{Longtooth}{longtooth}
-	{cockroach}{cockroach}
+	{Hamilton}{hamilton}
+	{Guard}{guard}
+	{guard}{guard}
+	{Martin}{martin}
+	{worker}{worker}
+	{Worker}{worker}
+	{Driver}{driver}
+
 };
 
 /******************************************************************************
 	Additional scripting used for this area
 			...
 *******************************************************************************/
-#alias .doLock 
-{ 
-	#send !exchange %1; #send !get lockbox; #send !pick lockbox; #send !open lockbox; 
-};
+
 #class {bot} {close}

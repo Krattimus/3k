@@ -2,11 +2,6 @@
 
 #class {corpsebot} {open};
 
-
-#var corpsebot[isDonating];
-
-
-
 #action {All your corpses are already bigger than what is here.}
 {
 	#if { "$settings[corpseDonations]" == "on" }

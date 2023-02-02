@@ -7,9 +7,16 @@
 #var angel[distanceBetween] 0;
 #var angel[distanceField] {};
 #var angel[lastAction] {};
-#var angel[threshold] 80;
-#var angel[smack] 60;
-#var angel[presage] 20;
+#var angel[threshold] 100;
+#var angel[smack] 75;
+#var angel[presage] 30;
+#var angel[aegis] 0;
+#var angel[strikeCounter] 0;
+#var angel[restEndurance] 60;
+#var angel[isResting] 0;
+#var angel[spacesBehind] 5;
+
+#var angel[isEngaging] 0;
 
 .registerEvent onPreKilledMob onMobKilledAngel;
 .registerEvent onMobAttacked onMobAttackedAngel;
@@ -39,28 +46,61 @@
 {
 	#var angel[lastAction] {};
 
+	#NOP { NON ANGEL? SOULD BE IN BASE CONTROLLER? };
+	#if { $currentRoundID <= 1 }
+	{
+		#send !consider;
+		#var angel[isEngaging] 0;
+	};
+
+	#NOP { THIS DOES NOT BELONG HERE, BUT FOR NOW, DETERMINE IF THE PATROLLER NEEDS TO REST };
+	#if { $patroller[isPatrolling] }
+	{
+		#if { $angel[endurance] < $angel[restEndurance] && !$angel[isResting] }
+		{
+			#var angel[isResting] 1;
+			.stop;
+		};
+	};
+
+
 	#if { $angel[isEnabled] }
 	{
 		#local max @getNumElements{angel[advantages]};
 
 		#NOP { DETERMINE ENGAGEMENT };
-		#if { $angel[distanceBetween] > 1 }
-		{
-			#var angel[lastAction] Engage;
-			#send !engage;
+		#if { $angel[spacesBehind] <= 0 }
+		{ 
+			#var angel[isEngaging] 1; 
 		};
-		#else
+
+		#NOP { RETREAT UNTIL WALL, THEN STRIKE };
+		#if { $angel[spacesBehind] > 0 && !$angel[isEngaging] }
 		{
-			#NOP { DETERMINE A KRAT SMACK };
-			#if { *angel[advantages][+1] > $angel[smack] && *angel[advantages][+2] > $angel[smack] && *angel[advantages][+3] > $angel[smack] }
-			{
-				#var angel[lastAction] perform KratSmack;
-				#send !$angel[lastAction];
-			};
+			#var angel[lastAction] disengage;
+			#send !$angel[lastAction];
+		};
+		#elseif { $angel[distanceBetween] > 1 }
+		{
+			#var angel[lastAction] engage;
+			#send !$angel[lastAction];
+		};
+		
+		#NOP { DETERMINE STRIKES IF CLOSE ENOUGH };
+		#if { $angel[distanceBetween] <= 0 }
+		{
 			#NOP { DETERMINE A SINGLE DIVINE STRIKE };
-			#elseif { *angel[advantages][+$max] > $angel[threshold] }
+			#if { *angel[advantages][+$max] > $angel[threshold] }
 			{
 				#var angel[lastAction] divine strike $angel[advantages][+$max];
+
+				#math {angel[strikeCounter]} {$angel[strikeCounter] + 1};
+				#math {shouldRetribute} {$angel[strikeCounter] % 4};
+				#if { $shouldRetribute == 0 }
+				{
+					#var angel[lastAction] retribution $angel[advantages][+$max];
+				};
+
 				#send !$angel[lastAction];
 			};
 			#NOP { DETERMINE PRESAGE };
@@ -85,6 +125,13 @@
 	#UNVARIABLE {angel[advantages]};
 };
 
+#action {You are already surrounded in an aegis} { #var angel[aegis] 1; }
+#action {Your aegis fades away} { #var angel[aegis] 0; }
+#action {Your armour glows with a radiant aegis} { #var angel[aegis] 1; }
+#action {You have no where to retreat} 
+{
+	#var angel[spacesBehind] 0;
+};
 /*************************************************************************************
 	Mip sent us newest data
 
@@ -119,7 +166,7 @@
 		#var angel[enduranceMax] &9;		
 	};
 
-	#REGEXP {$mip[gline][2]} {^{\[\](.*)(F.*)}$}
+	#REGEXP {$mip[gline][2]} {^{\[.*\](.*)(F.*)}$}
 	{
 		#var {angel[distanceField]} {&2};
 	} {
@@ -128,15 +175,37 @@
 
 	#REGEXP {$mip[gline][2]} {^{|.*[PM](-*)[PM].*|}$} 
 	{
-		#var {dField} {&2};
-	} {
-		#NOP no response;
+		#var angel[distanceBetween] @strlen{&2}; 
 	};
 
-	#if { "$dField" != "" }
-	{ 
-		#var angel[distanceBetween] @strlen{ $dField }; 
-	};	
+	#REGEXP {$mip[gline][2]} {|%SP} 
+	{
+		#var angel[spacesBehind] @strlen{&1};
+	};
+
+	#REGEXP {$mip[gline][2]} {M%SP%S|} 
+	{
+		#var angel[spacesBehind] @strlen{&2};
+	};
+
+	#REGEXP {$mip[gline][2]} {]|P}
+	{
+		#var angel[spacesBehind] 0;
+	};
+
+	#REGEXP {$mip[gline][2]} {P|}
+	{
+		#var angel[spacesBehind] 0;
+	};
+
+	#if { $angel[isResting] }
+	{
+		#if { $angel[endurance] >= $angel[enduranceMax] }
+		{
+			#var angel[isResting] 0;
+			.resume;
+		};
+	};
 };
 
 /*************************************************************************************

@@ -134,7 +134,10 @@ mapoff;
     #if { @startsWith{{%0}{The bashed up}} } { #return 1; };
 	#if { @startsWith{{%0}{The sliced up}} } { #return 1; };
 	#if { @startsWith{{%0}{slain corpse}} } { #return 1; };
-	#if { @startsWith{{%0}{A sign }} } { #return 1; };
+	#if { @startsWith{{%0}{A sign}} } { #return 1; };
+	#if { @startsWith{{%0}{Talon Airship}} } { #return 1; };
+	#if { @startsWith{{%0}{board containing}} } { #return 1; };
+	#if { @startsWith{{%0}{A Black Tank}} } { #return 1; };
 
 	#return 0;
 };
@@ -170,7 +173,7 @@ mapoff;
 
 	.triggerEvent onMobFound;
 
-	#if { $settings[acceptMissions] }
+	#if { $settings[acceptMissions] && !$isTravelling }
 	{
 		#if { @containsNoCase{{$event[foundMobName]}{\<\?\>}}}
 		{
@@ -208,6 +211,14 @@ mapoff;
 		#var event[mobKilled] %2;
 		.triggerEvent onMobKilled;
 	};
+
+	#if { "%1" == "%2" }
+	{
+		#var event[mobKilled] %2;
+		.triggerEvent onMobKilled;
+	};
+
+
 } {1};
 
 /************************************************************
@@ -518,7 +529,7 @@ mapoff;
 		#var found[gold] 0;
 	};
 
-	#if { $found[item] }
+	#if { $found[item] && !$isTravelling && $currentRoomID >= 200 }
 	{
 		#send !get all;
 		#var found[item] 0;

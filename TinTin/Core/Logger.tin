@@ -8,16 +8,7 @@
 
 .registerEvent onMobKilled onMobKilledLogger;
 .registerEvent onItemTaken onItemTakenLogger;
-.registerEvent onMobAttacked onMobAttackedLogger;
 .registerEvent onReceivedInput onReceivedInputLogger;	
-
-/*************************************************************************
-	Send combat data to mysql
-*************************************************************************/
-#alias onMobAttackedLogger
-{
-	#send !consider;
-};
 
 /*************************************************************************
 	Input recorder
