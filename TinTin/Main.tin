@@ -32,7 +32,6 @@
 
 #EVENT {SESSION CONNECTED} 
 {
-	#var ourCharacter {%0};
 	#format logfile {3k/TinTin/Data/Logs/%0_%t.log} {%Y%m%d};
 	#LOG {APPEND} {$logfile};
 	#delay 0 #read 3k/TinTin/Core/Start.tin;

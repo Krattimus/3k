@@ -1,7 +1,5 @@
 #class {sii} {open}
 
-#var guild sii
-
 #act {^. o O (HP:%d/%d SP:%d/%d FO:%d/%d CON:%d/%d EN:%*) O o .$} {
 	#var {my[hp][current]}		{%1};
 	#var {my[hp][max]}		{%2};

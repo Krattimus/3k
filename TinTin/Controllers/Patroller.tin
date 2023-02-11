@@ -50,6 +50,7 @@
 	{
 		.loadPatrol $patrols[$currentPatrolID];
 		.showSettings;
+		#send !brief on no;
 		#var patrol;
 	};
 };
@@ -82,7 +83,7 @@
 ***********************************************************/
 #ticker {patrolHeartBeat} 
 {
-	#NOP { Is the patrol bot active ? };
+	#NOP { Is the patroller active ? };
 	#if { $patroller[isPatrolling] }
 	{
 		.determineState;
@@ -343,6 +344,11 @@
 {
 	#echo {<202> Loading Patrol for [%1] <088>};
 
+	#var settings[shouldVacuum] 	{1};
+	#var settings[autoSell] 		{0};
+	#var settings[corpseDonations] 	{0};	
+	#var settings[shouldLoot] 		{1};
+	
 	#map get {roomvnum} {startedAt};
 	#read  3k/TinTin/Areas/%1.tin;
 

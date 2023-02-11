@@ -1,7 +1,5 @@
 #class {changeling} {open}
 
-#var guild changeling
-
 #var pers off
 #act {{HP:(\d+)/(\d+) SP:(\d+)/(\d+) ST:([\d\.]+) PP:([\d\.]+) CF:(\d+)/(\d+)\% BP:([\d\.]+)\% FF:([\d\.]+)\% E?:?([\w\d\%]+)?}} {
 	#var {my[hp][current]}		{%2};

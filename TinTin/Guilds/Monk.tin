@@ -1,16 +1,42 @@
+#showme READING MONKS
+
 #class {monk} {open}
 
-/* Set Guild Variable */
-#var guild Monk
-
-/* Initialize Variables */
-#var monk[g2n][prev] 0
+/**********************************************************************************
+	Data
+**********************************************************************************/
+#var monk[g2n][prev] 0;
 #var monk[speed] {};
 #var monk[power] {};
+#var monk[chiFocus] {};
+#var monk[palm] 0;
+#var monk[pressure] 0;
+#var monk[gxp][count] 50;
+#var monk[gxp][average] 0;
+#var monk[crits] {};
+#var monk[stun] {};
+#var monk[hide] {};
+#var monk[hideThreshold] 800;
+#var monk[method] {Tiger};
+#var monk[isActive] 1;
+#list {monk[gxp][history][list]} create {};
 
-.registerEvent onPreKilledMob onMobKilledMonk;
-.registerEvent onMobAttacked onMobAttackedMonk;
+.registerEvent onNewMipGline onNewMipGlineMonk;
+.registerEvent onMobKilled onMobKilledMonk;
+.registerEvent onNewCombatRound onNewCombatRoundMonk;
 
+/**********************************************************************************
+	Kill trig
+**********************************************************************************/
+#alias {onMobKilledMonk}
+{
+	#if { $settings[shouldProcessCorpses] }
+	{
+		wrap;
+	};
+	#var monk[palm] 0;
+	#var monk[pressure] 0;
+};
 
 /**********************************************************************************
 	Read speed and power from guild score
@@ -27,8 +53,10 @@
 	#var monk[power] $power;
 };
 
-/* HP Bars */
-#NOP Default Monk HP Bar
+
+/**********************************************************************************
+	Read speed and power from guild score
+**********************************************************************************/W
 #act {HP: %d/%d PP: %d/%d Chi: %d/%d G2:{[\d\-]+} Mind: %d AE:%d/%d%% CF:%w} 
 {
 	#var {my[hp][current]}	{%1};
@@ -42,12 +70,17 @@
 	#var {my[ae][current]}	{%9};
 	#var {my[ae][reset]}	{%10};
 	#var {my[cf]}		{%11}
-}
+};
 
 /*************************************************************************
 	Detect monk pressure
 *************************************************************************/
 #action {^You find a pressure point and bore down!$}
+{
+	#var monk[pressure] 1;
+};
+
+#action {You cannot pressure point attack that creature again!}
 {
 	#var monk[pressure] 1;
 };
@@ -60,84 +93,93 @@
 	#var monk[palm] 1;
 };
 
+#action {The vibrations have ceased on}
+{
+	#var monk[palm] 0;
+};
 
-#NOP Initialization for Monk Gline Variables
-#var monk[gxp][count] 50
-#var monk[gxp][average] 0
-#list {monk[gxp][history][list]} create {}
+/*************************************************************************************
+	Round of combat
+*************************************************************************************/
+#alias onNewCombatRoundMonk
+{
+	#NOP { NON MONK? SOULD BE IN BASE CONTROLLER? };
+	#if { $currentRoundID <= 1 }
+	{
+		#send !consider;
+	};
 
-#ALIAS {.mipProcessGlineMonk} {
-        #IF {%1 == 1} {
-		#REGEX {$mip[gline][1]} {<868>Method<099>: <838>%w<099>{?:\s+}<868>Crits<099>: <{?:\d+}>%w<099>{?:\s+}<868>Stun<099>: <{?:\d+}>%w<099>{?:\s+}<868>Hide<099>: <{?:\d+}>%w<099>} {
-			#var	{monk[method]}		{&1};
-			#var	{monk[crits]}		{&2};
-			#var	{monk[stun]}		{&3};
-			#var	{monk[hide]}		{&4}
+	#if { $monk[isActive] }
+	{
+		#if { $my[hp][current] <= $my[hp][max] }
+		{
+			#send !hands;
 		};
-		#REPLACE {mip[gline][1]} {    } {  }
-        }; #ELSEIF {%1 == 2} {
-		#REGEX {$mip[gline][2]} {G2N: <838>%d<099>{?:\s+}<868>Chi Focus<099>: <{?:\d+}>%w<099>{?:\s+}<838>AE<099>: <{\d+}>%d<099>/%d%%} {
-			#var	{monk[g2n][prev]}	{$monk[g2n][current]};
-			#var	{monk[g2n][current]}	{&1};
-			#var	{monk[chifocus]}	{&2};
-			#var	{monk[ae][current]}	{&3};
-			#var	{monk[ae][reset]}	{&4};
-			#math	{monk[gxp][last]}	{$monk[g2n][prev] - $monk[g2n][current]};
-			#list {monk[gxp][history][list]} {size} {monk[gxp][history][size]};
-			#if {$monk[gxp][history][size] >= $monk[gxp][count]} {
-				#list {monk[gxp][history][list]} del 1
-			};
-			#list {monk[gxp][history][list]} add $monk[gxp][last];
-			#var monk[gxp][history][simple] $monk[gxp][history][list];
-			#list monk[gxp][history][simple] simplify;
-			#var monk[gxp][history][total] 0;
-			#foreach {$monk[gxp][history][simple]} {cnt} {
-				#math {monk[gxp][history][total]} {$monk[gxp][history][total] + $cnt}
-			};
-			#math {monk[gxp][average]} {$monk[gxp][history][total] / $monk[gxp][history][size]};
-			#format {monk[gxp][last_col]}	{%+3s} {$monk[gxp][last]};
-			#if {$monk[gxp][average] > 0} {
-				#math {monk[g2n][rounds]} {$monk[g2n][current] / $monk[gxp][average]}
-			};
-			#math {monk[gxp][day]}	{$monk[g2n][rounds] / 43200};
-			#math {monk[gxp][hour]}	{$monk[g2n][rounds] % 43200 / 1800};
-			#math {monk[gxp][min]}	{$monk[g2n][rounds] % 1800 / 30};
-			#math {monk[gxp][sec]}	{$monk[g2n][rounds] % 30 * 2};
-			#if {$monk[gxp][day] > 0} {
-				#var {monk[gxp][time]} {<120>${monk[gxp][day]}<020>d <120>${monk[gxp][hour]}<020>h<099>}
-			}; #elseif {$monk[gxp][hour] > 0} {
-				#var {monk[gxp][time]} {<120>${monk[gxp][hour]}<020>h <120>${monk[gxp][min]}<020>m<099>}
-			}; #elseif {$monk[gxp][min] > 0} {
-				#var {monk[gxp][time]} {<120>${monk[gxp][min]}<020>m <120>${monk[gxp][sec]}<020>s<099>}
-			}; #else {
-				#var {monk[gxp][time]} {<120>${monk[gxp][sec]}<020>s<099>}
-			}
+
+		#if { !$monk[palm] && $monk[ae][current] > 0}
+		{
+			#send !palm;
 		};
-		#REPLACE {mip[gline][2]} {G2N: <838>%d<099>} {G2N: <838>&1<099>[<138>${monk[gxp][last_col]}<099>][${monk[gxp][time]}]};
-		#REPLACE {mip[gline][2]} {    } {  }
-        }; #ELSE {
-                #ECHO {<171> Invalid Gline Number <088>}
-        }
-}
 
+		#if { !$monk[pressure] }
+		{
+			#send !pressure;
+		};
 
-/* Update Status Alias */
+		#if { $my[hp][current] <= $monk[hideThreshold] }
+		{
+			#send !hide of the dragon;
+		};
+	};
+};
+
+/*************************************************************************************
+	Parse MI
+*************************************************************************************/
+#ALIAS {onNewMipGlineMonk} 
+{
+	#REGEX {$mip[gline][1]} {<868>Method<099>: <838>%w<099>{?:\s+}<868>Crits<099>: <{?:\d+}>%w<099>{?:\s+}<868>Stun<099>: <{?:\d+}>%w<099>{?:\s+}<868>Hide<099>: <{?:\d+}>%w<099>} 
+	{
+		#var	{monk[method]}		{&1};
+		#var	{monk[crits]}		{&2};
+		#var	{monk[stun]}		{&3};
+		#var	{monk[hide]}		{&4}
+	};
+
+	#REGEX {$mip[gline][2]} {G2N: <838>%d<099>{?:\s+}<868>Chi Focus<099>: <{?:\d+}>%w<099>{?:\s+}<838>AE<099>: <{\d+}>%d<099>/%d%%} 
+	{
+		#var	{monk[g2n][prev]}	{$monk[g2n][current]};
+		#var	{monk[g2n][current]}	{&1};
+		#var	{monk[chiFocus]}	{&2};
+		#var	{monk[ae][current]}	{&4};
+		#var	{monk[ae][reset]}	{&5};
+		#math	{monk[gxp][last]}	{$monk[g2n][prev] - $monk[g2n][current]};
+
+	};
+};
+
+/*************************************************************************************
+	Render hp bar
+*************************************************************************************/
 #alias {.renderMonkBar} 
 {
-	#if {"$cooler" == "on" || $corpses[cooler] > 0} {
-	#format {sb1_cooler} {%+2s} {$corpses[cooler]};
-			#var {sb1_cooler} { CL:<130>$sb1_cooler<088>}
-	} {
-			#var {sb1_cooler} {}
+	#if {"$cooler" == "on" || $corpses[cooler] > 0} 
+	{
+		#format {sb1_cooler} {%+2s} {$corpses[cooler]};
+		#var {sb1_cooler} { CL:<130>$sb1_cooler<088>};
+	};
+	#else
+	{
+			#var {sb1_cooler} {};
 	};
 	#if {"$freezer" == "on" || $corpses[freezer] > 0} 
 	{
 			#format {sb2_freezer} {%+2s} {$corpses[freezer]};
-			#var {sb2_freezer} { FZ:<130>$sb2_freezer<088>}
+			#var {sb2_freezer} { FZ:<130>$sb2_freezer<088>};
 	};
 	#else
 	{
-			#var {sb2_freezer} {}
+			#var {sb2_freezer} {};
 	};
 
 	#var    {my[hp][graph]}         {@graph{$my[hp][current];${my[hp][max]}}};
@@ -145,38 +187,63 @@
 	#var    {my[gp1][graph]}        {@graph{$my[gp1][current];$my[gp1][max]}};
 	#var    {my[gp2][graph]}        {@graph{$my[gp2][current];$my[gp2][max]}};
 	#var    {enemy[graph]}          {@graph{$enemy[hp];100}};
-	#format {hp}                    {%+4s} {$my[hp][current]};
-	#format {hp_max}                {%+4s} {$my[hp][max]};
-	#format {sp}                    {%+4s} {$my[sp][current]};
-	#format {sp_max}                {%+4s} {$my[sp][max]};
-	#format {gp1}                   {%+4s} {$my[gp1][current]};
-	#format {gp1_max}               {%+4s} {$my[gp1][max]};
-	#format {gp2}                   {%+4s} {$my[gp2][current]};
-	#format {gp2_max}               {%+4s} {$my[gp2][max]};
-	#format {ehealth}               {%+7s} {$enemy[hp]%%};
-	#format {corpses[inventory]}	{%+2s} {$corpses[inventory]};
-	#format {corpses[coffin]}	{%+2s} {$corpses[coffin]};
-	#if {"$draw[hpbar]" == "on"} 
-	{
-		#showme {HP:$hp/$hp_max SP:$sp/$sp_max Chi:$gp1/$gp1_max  P:$gp2/$gp2_max  E:$ehealth    IC:<130>${corpses[inventory]}<088>${sb1_cooler}} {-4};
-		#showme {H:$my[hp][graph] S:$my[sp][graph] Chi:$my[gp1][graph] P:$my[gp2][graph] E:$enemy[graph] CF:<130>${corpses[coffin]}<088>${sb2_freezer}} {-3}
-	};
+	#format {hp}					{%-4s} {@colscale{$my[hp][current];$my[hp][max]}};
+	#format {hp_max}				{%-4s} {<128>$my[hp][max]<088>};
+	#format {sp}					{%-4s} {@colscale{$my[sp][current];$my[sp][max]}};
+	#format {sp_max}				{%-4s} {<128>$my[sp][max]<088>};
+	#format {gp1}                   {%-4s} {@colscale{$my[gp1][current];$my[gp1][max]}};
+	#format {gp1_max}               {%+4s} {<128>$my[gp1][max]<088>};
+	#format {gp2}                   {%-4s} {@colscale{$my[gp2][current];$my[gp2][max]}};
+	#format {gp2_max}               {%+4s} {<128>$my[gp2][max]<088>};
 	
-	#if {"$draw[gline]" == "on"} 
+	#if { "$enemy[name]" != "" }
 	{
-		#showme {$mip[gline][1]  $mip[gline][2]} {-6}
-	}
+		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
+	};
+	#else
+	{
+		#showme {  } {-6};
+	};
+	#showme {<048>HP<088>  ${hp}/${hp_max}  <048>SP<088>  ${sp}<048>/<088>${sp_max}  <048>Chi<088>  ${gp1}<048>/<088>${gp1_max}  <048>Peace<088>  ${gp2}<048>/<088>${gp2_max} <048>AE<088> <128>$monk[ae][current]<088> <048>[<088><128>$monk[ae][reset]%<088><048>]<088>} {-3};
+	#showme {$mip[gline][1]  $mip[gline][2]} {-4};
 };
 
-#alias {onMobAttackedMonk}
-{
-	pressure;
-	palm;
-}
+/*************************************************************************************
+	Ansify monks
+*************************************************************************************/
+#highlight {You quickly tumble to avoid the brunt of the attack.} {<048>}
+#highlight {With skill and speed you dodge the attack!} {<048>}
+#highlight {Your body is wracked in pain as the life force is sucked from you.} {<068>}
 
-#alias {onMobKilledMonk}
-{
-	study corpse;
-};
+#highlight {You take an instant to gather your thoughts, clear your mind and} {<068>}
+#highlight {focus on the task at hand.} {<068>}
 
+#highlight {Your form shimmers and becomes impenetrable.} {<128>}
+#highlight {Your body explodes in a *BLUR* of force and power!} {<028>}
+#highlight {Your great speed allows you to attack again!} {<028>}
+
+
+#highlight {You reach out and touch your foe, sending death bringing vibrations through it.} {<018>}
+#highlight {You find a pressure point and bore down!} {<028>}
+#highlight {%1's body ruptures at all major joints!} {<018>}
+#highlight {%1 screams in pain as they become weaker!} {<018>}
+#highlight {With a sudden burst of speed you leap into the air and land a devastating} {<018>}
+#highlight {roundhouse strike against %1!} {<018>}
+
+#highlight {You reach out and touch your foe, sending death bringing vibrations} {<018>}
+#highlight {^through it.$} {<018>}
+
+#gag {You quickly tumble to avoid the brunt of the attack.}
+#gag {Your muscles ripple and bulge with power.}
+
+
+#highlight {%1's body is violently rearranged!!} {<018>}
+
+#highlight {You focus your mind and body and slowly tense your muscles in} {<128>}
+#highlight {preparation to deliver a stunning mawashi-geri...} {<128>}
+#highlight {You maneuver yourself into position to execute a Mawashi-Geri...} {<128>}
+
+
+#gag {With skill and speed you dodge the attack!};
+#gag {Your great speed allows you to attack again!};
 #class {monk} {close}

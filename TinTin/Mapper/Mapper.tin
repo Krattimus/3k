@@ -13,6 +13,7 @@
 #var area ????;
 #var mapping off;
 #var room_cnt 0;
+#var currentRoomID 0;
 #map flag static on;
 #map flag vtmap on;
 /*************************************************************
@@ -37,13 +38,12 @@
 *************************************************************/
 #send rating;
 #send pwho;
-#send cc;
 #send stats;
 #send gs;
 
-#if { @isDigit{$map[$ourCharacter][position]} }
+#if { @isDigit{$map[$char[ourCharacter]][position]} }
 {
-	#map goto {$map[$ourCharacter][position]};
+	#map goto {$map[$char[ourCharacter]][position]};
 };
 
 /**************************************************************
@@ -346,7 +346,8 @@ The area has changed
 #alias {.go} 
 {
 	#var isTravelling 1;
-	#DELAY {4} { #var isTravelling 0; };
+	#UNDELAY {travelFinished};
+	#DELAY {travelFinished} { #var isTravelling 0; } {4};
 	
 	#if { "%1" == "%d" }
 	{
@@ -385,7 +386,7 @@ The area has changed
 			#map goto *findroom[1..1]
 		};
 		#var finding_here off;
-		mapoff
+		.mapOff
 	}
 }
 
@@ -557,7 +558,8 @@ The area has changed
 #alias {.mapReturn}
 {
 	#var isTravelling 1;
-	#DELAY {4} { #var isTravelling 0; };
+	#UNDELAY {travelFinished};
+	#DELAY {travelFinished} { #var isTravelling 0; } {4};
 
 	#map run $mapAnchor;
 };

@@ -1,8 +1,6 @@
 #class {angel} {open}
 
 /* Set Guild Variable*/
-#var guild Angel
-
 #var angel[isEnabled] 1;
 #var angel[distanceBetween] 0;
 #var angel[distanceField] {};

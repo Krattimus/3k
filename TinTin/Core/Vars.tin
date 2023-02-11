@@ -4,14 +4,11 @@
 #class chatvar kill
 #read 3k/TinTin/Data/3kchat.var
 
-#class drawvar kill
-#read 3k/TinTin/Data/Draw.var
+#class mapvar kill
+#read 3k/TinTin/Data/Map.var
 
 #class farmvar kill
 #read 3k/TinTin/Data/KnownFarms.var
-
-#class mapvar kill
-#read 3k/TinTin/Data/Map.var
 
 #class shopvar kill
 #read 3k/TinTin/Data/KnownShops.var
@@ -24,5 +21,8 @@
 
 #class mobsvar kill
 #read 3k/TinTin/Data/KnownMobs.var
+
+#class charvar kill
+#read 3k/TinTin/Data/Character.var
 
 #CLASS {vars} CLOSE

@@ -1,5 +1,4 @@
 #class {bot} {open}
-
 /******************************************************************************
 	Controller Behavior Settings
 *******************************************************************************/
@@ -8,18 +7,6 @@
 #var settings[corpseDonations] 	{0};
 #var seller[whichShop] 			{chaos};
 
-/******************************************************************************
-	Data to be used for this patrol
-*******************************************************************************/
-#var patrol[startingLocation] 1273;
-#var patrol[area] {Archon};
-#var patrol[path] {w;w;w;s;e;e;e;s;w;w;w;s;s;e;n;e;s;e;n;e;s;e;n;e;s;e;n;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s}
-
-#var patrol[shouldKillList] 
-{
-	{elemental}{elemental}
-	{archer}{archer}
-	{banshee}{banshee}
 	{basilisk}{basilisk}
 	{benevolent wizard}{wizard}
 	{djinni}{djinni}

@@ -1,0 +1,9 @@
+#CLASS {charvar} OPEN
+
+#VARIABLE {char}
+{
+    {guild} {Monk}
+    {ourCharacter} {krat}
+}
+
+#CLASS {charvar} CLOSE

@@ -1,7 +1,5 @@
 #class {bard} {open}
 
-#var guild bard
-
 /* HP Bars */
 #NOP bset custom_hp @hired:|@HP:&$HP2$& SP:&$SP2$& K:&$K2$& V:&$V2$& SM:&$S$&/&$SR$&% G:&$G2S$&/&$G2N$&[&$G2N%$&%] &$C$&&$NL$&@hired:|@A:&$AS$& &$P$&
 #act {|HP:%d/%d SP:%d/%d K:%d/%d V:%d/%d SM:%d/%d%% G:%d/%d[%d%%]} {

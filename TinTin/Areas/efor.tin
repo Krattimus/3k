@@ -1,21 +1,11 @@
 #class {bot} {open}
 
 /******************************************************************************
-	Controller Behavior Settings
-*******************************************************************************/
-#var {loopCount} {0}
-#var {settings[shouldVacuum]} {1}
-#var settings[autoSell] {0};
-#var settings[corpseDonations] {0};
-#var seller[whichShop] {chaos};
-#var area Fantasy;
-
-/******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
 #var patrol[startingLocation] 4297;
 #var patrol[area] {Fantasy};
-#var {patrol[path]} {e;e;e;s;s;s};
+#var patrol[path] {e;e;e;s;s;s};
 
 /******************************************************************************
 	What to attack

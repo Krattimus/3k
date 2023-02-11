@@ -17,6 +17,9 @@
 	#map get {roomarea} {area};
 
 };
+
+#action {AREA NAME: Diablo2 Normal 20+ Nightmare 40+ Hell 60+} {#var area {Diablo2}; } {4};
+
 /* Transports */
 #NOP Amazon Research Center
 #act {^Stretching your somewhat stiff legs you head out of the plane.} {#map goto 32571}

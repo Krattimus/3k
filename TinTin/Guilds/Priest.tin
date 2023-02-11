@@ -1,7 +1,5 @@
 #class {priest} {open}
 
-#var guild priest
-
 #act {{HP: (\d+)/(\d+) SP: (\d+)/(\d+) MANA: (\d+)/(\d+) PTY: \((\d+)\%\) E: \[([\w\s\-\~\,\(\)\']+)(?: : )?(\w+)?\]}} {
 	#var {my[hp][current]}	{%2};
 	#var {my[hp][max]}	{%3};
@@ -68,13 +66,7 @@
 	#format {corpses[inventory]}    {%+2s} {$corpses[inventory]};
 	#format {corpses[coffin]}       {%+2s} {$corpses[coffin]};
 	#format {corpses[freezer]}      {%+2s} {$corpses[freezer]};
-	#if {"$draw[hpbar]" == "on"} {
-		#showme {HP:$hp/$hp_max SP:$sp/$sp_max MN:$gp1/$gp1_max PY:$gp2/$gp2_max E:$ehealth    IC:<139>${corpses[inventory]}<088>} {-4};
-		#showme {H:$my[hp][graph] S:$my[sp][graph] M:$my[gp1][graph] P:$my[gp2][graph] E:$enemy[graph] CF:<139>${corpses[coffin]}<088>${sb2_freezer}} {-3};
-	};
-	#if {"$draw[gline]" == "on"} {
-		#showme {$mip[gline][1]  $mip[gline][2]} {-6}
-	}
+
 }
 
 

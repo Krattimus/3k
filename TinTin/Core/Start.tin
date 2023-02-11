@@ -57,8 +57,9 @@
 	#read 3k/TinTin/Core/TestBin.tin;
 	#read 3k/TinTin/Core/Joystick.tin;
 
-	#NOP { *********** Guild ************ };
-	#read 3k/TinTin/Guilds/Angel.tin;
+	#NOP { *********** Guild  ************ };
+	#read 3k/TinTin/Guilds/Eternals.tin;
+	#read 3k/TinTin/Guilds/$char[guild].tin;
 }
 
 load3k;

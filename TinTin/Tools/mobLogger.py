@@ -13,6 +13,9 @@ roomID = sys.argv[3]
 area = sys.argv[4]
 rating = sys.argv[5]
 
+if rating is None:
+    rating = 0
+
 insertQuery = ("INSERT INTO MapMobs (MobName, AreaName, RoomID, MobDescription, Rating ) VALUES (%s, %s, %s, %s, %s)")
 
 itemID = db3k.insert(insertQuery, [mobName, area, roomID, mobDescription, rating] )

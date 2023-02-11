@@ -1,8 +1,6 @@
 #class {elemental} {open}
 
 /* Set Guild Variable*/
-#var guild elemental
-
 #NOP  HP:3424/3162 C:100%  NRG:1209/1219(15)  SP:526/526  S:2(84%) G2N:106k  T:a Lee:66%
 
 /* HP Bars */
@@ -70,13 +68,6 @@
 	#format {ehealth}		{%+3s} {@colscale{$enemy[hp];100}};
 	#format {corpses[inventory]}    {%+2s} {$corpses[inventory]};
 	#format {corpses[coffin]}       {%+2s} {$corpses[coffin]};
-	#if {"$draw[hpbar]" == "on"} {
-		#showme {H:${hp}/${hp_max}  S:${sp}/${sp_max}  N:${nrg}/${nrg_max}  G:${gxp_time}    E:   ${ehealth}%    IC:<130>${corpses[inventory]}<088>${sb1_cooler}} {-4};
-		#showme {H:${my[hp][graph]}   S:${my[sp][graph]} N:${my[gp1][graph]} G:${my[gxp][graph]} E:${enemy[graph]} CF:<130>${corpses[coffin]}<088>${sb2_freezer}} {-3}
-	};
-	#if {"$draw[gline]" == "on"} {
-		#showme {$mip[gline][1]  $mip[gline][2]} {-6}
-	}
 }
 
 /* ESCORE GXP Capture */

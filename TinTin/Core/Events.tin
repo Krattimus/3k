@@ -133,7 +133,7 @@
 
 #event {SESSION DISCONNECTED} 
 {
-	#map get roomvnum {map[$ourCharacter][position]};
+	#map get roomvnum {map[$char[ourCharacter]][position]};
 	.mapSave;
 	.save;
 };

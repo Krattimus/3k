@@ -7,11 +7,8 @@
 	#var chat[rows] 17;
 	#math chat[start]	{$chat[rows] + $chat[offset]};
 	#math chat[end]		{$chat[offset] + 1};
-	#if {"$draw[chat]" == "on"} 
-	{
-		#line sub var #line sub esc #draw {tile} 1 1 $chat[rows] $chat[right] $chat[log][-$chat[start]..-$chat[end]]
-	}
-}
+	#line sub var #line sub esc #draw {tile} 1 1 $chat[rows] $chat[right] $chat[log][-$chat[start]..-$chat[end]];
+};
 
 #alias {.logChat} 
 {

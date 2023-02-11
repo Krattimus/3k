@@ -1,7 +1,5 @@
 #class {jedi} open
 
-#var guild jedi
-
 #NOP  W:[%w][%s%d%%] G:[%s{[\d\.]+}%%]
 #act {^HP:[%d/%d] SP:[%d/%d] C:[%s{[\d\.]+}%%] F:[%s{[\d\.]+}%%] D:[%d] W:[%w][%s{[\d\.]+}%%] G:[%s{[\d\.]+}%%]} {
 	#var my[hp][current]	%1;

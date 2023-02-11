@@ -3,10 +3,7 @@
 /******************************************************************************
 	Controller Behavior Settings
 *******************************************************************************/
-#var settings[shouldVacuum]	 	{1};
-#var settings[autoSell] 		{1};
-#var settings[corpseDonations] 	{0};
-#var seller[whichShop] 			{wayhaven};
+#var settings[autoSell] 		{0};
 
 /******************************************************************************
 	Data to be used for this patrol

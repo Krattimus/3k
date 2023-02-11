@@ -1,7 +1,5 @@
 #class {psicorp} {open}
 
-#var guild psicorp
-
 #act {{^(?:> )?\|HP:(\d+)/(\d+) SP:(\d+)/(\d+) PE:(\d+)/(\d+) ST:(\d+)/(\d+) GXP:(\w+)\[(\w+)\%\](?: T:)?([\w\d]+)?}} {
 	#var {my[hp][current]}	{%2};
 	#var {my[hp][max]}	{%3};

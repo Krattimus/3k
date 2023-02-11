@@ -1,14 +1,6 @@
 #class {bot} {open}
 
 /******************************************************************************
-	Controller Behavior Settings
-*******************************************************************************/
-#var settings[shouldVacuum] 	{1}
-#var settings[autoSell] 		{0};
-#var settings[corpseDonations] 	{0};
-#var seller[whichShop] 			{atlanta};
-
-/******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
 #var patrol[startingLocation] 15372;

@@ -1,6 +1,5 @@
 #class {knight} {open}
 
-#var guild knight
 #var gxn_last 0
 
 /* Knight hpconfig setting */

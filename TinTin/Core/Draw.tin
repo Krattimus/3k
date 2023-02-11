@@ -1,8 +1,5 @@
 #CLASS draw {open}
 
-/* Load draw variables */
-#read 3k/TinTin/Data/Draw.var
-
 #var panelsOpen 0;
 #screen get rows screen[rows];
 #screen get cols screen[cols];

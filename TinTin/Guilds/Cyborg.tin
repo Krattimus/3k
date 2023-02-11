@@ -1,7 +1,5 @@
 #class {cyborg} {open}
 
-#var guild cyborg
-
 #act {{HP: (\d+)\[(\d+)\]\((\d+)\) PWR: (\d+)\[(\d+)\]\(([\d\-]+)\) HT: \[(\d+)\%\] SI: \[([\d\.]+)\%\]}} {
 	#var my[hp][current]	%2;
 	#var my[hp][max]	%3;

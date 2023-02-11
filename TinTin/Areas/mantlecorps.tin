@@ -1,14 +1,6 @@
 #class {bot} {open}
 
 /******************************************************************************
-	Controller Behavior Settings
-*******************************************************************************/
-#var settings[shouldVacuum] 	{1}
-#var settings[autoSell] 		{0};
-#var settings[corpseDonations] 	{0};
-#var seller[whichShop] 			{atlanta};
-
-/******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
 #var patrol[startingLocation] 2464;
@@ -30,5 +22,7 @@
 #act {in the neck with a pen. Back to work} {gl;} {2};
 #act {The lights return to normal levels} {gl;} {2};
 #act {You don't need to apply for a job, you already work here} {gl;} {2};
+#alias {.sur} { surrender shiv; surrender unit; surrender balloon; };
+#alias {.offer} { #10 offer pack; };
 
 #class {bot} {close}

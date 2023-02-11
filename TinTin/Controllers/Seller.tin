@@ -4,9 +4,4 @@
 #var seller[isSelling] 0;
 #var seller[whichShop] chaos;
 
-
-
-
-
-
 #class {seller} {close}

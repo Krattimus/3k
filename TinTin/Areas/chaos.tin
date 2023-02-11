@@ -1,16 +1,7 @@
 #class {bot} {open}
 
 /******************************************************************************
-	Controller Behavior Settings
-*******************************************************************************/
-#var settings[shouldVacuum] 	{0}
-#var settings[autoSell] 	{0};
-#var settings[corpseDonations] 	{0};
-#var seller[whichShop] 		{chaos};
-
-/******************************************************************************
 	Data to be used for this patrol
-	w;w;w;s;e;e;e;e;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;n;e;e;e;n;w;w;w;w;w;w;w;s;e;e;e;s;w;w;w;s;e;e;e;s
 *******************************************************************************/
 #var patrol[startingLocation] 24;
 #var patrol[area] {Chaos};

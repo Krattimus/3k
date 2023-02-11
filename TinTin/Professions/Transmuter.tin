@@ -252,5 +252,23 @@
     };
 };
 
+#alias transmute_ug_fragments
+{
+    transmute_ug %1 {fragment of ascension};
+    transmute_ug %1 {fragment of blasting};
+    transmute_ug %1 {fragment of compassion};
+    transmute_ug %1 {fragment of damnation};
+    transmute_ug %1 {fragment of destruction};
+    transmute_ug %1 {fragment of knowledge};
+    transmute_ug %1 {fragment of light};
+    transmute_ug %1 {fragment of might};
+    transmute_ug %1 {fragment of rage};
+    transmute_ug %1 {fragment of rejuvenation};
+    transmute_ug %1 {fragment of shadow};
+    transmute_ug %1 {fragment of soul};
+    transmute_ug %1 {fragment of the unseen};
+    transmute_ug %1 {fragment of water};
+    transmute_ug %1 {fragment of willy};
+};
 
 #class transmuter {close}
