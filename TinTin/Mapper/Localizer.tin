@@ -18,6 +18,9 @@
 
 };
 
+
+#action {You squeeze your way into the Erratio forest} {#map go 34133; #var area {Erratio Forest}; };
+
 #action {AREA NAME: Diablo2 Normal 20+ Nightmare 40+ Hell 60+} {#var area {Diablo2}; } {4};
 
 /* Transports */

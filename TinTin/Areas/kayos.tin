@@ -60,14 +60,14 @@
 		#var bunker_cnt 1;
 		go bunker1;
 		#path load $bunker_path;
-		#delay 2 ..
+		#delay 2 gl;
 	}; #elseif {"$kayos_path" == "ship"} {
 		killbot;
 		open briefcase;
 		#14 empower wis;
 		touch beacon;
 		plunge;
-		#delay 2 go monk
+
 	}; #else {
 		#if {$bunker_cnt < 3} {
 			#math {bunker_cnt} {$bunker_cnt + 1};
@@ -80,7 +80,7 @@
 			go pad;
 			#3 insert cell;
 			#path load $ship_path;
-			#delay 2 ..
+			#delay 2 gl;
 		}
 	}
 } {1}

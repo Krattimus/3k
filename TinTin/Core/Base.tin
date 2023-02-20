@@ -4,6 +4,90 @@
 /**************************************************************
 	Calculator
 **************************************************************/
+
+#var dirs[n] overhere;
+#var dirs[s] overthere;
+#var dirs[e] yonder;
+#var dirs[w] thatway;
+#var dirs[u] anotherway;
+#var dirs[d] thisway;
+
+#alias {.n} { #send !$dirs[n]; #map move n; };
+#alias {.s} { #send !$dirs[s]; #map move s; };
+#alias {.e} { #send !$dirs[e]; #map move e; };
+#alias {.w} { #send !$dirs[w]; #map move w; };
+#alias {.u} { #send !$dirs[u]; #map move u; };
+#alias {.d} { #send !$dirs[d]; #map move d; };
+
+#alias {.hellmap} 
+{ 
+	gl;
+	#delay {2}
+	{
+		#var exits2 $exits;
+
+		#map get {roomcolor} {color};
+		#map set {roomcolor} {<088>};
+		#map set {roomid} {1};
+
+		#replace {exits2} {$dirs[n]} {north};
+		#replace {exits2} {$dirs[e]} {east};
+		#replace {exits2} {$dirs[w]} {west};
+		#replace {exits2} {$dirs[s]} {south};
+		#replace {exits2} {$dirs[u]} {up};
+		#replace {exits2} {$dirs[d]} {down};
+
+		#replace exits2 {,} {;};
+		#foreach {$exits2} {eachexit} 
+		{
+			#switch {"$eachexit"} 
+			{
+				#case {"north"}		{#map dig n};
+				#case {"east"}		{#map dig e};
+				#case {"south"}		{#map dig s};
+				#case {"west"}		{#map dig w};
+				#case {"northwest"}	{#map dig nw};
+				#case {"northeast"}	{#map dig ne};
+				#case {"southeast"}	{#map dig se};
+				#case {"southwest"}	{#map dig sw};
+				#case {"up"}		{#map dig u};
+				#case {"down"}		{#map dig d};
+				#default		{#map dig $eachexit}
+			}
+		};
+
+		#map get {roomexit} {rexit};
+		#foreach {$rexit} {eachexit} 
+		{
+			#map at {$eachexit} 
+			{
+				#map get {roomid} {rid};
+				#if { "$rid" != "1" }
+				{
+					#map set {roomarea} Hell;
+					#map set {roomcolor} {<118>}
+				};
+			}
+		}
+	};
+
+} {1};
+
+#alias .dir
+{
+	#var exits2 $exits;
+	#replace {exits2} {$dirs[n]} {north};
+	#replace {exits2} {$dirs[e]} {east};
+	#replace {exits2} {$dirs[w]} {west};
+	#replace {exits2} {$dirs[s]} {south};
+	#replace {exits2} {$dirs[u]} {up};
+	#replace {exits2} {$dirs[d]} {down};
+
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Exits ($exits2);
+	#draw Yellow scroll line 1 1 1 80;
+};
+
 #alias {.calc} 
 {
         #math {math} {%1};

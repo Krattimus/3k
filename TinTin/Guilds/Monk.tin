@@ -93,6 +93,11 @@
 	#var monk[palm] 1;
 };
 
+#action {You cannot re-palm this monster}
+{
+	#var monk[palm] 1;
+};
+
 #action {The vibrations have ceased on}
 {
 	#var monk[palm] 0;

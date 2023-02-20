@@ -9,6 +9,7 @@
 #var settings[corpseDonations] 1;
 #var settings[shouldVacuum] 0;
 #var settings[shouldLoot] 1;
+#var settings[shouldLog] 1;
 #var settings[shouldProcessCorpse] 1;
 #var settings[acceptMissions] 1;
 
@@ -25,6 +26,7 @@
         .showSetting {Should Loot Corpses} $settings[shouldLoot];
         .showSetting {Should Process Corpses} $settings[shouldProcessCorpse];
         .showSetting {Auto Accept Missions} $settings[acceptMissions];
+        .showSetting {Logging} $settings[shouldLog];
 };
 
 /************************************************************

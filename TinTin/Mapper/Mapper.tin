@@ -283,7 +283,7 @@ Once we see this, we can conclude the room description is over
 			#map set roomdesc {$long}
 		}
 	}
-} {1}
+} {1};
 
 /*************************************************************
 Allows us to drop map interest pins in an area to travel to

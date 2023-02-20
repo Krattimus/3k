@@ -97,7 +97,7 @@
 *************************************************************************/
 #alias onItemTakenLogger
 {
-	#if { $allowRecording && !$patroller[isPatrolling] }
+	#if { $allowRecording && !$patroller[isPatrolling] && $settings[shouldLog] }
 	{
 		#if { !@containsNoCase{{%0}{coins}} && !@containsNoCase{{%0}{corpse}} }
 		{
