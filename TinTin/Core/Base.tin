@@ -1,10 +1,11 @@
 #showme READING Base.TIN
 #class {base} {open}
 
+#action {Leufarr whispers: The watchword is: %1} { #var watchword %1; }
 /**************************************************************
 	Calculator
 **************************************************************/
-
+#highlight {You have never been here before.} {<338>};
 #var dirs[n] overhere;
 #var dirs[s] overthere;
 #var dirs[e] yonder;
@@ -110,12 +111,6 @@
 		} {1};
 	} {%1};
 };
-
-#highlight {You search about, but fail to find anything.} {<038>};
-#highlight {You find nothing of interest.} {<038>};
-#highlight {You don't find anything of interest.} {<038>};
-#highlight {You search the area but fail to find anything out of the ordinary} {<038>};
-
 
 #alias {.save}
 {

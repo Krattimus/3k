@@ -1,0 +1,37 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 4755;
+#var patrol[area] {Encampment};
+#var patrol[path] {e;ne;pick;ne;pick;e;pick;n;pick;w;pick;w;pick;w;pick;w;pick;w;pick;w;pick;s;pick;e;pick;e;pick;e;pick;e;pick;sw;pick;w;pick;se;w;sw;pick;sw;pick;s;pick;s;pick;se;pick;sw;sw;w;w;pick;w;pick;sw;pick;s;pick;sw;pick;sw;pick;sw;ne;ne;ne;n;ne;e;e;e;e;s;sw;w;s;s;s;sw;pick;w;pick;w;pick;sw;pick;s;
+pick;sw;ne;n;ne;e;e;ne;n;n;n;e;ne;n;w;w;e;ne;ne;nw;n;n;ne;ne;e;e;e;e;e;e;gather;e;gather;ne;gather;e;gather;e;gather;se;gather;nw;ne;gather;e;gather;w;sw;w;n;gather;nw;gather;nw;gather;w;gather;w;gather;w;gather;nw;n;nw;n;
+pick;n;pick;n;pick;ne;pick;e;pick;e;pick;se;pick;e;pick;e;pick;ne;pick;ne;pick;e;pick;e;pick;e;pick;e;pick;se;pick;e;pick;w;sw;pick;w;pick;w;pick;w;pick;nw;pick;
+e;pick;e;pick;e;pick;w;w;w;se;e;e;e;ne;nw;w;w;w;w;sw;w;pick;w;pick;w;pick;n;pick;e;pick;e;pick;n;pick;w;pick;w;pick;s;sw;w;w;sw;s;s;s;se;s;se;e;e;e;se;se;s;w;sw;
+w;w;w;w;w;w;w}
+ 
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{elemental}{elemental}
+};
+
+
+#action {It seems like someone already} { .doBehaviorPatrol; };
+#action {like someone beat} { .doBehaviorPatrol; };
+#action {could be of use} { .doBehaviorPatrol; };
+#action {you finally find one} { .doBehaviorPatrol; };
+#action {beat you to it} { .doBehaviorPatrol; };
+#action {what to look for} { .doBehaviorPatrol; };
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+
+#class {bot} {close}

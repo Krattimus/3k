@@ -41,8 +41,6 @@
 
 #event {CLASS DESTROYED bot}
 {
-	.unregisterEvent onMobKilled onMobKilledBase;
-	.unregisterEvent onPrompt onPromptBase;
 	.unregisterEvent onEnteredRoom onEnteredRoomBase;
 	.unregisterEvent onExitedRoom onExitedRoomBase;
 	.unregisterEvent onDebugLog onDebugLogBase;
@@ -175,7 +173,7 @@ prompt >$nl$;
 
 	.triggerEvent onMobFound;
 
-	#if { $settings[acceptMissions] && !$isTravelling }
+	#if { $settings[acceptMissions] && !$traveller[isTravelling] }
 	{
 		#if { @containsNoCase{{$event[foundMobName]}{\<\?\>}}}
 		{
@@ -531,7 +529,7 @@ prompt >$nl$;
 		#var found[gold] 0;
 	};
 
-	#if { $found[item] && !$isTravelling && $currentRoomID >= 200 }
+	#if { $found[item] && !$traveller[isTravelling] && $currentRoomID >= 200 }
 	{
 		#send !get all;
 		#var found[item] 0;

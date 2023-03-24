@@ -1,6 +1,11 @@
 #showme READING ETERNAL.TIN
 #class {eternal} {open}
 
+#highlight {Your body explodes in a *BLUR* of force and power!} {<028>}
+#highlight {Your form shimmers and becomes impenetrable.} {<128>}
+
+
+
 /*
 #var {eternal[quicken][tier]} {7}
 #var {eternal[quicken][cooldown]} {184}

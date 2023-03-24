@@ -1,47 +1,49 @@
+
 #class {bot} {open}
 
-#var {no_loop} {0}
-#var {no_home} {0}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 20967;
+#var patrol[area] {Catacombs 2.0};
+#var patrol[path] {n;n;e;e;se;nw;n;n;e;w;w;w;w;n;n;w;n;w;e;s;e;s;s;e;e;e;n;d;s;e;s;e;n;e;w;s;w;s;w;s;e;w;w;s;n;w;w;e;n;e;w;n;n;w;e;n;e;w;s;s;s;w;d;n;e;e;n;s;e;s;e;s;w;e;n;w;w;w;w;s;s;e;e;n;w;e;s;s;n;e;e;s;w;e;n;e;n;n;n;w;d;e;e;n;w;e;n;s;e;w;s;e;s;w;s;e;w;s;e;w;n;w;n;s;w;n;n;w;w;s;s;e;w;w;w;n;e;n;w;archway;{se;trace north rune;trace east rune;trace south rune;trace west rune;#delay {0.5} {gl}};nw;stairs;e;n;e;e;n;e;s;s;u;e;s;s;s;w;w;w;w;w;n;n;u;e;n;n;n;e;e;u;s;w;w;s;s;s;s}
 
-#var {patrol[path]} {n;n;e;e;se;nw;n;n;e;w;w;w;w;n;n;w;n;w;e;s;e;s;s;e;e;e;n;d;s;e;s;e;n;e;w;s;w;s;w;s;e;w;w;s;n;w;w;e;n;e;w;n;n;w;e;n;e;w;s;s;s;w;d;n;e;e;n;s;e;s;e;s;w;e;n;w;w;w;w;s;s;e;e;n;w;e;s;s;n;e;e;s;w;e;n;e;n;n;n;w;d;e;e;n;w;e;n;s;e;w;s;e;s;w;s;e;w;s;e;w;n;w;n;s;w;n;n;w;w;s;s;e;w;w;w;n;e;n;w;archway;{se;trace north rune;trace east rune;trace south rune;trace west rune;#delay {0.5} {gl}};nw;stairs;e;n;e;e;n;e;s;s;u;e;s;s;s;w;w;w;w;w;n;n;u;e;n;n;n;e;e;u;s;w;w;s;s;s;s}
+ 
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{A statue of a dwarf}{statue}
+	{skeleton}{skeleton}
+	{creature of}{golem}
+	{A featureless stone statue}{golem}
+	{A statue crafted of wood}{golem}
+	{Rat}{rat}
+	{A goblin warrior}{statue}
+	{statue}{statue}
+	{"A Goblin Lord"}{lord}
+	{"A rotting corpse"}{corpse}	
+	{"A huge rotting corpse"}{corpse}
+	{"An ancient skeleton"}{skeleton}
+	{"A huge skeleton"}{skeleton}
+	{"The powerful Sorceress"}{sorceress}
+	{"A hideous demon"}{demon}
+	{"A ghoul"}{ghoul}	
+	{"A Ghoul Militia"}{militia}
+	{"The Ghoul Battle Master"}{master}
+	{"A Vampire"}{vampire}
+	{"A vampire soldier"}{vampire}
+	{"A wandering vampire"}{vampire}
+	{"Duke of Vampires"}{duke}
+	{"A cloaked figure"}{spy}	
+};
 
-#NOP Good mobs
-#NOP A Guide of Catacombs|A happy Dwarf|An old Druid
-#act {^=M= {A large Rat|A goblin warrior|A Goblin Lord|A statue of a dwarf|A rotting corpse|A huge rotting corpse|An ancient skeleton|The powerful Sorceress|A hideous demon from the lower planes|A ghoul|A Ghoul Militia|The Ghoul Battle Master|A Vampire|A vampire soldier|A wandering vampire|Duke of Vampires|A cloaked figure|A massive creature of iron|A massive creature of shimmering crystal|A featureless stone statue|A statue crafted of wood}} {
-	#switch {"%1"} {
-		#NOP Good;
-		#NOP #case {"A Guide of Catacombs"}			{#var patroller[shouldKill] guide};
-		#NOP #case {"A happy Dwarf"}				{#var patroller[shouldKill] dwarf};
-		#NOP #case {"An old Druid"}				{#var patroller[shouldKill] druid};
-		#NOP Neutral;
-		#case {"A statue of a dwarf"}				{#var patroller[shouldKill] statue};
-		#case {"A small skeleton"}				{#var patroller[shouldKill] skeleton};
-		#case {"A massive creature of iron"}			{#var patroller[shouldKill] golem};
-		#case {"A massive creature of shimmering crystal"}	{#var patroller[shouldKill] golem};
-		#case {"A featureless stone statue"}			{#var patroller[shouldKill] golem};
-		#case {"A statue crafted of wood"}			{#var patroller[shouldKill] golem};
-		#NOP Evil;
-		#case {"A large Rat"}					{#var patroller[shouldKill] rat};
-		#case {"A goblin warrior"}				{#var patroller[shouldKill] warrior};
-		#case {"A Goblin Lord"}					{#var patroller[shouldKill] lord};
-		#case {"A rotting corpse"}				{#var patroller[shouldKill] corpse};
-		#case {"A huge rotting corpse"}				{#var patroller[shouldKill] corpse};
-		#case {"An ancient skeleton"}				{#var patroller[shouldKill] skeleton};
-		#case {"A huge skeleton"}				{#var patroller[shouldKill] skeleton};
-		#case {"The powerful Sorceress"}			{#var patroller[shouldKill] sorceress};
-		#case {"A hideous demon from the lower planes"}		{#var patroller[shouldKill] demon};
-		#case {"A ghoul"}					{#var patroller[shouldKill] ghoul};
-		#case {"A Ghoul Militia"}				{#var patroller[shouldKill] militia};
-		#case {"The Ghoul Battle Master"}			{#var patroller[shouldKill] master};
-		#case {"A Vampire"}					{#var patroller[shouldKill] vampire};
-		#case {"A vampire soldier"}				{#var patroller[shouldKill] vampire};
-		#case {"A wandering vampire"}				{#var patroller[shouldKill] vampire};
-		#case {"Duke of Vampires"}				{#var patroller[shouldKill] duke};
-		#case {"A cloaked figure"}				{#var patroller[shouldKill] spy}
-	};
-	_check_mob
-}
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
 
 #class {bot} {close}

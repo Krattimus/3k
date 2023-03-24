@@ -93,6 +93,11 @@
 	#var monk[palm] 1;
 };
 
+#action {You sit down and begin to meditate}
+{
+	#var monk[palm] 0;
+};
+
 #action {You cannot re-palm this monster}
 {
 	#var monk[palm] 1;
@@ -218,37 +223,43 @@
 *************************************************************************************/
 #highlight {You quickly tumble to avoid the brunt of the attack.} {<048>}
 #highlight {With skill and speed you dodge the attack!} {<048>}
-#highlight {Your body is wracked in pain as the life force is sucked from you.} {<068>}
+#highlight {You steadily block the brunt of the incoming attack.} {<048>};
 
+#highlight {Your body is wracked in pain as the life force is sucked from you.} {<068>}
 #highlight {You take an instant to gather your thoughts, clear your mind and} {<068>}
 #highlight {focus on the task at hand.} {<068>}
 
-#highlight {Your form shimmers and becomes impenetrable.} {<128>}
-#highlight {Your body explodes in a *BLUR* of force and power!} {<028>}
-#highlight {Your great speed allows you to attack again!} {<028>}
+#highlight {%1 dodges to one side avoiding your kick!} {<068>};
 
 
-#highlight {You reach out and touch your foe, sending death bringing vibrations through it.} {<018>}
-#highlight {You find a pressure point and bore down!} {<028>}
-#highlight {%1's body ruptures at all major joints!} {<018>}
-#highlight {%1 screams in pain as they become weaker!} {<018>}
-#highlight {With a sudden burst of speed you leap into the air and land a devastating} {<018>}
-#highlight {roundhouse strike against %1!} {<018>}
-
-#highlight {You reach out and touch your foe, sending death bringing vibrations} {<018>}
-#highlight {^through it.$} {<018>}
-
-#gag {You quickly tumble to avoid the brunt of the attack.}
-#gag {Your muscles ripple and bulge with power.}
-
-
-#highlight {%1's body is violently rearranged!!} {<018>}
-
+#highlight {You lay hands upon yourself and feel healed.} {<128>};
 #highlight {You focus your mind and body and slowly tense your muscles in} {<128>}
 #highlight {preparation to deliver a stunning mawashi-geri...} {<128>}
 #highlight {You maneuver yourself into position to execute a Mawashi-Geri...} {<128>}
 
+#highlight {Your great speed allows you to attack again!} {<028>}
+#highlight {You find a pressure point and bore down!} {<028>}
 
+#highlight {You reach out and touch your foe, sending death bringing vibrations through it.} {<018>}
+#highlight {%1's body ruptures at all major joints!} {<018>}
+#highlight {%1 screams in pain as they become weaker!} {<018>}
+#highlight {With a sudden burst of speed you leap into the air and land a devastating} {<018>}
+#highlight {roundhouse strike against %1!} {<018>}
+#highlight {%1's body is violently rearranged!!} {<018>}
+
+#highlight {You reach out and touch your foe, sending death bringing vibrations} {<018>}
+#highlight {^through it.$} {<018>}
+#highlight {^through him.$} {<018>}
+
+#gag {You have become grounded in this plane yet again.}
+#gag {You quickly tumble to avoid the brunt of the attack.}
+#gag {Your muscles ripple and bulge with power.}
+#gag {Electricity crackles through your fingers.}
 #gag {With skill and speed you dodge the attack!};
 #gag {Your great speed allows you to attack again!};
+
+
+
+
+
 #class {monk} {close}

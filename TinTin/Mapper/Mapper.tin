@@ -94,6 +94,11 @@
 };
 
 
+
+
+
+
+
 /*************************************************************
  TinTin Events, redraw the map when the map data changes
 *************************************************************/
@@ -345,9 +350,9 @@ The area has changed
 *************************************************************/
 #alias {.go} 
 {
-	#var isTravelling 1;
+	#var traveller[isTravelling] 1;
 	#UNDELAY {travelFinished};
-	#DELAY {travelFinished} { #var isTravelling 0; } {4};
+	#DELAY {travelFinished} { #var traveller[isTravelling] 0; } {4};
 	
 	#if { "%1" == "%d" }
 	{
@@ -557,9 +562,9 @@ The area has changed
 
 #alias {.mapReturn}
 {
-	#var isTravelling 1;
+	#var traveller[isTravelling] 1;
 	#UNDELAY {travelFinished};
-	#DELAY {travelFinished} { #var isTravelling 0; } {4};
+	#DELAY {travelFinished} { #var traveller[isTravelling] 0; } {4};
 
 	#map run $mapAnchor;
 };

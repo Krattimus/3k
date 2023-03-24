@@ -1,6 +1,52 @@
 #showme READING Explorer
 #class {explorer} {open}
 
+
+#highlight {You search about, but fail to find anything.} {<038>};
+#highlight {You find nothing of interest.} {<038>};
+#highlight {You don't find anything of interest.} {<038>};
+#highlight {You search the area but fail to find anything out of the ordinary} {<038>};
+
+
+/************************************************************************
+	Masque area
+************************************************************************/
+#highlight {You search through the graveyard path with urgency...} {<038>};
+#highlight {...but you find nothing in response of your hurried efforts.} {<038>};
+#highlight {You search the gravestone and the surrounding willows...} {<038>};
+#highlight {...but you only find disappointment at the end of your valiant} {<038>};
+#highlight {You search around cautiously, looking for the slightest abnormality} {<038>};
+#highlight {around you.  Finding none, you give up your investigation.} {<038>};
+#highlight {You search around nervously and come to realize that although it was a} {<038>};
+#highlight {valiant effort, you still discover nothing.} {<038>};
+#highlight {You search through the mist carefully and conservatively...} {<038>};
+#highlight {...and you find exactly what you were supposed to.  Nothing at all.} {<038>};
+
+
+#highlight {You search through the wooded willows and all around...} {<038>};
+#highlight {...but you come up with nothing worth the efforts of your search.} {<038>};
+
+
+#highlight {You search the graveyard nervously ...} {<038>};
+#highlight {...but don't turn up anything, except for dead leaves and dark soil.} {<038>};
+
+
+#highlight {You search the area but find nothing of interest.} {<038>};
+
+
+
+
+
+
+#highlight {You search through the mist and find nothing.} {<038>};
+#highlight {You search through the graveyard and find nothing of any virtue.} {<038>};
+
+
+#highlight {You search the graveyard floor and find nothing of interest.} {<038>};
+
+
+
+
 /************************************************************************
 	LOL SEARCH
 ************************************************************************/
