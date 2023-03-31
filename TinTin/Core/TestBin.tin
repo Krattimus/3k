@@ -1,6 +1,26 @@
 #showme READING testbin.TIN
 #class {testbin} {open}
 
+#NOP List all Roomnotes for 'go' alias
+#alias .noteList2
+{
+        #if { "%0" == "" }
+        {
+                #map list {roomnote} {%%*%1%%*} {variable} {noterooms};
+        };
+        #else
+        {
+        	#map list {roomnote} {%%*%1%%*} {variable} {noterooms};
+        };
+
+
+        #map list {roomnote} {%*%1%*} {variable} {noterooms};
+	#foreach {*noterooms[]} {room} {#map get {roomnote} {notes[$room]} {$room}};
+	#list notes sort;
+	#var notes
+};
+
+
 
 /**************************************************************
 	Lists rooms that haven't been explicitly marked explored
@@ -9,11 +29,15 @@
 **************************************************************/
 #alias {.mapSetExplored}
 {
-	#local areaToSearch $area;
 	#if { "%0" != "" }
 	{
 		#local areaToSearch %0;
 	};
+        #else
+        {
+                #showme "MUST SPECIFY AREA";
+                #return;
+        };
 	
 	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
 	#draw Yellow scroll line 1 1 1 80;

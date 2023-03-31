@@ -1,4 +1,5 @@
 *.pass
+.*
 TinTin/Data/Logs/*
 TinTin/Data/3kchat.var
 3kchat.var

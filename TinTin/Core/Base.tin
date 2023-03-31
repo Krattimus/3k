@@ -6,6 +6,10 @@
 	Calculator
 **************************************************************/
 #highlight {You have never been here before.} {<338>};
+#highlight {cyberman} {<338>};
+#highlight {Cyberman} {<338>};
+
+
 #var dirs[n] overhere;
 #var dirs[s] overthere;
 #var dirs[e] yonder;

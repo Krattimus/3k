@@ -59,7 +59,11 @@
 
 	#NOP { *********** Guild  ************ };
 	#read 3k/TinTin/Guilds/Eternals.tin;
-	#read 3k/TinTin/Guilds/$char[guild].tin;
+
+	#if { "$char[guild]" != "" } 
+	{
+		#read 3k/TinTin/Guilds/$char[guild].tin;
+	};
 }
 
 load3k;

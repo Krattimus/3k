@@ -34,6 +34,14 @@
 #highlight {You search the area but find nothing of interest.} {<038>};
 
 
+#highlight {You investigate the surfaces of the corridor carefully, but discover} {<038>};
+#highlight {^nothing new\.} {<038>};
+
+
+#highlight {You meticulously scour the stone walls in search of clues, but they} {<038>};
+#highlight {appear to be flat, immovable, and bare.} {<038>};
+
+ 
 
 
 

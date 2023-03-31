@@ -589,9 +589,9 @@ The area has changed
 
 
 #NOP List all Roomnotes for 'go' alias
-#alias {.notelist} 
+#alias {.noteList} 
 {
-	#map list {roomnote} {%+} {variable} {noterooms};
+	#map list {roomnote} {variable} {noterooms};
 	#foreach {*noterooms[]} {room} {#map get {roomnote} {notes[$room]} {$room}};
 	#list notes sort;
 	#var notes

@@ -41,9 +41,10 @@
 
 #alias {connect} 
 {
-	#ses {krat} {3k.org} {3000};
-	#var {ses_name} {krat};
+	#read 3k/TinTin/Data/Character.var;
+	#ses {$char[ourCharacter]} {3k.org} {3000};
+	#var {ses_name} {$char[ourCharacter]};
 	#var {mud} {3k};
 	$ses_name;
-	#textin 3k/TinTin/.pass
+	#textin 3k/TinTin/.$char[ourCharacter]
 }
