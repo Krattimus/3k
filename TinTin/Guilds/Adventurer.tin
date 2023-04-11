@@ -1,0 +1,109 @@
+#showme READING MONKS
+
+#class {adventurer} {open}
+
+/**********************************************************************************
+	Data
+**********************************************************************************/
+#var adventurer[xp] 0;
+#var adventurer[salveThreshold] 90;
+
+.registerEvent onNewMipGline onNewMipGlineAdventurer;
+.registerEvent onMobKilled onMobKilledAdventurer;
+.registerEvent onNewCombatRound onNewCombatRoundAdventurer;
+
+/**********************************************************************************
+	Kill trig
+**********************************************************************************/
+#alias {onMobKilledAdventurer}
+{
+
+};
+
+
+
+/*************************************************************************************
+	Round of combat
+*************************************************************************************/
+#alias onNewCombatRoundAdventurer
+{
+	#if {$currentRoundID <= 1}
+	{
+		#send !consider;
+	};
+
+	#math {normalizedHp} { $adventurer[salveThreshold]*$my[hp][max]/100 };
+
+	#if { $my[hp][current] < $normalizedHp }
+	{
+		#send salve;
+	};
+};
+
+/*************************************************************************************
+	Parse MI
+*************************************************************************************/
+#ALIAS {onNewMipGlineAdventurer} 
+{
+	#REGEX {$mip[gline][1]}{Exp to Next Level: %d} 
+	{
+		#var	{adventurer[xp]}		{&1};
+	};
+};
+
+/*************************************************************************************
+	Render hp bar
+*************************************************************************************/
+#alias {.renderAdventurerBar} 
+{
+	#if {"$cooler" == "on" || $corpses[cooler] > 0} 
+	{
+		#format {sb1_cooler} {%+2s} {$corpses[cooler]};
+		#var {sb1_cooler} { CL:<130>$sb1_cooler<088>};
+	};
+	#else
+	{
+			#var {sb1_cooler} {};
+	};
+	#if {"$freezer" == "on" || $corpses[freezer] > 0} 
+	{
+			#format {sb2_freezer} {%+2s} {$corpses[freezer]};
+			#var {sb2_freezer} { FZ:<130>$sb2_freezer<088>};
+	};
+	#else
+	{
+			#var {sb2_freezer} {};
+	};
+
+	#var    {my[hp][graph]}         {@graph{$my[hp][current];${my[hp][max]}}};
+	#var    {my[sp][graph]}         {@graph{$my[sp][current];$my[sp][max]}};
+	#var    {my[gp1][graph]}        {@graph{$my[gp1][current];$my[gp1][max]}};
+	#var    {my[gp2][graph]}        {@graph{$my[gp2][current];$my[gp2][max]}};
+	#var    {enemy[graph]}          {@graph{$enemy[hp];100}};
+	#format {hp}					{%-4s} {@colscale{$my[hp][current];$my[hp][max]}};
+	#format {hp_max}				{%-4s} {<128>$my[hp][max]<088>};
+	#format {sp}					{%-4s} {@colscale{$my[sp][current];$my[sp][max]}};
+	#format {sp_max}				{%-4s} {<128>$my[sp][max]<088>};
+	#format {gp1}                   {%-4s} {@colscale{$my[gp1][current];$my[gp1][max]}};
+	#format {gp1_max}               {%+4s} {<128>$my[gp1][max]<088>};
+	#format {gp2}                   {%-4s} {@colscale{$my[gp2][current];$my[gp2][max]}};
+	#format {gp2_max}               {%+4s} {<128>$my[gp2][max]<088>};
+	
+	#if { "$enemy[name]" != "" }
+	{
+		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
+	};
+	#else
+	{
+		#showme {  } {-6};
+	};
+	#showme {<048>HP<088>  ${hp}/${hp_max}  <048>SP<088>  ${sp}<048>/<088>${sp_max}<088>} {-3};
+	#showme {<038>XP Needed: <138>$adventurer[xp]<088><088>}{-4};
+};
+
+
+
+
+
+
+#class {adventurer} {close}

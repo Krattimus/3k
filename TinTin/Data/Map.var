@@ -2,10 +2,18 @@
 
 #VARIABLE {map}
 {
+    {Krat} 
+    {
+        {position} {2}
+    }
     {height} {17}
     {krat} 
     {
-        {position} {22889}
+        {position} {85}
+    }
+    {kratter} 
+    {
+        {position} {88}
     }
     {position} {top}
     {width} {42}

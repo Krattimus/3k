@@ -6,8 +6,6 @@
 	Calculator
 **************************************************************/
 #highlight {You have never been here before.} {<338>};
-#highlight {cyberman} {<338>};
-#highlight {Cyberman} {<338>};
 
 
 #var dirs[n] overhere;
@@ -224,6 +222,28 @@
 		}
 	}
 };
+
+/**************************************************************
+	Adds a highlight to the reps output for readability
+**************************************************************/
+#alias .rep 
+{
+        #if { "%0" == "" }
+        {
+                reps;
+        };
+        #else
+        {
+                #highlight {%%i%0%%*\|%%*} {<338>};reps;
+
+                #delay {2} 
+                {
+                        #unhighlight {%%i%0%%*\|%%*} {<338>};
+                } {1};
+        };
+};
+
+
 
 #alias {.cls}
 {

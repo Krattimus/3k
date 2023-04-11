@@ -1,0 +1,112 @@
+#showme READING MONKS
+
+#class {bladesinger} {open}
+
+/**********************************************************************************
+	Data
+**********************************************************************************/
+#var bladesinger[xp] 0;
+
+.registerEvent onNewMipGline onNewMipGlineBladesinger;
+.registerEvent onMobKilled onMobKilledBladesinger;
+.registerEvent onNewCombatRound onNewCombatRoundBladesinger;
+
+/**********************************************************************************
+	Kill trig
+**********************************************************************************/
+#alias {onMobKilledBladesinger}
+{
+	#send salute;
+};
+
+
+/*************************************************************************************
+	Round of combat
+*************************************************************************************/
+#alias onNewCombatRoundBladesinger
+{
+	#if {$currentRoundID <= 1}
+	{
+		#send !consider;
+	};
+
+	#math {normalizedHp} { $Bladesinger[salveThreshold]*$my[hp][max]/100 };
+
+};
+
+/*************************************************************************************
+	Parse MI
+*************************************************************************************/
+#ALIAS {onNewMipGlineBladesinger} 
+{
+	#REGEX {$mip[gline][2]}{XTNL: %?%d<} 
+	{
+		#var	{bladesinger[xp]}	{&1}{&2};
+	};
+};
+
+#gag {^You miss %*.};
+#gag {^You slice %*.};
+#gag {^You feint %*.};
+#gag {^You slash %*.};
+#gag {^You study %*.};
+#gag {^You gash %*.};
+#gag {You study White Foot Soldier's movements closely.};
+
+/*************************************************************************************
+	Render hp bar
+*************************************************************************************/
+#alias {.renderBladesingerBar} 
+{
+	#if {"$cooler" == "on" || $corpses[cooler] > 0} 
+	{
+		#format {sb1_cooler} {%+2s} {$corpses[cooler]};
+		#var {sb1_cooler} { CL:<130>$sb1_cooler<088>};
+	};
+	#else
+	{
+			#var {sb1_cooler} {};
+	};
+	#if {"$freezer" == "on" || $corpses[freezer] > 0} 
+	{
+			#format {sb2_freezer} {%+2s} {$corpses[freezer]};
+			#var {sb2_freezer} { FZ:<130>$sb2_freezer<088>};
+	};
+	#else
+	{
+			#var {sb2_freezer} {};
+	};
+
+	#var    {my[hp][graph]}         {@graph{$my[hp][current];${my[hp][max]}}};
+	#var    {my[sp][graph]}         {@graph{$my[sp][current];$my[sp][max]}};
+	#var    {my[gp1][graph]}        {@graph{$my[gp1][current];$my[gp1][max]}};
+	#var    {my[gp2][graph]}        {@graph{$my[gp2][current];$my[gp2][max]}};
+	#var    {enemy[graph]}          {@graph{$enemy[hp];100}};
+	#format {hp}					{%-4s} {@colscale{$my[hp][current];$my[hp][max]}};
+	#format {hp_max}				{%-4s} {<128>$my[hp][max]<088>};
+	#format {sp}					{%-4s} {@colscale{$my[sp][current];$my[sp][max]}};
+	#format {sp_max}				{%-4s} {<128>$my[sp][max]<088>};
+	#format {gp1}                   {%-4s} {@colscale{$my[gp1][current];$my[gp1][max]}};
+	#format {gp1_max}               {%+4s} {<128>$my[gp1][max]<088>};
+	#format {gp2}                   {%-4s} {@colscale{$my[gp2][current];$my[gp2][max]}};
+	#format {gp2_max}               {%+4s} {<128>$my[gp2][max]<088>};
+	
+	#if { "$enemy[name]" != "" }
+	{
+		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
+	};
+	#else
+	{
+		#showme {  } {-6};
+	};
+	#showme {<048>HP<088>  ${hp}/${hp_max}  <048>SP<088>  ${sp}<048>/<088>${sp_max}<088> <048>So'kra<088>  ${gp1}<048>/<088>${gp1_max}  <048>Ne'kra<088>  ${gp2}<048>/<088>${gp2_max}}  {-3};
+	#showme {<058>$bladesinger[mode]<088> <038>GXP: <138>$bladesinger[gxp]%%<088> <038>XP: <138>$bladesinger[xp]<088>}{-4};
+};
+
+#action {^H:%d/%d S:%d/%d S:%d/%d N:%d/%d X:%d.%d %w}
+{
+	#var bladesinger[gxp] %9.%10;
+	#var bladesinger[mode] %11;
+};
+
+#class {Bladesinger} {close}

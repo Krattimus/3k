@@ -25,6 +25,7 @@
     #if { @startsWith{{%0}{A shimmering-chromatic}} } { #return 1; };  
     #if { @startsWith{{%0}{Worn leather book}} } { #return 1; };  
     #if { @startsWith{{%0}{Royal Seal of Keyloncia}} } { #return 1; };  
+    #if { @startsWith{{%0}{Dundee hunting permit}} } { #return 1; };  
     
     #return 0;
 };

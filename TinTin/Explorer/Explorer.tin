@@ -41,6 +41,13 @@
 #highlight {You meticulously scour the stone walls in search of clues, but they} {<038>};
 #highlight {appear to be flat, immovable, and bare.} {<038>};
 
+#highlight {You search the graveyard trail and find nothing...} {<038>};
+#highlight {... How disappointed that must make you feel.} {<038>};
+
+
+#highlight {You search through the willows and the path before you...} {<038>};
+#highlight {... and you come up with nothing other than a case of sneezes.} {<038>};
+
  
 
 

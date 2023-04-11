@@ -17,6 +17,8 @@ w;w;w;w;w;w;w}
 #var patrol[shouldKillList] 
 {
 	{elemental}{elemental}
+	{Wolf}{wolf}
+	{wolf}{wolf}
 };
 
 

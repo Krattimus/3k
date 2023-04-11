@@ -1,6 +1,8 @@
 #showme READING testbin.TIN
 #class {testbin} {open}
 
+
+
 #NOP List all Roomnotes for 'go' alias
 #alias .noteList2
 {
@@ -20,7 +22,48 @@
 	#var notes
 };
 
+#alias .ss2
+{
+        jump over monkeybar;
+        enter monkeybar;        
+        dig;
+        move monkeybar;
+        pry monkeybar;
+        unlock monkeybar;
+        open monkeybar;
+        press monkeybar;
+        push monkeybar;
+};
 
+
+#alias .ss3
+{
+       sl stone in room;
+       sl stones;
+       sl moss;
+       sl lichen;
+       sl remains;
+       sl remnants;
+       sl shadows;
+       sl trees;
+};
+
+#alias .ss
+{
+        sl wood;
+        sl sky;
+        sl clouds;
+        sl branches;
+        sl trees;
+        sl fingers;
+        sl process;
+        sl inner;
+        sl parts;
+        sl path;
+        sl grasses;
+        sl wood;
+        sl shadows;
+};
 
 /**************************************************************
 	Lists rooms that haven't been explicitly marked explored
@@ -254,5 +297,13 @@
     #script {python3 3k/TinTin/Tools/nountest.py "$roomdesc"};
 };
 
+
+#alias {.switchTo}
+{
+        #var char[guild] %1;
+        #var char[ourCharacter] %2;
+        .save;
+        #end;
+};
 
 #class {testbin} {close}

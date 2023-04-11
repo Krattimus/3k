@@ -3,7 +3,7 @@
 #VARIABLE {char}
 {
     {guild} {Monk}
-    {ourCharacter} {krat}
+    {ourCharacter} {Krat}
 }
 
 #CLASS {charvar} CLOSE
