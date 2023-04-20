@@ -1,24 +1,48 @@
 #class {bot} {open}
 
-#var {no_loop} {0}
-#var {no_home} {0}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
-
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 3219;
+#var patrol[area] {Dundee Poachers};
 #var {patrol[path]} {e;n;n;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;n;n;n;n;n;w}
 
-#act {^=M= {Swamp Crocodile|Marsh Frog|Armadillo|Platypus|Black-bellied Snake|Osprey}} {
-	#switch {"%1"} {
-		#case {"Marsh Frog"}		{#var patroller[shouldKill] frog};
-		#case {"Swamp Crocodile"}	{#var patroller[shouldKill] crocodile};
-		#case {"Armadillo"}		{#var patroller[shouldKill] armadillo};
-		#case {"Platypus"}		{#var patroller[shouldKill] platypus};
-		#case {"Black-bellied Snake"}	{#var patroller[shouldKill] snake};
-		#case {"Osprey"}		{#var patroller[shouldKill] osprey};
-		#case {"Drop bear"}		{#var patroller[shouldKill] bear};
-		#case {"Orinoco Crocodile"}	{#var patroller[shouldKill] crocodile};
-	};
-	_check_mob
-}
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{Sparrow}{sparrow}
+	{Watersnake}{snake}
+	{Bear}{bear}
+	{Toad}{toad}
+	{Frog}{frog}
+	{Heron}{heron}
+	{Sparrow}{sparrow}
+	{Crocodile}{crocodile}
+	{Snake}{snake}
+	{bear}{bear}
+	{Shrew}{shrew}
+	{Rat}{rat}
+	{Caecilian}{caecilian}
+	{Anhinga}{anhinga}
+	{Armadillo}{armadillo}
+	{Platypus}{platypus}
+	{Osprey}{osprey}
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+#action {The foliage in this part of the swamp is extremely thick}
+{
+	#map undo;
+	#path move backward;
+	.doBehaviorPatrol;
+};
+
 
 #class {bot} {close}
