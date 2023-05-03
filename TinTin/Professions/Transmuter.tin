@@ -1,9 +1,6 @@
 #class {transmuter} {kill}
 #class {transmuter} {open}
 
-#read 3k/TinTin/Inventory/Satchel.tin
-#read 3k/TinTin/Data/CraftingLevels.var
-
 #NOP -----------------------------------------------------------;
 #NOP -----------------------------------------------------------;
 #NOP -----           Oscar's Deluxe Transmuter            ------;

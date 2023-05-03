@@ -235,6 +235,7 @@
 		#if { @equalsIgnoreCase{{$item} {%2}} }
 		{
 			#list %1 {DEL} {$itemID};
+			#math {itemID} {$itemID-1};
 		};
 
 		#math {itemID} {$itemID+1};

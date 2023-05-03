@@ -11,16 +11,17 @@
 	#read 3k/TinTin/Core/Events.tin;
 	#read 3k/TinTin/Core/Graph.tin;
 	#read 3k/TinTin/Core/Base.tin;
-	
-	#NOP { *********** Basic Game Mechanics ************ };
+	#read 3k/TinTin/Core/Mip.tin;
 	#read 3k/TinTin/Core/ChatMonitors.tin;
 	#read 3k/TinTin/Core/Gag.tin;
+
+	#NOP { *********** Basic Game Mechanics ************ };
 	#read 3k/TinTin/Core/Stats.tin;
 	#read 3k/TinTin/Core/Corpses.tin;
-	#read 3k/TinTin/Core/Mip.tin;
 	#read 3k/TinTin/Core/Inventory.tin;
 	#read 3k/TinTin/Core/Party.tin;
-	#read 3k/TinTin/Explorer/Explorer.tin;
+	#read 3k/TinTin/Core/Satchel.tin;
+	#read 3k/TinTin/Core/Explorer.tin;
 
 	#NOP { *********** Profession ************ };
 	#read 3k/TinTin/Professions/Transmuter.tin;

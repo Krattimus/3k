@@ -10,6 +10,7 @@
 #var settings[shouldVacuum] 0;
 #var settings[shouldLoot] 1;
 #var settings[shouldLog] 1;
+#var settings[exploreActive] 1;
 #var settings[shouldProcessCorpse] 1;
 #var settings[acceptMissions] 1;
 

@@ -46,6 +46,186 @@
 	#map goto {$map[$char[ourCharacter]][position]};
 };
 
+
+/**************************************************************
+	Sets an exit to the current room
+**************************************************************/
+#alias .mapSameRoom
+{
+        #map link %0 $currentRoomID;
+};
+
+/**************************************************************
+	Prints out how many unique 'areas' are in the map
+**************************************************************/
+#alias {.mapAreaCount}
+{
+	#draw Yellow scroll line 1 1 1 80;
+	#var areaList {};
+        #map list {roomname} {%*} {variable} {rooms}; 
+
+	#foreach {*rooms[]} {roomID}  
+	{
+	        #map get all {roomdata} $roomID;
+                #var areaList[$roomdata[area]] 1;
+        };
+
+        #showme Number of unique areas: @getNumElements{areaList};
+        #draw Yellow scroll line 1 1 1 80;
+};
+
+/**************************************************************
+	Remaps an exit to another direction .mapChangeExit n s
+	Will make the north exit become the south exit
+**************************************************************/
+#alias .mapChangeExit
+{
+	#map get {roomvnum} {currentRoomID};
+    #map at $currentRoomID #map get all {roomdata};
+    #var exitID $roomdata[exits][%1];
+
+	#if { "$exitID" != "" }
+	{
+			#map unlink %1;
+			#map link %2 $exitID;
+			#map at $exitID #map unlink @getOppositeDirection{%1};
+			#map at $exitID #map link @getOppositeDirection{%2} $currentRoomID;
+	};
+};
+
+
+/**************************************************************
+	Lists rooms that haven't been explicitly marked explored
+		Use: .describeUnexplored <areaname>
+		Where areaname matches the rating command.
+**************************************************************/
+#alias {.mapSetExplored}
+{
+	#if { "%0" != "" }
+	{
+		#local areaToSearch %0;
+	};
+        #else
+        {
+                #showme "MUST SPECIFY AREA";
+                #return;
+        };
+	
+	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
+	#draw Yellow scroll line 1 1 1 80;
+	#var totalRooms @getNumElements{rooms};
+	#var exploredRooms 0;
+	
+	#foreach {*rooms[]} {roomID}  
+	{
+		#map get all {roomdata} $roomID;
+                #map at $roomID #map set roomid 1;
+
+                #math {exploredRooms} {$exploredRooms+1};
+
+                #var exits {};
+                #foreach {*roomdata[exits][]} {exit}
+                {
+                        #var exits {$exits $exit};
+                };
+
+
+                #echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>%.30s<088> %.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]}
+	};
+	
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Left to explore [$exploredRooms] out of [$totalRooms];
+};
+
+/**************************************************************
+	Outputs room data as html
+**************************************************************/
+#alias {.describeRoomsHtml}
+{
+	#local areaToSearch $area;
+	#if { "%0" != "" }
+	{
+		#local areaToSearch %0;
+	};
+
+	#draw Yellow scroll line 1 1 1 80;
+
+        #showme <table>;
+	#showme AREATO : $areaToSearch;
+	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
+	#foreach {*rooms[]} {roomID}  
+	{
+		#map at $roomID #map get all {roomdata};
+
+		#var exits {};
+		#foreach {*roomdata[exits][]} {exit}
+		{
+			#var exits {$exits $exit};
+		};
+
+		#showme <tr><td>$roomdata[name]</td><td>$roomdata[area]</td><td>$exits</td><td>$roomdata[symbol]</td></tr>;
+	};
+	#showme </table>;
+	#draw Yellow scroll line 1 1 1 80;
+};
+
+/**************************************************************
+	Shows a list of rooms in an area that we have marked
+	as unexplored by our client
+**************************************************************/
+#alias {.mapUnexploredRooms}
+{
+	#map list {roomname} {%*} {variable} {rooms}; 
+	#draw Yellow scroll line 1 1 1 80;
+	#var totalRooms @getNumElements{rooms};
+	#var exploredRooms 0;
+	
+	#foreach {*rooms[]} {roomID}  
+	{
+		#map get all {roomdata} $roomID;
+		
+                #if { $roomID < %1 }
+                {
+                        #continue;
+                };
+
+                #if { "$roomdata[name]" == "" }
+                {
+                        #continue;
+                };
+
+		#if { $roomdata[id] == 1 }
+		{
+			#nop { DO NOTHING };
+		};
+		#else
+		{
+			#math {exploredRooms} {$exploredRooms+1};
+
+			#var exits {};
+			#foreach {*roomdata[exits][]} {exit}
+			{
+				#var exits {$exits $exit};
+			};
+
+
+			#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>%.30s<088> %.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]};
+
+			#if { $exploredRooms > 50 }
+			{
+				#break;
+			};
+		};
+
+	};
+	
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Left to explore [$exploredRooms] out of [$totalRooms];
+};
+
+
+
+
 /**************************************************************
 	Lists rooms that haven't been explicitly marked explored
 		Use: .describeUnexplored <areaname>

@@ -1,0 +1,246 @@
+#class {area} {open}
+
+
+
+
+#alias .translateLizard
+{
+        #var index 1;
+        #var max @strlen{%0};
+        #var i $index;
+
+        #showme INDEX $index MAX $max;
+
+        #while { $index < $max }
+        {
+                #var characterAt {@substr{ {%0} {$index} {1}}};
+
+                #showme CHAR: $characterAt;
+
+                #math {index} {$index+1};
+        };
+};
+
+#action {Ogre says: %1}
+{
+        .translateOgrish %1;
+};
+
+#action {Satarus says: %1}
+{
+
+        .translateLizard %1;
+};
+
+#alias .speakLizard
+{
+        #var index 0;
+        #var max @strlen{%0};
+        #var i $index;
+        #var saying {};
+
+        #while { $index < $max }
+        {
+                #var characterAt {@substr{ {%0} {$index} {1}}};
+
+                #var ogreLetter @englishToLizard{$characterAt};
+                #var saying {$saying$ogreLetter};
+
+                #math {index} {$index+1};
+        };
+
+        say $saying;
+};
+
+#alias .translateLizard
+{
+        #var index 0;
+        #var max @strlen{%0};
+        #var i $index;
+        #var saying {};
+
+        #while { $index < $max }
+        {
+                #var characterAt {@substr{ {%0} {$index} {1}}};
+
+                #var ogreLetter @lizardToEnglish{$characterAt};
+                #var saying {$saying$ogreLetter};
+
+                #math {index} {$index+1};
+        };
+
+        #showme TRANSLATION: $saying;
+};
+
+#function lizardToEnglish
+{
+        #switch {"%0"}
+        {
+                #case {"h"}	{#return a;};
+                #case {"m"}	{#return b;};
+                #case {"i"}	{#return c;};
+                #case {"n"}	{#return d;};
+                #case {"c"}	{#return e;};
+                #case {"j"}	{#return f;};
+                #case {"a"}	{#return g;};
+                #case {"o"}	{#return h;};
+                #case {"b"}	{#return i;};
+                #case {"e"}	{#return j;};
+                #case {"p"}	{#return k;};
+                #case {"d"}	{#return l;};
+                #case {"g"}	{#return m;};
+                #case {"f"}	{#return n;};
+                #case {"r"}	{#return o;};
+                #case {"s"}	{#return p;};
+                #case {"w"}	{#return q;};
+                #case {"y"}	{#return r;};                                                                                                                                                                
+                #case {"k"}	{#return s;};                                                                                                                                                                
+                #case {"z"}	{#return t;};                                                                                                                                                                
+                #case {"x"}	{#return u;};                                                                                                                                                                
+                #case {"t"}	{#return v;};                                                                                                                                                                
+                #case {"l"}	{#return w;};                                                                                                                                                                
+                #case {"u"}	{#return x;};                                                                                                                                                                
+                #case {"q"}	{#return y;};                                                                                                                                                                
+                #case {"v"}	{#return z;}; 
+
+                #case {"H"}	{#return A;};
+                #case {"M"}	{#return B;};
+                #case {"I"}	{#return C;};
+                #case {"N"}	{#return D;};
+                #case {"C"}	{#return E;};
+                #case {"J"}	{#return F;};
+                #case {"A"}	{#return G;};
+                #case {"O"}	{#return H;};
+                #case {"B"}	{#return I;};
+                #case {"E"}	{#return J;};
+                #case {"P"}	{#return K;};
+                #case {"D"}	{#return L;};
+                #case {"G"}	{#return M;};
+                #case {"F"}	{#return N;};
+                #case {"R"}	{#return O;};
+                #case {"S"}	{#return P;};
+                #case {"W"}	{#return Q;};
+                #case {"Y"}	{#return R;};
+                #case {"K"}	{#return S;};
+                #case {"Z"}	{#return T;};
+                #case {"X"}	{#return U;};
+                #case {"T"}	{#return V;};
+                #case {"L"}	{#return W;};
+                #case {"U"}	{#return X;};
+                #case {"Q"}	{#return Y;};
+                #case {"V"}	{#return Z;};
+                
+                #default { #return { };};
+        };
+};
+
+#function englishToLizard
+{
+        #switch {"%0"}
+        {
+                #case {"a"}	{#return h;};
+                #case {"b"}	{#return m;};
+                #case {"c"}	{#return i;};
+                #case {"d"}	{#return n;};
+                #case {"e"}	{#return c;};
+                #case {"f"}	{#return j;};
+                #case {"g"}	{#return a;};
+                #case {"h"}	{#return o;};
+                #case {"i"}	{#return b;};
+                #case {"j"}	{#return e;};
+                #case {"k"}	{#return p;};
+                #case {"l"}	{#return d;};
+                #case {"m"}	{#return g;};
+                #case {"n"}	{#return f;};
+                #case {"o"}	{#return r;};
+                #case {"p"}	{#return s;};
+                #case {"q"}	{#return w;};
+                #case {"r"}	{#return y;};                                                                                                                                                                
+                #case {"s"}	{#return k;};                                                                                                                                                                
+                #case {"t"}	{#return z;};                                                                                                                                                                
+                #case {"u"}	{#return x;};                                                                                                                                                                
+                #case {"v"}	{#return t;};                                                                                                                                                                
+                #case {"w"}	{#return l;};                                                                                                                                                                
+                #case {"x"}	{#return u;};                                                                                                                                                                
+                #case {"y"}	{#return q;};                                                                                                                                                                
+                #case {"z"}	{#return v;}; 
+                #case {"A"}	{#return H;};
+                #case {"B"}	{#return M;};
+                #case {"C"}	{#return I;};
+                #case {"D"}	{#return N;};
+                #case {"E"}	{#return C;};
+                #case {"F"}	{#return J;};
+                #case {"G"}	{#return A;};
+                #case {"H"}	{#return O;};
+                #case {"I"}	{#return B;};
+                #case {"J"}	{#return E;};
+                #case {"K"}	{#return P;};
+                #case {"L"}	{#return D;};
+                #case {"M"}	{#return G;};
+                #case {"N"}	{#return F;};
+                #case {"O"}	{#return R;};
+                #case {"P"}	{#return S;};
+                #case {"Q"}	{#return W;};
+                #case {"R"}	{#return Y;};
+                #case {"S"}	{#return K;};
+                #case {"T"}	{#return Z;};
+                #case {"U"}	{#return X;};
+                #case {"V"}	{#return T;};
+                #case {"W"}	{#return L;};
+                #case {"X"}	{#return U;};
+                #case {"Y"}	{#return Q;};
+                #case {"Z"}	{#return V;};
+                
+                #default { #return { }};
+        };
+};
+
+
+
+
+
+#alias .speakOgrish
+{
+        #var index 0;
+        #var max @strlen{%0};
+        #var i $index;
+        #var saying {};
+
+        #while { $index < $max }
+        {
+                #var characterAt {@substr{ {%0} {$index} {1}}};
+
+                #var ogreLetter @englishToOgrish{$characterAt};
+                #var saying {$saying$ogreLetter};
+
+                #math {index} {$index+1};
+        };
+
+        say $saying;
+};
+
+#alias .translateOgrish
+{
+        #var index 0;
+        #var max @strlen{%0};
+        #var i $index;
+        #var saying {};
+
+        #while { $index < $max }
+        {
+                #var characterAt {@substr{ {%0} {$index} {1}}};
+
+                #var ogreLetter @ogrishToEnglish{$characterAt};
+                #var saying {$saying$ogreLetter};
+
+                #math {index} {$index+1};
+        };
+
+        #showme TRANSLATION: $saying;
+};
+
+
+
+
+
+#class {area} {close}

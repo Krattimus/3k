@@ -5,15 +5,14 @@
 /**************************************************************
 	Calculator
 **************************************************************/
-#highlight {You have never been here before.} {<338>};
 
 
 #var dirs[n] overhere;
-#var dirs[s] overthere;
+#var dirs[s] thisway;
 #var dirs[e] yonder;
 #var dirs[w] thatway;
 #var dirs[u] anotherway;
-#var dirs[d] thisway;
+#var dirs[d] overthere;
 
 #alias {.n} { #send !$dirs[n]; #map move n; };
 #alias {.s} { #send !$dirs[s]; #map move s; };

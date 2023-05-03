@@ -1,516 +1,139 @@
 #showme READING testbin.TIN
 
-
-
-
-
-
-
-#alias .searchChaosFor
-{
-        brief on no;
-        #path load {enter;n;n;n;s;s;s;s;s;n;n;w;n;n;s;s;s;s;n;n;w;n;n;s;s;s;s;s;n;n;n;w;n;n;s;s;s;s;n;u;d;n;w;e;n;w;n;n;s;s;e;s;s;w;s;e;e;n;n;e;s;e;w;n;n;w;s;w;w;n;e;n;w;w;e;e;e;e;e;n;n;w;w;e;e;s;s;s;s;n;n;e;n;n;s;s;s;s;s;s;w;e;s;out1;n;n;e;n;s;s;n;e;n;n;n;n;w;e;s;s;s;e;e;e;n;s;s;w;w;w;e;n;n;w;w;n;n;e;e;w;w;s;s;e;e;s;w;w;w;s;w;w;n;n;w;w;w};
-        #path walk;
-        
-        #action {{=S=(.*) \((.*)\)\s*=S=}}  {#path walk;} {1};
-
-        #action {%0} 
-        {
-                #path walk backward;
-                #unaction {%0};
-                #unaction {{=S=(.*) \((.*)\)\s*=S=}}; 
-                #draw Yellow scroll line 1 1 1 80;
-                #showme FOUND;
-                #draw Yellow scroll line 1 1 1 80;
-                #class {chaosscanner} {kill};                        
-        } {2};
-
-        #action {#END OF PATH} 
-        {
-                #unaction {%0};
-                #unaction {{=S=(.*) \((.*)\)\s*=S=}};
-                #class {chaosscanner} {kill};    
-        };
-
-};
-
 #class {testbin} {open}
 
-
-
-
-
-
-
-
-
-
-#ticker {westersea_camp_fish}
+#alias .explorerOn
 {
-
-        #if { $currentRoomID == 4750 }
-        {
-                fish;
-        }
-
-} {10};
-
-#alias {.mapAreaCount}
-{
-	#draw Yellow scroll line 1 1 1 80;
-	#var areaList {};
-        #map list {roomname} {%*} {variable} {rooms}; 
-
-	#foreach {*rooms[]} {roomID}  
-	{
-	        #map get all {roomdata} $roomID;
-                #var areaList[$roomdata[area]] 1;
-        };
-
-        #showme Number of unique areas: @getNumElements{areaList};
-        #draw Yellow scroll line 1 1 1 80;
-};
-
-
-#alias .translateLizard
-{
-        #var index 1;
-        #var max @strlen{%0};
-        #var i $index;
-
-        #showme INDEX $index MAX $max;
-
-        #while { $index < $max }
-        {
-                #var characterAt {@substr{ {%0} {$index} {1}}};
-
-                #showme CHAR: $characterAt;
-
-                #math {index} {$index+1};
-        };
-};
-
-#action {Ogre says: %1}
-{
-
-        .translateOgrish %1;
-};
-
-
-
-#action {Satarus says: %1}
-{
-
-        .translateLizard %1;
-};
-
-
-
-
-
-
-
-
-
-#alias .speakLizard
-{
-        #var index 0;
-        #var max @strlen{%0};
-        #var i $index;
-        #var saying {};
-
-        #while { $index < $max }
-        {
-                #var characterAt {@substr{ {%0} {$index} {1}}};
-
-                #var ogreLetter @englishToLizard{$characterAt};
-                #var saying {$saying$ogreLetter};
-
-                #math {index} {$index+1};
-        };
-
-        say $saying;
-};
-
-#alias .translateLizard
-{
-        #var index 0;
-        #var max @strlen{%0};
-        #var i $index;
-        #var saying {};
-
-        #while { $index < $max }
-        {
-                #var characterAt {@substr{ {%0} {$index} {1}}};
-
-                #var ogreLetter @lizardToEnglish{$characterAt};
-                #var saying {$saying$ogreLetter};
-
-                #math {index} {$index+1};
-        };
-
-        #showme TRANSLATION: $saying;
-};
-
-
-
-
-
-
-
-
-#function lizardToEnglish
-{
-        #switch {"%0"}
-        {
-                #case {"h"}	{#return a;};
-                #case {"m"}	{#return b;};
-                #case {"i"}	{#return c;};
-                #case {"n"}	{#return d;};
-                #case {"c"}	{#return e;};
-                #case {"j"}	{#return f;};
-                #case {"a"}	{#return g;};
-                #case {"o"}	{#return h;};
-                #case {"b"}	{#return i;};
-                #case {"e"}	{#return j;};
-                #case {"p"}	{#return k;};
-                #case {"d"}	{#return l;};
-                #case {"g"}	{#return m;};
-                #case {"f"}	{#return n;};
-                #case {"r"}	{#return o;};
-                #case {"s"}	{#return p;};
-                #case {"w"}	{#return q;};
-                #case {"y"}	{#return r;};                                                                                                                                                                
-                #case {"k"}	{#return s;};                                                                                                                                                                
-                #case {"z"}	{#return t;};                                                                                                                                                                
-                #case {"x"}	{#return u;};                                                                                                                                                                
-                #case {"t"}	{#return v;};                                                                                                                                                                
-                #case {"l"}	{#return w;};                                                                                                                                                                
-                #case {"u"}	{#return x;};                                                                                                                                                                
-                #case {"q"}	{#return y;};                                                                                                                                                                
-                #case {"v"}	{#return z;}; 
-
-                #case {"H"}	{#return A;};
-                #case {"M"}	{#return B;};
-                #case {"I"}	{#return C;};
-                #case {"N"}	{#return D;};
-                #case {"C"}	{#return E;};
-                #case {"J"}	{#return F;};
-                #case {"A"}	{#return G;};
-                #case {"O"}	{#return H;};
-                #case {"B"}	{#return I;};
-                #case {"E"}	{#return J;};
-                #case {"P"}	{#return K;};
-                #case {"D"}	{#return L;};
-                #case {"G"}	{#return M;};
-                #case {"F"}	{#return N;};
-                #case {"R"}	{#return O;};
-                #case {"S"}	{#return P;};
-                #case {"W"}	{#return Q;};
-                #case {"Y"}	{#return R;};
-                #case {"K"}	{#return S;};
-                #case {"Z"}	{#return T;};
-                #case {"X"}	{#return U;};
-                #case {"T"}	{#return V;};
-                #case {"L"}	{#return W;};
-                #case {"U"}	{#return X;};
-                #case {"Q"}	{#return Y;};
-                #case {"V"}	{#return Z;};
-                
-                #default { #return { };};
-        };
-};
-
-#function englishToLizard
-{
-        #switch {"%0"}
-        {
-                #case {"a"}	{#return h;};
-                #case {"b"}	{#return m;};
-                #case {"c"}	{#return i;};
-                #case {"d"}	{#return n;};
-                #case {"e"}	{#return c;};
-                #case {"f"}	{#return j;};
-                #case {"g"}	{#return a;};
-                #case {"h"}	{#return o;};
-                #case {"i"}	{#return b;};
-                #case {"j"}	{#return e;};
-                #case {"k"}	{#return p;};
-                #case {"l"}	{#return d;};
-                #case {"m"}	{#return g;};
-                #case {"n"}	{#return f;};
-                #case {"o"}	{#return r;};
-                #case {"p"}	{#return s;};
-                #case {"q"}	{#return w;};
-                #case {"r"}	{#return y;};                                                                                                                                                                
-                #case {"s"}	{#return k;};                                                                                                                                                                
-                #case {"t"}	{#return z;};                                                                                                                                                                
-                #case {"u"}	{#return x;};                                                                                                                                                                
-                #case {"v"}	{#return t;};                                                                                                                                                                
-                #case {"w"}	{#return l;};                                                                                                                                                                
-                #case {"x"}	{#return u;};                                                                                                                                                                
-                #case {"y"}	{#return q;};                                                                                                                                                                
-                #case {"z"}	{#return v;}; 
-                #case {"A"}	{#return H;};
-                #case {"B"}	{#return M;};
-                #case {"C"}	{#return I;};
-                #case {"D"}	{#return N;};
-                #case {"E"}	{#return C;};
-                #case {"F"}	{#return J;};
-                #case {"G"}	{#return A;};
-                #case {"H"}	{#return O;};
-                #case {"I"}	{#return B;};
-                #case {"J"}	{#return E;};
-                #case {"K"}	{#return P;};
-                #case {"L"}	{#return D;};
-                #case {"M"}	{#return G;};
-                #case {"N"}	{#return F;};
-                #case {"O"}	{#return R;};
-                #case {"P"}	{#return S;};
-                #case {"Q"}	{#return W;};
-                #case {"R"}	{#return Y;};
-                #case {"S"}	{#return K;};
-                #case {"T"}	{#return Z;};
-                #case {"U"}	{#return X;};
-                #case {"V"}	{#return T;};
-                #case {"W"}	{#return L;};
-                #case {"X"}	{#return U;};
-                #case {"Y"}	{#return Q;};
-                #case {"Z"}	{#return V;};
-                
-                #default { #return { }};
-        };
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#alias .speakOgrish
-{
-        #var index 0;
-        #var max @strlen{%0};
-        #var i $index;
-        #var saying {};
-
-        #while { $index < $max }
-        {
-                #var characterAt {@substr{ {%0} {$index} {1}}};
-
-                #var ogreLetter @englishToOgrish{$characterAt};
-                #var saying {$saying$ogreLetter};
-
-                #math {index} {$index+1};
-        };
-
-        say $saying;
-};
-
-#alias .translateOgrish
-{
-        #var index 0;
-        #var max @strlen{%0};
-        #var i $index;
-        #var saying {};
-
-        #while { $index < $max }
-        {
-                #var characterAt {@substr{ {%0} {$index} {1}}};
-
-                #var ogreLetter @ogrishToEnglish{$characterAt};
-                #var saying {$saying$ogreLetter};
-
-                #math {index} {$index+1};
-        };
-
-        #showme TRANSLATION: $saying;
-};
-
-
-#function addMobToRoomData
-{
-        #var roomData @getDataForRoomID{%1};
-
+	#highlight {door} {<338>};
+	#highlight {eastern} {<338>};
+        #highlight {western} {<338>};
+	#highlight {northern} {<338>};
+	#highlight {southern}  {<338>};
+	#highlight {something} {<338>};
+        #highlight {crack} {<338>};
+        #highlight {plaque} {<338>};
+        #highlight {button} {<338>};
+        #highlight {lever} {<338>};
+        #highlight {%i{you could}} {<338>};
+
+        #highlight {%i{could probably}} {<338>};
+        #highlight {%i{probably could}} {<338>};
         
 
+        #highlight {%i{to the west}} {<338>};
+        #highlight {%i{to the east}} {<338>};
+        #highlight {%i{to the north}} {<338>};
+        #highlight {%i{to the south}} {<338>};
+        #highlight {%i{to the southwest}} {<338>};
+        #highlight {%i{to the southeast}} {<338>};
+        #highlight {%i{to the northwest}} {<338>};
+        #highlight {%i{to the northeast}} {<338>};
+};
+ 
 
+#highlight {You have never been here before.} {<338>};
+#highlight {There are secret or hidden exits in this room.} {<338>};
+
+#alias .explorerOff
+{
+	#unhighlight {door};
+	#unhighlight {eastern};
+	#unhighlight {western};
+	#unhighlight {northern};
+	#unhighlight {southern};
+	#unhighlight {something};
+        #unhighlight {crack};
+        #unhighlight {button};
+
+        #unhighlight {%i{to the west}};
+        #unhighlight {%i{to the east}};
+        #unhighlight {%i{to the north}};
+        #unhighlight {%i{to the south}};
+        #unhighlight {%i{to the southwest}};
+        #unhighlight {%i{to the southeast}};
+        #unhighlight {%i{to the northwest}};
+        #unhighlight {%i{to the northeast}};
+        #unhighlight {%i{you could}};
+        #unhighlight {plaque};
+        #unhighlight {lever};
+
+        #unhighlight {%i{could probably}};        
+        #unhighlight {%i{probably could}};
 
 };
 
+
+#alias .mapSubArea
+{
+        #map exit %1 dir %1;
+        #map exit %1 flags 1;
+};
+
+
+#alias {.mlr}
+{
+ .mapLastRoom %1;
+ .mapLastRoom %2;
+ .mapCommand %1 %2;
+};
+
+
+#alias {.describeRoomData}
+{
+        #showme @getDataForRoomID{%0};
+}
+
+#alias .addMobToRoomData
+{
+        #var roomData @getDataForRoomID{$currentRoomID};
+
+        #var mobName $event[mobKilled];
+        
+        #var mobsInArea $mobs[$area];
+
+        #if {{$mobsInArea} === {}}
+        {       
+                #var mobsInArea {$area};
+        };
+
+        #var mobEntry $mobsInArea[$mobName];
+
+        #if {{$mobEntry} === {}}
+        {
+                #var mobEntry {{Rating}{0}{Room}{-1}};
+        };
+
+        #var ratingsList $mobEntry[Rating];
+        #var roomsList $mobEntry[Room];
+        
+        #list ratingsList add $event[rating];
+        #list roomsList add $currentRoomID;
+
+        #var mobEntry[Rating] $ratingsList;
+        #var mobEntry[Room] $roomsList;
+       
+        #var mobsInArea[$mobName] $mobEntry;
+        #var mobs[$area] $mobsInArea;
+
+        #showme ----------------------------------------;
+
+        #var mobEntry;
+        #var mobsInArea;
+
+};
+
+
+#function getOrCreateKnownMobs
+{       
+        
+
+};      
 
 #function getDataForRoomID
 {
-        #map at %1 #map get all {roomdata} %1;
-        #return $roomdata[data];
+        #map at %1 #map get all {roomdata};
+        #return {$roomdata[data]};
 };
-
-
-#function ogrishToEnglish
-{
-        #switch {"%0"}
-        {
-                #case {"b"}	{#return a;};
-                #case {"h"}	{#return b;};
-                #case {"g"}	{#return c;};
-                #case {"a"}	{#return d;};
-                #case {"d"}	{#return e;};
-                #case {"p"}	{#return f;};
-                #case {"c"}	{#return g;};
-                #case {"o"}	{#return h;};
-                #case {"q"}	{#return i;};
-                #case {"f"}	{#return j;};
-                #case {"j"}	{#return k;};
-                #case {"i"}	{#return l;};
-                #case {"x"}	{#return m;};
-                #case {"l"}	{#return n;};
-                #case {"t"}	{#return o;};
-                #case {"w"}	{#return p;};
-                #case {"k"}	{#return q;};
-                #case {"u"}	{#return r;};                                                                                                                                                                
-                #case {"v"}	{#return s;};                                                                                                                                                                
-                #case {"e"}	{#return t;};                                                                                                                                                                
-                #case {"y"}	{#return u;};                                                                                                                                                                
-                #case {"s"}	{#return v;};                                                                                                                                                                
-                #case {"m"}	{#return w;};                                                                                                                                                                
-                #case {"n"}	{#return x;};                                                                                                                                                                
-                #case {"z"}	{#return y;};                                                                                                                                                                
-                #case {"r"}	{#return z;}; 
-
-                #case {"B"}	{#return A;};
-                #case {"H"}	{#return B;};
-                #case {"G"}	{#return C;};
-                #case {"A"}	{#return D;};
-                #case {"D"}	{#return E;};
-                #case {"P"}	{#return F;};
-                #case {"C"}	{#return G;};
-                #case {"O"}	{#return H;};
-                #case {"Q"}	{#return I;};
-                #case {"F"}	{#return J;};
-                #case {"J"}	{#return K;};
-                #case {"I"}	{#return L;};
-                #case {"X"}	{#return M;};
-                #case {"L"}	{#return N;};
-                #case {"T"}	{#return O;};
-                #case {"W"}	{#return P;};
-                #case {"K"}	{#return Q;};
-                #case {"U"}	{#return R;};
-                #case {"V"}	{#return S;};
-                #case {"E"}	{#return T;};
-                #case {"Y"}	{#return U;};
-                #case {"S"}	{#return V;};
-                #case {"M"}	{#return W;};
-                #case {"N"}	{#return X;};
-                #case {"Z"}	{#return Y;};
-                #case {"R"}	{#return Z;};
-                
-                #default { #return { };};
-        };
-};
-
-#function englishToOgrish
-{
-        #switch {"%0"}
-        {
-                #case {"a"}	{#return b;};
-                #case {"b"}	{#return h;};
-                #case {"c"}	{#return g;};
-                #case {"d"}	{#return a;};
-                #case {"e"}	{#return d;};
-                #case {"f"}	{#return p;};
-                #case {"g"}	{#return c;};
-                #case {"h"}	{#return o;};
-                #case {"i"}	{#return q;};
-                #case {"j"}	{#return f;};
-                #case {"k"}	{#return j;};
-                #case {"l"}	{#return i;};
-                #case {"m"}	{#return x;};
-                #case {"n"}	{#return l;};
-                #case {"o"}	{#return t;};
-                #case {"p"}	{#return w;};
-                #case {"q"}	{#return k;};
-                #case {"r"}	{#return u;};                                                                                                                                                                
-                #case {"s"}	{#return v;};                                                                                                                                                                
-                #case {"t"}	{#return e;};                                                                                                                                                                
-                #case {"u"}	{#return y;};                                                                                                                                                                
-                #case {"v"}	{#return s;};                                                                                                                                                                
-                #case {"w"}	{#return m;};                                                                                                                                                                
-                #case {"x"}	{#return n;};                                                                                                                                                                
-                #case {"y"}	{#return z;};                                                                                                                                                                
-                #case {"z"}	{#return r;}; 
-                #case {"A"}	{#return B;};
-                #case {"B"}	{#return H;};
-                #case {"C"}	{#return G;};
-                #case {"D"}	{#return A;};
-                #case {"E"}	{#return D;};
-                #case {"F"}	{#return P;};
-                #case {"G"}	{#return C;};
-                #case {"H"}	{#return O;};
-                #case {"I"}	{#return Q;};
-                #case {"J"}	{#return F;};
-                #case {"K"}	{#return J;};
-                #case {"L"}	{#return I;};
-                #case {"M"}	{#return X;};
-                #case {"N"}	{#return L;};
-                #case {"O"}	{#return T;};
-                #case {"P"}	{#return W;};
-                #case {"Q"}	{#return K;};
-                #case {"R"}	{#return U;};
-                #case {"S"}	{#return V;};
-                #case {"T"}	{#return E;};
-                #case {"U"}	{#return Y;};
-                #case {"V"}	{#return S;};
-                #case {"W"}	{#return M;};
-                #case {"X"}	{#return N;};
-                #case {"Y"}	{#return Z;};
-                #case {"Z"}	{#return R;};
-                
-                #default { #return " "};
-        };
-};
-
-
-#alias .mapChangeExit
-{
-	#map get {roomvnum} {currentRoomID};
-        #map at $currentRoomID #map get all {roomdata};
-        #var exitID $roomdata[exits][%1];
-
-        #if { "$exitID" != "" }
-        {
-                #map unlink %1;
-                #map link %2 $exitID;
-                #map at $exitID #map unlink @getOppositeDirection{%1};
-                #map at $exitID #map link @getOppositeDirection{%2} $currentRoomID;
-        };
-};
-
 
 #NOP List all Roomnotes for 'go' alias
 #alias .noteList2
@@ -531,180 +154,6 @@
 	#var notes
 };
 
-#alias .ss2
-{
-        jump over monkeybar;
-        enter monkeybar;        
-        dig;
-        move monkeybar;
-        pry monkeybar;
-        unlock monkeybar;
-        open monkeybar;
-        press monkeybar;
-        push monkeybar;
-};
-
-
-#alias .ss3
-{
-       sl stone in room;
-       sl stones;
-       sl moss;
-       sl lichen;
-       sl remains;
-       sl remnants;
-       sl shadows;
-       sl trees;
-};
-
-#alias .ss
-{
-        sl wood;
-        sl sky;
-        sl clouds;
-        sl branches;
-        sl trees;
-        sl fingers;
-        sl process;
-        sl inner;
-        sl parts;
-        sl path;
-        sl grasses;
-        sl wood;
-        sl shadows;
-};
-
-/**************************************************************
-	Lists rooms that haven't been explicitly marked explored
-		Use: .describeUnexplored <areaname>
-		Where areaname matches the rating command.
-**************************************************************/
-#alias {.mapSetExplored}
-{
-	#if { "%0" != "" }
-	{
-		#local areaToSearch %0;
-	};
-        #else
-        {
-                #showme "MUST SPECIFY AREA";
-                #return;
-        };
-	
-	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
-	#draw Yellow scroll line 1 1 1 80;
-	#var totalRooms @getNumElements{rooms};
-	#var exploredRooms 0;
-	
-	#foreach {*rooms[]} {roomID}  
-	{
-		#map get all {roomdata} $roomID;
-                #map at $roomID #map set roomid 1;
-
-                #math {exploredRooms} {$exploredRooms+1};
-
-                #var exits {};
-                #foreach {*roomdata[exits][]} {exit}
-                {
-                        #var exits {$exits $exit};
-                };
-
-
-                #echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>%.30s<088> %.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]}
-	};
-	
-	#draw Yellow scroll line 1 1 1 80;
-	#showme Left to explore [$exploredRooms] out of [$totalRooms];
-};
-
-
-/**************************************************************
-	Describes rooms for the given area
-**************************************************************/
-#alias {.describeRoomsHtml}
-{
-	#local areaToSearch $area;
-	#if { "%0" != "" }
-	{
-		#local areaToSearch %0;
-	};
-
-	#draw Yellow scroll line 1 1 1 80;
-
-        #showme <table>;
-	#showme AREATO : $areaToSearch;
-	#map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
-	#foreach {*rooms[]} {roomID}  
-	{
-		#map at $roomID #map get all {roomdata};
-
-		#var exits {};
-		#foreach {*roomdata[exits][]} {exit}
-		{
-			#var exits {$exits $exit};
-		};
-
-		#showme <tr><td>$roomdata[name]</td><td>$roomdata[area]</td><td>$exits</td><td>$roomdata[symbol]</td></tr>;
-	};
-	#showme </table>;
-	#draw Yellow scroll line 1 1 1 80;
-};
-
-
-
-
-#alias {.mapUnexploredRooms}
-{
-	#map list {roomname} {%*} {variable} {rooms}; 
-	#draw Yellow scroll line 1 1 1 80;
-	#var totalRooms @getNumElements{rooms};
-	#var exploredRooms 0;
-	
-	#foreach {*rooms[]} {roomID}  
-	{
-		#map get all {roomdata} $roomID;
-		
-                #if { $roomID < %1 }
-                {
-                        #continue;
-                };
-
-                #if { "$roomdata[name]" == "" }
-                {
-                        #continue;
-                };
-
-		#if { $roomdata[id] == 1 }
-		{
-			#nop { DO NOTHING };
-		};
-		#else
-		{
-			#math {exploredRooms} {$exploredRooms+1};
-
-			#var exits {};
-			#foreach {*roomdata[exits][]} {exit}
-			{
-				#var exits {$exits $exit};
-			};
-
-
-			#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>%.30s<088> %.5s } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits} {$roomdata[symbol]};
-
-			#if { $exploredRooms > 50 }
-			{
-				#break;
-			};
-		};
-
-	};
-	
-	#draw Yellow scroll line 1 1 1 80;
-	#showme Left to explore [$exploredRooms] out of [$totalRooms];
-};
-
-
-
 
 #action {Raest leaves %1\.} 
 { 
@@ -718,7 +167,7 @@
                 #case {"west"}			{#var event[followDirection] w};
                 #case {"down"}			{#var event[followDirection] d};
                 #case {"up"}			{#var event[followDirection] u};
-                #case {"northeast"} 	{#var event[followDirection] ne};
+                #case {"northeast"} 	        {#var event[followDirection] ne};
                 #case {"northwest"}		{#var event[followDirection] nw};
                 #case {"southeast"}		{#var event[followDirection] se};
                 #case {"southwest"}		{#var event[followDirection] sw};
@@ -728,66 +177,6 @@
 
         #map move $event[followDirection]; 
 } {1};
-
-#alias .tt2
-{
-        #var patrol[shouldKillList] 
-        {
-                {archer}{archer}
-                {banshee}{banshee}
-                {basilisk}{basilisk}
-                {benevolent wizard}{wizard}
-                {djinni}{djinni}
-                {dragon}{dragon}
-                {evil looking changeling}{changeling}
-                {evil looking juggernaut}{juggernaut}
-                {evil looking angel}{angel}
-                {evil sorceress}{sorceress}
-                {goblin}{goblin}
-                {knight}{knight}
-                {manticore}{manticore}
-                {stone golem}{golem}
-                {troll}{troll}
-                {unicorn}{unicorn}
-                {valkyrie}{valkyrie}
-        };
-
-        #foreach {*patrol[shouldKillList][]} {index}
-        {
-                #REGEXP {"%0"} {"%*$index%*"} { #var patroller[shouldKill] $patrol[shouldKillList][$index]; };
-        };
-
-};
-
-
-#alias .mapSetRoom
-{
-        #list maze add 39456;
-        #list maze add 39457;
-        #list maze add 39460;
-        #list maze add 39478;
-        #list maze add 39474;
-        #list maze add 39464;
-        #list maze add 39471;
-        #list maze add 39468;
-        #list maze add 39463;
-        #list maze add 39462;
-        #list maze add 39469;
-        #list maze add 39461;
-        #list maze add 39476;
-        #list maze add 39479;
-        #list maze add 39477;
-        #list maze add 39480;
-        #list maze add 39473;
-        #list maze add 39466;
-        #list maze add 39475;
-        #list maze add 39483;
-        
-        #map go $maze[+%1];
-        #map link %2 $maze[+%3];
-	#map go $maze[+%3];
-};
-
 
 /**************************************************************
         See if we can locate ourselves on the map

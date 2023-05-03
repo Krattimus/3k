@@ -1,0 +1,24 @@
+#showme READING ASSEMBLER
+#class {assembler} {open}
+
+#var {craft[quality]} {{1}{legendary}{2}{superior}{3}{good}{4}{average}{5}{poor}{6}{crude}{7}{worthless}}
+
+#alias {.assemble} 
+{
+        #foreach {$craft[quantity]} {craftcount} 
+	{
+                #math {craft[num]} {$craft[num] + 1};
+                #if {$craftcount >= 5} 
+		{
+                        #while {$craftcount >= 5} 
+			{
+                                #5 unstash $craft[quality][$craft[num]] $craft[shape] of $craft[type];
+                                #math {craftcount} {$craftcount - 5};
+                                assemble $craft[shape] of $craft[type];
+                                stash all
+                        };
+                };
+        };
+};
+
+#class {assembler} {close}
