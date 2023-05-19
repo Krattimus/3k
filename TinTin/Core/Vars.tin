@@ -4,9 +4,6 @@
 #class chatvar kill
 #read 3k/TinTin/Data/3kchat.var
 
-#class mapvar kill
-#read 3k/TinTin/Data/Map.var
-
 #class farmvar kill
 #read 3k/TinTin/Data/KnownFarms.var
 
@@ -24,5 +21,13 @@
 
 #class charvar kill
 #read 3k/TinTin/Data/Character.var
+
+#class notesvar kill
+#read 3k/TinTin/Data/KnownNotes.var
+
+#class areasvar kill
+#read 3k/TinTin/Data/KnownAreas.var
+
+
 
 #CLASS {vars} CLOSE

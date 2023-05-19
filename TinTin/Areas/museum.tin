@@ -1,0 +1,17 @@
+#class {bot} {open}
+
+
+/******************************************************
+	For solving keeper of the map
+******************************************************/
+#alias {.solveDials}
+{
+        turn dial 1 %1;
+        turn dial 2 %2;
+        turn dial 3 %3;
+        turn dial 4 %4;
+        turn dial 5 %5;
+};
+
+
+#class {bot} {close}

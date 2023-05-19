@@ -2,6 +2,8 @@
 
 #VARIABLE {char}
 {
+    {area} {Land of the Ice People}
+    {currentRoomID} {23844}
     {guild} {Monk}
     {ourCharacter} {Krat}
 }

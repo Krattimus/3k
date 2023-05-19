@@ -8,9 +8,9 @@
 
 
 #var dirs[n] overhere;
-#var dirs[s] thisway;
+#var dirs[s] thatway;
 #var dirs[e] yonder;
-#var dirs[w] thatway;
+#var dirs[w] thisway;
 #var dirs[u] anotherway;
 #var dirs[d] overthere;
 
@@ -75,6 +75,7 @@
 
 } {1};
 
+
 #alias .dir
 {
 	#var exits2 $exits;
@@ -90,6 +91,9 @@
 	#draw Yellow scroll line 1 1 1 80;
 };
 
+/*************************************************************************
+	Calculator util
+*************************************************************************/
 #alias {.calc} 
 {
         #math {math} {%1};
@@ -97,6 +101,9 @@
         #echo $math_format
 }
 
+/*************************************************************************
+	Captures all text for a period of time
+*************************************************************************/
 #alias .timedCapture
 {
 	#var capturedText {};	
@@ -113,16 +120,34 @@
 	} {%1};
 };
 
+/*************************************************************************
+	Saves our data to file
+*************************************************************************/
 #alias {.save}
 {
-	#class mapvar write 3k/TinTin/Data/Map.var;
+	#var char[currentRoomID] $currentRoomID;
+	#var char[area] $area;
 	#class chatvar write 3k/TinTin/Data/3kchat.var;
 	#class farmvar write 3k/TinTin/Data/KnownFarms.var;	
 	#class pubvar write 3k/TinTin/Data/KnownPubs.var;
 	#class shopvar write 3k/TinTin/Data/KnownShops.var;
 	#class itemsvar write 3k/TinTin/Data/KnownItems.var;
 	#class mobsvar write 3k/TinTin/Data/KnownMobs.var;
+	#class areasvar write 3k/TinTin/Data/KnownAreas.var;
+	#class notessvar write 3k/TinTin/Data/KnownNotes.var;
 	#class charvar write 3k/TinTin/Data/Character.var;
+};
+
+/*************************************************************************
+	Switches to a new guild or character:
+	.switchTo Monk Krat
+*************************************************************************/
+#alias {.switchTo}
+{
+        #var char[guild] %1;
+        #var char[ourCharacter] %2;
+        .save;
+        #end;
 };
 
 /*************************************************************************

@@ -1,22 +1,49 @@
 #class {bot} {open}
 
-#var {no_loop} {0}
-#var {no_home} {0}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 3441;
+#var patrol[area] {Dundee Poachers};
 
 #var {patrol[path]} {ne;e;n;n;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;n;n;w;w;w;w;w;w;w;w;sw}
 
-#act {^=M= {Mature Swamp Crocodile|Star-nosed Mole|Three-toed Amphiuma|Purple Swamphen|Purple Swamphen|Golden-Crowned Snake}} {
-	#switch {"%1"} {
-		#case {"Mature Swamp Crocodile"}	{#var patroller[shouldKill] crocodile};
-		#case {"Star-nosed Mole"}		{#var patroller[shouldKill] mole};
-		#case {"Three-toed Amphiuma"}		{#var patroller[shouldKill] amphiuma};
-		#case {"Golden-Crowned Snake"}		{#var patroller[shouldKill] snake};
-		#case {"Purple Swamphen"}		{#var patroller[shouldKill] swamphen};
-	};
-	_check_mob
 
-}
+#var patrol[shouldKillList] 
+{
+	{Sparrow}{sparrow}
+	{Watersnake}{snake}
+	{Bear}{bear}
+	{Toad}{toad}
+	{Frog}{frog}
+	{Heron}{heron}
+	{Sparrow}{sparrow}
+	{Crocodile}{crocodile}
+	{Snake}{snake}
+	{bear}{bear}
+	{Shrew}{shrew}
+	{Rat}{rat}
+	{Caecilian}{caecilian}
+	{Anhinga}{anhinga}
+	{Armadillo}{armadillo}
+	{Platypus}{platypus}
+	{Osprey}{osprey}
+	{Egret}{egret}
+	{Salamander}{salamander}
+	{Crane}{crane}
+	{Anaconda}{snake}
+	{Mole}{mole}
+	{Amphiuma}{amphiuma}
+	{Swamphen}{swamphen}
+};
+
+
+#action {The foliage in this part of the swamp is extremely thick}
+{
+	#map undo;
+	#path move backward;
+	.doBehaviorPatrol;
+};
+
 
 #class {bot} {close}

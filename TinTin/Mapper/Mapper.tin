@@ -32,21 +32,6 @@
 	.unregisterEvent onBlockedMovement onBlockedMovementMapResponder;
 }
 
-/*************************************************************
-	Set the map to our last known location, although
-	it is probably better to do a localizer check here
-*************************************************************/
-#send rating;
-#send pwho;
-#send stats;
-#send gs;
-
-#if { @isDigit{$map[$char[ourCharacter]][position]} }
-{
-	#map goto {$map[$char[ourCharacter]][position]};
-};
-
-
 /**************************************************************
 	Sets an exit to the current room
 **************************************************************/
@@ -471,30 +456,35 @@ Once we see this, we can conclude the room description is over
 } {1};
 
 /*************************************************************
-Allows us to drop map interest pins in an area to travel to
-*************************************************************/
-#alias {.noteInterest %1 %*}
-{
-	#map get roomvnum {roomID};
-	#map set roomsymbol %1;
-	#script {python3 3k/TinTin/Tools/mapInterest.py "%2" "$roomID" "$area" "%1"};
-};
-
-/*************************************************************
-Displays a list of map interests for an area
-*************************************************************/
-#alias .describeInterests
-{
-	#script {python3 3k/TinTin/Tools/getInterests.py "$area"};
-};
-
-/*************************************************************
 The area has changed 
 *************************************************************/
 #act {AREA NAME: %1 [%2]} 
 {
-	#var area %1
+	#var area %1;
+	#var wizardName %2;
 }
+
+/*************************************************************
+   Turns the portion of map in a direction into a new subarea
+   Ie:  .mapSubArea w
+*************************************************************/
+#alias .mapSubArea
+{
+        #map exit %1 dir %1;
+        #map exit %1 flags 1;
+};
+
+/*************************************************************
+    Map last room with direction special exit
+	example: .mlr e out    connects the last room we where
+	in to 'east' with a custom 'out' command
+*************************************************************/
+#alias {.mlr}
+{
+ .mapLastRoom %1;
+ .mapLastRoom %2;
+ .mapCommand %1 %2;
+};
 
 /*************************************************************
  Responding to blocked exits in general. 
@@ -540,7 +530,7 @@ The area has changed
 	};
 	#else
 	{
-		#script {python3 3k/TinTin/Tools/mapGo.py "$area" "%0"};
+		#map run {{roomnote} {%1}};
 	};
 }
 

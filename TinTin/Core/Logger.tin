@@ -6,6 +6,8 @@
 #list logger[items] create;
 #list logger[input] create;
 
+.registerEvent onItemFound onItemFoundLogger;
+.registerEvent onMobFound onMobFoundLogger;
 .registerEvent onMobKilled onMobKilledLogger;
 .registerEvent onItemTaken onItemTakenLogger;
 .registerEvent onReceivedInput onReceivedInputLogger;	
@@ -99,7 +101,7 @@
 {
 	#if { $allowRecording && !$patroller[isPatrolling] && $settings[shouldLog] }
 	{
-		#if { !@containsNoCase{{%0}{coins}} && !@containsNoCase{{%0}{corpse}} }
+		#if { !@isFilteredFromLogging{%0} }
 		{
 			#list {logger[items]} {add} {$event[itemTaken]};
 			.logItemToDB $event[itemTaken];
@@ -117,25 +119,37 @@
 	.logKillToDatabase;
 };
 
+/**************************************************************
+    Auto logs iotems when we see them
+**************************************************************/
+#alias {onItemFoundLogger}
+{
+	#if { $settings[shouldLog] && !$traveller[isTravelling] && !$patroller[isPatrolling] }
+	{
+		#if { $currentRoomID > 150 }
+		{
+			#if { !@isFilteredFromLogging{$event[lastItemFound]} }
+			{
+				.addItemToItemsList {$event[lastItemFound]} {} {$currentRoomID} {$area};
+			};
+		};
+	};
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**************************************************************
+    Auto log mobs when we 'see'' them, filter out fast travel
+	filter out patrols
+**************************************************************/
+#alias {onMobFoundLogger}
+{
+	#if { $settings[shouldLog] && !$traveller[isTravelling] && !$patroller[isPatrolling] }
+	{
+		#if { $currentRoomID > 150 }
+		{
+			.addMobToMobsList {$event[foundMobName]} {$area} {} {0} {$currentRoomID};
+		};
+	};
+};
 
 /**************************************************************
 	Describes rooms for the given area
@@ -174,9 +188,7 @@
 **************************************************************/
 #alias {.describeMobs}
 {
-	#showme python3 3k/TinTin/Tools/getMobs.py "$area";
 	#draw Yellow scroll line 1 1 1 80;
-	#script {python3 3k/TinTin/Tools/getMobs.py "$area";};
 	#draw Yellow scroll line 1 1 1 80;
 };
 
@@ -185,7 +197,7 @@
 **************************************************************/
 #alias {.describeItems}
 {
-	#showme python3 3k/TinTin/Tools/getItems.py "$area";
+
 	#draw Yellow scroll line 1 1 1 80;
 	#script {python3 3k/TinTin/Tools/getItems.py "$area";};
 	#draw Yellow scroll line 1 1 1 80;
@@ -268,7 +280,8 @@
 {
 	#if { !$patroller[isPatrolling] }
 	{
-		#script {python3 3k/TinTin/Tools/mobLogger.py "$recordedMobName" "$capturedText" "$currentRoomID" "$area" "$event[rating]"};
+		.addMobToMobsList {$recordedMobName} {$area} {$capturedText} {0} {$currentRoomID};
+
 		#var logger[isLogging] 0;
 		.checkItemBacklog;
 	};
@@ -281,14 +294,21 @@
 {
 	#if { !$patroller[isPatrolling] }
 	{
-		#script {python3 3k/TinTin/Tools/itemLogger.py "$recordedItemName" "$capturedText" "$currentRoomID" "$area"};
-		#var logger[isLogging] 0;
+		#draw Yellow scroll line 1 1 1 80;
+		#echo {<128>%-25s<088> recorded at [<168>%.5s<088>] in [<168>%-15s<088>]} {$recordedItemName} {$currentRoomID} {$area};
+		#draw Yellow scroll line 1 1 1 80;
 
+		.addItemToItemsList {$recordedItemName} {$capturedText} {$currentRoomID} {$area};
+
+		#var logger[isLogging] 0;
 		#list {logger[items]} {delete} {1};
 		.checkItemBacklog;
 	};
-}
+};
 
+/**************************************************************
+	Handles a queue of items
+**************************************************************/
 #alias .checkItemBacklog
 {
 	#if { @getNumElements{logger[items]} > 0 }
@@ -304,7 +324,11 @@
 {
 	#if { !$patroller[isPatrolling] }
 	{
-		#script {python3 3k/TinTin/Tools/mobLogger.py "$event[mobKilled]" "NA" "$currentRoomID" "$area" "$event[rating]"};
+		#draw Yellow scroll line 1 1 1 80;
+		#echo {<128>%-25s<088> recorded at [<168>%.5s<088>] in [<168>%-15s<088>]} {$event[mobKilled]} {$currentRoomID} {$area};
+		#draw Yellow scroll line 1 1 1 80;
+
+		.addMobToMobsList {$event[mobKilled]} {$area} {} {$event[rating]} {$currentRoomID};
 	};
 };
 

@@ -10,6 +10,16 @@
 /************************************************************************
 	Ansify search results
 ************************************************************************/
+
+#highlight {You search your surroundings thoroughly but come up with nothing.} {<038>};
+
+#highlight {You search a bit and find nothing.} {<038>};
+
+#highlight {Try as you might, you can't seem to move it.  Maybe there is some sort} {<038>};
+#highlight {^of lock on it.} {<038>};
+
+ 
+
 #highlight {You give the area a general search but come up empty handed} {<038>};
 #highlight {You search about, but fail to find anything.} {<038>};
 #highlight {You find nothing of interest.} {<038>};
@@ -47,6 +57,78 @@
 
 #highlight {You have never been here before.} {<338>};
 #highlight {There are secret or hidden exits in this room.} {<338>};
+
+
+#alias .explorerOn
+{
+	#highlight {door} {<338>};
+	#highlight {eastern} {<338>};
+	#highlight {western} {<338>};
+	#highlight {northern} {<338>};
+	#highlight {southern}  {<338>};
+	#highlight {something} {<338>};
+	#highlight {crack} {<338>};
+	#highlight {plaque} {<338>};
+	#highlight {button} {<338>};
+	#highlight {lever} {<338>};
+	#highlight {%i{you could}} {<338>};
+
+	#highlight {%i{box}} {<338>};
+	#highlight {%i{chest}} {<338>};
+	#highlight {%i{crate}} {<338>};
+	#highlight {%i{hole}} {<338>};
+	#highlight {%i{bin}} {<338>};
+
+
+	#highlight {%i{could probably}} {<338>};
+	#highlight {%i{probably could}} {<338>};
+	#highlight {%i{You might be}} {<338>};
+
+	#highlight {%i{to the west}} {<338>};
+	#highlight {%i{to the east}} {<338>};
+	#highlight {%i{to the north}} {<338>};
+	#highlight {%i{to the south}} {<338>};
+	#highlight {%i{to the southwest}} {<338>};
+	#highlight {%i{to the southeast}} {<338>};
+	#highlight {%i{to the northwest}} {<338>};
+	#highlight {%i{to the northeast}} {<338>};
+};
+ 
+#alias .explorerOff
+{
+	#unhighlight {%i{hole}};
+	#unhighlight {%i{bin}};
+	#unhighlight {%i{box}};
+	#unhighlight {%i{chest}};
+	#unhighlight {%i{crate}};
+
+	#unhighlight {door};
+	#unhighlight {eastern};
+	#unhighlight {western};
+	#unhighlight {northern};
+	#unhighlight {southern};
+	#unhighlight {something};
+	#unhighlight {crack};
+	#unhighlight {button};
+
+	#unhighlight {%i{to the west}};
+	#unhighlight {%i{to the east}};
+	#unhighlight {%i{to the north}};
+	#unhighlight {%i{to the south}};
+	#unhighlight {%i{to the southwest}};
+	#unhighlight {%i{to the southeast}};
+	#unhighlight {%i{to the northwest}};
+	#unhighlight {%i{to the northeast}};
+	#unhighlight {%i{you could}};
+	#unhighlight {plaque};
+	#unhighlight {lever};
+
+	#unhighlight {%i{could probably}};        
+	#unhighlight {%i{probably could}};
+	#unhighlight {%i{You might be}};
+};
+
+
 
 
 /************************************************************************

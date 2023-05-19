@@ -49,14 +49,13 @@
 	#read 3k/TinTin/Controllers/Traveller.tin;
 	#read 3k/TinTin/Controllers/Donater.tin;
 	#read 3k/TinTin/Controllers/Miner.tin;
-	
+
 	#NOP { *********** Vaf Addons ************ };
 	#NOP { #read 3k/TinTin/Vaf/Damage.tin };
 
 	#NOP { *********** Tools ************ };
 	#read 3k/TinTin/Core/Logger.tin;
 	#read 3k/TinTin/Core/TestBin.tin;
-	#read 3k/TinTin/Core/Joystick.tin;
 
 	#NOP { *********** Guild  ************ };
 	#read 3k/TinTin/Guilds/Eternals.tin;
@@ -65,11 +64,23 @@
 	{
 		#read 3k/TinTin/Guilds/$char[guild].tin;
 	};
-}
+
+	#send stats;
+	#send coins;
+	#send pwho;
+	#send gs;
+
+	#if { @isDigit{$char[currentRoomID]} }
+	{
+		#map goto {$char[currentRoomID]};
+		#var area {$char[area]};	
+	};
+
+	.render;
+};
 
 load3k;
-#delay 0.1 .render;
-#delay 0.15 look;
+#delay 0.35 look;
 
 
 #sub {~\t} {       }

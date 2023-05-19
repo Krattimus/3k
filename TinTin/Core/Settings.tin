@@ -66,6 +66,21 @@
         #echo { <228>| $area_display <088>};
 };
 
+#alias {.toggleExplorer}
+{
+        #if { $settings[shouldLog] }
+        {
+                .explorerOff;
+                #var $settings[shouldLog] 0;
+        };
+        #else
+        {
+                .explorerOn;
+                #var $settings[shouldLog] 1;
+        };
+
+};
+
 #alias {.toggleMissions}
 {
         .toggle acceptMissions;

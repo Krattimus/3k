@@ -102,12 +102,12 @@
 
 	#map get {roomvnum} {gonum};
 	#map goto $gonum;
-	#if { "$map[position]" == "top" } 
+	#if { "$char[position]" == "top" } 
 	{
 		#draw {tile} $map[height]-1 -$map[width] $map[height]-1 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
 		#draw {tile} $map[height] -$map[width] $map[height] -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}
 	}; 
-	#elseif { "$map[position]" == "bottom" } 
+	#elseif { "$char[position]" == "bottom" } 
 	{
 		#draw {tile} -$status[height]-$map[height]-3 -$map[width] -$status[height]-$map[height]-3 -1 {<020>$roomarea <140>(<120>$room_cnt<140>)<099>};
 		#draw {tile} -$status[height]-$map[height]-2 -$map[width] -$status[height]-$map[height]-2 -1 {<140>[<030>$roomvnum<140>] <130>$roomname<099>}

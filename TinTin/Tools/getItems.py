@@ -5,19 +5,9 @@ from baseDatabase import BaseDatabase
 
 db3k = BaseDatabase()
 
-area = sys.argv[1]
+results = db3k.select_all("SELECT * FROM MapItems WHERE MapItemID<154 ORDER BY MapItemID DESC LIMIT 1000")
 
-results = db3k.select_all("SELECT DISTINCT ItemName FROM MapItems Where AreaName LIKE %s", [area]);
-
-for row in results:
-  rooms = db3k.select_all("SELECT DISTINCT RoomID FROM MapItems Where ItemName LIKE %s AND AreaName LIKE %s", [row[0], area]);
-  display = ""
-  for room in rooms:
-    if display == "":
-      display += str(room[0])
-    else:
-      display += "," + str(room[0])
-  TinTin.showme("<088>   <039>" + str(row[0]) + "<088> found in rooms [<139>" + display + "<088>]")
+for result in results:
+  TinTin.execute(".addItemToItemsList {"+ str(result[2])+"} {"+str(result[5])+"} {"+str(result[4])+"} {"+str(result[3])+"}")
   
-
 db3k.dispose()

@@ -124,7 +124,16 @@
 #alias {drop}
 {
     #local inventoryID %1;
-    #if { @isDigit{$inventoryID} }
+
+    #if { "%2" == "coin"}
+    {
+        #send !drop %0;
+    };
+    #elseif { "%2" == "coins"}
+    {
+        #send !drop %0;
+    };
+    #elseif { @isDigit{$inventoryID} }
     {
         #if { $inventoryID > 0 && $inventoryID <= @getNumElements{inventory} }
         {

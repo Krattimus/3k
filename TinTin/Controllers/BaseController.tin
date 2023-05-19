@@ -51,10 +51,6 @@
 ************************************************************/
 prompt >$nl$;
 .mapOff;
-#send !pwho;
-#send !coins;
-#send !gs;
-#send !stats;
 
 /************************************************************
 	Debug log
@@ -91,7 +87,7 @@ prompt >$nl$;
 #action {^>$} 
 {
 	.triggerEvent onPrompt;
-}
+};
 
 /************************************************************
 	Detects when gold is found
@@ -100,7 +96,7 @@ prompt >$nl$;
 {
 	#var found[gold] 1;
 	.triggerEvent onGoldFound;
-}
+};
 
 /************************************************************
 	Detects when an Item is found
@@ -111,7 +107,7 @@ prompt >$nl$;
 	#list {event[items]} {add} {%1};
 	#var event[lastItemFound] %1;
 	.triggerEvent onItemFound;
-}
+};
 
 /************************************************************
 	Detects when an Item is found
@@ -122,7 +118,21 @@ prompt >$nl$;
 	#list {event[items]} {add} {%1};
 	#var event[lastItemFound] %1;
 	.triggerEvent onItemFound;
-}
+};
+
+
+#function isFilteredFromLogging
+{
+	#if { @startsWith{{%0}{The ghostly remnant of}} } { #return 1; };
+    #if { @startsWith{{%0}{The bashed up}} } { #return 1; };
+	#if { @startsWith{{%0}{The sliced up}} } { #return 1; };
+	#if { @startsWith{{%0}{The brainless}} } { #return 1; };	
+	#if { @containsNoCase{{%0}{slain corpse}} } { #return 1; };
+	#if { @containsNoCase{{%0}{stinking remains}} } { #return 1; };
+	#if { @containsNoCase{{%0}{coins}} } { #return 1; };
+
+	#return 0;
+};
 
 /************************************************************
 	Famous items we should discount as items
@@ -131,6 +141,7 @@ prompt >$nl$;
 {
     #if { @startsWith{{%0}{The bashed up}} } { #return 1; };
 	#if { @startsWith{{%0}{The sliced up}} } { #return 1; };
+	#if { @startsWith{{%0}{The brainless}} } { #return 1; };		
 	#if { @startsWith{{%0}{slain corpse}} } { #return 1; };
 	#if { @startsWith{{%0}{A sign}} } { #return 1; };
 	#if { @startsWith{{%0}{Talon Airship}} } { #return 1; };
@@ -152,6 +163,7 @@ prompt >$nl$;
 		#var found[item] 1;
 		#list {event[items]} {add} {%1};
 		#var event[lastItemFound] %1;
+		
 		.triggerEvent onItemFound;
 	};
 }
@@ -171,6 +183,10 @@ prompt >$nl$;
 		#var event[foundMobName] $attackedBy;
 	};
 
+	#replace event[foundMobName] {{\\x7B.*\\x7D}} {};
+    #replace event[foundMobName] {{\(.*\)}} {};
+    #replace event[foundMobName] {{\[.*\]}} {};	
+	#format {event[foundMobName]} {%p} {$event[foundMobName]};
 	.triggerEvent onMobFound;
 
 	#if { $settings[acceptMissions] && !$traveller[isTravelling] }
@@ -428,7 +444,7 @@ prompt >$nl$;
 
 /*************************************************************
     Detect item taken
-*************************************************************/
+*************************************************************/	
 #action {%1: Ok.$}
 {
     #REGEXP {%1} {gold coins} { #NOP {nothing}; } 
@@ -504,6 +520,7 @@ prompt >$nl$;
 *************************************************************/
 #alias {onExitedRoomBase} 
 {
+	#var event[rating] {};
 	.clearData;
 };
 

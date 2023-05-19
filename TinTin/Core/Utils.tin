@@ -220,6 +220,26 @@
 }
 
 /*****************************************************************
+	We could make the while loop for real, but this is lazy
+	man's remove from all, keep calling remove enough times
+*****************************************************************/
+#alias removeAllItemsFromList 
+{
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+	removeItemFromList {%1} {%2};
+};
+
+/*****************************************************************
 	Loops through param1 list variable name and removes el: parm2
 		%1 - Name of list
 		%2 - Element in list
@@ -235,7 +255,6 @@
 		#if { @equalsIgnoreCase{{$item} {%2}} }
 		{
 			#list %1 {DEL} {$itemID};
-			#math {itemID} {$itemID-1};
 		};
 
 		#math {itemID} {$itemID+1};
