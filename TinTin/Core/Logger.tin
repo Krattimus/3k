@@ -280,6 +280,10 @@
 {
 	#if { !$patroller[isPatrolling] }
 	{
+		#draw Yellow scroll line 1 1 1 80;
+		#echo {<128>%-25s<088> recorded at [<168>%.5s<088>] in [<168>%-15s<088>]} {$recordedMobName} {$currentRoomID} {$area};
+		#draw Yellow scroll line 1 1 1 80;
+
 		.addMobToMobsList {$recordedMobName} {$area} {$capturedText} {0} {$currentRoomID};
 
 		#var logger[isLogging] 0;

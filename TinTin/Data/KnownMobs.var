@@ -606,6 +606,61 @@
             }
         }
     }
+    {A Refugee House} 
+    {
+        {A refugee child} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14232}
+            }
+        }
+        {A refugee man} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14231}
+            }
+        }
+        {A refugee woman} 
+        {
+            {Description} {  }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14229}
+            }
+        }
+        {child} 
+        {
+            {Description} {  }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14232}
+            }
+        }
+        {man} 
+        {
+            {Description} { }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14231}
+            }
+        }
+        {woman} 
+        {
+            {Description} {   A refugee woman }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14229}
+            }
+        }
+    }
     {A forest trail} 
     {
         {Akul} 
@@ -865,6 +920,14 @@
     }
     {Aegis Global} 
     {
+        {A wandering pedestrian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2456}
+            }
+        }
         {Aegis Assembler} 
         {
             {Description} {NA}
@@ -1989,6 +2052,14 @@
     }
     {Alphabet Land} 
     {
+        {A foul-smelling Armadillo} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1811}
+            }
+        }
         {Letter B} 
         {
             {Description} {  up > > }
@@ -2524,17 +2595,34 @@
     }
     {Ancient Dolmen} 
     {
+        {Bob} 
+        {
+            {Description} {     Bob, a wandering half-elf adventurer Bob, a wandering half-elf adventurer  Bob's real name is Eledhwen Peredhil, but people around here call him Bob.  Bob is a half-elf.  His mixed parentage manifests itself in a tall, slight build and fine bone structure.  He is dressed in greens and browns and equipped for adventuring in forest environments.  He is in perfect health.   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30359}
+                {2} {30360}
+            }
+        }
         {Bob, a wandering half-elf adventurer} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {30358}
             }
+            {Rooms} 
+            {
+                {1} {30360}
+                {2} {30359}
+                {3} {30361}
+            }
         }
         {Crushah} 
         {
-            {Description} {NA}
+            {Description} {     Crushah, a small time bandit  Crushah is wearing studded leather body armour and carries a short sword and target shield.  His real name is Michael, but he changed it to something more 'outlaw' like when he decided to take up banditry.  He has not been a bandit for very long, and so far he doesn't think much of it.  He is in perfect health.   }
             {Ratings} 
             {
                 {1} {12}
@@ -2543,15 +2631,25 @@
             {Rooms} 
             {
                 {1} {30364}
+                {2} {30362}
+            }
+        }
+        {Crushah, a small time bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30362}
             }
         }
         {Grippah} 
         {
-            {Description} {NA}
+            {Description} { Grippah is the leader of the bandit gang that hides out beneath the dolmen.  He decided to take up banditry after he grew bored of his previous job as a guard for merchant caravans.  His real name is Samuel Fotherington, which he has always hated as he regards it as a toff's name. He is dressed in studded leather armour and armed with a nice looking short sword.  He is in perfect health. 	Grippah is carrying:   }
             {Ratings} 
             {
                 {1} {12}
                 {2} {22000}
+                {3} {5300}
             }
             {Rooms} 
             {
@@ -2559,18 +2657,78 @@
                 {2} {30363}
             }
         }
+        {Grippah, small time bandit leader} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30363}
+            }
+        }
+        {Katy} 
+        {
+            {Description} {   Katy looks cold and hungry  This poor little eight year old girl has been trapped in this little store room for hours, ever since she and her brother decided to explore the bandits hide-out.  She doesn't look hurt, just cold, tired and hungry.  There is a strong looking rope firmly tied to her left ankle, the other end of which it tied to an iron spike.  She is in perfect health.   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30364}
+            }
+        }
+        {Katy looks cold and hungry} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30364}
+            }
+        }
         {Stompah} 
         {
-            {Description} {NA}
+            {Description} { Stompah, real name William, was a guard in a merchant caravan before his mate Grippah convinced him they could make out much better robbing caravans instead of guarding them.  Grippah also said that nobody would ever find their hide-out under the dolmen.  Stompah suspects Grippah is wrong about a lot of things.  He is in perfect health.   }
             {Ratings} 
             {
                 {1} {12}
                 {2} {22000}
+                {3} {5300}
             }
             {Rooms} 
             {
                 {1} {30364}
                 {2} {30363}
+            }
+        }
+        {Stompah, small time bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30363}
+            }
+        }
+        {Thierry} 
+        {
+            {Description} { Thierry is a skinny little nine year old.  He looks cold and dirty, but is putting on a brave face in front of his younger sister.  His short brown hair is matted with mud and his face is streaked from tears that have been running down his cheeks.  A strong looking rope has been tightly tied to his ankle, the other end is tied to an iron spike which has been driven into the ground.  He is in perfect health.    Katy says: I want to go home. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30364}
+            }
+        }
+        {Thierry is trying to look brave for his sister} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30364}
+            }
+        }
+        {bob} 
+        {
+            {Description} { Bob's real name is Eledhwen Peredhil, but people around here call him Bob.  Bob is a half-elf.  His mixed parentage manifests itself in a tall, slight build and fine bone structure.  He is dressed in greens and browns and equipped for adventuring in forest environments.  He is in perfect health.    }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {30361}
             }
         }
     }
@@ -4519,6 +4677,40 @@
                 {1} {23264}
             }
         }
+        {Roland Smith, the shop keeper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4734}
+                {2} {4718}
+            }
+        }
+        {Town Guard of Angelo} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4716}
+            }
+        }
+        {Town Peasant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4734}
+                {2} {4718}
+            }
+        }
+        {Willow the gnome} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4735}
+            }
+        }
     }
     {Ashridge Acres} 
     {
@@ -5481,6 +5673,26 @@
             }
         }
     }
+    {Azral's Tower} 
+    {
+        {Ghost of Azral} 
+        {
+            {Description} {  The Ghost of Azral The pale form of a human male drifts before you, looking as you assume he did in life.  His hair is silver and long, pulled back at the nape of his neck.  His face is clean-shaven, showing off his strong jawline and prominent nose.  His eyes are odd, shifting between brown and green.  The most disturbing part of his appearance is that you can see right through him! It is in perfect health.    Azral says: Please, help me. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4243}
+            }
+        }
+        {The Ghost of Azral} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4243}
+            }
+        }
+    }
     {B Sharp Jazz Club} 
     {
         {Bouncer} 
@@ -5987,6 +6199,27 @@
             }
         }
     }
+    {Banshee's Lair} 
+    {
+        {A powerful elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27694}
+                {2} {27693}
+            }
+        }
+        {A strong elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27694}
+                {2} {27691}
+            }
+        }
+    }
     {Banyan Tree} 
     {
         {A dazed man} 
@@ -6114,6 +6347,69 @@
     }
     {Barovia} 
     {
+        {Coffer Corpse} 
+        {
+            {Ratings} 
+            {
+                {1} {14000}
+            }
+            {Rooms} 
+            {
+                {1} {4386}
+            }
+        }
+        {Dire Wolf} 
+        {
+            {Ratings} 
+            {
+                {1} {2400}
+            }
+            {Rooms} 
+            {
+                {1} {4325}
+            }
+        }
+        {Dire wolf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4325}
+            }
+        }
+        {Donavich the priest} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4602}
+            }
+        }
+        {Dr. Rudolph Van Richten} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4582}
+            }
+        }
+        {Ismark} 
+        {
+            {Description} { This is Ismark, a respected villager in Barovia. His father was a gifted blacksmith until he lost his life to Strahd in Castle Ravenloft.  Fortunately, before he died, Ismark's father passed his gift of craftsmanship to his son.  Ismark may be willing to help you if you nudge him.  He is in perfect health. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4581}
+            }
+        }
+        {Ismark the villager} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4581}
+            }
+        }
         {Rat} 
         {
             {Description} {NA}
@@ -6126,6 +6422,56 @@
                 {1} {4586}
             }
         }
+        {Razor Warrior} 
+        {
+            {Ratings} 
+            {
+                {1} {12}
+            }
+            {Rooms} 
+            {
+                {1} {4388}
+            }
+        }
+        {Razor warrior} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4388}
+            }
+        }
+        {Undead Dragon} 
+        {
+            {Ratings} 
+            {
+                {1} {13}
+            }
+            {Rooms} 
+            {
+                {1} {4388}
+            }
+        }
+        {Vampire Bat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4377}
+                {2} {4379}
+            }
+        }
+        {Vampire bat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4333}
+                {2} {4374}
+                {3} {4379}
+                {4} {4377}
+            }
+        }
         {Wood Golem} 
         {
             {Description} {NA}
@@ -6136,6 +6482,24 @@
             {Rooms} 
             {
                 {1} {4623}
+            }
+        }
+        {Xithe} 
+        {
+            {Description} {     Xithe the priest  You see the dark priest known as Xithe.  Years ago, he was the high priest of Barovia, a good man with a good heart.  Tainting caused by the evil land and the dark powers of the abyss has caused his heart to turn black. He stands before you, staring at you with a pair of powerful, black eyes.  He is in perfect health. 	Xithe is carrying:   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4604}
+            }
+        }
+        {e bat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4377}
+                {2} {4379}
             }
         }
     }
@@ -6526,11 +6890,19 @@
     {
         {Eustace} 
         {
-            {Description} { A handsomely dressed middle-aged man is busy stacking shirts on a shelf.  He is dressed in brown cotton slacks and a hand-spun white silk shirt.  He is a meticuously neat person with slicked back hair and a debonaire smile.  He is in perfect health.  }
+            {Description} {    Eustace the Haberdasher  A handsomely dressed middle-aged man is busy stacking shirts on a shelf.  He is dressed in brown cotton slacks and a hand-spun white silk shirt.  He is a meticuously neat person with slicked back hair and a debonaire smile.  He is in perfect health.   }
             {Ratings} 
             {
                 {1} {48000}
             }
+            {Rooms} 
+            {
+                {1} {4105}
+            }
+        }
+        {Eustace the Haberdasher} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {4105}
@@ -8436,10 +8808,15 @@
         {A Disoreinted Typo} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1833}
                 {2} {1816}
+            }
+            {Rooms} 
+            {
+                {1} {1814}
             }
         }
         {A Medium Yellow Lego Bird} 
@@ -8473,10 +8850,16 @@
         {A foul-smelling Armadillo} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1811}
                 {2} {1815}
+            }
+            {Rooms} 
+            {
+                {1} {1165}
+                {2} {1811}
             }
         }
         {A scientist} 
@@ -8493,6 +8876,14 @@
             {Room} 
             {
                 {1} {34310}
+            }
+        }
+        {A small velociraptor} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3162}
             }
         }
         {Al Bundy} 
@@ -8642,6 +9033,33 @@
                 {1} {24609}
             }
         }
+        {Gabriel, archangel of Yesod} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24609}
+            }
+        }
+        {Haniel} 
+        {
+            {Ratings} 
+            {
+                {1} {16}
+            }
+            {Rooms} 
+            {
+                {1} {24613}
+            }
+        }
+        {Haniel, archangel of Netzach} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24613}
+            }
+        }
         {Horus} 
         {
             {Description} {     Horus the Shopkeep  How odd, there appears to be a frankfurter standing here.  Oh, wait.  It is just Horus the shopkeep in a frankfurter suit.  You're not quite sure why Horus has decided to dress as a frankfurter today, but he has, so you'll just have to put up with it.  He is still quite eager to serve you, and waddles around the shop looking expectant.  He is in perfect health. 	Horus the Shopkeep is carrying: }
@@ -8666,6 +9084,25 @@
                 {1} {46216}
             }
         }
+        {Khamael} 
+        {
+            {Ratings} 
+            {
+                {1} {16}
+            }
+            {Rooms} 
+            {
+                {1} {24617}
+            }
+        }
+        {Khamael, archangel of Geburah} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24617}
+            }
+        }
         {Maybe's aerial servant Mycroft} 
         {
             {Rating} {}
@@ -8673,6 +9110,25 @@
             {
                 {1} {1811}
                 {2} {1815}
+            }
+        }
+        {Metatron} 
+        {
+            {Ratings} 
+            {
+                {1} {17}
+            }
+            {Rooms} 
+            {
+                {1} {24625}
+            }
+        }
+        {Metatron, archangel of Keter} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24625}
             }
         }
         {Michael} 
@@ -8687,12 +9143,44 @@
                 {1} {24611}
             }
         }
+        {Michael, archangel of Hod} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24611}
+            }
+        }
         {P.J. Kludgenstone, the frankfurter tycoon} 
         {
             {Rating} {}
             {Room} 
             {
                 {1} {17561}
+            }
+        }
+        {Parking garage guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {16696}
+            }
+        }
+        {Pennywise the Valithyn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3162}
+            }
+        }
+        {Permit Officer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3115}
             }
         }
         {Pipe Moron} 
@@ -8706,6 +9194,44 @@
             {
                 {1} {7344}
                 {2} {7343}
+            }
+        }
+        {Raphael} 
+        {
+            {Ratings} 
+            {
+                {1} {16}
+            }
+            {Rooms} 
+            {
+                {1} {24615}
+            }
+        }
+        {Raphael, archangel of Tipharet} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24615}
+            }
+        }
+        {Ratziel} 
+        {
+            {Ratings} 
+            {
+                {1} {16}
+            }
+            {Rooms} 
+            {
+                {1} {24623}
+            }
+        }
+        {Ratziel, archangel of Chockmah} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24623}
             }
         }
         {Rocko} 
@@ -8732,6 +9258,14 @@
                 {1} {24607}
             }
         }
+        {Sandalphon, archangel of Malkuth} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24607}
+            }
+        }
         {Santa} 
         {
             {Description} {NA}
@@ -8752,6 +9286,69 @@
                 {1} {41170}
             }
         }
+        {Spoon} 
+        {
+            {Description} {   This giant silver spoon is as big as a roller coaster and probably just as much fun if you care to slide down it to see what's on the other side.     }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22732}
+            }
+        }
+        {The Alphabet Serial Killer <?>} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2005}
+            }
+        }
+        {The Pope <?>} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6525}
+            }
+        }
+        {Tzadkiel} 
+        {
+            {Ratings} 
+            {
+                {1} {16}
+            }
+            {Rooms} 
+            {
+                {1} {24619}
+            }
+        }
+        {Tzadkiel, archangel of Chesed} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24619}
+            }
+        }
+        {Tzaphkiel} 
+        {
+            {Ratings} 
+            {
+                {1} {16}
+            }
+            {Rooms} 
+            {
+                {1} {24621}
+            }
+        }
+        {Tzaphkiel, archangel of Binah} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24621}
+            }
+        }
         {Vernon} 
         {
             {Description} {NA}
@@ -8767,11 +9364,20 @@
         {Villager} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {6502}
                 {2} {6503}
                 {3} {1896}
+            }
+            {Rooms} 
+            {
+                {1} {1895}
+                {2} {1897}
+                {3} {6501}
+                {4} {6502}
+                {5} {1896}
             }
         }
     }
@@ -11281,6 +11887,15 @@
     }
     {CybDom Inc.} 
     {
+        {A cyberized guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14339}
+                {2} {14267}
+            }
+        }
         {Cyberguard} 
         {
             {Description} {NA}
@@ -11306,6 +11921,15 @@
             {Rooms} 
             {
                 {1} {14341}
+            }
+        }
+        {guard} 
+        {
+            {Description} {  }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14339}
             }
         }
     }
@@ -13070,6 +13694,22 @@
     }
     {Der'Thalas} 
     {
+        {A deer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5489}
+            }
+        }
+        {A young elven woman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20728}
+            }
+        }
         {Adult Dark Treant} 
         {
             {Description} {NA}
@@ -13080,6 +13720,38 @@
             {Rooms} 
             {
                 {1} {5477}
+            }
+        }
+        {An elf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5392}
+            }
+        }
+        {An elven librarian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20732}
+            }
+        }
+        {Dark treant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5483}
+            }
+        }
+        {Dark wraith} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {7047}
             }
         }
         {Der'thalas Guard} 
@@ -13342,6 +14014,16 @@
                 {14} {7080}
                 {15} {7046}
                 {16} {7054}
+                {17} {20725}
+            }
+        }
+        {Elven zombie} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5330}
+                {2} {5507}
             }
         }
         {Horse} 
@@ -13358,11 +14040,19 @@
         }
         {Lyriac} 
         {
-            {Description} {    Lyriac, Elven Captain of the Guard (undead)  You see an imposing skeletal figure standing silently before you.  This is all that remains of King Tharon's captain of the guard, Lyriac.  His soul damned by the king's dark curse, Lyriac has struggled to retain the faint spark of goodness within his blackened body.  A powerful elf and a warrior officer of the highest degree, Lyriac has sent many a dark creature to the depths of the Abyss.  He is most well known for his legendary skill in battle, which hopefully was not lost with his passing.  His soul now rests in your hands, as what little remains of his honor is slowly slipping away into oblivion.  He is in perfect health. 	Lyriac is carrying: }
+            {Description} {  Lyriac, Elven Captain of the Guard (undead)  You see an imposing skeletal figure standing silently before you.  This is all that remains of King Tharon's captain of the guard, Lyriac.  His soul damned by the king's dark curse, Lyriac has struggled to retain the faint spark of goodness within his blackened body.  A powerful elf and a warrior officer of the highest degree, Lyriac has sent many a dark creature to the depths of the Abyss.  He is most well known for his legendary skill in battle, which hopefully was not lost with his passing.  His soul now rests in your hands, as what little remains of his honor is slowly slipping away into oblivion.  He is in perfect health. 	Lyriac is carrying: Adding Bag   }
             {Ratings} 
             {
                 {1} {15}
             }
+            {Rooms} 
+            {
+                {1} {20736}
+            }
+        }
+        {Lyriac, Elven Captain of the Guard} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {20736}
@@ -13378,6 +14068,14 @@
             {Rooms} 
             {
                 {1} {5477}
+            }
+        }
+        {Skeletal elf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5349}
             }
         }
         {Sylth} 
@@ -13451,6 +14149,15 @@
             {Rooms} 
             {
                 {1} {45930}
+            }
+        }
+        {Undead elf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5353}
+                {2} {5488}
             }
         }
         {Vampire Bat} 
@@ -13565,9 +14272,9 @@
                 {5} {54000}
                 {6} {48000}
                 {7} {58000}
-                {8} {44000}
-                {9} {46000}
-                {10} {42000}
+                {8} {46000}
+                {9} {42000}
+                {10} {44000}
             }
             {Rooms} 
             {
@@ -13584,6 +14291,16 @@
                 {11} {7050}
                 {12} {7076}
                 {13} {7056}
+                {14} {5507}
+            }
+        }
+        {Zombie elf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5291}
+                {2} {5485}
             }
         }
     }
@@ -13812,6 +14529,55 @@
     }
     {Detroit} 
     {
+        {A '72 Plymouth Duster} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
+            }
+        }
+        {A Ford Fiction 128XL} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+                {2} {14994}
+            }
+        }
+        {A GM Good Idea} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
+            }
+        }
+        {A huge Metallaskull gang member} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+            }
+        }
+        {A leggy Metallaskull gang member} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+            }
+        }
+        {A stocky Metallaskull gang member} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+            }
+        }
         {Alligator} 
         {
             {Description} {NA}
@@ -13836,6 +14602,23 @@
                 {10} {15076}
                 {11} {14906}
                 {12} {14907}
+            }
+        }
+        {An Armoured Carrier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+            }
+        }
+        {Baglady} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+                {2} {14983}
             }
         }
         {Bear} 
@@ -13906,6 +14689,41 @@
                 {27} {14944}
                 {28} {14994}
                 {29} {14906}
+            }
+        }
+        {Crysler C.O.F. turbo} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+                {2} {14983}
+                {3} {14994}
+            }
+        }
+        {Cyber Enforcer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+            }
+        }
+        {E.D. 260} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14913}
+                {2} {14983}
+            }
+        }
+        {E.D. 280} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
             }
         }
         {Ed 1000} 
@@ -14093,6 +14911,14 @@
                 {22} {14944}
             }
         }
+        {Fiction 128XL} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
+            }
+        }
         {Ford Fiction} 
         {
             {Description} {NA}
@@ -14119,16 +14945,16 @@
                 {1} {15048}
                 {2} {14970}
                 {3} {14913}
-                {4} {14994}
-                {5} {15044}
-                {6} {14909}
-                {7} {14981}
-                {8} {15015}
-                {9} {15077}
-                {10} {15072}
-                {11} {14967}
-                {12} {15070}
-                {13} {14983}
+                {4} {15044}
+                {5} {14909}
+                {6} {14981}
+                {7} {15015}
+                {8} {15077}
+                {9} {15072}
+                {10} {14967}
+                {11} {15070}
+                {12} {14983}
+                {13} {14994}
             }
         }
         {Funnel Cloud of Radiation} 
@@ -14189,6 +15015,14 @@
                 {13} {14978}
             }
         }
+        {Homeless Man} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
+            }
+        }
         {Jerry Calderone} 
         {
             {Description} {NA}
@@ -14219,6 +15053,14 @@
                 {2} {42971}
             }
         }
+        {Metro Cop} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
+            }
+        }
         {Monkey} 
         {
             {Description} {NA}
@@ -14245,6 +15087,24 @@
             {Rooms} 
             {
                 {1} {14906}
+                {2} {14913}
+                {3} {14994}
+            }
+        }
+        {Nuke Dealer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14900}
+            }
+        }
+        {O.C.P. Riot Officer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
             }
         }
         {Panda} 
@@ -14310,6 +15170,14 @@
                 {13} {14978}
                 {14} {14973}
                 {15} {14989}
+            }
+        }
+        {Punk} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14983}
             }
         }
         {Riot Officer} 
@@ -16862,6 +17730,25 @@
     }
     {Dundee Poachers} 
     {
+        {A fat hairy wandering spider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3148}
+            }
+        }
+        {A small velociraptor} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3180}
+                {2} {3148}
+                {3} {3130}
+                {4} {369}
+            }
+        }
         {Alpha Crocodile} 
         {
             {Description} {NA}
@@ -16886,9 +17773,10 @@
                 {1} {3406}
                 {2} {3412}
                 {3} {3425}
-                {4} {3424}
-                {5} {3437}
-                {6} {3439}
+                {4} {3437}
+                {5} {3439}
+                {6} {3440}
+                {7} {3424}
             }
         }
         {Anhinga} 
@@ -16904,6 +17792,7 @@
                 {2} {3246}
                 {3} {3232}
                 {4} {3301}
+                {5} {3243}
             }
         }
         {Armadillo} 
@@ -16932,6 +17821,9 @@
                 {3} {3388}
                 {4} {3328}
                 {5} {3326}
+                {6} {3396}
+                {7} {3360}
+                {8} {3336}
             }
         }
         {Caecilian} 
@@ -16944,6 +17836,16 @@
             {Rooms} 
             {
                 {1} {3286}
+                {2} {3243}
+                {3} {3228}
+            }
+        }
+        {Cancer the tradesman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3148}
             }
         }
         {Cane Toad} 
@@ -16952,9 +17854,14 @@
             {
                 {1} {15}
             }
+            {Ratings} {}
             {Room} 
             {
                 {1} {3145}
+            }
+            {Rooms} 
+            {
+                {1} {3124}
             }
         }
         {Crane} 
@@ -16997,63 +17904,73 @@
                 {13} {2}
                 {14} {3354}
                 {15} {3180}
-                {16} {3202}
-                {17} {3117}
-                {18} {3203}
-                {19} {3362}
-                {20} {3143}
-                {21} {3305}
-                {22} {3336}
-                {23} {3329}
-                {24} {3327}
-                {25} {3136}
-                {26} {3198}
-                {27} {3130}
-                {28} {3131}
-                {29} {3169}
-                {30} {3312}
-                {31} {3295}
-                {32} {3282}
-                {33} {3247}
-                {34} {3237}
-                {35} {3271}
-                {36} {48695}
-                {37} {3186}
-                {38} {3178}
-                {39} {3184}
-                {40} {3197}
-                {41} {3129}
-                {42} {3128}
-                {43} {3137}
-                {44} {3200}
-                {45} {3165}
-                {46} {3181}
-                {47} {3144}
-                {48} {3195}
-                {49} {3201}
-                {50} {3139}
-                {51} {3150}
-                {52} {3149}
-                {53} {3148}
-                {54} {3126}
-                {55} {3127}
-                {56} {3125}
-                {57} {3124}
-                {58} {3145}
-                {59} {3187}
-                {60} {3182}
-                {61} {3133}
-                {62} {3166}
-                {63} {3168}
-                {64} {3170}
-                {65} {3174}
-                {66} {3199}
-                {67} {3196}
-                {68} {3193}
-                {69} {3171}
-                {70} {3123}
-                {71} {3121}
-                {72} {3116}
+                {16} {3117}
+                {17} {3203}
+                {18} {3362}
+                {19} {3143}
+                {20} {3305}
+                {21} {3336}
+                {22} {3329}
+                {23} {3327}
+                {24} {3136}
+                {25} {3198}
+                {26} {3130}
+                {27} {3131}
+                {28} {3169}
+                {29} {3312}
+                {30} {3295}
+                {31} {3282}
+                {32} {3247}
+                {33} {3237}
+                {34} {3271}
+                {35} {48695}
+                {36} {3186}
+                {37} {3178}
+                {38} {3184}
+                {39} {3197}
+                {40} {3129}
+                {41} {3128}
+                {42} {3137}
+                {43} {3200}
+                {44} {3165}
+                {45} {3181}
+                {46} {3144}
+                {47} {3195}
+                {48} {3201}
+                {49} {3139}
+                {50} {3149}
+                {51} {3148}
+                {52} {3126}
+                {53} {3127}
+                {54} {3125}
+                {55} {3124}
+                {56} {3145}
+                {57} {3187}
+                {58} {3133}
+                {59} {3166}
+                {60} {3168}
+                {61} {3170}
+                {62} {3174}
+                {63} {3199}
+                {64} {3196}
+                {65} {3193}
+                {66} {3171}
+                {67} {3123}
+                {68} {3121}
+                {69} {3182}
+                {70} {3202}
+                {71} {3150}
+                {72} {3230}
+                {73} {3116}
+                {74} {3120}
+            }
+        }
+        {Cur, the tradesman's dog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3148}
             }
         }
         {Drop Bear} 
@@ -17083,15 +18000,27 @@
                 {3} {3123}
                 {4} {3122}
                 {5} {3129}
+                {6} {3119}
             }
         }
         {Game Hunter} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {3424}
                 {2} {3148}
+            }
+            {Rooms} 
+            {
+                {1} {3145}
+                {2} {3144}
+                {3} {10419}
+                {4} {3486}
+                {5} {3423}
+                {6} {3424}
+                {7} {3148}
             }
         }
         {Golden-Crowned Snake} 
@@ -17131,6 +18060,10 @@
             {Rooms} 
             {
                 {1} {3418}
+                {2} {3440}
+                {3} {3437}
+                {4} {10419}
+                {5} {3423}
             }
         }
         {Heron} 
@@ -17152,6 +18085,49 @@
                 {8} {3170}
                 {9} {3176}
                 {10} {3138}
+                {11} {3149}
+                {12} {3162}
+                {13} {3133}
+            }
+        }
+        {Johney the little boy} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3161}
+                {2} {369}
+            }
+        }
+        {Marbled Reed Frog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3139}
+                {2} {3123}
+            }
+        }
+        {Marsh Frog} 
+        {
+            {Ratings} 
+            {
+                {1} {15}
+            }
+            {Rooms} 
+            {
+                {1} {3354}
+                {2} {3353}
+                {3} {3337}
+                {4} {3358}
+            }
+        }
+        {Marsh Rat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3228}
             }
         }
         {Marsh Snake} 
@@ -17170,14 +18146,20 @@
                 {5} {3269}
                 {6} {3256}
                 {7} {3226}
+                {8} {3307}
             }
         }
         {Master Hunter} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {3424}
+            }
+            {Rooms} 
+            {
+                {1} {3217}
             }
         }
         {Mature Crocodile} 
@@ -17185,8 +18167,8 @@
             {Description} {NA}
             {Ratings} 
             {
-                {1} {12}
-                {2} {15}
+                {1} {15}
+                {2} {12}
                 {3} {16}
             }
             {Rooms} 
@@ -17196,14 +18178,34 @@
                 {3} {3451}
                 {4} {3480}
                 {5} {3448}
-                {6} {3424}
-                {7} {3406}
-                {8} {3426}
-                {9} {3432}
-                {10} {3434}
-                {11} {3435}
-                {12} {3429}
-                {13} {3415}
+                {6} {3406}
+                {7} {3426}
+                {8} {3432}
+                {9} {3435}
+                {10} {3429}
+                {11} {3415}
+                {12} {3434}
+                {13} {3436}
+                {14} {3424}
+                {15} {3474}
+            }
+        }
+        {Mature Swamp Crocodile} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3424}
+                {2} {3439}
+                {3} {3402}
+            }
+        }
+        {Medic} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3209}
             }
         }
         {Osprey} 
@@ -17218,6 +18220,44 @@
                 {1} {3336}
                 {2} {3356}
                 {3} {3362}
+            }
+        }
+        {Pennywise the Valithyn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3148}
+                {2} {3130}
+                {3} {369}
+            }
+        }
+        {Permit Officer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3401}
+                {2} {3219}
+                {3} {3208}
+                {4} {7385}
+                {5} {3441}
+                {6} {22374}
+                {7} {3215}
+                {8} {3418}
+                {9} {3206}
+                {10} {10419}
+                {11} {3486}
+                {12} {3211}
+                {13} {3115}
+            }
+        }
+        {Platypus} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3337}
             }
         }
         {Prehistoric Crocodile} 
@@ -17250,6 +18290,17 @@
                 {2} {3469}
             }
         }
+        {Red-bellied Watersnake} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3142}
+                {2} {3172}
+                {3} {3163}
+                {4} {3159}
+            }
+        }
         {Salamander} 
         {
             {Description} {NA}
@@ -17261,6 +18312,8 @@
             {
                 {1} {3410}
                 {2} {3411}
+                {3} {3440}
+                {4} {3419}
             }
         }
         {Short-tailed Shrew} 
@@ -17272,8 +18325,9 @@
             }
             {Rooms} 
             {
-                {1} {3273}
-                {2} {3268}
+                {1} {3268}
+                {2} {3233}
+                {3} {3273}
             }
         }
         {Snake} 
@@ -17306,10 +18360,11 @@
                 {19} {3128}
                 {20} {3130}
                 {21} {3160}
-                {22} {3163}
-                {23} {3188}
-                {24} {3186}
-                {25} {3182}
+                {22} {3188}
+                {23} {3186}
+                {24} {3182}
+                {25} {3172}
+                {26} {3163}
             }
         }
         {Sparrow} 
@@ -17332,10 +18387,53 @@
                 {9} {3168}
                 {10} {3143}
                 {11} {3176}
-                {12} {3159}
-                {13} {3142}
-                {14} {3144}
-                {15} {3117}
+                {12} {3142}
+                {13} {3144}
+                {14} {3117}
+                {15} {3129}
+                {16} {3137}
+                {17} {3159}
+            }
+        }
+        {Steve the Grasshopper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {370}
+            }
+        }
+        {Swamp Crocodile} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3182}
+                {2} {3140}
+                {3} {3143}
+                {4} {3202}
+                {5} {3145}
+                {6} {3142}
+                {7} {3243}
+                {8} {3150}
+                {9} {3241}
+                {10} {3231}
+                {11} {3230}
+                {12} {3138}
+                {13} {3175}
+            }
+        }
+        {Swamp Sparrow} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3143}
+                {2} {3137}
+                {3} {3145}
+                {4} {3141}
+                {5} {3148}
+                {6} {3159}
             }
         }
         {Three-toed Amphiuma} 
@@ -17378,6 +18476,17 @@
                 {5} {3181}
                 {6} {3150}
                 {7} {3160}
+                {8} {3129}
+                {9} {3124}
+            }
+        }
+        {Tricolored Heron} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3133}
+                {2} {3118}
             }
         }
     }
@@ -17876,8 +18985,8 @@
             {Rating} {}
             {Ratings} 
             {
-                {1} {13}
-                {2} {150000}
+                {1} {150000}
+                {2} {13}
             }
             {Room} 
             {
@@ -17913,13 +19022,13 @@
             {Rating} {}
             {Ratings} 
             {
-                {1} {12}
-                {2} {96000}
-                {3} {8200}
-                {4} {98000}
-                {5} {38000}
-                {6} {150000}
-                {7} {40000}
+                {1} {96000}
+                {2} {8200}
+                {3} {98000}
+                {4} {38000}
+                {5} {150000}
+                {6} {40000}
+                {7} {12}
             }
             {Room} 
             {
@@ -17962,6 +19071,7 @@
             {
                 {1} {96000}
                 {2} {150000}
+                {3} {12}
             }
             {Room} 
             {
@@ -17995,8 +19105,8 @@
             {Rating} {}
             {Ratings} 
             {
-                {1} {12}
-                {2} {150000}
+                {1} {150000}
+                {2} {12}
             }
             {Room} 
             {
@@ -18010,9 +19120,16 @@
         {Guardian to the Arch Mage} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1544}
+            }
+            {Rooms} 
+            {
+                {1} {1576}
+                {2} {1549}
+                {3} {1544}
             }
         }
     }
@@ -18116,6 +19233,14 @@
             {Rooms} 
             {
                 {1} {7384}
+            }
+        }
+        {Orange fox} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {42785}
             }
         }
         {Skeleton Guard} 
@@ -18315,6 +19440,14 @@
                 {6} {4825}
                 {7} {4824}
                 {8} {4811}
+            }
+        }
+        {A black snake} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22892}
             }
         }
         {Brown Wolf} 
@@ -19402,10 +20535,16 @@
         {A black and white skunk} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {19824}
                 {2} {1646}
+            }
+            {Rooms} 
+            {
+                {1} {4288}
+                {2} {4935}
             }
         }
         {A cooper's hawk} 
@@ -19419,19 +20558,29 @@
         {A gray jay} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {8048}
                 {2} {1640}
             }
+            {Rooms} 
+            {
+                {1} {24451}
+            }
         }
         {A hoar fox} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1783}
                 {2} {1778}
+            }
+            {Rooms} 
+            {
+                {1} {8465}
             }
         }
         {A large brown elk} 
@@ -19448,9 +20597,22 @@
         {A large porcupine} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1646}
+            }
+            {Rooms} 
+            {
+                {1} {24454}
+            }
+        }
+        {A medium black bear} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4230}
             }
         }
         {A red-crested woodpecker} 
@@ -19468,6 +20630,30 @@
             {Room} 
             {
                 {1} {1646}
+            }
+        }
+        {A scared warrior} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {19812}
+            }
+        }
+        {A small black wolf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4932}
+            }
+        }
+        {A small brown hare} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1647}
             }
         }
         {A tufted titmouse} 
@@ -19502,9 +20688,30 @@
         {Barrett, Woodsman of the Forest} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {19936}
+            }
+            {Rooms} 
+            {
+                {1} {19936}
+            }
+        }
+        {Bill Dragonslayer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {9006}
+            }
+        }
+        {Bill Goblinface} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {9006}
             }
         }
         {Black Wolf} 
@@ -19517,6 +20724,7 @@
             {Rooms} 
             {
                 {1} {4843}
+                {2} {7402}
             }
         }
         {Buzzard} 
@@ -19534,13 +20742,36 @@
                 {3} {14033}
             }
         }
+        {Cindy the Mighty} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {8482}
+            }
+        }
         {Elf Traveller} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1642}
                 {2} {7840}
+            }
+            {Rooms} 
+            {
+                {1} {1520}
+                {2} {1621}
+            }
+        }
+        {Elf Traveller <.>} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {9006}
+                {2} {8482}
             }
         }
         {Frost Giant} 
@@ -19597,6 +20828,30 @@
                 {1} {8975}
             }
         }
+        {Giant ant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {8963}
+            }
+        }
+        {Hartly the Legged} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {8482}
+            }
+        }
+        {Hartly the Mighty} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {8482}
+            }
+        }
         {Hill Dwarf} 
         {
             {Rating} {}
@@ -19638,12 +20893,21 @@
         {Human Traveller} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1642}
                 {2} {7840}
                 {3} {1783}
                 {4} {1778}
+            }
+            {Rooms} 
+            {
+                {1} {1500}
+                {2} {1501}
+                {3} {9006}
+                {4} {1519}
+                {5} {8482}
             }
         }
         {Ice Child} 
@@ -19691,10 +20955,20 @@
         {Merchant} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1642}
                 {2} {7840}
+            }
+            {Rooms} 
+            {
+                {1} {1500}
+                {2} {9006}
+                {3} {1518}
+                {4} {1521}
+                {5} {1621}
+                {6} {8482}
             }
         }
         {Orc} 
@@ -19708,15 +20982,47 @@
             {
                 {1} {8504}
                 {2} {8493}
+                {3} {8482}
+            }
+        }
+        {Paculla, White Witch of the Vedma} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4933}
+                {2} {4935}
+            }
+        }
+        {Rattle Snake} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4286}
+            }
+        }
+        {Rocky Bullwinkle} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {8963}
             }
         }
         {Rul'taasa} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {7840}
                 {2} {1778}
+            }
+            {Rooms} 
+            {
+                {1} {1621}
+                {2} {8482}
             }
         }
         {Rust Monster} 
@@ -19770,6 +21076,7 @@
                 {4} {3800}
                 {5} {1600}
                 {6} {3600}
+                {7} {100}
             }
             {Rooms} 
             {
@@ -19781,6 +21088,9 @@
                 {6} {8483}
                 {7} {1644}
                 {8} {6716}
+                {9} {8482}
+                {10} {8963}
+                {11} {1646}
             }
         }
         {Vulture} 
@@ -20357,6 +21667,16 @@
                 {1} {49939}
             }
         }
+        {Black wolf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4395}
+                {2} {4397}
+                {3} {4394}
+            }
+        }
         {Boneless} 
         {
             {Description} {NA}
@@ -20570,6 +21890,323 @@
                 {10} {4811}
             }
         }
+        {A child playing in the streets} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5931}
+                {2} {45572}
+                {3} {5839}
+                {4} {6104}
+                {5} {5891}
+                {6} {5843}
+                {7} {5841}
+                {8} {5907}
+                {9} {5981}
+                {10} {5935}
+                {11} {5824}
+                {12} {5905}
+                {13} {5930}
+                {14} {5982}
+                {15} {5933}
+                {16} {5842}
+                {17} {5840}
+                {18} {5978}
+            }
+        }
+        {A distressed merchant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5807}
+                {2} {5805}
+                {3} {5839}
+                {4} {5812}
+                {5} {5821}
+                {6} {5815}
+                {7} {5983}
+                {8} {6203}
+                {9} {5834}
+                {10} {5822}
+                {11} {5981}
+                {12} {5984}
+                {13} {45572}
+                {14} {5922}
+                {15} {5818}
+                {16} {5923}
+                {17} {5837}
+                {18} {5810}
+                {19} {5809}
+                {20} {5916}
+                {21} {5919}
+                {22} {5933}
+                {23} {5817}
+                {24} {5836}
+                {25} {5929}
+                {26} {5931}
+                {27} {5985}
+            }
+        }
+        {A fat hairy wandering spider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6194}
+            }
+        }
+        {A gigantic gelatinous cube} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6181}
+                {2} {6198}
+                {3} {6192}
+                {4} {6200}
+                {5} {6199}
+            }
+        }
+        {A highborn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5919}
+                {2} {5931}
+                {3} {5922}
+                {4} {5843}
+                {5} {5920}
+                {6} {5888}
+                {7} {5929}
+                {8} {5923}
+                {9} {5836}
+                {10} {5918}
+                {11} {5822}
+                {12} {5810}
+                {13} {5934}
+                {14} {5824}
+                {15} {5812}
+                {16} {5905}
+                {17} {5904}
+                {18} {5935}
+                {19} {5933}
+                {20} {5842}
+                {21} {5841}
+                {22} {5840}
+                {23} {5811}
+                {24} {5809}
+                {25} {5928}
+                {26} {5978}
+            }
+        }
+        {A housewife} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5805}
+                {2} {5898}
+                {3} {5940}
+                {4} {5936}
+                {5} {5934}
+                {6} {45753}
+                {7} {5817}
+                {8} {5835}
+                {9} {5929}
+                {10} {5838}
+                {11} {5904}
+                {12} {5931}
+                {13} {5928}
+                {14} {5814}
+                {15} {6203}
+                {16} {5980}
+                {17} {5818}
+                {18} {5935}
+                {19} {5812}
+                {20} {5837}
+                {21} {5819}
+                {22} {5840}
+                {23} {5824}
+                {24} {5826}
+                {25} {5815}
+                {26} {5841}
+                {27} {5844}
+                {28} {5809}
+                {29} {5982}
+                {30} {5981}
+                {31} {45572}
+                {32} {5933}
+                {33} {5891}
+                {34} {5892}
+                {35} {5842}
+                {36} {5836}
+                {37} {5822}
+                {38} {5923}
+                {39} {5978}
+                {40} {5983}
+                {41} {6202}
+                {42} {5803}
+                {43} {5807}
+                {44} {5839}
+            }
+        }
+        {A large black snake} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6107}
+            }
+        }
+        {A massive ochre jelly} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6193}
+                {2} {6181}
+                {3} {6198}
+            }
+        }
+        {A servant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5812}
+                {2} {5918}
+                {3} {45753}
+                {4} {5929}
+                {5} {5815}
+                {6} {5916}
+                {7} {5931}
+                {8} {5902}
+                {9} {5838}
+                {10} {6202}
+                {11} {5928}
+                {12} {5935}
+                {13} {6203}
+                {14} {5819}
+                {15} {5818}
+                {16} {5896}
+                {17} {5837}
+                {18} {5810}
+                {19} {5840}
+                {20} {5811}
+                {21} {5824}
+                {22} {5809}
+                {23} {5982}
+                {24} {5933}
+                {25} {5892}
+                {26} {5891}
+                {27} {5842}
+                {28} {5822}
+                {29} {5817}
+                {30} {5836}
+                {31} {5821}
+                {32} {5978}
+                {33} {5839}
+                {34} {5898}
+            }
+        }
+        {A shimmering presence} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5871}
+                {2} {50358}
+            }
+        }
+        {A sleek black cat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5807}
+                {2} {5805}
+                {3} {5983}
+                {4} {5995}
+                {5} {5892}
+                {6} {5917}
+                {7} {5997}
+                {8} {5998}
+                {9} {5839}
+                {10} {5904}
+                {11} {5916}
+                {12} {5902}
+                {13} {5822}
+                {14} {6203}
+                {15} {5927}
+                {16} {5981}
+                {17} {5984}
+                {18} {45572}
+                {19} {5922}
+                {20} {5933}
+                {21} {5811}
+                {22} {5926}
+                {23} {5929}
+                {24} {5817}
+                {25} {5809}
+                {26} {5923}
+                {27} {5928}
+                {28} {5985}
+            }
+        }
+        {A small gelatinous cube} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6181}
+            }
+        }
+        {A small ruffled dog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5891}
+                {2} {5839}
+                {3} {5906}
+                {4} {6104}
+                {5} {5887}
+                {6} {5922}
+                {7} {5840}
+                {8} {5843}
+                {9} {5888}
+                {10} {5904}
+                {11} {5931}
+                {12} {5929}
+                {13} {5923}
+                {14} {5980}
+                {15} {45572}
+                {16} {5982}
+                {17} {5934}
+                {18} {5841}
+                {19} {5844}
+                {20} {5896}
+                {21} {5905}
+                {22} {5935}
+                {23} {5933}
+                {24} {5892}
+                {25} {5842}
+                {26} {5978}
+                {27} {5983}
+                {28} {5898}
+            }
+        }
+        {Abe Pommel} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6205}
+            }
+        }
         {Alexander Wither} 
         {
             {Description} { Alexander Wither is the lord of the mansion. He is a handsome man in his best years and wields quite a bit of power in the Westersea council of elders. Even though Westersea is a monarchy, the king frequently discusses matters of great concern with the council of elders. Alexander is dressed in white shirt, black pants and his hair is combed flat on his head.  He is in perfect health. Alexander Wither  Alexander Wither is the lord of the mansion. He is a handsome man in his best years and wields quite a bit of power in the Westersea council of elders. Even though Westersea is a monarchy, the king frequently discusses matters of great concern with the council of elders. Alexander is dressed in white shirt, black pants and his hair is combed flat on his head.  He is in perfect health. }
@@ -20604,6 +22241,8 @@
             {Rooms} 
             {
                 {1} {5850}
+                {2} {5845}
+                {3} {5857}
             }
         }
         {Ankhn} 
@@ -20618,6 +22257,18 @@
             {Rooms} 
             {
                 {1} {4749}
+            }
+        }
+        {Benny Orson} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5839}
+                {2} {6104}
+                {3} {5840}
+                {4} {5842}
+                {5} {5841}
             }
         }
         {Bern the blacksmith} 
@@ -20732,6 +22383,19 @@
                 {2} {6136}
             }
         }
+        {Fisherman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6207}
+                {2} {6211}
+                {3} {6203}
+                {4} {6205}
+                {5} {6202}
+                {6} {6204}
+            }
+        }
         {Grace Wither} 
         {
             {Description} { Grace Wither is the lady of the mansion and is dressed in fine linen clothing. Her dress is adorned by sparkling stones and if you'd encountered elswhere you've have sworn she was of regal birth. Her long dark brown hair hangs freely around her pretty face and on her head is a silver diadem.  She is in perfect health. You have never been here before.    / | \    }
@@ -20742,6 +22406,114 @@
             {Rooms} 
             {
                 {1} {20712}
+            }
+        }
+        {Guard corporal} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5928}
+                {2} {5918}
+                {3} {6104}
+                {4} {5900}
+                {5} {5814}
+                {6} {5842}
+                {7} {5813}
+                {8} {5933}
+                {9} {5822}
+                {10} {5818}
+                {11} {5810}
+                {12} {5824}
+                {13} {5812}
+                {14} {5896}
+                {15} {5920}
+                {16} {5892}
+                {17} {5809}
+                {18} {5929}
+                {19} {5898}
+            }
+        }
+        {Guard private} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5805}
+                {2} {5918}
+                {3} {5997}
+                {4} {5981}
+                {5} {5899}
+                {6} {5926}
+                {7} {5928}
+                {8} {5888}
+                {9} {5887}
+                {10} {5900}
+                {11} {5904}
+                {12} {5982}
+                {13} {20694}
+                {14} {5842}
+                {15} {5929}
+                {16} {5922}
+                {17} {5898}
+                {18} {5934}
+                {19} {6211}
+                {20} {6204}
+                {21} {5834}
+                {22} {5837}
+                {23} {5812}
+                {24} {5819}
+                {25} {5808}
+                {26} {5811}
+                {27} {5892}
+                {28} {5836}
+                {29} {5809}
+                {30} {5935}
+                {31} {45572}
+                {32} {5933}
+                {33} {5889}
+                {34} {5835}
+                {35} {45753}
+                {36} {5822}
+                {37} {5821}
+                {38} {5931}
+                {39} {6207}
+                {40} {6203}
+                {41} {6202}
+                {42} {5806}
+            }
+        }
+        {Guard sergeant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5891}
+                {2} {5839}
+                {3} {5989}
+                {4} {5997}
+                {5} {5928}
+                {6} {5933}
+                {7} {5811}
+                {8} {5926}
+                {9} {5888}
+                {10} {5842}
+                {11} {5817}
+                {12} {5834}
+                {13} {5809}
+            }
+        }
+        {Harbour magistrate} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6211}
+                {2} {6204}
+                {3} {6205}
+                {4} {6207}
+                {5} {6202}
+                {6} {6203}
             }
         }
         {Ice Elemental} 
@@ -20899,6 +22671,14 @@
                 {1} {5880}
             }
         }
+        {Lind Barroom} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22889}
+            }
+        }
         {Linus the troubadour} 
         {
             {Description} { Linus is the town's most famous troubadour. He has travelled the realms and knows stories from all over. At least that's what he wants you to believe. Whether or not it's true, is a matter of some debate. Linus is dressed in fine garments and carries on his back a wooden lute. Young women usually flock around Linus basking in his youthful glow, swooning at him any chance they get.  He is in perfect health.   }
@@ -20909,6 +22689,17 @@
             {Rooms} 
             {
                 {1} {5893}
+                {2} {5839}
+            }
+        }
+        {Megan Wicker} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5822}
+                {2} {5811}
+                {3} {5821}
             }
         }
         {Minion} 
@@ -21014,6 +22805,29 @@
             {Rooms} 
             {
                 {1} {5893}
+                {2} {5839}
+            }
+        }
+        {Palt, the overworked groundskeeper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5889}
+                {2} {5888}
+                {3} {5909}
+                {4} {5842}
+                {5} {46478}
+                {6} {5890}
+                {7} {5910}
+            }
+        }
+        {Per Tussletoff} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {45753}
             }
         }
         {Plail} 
@@ -21030,6 +22844,25 @@
                 {1} {4749}
             }
         }
+        {Pretty boy Kail} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5888}
+                {2} {5842}
+            }
+        }
+        {Pretty boy Kail !attacking Cable!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5890}
+                {2} {5842}
+                {3} {5888}
+            }
+        }
         {Rat} 
         {
             {Description} {NA}
@@ -21040,6 +22873,14 @@
             {Rooms} 
             {
                 {1} {6173}
+            }
+        }
+        {Sain Ash} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5810}
             }
         }
         {Shady Leader} 
@@ -21067,6 +22908,16 @@
                 {10} {5952}
                 {11} {5961}
                 {12} {5943}
+                {13} {5975}
+            }
+        }
+        {Sir Michael Oxtrott} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5932}
+                {2} {5926}
             }
         }
         {Skeleton} 
@@ -21150,6 +23001,24 @@
                 {1} {4757}
             }
         }
+        {Tinny the guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5803}
+            }
+        }
+        {Tommy the guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6203}
+                {2} {45572}
+                {3} {6202}
+            }
+        }
         {Tough Looking Brigand} 
         {
             {Description} {NA}
@@ -21157,19 +23026,39 @@
             {
                 {1} {58000}
                 {2} {48000}
-                {3} {46000}
-                {4} {54000}
-                {5} {56000}
+                {3} {54000}
+                {4} {56000}
+                {5} {46000}
+                {6} {60000}
             }
             {Rooms} 
             {
                 {1} {5967}
+                {2} {5947}
+                {3} {5943}
+                {4} {5957}
+                {5} {5974}
+                {6} {5960}
+                {7} {5976}
+                {8} {5973}
+            }
+        }
+        {Tough looking brigand} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5976}
                 {2} {5973}
-                {3} {5947}
-                {4} {5943}
-                {5} {5957}
-                {6} {5974}
-                {7} {5960}
+            }
+        }
+        {Twix Copperware} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5809}
+                {2} {5812}
             }
         }
         {Tysol} 
@@ -21197,6 +23086,14 @@
             {Rooms} 
             {
                 {1} {5914}
+            }
+        }
+        {leader} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5975}
             }
         }
     }
@@ -22121,9 +24018,34 @@
     }
     {Gas Station} 
     {
+        {A gas-station attendant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {543}
+            }
+        }
+        {A mechanic-shaped mound of grease} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {544}
+            }
+        }
+        {A wandering shroomhead} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {541}
+                {2} {535}
+            }
+        }
         {Attendant} 
         {
-            {Description} {    The attendant paces around the room angrily. A gas-station attendant  This is the woman who pumps your gas.  However, she just doesn't seem to have the spirit for it lately.  Could this be because somebody tossed an MK-IV flame grenade into her storage tanks a month ago?  She is in perfect health. She has no spells. Her melee attacks do crushing damage. N    / | \  You stand on a small strip of only somewhat scorched grass in front of a now-defunct gas station. From the sight of things, one of the ubiquitous gangs of bikers or freaks went through the station with a large supply of incendary hand grenades.  The aluminium roof which used to cover the gasoline pumps is charred with soot, in the places where the sky doesn't shine grungily through, and the pumps themselves have been reduced to twisted lumps of metal and melted rubber tubing.  To the south stands the gas station's office, attached to which is the garage bay for the mechanics. The office and garage seem to have been spared the destruction incurred by the pump area itself. }
+            {Description} {    A gas-station attendant A gas-station attendant  This is the woman who pumps your gas.  However, she just doesn't seem to have the spirit for it lately.  Could this be because somebody tossed an MK-IV flame grenade into her storage tanks a month ago?  She is in perfect health.   }
             {Ratings} 
             {
                 {1} {800}
@@ -22131,6 +24053,7 @@
             {Rooms} 
             {
                 {1} {541}
+                {2} {543}
             }
         }
         {Mechanic} 
@@ -22143,6 +24066,15 @@
             {Rooms} 
             {
                 {1} {544}
+            }
+        }
+        {Wandering Shroomhead} 
+        {
+            {Description} {  (wandering shroomhead?) }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {541}
             }
         }
     }
@@ -22194,10 +24126,10 @@
                 {1} {32649}
                 {2} {32648}
                 {3} {32642}
-                {4} {32647}
-                {5} {32644}
-                {6} {32643}
-                {7} {32646}
+                {4} {32646}
+                {5} {32643}
+                {6} {32644}
+                {7} {32647}
                 {8} {32645}
                 {9} {14528}
             }
@@ -22248,22 +24180,32 @@
                 {1} {32672}
             }
         }
+        {Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32667}
+            }
+        }
         {M516 Patroller} 
         {
             {Description} {NA}
             {Ratings} 
             {
                 {1} {18000}
-                {2} {26000}
-                {3} {16000}
+                {2} {16000}
+                {3} {26000}
             }
             {Rooms} 
             {
-                {1} {32647}
+                {1} {32649}
                 {2} {32646}
-                {3} {32644}
-                {4} {32649}
-                {5} {32645}
+                {3} {32643}
+                {4} {32644}
+                {5} {32647}
+                {6} {32645}
+                {7} {32648}
             }
         }
         {Strike Guard} 
@@ -22280,8 +24222,9 @@
             {
                 {1} {32669}
                 {2} {32668}
-                {3} {32667}
-                {4} {32666}
+                {3} {32666}
+                {4} {32674}
+                {5} {32667}
             }
         }
         {Strike Team Battle Master} 
@@ -22629,6 +24572,22 @@
     }
     {Great Lighthouse} 
     {
+        {A large bugbear} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {19813}
+            }
+        }
+        {A small bugbear} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {19813}
+            }
+        }
         {Bugbear} 
         {
             {Description} {NA}
@@ -22636,6 +24595,14 @@
             {
                 {1} {30000}
             }
+            {Rooms} 
+            {
+                {1} {19813}
+            }
+        }
+        {l bugbear} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {19813}
@@ -23281,6 +25248,30 @@
                 {1} {14844}
             }
         }
+        {George Syderman the Light Keeper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14844}
+            }
+        }
+        {Liz Syderman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14846}
+            }
+        }
+        {Lydia Syderman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14845}
+            }
+        }
         {Michelle Syderman} 
         {
             {Description} {NA}
@@ -23304,6 +25295,34 @@
             {Rooms} 
             {
                 {1} {38868}
+            }
+        }
+        {Northern Expansion Terminal Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {45465}
+                {2} {14600}
+            }
+        }
+        {Sara Syderman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14847}
+            }
+        }
+    }
+    {Hacketoff's Bridge} 
+    {
+        {A resourceful troll is eyeing you up} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {19945}
             }
         }
     }
@@ -25399,16 +27418,26 @@
             {Rooms} 
             {
                 {1} {612}
-                {2} {611}
-                {3} {610}
+                {2} {610}
+                {3} {611}
+            }
+        }
+        {Guard} 
+        {
+            {Description} {  A robotic incinerator guard.  He is guarding the incinerator against intruders.  Which you most certainly are!  He is programmed to kill anyone on sight and make them part of the mass body burning.  It is in perfect health. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {613}
             }
         }
         {Incinerator Foreman} 
         {
-            {Description} {NA}
+            {Description} {  The incinerator foreman is in charge of the workers and the guards.  He keeps things running smoothly.  He has no regard for what his job is.  He really finds enjoyment out of seeing the bodies burn.  He is in perfect health. 	Incinerator Foreman is carrying:   }
             {Ratings} 
             {
                 {1} {7800}
+                {2} {42000}
             }
             {Rooms} 
             {
@@ -25417,34 +27446,38 @@
         }
         {Incinerator Guard} 
         {
-            {Description} {NA}
+            {Description} {  Incinerator Guard A robotic incinerator guard.  He is guarding the incinerator against intruders.  Which you most certainly are!  He is programmed to kill anyone on sight and make them part of the mass body burning.  It is in perfect health. }
             {Ratings} 
             {
                 {1} {7800}
                 {2} {34000}
                 {3} {32000}
+                {4} {7900}
             }
             {Rooms} 
             {
-                {1} {614}
-                {2} {613}
+                {1} {613}
+                {2} {614}
             }
         }
         {Incinerator Worker} 
         {
-            {Description} {NA}
+            {Description} {  This worker's job is to shovel bodies into the large incinerator.  He is wearing heavy boots and a plastic protective suit to protect him from disease and burns.  He was a poor man that took the job to provide for his family.  He is in perfect health. 	Incinerator Worker is carrying: }
             {Ratings} 
             {
                 {1} {7800}
+                {2} {32000}
+                {3} {7900}
             }
             {Rooms} 
             {
-                {1} {614}
+                {1} {613}
+                {2} {614}
             }
         }
         {Vulture} 
         {
-            {Description} {NA}
+            {Description} {  A large black vulture with a wingspread of what has to be about six feet.  Its head is brightly colored but the dark plumage of its body does not fool you into believing it is a pretty bird.  Its talons grasp desperately at the ground as it swoops down hoping to find its next meal.  Which you probably will become if you're not careful.  It is in perfect health. 	Vulture is carrying: }
             {Ratings} 
             {
                 {1} {14000}
@@ -25453,7 +27486,9 @@
             {Rooms} 
             {
                 {1} {612}
-                {2} {610}
+                {2} {611}
+                {3} {610}
+                {4} {609}
             }
         }
     }
@@ -26121,10 +28156,15 @@
         {Dozer the doorman} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1833}
                 {2} {7032}
+            }
+            {Rooms} 
+            {
+                {1} {17772}
             }
         }
         {Snake the Badass Biker} 
@@ -26142,6 +28182,14 @@
     }
     {Jeremy's Swamp} 
     {
+        {A glowing cricket} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {824}
+            }
+        }
         {Crocodile} 
         {
             {Description} {NA}
@@ -27326,6 +29374,15 @@
     }
     {Kourlyn Temple} 
     {
+        {A Priestess of Kourlyn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15622}
+                {2} {15624}
+            }
+        }
         {Aviarol} 
         {
             {Description} {NA}
@@ -27788,6 +29845,7 @@
             {
                 {1} {23854}
                 {2} {107}
+                {3} {23869}
             }
         }
         {man } 
@@ -27801,9 +29859,46 @@
     }
     {Last Chance Truck Stop} 
     {
+        {A grimy mechanic} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32421}
+            }
+        }
+        {A recharging attendant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32422}
+            }
+        }
+        {A well armed guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32419}
+                {2} {32420}
+                {3} {32423}
+            }
+        }
+        {Attendant} 
+        {
+            {Ratings} 
+            {
+                {1} {14000}
+            }
+            {Rooms} 
+            {
+                {1} {32422}
+            }
+        }
         {Guard} 
         {
-            {Description} {NA}
+            {Description} {     A well armed guard   You've seen many in your day, and this one looks much like any other you have encountered in your life. Except it's the small details that make this one different. Such as the anti-personnel flacette rifle and the heavy body armour protecting his chest. Other than that, just another rent-a-cop.  He is in perfect health. 	Guard is carrying:   }
             {Ratings} 
             {
                 {1} {24000}
@@ -27811,8 +29906,17 @@
             }
             {Rooms} 
             {
-                {1} {32420}
-                {2} {32419}
+                {1} {32419}
+                {2} {32420}
+            }
+        }
+        {Mechanic} 
+        {
+            {Description} {   The absolutely, positively, grimiest mechanic you have ever seen now stands before you. While covered in various engine lubricants and radiator fluids, he seems to be handling the various tools of his trade with ease. When he spots you, he gets up, tries to wipe his hands off and then grasps your palm and shakes vigorously. Reclaiming your hand, you examine the pitch black substance now coating it. I'd seriously consider the literal mess you'd be in before attacking this foe.  He is in perfect health. 	Mechanic is carrying: }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32421}
             }
         }
     }
@@ -28821,9 +30925,14 @@
         {Guardian to the Arch Mage} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {1544}
+            }
+            {Rooms} 
+            {
+                {1} {1549}
             }
         }
         {Mage} 
@@ -29900,6 +32009,17 @@
             }
         }
     }
+    {Marble Castle} 
+    {
+        {Lena} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15457}
+            }
+        }
+    }
     {Mars} 
     {
         {A Customs Agent} 
@@ -29933,6 +32053,23 @@
                 {2} {29749}
                 {3} {29750}
                 {4} {29754}
+            }
+        }
+        {A cytel messenger} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22758}
+                {2} {22754}
+            }
+        }
+        {A cytel mining guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22752}
             }
         }
         {Cytel Guardsman} 
@@ -30719,12 +32856,21 @@
             {Description} {  up }
             {Ratings} 
             {
-                {1} {13}
-                {2} {54000}
+                {1} {54000}
+                {2} {13}
             }
             {Rooms} 
             {
                 {1} {27650}
+            }
+        }
+        {The Grand Monk} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27650}
+                {2} {27636}
             }
         }
     }
@@ -30742,6 +32888,15 @@
             {Rooms} 
             {
                 {1} {45151}
+            }
+        }
+        {Black wolf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4396}
+                {2} {4395}
             }
         }
         {Cube} 
@@ -30982,18 +33137,18 @@
     {
         {Lizard Man} 
         {
-            {Description} {NA}
+            {Description} { A rather mean looking creature that appears to be half man and half lizard. Its face is badly scarred and disfigured, making it look somewhat demonic.  It seems to be armed and more than likely, rather dangerous.  He is in perfect health. 	Lizard Man is carrying: }
             {Ratings} 
             {
-                {1} {12000}
-                {2} {14000}
+                {1} {14000}
+                {2} {12000}
             }
             {Rooms} 
             {
-                {1} {14402}
-                {2} {14405}
-                {3} {14406}
-                {4} {14404}
+                {1} {14406}
+                {2} {14402}
+                {3} {14404}
+                {4} {14405}
             }
         }
         {Mortimer} 
@@ -31006,6 +33161,16 @@
             {Rooms} 
             {
                 {1} {14411}
+            }
+        }
+        {Mortimer Kane} 
+        {
+            {Description} { This is Mortimer Kane, the reverend of this church.  He is a tall man with what you might call crazy hair and a scruffy beard.  He looks at you with his piercing blue eyes that seem to carry a hint of fear and distrust. He seems to be afraid of something, but what might scare such a stout fellow you can't imagine.  He is in perfect health. 	Mortimer is carrying:   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50322}
+                {2} {14411}
             }
         }
     }
@@ -31066,6 +33231,14 @@
     }
     {Mountain Path} 
     {
+        {A black snake} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22892}
+            }
+        }
         {Agnos} 
         {
             {Description} { Clouded in a dark haze, Agnos the magician examines you from the back of the room. You feel his probing eyes and thoughts flow around you as if he was silently contemplating what your weakness might be. Hanging around his waist is a funny looking belt, and from it you see several strange vials and flasks.  He is in perfect health. 	Agnos is carrying: (wielded).  Snake   }
@@ -31175,6 +33348,14 @@
                 {2} {42787}
                 {3} {42788}
                 {4} {42793}
+            }
+        }
+        {Tinny the guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4757}
             }
         }
     }
@@ -33860,6 +36041,14 @@
                 {1} {42374}
             }
         }
+        {A short punk with purple hair} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2459}
+            }
+        }
         {Beast} 
         {
             {Description} {NA}
@@ -33982,6 +36171,14 @@
     }
     {NYPD} 
     {
+        {A very young whore} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2454}
+            }
+        }
         {Officer Jones} 
         {
             {Description} {NA}
@@ -34190,6 +36387,17 @@
             {
                 {1} {45873}
                 {2} {45872}
+            }
+        }
+    }
+    {Necropolis} 
+    {
+        {A powerful elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27698}
             }
         }
     }
@@ -35477,6 +37685,57 @@
     }
     {New York City} 
     {
+        {A UN Diplomat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2462}
+            }
+        }
+        {A Yellow City Taxi Cab} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2082}
+            }
+        }
+        {A busy pedestrian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2151}
+            }
+        }
+        {A short punk with purple hair} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2459}
+                {2} {2081}
+            }
+        }
+        {A wandering pedestrian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2456}
+                {2} {2469}
+                {3} {2150}
+            }
+        }
+        {A yellow Checker Taxi Cab} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2458}
+            }
+        }
         {Baglady} 
         {
             {Description} {NA}
@@ -35501,6 +37760,23 @@
                 {1} {604}
             }
         }
+        {Diplomat} 
+        {
+            {Description} {    A UN Diplomat  A man in his late 60's, wearing an expensive suit.  It is in perfect health. Diplomat mutters something you can't understand. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2462}
+            }
+        }
+        {Doh, the Slovenly Landlord} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2083}
+            }
+        }
         {Druggie} 
         {
             {Description} {NA}
@@ -35513,6 +37789,17 @@
                 {1} {2154}
             }
         }
+        {Giant Mack Truck} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2454}
+                {2} {2457}
+                {3} {2475}
+                {4} {2150}
+            }
+        }
         {Mugger} 
         {
             {Description} {NA}
@@ -35523,6 +37810,14 @@
             {Rooms} 
             {
                 {1} {2458}
+            }
+        }
+        {Police Officer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2454}
             }
         }
         {Taxi Cab} 
@@ -35555,6 +37850,8 @@
                 {10} {2455}
                 {11} {2150}
                 {12} {2157}
+                {13} {2458}
+                {14} {2083}
             }
         }
         {Vulture} 
@@ -36293,6 +38590,17 @@
             }
         }
     }
+    {Old Guard Tower} 
+    {
+        {Slimy Bug} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {374}
+            }
+        }
+    }
     {Old London} 
     {
         {Chief Constable Adolphus Williamson} 
@@ -36518,8 +38826,97 @@
             }
         }
     }
+    {Orc Village} 
+    {
+        {A small brown hare} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1647}
+            }
+        }
+        {Burly Orc} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {37306}
+                {2} {37312}
+                {3} {37311}
+            }
+        }
+    }
     {Order of the Lost Knights} 
     {
+        {A burly elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27704}
+                {2} {27693}
+                {3} {27702}
+            }
+        }
+        {A cloth-wrapped elven skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27695}
+            }
+        }
+        {A powerful elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {28777}
+                {2} {27700}
+                {3} {27702}
+                {4} {27693}
+                {5} {27698}
+            }
+        }
+        {A short elven skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27696}
+            }
+        }
+        {A strong elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27693}
+                {2} {27700}
+                {3} {27694}
+                {4} {27702}
+                {5} {27703}
+                {6} {27690}
+                {7} {27691}
+                {8} {27696}
+                {9} {27692}
+                {10} {27699}
+                {11} {27697}
+            }
+        }
+        {A tall elven skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27703}
+                {2} {27693}
+                {3} {27702}
+                {4} {27690}
+                {5} {27691}
+            }
+        }
         {Ghost Elf} 
         {
             {Description} {NA}
@@ -36718,6 +39115,14 @@
     }
     {Outlaw's Train} 
     {
+        {An Old Train Engineer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {662}
+            }
+        }
         {Brett} 
         {
             {Description} {NA}
@@ -36731,6 +39136,24 @@
                 {1} {666}
             }
         }
+        {Captain Zook} 
+        {
+            {Description} {  (captain zook?)   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {666}
+            }
+        }
+        {Engineer} 
+        {
+            {Description} {  An Old Train Engineer You see an old train engineer. He seems to be talking to himself and cooking food. The old  man is dressed in metal plate that looks like it came from an old train. In his hand he's wielding a steampipe.  He is in perfect health. 	Engineer is carrying: }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {662}
+            }
+        }
         {Hobe} 
         {
             {Description} {NA}
@@ -36738,6 +39161,14 @@
             {
                 {1} {4200}
             }
+            {Rooms} 
+            {
+                {1} {663}
+            }
+        }
+        {Hobe the Ape Guard} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {663}
@@ -36755,6 +39186,34 @@
                 {1} {663}
             }
         }
+        {Hobo the Ape Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {663}
+            }
+        }
+        {Homeless Lisa} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {665}
+            }
+        }
+        {Lisa} 
+        {
+            {Description} {  You see standing  on  the  other side of the tracks in a cubby hole  a woman  with  an  old shopping cart. See seems to not notice you as you walk by but you feel her eyes following you. She seems to be grinning.  She is in perfect health. 	Lisa is carrying: }
+            {Ratings} 
+            {
+                {1} {36000}
+            }
+            {Rooms} 
+            {
+                {1} {665}
+            }
+        }
         {Misty} 
         {
             {Description} {NA}
@@ -36768,12 +39227,58 @@
                 {1} {666}
             }
         }
+        {Pvt. Misty} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {666}
+            }
+        }
+        {Quip} 
+        {
+            {Description} {  You are now standing in front of Quip, Captain of the Ape Guard.  He is covered with black hair and has grey eyes.  He stares at you intensely. In his left hand, he wields a Uzi and, for protection, he wears Black Platemail. He watches your every move closely.  He is in perfect health. 	Quip is carrying:    }
+            {Ratings} 
+            {
+                {1} {20000}
+            }
+            {Rooms} 
+            {
+                {1} {663}
+            }
+        }
+        {Quip Captain of the Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {663}
+            }
+        }
+        {Sgt. Brett} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {666}
+            }
+        }
+        {Train Engineer} 
+        {
+            {Description} { (train engineer?) }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {662}
+            }
+        }
         {Zook} 
         {
-            {Description} {NA}
+            {Description} {   Captain Zook You are now standing in front of Captain Zook, the last ranking officer of the human stronghold. In one hand, he holds  a  flaming samurai sword. He looks like a descendant of that bunch who run Mega Tokyo.  He is in perfect health. 	Zook is carrying: }
             {Ratings} 
             {
                 {1} {42000}
+                {2} {26000}
             }
             {Rooms} 
             {
@@ -37330,6 +39835,172 @@
             }
         }
     }
+    {Physics Lab} 
+    {
+        {A Down Quark} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {A Gluon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {A Molecule} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6522}
+                {2} {50340}
+            }
+        }
+        {A Neutron} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {A Proton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {An Atom} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {An Electron} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {An Up Quark} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Atom} 
+        {
+            {Ratings} 
+            {
+                {1} {16000}
+                {2} {8400}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Down Quark} 
+        {
+            {Ratings} 
+            {
+                {1} {8400}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Dr. Cho, PhD} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Electron} 
+        {
+            {Ratings} 
+            {
+                {1} {8400}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Gluon} 
+        {
+            {Ratings} 
+            {
+                {1} {8400}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Molecule} 
+        {
+            {Description} {   A Molecule  The molecule before you is made up of five atoms. Although you cannot tell if it is sentient or not, it looks like it could defend itself.  It is in perfect health.   }
+            {Ratings} 
+            {
+                {1} {16000}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Neutron} 
+        {
+            {Ratings} 
+            {
+                {1} {8400}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Proton} 
+        {
+            {Ratings} 
+            {
+                {1} {8400}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+        {Up Quark} 
+        {
+            {Ratings} 
+            {
+                {1} {8400}
+            }
+            {Rooms} 
+            {
+                {1} {50340}
+            }
+        }
+    }
     {Pinnacle} 
     {
         {A Tiny Little Mosquito} 
@@ -37358,6 +40029,14 @@
                 {1} {46454}
             }
         }
+        {A fat hairy wandering spider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50323}
+            }
+        }
         {Amish} 
         {
             {Rating} {}
@@ -37366,12 +40045,28 @@
                 {1} {49987}
             }
         }
+        {An Honorable Knight} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24606}
+            }
+        }
         {An old dwarven smith} 
         {
             {Rating} {}
             {Room} 
             {
                 {1} {49584}
+            }
+        }
+        {Citizen} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3909}
             }
         }
         {Feftzal} 
@@ -37521,6 +40216,33 @@
             {
                 {1} {13727}
                 {2} {0}
+            }
+        }
+    }
+    {Pinnacle's Residential Complex} 
+    {
+        {A fat hairy wandering spider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50323}
+            }
+        }
+        {A tank named Skarsnik} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {152}
+            }
+        }
+        {Grot's Jugger Support Mech} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {152}
             }
         }
     }
@@ -39358,6 +42080,388 @@
     }
     {Rabbit Fields} 
     {
+        {A large amethyst dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6427}
+            }
+        }
+        {A large diamond dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6447}
+                {2} {6445}
+            }
+        }
+        {A large emerald dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6473}
+            }
+        }
+        {A large opal dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6445}
+                {2} {6435}
+                {3} {6343}
+            }
+        }
+        {A large ruby dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6476}
+            }
+        }
+        {A large topaz dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6474}
+            }
+        }
+        {A medium amethyst dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6469}
+                {2} {6422}
+                {3} {6423}
+            }
+        }
+        {A medium diamond dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6327}
+                {2} {6474}
+                {3} {6446}
+                {4} {6444}
+            }
+        }
+        {A medium emerald dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6283}
+                {2} {6280}
+                {3} {6384}
+                {4} {6373}
+                {5} {6364}
+            }
+        }
+        {A medium jade dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6293}
+                {2} {6286}
+            }
+        }
+        {A medium opal dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6286}
+                {2} {6311}
+                {3} {6411}
+            }
+        }
+        {A medium pearl dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6294}
+                {2} {6484}
+                {3} {6479}
+            }
+        }
+        {A medium quartz dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6429}
+                {2} {6427}
+                {3} {6294}
+            }
+        }
+        {A medium ruby dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6455}
+                {2} {6328}
+            }
+        }
+        {A medium sapphire dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6476}
+                {2} {6435}
+                {3} {6430}
+            }
+        }
+        {A medium topaz dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6457}
+                {2} {6449}
+                {3} {6428}
+                {4} {6445}
+                {5} {6435}
+                {6} {6427}
+                {7} {6364}
+            }
+        }
+        {A small amethyst dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6319}
+                {2} {6475}
+                {3} {6320}
+                {4} {6413}
+                {5} {6412}
+                {6} {6411}
+            }
+        }
+        {A small diamond dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6484}
+                {2} {6481}
+            }
+        }
+        {A small emerald dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6483}
+                {2} {6459}
+                {3} {6320}
+            }
+        }
+        {A small jade dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6320}
+                {2} {6446}
+                {3} {6435}
+                {4} {6368}
+            }
+        }
+        {A small opal dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6462}
+                {2} {6447}
+                {3} {6448}
+                {4} {6446}
+                {5} {6403}
+                {6} {6398}
+                {7} {6384}
+                {8} {6373}
+                {9} {6364}
+            }
+        }
+        {A small pearl dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6485}
+            }
+        }
+        {A small quartz dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6435}
+                {2} {6432}
+                {3} {6338}
+                {4} {6489}
+                {5} {6488}
+            }
+        }
+        {A small ruby dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6349}
+                {2} {6284}
+                {3} {6458}
+                {4} {6315}
+                {5} {6417}
+                {6} {6411}
+                {7} {6398}
+            }
+        }
+        {A small sapphire dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6445}
+                {2} {6435}
+                {3} {6319}
+            }
+        }
+        {A small topaz dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6334}
+                {2} {6451}
+                {3} {6444}
+                {4} {6432}
+            }
+        }
+        {A supremely powerful opal dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6405}
+            }
+        }
+        {A tiny amethyst dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6430}
+                {2} {6427}
+            }
+        }
+        {A tiny diamond dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6282}
+                {2} {6280}
+                {3} {6489}
+                {4} {6487}
+            }
+        }
+        {A tiny emerald dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6451}
+            }
+        }
+        {A tiny jade dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6484}
+                {2} {6482}
+                {3} {6413}
+                {4} {6416}
+                {5} {6411}
+            }
+        }
+        {A tiny opal dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6488}
+                {2} {6487}
+                {3} {6475}
+                {4} {6474}
+            }
+        }
+        {A tiny pearl dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6445}
+                {2} {6320}
+            }
+        }
+        {A tiny quartz dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6453}
+            }
+        }
+        {A tiny ruby dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6470}
+                {2} {6324}
+                {3} {6451}
+            }
+        }
+        {A tiny sapphire dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6282}
+                {2} {6280}
+            }
+        }
+        {A tiny topaz dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6310}
+            }
+        }
+        {An incredibly enormous sapphire dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6317}
+                {2} {6315}
+            }
+        }
         {Aranow} 
         {
             {Description} {NA}
@@ -39528,8 +42632,9 @@
             {Rooms} 
             {
                 {1} {5086}
-                {2} {4854}
-                {3} {4853}
+                {2} {4855}
+                {3} {4854}
+                {4} {4853}
             }
         }
         {Drow Altar Guard} 
@@ -39643,19 +42748,31 @@
                 {17} {4100}
                 {18} {3200}
                 {19} {3100}
-                {20} {5700}
-                {21} {4300}
+                {20} {4300}
+                {21} {5700}
             }
             {Rooms} 
             {
-                {1} {4854}
-                {2} {6289}
-                {3} {4857}
-                {4} {4918}
+                {1} {6289}
+                {2} {4857}
+                {3} {4918}
+                {4} {4855}
                 {5} {4953}
-                {6} {4859}
+                {6} {4854}
                 {7} {4856}
-                {8} {4855}
+                {8} {4859}
+            }
+        }
+        {Drow warrior} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4953}
+                {2} {4854}
+                {3} {4855}
+                {4} {4856}
+                {5} {4859}
             }
         }
         {Duergar} 
@@ -39700,11 +42817,19 @@
             }
             {Rooms} 
             {
-                {1} {4855}
-                {2} {6289}
-                {3} {4918}
-                {4} {4860}
+                {1} {6289}
+                {2} {4918}
+                {3} {4860}
+                {4} {4855}
                 {5} {4856}
+            }
+        }
+        {Elite Drow warrior} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4856}
             }
         }
         {Eltanin} 
@@ -39830,6 +42955,14 @@
                 {1} {4880}
             }
         }
+        {Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4853}
+            }
+        }
         {Guardian Demon} 
         {
             {Description} {NA}
@@ -39851,8 +42984,8 @@
             }
             {Rooms} 
             {
-                {1} {6279}
-                {2} {6280}
+                {1} {6280}
+                {2} {6279}
             }
         }
         {Hell Hound} 
@@ -39871,6 +43004,14 @@
                 {4} {5072}
             }
         }
+        {Hoofaralig, Titan Portal Warden} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6342}
+            }
+        }
         {Hopoate} 
         {
             {Description} {NA}
@@ -39878,7 +43019,16 @@
             {
                 {1} {15}
                 {2} {14}
+                {3} {16}
             }
+            {Rooms} 
+            {
+                {1} {6448}
+            }
+        }
+        {Hopoate, the MindBender} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {6448}
@@ -39915,6 +43065,14 @@
             {
                 {1} {15}
             }
+            {Rooms} 
+            {
+                {1} {6365}
+            }
+        }
+        {Keudyv, High Lady of the Neutral Dragons} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {6365}
@@ -39993,6 +43151,14 @@
             {
                 {1} {15}
             }
+            {Rooms} 
+            {
+                {1} {6369}
+            }
+        }
+        {Osidei, Council Member of the Neutral Dragons} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {6369}
@@ -40219,6 +43385,15 @@
                 {1} {5154}
             }
         }
+        {The Dragon Guardian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6280}
+                {2} {6279}
+            }
+        }
         {Tieran} 
         {
             {Description} {NA}
@@ -40409,6 +43584,39 @@
     }
     {Ravenloft} 
     {
+        {A door leading east from here} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21549}
+            }
+        }
+        {A goblyn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4683}
+                {2} {20718}
+            }
+        }
+        {A tank named Bint} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4314}
+            }
+        }
+        {A young elven woman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20725}
+            }
+        }
         {Adult Dark Treant} 
         {
             {Description} {NA}
@@ -40446,18 +43654,50 @@
                 {1} {4529}
             }
         }
+        {Citizen} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4314}
+            }
+        }
         {Coffer Corpse} 
         {
             {Description} {NA}
             {Ratings} 
             {
                 {1} {18000}
-                {2} {14000}
-                {3} {16000}
+                {2} {16000}
+                {3} {14000}
             }
             {Rooms} 
             {
                 {1} {4386}
+            }
+        }
+        {Cold Tiro has a Halibut by the tail!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4314}
+            }
+        }
+        {Count Strahd Von Zarovich} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21527}
+            }
+        }
+        {Dalandra's stalker Bb} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4683}
             }
         }
         {Darkling} 
@@ -40509,6 +43749,25 @@
                 {1} {20736}
                 {2} {20737}
                 {3} {20743}
+            }
+        }
+        {Dire wolf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20718}
+            }
+        }
+        {Dr. Rudolph Van Richten} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4579}
+                {2} {20718}
+                {3} {4582}
+                {4} {4588}
             }
         }
         {Ecstasy} 
@@ -40633,6 +43892,22 @@
                 {2} {7057}
             }
         }
+        {Elven skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20718}
+            }
+        }
+        {Elven zombie} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20718}
+            }
+        }
         {Fury} 
         {
             {Description} {NA}
@@ -40644,6 +43919,30 @@
             {
                 {1} {4315}
                 {2} {4314}
+            }
+        }
+        {George Weathermay} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4683}
+            }
+        }
+        {Giant rat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21525}
+            }
+        }
+        {Giant widow spider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20718}
             }
         }
         {Goblyn} 
@@ -40680,6 +43979,22 @@
             {Rooms} 
             {
                 {1} {4581}
+            }
+        }
+        {Ismark the villager} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4581}
+            }
+        }
+        {Lyriac, Elven Captain of the Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20736}
             }
         }
         {Malfiest the Shadow Demon} 
@@ -40751,10 +44066,10 @@
             }
             {Rooms} 
             {
-                {1} {21525}
-                {2} {21543}
-                {3} {21528}
-                {4} {4431}
+                {1} {21543}
+                {2} {21528}
+                {3} {4431}
+                {4} {21525}
             }
         }
         {Razor Warrior} 
@@ -40777,10 +44092,22 @@
             {
                 {1} {74000}
                 {2} {50000}
+                {3} {56000}
+                {4} {52000}
             }
             {Rooms} 
             {
+                {1} {20757}
+                {2} {20761}
+            }
+        }
+        {Red dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
                 {1} {20761}
+                {2} {20757}
             }
         }
         {Shadow Creature} 
@@ -40844,6 +44171,15 @@
             {Rooms} 
             {
                 {1} {4683}
+            }
+        }
+        {Strahd} 
+        {
+            {Description} { Before you stands the lord of all vampires, Strahd Von Zarovich. His evil aura overwhelms your senses.  You are suprised to see him so soon, but you wish you hadn't, the evil is thick here.  He is in perfect health.  }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21527}
             }
         }
         {Strahd Zombie} 
@@ -40937,6 +44273,14 @@
                 {1} {21555}
             }
         }
+        {Undead elf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20718}
+            }
+        }
         {Vampire Bat} 
         {
             {Description} {NA}
@@ -40955,21 +44299,32 @@
             {Rooms} 
             {
                 {1} {4377}
-                {2} {4380}
-                {3} {5664}
-                {4} {4853}
-                {5} {4374}
-                {6} {4392}
-                {7} {4390}
-                {8} {4379}
+                {2} {5664}
+                {3} {4853}
+                {4} {4374}
+                {5} {4392}
+                {6} {4390}
+                {7} {4379}
+                {8} {4380}
             }
         }
         {Vampire bat} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {4377}
+            }
+            {Rooms} 
+            {
+                {1} {4378}
+                {2} {4376}
+                {3} {20718}
+                {4} {4390}
+                {5} {4379}
+                {6} {4377}
+                {7} {4380}
             }
         }
         {Van Richten} 
@@ -41068,12 +44423,29 @@
                 {3} {5291}
             }
         }
+        {agon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20761}
+            }
+        }
         {e bat} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {4379}
+            }
+            {Rooms} 
+            {
+                {1} {4390}
+                {2} {4378}
+                {3} {4392}
+                {4} {4379}
+                {5} {4380}
             }
         }
     }
@@ -41094,6 +44466,81 @@
     }
     {Ravenloft Castle} 
     {
+        {} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21564}
+            }
+        }
+        {A dark wraith} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21618}
+            }
+        }
+        {A door leading east from here} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21524}
+                {2} {21549}
+            }
+        }
+        {A horse} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4587}
+            }
+        }
+        {A nightmare} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21648}
+            }
+        }
+        {A spectre} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21671}
+            }
+        }
+        {A stained glass visage of a warm sunrise} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21571}
+                {2} {21544}
+            }
+        }
+        {A stained glass visage of the moon in the night sky} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21571}
+                {2} {21544}
+            }
+        }
+        {A vicious wight} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21618}
+            }
+        }
         {Black Cat} 
         {
             {Description} {NA}
@@ -41107,6 +44554,15 @@
                 {1} {21615}
             }
         }
+        {Count Strahd Von Zarovich} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21530}
+                {2} {21527}
+            }
+        }
         {Cracked Skeleton} 
         {
             {Description} {NA}
@@ -41114,6 +44570,14 @@
             {
                 {1} {15}
             }
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
+        {Cracked skeleton} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {21538}
@@ -41179,6 +44643,40 @@
                 {1} {21554}
             }
         }
+        {Debaucherat the Inquisitor} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21554}
+            }
+        }
+        {Dire wolf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4632}
+                {2} {4634}
+            }
+        }
+        {Donavich} 
+        {
+            {Description} { This is Donavich, of all the forces for good in Barovia, he is the strongest.  He is a kind soul who has devoted his life to lifting the curse from this land.  His voice is hoarse and very weak because  his chantings are the only reason the church remains a place of cleanly sacredness in this evil realm.  He will spend this night, as he spends every night, training in the use of exotic weapons, and warding off evil from the church.  He is in perfect health. 	Donavich is carrying: Dire wolf     }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4602}
+            }
+        }
+        {Donavich the priest} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4602}
+            }
+        }
         {Doom Guard} 
         {
             {Description} {NA}
@@ -41186,13 +44684,30 @@
             {
                 {1} {8000}
                 {2} {10000}
-                {3} {12000}
-                {4} {12}
+                {3} {12}
+                {4} {12000}
             }
+            {Rooms} 
+            {
+                {1} {21523}
+                {2} {21582}
+            }
+        }
+        {Doom guard} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {21582}
                 {2} {21523}
+            }
+        }
+        {Dr. Rudolph Van Richten} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4579}
             }
         }
         {Dusty Skeleton} 
@@ -41202,6 +44717,14 @@
             {
                 {1} {15}
             }
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
+        {Dusty skeleton} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {21538}
@@ -41244,6 +44767,14 @@
                 {1} {21616}
             }
         }
+        {Evil skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
         {Eyes} 
         {
             {Description} {NA}
@@ -41268,12 +44799,21 @@
                 {1} {21538}
             }
         }
+        {Filthy skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
         {Gertruda} 
         {
             {Description} {NA}
             {Ratings} 
             {
                 {1} {8400}
+                {2} {8000}
             }
             {Rooms} 
             {
@@ -41291,6 +44831,24 @@
             {Rooms} 
             {
                 {1} {21671}
+            }
+        }
+        {Giant rat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21527}
+                {2} {21525}
+            }
+        }
+        {Guard} 
+        {
+            {Description} {   You drive your attack past sergei's resistances! Skeleton guard   Skeleton guard   Skeleton guard   Skeleton guard   Skeleton guard [scratched]  This haunting guard seems quite different from the rest.  His eye sockets present an aura of sadness, despair and divine protection from above.  There is no evil emanating from this creature, only a silent agony.  It has a few scratches and bruises. 	Sergei is carrying: }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21575}
             }
         }
         {Haggard Witch} 
@@ -41343,6 +44901,14 @@
                 {1} {21616}
             }
         }
+        {Hideous skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
         {Horrid Skeleton} 
         {
             {Description} {NA}
@@ -41353,6 +44919,23 @@
             {Rooms} 
             {
                 {1} {21538}
+            }
+        }
+        {Horrid skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
+        {Horse} 
+        {
+            {Description} {   A horse  A very fine looking example of the Clydesdale breed.  It is in perfect health.   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4587}
             }
         }
         {Malfiest the Shadow Demon} 
@@ -41380,6 +44963,14 @@
                 {1} {21538}
             }
         }
+        {Mangled skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
         {Moldy Skeleton} 
         {
             {Description} {NA}
@@ -41387,6 +44978,14 @@
             {
                 {1} {15}
             }
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
+        {Moldy skeleton} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {21538}
@@ -41441,6 +45040,14 @@
                 {1} {21616}
             }
         }
+        {Old skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
         {Pylirius the Fire Gargoyle} 
         {
             {Description} {NA}
@@ -41478,10 +45085,32 @@
             {
                 {1} {64000}
                 {2} {54000}
+                {3} {48000}
+                {4} {60000}
+                {5} {70000}
+                {6} {80000}
+                {7} {72000}
             }
             {Rooms} 
             {
                 {1} {20761}
+            }
+        }
+        {Red dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20761}
+            }
+        }
+        {Richten} 
+        {
+            {Description} {    Dr. Rudolph Van Richten  A short gray-haired man wearing a rumpled suit.  He has oddly colored gray eyes that hint at wisdom beyond his years.  His thinning hair is unkempt and the large bags beneath his eyes betray the exhaustion he is trying to hide.  Although greatly skilled in the art of personal fortitude, his older frame can no longer accept his own training.  Perhaps he seeks to converse with someone?  He is in perfect health. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4579}
             }
         }
         {Scorinlynius the Fire Gargoyle} 
@@ -41520,6 +45149,14 @@
                 {1} {21538}
             }
         }
+        {Shadowy skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21538}
+            }
+        }
         {Skeleton Knight} 
         {
             {Description} {NA}
@@ -41530,6 +45167,14 @@
             {Rooms} 
             {
                 {1} {34747}
+            }
+        }
+        {Skeleton guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21575}
             }
         }
         {Spider} 
@@ -41545,23 +45190,34 @@
                 {1} {21652}
             }
         }
+        {Stableboy} 
+        {
+            {Description} { A small boy about 15 years old.  He looks very strong for his age. He is usually in here taking care of his favorite horse.  He is in perfect health. 	Stableboy is carrying: }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4587}
+            }
+        }
         {Strahd Zombie} 
         {
             {Description} {NA}
             {Ratings} 
             {
-                {1} {16000}
-                {2} {20000}
-                {3} {12}
-                {4} {14}
-                {5} {18000}
+                {1} {12}
+                {2} {14}
+                {3} {20000}
+                {4} {18000}
+                {5} {16000}
+                {6} {8300}
             }
             {Rooms} 
             {
                 {1} {21562}
                 {2} {21564}
-                {3} {21554}
-                {4} {21552}
+                {3} {21552}
+                {4} {21554}
+                {5} {21555}
             }
         }
         {The Vampire Lord} 
@@ -41607,6 +45263,7 @@
             {Ratings} 
             {
                 {1} {8600}
+                {2} {8300}
             }
             {Rooms} 
             {
@@ -41621,7 +45278,16 @@
                 {1} {24000}
                 {2} {82000}
                 {3} {14}
+                {4} {16000}
             }
+            {Rooms} 
+            {
+                {1} {21554}
+            }
+        }
+        {Water skeleton} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {21554}
@@ -41645,10 +45311,14 @@
             {Ratings} 
             {
                 {1} {58000}
+                {2} {12}
+                {3} {72000}
             }
             {Rooms} 
             {
                 {1} {21646}
+                {2} {21618}
+                {3} {20761}
             }
         }
         {Witch} 
@@ -41676,6 +45346,14 @@
                 {1} {21570}
             }
         }
+        {Xithe the priest} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4604}
+            }
+        }
         {Young Witch} 
         {
             {Description} {NA}
@@ -41695,10 +45373,31 @@
             {Ratings} 
             {
                 {1} {15}
+                {2} {12}
             }
             {Rooms} 
             {
                 {1} {21636}
+                {2} {21554}
+                {3} {21573}
+            }
+        }
+        {ly Wraith} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21570}
+                {2} {21573}
+                {3} {21565}
+            }
+        }
+        {spider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {21652}
             }
         }
         {{Death Entity}{}} 
@@ -42341,6 +46040,70 @@
     }
     {Science} 
     {
+        {A glowing cricket} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {824}
+            }
+        }
+        {A hungry-looking vulture} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {421}
+            }
+        }
+        {A lean member of the Talons} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14501}
+            }
+        }
+        {A short punk with purple hair} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2081}
+            }
+        }
+        {A skinny white guy in a black trench coat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2154}
+            }
+        }
+        {A wandering pedestrian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2155}
+            }
+        }
+        {A wandering shroomhead} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {541}
+            }
+        }
+        {A well armed guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32419}
+            }
+        }
         {Arms Merchant} 
         {
             {Description} { You can't drop your party banner. Saving clan status. Arms Merchant  This isn't the kind of arms merchant that you would expect to find out here. He deals in actual arms, selling human appendages that he grows in genetic engineering labs to whoever needs a better arm or leg or whatever. He looks very sly and crafty. He is dressed very well.  It is in perfect health. 	Arms Merchant is carrying: =I= MultiComponent Armour: Shoulder Encasement Harness Component. }
@@ -42391,6 +46154,14 @@
                 {1} {446}
             }
         }
+        {Frank the marine} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {577}
+            }
+        }
         {Grizzled Man} 
         {
             {Description} {NA}
@@ -42428,6 +46199,31 @@
             {Rooms} 
             {
                 {1} {14598}
+            }
+        }
+        {Lieutenant Johnson} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14275}
+            }
+        }
+        {Major Henkey, PhD <?>} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {370}
+                {2} {358}
+            }
+        }
+        {Northern Expansion Terminal Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14832}
             }
         }
         {Roadrunner} 
@@ -42470,6 +46266,7 @@
                 {2} {422}
                 {3} {605}
                 {4} {588}
+                {5} {609}
             }
         }
     }
@@ -44495,6 +48292,14 @@
                 {263} {24789}
             }
         }
+        {The Developer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25240}
+            }
+        }
         {Zamuza} 
         {
             {Description} { > > > }
@@ -45420,6 +49225,14 @@
     }
     {Silicon Wraiths HQ} 
     {
+        {A Ford Fiction 128XL} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14994}
+            }
+        }
         {Ellen} 
         {
             {Description} {NA}
@@ -45483,6 +49296,14 @@
             {Rooms} 
             {
                 {1} {15102}
+            }
+        }
+        {Nuke Addict} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {14994}
             }
         }
         {Sarah} 
@@ -47240,6 +51061,231 @@
             }
         }
     }
+    {Subway Sandwich Shop} 
+    {
+        {A Yellow City Taxi Cab} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2455}
+            }
+        }
+        {A very young whore} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2455}
+            }
+        }
+        {A wandering pedestrian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2155}
+            }
+        }
+        {Giant Mack Truck} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2455}
+            }
+        }
+        {Taxi Cab} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2455}
+            }
+        }
+    }
+    {Summerset Warrens} 
+    {
+        {Anaconda} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3419}
+            }
+        }
+        {Game Hunter} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3424}
+                {2} {3147}
+            }
+        }
+        {Permit Officer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3206}
+                {2} {3115}
+            }
+        }
+    }
+    {Summerset Warrens 2.0} 
+    {
+        {Centany} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50209}
+                {2} {50195}
+                {3} {50222}
+                {4} {50225}
+                {5} {50227}
+                {6} {50235}
+                {7} {50239}
+                {8} {50238}
+                {9} {50261}
+                {10} {50259}
+                {11} {50262}
+                {12} {50271}
+                {13} {50293}
+            }
+        }
+        {Chestnut} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50221}
+            }
+        }
+        {Cow} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50219}
+                {2} {50224}
+                {3} {50218}
+                {4} {50217}
+                {5} {50220}
+                {6} {50229}
+                {7} {50228}
+                {8} {50236}
+                {9} {50234}
+                {10} {50232}
+                {11} {50230}
+                {12} {50298}
+                {13} {50305}
+                {14} {50306}
+                {15} {50308}
+                {16} {50310}
+                {17} {50311}
+                {18} {50309}
+                {19} {50307}
+                {20} {50303}
+                {21} {50304}
+                {22} {50316}
+                {23} {50315}
+                {24} {50314}
+                {25} {50313}
+            }
+        }
+        {Duck} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50213}
+            }
+        }
+        {Duckling} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50215}
+            }
+        }
+        {Hainthinnang} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50197}
+                {2} {50253}
+                {3} {50257}
+                {4} {50255}
+                {5} {50260}
+                {6} {50263}
+                {7} {50266}
+                {8} {50264}
+                {9} {50272}
+                {10} {50291}
+            }
+        }
+        {Hlessinen} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50241}
+                {2} {50242}
+                {3} {50244}
+                {4} {50246}
+                {5} {50247}
+                {6} {50249}
+                {7} {50256}
+                {8} {50258}
+                {9} {50254}
+                {10} {50265}
+                {11} {50267}
+            }
+        }
+        {Nyreem} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50240}
+                {2} {50278}
+                {3} {50286}
+            }
+        }
+        {Puffball} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50201}
+                {2} {50204}
+                {3} {50233}
+                {4} {50231}
+                {5} {50279}
+            }
+        }
+        {Rabbit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50203}
+                {2} {50206}
+                {3} {50194}
+                {4} {50212}
+                {5} {50273}
+                {6} {50277}
+                {7} {50284}
+                {8} {50295}
+                {9} {50301}
+                {10} {50299}
+            }
+        }
+    }
     {Swede Research Center} 
     {
         {Cybergenic Robot} 
@@ -47523,6 +51569,34 @@
             {Rooms} 
             {
                 {1} {30873}
+            }
+        }
+    }
+    {Talbo's Forest Home} 
+    {
+        {A Squirrel} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {35370}
+                {2} {34597}
+            }
+        }
+        {A baby bird} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {35387}
+            }
+        }
+        {Talbo the Hobbit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {34596}
             }
         }
     }
@@ -49403,6 +53477,204 @@
                 {7} {4811}
             }
         }
+        {A child playing at the local fair} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5990}
+            }
+        }
+        {A child playing in the streets} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5982}
+                {2} {5927}
+                {3} {5811}
+                {4} {5934}
+                {5} {5933}
+                {6} {5842}
+                {7} {5935}
+                {8} {45572}
+                {9} {5981}
+                {10} {5931}
+                {11} {5928}
+                {12} {5905}
+                {13} {5822}
+                {14} {5838}
+            }
+        }
+        {A distressed merchant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5811}
+                {2} {5931}
+                {3} {5928}
+                {4} {5807}
+                {5} {6202}
+                {6} {5818}
+            }
+        }
+        {A gigantic gelatinous cube} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6200}
+            }
+        }
+        {A highborn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6012}
+                {2} {6010}
+                {3} {5978}
+                {4} {5807}
+                {5} {5808}
+                {6} {5915}
+                {7} {5877}
+                {8} {5878}
+                {9} {5842}
+                {10} {5903}
+                {11} {5896}
+                {12} {5904}
+                {13} {5811}
+                {14} {5822}
+                {15} {5812}
+                {16} {5840}
+                {17} {5838}
+                {18} {5841}
+            }
+        }
+        {A housewife} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5982}
+                {2} {5990}
+                {3} {5989}
+                {4} {5835}
+                {5} {5922}
+                {6} {5915}
+                {7} {5983}
+                {8} {5923}
+                {9} {5898}
+                {10} {5803}
+                {11} {5824}
+                {12} {45753}
+                {13} {5822}
+                {14} {5814}
+                {15} {5840}
+                {16} {5819}
+                {17} {5812}
+                {18} {5842}
+            }
+        }
+        {A massive ochre jelly} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6199}
+                {2} {6194}
+                {3} {6181}
+                {4} {6192}
+                {5} {6193}
+                {6} {6198}
+            }
+        }
+        {A medium sized glowing rat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6174}
+            }
+        }
+        {A servant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5888}
+                {2} {5810}
+                {3} {5809}
+                {4} {5806}
+                {5} {5808}
+                {6} {6034}
+                {7} {5830}
+                {8} {5839}
+                {9} {5822}
+                {10} {5818}
+                {11} {5838}
+                {12} {5819}
+            }
+        }
+        {A sleek black cat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5808}
+                {2} {45572}
+                {3} {5977}
+                {4} {5989}
+                {5} {5820}
+                {6} {5819}
+                {7} {5983}
+                {8} {5892}
+                {9} {5891}
+                {10} {5807}
+                {11} {5896}
+                {12} {5900}
+                {13} {5812}
+            }
+        }
+        {A small gelatinous cube} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6194}
+            }
+        }
+        {A small ruffled dog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5833}
+                {2} {5920}
+                {3} {5919}
+                {4} {6008}
+                {5} {5933}
+                {6} {5808}
+                {7} {5992}
+                {8} {5991}
+                {9} {5980}
+                {10} {5926}
+                {11} {5934}
+                {12} {20694}
+                {13} {5889}
+                {14} {5935}
+                {15} {5931}
+                {16} {5922}
+                {17} {5892}
+                {18} {5839}
+                {19} {5891}
+                {20} {5896}
+                {21} {5838}
+                {22} {5840}
+                {23} {5842}
+            }
+        }
         {Abe Pommel} 
         {
             {Description} { Abe Pommel is an old sailor at heart, but as he's grown older, he's started to man the harbour fishing shops daily business. Every now and then he still goes out to fish but the times are getting fewer and further apart by the years. Still though, he is respected among the people at the dock both for his knowledge and his passion for the sea.  He is in perfect health. AREA RATING -> A Leap in the Dark Monster class range since inception: 9,181 to 125,951 This area has 9 discovered rooms. This room starts with a monster in it at least sometimes. }
@@ -49451,6 +53723,15 @@
                 {1} {4749}
             }
         }
+        {Ashton Nibble} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5833}
+                {2} {5831}
+            }
+        }
         {Benny Orson} 
         {
             {Description} {   Benny Orson  Benny Orson is one of the less fortunate ones in Westersea. His job is mainly to lug around carts all over the city. However, it seems like this time he's bit off more than he can chew since he is clearly unable to move this cart up the nearby hill. Benny is dressed in normal work clothes which consist of tattered breeches and a torn short sleeve shirt. He's of middle age and of fairly good condition. Standing here watching him and the surroundings you realize that animals inside the city gates are very rare and the only horses you've seen belong to visitors rather than to the citizens.  He is in perfect health. 	Benny Orson is carrying: }
@@ -49460,7 +53741,9 @@
             }
             {Rooms} 
             {
-                {1} {5841}
+                {1} {5822}
+                {2} {5840}
+                {3} {5841}
             }
         }
         {Bern} 
@@ -49470,6 +53753,14 @@
             {
                 {1} {12}
             }
+            {Rooms} 
+            {
+                {1} {5814}
+            }
+        }
+        {Bern the blacksmith} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {5814}
@@ -49521,6 +53812,8 @@
             {Rooms} 
             {
                 {1} {6206}
+                {2} {6205}
+                {3} {6204}
             }
         }
         {Grace Wither} 
@@ -49533,6 +53826,63 @@
             {Rooms} 
             {
                 {1} {20711}
+            }
+        }
+        {Guard corporal} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5928}
+                {2} {45753}
+                {3} {5842}
+                {4} {5844}
+                {5} {5896}
+                {6} {5839}
+                {7} {5809}
+                {8} {5814}
+            }
+        }
+        {Guard private} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5804}
+                {2} {5819}
+                {3} {5805}
+                {4} {6214}
+                {5} {5928}
+                {6} {5806}
+                {7} {6211}
+                {8} {45753}
+            }
+        }
+        {Guard sergeant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5994}
+                {2} {45572}
+                {3} {5834}
+                {4} {5927}
+                {5} {5892}
+                {6} {5915}
+                {7} {5888}
+                {8} {5926}
+                {9} {5891}
+                {10} {5812}
+            }
+        }
+        {Harbour magistrate} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5983}
+                {2} {6205}
+                {3} {6203}
             }
         }
         {Ice Elemental} 
@@ -49595,6 +53945,14 @@
                 {1} {5820}
             }
         }
+        {Jakob Gordioniz} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5889}
+            }
+        }
         {Jessie Wither} 
         {
             {Description} { Jessie Wither is the couple's only child. She has just turned four and you've heard rumours about the large birthday party that the family threw for her. Unfortunately you weren't there but then again neither were many people. He is in perfect health. You say: hi }
@@ -49605,6 +53963,15 @@
             {Rooms} 
             {
                 {1} {20703}
+            }
+        }
+        {Jorbin} 
+        {
+            {Description} { A cloud of black beard greets you as you look at the small comical little figure. Jorbin is dressed in stylish leather clothing but lacks the manners to go with it. His hair stands in all direction and his hands are dusty and dirty. It's hard to picture what race Jorbin actually belongs to since his mass of hair and beard suggest that he's of dwarfish heritage, but his pointy nose and small slender fingers suggest gnomish. As he sees you, his mass of beard splits up in a wide grin and he utters a cheerful 'Hullo'.  He is in perfect health.   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {45572}
             }
         }
         {Jorbin Gruffelmonger} 
@@ -49629,6 +53996,7 @@
             {Rooms} 
             {
                 {1} {5879}
+                {2} {5878}
             }
         }
         {Linus} 
@@ -49667,6 +54035,14 @@
                 {1} {5821}
             }
         }
+        {Megan Wicker} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5821}
+            }
+        }
         {Mischievous Ruffian} 
         {
             {Description} {NA}
@@ -49693,6 +54069,14 @@
                 {9} {5967}
             }
         }
+        {Olaf Woodleg} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5804}
+            }
+        }
         {Otto} 
         {
             {Description} { Otto is a stout man and always greets his customer with a friendly grin, or if you're a woman, leery grins. He has a reputation about being very licentious with his female guests and employees. Otto is dressed in a thick leather apron which is heavily stained and a tunic that was probably white at one point.  He is in perfect health. He has no spells. His melee attacks do crushing damage.   }
@@ -49715,6 +54099,18 @@
             {Rooms} 
             {
                 {1} {5910}
+            }
+        }
+        {Palt, the overworked groundskeeper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5890}
+                {2} {5887}
+                {3} {5842}
+                {4} {5910}
+                {5} {5888}
             }
         }
         {Per Tussletoff} 
@@ -49815,6 +54211,25 @@
                 {1} {7379}
             }
         }
+        {Tinny the guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4756}
+                {2} {4757}
+            }
+        }
+        {Tommy the guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5985}
+                {2} {5983}
+                {3} {6202}
+            }
+        }
         {Tough Looking Brigand} 
         {
             {Description} {NA}
@@ -49837,6 +54252,15 @@
             {Rooms} 
             {
                 {1} {5826}
+            }
+        }
+        {Twix Copperware} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5814}
+                {2} {5812}
             }
         }
         {Tysol} 
@@ -49863,6 +54287,14 @@
                 {1} {4819}
             }
         }
+        {Weave Poll} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5913}
+            }
+        }
     }
     {The City of Westersea (Chasm)} 
     {
@@ -49883,13 +54315,45 @@
             {Description} {NA}
             {Ratings} 
             {
-                {1} {14}
+                {1} {17}
+                {2} {14}
             }
             {Rooms} 
             {
                 {1} {6197}
                 {2} {6193}
                 {3} {6198}
+                {4} {6188}
+            }
+        }
+        {A gigantic gelatinous cube} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6194}
+                {2} {6186}
+                {3} {6187}
+            }
+        }
+        {A massive ochre jelly} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6194}
+                {2} {6193}
+                {3} {6192}
+                {4} {6185}
+            }
+        }
+        {A small gelatinous cube} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6194}
+                {2} {6187}
             }
         }
         {Abe Pommel} 
@@ -49916,6 +54380,24 @@
                 {1} {6159}
             }
         }
+        {Dotar} 
+        {
+            {Description} { Dotar the conjurer stands before, flickering in and out of what you would most likely call reality. As you gaze at his tall and slender form, you wonder how long he's walked the realms and what vast knowledge he has amassed throughout the years. Clear blue eyes stare into your soul as if searching for something. He regards you not with loathing nor fear but what seems like a morbid sense of curiosity. You see robes as black as the darkest of night covering his body and in his hands he holds a slender staff. He is in perfect health. 	Dotar the Conjurer is carrying:   Dotar fades out as he avoids the attack!  Cable struck but did no damage to Dotar the Conjurer. Cable pulverized Dotar the Conjurer with a powerful attack. Cable utterly annihilated Dotar the Conjurer. Cable pulverized Dotar the Conjurer with a powerful attack. Cable struck but did no damage to Dotar the Conjurer. Cable utterly annihilated Dotar the Conjurer. Cable completely devastated Dotar the Conjurer with awesome force. Cable completely devastated Dotar the Conjurer with awesome force. Cable destroyed Dotar the Conjurer. Cable absolutely massacred Dotar the Conjurer. Dotar fades out as he avoids the attack!  Cable tickled Dotar the Conjurer in the stomach. Cable absolutely massacred Dotar the Conjurer. Cable thrashed Dotar the Conjurer completely. Cable tickled Dotar the Conjurer in the stomach. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6201}
+            }
+        }
+        {Dotar the conjurer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6187}
+                {2} {6201}
+            }
+        }
         {Fisherman} 
         {
             {Description} {NA}
@@ -49938,6 +54420,14 @@
             {Rooms} 
             {
                 {1} {6125}
+            }
+        }
+        {Ogotaz, The Powerful Wizard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24350}
             }
         }
         {Rat} 
@@ -49976,6 +54466,342 @@
                 {1} {5869}
             }
         }
+        {A child playing in the streets} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5839}
+                {2} {5896}
+                {3} {5822}
+                {4} {5841}
+                {5} {5892}
+                {6} {5840}
+            }
+        }
+        {A distressed merchant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5922}
+                {2} {5812}
+                {3} {5822}
+                {4} {5821}
+                {5} {5837}
+                {6} {5818}
+                {7} {45753}
+                {8} {5811}
+            }
+        }
+        {A highborn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5843}
+                {2} {5998}
+                {3} {5809}
+                {4} {5890}
+                {5} {5923}
+                {6} {5837}
+                {7} {5896}
+                {8} {5934}
+                {9} {5839}
+                {10} {20694}
+                {11} {5892}
+                {12} {5813}
+                {13} {5821}
+                {14} {5980}
+                {15} {5925}
+                {16} {5822}
+                {17} {5842}
+                {18} {5935}
+                {19} {5931}
+                {20} {5922}
+                {21} {5811}
+                {22} {45753}
+                {23} {5920}
+                {24} {5929}
+                {25} {5928}
+                {26} {5888}
+                {27} {5840}
+                {28} {5836}
+                {29} {5819}
+                {30} {5812}
+            }
+        }
+        {A housewife} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5996}
+                {2} {5812}
+                {3} {5838}
+                {4} {5896}
+                {5} {5898}
+                {6} {5984}
+                {7} {5983}
+                {8} {5931}
+                {9} {5806}
+                {10} {5892}
+                {11} {5907}
+                {12} {5891}
+                {13} {5837}
+                {14} {5823}
+                {15} {5814}
+                {16} {5840}
+                {17} {5982}
+                {18} {5935}
+                {19} {5981}
+                {20} {5980}
+                {21} {5933}
+                {22} {5905}
+                {23} {5978}
+                {24} {45572}
+                {25} {5822}
+                {26} {5819}
+            }
+        }
+        {A servant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5812}
+                {2} {5896}
+                {3} {5983}
+                {4} {5898}
+                {5} {5822}
+                {6} {5821}
+                {7} {5837}
+                {8} {5978}
+                {9} {5929}
+                {10} {5823}
+                {11} {5980}
+                {12} {5982}
+                {13} {5933}
+                {14} {5928}
+                {15} {5918}
+                {16} {5935}
+                {17} {5838}
+                {18} {5819}
+            }
+        }
+        {A shimmering presence} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50358}
+            }
+        }
+        {A sleek black cat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5984}
+                {2} {5892}
+                {3} {5906}
+                {4} {5817}
+                {5} {5926}
+                {6} {5821}
+                {7} {5923}
+                {8} {5917}
+                {9} {5931}
+                {10} {5839}
+                {11} {5905}
+                {12} {5920}
+                {13} {5922}
+            }
+        }
+        {A small ruffled dog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5896}
+                {2} {5888}
+                {3} {5890}
+                {4} {5923}
+                {5} {5840}
+                {6} {5822}
+                {7} {5983}
+                {8} {5935}
+                {9} {5839}
+                {10} {5906}
+                {11} {5892}
+                {12} {5901}
+                {13} {5980}
+                {14} {5925}
+                {15} {5982}
+                {16} {5933}
+                {17} {5931}
+                {18} {5928}
+                {19} {5922}
+                {20} {5905}
+                {21} {5904}
+                {22} {5929}
+                {23} {5934}
+                {24} {5842}
+                {25} {5843}
+            }
+        }
+        {Alexander Wither} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {20700}
+            }
+        }
+        {Alister Dawnstrider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5850}
+            }
+        }
+        {Benny Orson} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5841}
+                {2} {5892}
+            }
+        }
+        {Bern the blacksmith} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5814}
+            }
+        }
+        {Guard corporal} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5842}
+                {2} {5841}
+                {3} {5896}
+                {4} {5822}
+                {5} {5903}
+                {6} {5811}
+                {7} {5821}
+                {8} {5810}
+                {9} {5813}
+                {10} {5918}
+                {11} {5809}
+                {12} {5904}
+                {13} {5812}
+            }
+        }
+        {Guard private} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5890}
+                {2} {5923}
+                {3} {5896}
+                {4} {5983}
+                {5} {5898}
+                {6} {5809}
+                {7} {5839}
+                {8} {20694}
+                {9} {5903}
+                {10} {5811}
+                {11} {5821}
+                {12} {5840}
+                {13} {5980}
+                {14} {5925}
+                {15} {5926}
+                {16} {5822}
+                {17} {5842}
+                {18} {5918}
+                {19} {5917}
+                {20} {5935}
+                {21} {5900}
+                {22} {5934}
+                {23} {5928}
+                {24} {5922}
+                {25} {45753}
+                {26} {5920}
+                {27} {5889}
+                {28} {5904}
+                {29} {5929}
+                {30} {5933}
+                {31} {5931}
+                {32} {45572}
+                {33} {5888}
+                {34} {5837}
+                {35} {5819}
+            }
+        }
+        {Guard sergeant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5928}
+                {2} {5926}
+                {3} {5919}
+                {4} {5920}
+            }
+        }
+        {Jorbin Gruffelmonger} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {45572}
+            }
+        }
+        {Lady Anne} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5877}
+            }
+        }
+        {Megan Wicker} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5821}
+            }
+        }
+        {Palt, the overworked groundskeeper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {46478}
+                {2} {5842}
+                {3} {5908}
+                {4} {5890}
+                {5} {22875}
+                {6} {5889}
+                {7} {5910}
+                {8} {5888}
+            }
+        }
+        {Per Tussletoff} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {45753}
+            }
+        }
         {Rat} 
         {
             {Description} {NA}
@@ -49986,6 +54812,32 @@
             {Rooms} 
             {
                 {1} {6163}
+            }
+        }
+        {Sain Ash} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5810}
+            }
+        }
+        {Twix Copperware} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5813}
+                {2} {5812}
+            }
+        }
+        {presence} 
+        {
+            {Description} {   A shimmering presence  The presence before you is in constant flux. Sometimes it appears male just to have it switch to a female form moments later. The surface of the being is as metallic and reflective as the surroundings around you and it's hard to distinguish where the sphere ends and the presence begins. It looks at you with what you can only assume to be its face as if waiting for something.  He is in perfect health. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50358}
             }
         }
     }
@@ -50033,6 +54885,14 @@
                 {3} {6110}
             }
         }
+        {Guard private} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5804}
+            }
+        }
         {Longtooth} 
         {
             {Description} {NA}
@@ -50055,6 +54915,14 @@
             {Rooms} 
             {
                 {1} {5938}
+            }
+        }
+        {Olaf Woodleg} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5804}
             }
         }
         {Rat} 
@@ -50145,9 +55013,49 @@
                 {3} {6106}
             }
         }
+        {Tinny the guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4757}
+            }
+        }
     }
     {The City of Westersea (Slum)} 
     {
+        {A highborn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5906}
+            }
+        }
+        {A servant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5914}
+            }
+        }
+        {A small ruffled dog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5919}
+            }
+        }
+        {Guard private} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5914}
+            }
+        }
         {Mischievous Ruffian} 
         {
             {Description} {NA}
@@ -50202,6 +55110,15 @@
             {
                 {1} {5972}
                 {2} {5937}
+                {3} {5960}
+            }
+        }
+        {Weave Poll} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {5914}
             }
         }
     }
@@ -53601,6 +58518,60 @@
             }
         }
     }
+    {The Village of Erah} 
+    {
+        {A burly elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27702}
+                {2} {27704}
+                {3} {27693}
+            }
+        }
+        {A powerful elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {28778}
+                {2} {28777}
+                {3} {27698}
+                {4} {27700}
+                {5} {27693}
+            }
+        }
+        {A strong elven soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27690}
+                {2} {27703}
+                {3} {27693}
+                {4} {28777}
+                {5} {27697}
+                {6} {27699}
+                {7} {27692}
+                {8} {27691}
+                {9} {27694}
+                {10} {27700}
+            }
+        }
+        {A tall elven skeleton} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27690}
+                {2} {27704}
+                {3} {27693}
+                {4} {27691}
+                {5} {28777}
+            }
+        }
+    }
     {The Zodiac} 
     {
         {Aries} 
@@ -53801,6 +58772,30 @@
     }
     {Tomb of King Alaren} 
     {
+        {A Captain of the Arovian Honor Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25306}
+            }
+        }
+        {A fearsome Arovian wraithguard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25338}
+            }
+        }
+        {A hulking bone golem} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25305}
+            }
+        }
         {Alaren} 
         {
             {Description} {NA}
@@ -53811,6 +58806,25 @@
             {Rooms} 
             {
                 {1} {25338}
+            }
+        }
+        {Alaren, Last king of the Arovians} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25338}
+            }
+        }
+        {An Arovian honor guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25297}
+                {2} {25308}
+                {3} {25312}
+                {4} {25315}
             }
         }
         {Bone Golem} 
@@ -53831,11 +58845,40 @@
             {Ratings} 
             {
                 {1} {12}
+                {2} {56000}
             }
             {Rooms} 
             {
                 {1} {25293}
                 {2} {25306}
+                {3} {25308}
+            }
+        }
+        {Mircarla} 
+        {
+            {Ratings} 
+            {
+                {1} {13}
+            }
+            {Rooms} 
+            {
+                {1} {25321}
+            }
+        }
+        {Mircarla, High Priestess to King Alaren} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25321}
+            }
+        }
+        {Mircarla, High priestess to King Alaren} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25321}
             }
         }
         {Royal Guard} 
@@ -53845,17 +58888,19 @@
             {
                 {1} {66000}
                 {2} {58000}
-                {3} {62000}
-                {4} {56000}
+                {3} {56000}
+                {4} {62000}
+                {5} {60000}
             }
             {Rooms} 
             {
                 {1} {25311}
                 {2} {25313}
-                {3} {25308}
-                {4} {25318}
-                {5} {25312}
-                {6} {25297}
+                {3} {25318}
+                {4} {25297}
+                {5} {25308}
+                {6} {25312}
+                {7} {25315}
             }
         }
         {Sumaren} 
@@ -53865,6 +58910,14 @@
             {
                 {1} {13}
             }
+            {Rooms} 
+            {
+                {1} {25322}
+            }
+        }
+        {Sumaren, Vizier to King Alaren} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {25322}
@@ -53910,6 +58963,25 @@
                 {2} {25335}
                 {3} {25331}
                 {4} {25329}
+                {5} {25338}
+            }
+        }
+        {guard} 
+        {
+            {Description} {  An Arovian honor guard  Entombed with his leige lord King Alaren, this once proud arovian warrior has been cursed into undeath, to serve his master forever. Dressed in the  tattered remains of the livery of the royal Arovian household, this skeletal warrior would have been marked as a warrior without peer in his generation, the best of the best. Though death may have rotted his flesh and sinews  the foul curse that has re-animated this warrior has returned that which time has rotted away. He is in perfect health. You kick sand in the face of An Arovian honor guard! You kick sand in the face of An Arovian honor guard!  Performing: hands Bonehead, you're at max hit points already. The royal guard cuts into you with his sword.  You steadily block the brunt of the incoming attack. Performing: hands Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands Bonehead, you're at max hit points already. A gibbering trist   An Arovian honor guard ]  An Arovian honor guard   An Arovian honor guard   An Arovian honor guard   An Arovian honor guard   An Arovian honor guard   An Arovian honor guard   An Arovian honor guard   An Arovian honor guard An Arovian honor guard Bonehead, you're at max hit points already. through him. Royal Guard screams in pain as they become weaker! }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25297}
+            }
+        }
+        {sumaren} 
+        {
+            {Description} { Magical power seems to course and ripple through this skeleton. Dressed in remnants of a royal blue robe, and wearing a golden circlet, this skeleton must once have been an imposing figure. Famed for their spell casting prowess the Viziers of ancient Arovia should never be treated lightly, even more so now that one of them has had his eternal rest disturbed. He is in perfect health.   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25322}
             }
         }
     }
@@ -54324,6 +59396,63 @@
             }
         }
     }
+    {Toxic Waste Dump} 
+    {
+        {A monstrous rat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32564}
+                {2} {32566}
+            }
+        }
+        {Glowing Fly} 
+        {
+            {Description} { A large mutated fly, emitting a soft blue aura due to the radioactive substances it's been affected with in the dump. Actually, when you look closer, you realize that it's actually as large as your fist! Yuck!  It is in perfect health. A buzzard   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32569}
+            }
+        }
+        {Green Coloured Dog} 
+        {
+            {Description} {    Green coloured Dog  A large dog stands before you, growling. The skin is green and  when you think about it he's probably the first green dog you  have ever seen. Watch out, it might be dangerous to make him  angry.  He is in perfect health. }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32567}
+            }
+        }
+        {Green coloured Dog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32567}
+            }
+        }
+        {Monstrous Rat} 
+        {
+            {Description} {    A monstrous rat  This must be the largest, most disgusting rat you have ever seen! As you look at it, you see that its head ends at the same height as your own knee! Totally hairless from all the radioactivity, it scurries around, looking for food among the various kinds of trash here.  It is in perfect health.   }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32564}
+            }
+        }
+        {Slimy Bug} 
+        {
+            {Description} {    Slimy Bug  A small slimy bug, creeping in the puddles of toxic waste.  It is in perfect health. 	Bug is carrying: }
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {32568}
+                {2} {374}
+            }
+        }
+    }
     {Toy Store} 
     {
         {Action Man} 
@@ -54640,6 +59769,38 @@
             }
         }
     }
+    {Troll Forest} 
+    {
+        {A Large Troll} 
+        {
+            {Ratings} 
+            {
+                {1} {1300}
+            }
+            {Rooms} 
+            {
+                {1} {22916}
+            }
+        }
+        {A large troll} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22916}
+            }
+        }
+        {A troll} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {22912}
+                {2} {22911}
+                {3} {22910}
+            }
+        }
+    }
     {Tunnels of the Rohm Giddor} 
     {
         {Aballin} 
@@ -54888,6 +60049,14 @@
             {Rooms} 
             {
                 {1} {580}
+            }
+        }
+        {Frank the marine} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {577}
             }
         }
         {Fred} 
@@ -57499,9 +62668,15 @@
         {A Burgher} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {4103}
+            }
+            {Rooms} 
+            {
+                {1} {4101}
+                {2} {4106}
             }
         }
         {A Burgher } 
@@ -57582,6 +62757,7 @@
             {Rooms} 
             {
                 {1} {4101}
+                {2} {4106}
             }
         }
         {A Dwarven Trader } 
@@ -57652,6 +62828,14 @@
                 {1} {42743}
             }
         }
+        {A Priestess of Kourlyn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15622}
+            }
+        }
         {A Scholar} 
         {
             {Description} {NA}
@@ -57662,6 +62846,17 @@
             {Rooms} 
             {
                 {1} {15591}
+                {2} {7347}
+            }
+        }
+        {A Student} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {7346}
+                {2} {7347}
+                {3} {15621}
             }
         }
         {A Thief} 
@@ -57682,9 +62877,14 @@
         {A Wayhaven Merchant} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {4103}
+            }
+            {Rooms} 
+            {
+                {1} {4106}
             }
         }
         {A Wayhaven Merchant } 
@@ -57706,10 +62906,32 @@
         {A bridge guard} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {4273}
                 {2} {4099}
+            }
+            {Rooms} 
+            {
+                {1} {4276}
+            }
+        }
+        {A large brown elk} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4850}
+            }
+        }
+        {A young woman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3919}
+                {2} {4314}
             }
         }
         {Apprentice mage} 
@@ -57750,6 +62972,7 @@
         {Citizen} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
             {
                 {1} {4273}
@@ -57759,6 +62982,19 @@
                 {5} {4137}
                 {6} {4074}
                 {7} {42696}
+            }
+            {Rooms} 
+            {
+                {1} {4276}
+                {2} {3922}
+                {3} {3909}
+                {4} {3919}
+                {5} {4314}
+                {6} {3910}
+                {7} {3934}
+                {8} {3935}
+                {9} {4083}
+                {10} {4099}
             }
         }
         {Citizen } 
@@ -57773,7 +63009,12 @@
         {Eustace the Haberdasher} 
         {
             {Rating} {}
+            {Ratings} {}
             {Room} 
+            {
+                {1} {4105}
+            }
+            {Rooms} 
             {
                 {1} {4105}
             }
@@ -57812,6 +63053,14 @@
             {Rooms} 
             {
                 {1} {22073}
+            }
+        }
+        {Rattle Snake} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4286}
             }
         }
         {The Mayor of Wayhaven} 
@@ -58184,6 +63433,17 @@
             }
         }
     }
+    {Witch Coven} 
+    {
+        {A medium black bear} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4230}
+            }
+        }
+    }
     {Witch's Hat} 
     {
         {Arc} 
@@ -58482,8 +63742,8 @@
                 {1} {16}
                 {2} {12}
                 {3} {15}
-                {4} {13}
-                {5} {150000}
+                {4} {150000}
+                {5} {13}
             }
             {Rooms} 
             {
@@ -58493,26 +63753,26 @@
                 {4} {6590}
                 {5} {6638}
                 {6} {6651}
-                {7} {6652}
-                {8} {6650}
-                {9} {6646}
-                {10} {6647}
-                {11} {6629}
-                {12} {6628}
-                {13} {6591}
-                {14} {6615}
-                {15} {6608}
-                {16} {6603}
-                {17} {6601}
-                {18} {6600}
-                {19} {6599}
-                {20} {6578}
-                {21} {6626}
-                {22} {6621}
-                {23} {6588}
-                {24} {6580}
-                {25} {6576}
-                {26} {6574}
+                {7} {6650}
+                {8} {6646}
+                {9} {6647}
+                {10} {6629}
+                {11} {6628}
+                {12} {6591}
+                {13} {6615}
+                {14} {6608}
+                {15} {6603}
+                {16} {6601}
+                {17} {6600}
+                {18} {6599}
+                {19} {6578}
+                {20} {6626}
+                {21} {6621}
+                {22} {6588}
+                {23} {6580}
+                {24} {6576}
+                {25} {6574}
+                {26} {6652}
             }
         }
         {Glass Golem } 
@@ -58557,12 +63817,12 @@
             {Description} { > > > }
             {Ratings} 
             {
-                {1} {13}
-                {2} {18}
-                {3} {16}
-                {4} {15}
-                {5} {12}
-                {6} {150000}
+                {1} {18}
+                {2} {16}
+                {3} {15}
+                {4} {12}
+                {5} {150000}
+                {6} {13}
             }
             {Rooms} 
             {
@@ -58571,14 +63831,14 @@
                 {3} {6606}
                 {4} {6598}
                 {5} {6593}
-                {6} {6652}
-                {7} {6644}
-                {8} {6647}
-                {9} {6635}
-                {10} {6619}
-                {11} {6602}
-                {12} {6597}
-                {13} {6594}
+                {6} {6644}
+                {7} {6647}
+                {8} {6635}
+                {9} {6619}
+                {10} {6602}
+                {11} {6597}
+                {12} {6594}
+                {13} {6652}
             }
         }
         {Stone Golem} 
@@ -58587,9 +63847,9 @@
             {Ratings} 
             {
                 {1} {16}
-                {2} {13}
-                {3} {15}
-                {4} {150000}
+                {2} {15}
+                {3} {150000}
+                {4} {13}
             }
             {Rooms} 
             {
@@ -58603,21 +63863,21 @@
                 {8} {6582}
                 {9} {6586}
                 {10} {6574}
-                {11} {6652}
-                {12} {6651}
-                {13} {6628}
-                {14} {6622}
-                {15} {6590}
-                {16} {6618}
-                {17} {6614}
-                {18} {6610}
-                {19} {6605}
-                {20} {6603}
-                {21} {6600}
-                {22} {6585}
-                {23} {6583}
-                {24} {6579}
-                {25} {6577}
+                {11} {6651}
+                {12} {6628}
+                {13} {6622}
+                {14} {6590}
+                {15} {6618}
+                {16} {6614}
+                {17} {6610}
+                {18} {6605}
+                {19} {6603}
+                {20} {6600}
+                {21} {6585}
+                {22} {6583}
+                {23} {6579}
+                {24} {6577}
+                {25} {6652}
             }
         }
         {Stone Golem [dying] } 
@@ -58634,8 +63894,8 @@
             {Ratings} 
             {
                 {1} {12}
-                {2} {13}
-                {3} {150000}
+                {2} {150000}
+                {3} {13}
             }
             {Rooms} 
             {
@@ -58648,6 +63908,7 @@
                 {7} {6629}
                 {8} {6625}
                 {9} {6595}
+                {10} {6580}
             }
         }
         {Zelligar} 
@@ -58655,10 +63916,18 @@
             {Description} {   up > >  (zelligar?) }
             {Ratings} 
             {
-                {1} {16}
-                {2} {15}
-                {3} {150000}
+                {1} {15}
+                {2} {150000}
+                {3} {16}
             }
+            {Rooms} 
+            {
+                {1} {6652}
+            }
+        }
+        {Zelligar the Learned Golem Master} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {6652}

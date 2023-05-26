@@ -1,0 +1,48 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 3112;
+#var patrol[area] {Dundee Poachers};
+#var {patrol[path]} {enter swamp;e;n;n;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;n;n;n;n;n;w;e;e;e;e;e;e;e;e;e;e;e;e;e;n;n;nw;w;n;n;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;n;n;n;n;n;e;se;ne;e;n;n;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;w;w;w;n;n;n;n;n;w;sw;s;s;s;e;e;e;n;n;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;n;n;w;w;w;w;w;w;w;w;w;e;e;e;e;e;e;e;e;e;ne;ne;e;n;n;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;s;w;w;w;w;w;w;w;s;e;e;e;e;e;e;e;n;n;w;w;w;w;w;w;w;w;sw}
+
+
+#var patrol[shouldKillList] 
+{
+	{Sparrow}{sparrow}
+	{Watersnake}{snake}
+	{Bear}{bear}
+	{Toad}{toad}
+	{Frog}{frog}
+	{Heron}{heron}
+	{Sparrow}{sparrow}
+	{Crocodile}{crocodile}
+	{Snake}{snake}
+	{bear}{bear}
+	{Shrew}{shrew}
+	{Rat}{rat}
+	{Caecilian}{caecilian}
+	{Anhinga}{anhinga}
+	{Armadillo}{armadillo}
+	{Platypus}{platypus}
+	{Osprey}{osprey}
+	{Egret}{egret}
+	{Salamander}{salamander}
+	{Crane}{crane}
+	{Anaconda}{snake}
+	{Mole}{mole}
+	{Amphiuma}{amphiuma}
+	{Swamphen}{swamphen}
+};
+
+
+#action {The foliage in this part of the swamp is extremely thick}
+{
+	#map undo;
+	#path move backward;
+	.doBehaviorPatrol;
+};
+
+
+#class {bot} {close}

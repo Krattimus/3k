@@ -2,6 +2,58 @@
 
 #class {testbin} {open}
 
+#var gate 0;
+
+
+#alias .unlockAlchemy
+{
+        .go westersea_curios;
+        buy 7;
+        #delay 5
+        {
+                .go westersea_library; 
+                #delay 5 
+                { 
+                        #4 push left button; #8 push right button; plant box; .go westersea_alchemy;
+                };
+        };
+};
+
+#alias .extractBead 
+{
+        unwrap; absorb corpse with rod; expunge %1; take bead;
+};
+
+
+#action {Nightmare gurgles in its own blood as it dies} 
+{
+	postRavenloft;
+} {1};
+#action {Nightmare screeches in agony and falls to the ground} {
+	postRavenloft;
+} {1};
+#action {Krat dealt the killing blow to Nightmare.} 
+{
+        postRavenloft;
+	
+} {1};
+
+#alias .toRavenloft
+{
+        jump;s;w;portal; portal eforest;s;s;sw;w;nw;enter mist;
+};
+
+#alias postRavenloft
+{
+        #if { $gate == 0 }
+        {
+                #send in; 
+                #map go 4315;
+                .go ravenloft_mechanism;
+                #var gate 1;
+        };
+};
+
 
 #alias .dbImportItems
 {
@@ -124,8 +176,6 @@
 
         #if { !@isFilteredFromLogging{$itemName} }
         {
-                #showme Adding $itemName;
-
                 #var itemsInArea $items[$itemArea];
 
                 #if {{$itemsInArea} === {}}

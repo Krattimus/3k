@@ -385,7 +385,7 @@
 				};
 				#else
 				{
-					#var long { ${long}%%1 }
+					#var long { ${long}%%1 };
 				}
 			} {2}
 		};

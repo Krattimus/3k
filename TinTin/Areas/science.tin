@@ -1,0 +1,228 @@
+#class {bot} {open}
+
+#function filterScience
+{
+        #var result %0;
+        #replace {result} {You wonder if you'll ever find the end of this rolling expanse.} {};
+        #replace {result} {Could it be your imagination, or is that the smell of burning flesh?} {};
+        #replace {result} {You see a bright flash of light far in the distance.} {};
+        #replace {result} {It takes a very long time for the sound of the explosion to reach you.} {};
+        #replace {result} {Before you stretches an endless expanse of sand, wind, and stone.} {};
+        #replace {result} {You wonder if you'll ever find the end of this desolate expanse.} {};
+        #replace {result} {A gigantic crater lies before you.} {};
+        #replace {result} {You catch the smell of something rancid burning.} {};
+        #replace {result} {It's hard to imagine what could have exploded and caused something as impressive as this.} {};
+        #replace {result} {The desert spreads out in every direction.} {};
+        #replace {result} {You probably don't want to find out what it could be that could be burning.} {};
+        #replace {result} {The sun beats down on you here in the desert and fries your skin.} {};
+        #replace {result} {Is that the skyline of a city that you see to the south?} {};
+        #replace {result} {It looks very dry.} {};
+        #replace {result} {The sand and stone are hot under your feet.} {};
+        #replace {result} {You can hear the roar of some far-off motor.} {};
+        #replace {result} {Huge clouds of dust and sand rise in the distance as you look around.} {};
+        #replace {result} {You wonder how anything could ever survive way out here in the the middle of nowhere.} {};
+        #replace {result} {Who'd be way out here?} {};
+        #replace {result} {Huge clouds of dust and ash rise in the distance as you look around.} {};
+        
+        #replace {result} {You can hear the roar of some far off motor.} {};
+        #replace {result} {Before you stretches a vast expanse of destruction and desolation.} {};
+        #replace {result} {You've got to wonder how anything could survive way out here.} {};
+        #replace {result} {A foul wind whips by you as you survey this desolate landscape.} {};
+        #replace {result} {The clouds above you move in over the sun and block out its light.} {};
+        #replace {result} {The ground under your feet cracks and snaps as you walk.} {};
+        #replace {result} {The dirt is jet black, with soot, ash, and pieces of bone strewn throughout.} {};
+        #replace {result} {Destruction and desolation stretch as far as the eye can see.} {};
+        
+        #replace {result} {A foul wind whips by you as you survey this desolate landscape bringing with it dust and grit with the force of a sandblaster.} {};
+        #replace {result} {Huge clouds of dust and ash rise in the distance, whipped into a killing funnel by the torturous winds.} {};
+        #replace {result} {The howl of the wind and the flying dust make it nearly impossible to hear or see anything out here.} {};
+        #replace {result} {You hope nothing comes looking for you.} {};
+        #replace {result} {Nothing grows here in the post apocalyptic wastelands.} {};
+        #replace {result} {You travel over hard packed earth, cracked and pitted from months without rain.} {};
+        #replace {result} {Nothing grows at all, not even a pesky weed stubbornly holding on to life.} {};
+        #replace {result} {Dust whips through the air on harsh, burning winds.} {};
+        
+        #replace {result} {The canopy of the swamp vegetation blots out the sky here.} {};
+        #replace {result} {You hear the growls of some far off animal.} {};
+        #replace {result} {You hear a loud sucking sound as you walk through the dew.} {};
+        #replace {result} {The swamp encompasses you with its hot humid sticky filth.} {};
+        #replace {result} {You don't feel like it would be a good thing to run into anything that lives here.} {};
+        #replace {result} {The hot slimy swamp stretches out from here in every direction.} {};
+        #replace {result} {The stench of this swamp is almost unbearable.} {};
+        #replace {result} {You don't think that you're going to be able to make it through this thing.} {};
+        
+        #replace {result} {Huge trees and ferns grow in abundance here.} {};
+        #replace {result} {There must be something wrong with these plants since they seem to grow so well.} {};
+        #replace {result} {The low rolling hills do nothing to stop the airborn grit from scouring the countryside clean of life.} {};
+        
+        #replace {result} {There is a mist that covers the ground here. It smells of sulfur.} {};
+        #replace {result} {The swamp's floor is so slimy and wet that it grabs onto your boots as you walk through it.} {};
+        #replace {result} {The green of the swamp amazes you since nothing else grows around here.} {};
+        #replace {result} {You hope you don't get stuck.} {};
+        
+        
+        #replace {result} {Naked soil shifts beneath your feet, a true sign of the desolation wrought here.} {};
+        #replace {result} {Huge boulders have been pounded to rubble leaving only small pebbles strewn about you.} {};
+        #replace {result} {The trees here are tall and sparsely foliated, the effects of radiation and pollution taking their toll.} {};
+        #replace {result} {Noble and majestic, the Rockies rise up before you. They look steep and dangerous.} {};
+        #replace {result} {You wonder if they will ever grow into the lush, verdant forest that once stood here.} {};
+        
+        #replace {result} {You've got to wonder how anything could survive way out here in these harsh mountains.} {};
+        #replace {result} {The mountains around you rise and fall in a never ending pattern.} {};
+        #replace {result} {The trees here are impressively tall. They tower above you hundreds of feet, but for every tree there is a stump next to it.} {};
+        #replace {result} {The rugged peaks of the Rockies rise up all around you.} {};
+        #replace {result} {Storm clouds hang high on the mountain peaks, dark with rain or snow.} {};
+        #replace {result} {The mountains rise up around you and cast huge shadows over the valleys and cliffs that make up this incredible mountain range.} {};
+        #replace {result} {Some great force has ravaged the landscape.} {};
+        #replace {result} {Snow capped mountain peaks rise in the distance, a reminder of a once pure world.} {};
+        #replace {result} {Remarkably spared from the nuclear nightmare which washed over the United States, the lasting effects of the radiation can easily be seen here in the destruction of a once thriving ecosystem.} {};
+        
+        #replace {result} {This whole area looks like someone has come through and strip mined it. It looks much more desolate than the rest.} {};
+        
+        #replace {result} {It looks like you're in the mountains, high above the surrounding areas.} {};
+        #replace {result} {Huge mountains rise up before you here. They look steep and dangerous.} {};
+        #replace {result} {It looks like it has taken a long time to destroy this forest.} {};
+        #replace {result} {The trees here look like the pollution and smog have just about killed them off. You wonder if anything will grow here again.} {};
+        
+        #replace {result} {Huge stumps of old trees surround you here. It looks like something must have come through here and cut everything down.} {};
+        #replace {result} {Gigantic clouds of dust and pollution flow over the mountains here.} {};
+        
+        #replace {result} {You stand atop a small hill staring out over the countryside.} {};
+        #replace {result} {The soft ground is a comfort beneath your feet, a sure sign that life will continue to flourish here, even if it is only scrubgrass.} {};
+        #replace {result} {Small, rolling hills covered in scraggly grass and weeds march towards the horizon in every direction.} {};
+        #replace {result} {Tufts of grass sprout from the gently rolling hills.  Each looks as though it would be considered a weed elsewhere, but out here where water is scarce and the sun bakes the earth, they are a sight for sore eyes.} {};
+        #replace {result} {Blades of grass sway gently in the wind, struggling to survive in the dusty and dry heartland of North America.} {};
+        #replace {result} {The sun dips behind some clouds, hidden behind the dark promise of rain.} {};
+        #replace {result} {Gently rolling hills stretch out towards the horizon.} {};
+        #replace {result} {Clouds roll across the sky, carrying with them the faint promise of much needed rain.} {};
+        #replace {result} {Wind rustles through the grass and carries with it the hint of searing heat from nearby.} {};
+        #replace {result} {The desolation seen in the grasslands has only been spared in the hills because of the tentative hold that the plants have here.} {};
+        #replace {result} {The new Great Wall separating the wasteland of the former United States and the sovereign state of Canada rises up to the north} {};
+        #replace {result} {The chill waters of Lake Superior stretch out to the north as far as you can see.} {};
+        
+        #replace {result} {Soft, dark earth gives way beneath your feet as you travel through the sickly forests of the northeast.} {};
+        #replace {result} {Since the late twentieth century there have been warnings about the effects of acid rain, but now with the mass increase in industrialization and the radiation, the deforestation is at an all time high.} {};
+        #replace {result} {Strips of bark litter the forest floor, fallen from tree trunks nearby and leaving bare patches that gape like open wounds.} {};
+        #replace {result} {It is a sad state that these forests have fallen to.} {};
+        #replace {result} {The ground is sodden and bare, the life-giving minerals leeched out of it by punishing acidic rains.} {};
+        #replace {result} {Drops of water fall from the leaves above and stain your clothes a dark sickly color, a sure sign of the pollution they carry.} {};
+        
+        #replace {result} {Yellowed leaves cling to drooping branches in this twisted forest.} {};
+        #replace {result} {The trees around you almost seem to cry out in agony as their limbs weaken under the relentless assault of industry's by-products.} {};
+        #replace {result} {You can only imagine how beautiful these forests must have once been, before man and his progress shattered everything.} {};
+        #replace {result} {You've got to wonder how people could let such beauty be destroyed so completely.} {};
+        #replace {result} {Weak and sagging trees march along the hillsides.} {};
+        #replace {result} {Leaves rustle softly in a faint wind, a portent of the storm to come.} {};
+        #replace {result} {A storm which will only drown this area in more toxic rains.} {};
+        #replace {result} {Dark clouds blanket the sky, blotting out the sun and only making this desolate forest that much more depressing.} {};
+        #replace {result} {The new Great Wall separating the wasteland of the former United States and the sovereign state of Canada rises up to the (.*?).} {};
+        
+        #replace {result} {{The dusty plains (.*?) of New Mexico.}} {};
+        #replace {result} {{To the(.*?)continuation of the desert\.}} {};
+        #replace {result} {{To the(.*?)continuation of the badlands\.}} {};
+        #replace {result} {{To the(.*?)continuation of the wasteland\.}} {};
+        #replace {result} {{To the(.*?)continuation of the plains\.}} {};
+        #replace {result} {{To the(.*?)continuation of the swampland\.}} {};
+        #replace {result} {{To the(.*?)continuation of the Rockies\.}} {};
+        #replace {result} {{To the(.*?)continuation of the Appalachians\.}} {};
+        #replace {result} {{To the(.*?)continuation of the hills\.}} {};
+
+        #return $result;
+};
+
+#var finding_here on;
+
+/*************************************************************
+This action is to find the room exits after a long description
+Once we see this, we can conclude the room description is over
+*************************************************************/
+#act {=X={.*}} 
+{
+	#draw Yellow scroll line 1 1 1 80;
+        #var filtered @filterScience{{$long}};
+	#echo <303>$filtered<088>;
+	#draw Yellow scroll line 1 1 1 80;
+
+	#if {"$longcap" == "on"} 
+	{
+		#var longcap off;
+		#unact {%%1};
+
+	}
+} {1};
+
+/*************************************************************
+	This action tries to find a room description combined 
+	with exits
+*************************************************************/
+#act {{=S=(.*) \((.*)\)\s*=S=}} 
+{
+        
+	#var room %2;
+	#var exits %3;
+        #replace exits {,} {;};
+        #foreach {$exits} {eachexit} 
+        {
+                #switch {"$eachexit"} 
+                {
+                        #case {"north"}		{#map dig n};
+                        #case {"east"}		{#map dig e};
+                        #case {"south"}		{#map dig s};
+                        #case {"west"}		{#map dig w};
+                        #case {"northwest"}	{#map dig nw};
+                        #case {"northeast"}	{#map dig ne};
+                        #case {"southeast"}	{#map dig se};
+                        #case {"southwest"}	{#map dig sw};
+                        #case {"up"}		{#map dig u};
+                        #case {"down"}		{#map dig d};
+                        #default		{#map dig $eachexit}
+                }
+        };
+        #map get {roomexit} {rexit};
+        #foreach {$rexit} {eachexit} 
+        {
+                #map at {$eachexit} 
+                {
+                        #map get {roomarea} {eacharea};
+                        #if {"$eacharea" == ""} 
+                        {
+                                #map set {roomcolor} {<118>}
+                        };
+                };
+        };
+
+        #if {$roomname_len == 0} 
+        {
+                #map set roomname {%2 (%3)}
+        };
+        #if {$roomarea_len == 0} 
+        {
+                #map set roomarea {$area};
+                #map set roomcolor
+        };
+        #if {$roomdesc_len == 0 || "$finding_here" == "on"} 
+        {
+                #var longcap on;
+                #var long {};
+                #act {%%1} 
+                {
+                        #line gag;
+                        #if {@cartcheck{%%1}} 
+                        {
+                                #nop
+                        };
+                        #else
+                        {
+                                #var long { ${long}%%1 }
+                        }
+                } {2}
+        };
+        #delay 0 .renderMapInfo
+
+	.triggerEvent onRoomSeen;
+
+        
+} {1};
+
+
+#class {bot} {close}

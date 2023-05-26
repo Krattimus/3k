@@ -1,6 +1,10 @@
 #class {bot} {open}
 
-#var fish[pool] n
+#draw Yellow scroll line 1 1 1 80;
+#showme Fishing Level is set to: $fish[level]. Set var fish[level] to change it.
+#draw Yellow scroll line 1 1 1 80;
+
+#var fish[pool] $fish[level];
 
 /******************************************************************************
 	Data to be used for this patrol
@@ -25,7 +29,7 @@
 
 #act {^Suddenly something grabs hole of your line!!!} {reel}
 #act {^Even though you do everything right the catch manages to wriggle free} {fish}
-#act {^You fail to retreive your catch!} {fish}
+#act {^You fail to retrieve your catch!} {fish}
 #act {^You successfully manage to retrieve your catch!} {#send !take all; #send !fish;}
 #act {^You're too tired to do that.} {catch;fish}
 #act {^As no fish appear to be interested in your line, you pull it back up.} {bait rod;fish}
@@ -35,6 +39,14 @@
 	bait rod;
 	fish
 }
+
+
+#act {^Your fishing rod bends violently and cracks in two!} {
+	thread rod;
+	bait rod;
+	fish;
+}
+
 #act {^You hear a loud snap as your line breaks!} {
 	thread rod;
 	bait rod;
@@ -63,6 +75,8 @@
 	#send !return;
 	#class bot kill;
 }
+
+
 
 #act {^You have nothing to thread the rod with!} {
 	#draw Yellow scroll line 1 1 1 80;

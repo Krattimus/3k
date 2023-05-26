@@ -2,11 +2,6 @@
 #class {explorer} {open}
 
 
-#action {Nightmare gurgles in its own blood as it dies} {#send in; #map go 4315;} {1};
-#action {Nightmare screeches in agony and falls to the ground} {#send in; #map go 4315;} {1};
-#action {Krat dealt the killing blow to Nightmare.} {#send in; #map go 4315;} {1};
-
-
 /************************************************************************
 	Ansify search results
 ************************************************************************/
