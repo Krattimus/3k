@@ -5,6 +5,188 @@
 #var gate 0;
 
 
+#ACTION {{This ring would appear to help with your (\w*\s?-?\w*)}} {
+        #SUBSTITUTE {%2} {<338>%2<088>}; 
+        #DELAY {2} {#UNSUBSTITUTE {%2}};
+    };
+    
+    #ACTION {{(\w*\s?-?\w*),(\s?\w*\s?-?\w*,)? and (\w*\s?-?\w*) skills.}} {
+        #SUBSTITUTE {%2} {<338>%2<088>}; 
+        #DELAY {2} {#UNSUBSTITUTE {%2}};
+        #IF {"%3" != ""} {
+            #SUBSTITUTE {%3} {<338>%3<088>};
+            #DELAY {2} {#UNSUBSTITUTE {%3}};
+        };
+        #SUBSTITUTE {%4} {<338>%4<088>};
+        #DELAY {2} {#UNSUBSTITUTE {%4}};
+    };
+
+
+
+
+#alias {.doTaco} {e;grab shell}
+#act {a stale taco shell: Ok} {get all;grab shell}{1};
+#act {a handful of shredded lettuce: Ok} {get all;grab lettuce} {1};
+#act {a handful of diced tomatoes: Ok} {get all;grab tomatoes} {1};
+#act {a handful of grated cheese: Ok} {get all;grab cheese} {1};
+#act {a pile of ground meat: Ok} {get all;grab meat} {1};
+#act {a glop of sour cream: Ok} {get all;grab cream} {1};
+#act {a lump of pasty guacamole: Ok} {get all;grab guacamole} {1};
+#act {a packet of hot sauce: Ok} {get all;grab sauce} {1};
+
+#action {slippery that none of your armor seems to want to stay on} {#send !wear all};
+
+#act {Krat skips: a stale taco shell.} {get all;grab shell}
+#act {You try to grab a taco shell, but they all wriggle away from your grasp!} {e;grab lettuce}
+#act {Krat skips: a handful of shredded lettuce.} {get all;grab lettuce}
+#act {You try to grab some lettuce, but it shrinks away from your hand!} {e;grab tomatoes}
+#act {Krat skips: a handful of diced tomatoes.} {get all;grab tomatoes}
+#act {You try to grab some tomatoes but they quiver like jello and slime away} {e;grab cheese}
+#act {Krat skips: a handful of grated cheese.} {get all;grab cheese}
+#act {You try to grab a handful of cheese, but it slips away from you.} {s;grab meat}
+#act {Krat skips: a pile of ground meat.} {get all;grab meat}
+#act {You try to grab some meat, but it creeps away from your grasp!} {w;grab cream}
+#act {Krat skips: a glop of sour cream.} {get all;grab cream}
+#act {You try to grab a scoop of the sour cream, but it quivers away from you.} {w;grab guac}
+#act {Krat skips: a lump of pasty guacamole.} {get all;grab guac}
+#act {You try to grab a scoop of the guacamole, but it quivers away from you.} {w;grab sauce}
+#act {Krat skips: a packet of hot sauce.} {get all;grab sauce}
+#act {You try to grab a packet of hot sauce, but it crinkles away from you.} {#nop}
+#act {The guacamole coating %w finally oozes off.} {!wear all}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#action {The minotaur grabs you and pulls you back!} {#map undo;};
+
+#gag {Your brain swirls with power!};
+#gag {You feel great!};
+#gag {Your body is packed with strength!};
+
+#alias .killed 
+{
+        #if { "%0" == "" }
+        {
+                killed;
+        };
+        #else
+        {
+                #highlight {%%i%%*%0%%*} {<338>};
+                #send killed;        
+
+                #delay {2} 
+                {
+                                #unhighlight {%%i%%*%0%%*} {<338>};
+                } {1};
+        };
+};
+
+
+
+#alias .mapTellPath
+{
+        #map at {{roomnote}{%1}} #map get roomvnum roomid;
+        #map find $roomid;
+        #path save forward pathToWalk;
+
+        #map get roomname {currentName};
+        #map get roomarea {currentArea};
+        #map at {{roomnote}{%1}} #map get roomname {destName};
+        #map at {{roomnote}{%1}} #map get roomarea {destArea};
+
+        #replace {pathToWalk} {\;} {,};
+        #send !tell %2 Showing directions from $currentName in $currentArea to $destName in $destArea;
+        #send !tell %2 $pathToWalk;
+};
+
+#alias .mapSayPath
+{
+        #map at {{roomnote}{%0}} #map get roomvnum roomid;
+        #map find $roomid;
+        #path save forward pathToWalk;
+
+        #map get roomname {currentName};
+        #map get roomarea {currentArea};
+        #map at {{roomnote}{%1}} #map get roomname {destName};
+        #map at {{roomnote}{%1}} #map get roomarea {destArea};
+
+        #replace {pathToWalk} {\;} {,};
+        #send say %2 Showing directions from $currentName in $currentArea to $destName in $destArea;
+        #send say %2 $pathToWalk;
+};
+
+#alias .mapShowPath
+{
+        #var savedID $currentRoomID;
+        #var destination %1;
+        #var pathToWalk {};
+
+        #if { "%2" != "" }
+        {
+                .mapGo %1;
+                #var destination %2;
+        };
+
+        #map at {{roomnote}{$destination}} #map get roomvnum roomid;
+        #map find $roomid;
+        #path save forward pathToWalk;
+
+        #map get roomname {currentName};
+        #map get roomarea {currentArea};
+        #map at {{roomnote}{$destination}} #map get roomname {destName};
+        #map at {{roomnote}{$destination}} #map get roomarea {destArea};
+
+        #draw Yellow scroll line 1 1 1 80;
+        #showme Directions from $currentName in $currentArea to $destName in $destArea;
+        #draw Yellow scroll line 1 1 1 80;
+        #showme $pathToWalk;
+
+        #if { "%2" != "" }
+        {
+                #map go $savedID;
+        };
+};
+
+
+#alias .dispense
+{
+        #map set roomsymbol %1;
+        dispense %1;
+};
+
+#alias .mark
+{
+        #map set roomsymbol %1;
+        drop %1 coins;
+};
+
+#alias .solveHellMaze
+{
+        .d;.e;.n;.e;.e;.d;.d;.n;.n;.e;.e;.d;.d;.e;.n;.n;.e;.e;.d;.d;.e;.n;.n;.e;
+        .mapGo hell_sign;
+};
+
 #alias .unlockAlchemy
 {
         .go westersea_curios;
@@ -24,6 +206,21 @@
         unwrap; absorb corpse with rod; expunge %1; take bead;
 };
 
+
+#alias .a
+{
+        .go lyriac;
+        say key;
+};
+
+#alias .b 
+{
+        .mapGo ravenloft_keep;
+        #map move e;
+        #map move n;
+        .go lyriac;
+        say key;
+};
 
 #action {Nightmare gurgles in its own blood as it dies} 
 {
@@ -45,24 +242,23 @@
 
 #alias postRavenloft
 {
-        #if { $gate == 0 }
+        #if { $settings[bootRun] }
         {
-                #send in; 
-                #map go 4315;
-                .go ravenloft_mechanism;
-                #var gate 1;
+                #if { $gate == 0 }
+                {
+                        #send in; 
+                        #map go 4315;
+                        .go ravenloft_keep;
+                        #var gate 1;
+                };
         };
-};
+        #else
+        {
 
-
-#alias .dbImportItems
-{
-        #script {python3 3k/TinTin/Tools/getItems.py};
-};
-
-#alias .dbImportMobs
-{
-        #script {python3 3k/TinTin/Tools/getMobs.py};
+                #draw Yellow scroll line 1 1 1 80;
+                #showme Post Ravenloft Jump turned off;
+                #draw Yellow scroll line 1 1 1 80;
+        };
 };
 
 

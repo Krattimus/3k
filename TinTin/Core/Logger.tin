@@ -199,7 +199,7 @@
 {
 
 	#draw Yellow scroll line 1 1 1 80;
-	#script {python3 3k/TinTin/Tools/getItems.py "$area";};
+	
 	#draw Yellow scroll line 1 1 1 80;
 };
 

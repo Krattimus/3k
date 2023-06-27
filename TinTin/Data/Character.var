@@ -2,8 +2,8 @@
 
 #VARIABLE {char}
 {
-    {area} {Dundee Poachers}
-    {currentRoomID} {3140}
+    {area} {Pinnacle Morgue}
+    {currentRoomID} {107}
     {guild} {Monk}
     {ourCharacter} {Krat}
 }

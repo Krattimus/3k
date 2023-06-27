@@ -14,6 +14,9 @@
 #var settings[shouldProcessCorpse] 1;
 #var settings[acceptMissions] 1;
 
+
+#var settings[bootRun] 0;
+
 /************************************************************
 	Shows current settings
 ************************************************************/

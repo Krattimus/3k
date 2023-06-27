@@ -5,7 +5,7 @@
 /************************************************************************
 	Ansify search results
 ************************************************************************/
-
+#macro \e[15~ {esearch};
 #highlight {You search your surroundings thoroughly but come up with nothing.} {<038>};
 
 #highlight {You search a bit and find nothing.} {<038>};
@@ -50,22 +50,37 @@
 #highlight {You search through the graveyard and find nothing of any virtue.} {<038>};
 #highlight {You search the graveyard floor and find nothing of interest.} {<038>};
 
+
+#highlight {You search through the crypt nervously ...} {<038>};
+#highlight {... but you don't find anything worth investigating further.} {<038>};
+
+ 
+
+#highlight {You search around nervously...} {<038>};
+#highlight {...but find nothing despite your valiant efforts.} {<038>};
+
+ 
+
+#highlight {You stop a moment and search the forest path ...} {<038>};
+#highlight {... much to your disappointment you find nothing.} {<038>};
+
 #highlight {You have never been here before.} {<338>};
 #highlight {There are secret or hidden exits in this room.} {<338>};
 
 
 #alias .explorerOn
 {
-	#highlight {door} {<338>};
-	#highlight {eastern} {<338>};
-	#highlight {western} {<338>};
-	#highlight {northern} {<338>};
-	#highlight {southern}  {<338>};
-	#highlight {something} {<338>};
-	#highlight {crack} {<338>};
-	#highlight {plaque} {<338>};
-	#highlight {button} {<338>};
-	#highlight {lever} {<338>};
+	#highlight {%i{door}} {<338>};
+	#highlight {%i{eastern}} {<338>};
+	#highlight {%i{western}} {<338>};
+	#highlight {%i{northern}} {<338>};
+	#highlight {%i{southern}}  {<338>};
+	#highlight {%i{something}} {<338>};
+	#highlight {%i{crack}} {<338>};
+	#highlight {%i{plaque}} {<338>};
+	#highlight {%i{button}} {<338>};
+	#highlight {%i{lever}} {<338>};
+	#highlight {%i{enter}} {<338>};
 	#highlight {%i{you could}} {<338>};
 
 	#highlight {%i{box}} {<338>};
@@ -73,7 +88,6 @@
 	#highlight {%i{crate}} {<338>};
 	#highlight {%i{hole}} {<338>};
 	#highlight {%i{bin}} {<338>};
-
 
 	#highlight {%i{could probably}} {<338>};
 	#highlight {%i{probably could}} {<338>};
@@ -96,16 +110,15 @@
 	#unhighlight {%i{box}};
 	#unhighlight {%i{chest}};
 	#unhighlight {%i{crate}};
-
-	#unhighlight {door};
-	#unhighlight {eastern};
-	#unhighlight {western};
-	#unhighlight {northern};
-	#unhighlight {southern};
-	#unhighlight {something};
-	#unhighlight {crack};
-	#unhighlight {button};
-
+	#unhighlight {%i{door}};
+	#unhighlight {%i{eastern}};
+	#unhighlight {%i{western}};
+	#unhighlight {%i{northern}};
+	#unhighlight {%i{southern}};
+	#unhighlight {%i{something}};
+	#unhighlight {%i{crack}};
+	#unhighlight {%i{button}};
+	#unhighlight {%i{enter}};
 	#unhighlight {%i{to the west}};
 	#unhighlight {%i{to the east}};
 	#unhighlight {%i{to the north}};
@@ -115,9 +128,8 @@
 	#unhighlight {%i{to the northwest}};
 	#unhighlight {%i{to the northeast}};
 	#unhighlight {%i{you could}};
-	#unhighlight {plaque};
-	#unhighlight {lever};
-
+	#unhighlight {%i{plaque}};
+	#unhighlight {%i{lever}};
 	#unhighlight {%i{could probably}};        
 	#unhighlight {%i{probably could}};
 	#unhighlight {%i{You might be}};

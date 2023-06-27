@@ -7,12 +7,12 @@
 **************************************************************/
 
 
-#var dirs[n] overhere;
-#var dirs[s] thatway;
-#var dirs[e] yonder;
+#var dirs[n] overthere;
+#var dirs[s] yonder;
+#var dirs[e] overhere;
 #var dirs[w] thisway;
 #var dirs[u] anotherway;
-#var dirs[d] overthere;
+#var dirs[d] thatway;
 
 #alias {.n} { #send !$dirs[n]; #map move n; };
 #alias {.s} { #send !$dirs[s]; #map move s; };

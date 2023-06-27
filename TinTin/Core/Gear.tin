@@ -1,0 +1,11 @@
+#class {gear} {open}
+
+
+
+#alias {.sash}
+{
+	remove sash;
+	wear sash;
+};
+
+#class {gear} {close}

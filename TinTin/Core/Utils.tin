@@ -33,6 +33,18 @@
 };
 
 /*****************************************************************
+	Character At
+    Returns the character of a string at a given index:
+	Ex:  @charAt{ {2} {This is some string}};
+	$result => i
+*****************************************************************/
+#function charAt
+{
+        #var result @substr{ {%2} {%1} {1}};
+        #return $result;
+};
+
+/*****************************************************************
 	Substring. 
 	The two parameters here represent a starting index and a length
 		Ex:  @substr{ {something} {2} {5} };
@@ -262,16 +274,8 @@
 }
 
 
-#alias {.run} 
-{
-        #config speedwalk on;
-        %0;
-        #config speedwalk off
-}
-
-
 
 #function slice {#format slice_len %L {%1};#local a {%2};#local b {%3};#if {$a<0} {#math a {$slice_len+$a};};#if {$b<0} {#math b {$slice_len+$b};};#math slice_len {$b-$a+1};#var result {@substr{{%1};$a;$slice_len}};};
 
 
-#CLASS {vars} CLOSE
+#CLASS {utils} CLOSE

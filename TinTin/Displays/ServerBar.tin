@@ -2,44 +2,6 @@
 
 #class {serverbar} {open}
 
-#BUTTON {18 70 20 77} 
-{
-	i;
-} {5};
-
-#BUTTON {18 61 20 68} 
-{
-	.go cot;
-} {5};
-
-#button {18 88 20 95}
-{
-	.map;
-};
-
-#button {18 79 20 86} 
-{
-	#if	{ "$controllers[current]" == "miner" || "$controllers[toStart]" == "miner" }
-	{
-		.stop;
-	};
-	#else
-	{
-		.goMining 1;
-	};
-};
-
-#button {18 97 20 104}
-{
-	#if	{ "$controllers[current]" == "patrol" || "$controllers[toStart]" == "patrol" }
-	{
-		.stop;
-	};
-	#else
-	{
-		.goPatrolling pol;
-	};
-};
 
 
 
@@ -84,37 +46,6 @@
 
 	#SHOWME {<088> <128>$world_cap <038>Reboot: <138>$reboot_cap <228>$idle_cap<088>  $areacap $taocap<088>} {$chat[height]+1};
 
-	#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 61 20 68 {<038>🏠<088>};};
-	
-	#if { $inventoryOpen }
-	{
-		#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 70 20 77 {<168> 📦 <088>};};
-	};
-	#else
-	{
-		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 70 20 77 {<038> 📦 <088>};};
-	};
-	
-	#if	{ "$controllers[current]" == "miner" || "$controllers[toStart]" == "miner" }
-	{
-		#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 79 20 86 {<038>⛏️<088>};};
-	};
-	#else
-	{
-		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 79 20 86 {<038>⛏️<088>};};
-	};
-
-	#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 88 20 95 {<038>🌎<088>};};
-
-	
-	#if	{ "$controllers[current]" == "patrol" || "$controllers[toStart]" == "patrol" }
-	{
-		#delay 0 {#draw <168> TUBED FILLED CALIGN rounded box 18 97 20 104 {<038>🏞️<088>};};
-	};
-	#else
-	{
-		#delay 0 {#draw <148> TUBED FILLED CALIGN rounded box 18 97 20 104 {<038>🏞️<088>};};
-	};
 };
 
 #class {serverbar} {close}

@@ -21,9 +21,15 @@
 *******************************************************************************/
 #act {key: Taken.} {gl;} {2};
 #act {gloves: Taken.} {gl;} {2};
+#act {Gloves of Acid Protection: Ok} {gl;} {2};
 #act {You keep Gloves of Acid Protection.} {gl;}
+
+
+#act {You keep *Gloves of Acid Protection.} {gl;}
+
 #act {You sweep your hand over {one|some} of the higher shelves} {gl;}
 #act {You reach in and snatch the key from the deadly acid.} {gl;}
 #act {You slip the key into the lock and unlock the door} {gl;}
+#act {Utilizing the acid gloves, you reach into the pool and safely} {gl;}
 
 #class {bot} {close}

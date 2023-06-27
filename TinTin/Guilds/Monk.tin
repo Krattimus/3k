@@ -34,6 +34,12 @@
 	{
 		wrap;
 	};
+
+	#if { $my[hp][current] <= $my[hp][max] }
+	{
+		#send !hands;
+	};
+	
 	#var monk[palm] 0;
 	#var monk[pressure] 0;
 };
@@ -53,11 +59,10 @@
 	#var monk[power] $power;
 };
 
-
 /**********************************************************************************
 	Read speed and power from guild score
 **********************************************************************************/W
-#act {HP: %d/%d PP: %d/%d Chi: %d/%d G2:{[\d\-]+} Mind: %d AE:%d/%d%% CF:%w} 
+#action {HP: %d/%d PP: %d/%d Chi: %d/%d G2:{[\d\-]+} Mind: %d AE:%d/%d%% CF:%w} 
 {
 	#var {my[hp][current]}	{%1};
 	#var {my[hp][max]}	{%2};
@@ -258,7 +263,7 @@
 #gag {With skill and speed you dodge the attack!};
 #gag {Your great speed allows you to attack again!};
 
-
+#gag {Psionic waves emanate from your body.};
 
 
 

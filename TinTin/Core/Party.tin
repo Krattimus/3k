@@ -13,14 +13,20 @@
 		#list party find $party_member party_found;
 		#if { $party_found == 0 } 
 		{
-			#list party add $party_member
+			#list party add $party_member;
 		}
 	} {1};
 
 	#delay {party_capture} 
 	{
 		#unaction {^%w %+ (%w%s)};
-	} {0.5}
-}
+		#if { @getNumElements{ {list} } > 1 }
+		{
+			#var settings shouldLoot 0;
+			#var settings shouldProcessCorpse 0;
+			#var settings shouldVacuum 0;
+		}
+	} {0.5};
+};
 
 #class {party} close
