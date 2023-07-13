@@ -4957,10 +4957,10 @@
         {Mobs} 
         {
             {1} {A Huge Braincell}
-            {2} {A Small Braincell}
-            {3} {A Manic Braincell}
-            {4} {A Large Braincell}
-            {5} {A Mean Braincell}
+            {2} {A Large Braincell}
+            {3} {A Mean Braincell}
+            {4} {A Manic Braincell}
+            {5} {A Small Braincell}
             {6} {Einstein}
         }
         {Ratings} 
@@ -8610,25 +8610,25 @@
             {8} {Pennywise the Valithyn}
             {9} {Green Chinese Dragon}
             {10} {Black Tiger}
-            {11} {White Tiger}
-            {12} {Drop Bear}
-            {13} {Marsh Snake}
-            {14} {Short-tailed Shrew}
-            {15} {Swamp Crocodile}
-            {16} {Permit Officer}
-            {17} {Blue Dolphin}
-            {18} {Golden Phoenix}
-            {19} {A tank named Nacelle}
-            {20} {Ellegon's Jugger Support Mech}
-            {21} {Neelix, Ellegon's Irish Wolfhound}
-            {22} {Winged Horse}
-            {23} {Sea Serpent}
-            {24} {Leaping Rat}
-            {25} {Jade Phoenix}
-            {26} {Gold Chinese Dragon}
-            {27} {Princess Qi}
-            {28} {Lumbering Ox}
-            {29} {Purple Butterfly}
+            {11} {Drop Bear}
+            {12} {Marsh Snake}
+            {13} {Short-tailed Shrew}
+            {14} {Swamp Crocodile}
+            {15} {Permit Officer}
+            {16} {Blue Dolphin}
+            {17} {Golden Phoenix}
+            {18} {A tank named Nacelle}
+            {19} {Ellegon's Jugger Support Mech}
+            {20} {Neelix, Ellegon's Irish Wolfhound}
+            {21} {Winged Horse}
+            {22} {Sea Serpent}
+            {23} {Leaping Rat}
+            {24} {Jade Phoenix}
+            {25} {Gold Chinese Dragon}
+            {26} {Lumbering Ox}
+            {27} {Purple Butterfly}
+            {28} {Princess Qi}
+            {29} {White Tiger}
         }
         {Ratings} 
         {
@@ -17303,14 +17303,14 @@
             {1} {Stone Golem [dying] }
             {2} {Glass Golem }
             {3} {Zelligar the Learned Golem Master}
-            {4} {Clay Golem}
-            {5} {Stone Golem}
-            {6} {Straw Golem}
-            {7} {Mud Golem}
-            {8} {Glass Golem}
-            {9} {Flesh Golem}
-            {10} {Steel Golem}
-            {11} {Zelligar the Superior Golem Master}
+            {4} {Stone Golem}
+            {5} {Straw Golem}
+            {6} {Zelligar the Superior Golem Master}
+            {7} {Glass Golem}
+            {8} {Mud Golem}
+            {9} {Clay Golem}
+            {10} {Flesh Golem}
+            {11} {Steel Golem}
             {12} {Zelligar}
         }
         {Ratings} 
