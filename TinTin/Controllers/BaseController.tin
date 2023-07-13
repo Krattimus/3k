@@ -104,8 +104,14 @@ prompt >$nl$;
 #action {^=A= %*.$} 
 {
 	#var found[item] 1;
-	#list {event[items]} {add} {%1};
-	#var event[lastItemFound] %1;
+
+	#var itemFound %1;
+	#replace itemFound {{ \\x7B.*\\x7D}} {};
+	#replace itemFound {{\(.*\)}} {};
+	#replace itemFound {{\[.*\]}} {};	
+
+	#list {event[items]} {add} {$itemFound};
+	#var event[lastItemFound] $itemFound;
 	.triggerEvent onItemFound;
 };
 
@@ -115,8 +121,14 @@ prompt >$nl$;
 #action {^=W= %*.$} 
 {
 	#var found[item] 1;
-	#list {event[items]} {add} {%1};
-	#var event[lastItemFound] %1;
+
+	#var itemFound %1;
+	#replace itemFound {{ \\x7B.*\\x7D}} {};
+	#replace itemFound {{\(.*\)}} {};
+	#replace itemFound {{\[.*\]}} {};	
+
+	#list {event[items]} {add} {$itemFound};
+	#var event[lastItemFound] $itemFound;
 	.triggerEvent onItemFound;
 };
 
@@ -161,8 +173,14 @@ prompt >$nl$;
 	#if { !@isFilteredFromPickup{%0} }
 	{
 		#var found[item] 1;
-		#list {event[items]} {add} {%1};
-		#var event[lastItemFound] %1;
+		#var itemFound %1;
+		#replace itemFound {{ \\x7B.*\\x7D}} {};
+		#replace itemFound {{\(.*\)}} {};
+		#replace itemFound {{\[.*\]}} {};	
+	
+
+		#list {event[items]} {add} {$itemFound};
+		#var event[lastItemFound] $itemFound;
 		
 		.triggerEvent onItemFound;
 	};
@@ -520,6 +538,7 @@ prompt >$nl$;
 *************************************************************/
 #alias {onExitedRoomBase} 
 {
+	
 	#var event[rating] {};
 	.clearData;
 };

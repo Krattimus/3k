@@ -133,6 +133,8 @@
 }
 #act {^You touch the beacon, and a friendly ship belonging to The Vigilant swings by.} {#map goto 10278}
 
+#action {The minotaur grabs you and pulls you back!} {#map undo;};
+
 #NOP Kyoto
 #act {^=S=A Poorly-lit Street} {
 	#var kyoto yes

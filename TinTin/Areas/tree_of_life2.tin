@@ -1,0 +1,36 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 24606;
+#var patrol[area] {Tree of Life 2};
+#var patrol[path] {e;e;e;e;e;e;e;e;e;e;e;e;e;e;e;e;e;e;e;e;e;}
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{Sandalphon}{angel}
+	{Gabriel}{angel}
+	{Michael}{angel}
+	{Haniel}{angel}
+	{Raphael}{angel}
+	{Khamael}{angel}
+	{Tzaphkiel}{angel}
+	{Tzadkiel}{angel}
+	{Ratziel}{angel}
+	{Metatron}{angel}
+	
+};
+
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+
+#class {bot} {close}

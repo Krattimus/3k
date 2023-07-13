@@ -44,4 +44,48 @@
 ************************************************/
 #action {{^Resistances:}} {#showme Resist Type:   Edge  Blnt  Fire   Ice  Acid  Elec  Mind  Enrg  Pois  Radi}
 
+/**************************************************************
+	Adds a highlight to the reps output for readability
+**************************************************************/
+#alias .rep 
+{
+        #if { "%0" == "" }
+        {
+                reps;
+        };
+        #else
+        {
+                #highlight {%%i%0%%*\|%%*} {<338>};reps;
+
+                #delay {2} 
+                {
+                        #unhighlight {%%i%0%%*\|%%*} {<338>};
+                } {1};
+        };
+};
+
+
+/**************************************************************
+	Adds a highlight to the killed output for readability
+**************************************************************/
+#alias .killed 
+{
+        #if { "%0" == "" }
+        {
+                killed;
+        };
+        #else
+        {
+                #highlight {%%i%%*%0%%*} {<338>};
+                #send killed;        
+
+                #delay {2} 
+                {
+                                #unhighlight {%%i%%*%0%%*} {<338>};
+                } {1};
+        };
+};
+
+
+
 #CLASS {stats} CLOSE

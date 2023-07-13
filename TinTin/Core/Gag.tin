@@ -78,15 +78,10 @@
 #gag {You press your advantage on your outsmarted foe!}
 #gag {Your tactical advantage ends.}
 
-#class {gags} {close}
-
-
-/* Eternals */
 #NOP Energy Well
 #gag {^The brilliant sphere flashes brightly.}
 #NOP Immunity
 #gag {^The assault glances harmlessly off your aura.}
-
 
 /* Dog */
 #gag {Your dog tears a chunk of flesh from }

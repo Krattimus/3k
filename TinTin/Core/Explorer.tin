@@ -2,19 +2,160 @@
 #class {explorer} {open}
 
 
+#alias .dispense
+{
+        #map set roomsymbol %1;
+        dispense %1;
+};
+
+#alias .mark
+{
+        #map set roomsymbol %1;
+        drop %1 coins;
+};
+
+
+/************************************************************************
+	Area specific
+************************************************************************/
+
+
+#alias .solveHellMaze
+{
+        .d;.e;.n;.e;.e;.d;.d;.n;.n;.e;.e;.d;.d;.e;.n;.n;.e;.e;.d;.d;.e;.n;.n;.e;
+        .mapGo hell_sign;
+};
+
+#alias .unlockAlchemy
+{
+        .go westersea_curios;
+        buy 7;
+        #delay 5
+        {
+                .go westersea_library; 
+                #delay 5 
+                { 
+                        #4 push left button; #8 push right button; plant box; .go westersea_alchemy;
+                };
+        };
+};
+
+
+
+#alias {.presentGems}
+{  
+        #send !present tyra's gem;
+        #send !present raqna's gem;
+        #send !present brenan's gem;
+}
+
+#alias {.hellmap} 
+{ 
+	gl;
+	#delay {2}
+	{
+		#var exits2 $exits;
+
+		#map get {roomcolor} {color};
+		#map set {roomcolor} {<088>};
+		#map set {roomid} {1};
+
+		#replace {exits2} {$dirs[n]} {north};
+		#replace {exits2} {$dirs[e]} {east};
+		#replace {exits2} {$dirs[w]} {west};
+		#replace {exits2} {$dirs[s]} {south};
+		#replace {exits2} {$dirs[u]} {up};
+		#replace {exits2} {$dirs[d]} {down};
+
+		#replace exits2 {,} {;};
+		#foreach {$exits2} {eachexit} 
+		{
+			#switch {"$eachexit"} 
+			{
+				#case {"north"}		{#map dig n};
+				#case {"east"}		{#map dig e};
+				#case {"south"}		{#map dig s};
+				#case {"west"}		{#map dig w};
+				#case {"northwest"}	{#map dig nw};
+				#case {"northeast"}	{#map dig ne};
+				#case {"southeast"}	{#map dig se};
+				#case {"southwest"}	{#map dig sw};
+				#case {"up"}		{#map dig u};
+				#case {"down"}		{#map dig d};
+				#default		{#map dig $eachexit}
+			}
+		};
+
+		#map get {roomexit} {rexit};
+		#foreach {$rexit} {eachexit} 
+		{
+			#map at {$eachexit} 
+			{
+				#map get {roomid} {rid};
+				#if { "$rid" != "1" }
+				{
+					#map set {roomarea} Hell;
+					#map set {roomcolor} {<118>}
+				};
+			}
+		}
+	};
+
+} {1};
+
+#alias .extractBead 
+{
+        unwrap; absorb corpse with rod; expunge %1; take bead;
+};
+
+#action {Nightmare gurgles in its own blood as it dies} 
+{
+	postRavenloft;
+} {1};
+#action {Nightmare screeches in agony and falls to the ground} {
+	postRavenloft;
+} {1};
+#action {Krat dealt the killing blow to Nightmare.} 
+{
+        postRavenloft;
+	
+} {1};
+
+#alias .toRavenloft
+{
+        jump;s;w;portal; portal eforest;s;s;sw;w;nw;enter mist;
+};
+
+#alias postRavenloft
+{
+        #if { $settings[bootRun] }
+        {
+                #if { $gate == 0 }
+                {
+                        #send in; 
+                        #map go 4315;
+                        .go ravenloft_keep;
+                        #var gate 1;
+                };
+        };
+        #else
+        {
+
+                #draw Yellow scroll line 1 1 1 80;
+                #showme Post Ravenloft Jump turned off;
+                #draw Yellow scroll line 1 1 1 80;
+        };
+};
+
+
 /************************************************************************
 	Ansify search results
 ************************************************************************/
 #macro \e[15~ {esearch};
 #highlight {You search your surroundings thoroughly but come up with nothing.} {<038>};
-
 #highlight {You search a bit and find nothing.} {<038>};
-
 #highlight {Try as you might, you can't seem to move it.  Maybe there is some sort} {<038>};
 #highlight {^of lock on it.} {<038>};
-
- 
-
 #highlight {You give the area a general search but come up empty handed} {<038>};
 #highlight {You search about, but fail to find anything.} {<038>};
 #highlight {You find nothing of interest.} {<038>};
@@ -49,21 +190,12 @@
 #highlight {You search through the mist and find nothing.} {<038>};
 #highlight {You search through the graveyard and find nothing of any virtue.} {<038>};
 #highlight {You search the graveyard floor and find nothing of interest.} {<038>};
-
-
 #highlight {You search through the crypt nervously ...} {<038>};
 #highlight {... but you don't find anything worth investigating further.} {<038>};
-
- 
-
 #highlight {You search around nervously...} {<038>};
 #highlight {...but find nothing despite your valiant efforts.} {<038>};
-
- 
-
 #highlight {You stop a moment and search the forest path ...} {<038>};
 #highlight {... much to your disappointment you find nothing.} {<038>};
-
 #highlight {You have never been here before.} {<338>};
 #highlight {There are secret or hidden exits in this room.} {<338>};
 

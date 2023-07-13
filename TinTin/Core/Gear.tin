@@ -8,4 +8,31 @@
 	wear sash;
 };
 
+
+#ACTION {{This ring would appear to help with your (\w*\s?-?\w*)}} {
+	#SUBSTITUTE {%2} {<338>%2<088>}; 
+	#DELAY {2} {#UNSUBSTITUTE {%2}};
+};
+
+#ACTION {{(\w*\s?-?\w*),(\s?\w*\s?-?\w*,)? and (\w*\s?-?\w*) skills.}} {
+	#SUBSTITUTE {%2} {<338>%2<088>}; 
+	#DELAY {2} {#UNSUBSTITUTE {%2}};
+	#IF {"%3" != ""} {
+		#SUBSTITUTE {%3} {<338>%3<088>};
+		#DELAY {2} {#UNSUBSTITUTE {%3}};
+	};
+	#SUBSTITUTE {%4} {<338>%4<088>};
+	#DELAY {2} {#UNSUBSTITUTE {%4}};
+};
+
+#action {{You are able to identify (*.)...}} 
+{
+	#SUBSTITUTE {%2} {<338>%2<088>};
+};
+
+#gag {Your brain swirls with power!};
+#gag {You feel great!};
+#gag {Your body is packed with strength!};
+
+
 #class {gear} {close}

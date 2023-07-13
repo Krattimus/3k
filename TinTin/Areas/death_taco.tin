@@ -1,0 +1,41 @@
+#class {bot} {open}
+
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 6508;
+#var patrol[area] {Death Taco};
+#var {patrol[path]} {e;grab shell}
+
+#act {a stale taco shell: Ok} {get all;grab shell}{1};
+#act {a handful of shredded lettuce: Ok} {get all;grab lettuce} {1};
+#act {a handful of diced tomatoes: Ok} {get all;grab tomatoes} {1};
+#act {a handful of grated cheese: Ok} {get all;grab cheese} {1};
+#act {a pile of ground meat: Ok} {get all;grab meat} {1};
+#act {a glop of sour cream: Ok} {get all;grab cream} {1};
+#act {a lump of pasty guacamole: Ok} {get all;grab guacamole} {1};
+#act {a packet of hot sauce: Ok} {get all;grab sauce} {1};
+
+#act {You try to grab a taco shell, but they all wriggle away from your grasp!} {e;grab lettuce}
+#act {You try to grab some lettuce, but it shrinks away from your hand!} {e;grab tomatoes}
+#act {You try to grab some tomatoes but they quiver like jello and slime away} {e;grab cheese}
+#act {You try to grab a handful of cheese, but it slips away from you.} {s;grab meat}
+#act {You try to grab some meat, but it creeps away from your grasp!} {w;grab cream}
+#act {You try to grab a scoop of the sour cream, but it quivers away from you.} {w;grab guac}
+#act {You try to grab a scoop of the guacamole, but it quivers away from you.} {w;grab sauce}
+#act {You try to grab a packet of hot sauce, but it crinkles away from you.} {#nop}
+#act {The guacamole coating %w finally oozes off.} {!wear all}
+
+#act {$char[ourCharacter] skips: a stale taco shell.} {get all;grab shell}
+#act {$char[ourCharacter] skips: a handful of shredded lettuce.} {get all;grab lettuce}
+#act {$char[ourCharacter] skips: a handful of diced tomatoes.} {get all;grab tomatoes}
+#act {$char[ourCharacter] skips: a handful of grated cheese.} {get all;grab cheese}
+#act {$char[ourCharacter] skips: a pile of ground meat.} {get all;grab meat}
+#act {$char[ourCharacter] skips: a glop of sour cream.} {get all;grab cream}
+#act {$char[ourCharacter] skips: a lump of pasty guacamole.} {get all;grab guac}
+#act {$char[ourCharacter] skips: a packet of hot sauce.} {get all;grab sauce}
+
+#action {slippery that none of your armor seems to want to stay on} {#send !wear all};
+
+#class {bot} {close}

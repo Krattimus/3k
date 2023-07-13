@@ -21,61 +21,34 @@
 #alias {.u} { #send !$dirs[u]; #map move u; };
 #alias {.d} { #send !$dirs[d]; #map move d; };
 
-#alias {.hellmap} 
-{ 
-	gl;
-	#delay {2}
-	{
-		#var exits2 $exits;
+/*************************************************************************
+	Send ansi settings
+*************************************************************************/
+#alias .setAnsi
+{
+	#send aset room_short_pref [33\;1m=S=[0m;
+	#send aset room_short_suff [33\;1m=S=[0m;
+	#send aset look_monster_pref [36m=M= [0m;
+	#send aset look_player_pref [32\;1m=P= [0m;
+	#send aset look_weapon_pref [32\;1m=W= [32;1m;
+	#send aset look_weapon_suff [0m;
+	#send aset look_armor_pref [37\;1m=A= [37;1m;
+	#send aset look_armor_suff [0m;
+	#send aset look_object [34\;1m=I= [0m;
+	#send aset look_other [34\;1m=I= [0m;
+	#send aset room_exits_pref [33\;1m=X=[0m;
+	#send aset room_exits_suff [33\;1m=X=[0m;
+	#send aset kill_pref [41m=K=;
+	#send aset kill_suff =K=[0m;
+	#send aset xp1 higreen;
+	#send aset xp2 hired;
+	#send aset xp3 hicyan;
+	#send aset xp4 cyan;
+}
 
-		#map get {roomcolor} {color};
-		#map set {roomcolor} {<088>};
-		#map set {roomid} {1};
-
-		#replace {exits2} {$dirs[n]} {north};
-		#replace {exits2} {$dirs[e]} {east};
-		#replace {exits2} {$dirs[w]} {west};
-		#replace {exits2} {$dirs[s]} {south};
-		#replace {exits2} {$dirs[u]} {up};
-		#replace {exits2} {$dirs[d]} {down};
-
-		#replace exits2 {,} {;};
-		#foreach {$exits2} {eachexit} 
-		{
-			#switch {"$eachexit"} 
-			{
-				#case {"north"}		{#map dig n};
-				#case {"east"}		{#map dig e};
-				#case {"south"}		{#map dig s};
-				#case {"west"}		{#map dig w};
-				#case {"northwest"}	{#map dig nw};
-				#case {"northeast"}	{#map dig ne};
-				#case {"southeast"}	{#map dig se};
-				#case {"southwest"}	{#map dig sw};
-				#case {"up"}		{#map dig u};
-				#case {"down"}		{#map dig d};
-				#default		{#map dig $eachexit}
-			}
-		};
-
-		#map get {roomexit} {rexit};
-		#foreach {$rexit} {eachexit} 
-		{
-			#map at {$eachexit} 
-			{
-				#map get {roomid} {rid};
-				#if { "$rid" != "1" }
-				{
-					#map set {roomarea} Hell;
-					#map set {roomcolor} {<118>}
-				};
-			}
-		}
-	};
-
-} {1};
-
-
+/*************************************************************************
+	Shows mapped directions
+*************************************************************************/
 #alias .dir
 {
 	#var exits2 $exits;
@@ -246,27 +219,6 @@
 		}
 	}
 };
-
-/**************************************************************
-	Adds a highlight to the reps output for readability
-**************************************************************/
-#alias .rep 
-{
-        #if { "%0" == "" }
-        {
-                reps;
-        };
-        #else
-        {
-                #highlight {%%i%0%%*\|%%*} {<338>};reps;
-
-                #delay {2} 
-                {
-                        #unhighlight {%%i%0%%*\|%%*} {<338>};
-                } {1};
-        };
-};
-
 
 
 #alias {.cls}

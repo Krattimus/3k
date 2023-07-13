@@ -208,9 +208,6 @@
 	#showme Left to explore [$exploredRooms] out of [$totalRooms];
 };
 
-
-
-
 /**************************************************************
 	Lists rooms that haven't been explicitly marked explored
 		Use: .describeUnexplored <areaname>
@@ -257,12 +254,6 @@
 	#draw Yellow scroll line 1 1 1 80;
 	#showme Left to explore [$exploredRooms] out of [$totalRooms];
 };
-
-
-
-
-
-
 
 /*************************************************************
  TinTin Events, redraw the map when the map data changes
@@ -554,6 +545,9 @@ The area has changed
 	};
 }
 
+/**************************************************************
+        Sets the map to a specific landmark
+**************************************************************/
 #alias {.mapGo} {#map goto {roomnote} {%0}}
 
 /**************************************************************
@@ -564,6 +558,9 @@ The area has changed
         #map go $room ($exits);
 };
 
+/*****************************************************************************
+	Finds here
+*****************************************************************************/
 #alias {findhere} 
 {
 	#var finding_here on;
@@ -584,6 +581,86 @@ The area has changed
 		.mapOff
 	}
 }
+
+
+/*****************************************************************************
+	Sends a path in tell 
+*****************************************************************************/
+#alias .mapTellPath
+{
+        #map at {{roomnote}{%1}} #map get roomvnum roomid;
+        #map find $roomid;
+        #path save forward pathToWalk;
+
+        #map get roomname {currentName};
+        #map get roomarea {currentArea};
+        #map at {{roomnote}{%1}} #map get roomname {destName};
+        #map at {{roomnote}{%1}} #map get roomarea {destArea};
+
+        #replace {pathToWalk} {\;} {,};
+        #send !tell %2 Showing directions from $currentName in $currentArea to $destName in $destArea;
+        #send !tell %2 $pathToWalk;
+};
+
+
+/*****************************************************************************
+	Says path to room src to dst
+*****************************************************************************/
+#alias .mapSayPath
+{
+        #map at {{roomnote}{%0}} #map get roomvnum roomid;
+        #map find $roomid;
+        #path save forward pathToWalk;
+
+        #map get roomname {currentName};
+        #map get roomarea {currentArea};
+        #map at {{roomnote}{%1}} #map get roomname {destName};
+        #map at {{roomnote}{%1}} #map get roomarea {destArea};
+
+        #replace {pathToWalk} {\;} {,};
+        #send say %2 Showing directions from $currentName in $currentArea to $destName in $destArea;
+        #send say %2 $pathToWalk;
+};
+
+
+/*****************************************************************************
+	Shows the path from src to dst
+*****************************************************************************/
+#alias .mapShowPath
+{
+        #var savedID $currentRoomID;
+        #var destination %1;
+        #var pathToWalk {};
+
+        #if { "%2" != "" }
+        {
+                .mapGo %1;
+                #var destination %2;
+        };
+
+        #map at {{roomnote}{$destination}} #map get roomvnum roomid;
+        #map find $roomid;
+        #path save forward pathToWalk;
+
+        #map get roomname {currentName};
+        #map get roomarea {currentArea};
+        #map at {{roomnote}{$destination}} #map get roomname {destName};
+        #map at {{roomnote}{$destination}} #map get roomarea {destArea};
+
+        #draw Yellow scroll line 1 1 1 80;
+        #showme Directions from $currentName in $currentArea to $destName in $destArea;
+        #draw Yellow scroll line 1 1 1 80;
+        #showme $pathToWalk;
+
+        #if { "%2" != "" }
+        {
+                #map go $savedID;
+        };
+};
+
+
+
+
 
 #alias {.describeRoom}
 {

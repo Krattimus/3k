@@ -32,6 +32,7 @@
 .registerEvent onRequestStartController onRequestStartPatroller;
 .registerEvent onRequestPrepareController onRequestPreparePatroller;
 .registerEvent onMobFound onMobFoundPatroller;
+.registerEvent onExitedRoom onExitedRoomPatroller;
 
 #alias onDebugLogPatroller
 {
@@ -39,6 +40,15 @@
 	#var patroller;
 	.showHeader Patrol;
 	#var patrol;
+};
+
+/***********************************************************
+	We left the room
+***********************************************************/
+#alias {onExitedRoomPatroller}
+{
+	#var patroller[playerAttacked] 0;
+	#var patroller[attacking] 0;
 };
 
 /***********************************************************
@@ -333,6 +343,11 @@
 		.mapAnchor;
 		#var patrol[anchored] $mapAnchor;
 		.triggerEvent onControllerFinished;
+
+		#if { $settings[shouldEnd] }
+		{
+			#end;
+		};		
 	};
 };
 

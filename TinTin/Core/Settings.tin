@@ -13,8 +13,7 @@
 #var settings[exploreActive] 1;
 #var settings[shouldProcessCorpse] 1;
 #var settings[acceptMissions] 1;
-
-
+#var settings[shouldEnd] 0;
 #var settings[bootRun] 0;
 
 /************************************************************

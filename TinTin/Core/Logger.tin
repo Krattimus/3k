@@ -197,11 +197,19 @@
 **************************************************************/
 #alias {.describeItems}
 {
-
 	#draw Yellow scroll line 1 1 1 80;
 	
 	#draw Yellow scroll line 1 1 1 80;
 };
+
+/**************************************************************
+    Log rating info
+**************************************************************/
+#action {This area has %d discovered rooms.}
+{
+        .addRatingToArea %1;
+};
+
 
 /**************************************************************
     Save the map file of the area to file
@@ -334,6 +342,200 @@
 
 		.addMobToMobsList {$event[mobKilled]} {$area} {} {$event[rating]} {$currentRoomID};
 	};
+};
+
+
+
+#function filterOutLongDescription
+{
+	#var result {%1};
+
+        
+        #replace {result} {{┬}} {};
+        #replace {result} {{┴}} {};
+        #replace {result} {{Zelligar's Headband warms you with a radiant glow.}} {};
+        #replace {result} {{There is no suitable corpse here to wrap!}} {};
+        #replace {result} {{With a final smack, you end(.*?)life.}} {};
+        #replace {result} {{That is not here or it is uninteresting.}} {};
+        #replace {result} {{You pick up (.*?) and wrap it}} {};
+        #replace {result} {{  (.*?) tells you: (.*?)  }} {};
+        #replace {result} {You wrap your arms around yourself.} {};
+        #replace {result} {Your great speed allows you to attack again!} {};
+        #replace {result} {There is no coins in the corpse.} {};
+        #replace {result} {Your great speed allows you to attack again!} {};
+        #replace {result} {Electricity crackles through your fingers.} {};
+        #replace {result} {{\([0-9]*\) \[[0-9]*\](.*?)\%}} {};
+        #replace {result} {{HP(.*?)AE [0-9]+ \[[0-9]+\%\]}} {};
+        #replace {result} {{Method:(.*?)AE: [0-9]+/[0-9]+\%}} {};
+        #replace {result} {{With a final(.*)life\.}} {};
+        #replace {result} {{It doesn't look too heavy.(.*)}} {};
+        #replace {result} {{Krat(.*?)Controller: (.*?) }} {};
+        #replace {result} {{CB: !}} {};
+        #replace {result} {{\[Clan\] (.*?)  }} {};
+        #replace {result} {{                  (.*?)  }} { };
+        #replace {result} {{                (.*?)  }} { };
+        #replace {result} {{              (.*?)  }} { };
+        #replace {result} {{            (.*?)  }} { };
+        #replace {result} {{   }} { };
+        #replace {result} {{^  [0-9]+\%}} {};
+        
+        #return $result;
+};
+
+
+/*************************************************************************
+        Adds rating data to an area. Mostly so if we have an area
+        made up of 4-5 subareas, we can associate all the roomcounts
+        to the umbrella area
+
+        .addRatingToArea {12} {Ravenloft};
+
+        Results:
+            areas[Ravenloft][Ratings] = { {...} {12} };
+*************************************************************************/
+#alias .addRatingToArea
+{
+        #var areaData $areas[$area];
+        #var ratingsList $areaData[Ratings];
+
+        removeAllItemsFromList {ratingsList} {%1};
+        
+        #list ratingsList add %1;
+        #var areaData[Ratings] $ratingsList;
+        #var areaData[Wizard] $wizardName;
+        #var areas[$area] $areaData;
+};
+
+/*************************************************************************
+        Adds an item to the Area data
+        Note: We aren't storing detailed information about the mob here.
+                This is just so an area can list it's known mobs.
+        
+                .addItemToAreaList {Sword} {Pinnacle}
+
+        Results in TinTin variable: 
+
+                areas[Pinnacle][Items] = { {...} {Sword} };
+*************************************************************************/
+#alias .addItemToAreaList
+{
+        #var itemName %1;
+        #var itemArea %2;
+        #var areaData $areas[$itemArea];
+
+        #var itemsList $areaData[Items];        
+        removeAllItemsFromList {itemsList} {$itemName};
+
+        #list itemsList add $itemName;
+        #var areaData[Items] $itemsList;
+        #var areas[$itemArea] $areaData;
+};
+
+/*************************************************************************
+        "$recordedItemName" "$capturedText" "$currentRoomID" "$area"
+*************************************************************************/
+#alias .addItemToItemsList
+{
+        #var itemName {%1};
+        #var itemDescrition {%2};
+        #var itemDescrition @filterOutLongDescription{{$itemDescrition}};
+        #var itemRoomID {%3};
+        #var itemArea {%4};
+
+		#showme CCCCCC - $itemName;
+
+};
+
+/*************************************************************************
+        Add a discovered mob to the Area data         
+        Note: We aren't storing detailed information about the mob here.
+                This is just so an area can list it's known mobs.
+        
+                .addMobToAreaList {Rat} {Pinnacle}
+
+        Results in TinTin variable: 
+
+                areas[Pinnacle][Mobs] = { {...} {Rat} };
+*************************************************************************/
+#alias .addMobToAreaList
+{
+        #var mobName {%1};
+        #var mobArea {%2};
+        #var areaData $areas[$mobArea];
+
+        #var mobsList $areaData[Mobs];        
+        removeAllItemsFromList {mobsList} {$mobName};
+
+        #list mobsList add $mobName;
+        #var areaData[Mobs] $mobsList;
+        #var areas[$mobArea] $areaData;
+};
+
+/*************************************************************************
+        Add a discovered mob from an area
+        Note: We separate the area's for collision purposes, and also
+                when generating searches, we use Area as a primary key
+                for most information
+        
+                .addMobToMobList {Rat} {Pinnacle} {This is a rat} {17} {32434}
+
+        Results in TinTin variable: 
+
+                mobs[Pinnacle][Rat] = 
+                {
+                        {Rating}{ {...}{17} }
+                        {Rooms}{ {...}{32434} }
+                        {Description}{This is a rat}
+                }
+*************************************************************************/
+#alias .addMobToMobsList
+{
+        #var mobName {%1};
+        #var mobArea {%2};
+        #var mobDesc {%3};
+        #var mobDesc @filterOutLongDescription{{$mobDesc}};
+        #var mobRating {%4};
+        #var mobRoom {%5};
+
+        #if { !@isFilteredFromLogging{$mobName} }
+        {
+                #var mobsInArea $mobs[$mobArea];
+
+                #if {{$mobsInArea} === {}}
+                {       
+                        #var mobsInArea {$mobArea};
+                };
+
+                #var mobEntry $mobsInArea[$mobName];
+
+                #if {{$mobEntry} === {}}
+                {
+                        #var mobEntry {{Ratings}{0}{Rooms}{-1}};
+                };
+
+                #if { "$mobDesc" != "" }
+                {
+                        #var mobEntry[Description] $mobDesc;
+                };
+
+                #var ratingsList $mobEntry[Ratings];
+                #var roomsList $mobEntry[Rooms];
+                
+                #if { $mobRating > 0 }
+                {
+                        removeAllItemsFromList {ratingsList} {$mobRating};
+                        #list ratingsList add $mobRating;
+                };
+
+                removeAllItemsFromList {roomsList} {$mobRoom};
+                #list roomsList add $mobRoom;
+                #var mobEntry[Ratings] $ratingsList;
+                #var mobEntry[Rooms] $roomsList;
+                #var mobsInArea[$mobName] $mobEntry;
+                #var mobs[$mobArea] $mobsInArea;
+
+                .addMobToAreaList {$mobName} {$mobArea};
+        };
 };
 
 #class {logger} {close}
