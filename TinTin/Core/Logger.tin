@@ -442,8 +442,40 @@
         #var itemRoomID {%3};
         #var itemArea {%4};
 
-		#showme CCCCCC - $itemName;
+        #if { !@isFilteredFromLogging{$itemName} }
+        {
+                #var itemsInArea $items[$itemArea];
 
+                #if {{$itemsInArea} === {}}
+                {       
+                        #var itemsInArea {$itemArea};
+                };
+
+                #var itemEntry $itemsInArea[$itemName];
+
+                #if {{$itemEntry} === {}}
+                {
+                        #var itemEntry {{Description}{}{Rooms}{-1}};
+
+                };
+
+                #if { "$itemDescrition" != "" }
+                {
+                        #var itemEntry[Description] $itemDescrition;
+                };
+
+                #var roomsList $itemEntry[Rooms];
+                
+
+                removeAllItemsFromList {roomsList} {$itemRoomID};
+                #list roomsList add $itemRoomID;
+
+                #var itemEntry[Rooms] $roomsList;
+                #var itemsInArea[$itemName] $itemEntry;
+                #var items[$itemArea] $itemsInArea;
+
+                .addItemToAreaList {$itemName} {$itemArea};
+        };
 };
 
 /*************************************************************************
