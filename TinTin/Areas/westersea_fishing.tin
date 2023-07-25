@@ -5,7 +5,10 @@
 #draw Yellow scroll line 1 1 1 80;
 
 #var fish[pool] $fish[level];
-
+#var fish[targetScore] {40};
+#var fish[maxTension] {35};
+#var fish[manual] {};
+#var fish[better] 0;
 /******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
@@ -28,46 +31,85 @@
 *******************************************************************************/
 
 #act {^Suddenly something grabs hole of your line!!!} {reel}
-#act {^Even though you do everything right the catch manages to wriggle free} {fish}
-#act {^You fail to retrieve your catch!} {fish}
-#act {^You successfully manage to retrieve your catch!} {#send !take all; #send !fish;}
-#act {^You're too tired to do that.} {catch;fish}
+#act {^Even though you do everything right the catch manages to wriggle free} 
+{
+	.logChat {<108>[Fishing]<088> Fish Lost ($fish[catch])};
+	#var fish[better] 0;
+	fish
+};
+
+#act {^You fail to retrieve your catch!} 
+{
+	.logChat {<108>[Fishing]<088> Fish Lost ($fish[catch])};
+	#var fish[better] 0;
+	fish;
+};
+
+#act {^You successfully manage to retrieve your catch!} 
+{
+	.logChat {<108>[Fishing]<088> <128>Fish Caught<088> ($fish[catch])};
+	#var fish[better] 0;
+	#send !take all; 
+	#send !fish;
+};
+
+#act {^You're too tired to do that.} 
+{
+	#var fish[better] 0;
+	catch;
+	fish;
+};
+
 #act {^As no fish appear to be interested in your line, you pull it back up.} {bait rod;fish}
 #act {^You notice that your bait is gone!} {bait rod;fish}
-#act {^You can't fish without a line!} {
+#act {^You can't fish without a line!} 
+{
+	#var fish[better] 0;
 	thread rod;
 	bait rod;
 	fish
-}
+};
 
 
-#act {^Your fishing rod bends violently and cracks in two!} {
+#act {^Your fishing rod bends violently and cracks in two!} 
+{
+	.logChat {<108>[Fishing] <118>Rod broke<088> ($fish[catch])};
+	#var fish[better] 0;
 	thread rod;
 	bait rod;
 	fish;
-}
+};
 
-#act {^You hear a loud snap as your line breaks!} {
+#act {^You hear a loud snap as your line breaks!} 
+{
+	.logChat {<108>[Fishing] <118>Line broke<088> ($fish[catch])};
+	#var fish[better] 0;
 	thread rod;
 	bait rod;
 	fish;
-}
-#act {^With a loud 'thwang', your line snaps. Perhaps you should pay more} {
+};
+
+#act {^With a loud 'thwang', your line snaps. Perhaps you should pay more} 
+{
+	.logChat {<108>[Fishing] <118>Line broke<088> ($fish[catch])};
+	#var fish[better] 0;
 	thread rod;
 	bait rod;
 	fish;
-}
+};
 
-#act {^Your fishing rod bends violenty and cracks in two!} {
+#act {^Your fishing rod bends violenty and cracks in two!} 
+{
 	#draw Yellow scroll line 1 1 1 80;
 	#showme GO BUY A ROD!;
 	#draw Yellow scroll line 1 1 1 80;
 
 	#send !return;
 	#class bot kill;
-}
+};
 
-#act {^You have nothing to bait the rod with!} {
+#act {^You have nothing to bait the rod with!}
+ {
 	#draw Yellow scroll line 1 1 1 80;
 	#showme GO BUY BAIT!;
 	#draw Yellow scroll line 1 1 1 80;
@@ -78,14 +120,22 @@
 
 
 
-#act {^You have nothing to thread the rod with!} {
+#act {^You have nothing to thread the rod with!} 
+{
 	#draw Yellow scroll line 1 1 1 80;
 	#showme GO BUY THREAD!;
 	#draw Yellow scroll line 1 1 1 80;
 
 	#send !return;
 	#class bot kill;
-}
+};
+
+#alias .reel { #var fish[manual] {reel}; };
+#alias .pullRight { #var fish[manual] {pull right}; };
+#alias .pullLeft { #var fish[manual] {pull left}; };
+#alias .slack { #var fish[manual] {slack}; };
+#alias .better { #var fish[better] 1; };
+
 
 #act {{End:(\d+) E Req:(\d+|[LHM]) Dis:(\d+|[LHM])(?:cm)? Dir:([LRC+]+) Ten:(\d+|[LMH]) Line:(\d+|[LMH])+\%? Catch:(\d+|[LMH])+\%?}} 
 {
@@ -96,6 +146,7 @@
 	#var fish[ten]		%6;
 	#var fish[line]		%7;
 	#var fish[catch]	%8;
+
 	#switch {"$fish[req]"} 
 	{
 		#case {"L"}	{#var fish[req] 40};
@@ -105,16 +156,31 @@
 	};
 
 	#if {"$fish[dist]" == "H"} { #var fish[dist] 200; };
-	#if {$fish[end] < $fish[req]} { #send !catch;};
- 	#if {$fish[ten] > 30 || "$fish[ten]" == "H" } { #send !slack;};
-	#if {$fish[catch] > 20} { #send !catch;};
-	#if {$fish[dist] > 100} { #send !reel;};
-	#elseif {"$fish[dir]" == "R"} {#send !pull left;};
-	#elseif {"$fish[dir]" == "L"} {#send !pull right;};
-	#elseif {$fish[dist] > 0} {#send !reel;};
-	#else { #nop {nothing}; };
 
-	#if {$fish[req] + 40 > $fish[end] && $fish[catch] > 15} {!catch;};
+	#if { "$fish[manual]" != "" }
+	{
+		#draw Yellow scroll line 1 1 1 80;
+		#showme $fish[manual];
+		#draw Yellow scroll line 1 1 1 80;
+		#send !$fish[manual];
+		#var fish[manual] {};
+	};
+	#else
+	{
+		#if { $fish[end] <= ($fish[req]+40)} { #send !catch;};
+		#elseif {$fish[catch] > $fish[targetScore] && !$fish[better]} { #send !catch; };
+		#elseif {$fish[ten] > $fish[maxTension] || "$fish[ten]" == "H" } { #send !slack;};
+		#elseif {"$fish[dir]" == "R++"} {#send !pull left;};
+		#elseif {"$fish[dir]" == "L++"} {#send !pull right;};
+		#elseif {$fish[dist] > 300} { #send !reel;};
+		#elseif {"$fish[dir]" == "R+"} {#send !pull left;};
+		#elseif {"$fish[dir]" == "L+"} {#send !pull right;};
+		#elseif {$fish[dist] > 100} { #send !reel;};
+		#elseif {$fish[ten] > 5 } { #send !slack;};
+		#elseif {"$fish[dir]" == "R"} {#send !pull left;};
+		#elseif {"$fish[dir]" == "L"} {#send !pull right;};
+		#else {#send !reel;};
+	};
 };
 
 #gag {^You can't do another action yet.}

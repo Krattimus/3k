@@ -1,6 +1,11 @@
 #class {gear} {open}
 
 
+#action {Velica says: The Demoniac Triad is no more.  The world is safe}
+{
+	.presentGems;
+};
+
 
 #alias {.sash}
 {
@@ -25,10 +30,6 @@
 	#DELAY {2} {#UNSUBSTITUTE {%4}};
 };
 
-#action {{You are able to identify (*.)...}} 
-{
-	#SUBSTITUTE {%2} {<338>%2<088>};
-};
 
 #gag {Your brain swirls with power!};
 #gag {You feel great!};

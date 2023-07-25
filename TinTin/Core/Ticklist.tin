@@ -1,7 +1,7 @@
 #showme READING TICKLIST
 #class {ticklist} {open}
 
-#alias {ticklist} 
+#alias {.tickers} 
 {
         #info tickers save;
         #draw Yellow scroll line 1 1 1 62;

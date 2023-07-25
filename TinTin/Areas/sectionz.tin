@@ -40,6 +40,13 @@
 };
 
 
+#action {%w will not let you pass!}
+{
+	#map undo;
+	#path move backward;
+    #send !k %w;
+    #var patroller[canWalk] 0;
+};
 
 
 #class {bot} {close}

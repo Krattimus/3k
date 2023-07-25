@@ -2,8 +2,40 @@
 
 #class {testbin} {open}
 
+
+#alias .pick
+{
+        pick box;
+        open box;
+};
+
+#alias .powers
+{
+
+
+
+
+};
+
+#alias .laCubes
+{
+        la cube;
+        la cube 2;
+        la cube 3;
+        la cube 4;
+};      
+
+#action {The cube starts to flicker in and out of existence} {wield axe}
+#action {A bright beam of light slams from the shimmering into the gigantic cube} {unwield axe};
+
 #var gate 0;
 
+#gag {A flash of insidious insight strikes you!};
+#gag {You enter a state of unarmed frenzy!};
+#gag {Your aura sparkles with blue lights!};
+#gag {Your amulet flashes, and you phase out of harms way!};
+#gag {A bolt of pure energy flies out of the sky striking %w};
+#gag {You bring your deadly natural weapons down on your opponent!};
 #gag {Bonehead, you're at max hit points already.};
 #gag {Performing: hands};
 #gag {Your body explodes in a *BLUR* of force and power!};
@@ -45,6 +77,17 @@
 	#var notes
 };
 
+
+
+#alias .ttt
+{
+        #map find 1;
+        #path save forward pathToWalk;
+        #foreach {$pathToWalk} {step} 
+        {
+                #showme STEP [$step];
+        };
+};
 
 #action {Raest leaves %1\.} 
 { 

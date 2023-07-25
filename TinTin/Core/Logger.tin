@@ -201,7 +201,7 @@
 	
 	#draw Yellow scroll line 1 1 1 80;
 };
-
+#line logmode html #map map 750 750 O map.html;
 /**************************************************************
     Log rating info
 **************************************************************/
@@ -217,7 +217,7 @@
 #alias .describeMap
 {
 	#local width %1;
-	#local height %;
+	#local height %2;
 
 	#if { "%1" == "" }
 	{
@@ -446,14 +446,14 @@
         {
                 #var itemsInArea $items[$itemArea];
 
-                #if {{$itemsInArea} === {}}
+                #if {&itemsInArea[] == 0}
                 {       
                         #var itemsInArea {$itemArea};
                 };
 
                 #var itemEntry $itemsInArea[$itemName];
 
-                #if {{$itemEntry} === {}}
+                #if {&itemEntry[] == 0}
                 {
                         #var itemEntry {{Description}{}{Rooms}{-1}};
 
