@@ -200,6 +200,10 @@
 #highlight {There are secret or hidden exits in this room.} {<338>};
 
 
+#highlight {It's an awfully big orchard and you'd probably still be searching by} {<038>};
+#highlight {nightfall.  Probably best you choose something a little more specific.} {<038>};
+
+
 #alias .explorerOn
 {
 	#highlight {%i{door}} {<338>};

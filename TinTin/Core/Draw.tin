@@ -1,9 +1,7 @@
 #CLASS draw {open}
 
-#var panelsOpen 0;
 #screen get rows screen[rows];
 #screen get cols screen[cols];
-#var screen[scroll] line;
 
 /************************************************************
 	Determine Dimensions
@@ -11,7 +9,7 @@
 #var alert[width] 1
 #var canvas[width] 43;
 
-#if { !$inventoryOpen && !$miner[isMining] }
+#if { @hasOpenPanel{} }
 { 
 	#var canvas[width] 0;
 }; 
@@ -28,35 +26,42 @@
 #var split[left]	$alert[width]
 #var split[right]	$canvas[width]
 
+/************************************************************
+	Split our UI into 4 'regions'
+************************************************************/
+#split $split[top] $split[bottom] $split[left] $split[right];
+
+#if { $settings[travelMap] }
+{
+	#math minH { $screen[rows] - $split[top] - $split[bottom]};
+	#split $split[top] $minH $split[left] $split[right];
+};
+
+/************************************************************
+	Render UI Frames
+************************************************************/
 #draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
 #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
 #showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
-
-
-
-/************************************************************
-	Split
-************************************************************/
-#split $split[top] $split[bottom] $split[left] $split[right]
 #screen clear split
-
 #draw {line} -2 1 -2 -1;
-/************************************************************
-	Render our displays
-		foreach display in display ( render );
-************************************************************/
-.renderServerBar;
-chatend;
-.renderHPBar;
 
-#if { $miner[isMining] }
+/************************************************************
+	Now render our displays
+************************************************************/
+#unvar allPanels;
+#list allPanels add {$screen[panels][]};
+#list allPanels add {$screen[sidePanels][]};
+#foreach {$allPanels[]} {panel} 
 {
-	.renderMiningPanel;
-}; #elseif { $inventoryOpen }
-{
-	.renderInventory;
+	#if { $screen[$panel] }
+	{
+		#var panelToRender .render;
+		#cat {panelToRender} {$panel};
+		$panelToRender;
+	};
 };
 
-.renderMiniMap;
+
 
 #CLASS draw {close}

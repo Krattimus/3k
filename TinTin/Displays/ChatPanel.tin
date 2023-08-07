@@ -2,6 +2,8 @@
 
 #class {chatpanel} {open}
 
+.registerPanel ChatPanel;
+
 #alias {.renderChat} 
 {
 	#var chat[rows] 17;
@@ -70,7 +72,7 @@
 	}
 }
 
-#alias {chatend} 
+#alias {.renderChatPanel} 
 {
 	#draw {green} {line} $chat[height] 1 $chat[height] -1;	
 	#var chat[page] 1;

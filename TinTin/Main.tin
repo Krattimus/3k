@@ -83,6 +83,9 @@
 	#read 3k/TinTin/Displays/PatrolDisplay.tin;
 	#read 3k/TinTin/Displays/InventoryPanel.tin;
 	#read 3k/TinTin/Displays/MiningPanel.tin;
+	#read 3k/TinTin/Displays/MobPanel.tin;
+	#read 3k/TinTin/Displays/ItemPanel.tin;
+	#read 3k/TinTin/Displays/RoomPanel.tin;
 
 	#NOP { *********** Mapper ************ };
 	#read 3k/TinTin/Mapper/Mapper.tin;
@@ -125,7 +128,7 @@
 		#var area {$char[area]};	
 	};
 
-	#delay 0.35 .render;
+	#delay 0.35 {.render};
 	#delay 0.35 look;
 
 };

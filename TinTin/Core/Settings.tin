@@ -5,6 +5,7 @@
 /************************************************************
 	Core settings
 ************************************************************/
+#var settings[travelMap] 0;
 #var settings[autoSell] 1;
 #var settings[corpseDonations] 1;
 #var settings[shouldVacuum] 0;

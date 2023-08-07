@@ -1,6 +1,7 @@
 #showme reading inventorypanel
 #class {inventorypanel} {open}
 
+.registerSidePanel InventoryPanel;
 
 #function isFilteredFromInventory
 {
@@ -33,9 +34,14 @@
     #return 0;
 };
 
-#alias {.renderInventory}
+#function {isInventoryPanelOpen}
 {
-    #if { $inventoryOpen }
+    #return $screen[InventoryPanel];
+};
+
+#alias {.renderInventoryPanel}
+{
+    #if { @isInventoryPanelOpen{} }
     {
         #draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
         #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
@@ -46,7 +52,7 @@
 
         #if {&{inventory[]} == 0} 
         {
-            #var botareas 
+            #var panelText 
             {
                 <178>            Nothing Yet <088>
             };
@@ -55,7 +61,7 @@
         #else
         {
             #var botheight &{inventory[]};
-            #var botareas {};
+            #var panelText {};
             #local itemID 0;
             #while {$itemID < &{inventory[]}} 
             {
@@ -67,19 +73,22 @@
 
                 #if { !@startsWith{{$inventory[$itemID]}{*}} && !@isFilteredFromInventory{$inventory[$itemID]}}
                 {
-                    #var botareas {$botareas\n$itemIDnum$itemCount $area_display};
+                    #var panelText {$panelText\n$itemIDnum$itemCount $area_display};
                 };
             };
         };
+
+
+        #math {panelHeight} {$screen[rows] - $caption[height] - $chat[height] - 5 - $hpbar[height] - $gline[height] - 2};
 
         #draw green rounded box $chat[height]+$caption[height]+1 -$canvas[width]+1 $chat[height]+$caption[height]+3 -1
         {
                 <138>              Inventory    <088>
         };
             
-        #draw green rounded box $chat[height]+$caption[height]+4 -$canvas[width]+1 $chat[height]+$caption[height]+5+20 -1
+        #draw green rounded box $chat[height]+$caption[height]+4 -$canvas[width]+1 $chat[height]+$caption[height]+5+$panelHeight -2
         {
-                $botareas
+                $panelText
         };
     };
 };

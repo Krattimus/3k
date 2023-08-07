@@ -1,0 +1,82 @@
+#showme reading roompanel
+#class {roompanel} {open}
+
+.registerSidePanel RoomPanel;
+
+#function {isRoomPanelOpen}
+{
+    #return $screen[RoomPanel];
+};
+
+
+#alias {.rooms}
+{
+    #if { !@isRoomPanelOpen{} }
+    {
+        .showPanel RoomPanel;
+        .render;
+    };
+    #else
+    {
+        .hidePanel RoomPanel;
+        .render;
+    };
+};
+
+#alias {.renderRoomPanel}
+{
+    #if { @isRoomPanelOpen{} }
+    {
+        #draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
+        #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
+        #showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
+            
+        #NOP Clear previous drawing;
+        #screen clear square $chat[height]+$caption[height]+1 -$canvas[width]+1 -$status[height]-2 -1;
+
+        #var areaMobs {};
+        #var areaItems {};
+        #var itemID 32324;
+
+        #math {panelHeight} {$screen[rows] - $caption[height] - $chat[height] - 5 - $hpbar[height] - $gline[height] - 2};
+
+
+
+        #var roomCnt {$panelHeight};
+        
+        #local areaToSearch $area;
+        #map list {roomarea} {^$areaToSearch$} {variable} {rooms}; 
+        #foreach {*rooms[]} {roomID}  
+        {
+            #math roomCnt {$roomCnt-1};
+
+            #if { $roomCnt == 0 }
+            {
+                #break;
+            };
+
+            
+            #map at $roomID #map get all {roomdata};
+            #var exits {};
+            #foreach {*roomdata[exits][]} {exit}
+            {
+                #var exits {$exits $exit};
+            };
+    
+            #format {oneRoom} {<138>%-5.5s<088> <129>%-30.30s\n         <268>%-20.20s<088>} {$roomID}  {$roomdata[name]} {$exits};
+            #var areaMobs {$areaMobs\n$oneRoom};
+        };
+        
+        #draw green rounded box $chat[height]+$caption[height]+1 -$canvas[width]+1 $chat[height]+$caption[height]+3 -1
+        {
+                <138>                 Rooms    <088>
+        };
+            
+        #draw green rounded box $chat[height]+$caption[height]+4 -$canvas[width]+1 $chat[height]+$caption[height]+5+$panelHeight -1
+        {
+                $areaMobs
+        };
+    };
+};
+
+#class {roompanel} {close}

@@ -2,8 +2,7 @@
 
 #class {serverbar} {open}
 
-
-
+.registerPanel ServerBar;
 
 #alias {.renderServerBar} 
 {
@@ -26,25 +25,14 @@
 	
 	#if	{ "$controllers[current]" != "" }
 	{
-		#var {areacap} {<148>Controller: <168><148><168>$controllers[current]<088>}
+		#var {patrolInfo} {<148>Controller: <168><148><168>$controllers[current]<088>}
 	};
 	#else
 	{
-		#var {areacap} {<148>Controller: <168><148><168>None<088>}
+		#var {patrolInfo} {<148>Controller: <168><148><168>None<088>}
 	};
 	
-	#if	{${tao[page]} > 0} 
-	{
-		#math {tao[book]} {$tao[page] / 81 + 1};
-		#math {tao[chap]} {$tao[page] - (($tao[book] - 1) * 81)};
-		#var taocap {<258>Tao: <158>$tao[book]-$tao[chap]<088>}
-	};
-	#else
-	{
-		#var taocap {};
-	};
-
-	#SHOWME {<088> <128>$world_cap <038>Reboot: <138>$reboot_cap <228>$idle_cap<088>  $areacap $taocap<088>} {$chat[height]+1};
+	#SHOWME {<088> <128>$world_cap <038>Reboot: <138>$reboot_cap <228>$idle_cap<088>  $patrolInfo <088>} {$chat[height]+1};
 
 };
 

@@ -1,0 +1,63 @@
+#showme reading itempanel
+#class {itempanel} {open}
+
+.registerSidePanel ItemPanel;
+
+#function {isItemPanelOpen}
+{
+    #return $screen[ItemPanel];
+};
+
+
+#alias {.items}
+{
+    #if { !@isItemPanelOpen{} }
+    {
+        .showPanel ItemPanel;
+        .render;
+    };
+    #else
+    {
+        .hidePanel ItemPanel;
+        .render;
+    };
+};
+
+#alias {.renderItemPanel}
+{
+    #if { @isItemPanelOpen{} }
+    {
+        #draw {line} $chat[height]+$caption[height]+1 -$canvas[width] -$status[height]-2 -$canvas[width];
+        #showme {<228>\u252C<088>} $chat[height]+$caption[height] -$canvas[width];
+        #showme {<088>\u2534<088>} -$hpbar[height]-$gline[height]-2 -$canvas[width];
+            
+        #NOP Clear previous drawing;
+        #screen clear square $chat[height]+$caption[height]+1 -$canvas[width]+1 -$status[height]-2 -1;
+
+
+        #var areaMobs {};
+        #var areaItems {};
+        #var itemID 32324;
+
+        #math {panelHeight} {$screen[rows] - $caption[height] - $chat[height] - 5 - $hpbar[height] - $gline[height] - 2};
+
+        #foreach {$areas[$area][Items][]} {mobName}
+        {
+            #format {roomID} {%+5s} {<138>$itemID<088> -};
+            #format {area_display} {%.30s} {<128>$mobName<088>};       
+            #var areaMobs {$areaMobs\n$roomID $area_display};
+        };
+
+        #draw green rounded box $chat[height]+$caption[height]+1 -$canvas[width]+1 $chat[height]+$caption[height]+3 -1
+        {
+                <138>                 Items    <088>
+        };
+            
+        #draw green rounded box $chat[height]+$caption[height]+4 -$canvas[width]+1 $chat[height]+$caption[height]+5+$panelHeight -2
+        {
+                $areaMobs
+        };
+    };
+};
+
+#class {itempanel} {close}

@@ -2,6 +2,8 @@
 
 #class {healthbar} {open}
 
+.registerPanel HPBar;
+
 #alias {.renderHPBar}
 {
 	#draw {line} -$hpbar[height]-$gline[height]-2 1 -$hpbar[height]-$gline[height]-2 -1;

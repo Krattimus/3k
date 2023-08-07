@@ -18,10 +18,6 @@
 	#var my[gxp][per]		%13
 }
 
-#act {|A: [[ %* ]]} {
-	.renderHPBar
-}
-
 #alias {.renderBardBar} {
         #if {"$cooler" == "on" || $corpses[cooler] > 0} {
                 #format {sb1_cooler} {%+2s} {$corpses[cooler]};

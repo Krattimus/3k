@@ -35,20 +35,25 @@
 {
 	.logChat {<108>[Fishing]<088> Fish Lost ($fish[catch])};
 	#var fish[better] 0;
-	fish
+	#send !bait rod;
+	#send !fish;
 };
 
 #act {^You fail to retrieve your catch!} 
 {
 	.logChat {<108>[Fishing]<088> Fish Lost ($fish[catch])};
 	#var fish[better] 0;
-	fish;
+
+	#send !bait rod;
+	#send !fish;
 };
 
 #act {^You successfully manage to retrieve your catch!} 
 {
 	.logChat {<108>[Fishing]<088> <128>Fish Caught<088> ($fish[catch])};
 	#var fish[better] 0;
+
+	#send !bait rod;
 	#send !take all; 
 	#send !fish;
 };
@@ -61,7 +66,14 @@
 };
 
 #act {^As no fish appear to be interested in your line, you pull it back up.} {bait rod;fish}
-#act {^You notice that your bait is gone!} {bait rod;fish}
+
+
+#act {^You notice that your bait is gone!} 
+{
+	#send !bait rod;
+	#send !fish;
+};
+
 #act {^You can't fish without a line!} 
 {
 	#var fish[better] 0;

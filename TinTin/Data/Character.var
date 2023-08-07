@@ -2,8 +2,8 @@
 
 #VARIABLE {char}
 {
-    {area} {Mahjongg}
-    {currentRoomID} {1900}
+    {area} {Pinnacle}
+    {currentRoomID} {68}
     {guild} {Monk}
     {ourCharacter} {Krat}
 }

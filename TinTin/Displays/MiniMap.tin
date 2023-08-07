@@ -14,6 +14,7 @@
 .registerEvent onMapUpdated onMapUpdatedMiniMapResponder;
 .registerEvent onEnteredRoom onEnteredRoomMiniMapResponder;
 .registerEvent onExitedRoom onExitedRoomMiniMapResponder;
+.registerPanel MiniMap;
 
 #event {CLASS DESTROYED minimap}
 {
@@ -77,13 +78,40 @@
 	#draw {tile} $map[height] -$map[width] $map[height] -1 {<149>[<039>$roomvnum<149>] <139>$name_trunc<099>}
 }
 
+#alias {.travelMap}
+{
+	#if {$settings[travelMap]}
+	{
+		#var settings[travelMap] 0;
+		#split $split[top] $split[bottom] $split[left] $split[right];
+	};
+	#else
+	{
+		#var settings[travelMap] 1;
+	};
+
+	.render;
+
+};
+
 /*************************************************************
 	Renders a frame for the mini map
 *************************************************************/
 #alias {.renderMiniMap}
 {
 	#draw line 1 -$map[width]-1 $map[height] -$map[width]-1;
-	#map offset 1 -$map[width] $map[height] -1;
+
+	#if { $settings[travelMap] }
+	{
+		#math {panelHeight} {$screen[rows] - $caption[height] - $chat[height] - 5 - $hpbar[height] - $gline[height] - 3};
+		#map offset {$chat[height]+8} 1 {$chat[height]+3+$panelHeight} {-$canvas[width]-1};
+	};
+	#else
+	{
+		#map offset 1 -$map[width] $map[height] -1;
+	};
+
+
 };
 
 /*************************************************************

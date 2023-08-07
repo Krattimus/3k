@@ -41,17 +41,18 @@
 ************************************************/
 #alias {i}
 {
-    #if { !$inventoryOpen }
+    #if { !@isInventoryPanelOpen{} }
     {
         #list inventory clear;
         #list inventoryCount clear;
         #send !i;
 
         #read 3k/TinTin/Core/InventoryHelper.tin;       
+        .showPanel InventoryPanel;
     };
     #else
     {
-        #var inventoryOpen 0;
+        .hidePanel InventoryPanel;
         #showme Closing Inventory;
         #class inventoryhelper kill;
         .render;
@@ -71,7 +72,7 @@
         #var weightLoad %2;
         #class inventoryhelper kill;
         #var inventoryOpen 1;    
-        .renderInventory;
+        .renderInventoryPanel;
         .render;
     };
 };
@@ -169,7 +170,7 @@
     #if { $inventoryOpen }
     { 
         .removeItemFromInventory {$itemDropped}; 
-        .renderInventory;
+        .renderInventoryPanel;
     };
 }
 
@@ -181,7 +182,7 @@
     #if { $inventoryOpen }
     { 
         .addItemToInventory {$event[itemTaken]}; 
-        .renderInventory;
+        .renderInventoryPanel;
     };
 }
 

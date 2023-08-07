@@ -133,6 +133,10 @@
 }
 #act {^You touch the beacon, and a friendly ship belonging to The Vigilant swings by.} {#map goto 10278}
 
+
+#action {There is a whole city to explore! No time to sleep} {#map undo;};
+#action {%1 is not going to let you by.} { #map undo; };
+#action {The imposing presence of %1 prevents you} { #map undo;};
 #action {The minotaur grabs you and pulls you back!} {#map undo;};
 
 #NOP Kyoto

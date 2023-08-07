@@ -5,8 +5,6 @@
 /**************************************************************
 	Calculator
 **************************************************************/
-
-
 #var dirs[n] overthere;
 #var dirs[s] yonder;
 #var dirs[e] overhere;
@@ -93,6 +91,66 @@
 	} {%1};
 };
 
+
+#var screen[scroll] line;
+#list screen[panels] create;
+#list screen[sidePanels] create;
+
+/************************************************************
+	Lets any .tin class register themselves as a renderable
+	panel. They MUST implement an alias called .renderXXXX
+	Where XXXX is the name passed into registerPanel
+************************************************************/
+#alias {.registerPanel}
+{
+	#list screen[panels] add {%0};
+	.showPanel %0;
+};
+
+#alias {.registerSidePanel}
+{
+	#list screen[sidePanels] add {%0};
+	.hidePanel %0;
+};
+
+#alias {.hidePanel}
+{
+	#var screen[%0] 0;
+};
+
+#alias {.showPanel}
+{
+	
+	
+	#foreach {$screen[sidePanels][]} {panel}
+	{
+		#var screen[$panel] 0;
+	};
+
+	#var screen[%0] 1;
+};
+
+#function {isOpen}
+{
+	#return $screen[%0];
+};
+
+/************************************************************
+	Returns true if there is at least 1 open panel
+************************************************************/
+#function {hasOpenPanel}
+{
+	#foreach {$screen[sidepanels]} {panel} 
+	{
+		#if { $screen[$panel] }
+		{
+			#return 1;
+		};
+	};
+
+	#return 0;
+};
+
 /*************************************************************************
 	Saves our data to file
 *************************************************************************/
@@ -167,7 +225,7 @@
 /*************************************************************************
 	Quickly reloads everything in the test bin
 *************************************************************************/
-#alias .testBin
+#alias .testBin7
 {
 	#class {testbin} {kill};
 	#read 3k/TinTin/Core/TestBin.tin;
@@ -178,7 +236,7 @@
 **************************************************************/
 #alias {.render}
 {
-        #read 3k/TinTin/Core/Draw.tin
+        #read 3k/TinTin/Core/Draw.tin;
 };
 
 /**************************************************************
@@ -219,7 +277,6 @@
 		}
 	}
 };
-
 
 #alias {.cls}
 {

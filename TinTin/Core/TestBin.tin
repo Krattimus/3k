@@ -3,19 +3,28 @@
 #class {testbin} {open}
 
 
+#alias .disposeFish
+{
+        dispose A small Wanisiki lobster;
+        dispose A small Arani starfish;
+        dispose A small blue Moonfish scale;
+        dispose A small Illate eel;
+        dispose A small Tiger striped jellyfish;    
+        dispose A small Sarasious sea urchin;    
+        dispose A medium sized Wanisiki lobster;
+        dispose A medium sized Illate eel;
+        dispose seaweed;
+        dispose branch;
+        dispose A medium sized Arani starfish;
+};
+
 #alias .pick
 {
         pick box;
         open box;
 };
 
-#alias .powers
-{
-
-
-
-
-};
+#alias .change { transmogrify %0; };
 
 #alias .laCubes
 {
