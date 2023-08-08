@@ -43,7 +43,8 @@
 
         #foreach {$areas[$area][Items][]} {mobName}
         {
-            #format {roomID} {%+5s} {<138>$itemID<088> -};
+            #var foundID $items[$area][$mobName][Rooms][-1];
+            #format {roomID} {%+5s} {<138>$foundID<088> -};
             #format {area_display} {%.30s} {<128>$mobName<088>};       
             #var areaMobs {$areaMobs\n$roomID $area_display};
         };

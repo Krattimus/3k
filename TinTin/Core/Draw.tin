@@ -9,7 +9,7 @@
 #var alert[width] 1
 #var canvas[width] 43;
 
-#if { @hasOpenPanel{} }
+#if { !@hasOpenPanel{} }
 { 
 	#var canvas[width] 0;
 }; 

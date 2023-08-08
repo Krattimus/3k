@@ -1074,24 +1074,24 @@
             {6} {Bone White Armour}
             {7} {Scaley Armour}
             {8} {Dragonscale Shield}
-            {9} {A gate}
-            {10} {A light blackjack}
-            {11} {A shining, mahogany club}
-            {12} {A light, mithril hammer}
-            {13} {A gray staff}
-            {14} {Cloth Armour}
-            {15} {Steel Chainmail}
-            {16} {A nicked, pine club}
-            {17} {Bone White Shield}
-            {18} {A golden staff}
-            {19} {Leather Armour}
-            {20} {A bloody, sardonyx nunchaku (enchanted)}
-            {21} {Armour}
-            {22} {A small, obsidian jo (enchanted)}
-            {23} {An altar}
-            {24} {Blue Key}
-            {25} {Staff of Arcanarton}
-            {26} {Ring of Arcanarton}
+            {9} {A light blackjack}
+            {10} {A shining, mahogany club}
+            {11} {A light, mithril hammer}
+            {12} {A gray staff}
+            {13} {Cloth Armour}
+            {14} {Steel Chainmail}
+            {15} {A nicked, pine club}
+            {16} {Bone White Shield}
+            {17} {A golden staff}
+            {18} {Leather Armour}
+            {19} {A bloody, sardonyx nunchaku (enchanted)}
+            {20} {Armour}
+            {21} {A small, obsidian jo (enchanted)}
+            {22} {An altar}
+            {23} {Blue Key}
+            {24} {Staff of Arcanarton}
+            {25} {Ring of Arcanarton}
+            {26} {A gate}
         }
         {Mobs} 
         {
@@ -2416,22 +2416,22 @@
             {86} {A hockey puck}
             {87} {An accommodation notice board}
             {88} {A Hockey Ticket}
-            {89} {The Good Humor, Ice Cream Truck}
-            {90} {A rusty old android}
-            {91} {A single gold coin}
-            {92} {The 3-K Kill List}
-            {93} {A Statue of Cancer the King}
-            {94} {A tall street light}
-            {95} {A newly erected billboard}
-            {96} {A Small ChaosBrand Television Set}
-            {97} {Hall of Game Shows}
-            {98} {A hip doorway}
-            {99} {A Chocolate Cake}
-            {100} {A writhing tendril}
-            {101} {Arena Ticket}
-            {102} {A wibbly-wobbly frankfurter}
-            {103} {A Crazily Canted and Odd Pipe}
-            {104} {A bronze plaque}
+            {89} {A rusty old android}
+            {90} {A single gold coin}
+            {91} {The 3-K Kill List}
+            {92} {A Statue of Cancer the King}
+            {93} {A tall street light}
+            {94} {Hall of Game Shows}
+            {95} {A hip doorway}
+            {96} {A Chocolate Cake}
+            {97} {A writhing tendril}
+            {98} {Arena Ticket}
+            {99} {A wibbly-wobbly frankfurter}
+            {100} {A Crazily Canted and Odd Pipe}
+            {101} {A bronze plaque}
+            {102} {A newly erected billboard}
+            {103} {The Good Humor, Ice Cream Truck}
+            {104} {A Small ChaosBrand Television Set}
         }
         {Mobs} 
         {
@@ -2499,6 +2499,11 @@
             {62} {An Old Man}
             {63} {A foul-smelling Armadillo}
         }
+        {Ratings} 
+        {
+            {1} {30}
+        }
+        {Wizard} {Sioux}
     }
     {Chaos Candy Store} 
     {
@@ -5542,63 +5547,63 @@
     {
         {Items} 
         {
-            {1} {An icy blue portal}
-            {2} {Wooden Spear}
-            {3} {A small buckler}
-            {4} {A very sharp, sardonyx broadsword}
-            {5} {An engraved, obsidian longsword}
-            {6} {A long, sardonyx kynac}
-            {7} {A small, ebony stiletto}
-            {8} {A small, iron stiletto}
-            {9} {enormous bag}
-            {10} {A gnarled club}
-            {11} {A suit of armor}
-            {12} {Titan Sycamore}
-            {13} {An Orc Encampment}
-            {14} {An old, bronze dagger}
-            {15} {rubble}
-            {16} {oakwood}
-            {17} {dandelion}
-            {18} {A small pedestal}
-            {19} {A tiny hovel}
-            {20} {A dwindling portal (glowing)}
-            {21} {A shining, gold claymore (wielded) (enchanted)}
-            {22} {Chainmail armour (worn)}
-            {23} {Cloth Cloak (worn)}
-            {24} {A piece of bloodmoss}
-            {25} {A piece of lava}
-            {26} {A piece of crystalrock}
-            {27} {An Interdimensional Portal}
-            {28} {A piece of blackrock}
-            {29} {A piece of crystalrock \x7B5\x7D}
-            {30} {A piece of blackrock \x7B6\x7D}
-            {31} {A bit of thyme \x7B2\x7D}
-            {32} {A sprig of rosemary \x7B6\x7D}
-            {33} {A piece of lava \x7B3\x7D}
-            {34} {A small dandelion \x7B4\x7D}
-            {35} {A piece of oakwood \x7B7\x7D}
-            {36} {A piece of bloodmoss \x7B3\x7D}
-            {37} {A piece of marjoram \x7B3\x7D}
-            {38} {A piece of granite \x7B4\x7D}
-            {39} {A nwerm leaf \x7B2\x7D}
-            {40} {Iron Chainmail}
-            {41} {A small dandelion}
-            {42} {A piece of granite}
-            {43} {A lonely keep on the edge of the icelands}
-            {44} {Whetstone}
-            {45} {A sprig of rosemary}
-            {46} {A very dull, onyx falchion}
-            {47} {Castle Peeron}
-            {48} {A piece of bark}
-            {49} {A large tree casting an impossibly black shadow}
-            {50} {A sprig of mistletoe}
-            {51} {A pulsing portal (glowing)}
-            {52} {A stalk of shimmerweed}
-            {53} {A glowing portal}
-            {54} {A small, gold dirk}
-            {55} {A bit of thyme}
-            {56} {A piece of oakwood}
-            {57} {A nwerm leaf}
+            {1} {Wooden Spear}
+            {2} {A small buckler}
+            {3} {A very sharp, sardonyx broadsword}
+            {4} {An engraved, obsidian longsword}
+            {5} {A long, sardonyx kynac}
+            {6} {A small, ebony stiletto}
+            {7} {A small, iron stiletto}
+            {8} {enormous bag}
+            {9} {A gnarled club}
+            {10} {A suit of armor}
+            {11} {Titan Sycamore}
+            {12} {An Orc Encampment}
+            {13} {An old, bronze dagger}
+            {14} {rubble}
+            {15} {oakwood}
+            {16} {dandelion}
+            {17} {A small pedestal}
+            {18} {A tiny hovel}
+            {19} {A dwindling portal (glowing)}
+            {20} {A shining, gold claymore (wielded) (enchanted)}
+            {21} {Chainmail armour (worn)}
+            {22} {Cloth Cloak (worn)}
+            {23} {An Interdimensional Portal}
+            {24} {A piece of blackrock}
+            {25} {A piece of crystalrock \x7B5\x7D}
+            {26} {A piece of blackrock \x7B6\x7D}
+            {27} {A bit of thyme \x7B2\x7D}
+            {28} {A sprig of rosemary \x7B6\x7D}
+            {29} {A piece of lava \x7B3\x7D}
+            {30} {A small dandelion \x7B4\x7D}
+            {31} {A piece of oakwood \x7B7\x7D}
+            {32} {A piece of bloodmoss \x7B3\x7D}
+            {33} {A piece of marjoram \x7B3\x7D}
+            {34} {A piece of granite \x7B4\x7D}
+            {35} {A nwerm leaf \x7B2\x7D}
+            {36} {Iron Chainmail}
+            {37} {A sprig of rosemary}
+            {38} {A very dull, onyx falchion}
+            {39} {Castle Peeron}
+            {40} {A piece of bark}
+            {41} {A large tree casting an impossibly black shadow}
+            {42} {A sprig of mistletoe}
+            {43} {A pulsing portal (glowing)}
+            {44} {A stalk of shimmerweed}
+            {45} {A small, gold dirk}
+            {46} {A bit of thyme}
+            {47} {A nwerm leaf}
+            {48} {A piece of oakwood}
+            {49} {A small dandelion}
+            {50} {A piece of crystalrock}
+            {51} {A lonely keep on the edge of the icelands}
+            {52} {A piece of granite}
+            {53} {A piece of bloodmoss}
+            {54} {Whetstone}
+            {55} {A glowing portal}
+            {56} {A piece of lava}
+            {57} {An icy blue portal}
         }
         {Mobs} 
         {
@@ -5638,43 +5643,54 @@
             {34} {Hartly the Mighty}
             {35} {Elf Traveller <.>}
             {36} {Hartly the Legged}
-            {37} {Giant ant}
-            {38} {Rocky Bullwinkle}
-            {39} {A scared warrior}
-            {40} {Barrett, Woodsman of the Forest}
-            {41} {A small brown hare}
-            {42} {A large brown hare}
-            {43} {A mean-looking sidewinder}
-            {44} {ure}
-            {45} {Tabol Dragonslayer}
-            {46} {Tabol}
-            {47} {Ghalein, Guardian of the Tower Gates}
-            {48} {A hermit}
-            {49} {Corristo the Wandering Traveler}
-            {50} {Hill Dwarf}
-            {51} {A boa constrictor preying on small critters... or players}
-            {52} {A small furry groundhog}
-            {53} {A medium spotted bear}
-            {54} {Bill the Tough}
-            {55} {Mary the Wicked}
-            {56} {Elf Traveller}
-            {57} {Merchant}
-            {58} {Troll}
-            {59} {A Goblin Scout}
-            {60} {A large timber wolf}
-            {61} {Jordance Bullwinkle}
-            {62} {Elf Traveller <?>}
-            {63} {Rul'taasa}
-            {64} {Human Traveller}
-            {65} {Paculla, White Witch of the Vedma}
-            {66} {Orc}
-            {67} {A red-tailed hawk}
-            {68} {Snake}
-            {69} {A black and white skunk}
-            {70} {A young monk}
-            {71} {A large brown elk}
-            {72} {A red-breasted robin}
-            {73} {Bandit}
+            {37} {Rocky Bullwinkle}
+            {38} {A scared warrior}
+            {39} {Barrett, Woodsman of the Forest}
+            {40} {A small brown hare}
+            {41} {A large brown hare}
+            {42} {A mean-looking sidewinder}
+            {43} {ure}
+            {44} {Tabol Dragonslayer}
+            {45} {Tabol}
+            {46} {Ghalein, Guardian of the Tower Gates}
+            {47} {A hermit}
+            {48} {Hill Dwarf}
+            {49} {A boa constrictor preying on small critters... or players}
+            {50} {A small furry groundhog}
+            {51} {A medium spotted bear}
+            {52} {Bill the Tough}
+            {53} {Mary the Wicked}
+            {54} {Troll}
+            {55} {A Goblin Scout}
+            {56} {Jordance Bullwinkle}
+            {57} {Rul'taasa}
+            {58} {Paculla, White Witch of the Vedma}
+            {59} {Orc}
+            {60} {A red-tailed hawk}
+            {61} {Snake}
+            {62} {A black and white skunk}
+            {63} {A young monk}
+            {64} {A large brown elk}
+            {65} {A red-breasted robin}
+            {66} {Bandit}
+            {67} {Plainsman}
+            {68} {Jor the Legged}
+            {69} {Zarinth, Mage of the Flaming Palm}
+            {70} {Gemina, rogue of the black-hand}
+            {71} {Lord Marshinal, High priest of Morike}
+            {72} {Sir Prilmas, Knight of the Obsidian Order}
+            {73} {Jor Dragonslayer}
+            {74} {Corristo the Wandering Traveler}
+            {75} {Elf Traveller}
+            {76} {Taki the Mighty}
+            {77} {Merchant}
+            {78} {Elf Traveller <?>}
+            {79} {A large timber wolf}
+            {80} {Taki the Quick}
+            {81} {An arctic wolf}
+            {82} {Jordance the Newbie}
+            {83} {Giant ant}
+            {84} {Human Traveller}
         }
     }
     {Faunist Guild} 
@@ -6317,6 +6333,7 @@
         {
             {1} {48}
         }
+        {Wizard} {Vlad}
     }
     {Gas Station} 
     {
@@ -8187,7 +8204,7 @@
             {16} {A Large Floating Sphere}
             {17} {A Large Floating Cylinder}
             {18} {nd Secure MK 3}
-            {19} {Rove And Secure Mk 3}
+            {19} {Rove and Secure MK 3}
         }
         {Ratings} 
         {
@@ -8375,15 +8392,15 @@
             {1} {Ice Woman }
             {2} {Ice Man }
             {3} {man }
-            {4} {Ice Woman}
-            {5} {Ice Child}
-            {6} {Crystal Elder}
-            {7} {Ice Youth}
-            {8} {Ice Man}
-            {9} {Woman}
-            {10} {Young Person}
-            {11} {Child}
-            {12} {Man}
+            {4} {Crystal Elder}
+            {5} {Ice Man}
+            {6} {Woman}
+            {7} {Young Person}
+            {8} {Child}
+            {9} {Man}
+            {10} {Ice Woman}
+            {11} {Ice Youth}
+            {12} {Ice Child}
         }
         {Ratings} 
         {
@@ -8807,7 +8824,10 @@
             {27} {White Tiger}
             {28} {Pennywise the Valithyn}
             {29} {Blue Dolphin}
-            {30} {Princess Qi}
+            {30} {Voodoo's Jugger Support Mech}
+            {31} {A tank named Shaguar}
+            {32} {Vaid :: Professor of Molecular Displacement}
+            {33} {Princess Qi}
         }
         {Ratings} 
         {
@@ -9590,17 +9610,18 @@
         {Items} 
         {
             {1} {G.D.S. Shirt}
-            {2} {A junked Yokohamma 9000XFXTZ sports car}
-            {3} {A corpse}
+            {2} {A corpse}
+            {3} {A junked Yokohamma 9000XFXTZ sports car}
+            {4} {Kord XIV Stun Baton}
         }
         {Mobs} 
         {
             {1} {Chris Klucker}
-            {2} {Bob Smith - Security Guard}
-            {3} {A group of telemarketers}
-            {4} {Richard Kluckenthal - Director of Human Resources}
-            {5} {Plant work crew}
-            {6} {Chicken Guard}
+            {2} {Plant work crew}
+            {3} {Richard Kluckenthal - Director of Human Resources}
+            {4} {A group of telemarketers}
+            {5} {Chicken Guard}
+            {6} {Bob Smith - Security Guard}
         }
         {Ratings} 
         {
@@ -13248,9 +13269,9 @@
             {35} {A mud encrusted rake}
             {36} {A shimmering rift}
             {37} {A D.C. Megatech bullet train}
-            {38} {Chicken Processing Plant}
-            {39} {A whirring terminal}
-            {40} {A rundown trailer}
+            {38} {A whirring terminal}
+            {39} {A rundown trailer}
+            {40} {Chicken Processing Plant}
         }
         {Mobs} 
         {
@@ -14237,21 +14258,21 @@
             {72} {A half-naked actress}
             {73} {Actress}
             {74} {A campy film director}
-            {75} {A Springfield Studios gatepost guard}
-            {76} {Snowball II}
-            {77} {Groundskeeper Willie}
-            {78} {Willie}
-            {79} {A Bagpipe}
-            {80} {Bagpipe}
-            {81} {A generically animated schoolboy}
-            {82} {A generically animated schoolgirl}
-            {83} {A three-eyed squirrel}
-            {84} {A generically animated Springfield citizen}
-            {85} {A two-headed dog}
-            {86} {Grampa Simpson}
-            {87} {Patty Bouvier}
-            {88} {Selma Bouvier}
-            {89} {Grampa}
+            {75} {Snowball II}
+            {76} {Groundskeeper Willie}
+            {77} {Willie}
+            {78} {A Bagpipe}
+            {79} {Bagpipe}
+            {80} {A generically animated schoolboy}
+            {81} {A generically animated schoolgirl}
+            {82} {Grampa Simpson}
+            {83} {Patty Bouvier}
+            {84} {Selma Bouvier}
+            {85} {Grampa}
+            {86} {A Springfield Studios gatepost guard}
+            {87} {A generically animated Springfield citizen}
+            {88} {A two-headed dog}
+            {89} {A three-eyed squirrel}
             {90} {Santa's Little Helper}
             {91} {Homer Simpson}
             {92} {Bart is playing 3K}
@@ -17723,11 +17744,11 @@
             {40} {A fallen sign}
             {41} {Animal remains}
             {42} {A sign}
-            {43} {A shimmering portal}
-            {44} {A Cannon}
-            {45} {A Stall}
-            {46} {A fluted lamp post}
-            {47} {A small pedestal}
+            {43} {A Cannon}
+            {44} {A Stall}
+            {45} {A fluted lamp post}
+            {46} {A small pedestal}
+            {47} {A shimmering portal}
         }
         {Mobs} 
         {
@@ -17767,24 +17788,24 @@
             {34} {Erik the candlestick maker}
             {35} {e of Human Refuse}
             {36} {A beggar}
-            {37} {The Merchant Guild Clerk}
-            {38} {A Burgher}
-            {39} {A bridge guard}
-            {40} {A Fisherogre}
-            {41} {An Ogre Stevedore}
-            {42} {A Dwarven Trader}
-            {43} {A Wayhaven Merchant}
-            {44} {A pack of feral cats}
-            {45} {A Citadel Guard Sergeant}
-            {46} {A Citadel Guard}
-            {47} {An old guy, wandering aimlessly}
-            {48} {A young woman}
-            {49} {Wayhaven City Guard}
-            {50} {Wayhaven City Guard Sergeant}
-            {51} {Citizen}
-            {52} {A Scholar}
-            {53} {A Priest}
-            {54} {A Student}
+            {37} {A bridge guard}
+            {38} {A Fisherogre}
+            {39} {An Ogre Stevedore}
+            {40} {A pack of feral cats}
+            {41} {A Citadel Guard Sergeant}
+            {42} {A Citadel Guard}
+            {43} {An old guy, wandering aimlessly}
+            {44} {A young woman}
+            {45} {A Scholar}
+            {46} {A Priest}
+            {47} {A Student}
+            {48} {The Merchant Guild Clerk}
+            {49} {A Wayhaven Merchant}
+            {50} {A Dwarven Trader}
+            {51} {A Burgher}
+            {52} {Wayhaven City Guard}
+            {53} {Wayhaven City Guard Sergeant}
+            {54} {Citizen}
         }
         {Ratings} 
         {

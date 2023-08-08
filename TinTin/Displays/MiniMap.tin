@@ -87,6 +87,7 @@
 	};
 	#else
 	{
+		#send !brief yes no;
 		#var settings[travelMap] 1;
 	};
 

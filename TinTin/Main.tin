@@ -101,7 +101,7 @@
 	#read 3k/TinTin/Controllers/Traveller.tin;
 	#read 3k/TinTin/Controllers/Donater.tin;
 	#read 3k/TinTin/Controllers/Miner.tin;
-
+	
 	#NOP { *********** Mis ************ };
 	#NOP { #read 3k/TinTin/Vaf/Damage.tin };
 
