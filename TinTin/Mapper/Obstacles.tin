@@ -8,8 +8,15 @@
 	all the watchers on these messages so we can tell the map
 	that it needs to undo the last movement it made.
 *************************************************************/
-#act {The spirit of Waldo appears before you.} { #map undo;} {1}
-
+#action {The %1 steps in the way as you attempt to go %2!} {.triggerEvent onBlockedMovement;};
+#action {The titan bars your way up the path!} {.triggerEvent onBlockedMovement;};
+#action {The spirit of Waldo appears before you.} { .triggerevent onblockedmovement;};
+#action {Azrael gives you a small scratch, reminding you of her guard duty.} {.triggerEvent onBlockedMovement;};
+#action {There is a whole city to explore! No time to sleep} {.triggerEvent onBlockedMovement;};
+#action {%1 is not going to let you by.} { .triggerEvent onBlockedMovement; };
+#action {The imposing presence of %1 prevents you} { .triggerEvent onBlockedMovement;};
+#action {The minotaur grabs you and pulls you back!} {.triggerEvent onBlockedMovement;};
+#action {Gargamel cackles with glee as he swats you aside.} {.triggerEvent onBlockedMovement;};
 #action {You fight against the current but are unable to move!} {.triggerEvent onBlockedMovement; }
 #action {The weeds tangle up your legs and you are stuck!} {.triggerEvent onBlockedMovement;}
 #action {You bounce off the energy field. The field shimmers.} {.triggerEvent onBlockedMovement;}
@@ -23,134 +30,134 @@
 #action {^The gate is down, you must raise it first.$} {.triggerEvent onBlockedMovement;}
 #action {^The guard pushes you back.$} {.triggerEvent onBlockedMovement;}
 #action {^The guard shoves you back.$} {.triggerEvent onBlockedMovement;}
-#action {Two gnolls rush out of the cave and block your path!} {#map undo;};
+#action {Two gnolls rush out of the cave and block your path!} {.triggerevent onblockedmovement;};
 #action {^The golem shoves you back.$} {.triggerEvent onBlockedMovement;}
-#action {^Policeman says: No one is allowed outside the city limits.} {#map undo; }
-#action {^The closed security gate blocks your path.} {#map undo; }
+#action {^Policeman says: No one is allowed outside the city limits.} {.triggerevent onblockedmovement; }
+#action {^The closed security gate blocks your path.} {.triggerevent onblockedmovement; }
 #action {^The door is closed.$} {.triggerEvent onBlockedMovement;}
 #action {^The knight bars your way west.$} {.triggerEvent onBlockedMovement;}
-#action {The guard prevents you from going that way.} {#map undo;}
-
+#action {The guard prevents you from going that way.} {.triggerevent onblockedmovement;}
 #action {You are too powerful to pass this gate.} {.triggerEvent onBlockedMovement;}
+
 #NOP Juggernauts
-#act {^The room is locked.} {.triggerEvent onBlockedMovement;}
-#act {^Dirk says: This area is for Wolves not } {.triggerEvent onBlockedMovement;}
-#act {^Harlow says: You are not allowed here please turn around and leave at once} {.triggerEvent onBlockedMovement;}
-#act {^Only members of clan jade falcon can go this way.} {.triggerEvent onBlockedMovement;}
+#action {^The room is locked.} {.triggerEvent onBlockedMovement;}
+#action {^Dirk says: This area is for Wolves not } {.triggerEvent onBlockedMovement;}
+#action {^Harlow says: You are not allowed here please turn around and leave at once} {.triggerEvent onBlockedMovement;}
+#action {^Only members of clan jade falcon can go this way.} {.triggerEvent onBlockedMovement;}
 
 #NOP Bards
-#act {^You can't go there!} {.triggerEvent onBlockedMovement;}
+#action {^You can't go there!} {.triggerEvent onBlockedMovement;}
 
 #NOP Abbey
-#act {^A feeling of fear and dread washes over you, preventing you from going} {.triggerEvent onBlockedMovement;}
-#act {^A feeling of dread washes over you, preventing you from going any further east.} {.triggerEvent onBlockedMovement;}
+#action {^A feeling of fear and dread washes over you, preventing you from going} {.triggerEvent onBlockedMovement;}
+#action {^A feeling of dread washes over you, preventing you from going any further east.} {.triggerEvent onBlockedMovement;}
 
 #NOP Body Mansion
-#act {^You bump into a locked door.} {.triggerEvent onBlockedMovement;}
+#action {^You bump into a locked door.} {.triggerEvent onBlockedMovement;}
 
 #NOP Calvin and Hobbes
-#act {^Calvin defends his fort!} {.triggerEvent onBlockedMovement;}
-#act {^Hobbes will not let you into G.R.O.S.S. headquarters!} {.triggerEvent onBlockedMovement;}
+#action {^Calvin defends his fort!} {.triggerEvent onBlockedMovement;}
+#action {^Hobbes will not let you into G.R.O.S.S. headquarters!} {.triggerEvent onBlockedMovement;}
 
 #NOP Carnegie
-#act {^Woody Allen says: You're going to have to wait for security!} {.triggerEvent onBlockedMovement;}
-#act {^Mel Brooks blocks the exit.} {.triggerEvent onBlockedMovement;}
-#act {^Jay-Z says: You're going to have to wait for security!} {.triggerEvent onBlockedMovement;}
-#act {^Jay-Z says: Where do you think you're going?} {.triggerEvent onBlockedMovement;}
-#act {^Jay-Z stops you leaving.} {.triggerEvent onBlockedMovement;}
-#act {^Jay-Z blocks the exit.} {.triggerEvent onBlockedMovement;}
-#act {^Trixie Hilton blocks the exit.} {.triggerEvent onBlockedMovement;}
+#action {^Woody Allen says: You're going to have to wait for security!} {.triggerEvent onBlockedMovement;}
+#action {^Mel Brooks blocks the exit.} {.triggerEvent onBlockedMovement;}
+#action {^Jay-Z says: You're going to have to wait for security!} {.triggerEvent onBlockedMovement;}
+#action {^Jay-Z says: Where do you think you're going?} {.triggerEvent onBlockedMovement;}
+#action {^Jay-Z stops you leaving.} {.triggerEvent onBlockedMovement;}
+#action {^Jay-Z blocks the exit.} {.triggerEvent onBlockedMovement;}
+#action {^Trixie Hilton blocks the exit.} {.triggerEvent onBlockedMovement;}
 
 #NOP Chaos Cinemaplex
-#act {^The movie usher asks for your movie ticket. When you fail to come up with} {.triggerEvent onBlockedMovement;}
+#action {^The movie usher asks for your movie ticket. When you fail to come up with} {.triggerEvent onBlockedMovement;}
 
 #NOP Cove of the Three (Lost Soul)
-#act {^A magical force pushes you back, and you hear a voice} {.triggerEvent onBlockedMovement;}
+#action {^A magical force pushes you back, and you hear a voice} {.triggerEvent onBlockedMovement;}
 
 #NOP Crystal Stairway
-#act {^The Warrior will not let you invade her home any further.} {.triggerEvent onBlockedMovement;}
-#act {^The warrior will not let you pass.} {.triggerEvent onBlockedMovement;}
+#action {^The Warrior will not let you invade her home any further.} {.triggerEvent onBlockedMovement;}
+#action {^The warrior will not let you pass.} {.triggerEvent onBlockedMovement;}
 
 #NOP Detroit
-#act {^Officer yells: Get him, he must be stealing something!!!!} {.triggerEvent onBlockedMovement;}
+#action {^Officer yells: Get him, he must be stealing something!!!!} {.triggerEvent onBlockedMovement;}
 
 #NOP Dundee
-#act {^The foliage in this part of the swamp is extremely thick and will take} {.triggerEvent onBlockedMovement;}
+#action {^The foliage in this part of the swamp is extremely thick and will take} {.triggerEvent onBlockedMovement;}
 
 #NOP Dragon Realms
-#act {^You cannot get past the dragon guards.} {.triggerEvent onBlockedMovement;}
+#action {^You cannot get past the dragon guards.} {.triggerEvent onBlockedMovement;}
 
 #NOP Elven Woods
-#act {^The elf {pushes|shoves} you back, refusing to let you pass{!|.}} {.triggerEvent onBlockedMovement;}
+#action {^The elf {pushes|shoves} you back, refusing to let you pass{!|.}} {.triggerEvent onBlockedMovement;}
 
 #NOP Fallout Shelter
-#act {^Core Guard jumps in your way, blocking your path!} {.triggerEvent onBlockedMovement;}
+#action {^Core Guard jumps in your way, blocking your path!} {.triggerEvent onBlockedMovement;}
 
 #NOP Faunist Guild
-#act {^You move slowly %w through the murky black water.} {.triggerEvent onBlockedMovement;}
+#action {^You move slowly %w through the murky black water.} {.triggerEvent onBlockedMovement;}
 
 #NOP Ice Fishing
-#act {^You are unable to climb the bank here.  It is very steep, and with all} {.triggerEvent onBlockedMovement;}
-#act {^You can't go through a solid wall.  Try going around the shack, and} {.triggerEvent onBlockedMovement;}
+#action {^You are unable to climb the bank here.  It is very steep, and with all} {.triggerEvent onBlockedMovement;}
+#action {^You can't go through a solid wall.  Try going around the shack, and} {.triggerEvent onBlockedMovement;}
 
 #NOP Ice Mountains (Verbeeg)
-#act {^The magical barrier is impenetrable.$} {.triggerEvent onBlockedMovement;}
-#act {^The cryohydra snaps one of its heads at you as you try and approach} {.triggerEvent onBlockedMovement;}
+#action {^The magical barrier is impenetrable.$} {.triggerEvent onBlockedMovement;}
+#action {^The cryohydra snaps one of its heads at you as you try and approach} {.triggerEvent onBlockedMovement;}
 
 #NOP Land
-#act {^You are caught like a fly in a spider web, burning and twisting as} {.triggerEvent onBlockedMovement;}
+#action {^You are caught like a fly in a spider web, burning and twisting as} {.triggerEvent onBlockedMovement;}
 
 #NOP Longshadow
-#act {^The drawbridge is currently upright denying you access to the castle.} {.triggerEvent onBlockedMovement;}
+#action {^The drawbridge is currently upright denying you access to the castle.} {.triggerEvent onBlockedMovement;}
 
 #NOP Mage Tower
-#act {^The guard blocks your passage.} {.triggerEvent onBlockedMovement;}
+#action {^The guard blocks your passage.} {.triggerEvent onBlockedMovement;}
 
 #NOP Night of Colour
-#act {^Impediment slaps you back, thorns tearing.} {.triggerEvent onBlockedMovement;}
-#act {^Serrated sword extended, Bulwark stops your progress.} {.triggerEvent onBlockedMovement;}
+#action {^Impediment slaps you back, thorns tearing.} {.triggerEvent onBlockedMovement;}
+#action {^Serrated sword extended, Bulwark stops your progress.} {.triggerEvent onBlockedMovement;}
 
 #NOP The Princess Bride
-#act {^The guard won't allow you to pass!} {.triggerEvent onBlockedMovement;}
+#action {^The guard won't allow you to pass!} {.triggerEvent onBlockedMovement;}
 
 #NOP Rabbit Fields
-#act {^The rabbit prevents you from going that way.} {.triggerEvent onBlockedMovement;}
+#action {^The rabbit prevents you from going that way.} {.triggerEvent onBlockedMovement;}
 
 #NOP Ravenloft
-#act {^You try to go down, but suddenly feel more terrified than} {.triggerEvent onBlockedMovement;}
-#act {^The trees move together and bar your path!} {.triggerEvent onBlockedMovement;}
-#act {^A deathly chill blows from the south, blasting into} {.triggerEvent onBlockedMovement;}
-#act {^Four dragons swoop down from the rafters and attack, blocking the way west!} {.triggerEvent onBlockedMovement;}
+#action {^You try to go down, but suddenly feel more terrified than} {.triggerEvent onBlockedMovement;}
+#action {^The trees move together and bar your path!} {.triggerEvent onBlockedMovement;}
+#action {^A deathly chill blows from the south, blasting into} {.triggerEvent onBlockedMovement;}
+#action {^Four dragons swoop down from the rafters and attack, blocking the way west!} {.triggerEvent onBlockedMovement;}
 
 #NOP Rocky Hill
-#act {^Waving their rusty scimitars and growling loudly, the jackalmen} {.triggerEvent onBlockedMovement;}
+#action {^Waving their rusty scimitars and growling loudly, the jackalmen} {.triggerEvent onBlockedMovement;}
 
 #NOP Section Z
-#act {^The %1 will not let you pass!} {.triggerEvent onBlockedMovement;}
-#act {^The portal %w is electrified and ZAPS you!} {.triggerEvent onBlockedMovement;}
+#action {^The %1 will not let you pass!} {.triggerEvent onBlockedMovement;}
+#action {^The portal %w is electrified and ZAPS you!} {.triggerEvent onBlockedMovement;}
 
 #NOP Simpsons
-#act {^   The Guard stops you and says: Aww no...you can't go in there.} {.triggerEvent onBlockedMovement;}
+#action {^   The Guard stops you and says: Aww no...you can't go in there.} {.triggerEvent onBlockedMovement;}
 
 #NOP SolChem
-#act {^The gang member shoves you back.} {.triggerEvent onBlockedMovement;}
+#action {^The gang member shoves you back.} {.triggerEvent onBlockedMovement;}
 
 #NOP Tao Te Cheng
-#act {^Your understanding fails you and you cannot flee!!} {.triggerEvent onBlockedMovement;}
+#action {^Your understanding fails you and you cannot flee!!} {.triggerEvent onBlockedMovement;}
 
 #NOP Theatre of Souls
-#act {^A closed door blocks your way.} {.triggerEvent onBlockedMovement;}
+#action {^A closed door blocks your way.} {.triggerEvent onBlockedMovement;}
 
 #NOP Tomb of Kingn Alaren
-#act {^The skeletal royal guard steps in front of you barring your progress.} {.triggerEvent onBlockedMovement;}
-#act {^The skeletal guard steps in front of you barring your progress.} {.triggerEvent onBlockedMovement;}
+#action {^The skeletal royal guard steps in front of you barring your progress.} {.triggerEvent onBlockedMovement;}
+#action {^The skeletal guard steps in front of you barring your progress.} {.triggerEvent onBlockedMovement;}
 
 #NOP Underdark
-#act {^The {drow|guard} prevents you from going that way.} {.triggerEvent onBlockedMovement;}
-#act {^The troll will not let you pass.} {.triggerEvent onBlockedMovement;}
+#action {^The {drow|guard} prevents you from going that way.} {.triggerEvent onBlockedMovement;}
+#action {^The troll will not let you pass.} {.triggerEvent onBlockedMovement;}
 
 #NOP Whorehouse
-#act {^Doh shoves you backwards with a scowl.} {.triggerEvent onBlockedMovement;}
-#act {^Your feet are mired in the bird poop, you can't seem to move!!} {.triggerEvent onBlockedMovement;}
+#action {^Doh shoves you backwards with a scowl.} {.triggerEvent onBlockedMovement;}
+#action {^Your feet are mired in the bird poop, you can't seem to move!!} {.triggerEvent onBlockedMovement;}
 
 #class {mapper} {close}

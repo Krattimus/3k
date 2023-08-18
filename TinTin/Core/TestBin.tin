@@ -1,8 +1,73 @@
 #showme READING testbin.TIN
-
+#class {testbin} {kill}
 #class {testbin} {open}
 
+#var runes {
+	{greaves}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{gloves}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{boots}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{armbands}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{helmet}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{shield}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{breastplate}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{sword}{{1}{health}{2}{revalrie}{3}{power}{4}{starfire}{5}{thought}{6}{eternity}}
+};
 
+#var runeSlot 1;
+#var itemSlot 1;
+#alias .runeInscribe
+{
+        #TICKER {runeme} 
+        {
+                #send !pinscribe $runes[*runes[+$itemSlot]][$runeSlot] on *runes[+$itemSlot];
+                #math {runeSlot} {$runeSlot+1};
+
+                #if { $runeSlot >= @getNumElements{runes[*runes[+$itemSlot]]} }
+                {
+                        #math {itemSlot} {$itemSlot+1};
+                        #var runeSlot 1;
+
+                        #if { $itemSlot >= @getNumElements{runes} }
+                        {
+                                #UNTICKER {runeme};
+                                #var itemSlot 1;
+                        };
+                };
+        } {5};
+};
+
+#alias .runePrepare
+{
+        #TICKER {runeprep} 
+        {
+                #send pprepare *runes[+$itemSlot];
+                #math {itemSlot} {$itemSlot+1};
+
+                #if { $itemSlot >= @getNumElements{runes} }
+                {
+                        #UNTICKER {runeprep};
+                        #var itemSlot 1;
+                };
+        } {5};
+};
+
+
+#gag {Your unarmed frenzy ends.};
+#gag {You find a pressure point and bore down!};
+#gag {Your body is wracked in pain as the life force is sucked from you};
+
+#gag {^You take an instant to gather your thoughts, clear your mind and$};
+#gag {^focus on the task at hand.$}
+
+#alias .rune
+{
+        pinscribe %1 on helmet;
+        pinscribe %1 on gloves;
+        pinscribe %1 on armbands;
+        pinscribe %1 on greaves;
+        pinscribe %1 on breastplate;
+
+};
 #alias .disposeFish
 {
         dispose A small Wanisiki lobster;

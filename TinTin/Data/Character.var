@@ -2,10 +2,10 @@
 
 #VARIABLE {char}
 {
-    {area} {Mahjongg}
-    {currentRoomID} {1905}
-    {guild} {Monk}
-    {ourCharacter} {Krat}
+    {area} {Bladesinger Guild}
+    {currentRoomID} {34755}
+    {guild} {Bladesinger}
+    {ourCharacter} {kratter}
 }
 
 #CLASS {charvar} CLOSE

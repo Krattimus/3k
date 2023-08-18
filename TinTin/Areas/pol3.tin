@@ -1,1 +1,2 @@
 #read 3k/TinTin/Areas/pol.tin
+#var patrol[startingLocation] 6748;

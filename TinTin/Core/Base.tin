@@ -197,6 +197,28 @@
 	} {%1};
 };
 
+
+/*************************************************************************
+	Dead man switch
+*************************************************************************/
+#alias .deadMan
+{
+	#if { "%1" != "" }
+	{
+		#UNDELAY {deadman};
+
+		#math seconds {%1*60};
+		#DELAY {deadman} {
+			#end;
+		} $seconds;
+	};
+
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Dead Man Switch set to [$settings[deadMan]] minutes;
+	#draw Yellow scroll line 1 1 1 80;
+};
+
+
 /*************************************************************************
 	Captures all text until a grep is matched
 *************************************************************************/
@@ -225,7 +247,7 @@
 /*************************************************************************
 	Quickly reloads everything in the test bin
 *************************************************************************/
-#alias .testBin7
+#alias .testBin
 {
 	#class {testbin} {kill};
 	#read 3k/TinTin/Core/TestBin.tin;

@@ -42,6 +42,6 @@
 	};
 
 	.renderServerBar;
-} {1}
+} {1};
 
 #class {ticklist} {close}

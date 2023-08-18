@@ -132,11 +132,6 @@
 			#var monk[hide] {*ACTIVE*};
 		};
 
-		#if { $my[hp][current] <= $my[hp][max] }
-		{
-			#send !hands;
-		};
-
 		#if { !$monk[palm] && $monk[ae][current] > 0}
 		{
 			#send !palm;
@@ -262,10 +257,15 @@
 #highlight {roundhouse strike against %1!} {<018>}
 #highlight {%1's body is violently rearranged!!} {<018>}
 
+#HIGHLIGHT {%1's body contorts into a Picasso-like nightmare!} {<008>};
 #highlight {You reach out and touch your foe, sending death bringing vibrations} {<018>}
 #highlight {^through it.$} {<018>}
 #highlight {^through him.$} {<018>}
+#highlight {^through her.$} {<018>}
 
+
+#gag {Your strike has weakened %1's defenses!};
+#gag {With furious speed you strike again!};
 #gag {You have become grounded in this plane yet again.}
 #gag {You quickly tumble to avoid the brunt of the attack.}
 #gag {Your muscles ripple and bulge with power.}
@@ -275,6 +275,20 @@
 
 #gag {Psionic waves emanate from your body.};
 
+#highlight {You relax your mind and body and concentrate on the ancient powers of} {<048>};
+#highlight {defense.  Energy swirls within you and the knowledge of countless} {<048>};
+#highlight {generations pours into you.  Channeling your energy you feel your skin} {<048>};
+#highlight {become hardened like the Scales of a Dragon.} {<048>};
+
+
+
+#highlight {You begin to stretch and relax, concentrating deeply on muscle tone} {<048>};
+#highlight {and muscle strength.  You practice your quickness and your strength} {<048>};
+#highlight {and settle in on the fighting method of the %1.} {<048>};
+
+
+ 
+ 
 
 
 #class {monk} {close}
