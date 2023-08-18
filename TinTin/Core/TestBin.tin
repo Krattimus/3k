@@ -22,7 +22,7 @@
                 #send !pinscribe $runes[*runes[+$itemSlot]][$runeSlot] on *runes[+$itemSlot];
                 #math {runeSlot} {$runeSlot+1};
 
-                #if { $runeSlot >= @getNumElements{runes[*runes[+$itemSlot]]} }
+                #if { $runeSlot > @getNumElements{runes[*runes[+$itemSlot]]} }
                 {
                         #math {itemSlot} {$itemSlot+1};
                         #var runeSlot 1;
@@ -43,7 +43,7 @@
                 #send pprepare *runes[+$itemSlot];
                 #math {itemSlot} {$itemSlot+1};
 
-                #if { $itemSlot >= @getNumElements{runes} }
+                #if { $itemSlot > @getNumElements{runes} }
                 {
                         #UNTICKER {runeprep};
                         #var itemSlot 1;
