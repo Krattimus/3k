@@ -49,17 +49,10 @@
 /************************************************************
 	Now render our displays
 ************************************************************/
-#foreach {*screen[panels][]} {panel} 
-{
-	#if { $screen[$panel] }
-	{
-		#var panelToRender .render;
-		#cat {panelToRender} {$panel};
-		$panelToRender;
-	};
-};
-
-#foreach {*screen[sidePanels]} {panel} 
+#unvar allPanels;
+#list allPanels add {$screen[panels][%*]};
+#list allPanels add {$screen[sidePanels][%*]};
+#foreach {$allPanels[]} {panel} 
 {
 	#if { $screen[$panel] }
 	{
