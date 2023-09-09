@@ -2,8 +2,8 @@
 
 #VARIABLE {char}
 {
-    {area} {Bladesinger Guild}
-    {currentRoomID} {34755}
+    {area} {Mahjongg}
+    {currentRoomID} {1900}
     {guild} {Bladesinger}
     {isResting} {0}
     {ourCharacter} {kratter}

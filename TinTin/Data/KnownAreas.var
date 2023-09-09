@@ -1915,13 +1915,13 @@
         {Mobs} 
         {
             {1} {Amarul Kaevorum}
-            {2} {Princess Qi}
-            {3} {Tearis, Guardian of N'Vaelahr}
-            {4} {Kerym Hawksong}
-            {5} {Marsden}
-            {6} {Elaith Illaryl}
-            {7} {Lariel Silvermane}
-            {8} {Corath Irithyl}
+            {2} {Tearis, Guardian of N'Vaelahr}
+            {3} {Kerym Hawksong}
+            {4} {Marsden}
+            {5} {Elaith Illaryl}
+            {6} {Lariel Silvermane}
+            {7} {Corath Irithyl}
+            {8} {Princess Qi}
         }
     }
     {Blingdenwood Village} 
@@ -9280,9 +9280,9 @@
             {35} {Black Tiger}
             {36} {Gold Chinese Dragon}
             {37} {Lumbering Ox}
-            {38} {Red Chinese Dragon}
-            {39} {A small wandering spider}
-            {40} {Princess Qi}
+            {38} {A small wandering spider}
+            {39} {Princess Qi}
+            {40} {Red Chinese Dragon}
         }
         {Ratings} 
         {
