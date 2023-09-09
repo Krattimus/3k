@@ -145,7 +145,7 @@
 ************************************************************/
 #function {hasOpenPanel}
 {
-	#foreach {$screen[sidePanels][]} {panel} 
+	#foreach {*screen[sidePanels][]} {panel} 
 	{
 		#if { $screen[$panel] }
 		{
