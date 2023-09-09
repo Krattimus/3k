@@ -52,7 +52,7 @@
 #unvar allPanels;
 #list allPanels add {$screen[panels][%*]};
 #list allPanels add {$screen[sidePanels][%*]};
-#foreach {$allPanels[]} {panel} 
+#foreach {$allPanels[%*]} {panel} 
 {
 	#if { $screen[$panel] }
 	{

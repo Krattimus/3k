@@ -125,12 +125,10 @@
 
 #alias {.showPanel}
 {
-	
-	
-	#foreach {*screen[sidePanels][]} {panel}
+	#foreach {$screen[sidePanels][%*]} {panel}
 	{
 		#var screen[$panel] 0;
-	};
+	};	
 
 	#var screen[%0] 1;
 };
@@ -145,7 +143,7 @@
 ************************************************************/
 #function {hasOpenPanel}
 {
-	#foreach {$screen[sidePanels][]} {panel} 
+	#foreach {$screen[sidePanels][%*]} {panel} 
 	{
 		#if { $screen[$panel] }
 		{
