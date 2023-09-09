@@ -3,6 +3,30 @@
 #class {testbin} {open}
 
 
+#action {Corath returns the item} 
+{
+
+
+
+};
+
+#alias .runeItem
+{
+	#send !pinscribe health on %1;
+	#delay 7 {
+		#send !pinscribe revalrie on %1;
+		#delay 7 {
+			#send !pinscribe power on %1;
+			#delay 7 {
+				#send !pinscribe spirit on %1;
+				#delay 7 {
+					#send !pinscribe rejuvenation on %1;
+				};
+			};
+		};
+	};
+};
+
 
 #gag {Your unarmed frenzy ends.};
 #gag {You find a pressure point and bore down!};

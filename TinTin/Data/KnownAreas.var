@@ -1902,26 +1902,26 @@
             {4} {lven warsword }
             {5} {A stone statue}
             {6} {The crystal of Myth Laerast}
-            {7} {Bladesinger's Preparation box }
-            {8} {A small sign}
-            {9} {Bladesinger's Donation box }
-            {10} {A moss covered statue}
-            {11} {Display Case}
-            {12} {A Trashcan}
-            {13} {Bladesinger's box }
-            {14} {An ATM  Pinnacle Bank}
-            {15} {A tall street light}
+            {7} {A moss covered statue}
+            {8} {A tall street light}
+            {9} {Bladesinger's Preparation box }
+            {10} {A small sign}
+            {11} {A Trashcan}
+            {12} {Bladesinger's box }
+            {13} {An ATM  Pinnacle Bank}
+            {14} {Bladesinger's Donation box }
+            {15} {Display Case}
         }
         {Mobs} 
         {
             {1} {Amarul Kaevorum}
-            {2} {Elaith Illaryl}
-            {3} {Lariel Silvermane}
-            {4} {Princess Qi}
-            {5} {Tearis, Guardian of N'Vaelahr}
-            {6} {Corath Irithyl}
-            {7} {Kerym Hawksong}
-            {8} {Marsden}
+            {2} {Princess Qi}
+            {3} {Tearis, Guardian of N'Vaelahr}
+            {4} {Kerym Hawksong}
+            {5} {Marsden}
+            {6} {Elaith Illaryl}
+            {7} {Lariel Silvermane}
+            {8} {Corath Irithyl}
         }
     }
     {Blingdenwood Village} 

@@ -133,7 +133,7 @@
 	#NOP { *********** Guild  ************ };
 	#read 3k/TinTin/Guilds/Eternals.tin;
 
-	#if { "$char[guild]" != "" } 
+	#if { "$char[guild]" != "" && "$char[guild]" != "guest"} 
 	{
 		#read 3k/TinTin/Guilds/$char[guild].tin;
 	};
