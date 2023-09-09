@@ -170,18 +170,6 @@
 };
 
 /*************************************************************************
-	Switches to a new guild or character:
-	.switchTo Monk Krat
-*************************************************************************/
-#alias {.switchTo}
-{
-        #var char[guild] %1;
-        #var char[ourCharacter] %2;
-        .save;
-        #end;
-};
-
-/*************************************************************************
 	Captures all text for a period of time... 
 *************************************************************************/
 #alias .captureFor 
@@ -304,6 +292,12 @@
 {
     #buffer clear;
     .render;
+};
+
+#alias {hmflee}
+{
+	.mapGo cot;
+	#send !hmflee;
 };
 
 #class {base} {close}

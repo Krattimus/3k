@@ -10,10 +10,10 @@
 
 /******************************************************************************
 	What to attack
+	{Hamilton}{hamilton}	
 *******************************************************************************/
 #var patrol[shouldKillList] 
 {
-	{Hamilton}{hamilton}
 	{Guard}{guard}
 	{guard}{guard}
 	{Martin}{martin}

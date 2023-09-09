@@ -20,7 +20,7 @@
 #var transmuter[uses] 0;
 #action {Profession #1 : Transmuter%s\(Level %d\)%s\[%*\]} {#var transmuter[level] %2};
 
-#alias satchel_retrieve_xmute 
+#alias .satchel_retrieve_xmute 
 {
     #var items_required %1;
     #var item_quality %2;
@@ -74,7 +74,7 @@
 };
 
 
-#alias transmute_burn 
+#alias .transmute_burn 
 {
     #var transmute_count 0;
     #action {Pfffzzzt!  You transmute:} {#math transmute_count {$transmute_count + 1}};
@@ -217,7 +217,7 @@
     };
 };
 
-#alias transmute_ug 
+#alias .transmute_ug 
 {
     #if {"%1" == "poor"} 
     {
@@ -249,7 +249,7 @@
     };
 };
 
-#alias transmute_ug_essence
+#alias .transmute_ug_essence
 {
     transmute_ug %1 {essence of ascension};
     transmute_ug %1 {essence of blasting};
@@ -268,7 +268,7 @@
     transmute_ug %1 {essence of willy};
 };
 
-#alias transmute_ug_hearts
+#alias .transmute_ug_hearts
 {
     transmute_ug %1 {heart of ascension};
     transmute_ug %1 {heart of blasting};
@@ -287,7 +287,7 @@
     transmute_ug %1 {heart of willy};
 };
 
-#alias transmute_ug_fragments
+#alias .transmute_ug_fragments
 {
     transmute_ug %1 {fragment of ascension};
     transmute_ug %1 {fragment of blasting};

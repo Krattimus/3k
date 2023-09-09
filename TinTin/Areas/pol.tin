@@ -9,13 +9,17 @@
 
 /******************************************************************************
 	What to attack
+
+    Non hardcore:
+        {Queen's Elite Guardswoman}{guard}
+        {Black Patrol Guard}{guard}
+        {Black Patrol Leader}{guard}
+
+
 *******************************************************************************/
 #var patrol[shouldKillList] 
 {
 	{Faerie Lizard}{lizard}
-    {Queen's Elite Guardswoman}{guard}
-    {Black Patrol Guard}{guard}
-    {Black Patrol Leader}{guard}
     {Wild Stag}{stag}
     {Baby Dragon}{dragon}
     {Rabid Wolf}{wolf}

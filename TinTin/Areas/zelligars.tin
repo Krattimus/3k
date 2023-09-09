@@ -26,7 +26,7 @@
 
 
 #act {You keep *Gloves of Acid Protection.} {gl;}
-
+#act {You thought you saw a key, but on second glance you realize it is not}{gl;};
 #act {You sweep your hand over {one|some} of the higher shelves} {gl;}
 #act {You reach in and snatch the key from the deadly acid.} {gl;}
 #act {You slip the key into the lock and unlock the door} {gl;}

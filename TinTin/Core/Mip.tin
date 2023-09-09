@@ -24,7 +24,7 @@
 {
 	#SEND 3klient $mip[id]~~$info[SYSTEM][CLIENT_NAME]$info[SYSTEM][CLIENT_VERSION];
 	#SEND 3klient LINEFEED on;
-	#SEND 3klient HAA off
+	#SEND 3klient HAA off;
 }
 
 #NOP ***** Extract Raw Data *********

@@ -11,7 +11,6 @@
 #var angel[aegis] 0;
 #var angel[strikeCounter] 0;
 #var angel[restEndurance] 60;
-#var angel[isResting] 0;
 #var angel[spacesBehind] 5;
 
 #var angel[isEngaging] 0;
@@ -54,9 +53,9 @@
 	#NOP { THIS DOES NOT BELONG HERE, BUT FOR NOW, DETERMINE IF THE PATROLLER NEEDS TO REST };
 	#if { $patroller[isPatrolling] }
 	{
-		#if { $angel[endurance] < $angel[restEndurance] && !$angel[isResting] }
+		#if { $angel[endurance] < $angel[restEndurance] && !$char[isResting] }
 		{
-			#var angel[isResting] 1;
+			#var char[isResting] 1;
 			.stop;
 		};
 	};
@@ -200,7 +199,7 @@
 	{
 		#if { $angel[endurance] >= $angel[enduranceMax] }
 		{
-			#var angel[isResting] 0;
+			#var char[isResting] 0;
 			.resume;
 		};
 	};

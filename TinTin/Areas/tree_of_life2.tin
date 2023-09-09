@@ -22,9 +22,15 @@
 	{Tzadkiel}{angel}
 	{Ratziel}{angel}
 	{Metatron}{angel}
-	
 };
 
+
+#action {The angel blocks your path.}
+{
+	#map undo;
+	#path move backward;
+	#send !gl;
+};
 
 /******************************************************************************
 	Additional scripting used for this area

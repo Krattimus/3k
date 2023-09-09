@@ -121,4 +121,11 @@
         .showSetting {Corpse Donations} $settings[corpseDonations];
 };
 
+#alias {.restHP}
+{
+        #var char[restHP] %1;
+        #var char[resumeHP] %2;
+        .save;
+};
+
 #class {settings} {close}

@@ -6,20 +6,144 @@
 	Data
 **********************************************************************************/
 #var bladesinger[xp] 0;
+#var bladesinger[runeSlot] 1;
+#var bladesinger[itemSlot] 1;
+#var bladesinger[defaultItem] {};
 
+#var bladesinger[defaultRunes]
+{
+	{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}
+};
+
+
+
+#var bladesinger[runes] 
+{
+	{greaves}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{gloves}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{cloak}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{boots}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{armbands}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{helmet}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{shield}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{breastplate}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
+	{sword}{{1}{health}{2}{revalrie}{3}{power}{4}{starfire}{5}{thought}{6}{eternity}}
+};
+
+/**********************************************************************************
+	Events
+**********************************************************************************/
 .registerEvent onNewMipGline onNewMipGlineBladesinger;
 .registerEvent onMobKilled onMobKilledBladesinger;
 .registerEvent onNewCombatRound onNewCombatRoundBladesinger;
 
 /**********************************************************************************
-	Kill trig
+	Inscribe runes
+**********************************************************************************/
+#alias .runeItem
+{
+	#var bladesinger[runeSlot] 1;
+
+	#TICKER {runeprep} 
+	{
+		.runeDoNextPrepare;
+	} {5};
+
+
+	#send !pinscribe $bladesinger[runes][$bladesinger[runeSlot]] on %1;
+	
+
+};
+
+#alias .runeInscribeDefault
+{
+
+
+
+};
+
+#alias .runeDoNextInscribe
+{
+	#send !pinscribe $bladesinger[runes][*bladesinger[runes][+$bladesinger[itemSlot]]][$bladesinger[runeSlot]] on *bladesinger[runes][+$bladesinger[itemSlot]];
+	#math {bladesinger[runeSlot]} {$bladesinger[runeSlot]+1};
+
+	#if { $bladesinger[runeSlot] > @getNumElements{bladesinger[runes][*bladesinger[runes][+$bladesinger[itemSlot]]]} }
+	{
+			#math {bladesinger[itemSlot]} {$bladesinger[itemSlot]+1};
+			#var bladesinger[runeSlot] 1;
+
+			#if { $bladesinger[itemSlot] >= @getNumElements{bladesinger[runes]} }
+			{
+					#UNTICKER {runeme};
+					#var bladesinger[itemSlot] 1;
+			};
+	};
+};
+
+#alias .runeDoNextPrepare
+{
+	#send pprepare *bladesinger[runes][+$bladesinger[itemSlot]];
+	#math {bladesinger[itemSlot]} {$bladesinger[itemSlot]+1};
+
+	#if { $bladesinger[itemSlot] > @getNumElements{bladesinger[runes]} }
+	{
+			#UNTICKER {runeprep};
+			#var bladesinger[itemSlot] 1;
+	};
+};
+
+
+#alias .runePrepare
+{
+        #TICKER {runeprep} 
+        {
+			.runeDoNextPrepare;
+        } {5};
+};
+
+#alias .runeInscribe
+{
+        #TICKER {runeme} 
+        {
+			.runeDoNextInscribe;
+        } {5};
+};
+
+/**********************************************************************************
+	Client side kill trig
 **********************************************************************************/
 #alias {onMobKilledBladesinger}
 {
 	#send salute;
+	#send hp;
+	#send take all from corpse;
+	#send take coins from corpse;
+	#send wrap;
+
+	#if { $char[isResting] }
+	{
+		#send revalrie;
+	};
 };
 
+#alias .bladeSingerRestCheck
+{
+	#if { $patroller[isPatrolling] }
+	{
+		#if { $my[gp1][current] < $my[gp1][max]/2 && !$char[isResting] }
+		{
+			#var char[isResting] 1;
+			.stop;
+		};
 
+		#if { $my[hp][current] <= $char[restHP] && !$char[isResting] }
+		{
+			#var char[isResting] 1;
+			.stop;
+		};
+	};
+
+};
 /*************************************************************************************
 	Round of combat
 *************************************************************************************/
@@ -32,10 +156,14 @@
 
 	#math {normalizedHp} { $Bladesinger[salveThreshold]*$my[hp][max]/100 };
 
+
+	.bladeSingerRestCheck;
 };
 
 /*************************************************************************************
-	Parse MI
+	Parse MIP
+	Line1: [0 / 0 / 0/ 0]  [BL (49%):  0 / 0 ]  Mode:[Freeform]  [17%]  [F]
+	Line2: [XTNL: -12274834]
 *************************************************************************************/
 #ALIAS {onNewMipGlineBladesinger} 
 {
@@ -43,15 +171,33 @@
 	{
 		#var	{bladesinger[xp]}	{&1}{&2};
 	};
+
+	#if { $char[isResting] }
+	{
+		#if {  $my[gp1][current] >= $my[gp1][max] &&  $my[hp][current] >= $char[resumeHP]   }
+		{
+			#var char[isResting] 0;
+			.resume;
+			#send freeform;
+		};
+	};
 };
 
+/**********************************************************************************
+	Spam check
+**********************************************************************************/
 #gag {^You miss %*.};
 #gag {^You slice %*.};
 #gag {^You feint %*.};
 #gag {^You slash %*.};
+#gag {^You carve %*.};
+#gag {^You dice %*.};
 #gag {^You study %*.};
 #gag {^You gash %*.};
-#gag {You study White Foot Soldier's movements closely.};
+#gag {You attempt to dodge your foes' attacks.};
+#gag {You study %1's movements closely.};
+#gag {You adjust your grip to prepare for an opening.};
+
 
 /*************************************************************************************
 	Render hp bar
@@ -99,14 +245,19 @@
 	{
 		#showme {  } {-6};
 	};
-	#showme {<048>HP<088>  ${hp}/${hp_max}  <048>SP<088>  ${sp}<048>/<088>${sp_max}<088> <048>So'kra<088>  ${gp1}<048>/<088>${gp1_max}  <048>Ne'kra<088>  ${gp2}<048>/<088>${gp2_max}}  {-3};
+	#showme {<048>HP<088>  ${hp}/${hp_max}  <048>SP<088>  ${sp}<048>/<088>${sp_max}<088> <048>Ne'kra<088>  ${gp1}<048>/<088>${gp1_max}  <048>So'kra<088>  ${gp2}<048>/<088>${gp2_max}}  {-3};
 	#showme {<058>$bladesinger[mode]<088> <038>GXP: <138>$bladesinger[gxp]%%<088> <038>XP: <138>$bladesinger[xp]<088>}{-4};
 };
 
+/*************************************************************************************
+	Guild line
+*************************************************************************************/
 #action {^H:%d/%d S:%d/%d S:%d/%d N:%d/%d X:%d.%d %w}
 {
 	#var bladesinger[gxp] %9.%10;
 	#var bladesinger[mode] %11;
+	.bladeSingerRestCheck;
 };
+
 
 #class {Bladesinger} {close}

@@ -32,8 +32,8 @@
 
 /************************************************************
 	Register events
+	.registerEvent onMobKilled onMobKilledBase;
 ************************************************************/
-.registerEvent onMobKilled onMobKilledBase;
 .registerEvent onPrompt onPromptBase;
 .registerEvent onEnteredRoom onEnteredRoomBase;
 .registerEvent onExitedRoom onExitedRoomBase;
@@ -45,12 +45,6 @@
 	.unregisterEvent onExitedRoom onExitedRoomBase;
 	.unregisterEvent onDebugLog onDebugLogBase;
 };
-
-/************************************************************
-	Initialize
-************************************************************/
-prompt >$nl$;
-.mapOff;
 
 /************************************************************
 	Debug log

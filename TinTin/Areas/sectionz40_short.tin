@@ -1,15 +1,27 @@
+#read 3k/TinTin/Areas/sectionz.tin
+
 #class {bot} {open}
 
-#var {no_loop} {1}
-#var {no_home} {1}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+#var patrol[startingLocation] 379;
+#var {patrol[path]} {s;w;n;play;unpause game;s;se;ne;n;u;w;s;w;s;e;e;d;n;n;e;e;d;e;se;n;n;u;s;se;d;n;w;w;s;enter portal;w;nw;n;u;s;se;ne;n;d;n;w;n;d;w;n;d;w;n;n;e;d;w;s;s;w;u;w;w;enter portal;w;n;n;e;e;d;s;s;e;e;d;s;w;n;d;n;ne;e;e;e;se;se;e;e;ne;e}
 
-#var {patrol[path]} {enter $sectionz[40];s;w;d;s;se;ne;n;u;w;s;w;s;e;e;d;n;n;e;e;d;e;se;n;n;u;s;se;d;n;w;w;s;enter portal;w;nw;n;u;s;se;ne;n;d;n;w;n;d;w;n;d;w;n;n;e;d;w;s;s;w;u;w;w;enter portal;w;n;n;e;e;d;s;s;e;e;d;s;w;n;d;n;ne;e;e;e;se;se;e;e;ne;e}
 
-#act {^=M= {A Clone Soldier|A Cloud Eye|A Groma|A Leago|A Leeva|A Massive Generator|A Ripper|A Spiral Gun|Balba|Brain|Galga|Zamuza}} {
-	#var patroller[shouldKill] balangool;
-        _check_mob
-}
+#ACTION {^Just a reminder, your continue code for Section %d is %w}
+{
+    #variable {sectionz[%1]} {%2}
+};
+
+#action {You enter in code}
+{
+        #map go 25088;
+};
+
+#action {%w will not let you pass!}
+{
+	#map undo;
+	#path move backward;
+    #send !k %w;
+    #var patroller[canWalk] 0;
+};
 
 #class {bot} {close}

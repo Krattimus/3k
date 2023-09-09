@@ -38,6 +38,21 @@
 	#delay 0 load3k;
 }
 
+#alias {.switchTo}
+{
+	#format {guild} {%n} {%1};
+	#read 3k/TinTin/Data/Character.var;
+	#var char[guild] $guild;
+    #var char[ourCharacter] %2;
+    #class charvar write 3k/TinTin/Data/Character.var;
+
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Switching Guilds To $guild for %2;
+	#draw Yellow scroll line 1 1 1 80;
+
+	#end;
+};
+
 #alias {connect} 
 {
 	#read 3k/TinTin/Data/Character.var;
@@ -45,8 +60,8 @@
 	#var {ses_name} {$char[ourCharacter]};
 	#var {mud} {3k};
 	$ses_name;
-	#textin 3k/TinTin/.$char[ourCharacter]
-}
+	#textin 3k/TinTin/.$char[ourCharacter];
+};
 
 #alias {load3k} 
 {
@@ -92,6 +107,12 @@
 	#read 3k/TinTin/Mapper/Obstacles.tin;
 	#read 3k/TinTin/Mapper/Terrain.tin;
 	
+	#if { @isDigit{$char[currentRoomID]} }
+	{
+		#map goto {$char[currentRoomID]};
+		#var area {$char[area]};	
+	};
+
 	#NOP { *********** Controllers ************ };
 	#read 3k/TinTin/Controllers/Controllers.tin;
 	#read 3k/TinTin/Controllers/BaseController.tin;
@@ -121,14 +142,15 @@
 	#send coins;
 	#send pwho;
 	#send gs;
-
-	#if { @isDigit{$char[currentRoomID]} }
-	{
-		#map goto {$char[currentRoomID]};
-		#var area {$char[area]};	
-	};
+	#send hp;
+	prompt >$nl$;
+	.mapOff;
 
 	#delay 0.35 {.render};
-	#delay 0.35 look;
+};
 
+#action {^Prompt set.$} 
+{
+	.render;
+	#send !look;
 };
