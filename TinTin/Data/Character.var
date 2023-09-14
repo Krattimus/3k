@@ -2,13 +2,13 @@
 
 #VARIABLE {char}
 {
-    {area} {Mahjongg}
-    {currentRoomID} {1900}
-    {guild} {Bladesinger}
+    {area} {Pinnacle}
+    {currentRoomID} {135}
+    {guild} {Monk}
     {isResting} {0}
-    {ourCharacter} {kratter}
-    {restHP} {400}
-    {resumeHP} {1300}
+    {ourCharacter} {krat}
+    {restHP} {700}
+    {resumeHP} {890}
 }
 
 #CLASS {charvar} CLOSE

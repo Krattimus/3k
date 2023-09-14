@@ -1,0 +1,341 @@
+#showme READING NPC
+
+#class {npccontroller} {open}
+
+#unvar onHeardSaying;
+#unvar onCoinsReceived;
+#unvar onFailedAction;
+#unvar onItemGiven;
+#read 3k/TinTin/Controllers/KratjiitNpc.tin;
+
+/*********************************************************
+	NPC Data
+*********************************************************/
+#var npc[isActive] 0;
+#var npc[timeToTake] 20;
+#var npc[timeToTakeResponse] 40;
+#var npc[playResponse] 0;
+#var npc[responseSlot] 0;
+#var npc[stallTimer] 0;
+#var npc[actionTimer] 10;
+
+/*********************************************************
+	Events
+*********************************************************/
+.registerEvent onRoomSeen onRoomSeenNpc;
+.registerEvent onFailedMovement onFailedMovementNpc;
+.registerEvent onPathFinished onPathFinishedNpc;
+.registerEvent onClearData onClearDataNpc;
+.registerEvent onExitedRoom onExitedRoomNpc;
+.registerEvent onHeardSaying onHeardSayingNpc;
+.registerEvent onCoinsReceived onCoinsReceivedNpc;
+.registerEvent onFailedAction onFailedActionNpc;
+.registerEvent onItemGiven onItemGivenNpc;
+
+/***********************************************************
+	Heard something say
+***********************************************************/
+#alias onHeardSayingNpc
+{
+	#if { $npc[playResponse] <= 0 }
+	{	
+		#var response {};
+
+		#foreach { *npc[keywords][] } {lookFor}
+		{
+			#local keyword $lookFor;
+
+			#if { "$keyword" == "" }
+			{
+				#continue;
+			};
+			#elseif { @equalsIgnoreCase{{$keyword}{$event[saying]}} }
+			{
+				#var response $npc[keywords][$keyword];
+				#break;
+			};
+			#elseif { @containsNoCase{{$event[saying]}{$keyword}}}
+			{
+				#var response $npc[keywords][$keyword];
+				#break;
+			};
+			#else
+			{
+				#var nothing 1;
+			};
+		};
+
+		#if { "$response" != "" }
+		{
+			#var npc[stallTimer] 0;
+			.respondWith $response;
+		};
+	};
+};
+
+/***********************************************************
+	Turns on or off NPC mode
+***********************************************************/
+#alias {.toggleNPC}
+{
+	#if { $npc[isActive] }
+	{
+		#var npc[isActive] 0;
+	};
+	#else
+	{
+		#var npc[isActive] 1;
+	};
+
+	#draw Yellow scroll line 1 1 1 80;
+	#showme NPC Mode is $npc[isActive];
+	#draw Yellow scroll line 1 1 1 80;
+};
+
+/***********************************************************
+	Refund coins
+***********************************************************/
+#alias {.refundCoins}
+{	
+	#send !give $event[amountReceived] coins to $event[giver];
+};	
+
+/***********************************************************
+	Test a dialog repsponse
+***********************************************************/
+#alias {.testResponse}
+{
+	#var event[saying] %0;
+	#var event[speaker] $char[ourCharacter];
+	#var npc[stallTimer] 0;
+	onHeardSayingNpc;
+};
+
+/***********************************************************
+	Start playing a response out... like a cutscne
+***********************************************************/
+#alias {.respondWith}
+{
+	#var npc[playResponse] %1;
+	#var npc[responseSlot] 1;
+
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Playing cut scene response $npc[playResponse];
+	#draw Yellow scroll line 1 1 1 80;
+
+	#var npc[actionTimer] $npc[timeToTakeResponse];
+};
+
+/***********************************************************
+	We left the room
+***********************************************************/
+#alias {onExitedRoomNpc}
+{
+	#var nothing 1;
+};
+
+/***********************************************************
+	Failed vendor line
+***********************************************************/
+#alias onFailedActionNpc
+{
+	.respondWith $npc[failedActionResponse];
+};
+
+
+/***********************************************************
+	Give item to coin purchaser
+***********************************************************/
+#alias .giveItemToPurchaser
+{
+	#send give %0 to $event[giver];
+};
+
+/***********************************************************
+	On item given
+***********************************************************/
+#alias onItemGivenNpc
+{
+	#if { $npc[lookingFor][$event[itemGiven]] > 0 }
+	{
+		.respondWith $npc[questSuccess];
+	};
+	#else
+	{
+		.respondWith $npc[questFail];
+	};
+};
+
+/***********************************************************
+	Return Item
+***********************************************************/
+#alias .returnGivenItem
+{
+	#send give $event[itemGiven] to $event[giver];
+};
+
+/***********************************************************
+	Eval quest
+***********************************************************/
+#alias .evalQuest
+{
+	#if { !$npc[questCheck]} 
+	{ 
+		.respondWith $npc[questCheckResponse];
+	}; 
+};
+
+/***********************************************************
+	Heart beat, run our decision making	tree
+***********************************************************/
+#ticker {npcHeartBeat} 
+{
+	#NOP { Is the npc active ? };
+	#if { $npc[isActive] }
+	{
+		#NOP { Are we playing a response ? };
+		#if { $npc[stallTimer] > 0 }
+		{
+			#math {npc[stallTimer]} {$npc[stallTimer]-1};
+		};
+		#NOP { Are we playing a response ? };
+		#elseif { $npc[playResponse] > 0 }
+		{
+			$npc[responses][$npc[playResponse]][$npc[responseSlot]];
+			#math {npc[responseSlot]} {$npc[responseSlot]+1};
+
+			#if { $npc[responseSlot] > *npc[responses][$npc[playResponse]][-1] }
+			{
+				#var npc[playResponse] 0;
+				#draw Yellow scroll line 1 1 1 80;
+				#showme Ending Cut Scene;
+				#draw Yellow scroll line 1 1 1 80;
+				#var npc[actionTimer] $npc[timeToTakeResponse];
+			};
+		};
+		#NOP { Idle behavior };
+		#else
+		{
+			#if { $npc[actionTimer] > 0 }
+			{
+				#math {npc[actionTimer]} {$npc[actionTimer]-1};
+				#if { $npc[actionTimer] <= 0 }
+				{
+					.doRandomAction;
+				};
+			};
+		};
+	};
+} {1};
+
+/************************************************************
+ 	No!
+************************************************************/
+#action {Vilgan arrives following you.}
+{
+	#send !abuse vilgan;
+} {1};
+
+/***********************************************************
+	Takes a random 'ambient action'
+***********************************************************/
+#alias .doRandomAction
+{
+	#var whatToDo @randomBetween{{0}{100}};
+
+	#if { $whatToDo < 10 }
+	{
+		.doWander;
+	};
+	#elseif { $whatToDo < 40 }
+	{
+		.doRandomEmote;		
+	};
+	#else
+	{
+		.doRandomSaying;
+	};
+
+	#var npc[actionTimer] $npc[timeToTake];
+};
+
+/***********************************************************
+	Coins
+***********************************************************/
+#alias onCoinsReceivedNpc
+{
+	#if { $npc[purchases][$event[amountReceived]] > 0  }
+	{
+		.respondWith $npc[purchases][$event[amountReceived]];
+	};
+	#else
+	{
+		.respondWith $npc[refundResponse];
+	};
+};
+
+/***********************************************************
+	Wander
+***********************************************************/
+#alias .doWander
+{
+	#if { $currentRoomID <100 }
+	{
+		#var direction $npc[townPath][$currentRoomID];
+		$direction;
+	};
+};
+
+/***********************************************************
+	Random saying
+***********************************************************/
+#alias .doRandomSaying
+{
+	#var saying @randomBetween{{1}{@getNumElements{npc[sayings]}}};
+	#send !say $npc[sayings][$saying];
+};
+
+/***********************************************************
+	Random emote
+***********************************************************/
+#alias .doRandomEmote
+{
+	#var emote @randomBetween{{1}{@getNumElements{npc[emotes]}}};
+	#send !emote $npc[emotes][$emote];
+};
+
+/***********************************************************
+	Failed movement
+***********************************************************/
+#alias onFailedMovementNpc
+{
+	#var nothing 1;
+};
+
+/***********************************************************
+	Called when we look around
+***********************************************************/
+#alias onClearDataNpc
+{
+	#var nothing 1;
+};
+
+/***********************************************************
+	Allow movement again only until we see a room again
+***********************************************************/
+#alias onRoomSeenNpc
+{
+	#var nothing 1;
+};
+
+/***********************************************************
+	End of map walk
+***********************************************************/
+#alias onPathFinishedNpc
+{
+	#var nothing 1;
+};
+
+
+
+#class {npccontroller} {close}

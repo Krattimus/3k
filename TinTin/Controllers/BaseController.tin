@@ -29,6 +29,11 @@
 #var event[itemTaken] {};
 #var event[items] {};
 #var event[lastItemFound] {};
+#var event[playersSeen] {};
+#var event[giver] {};
+#var event[amountReceived] {};
+#var event[failedAction] {};
+#var event[itemGiven] {};
 
 /************************************************************
 	Register events
@@ -249,11 +254,20 @@
 
 } {1};
 
+#action {^%w arrives.$}
+{
+	removeAllItemsFromList {event[playersSeen]} {%1};
+	#list {event[playersSeen]} add {%1};
+};
+
 /************************************************************
 	Detect other players
 ************************************************************/
 #action {^=P= %*} 
 {
+	removeAllItemsFromList {event[playersSeen]} {%1};
+	#list {event[playersSeen]} add {%1};
+
 	#NOP {Any player detected};
 	#var found[player] 1;
 	#var event[otherPlayer] %1;
@@ -335,10 +349,12 @@
 ************************************************************/
 #action {^There is no %1 here.$}
 {
+	#var event[failedAction] %1;
 	#if { !@containsNoCase{{%1}{reason to}} }
 	{
 		#var event[failedAttack] %1;
 		.triggerEvent onFailedAttack;
+		.triggerEvent onFailedAction;
 	};
 };
 
@@ -358,11 +374,32 @@
 };
 
 /************************************************************
+ 	Gives you items
+************************************************************/
+#action {%1 gives %2 to you.}
+{ 
+	#var event[itemGiven] %2;
+	#var event[giver] %1;
+	.triggerEvent onItemGiven;
+};
+
+/************************************************************
+ 	Gives you coins
+************************************************************/
+#action {%1 gives you %2 coins.}
+{
+	#var event[giver] %1;
+	#var event[amountReceived] %2;
+	.triggerEvent onCoinsReceived;
+};
+
+/************************************************************
  	Detect a follower leaving the room
 ************************************************************/
 #action {%1 leaves %2\.} 
 {
 	#format {whichPlayer} {%l} {%1};
+	removeAllItemsFromList {event[playersSeen]} {$whichPlayer};
 	
 	#if { "$whichPlayer" == "$event[followed]" }
 	{
@@ -514,6 +551,7 @@
 	#var found[item] 0;
 	#var found[mob] 0;
 
+	#var event[playersSeen] {};
 	#var event[otherPlayer] {};
 	#var event[foundMobName] {};
 	#list event[items] clear;	

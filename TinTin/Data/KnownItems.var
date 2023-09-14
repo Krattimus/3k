@@ -613,12 +613,76 @@
     }
     {Aegis Global} 
     {
+        {A Statue of Cancer the King} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {A big red button} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {A crashed plane} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {A large green metal sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {A large three story building} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {A single gold coin} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {A tall street light} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
         {Aegis Bodyarmor} 
         {
             {Description} {  Aegis Bodyarmor [blistered]  Constructed of the strongest metals and polymers known to man, this armor is the closest thing to invincibility that Aegis Global has ever crafted.  Meant to be worn by the company's secret Genocide robotic troops, it's a little big on you, but it still offers incredible protection.  The surface of the armor is grayish-blue in color and emblazoned across the front in red are the letters 'AG'. This item will bind to you when picked up. The armour is in perfect condition. It appears to be heavy armour for a player of your level. This armor has the following resistances: >10 edged, >10 blunt, >10 fire, >10 ice, >10 acid, >10 energy, >10 radiation  You must be level 25 to wear this.  It looks heavy. }
             {Rooms} 
             {
                 {1} {30215}
+            }
+        }
+        {The 3-K Kill List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
     }
@@ -2237,6 +2301,62 @@
     }
     {Archon} 
     {
+        {A big frickin' boulder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1280}
+            }
+        }
+        {A heavy bronze buckler} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1297}
+            }
+        }
+        {A rusty dagger} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1283}
+            }
+        }
+        {A set of leathers} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1283}
+            }
+        }
+        {A shiny sword} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1297}
+            }
+        }
+        {A small sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1277}
+            }
+        }
+        {A tall street light} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1307}
+            }
+        }
         {a rusty dagger} 
         {
             {Description} {    You salute your opponent's bravery. a rusty dagger  This dagger's blade is curved in shape similar to a scimitar. It is clearly designed to parry incoming attacks using the curve to catch the opposition's blade and open them for a counter attack. The dagger hasn't seen the best of care, however, and is rusty and dulled at the edges. This weapon is in excellent condition.  This weapon is class 5 (edged).  This weapon gains benefits from your dagger weapon skill. It looks light.  Deadman: 0  Deadman: 0  HP  293 /303 SP  230 /230  So'kra  336 / 336  Ne'kra  280 / 280 Default GXP: 15.049% XP: -270132 }
@@ -2349,6 +2469,8 @@
                 {3} {42076}
                 {4} {6203}
                 {5} {5813}
+                {6} {22889}
+                {7} {4756}
             }
         }
         {Amulet of Perplexus} 
@@ -3225,6 +3347,112 @@
             }
         }
     }
+    {Bard} 
+    {
+        {A beautiful sorceress} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {26672}
+            }
+        }
+        {A bronze statue of the god Hermes} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {26661}
+            }
+        }
+        {A marble fountain} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3959}
+                {2} {3973}
+                {3} {26640}
+            }
+        }
+        {A newspaper rack} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3959}
+                {2} {3973}
+                {3} {26640}
+            }
+        }
+        {A silver plaque} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3973}
+            }
+        }
+        {A statue of Seiger} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3966}
+            }
+        }
+        {A statue of Sorva} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3973}
+            }
+        }
+        {A statue of the goddess Harmonia} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {26669}
+                {2} {26666}
+            }
+        }
+        {A world globe} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {26649}
+            }
+        }
+        {An empty platform} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3968}
+            }
+        }
+        {Statues of Loomer and Xiola} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3971}
+            }
+        }
+        {Top Bards List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3959}
+                {2} {26640}
+                {3} {22091}
+            }
+        }
+    }
     {Barovia} 
     {
         {A piece of ivory} 
@@ -3619,7 +3847,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {4105}
+                {1} {4106}
+                {2} {4105}
             }
         }
     }
@@ -3728,14 +3957,30 @@
     }
     {Bladesinger Guild} 
     {
+        {A Statue of Cancer the King} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34763}
+            }
+        }
         {A Trashcan} 
         {
             {Description} {}
             {Rooms} 
             {
-                {1} {34756}
-                {2} {34755}
-                {3} {30193}
+                {1} {34755}
+                {2} {30193}
+                {3} {34756}
+            }
+        }
+        {A huge box } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34763}
             }
         }
         {A marble statue of War Captain Eos} 
@@ -3764,6 +4009,14 @@
                 {1} {34757}
             }
         }
+        {A single gold coin} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34763}
+            }
+        }
         {A small sign} 
         {
             {Description} {}
@@ -3786,6 +4039,7 @@
             {Rooms} 
             {
                 {1} {30193}
+                {2} {34763}
             }
         }
         {An ATM  Pinnacle Bank} 
@@ -3793,9 +4047,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {34756}
-                {2} {34755}
-                {3} {30193}
+                {1} {34755}
+                {2} {30193}
+                {3} {34756}
             }
         }
         {Bladesinger's Donation box } 
@@ -3819,9 +4073,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {34756}
-                {2} {34755}
-                {3} {30193}
+                {1} {34755}
+                {2} {30193}
+                {3} {34756}
             }
         }
         {Display Case} 
@@ -3842,6 +4096,14 @@
             {Rooms} 
             {
                 {1} {34758}
+            }
+        }
+        {The 3-K Kill List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34763}
             }
         }
         {The crystal of Myth Laerast} 
@@ -5289,6 +5551,14 @@
                 {1} {18510}
             }
         }
+        {A huge box } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1898}
+            }
+        }
         {A joystick} 
         {
             {Description} {}
@@ -6651,11 +6921,12 @@
     {
         {A Bundle of Clothes} 
         {
-            {Description} {  These were almost certainly the sole possessions of some poor war refugee.  Wonder how you got them!  It looks light.  Deadman: 0  Deadman: 0 }
+            {Description} {   Deadman: 0 A Bundle of Clothes These were almost certainly the sole possessions of some poor war refugee.  Wonder how you got them!  It looks light.  Deadman: 0  HP  619 /862 SP  459 /459  Ne'kra  570 / 578  So'kra  410 / 410 Freeform GXP: 10.083% XP: -58544015  HP  619 /862 SP  459 /459  Ne'kra  570 / 578  So'kra  410 / 410 Freeform GXP: 10.083% XP: -58544015  HP  619 /862 SP  459 /459  Ne'kra  578 / 578  So'kra  410 / 410 Freeform GXP: 10.083% XP: -58544015  HP  619 /862 SP  459 /459  Ne'kra  578 / 578  So'kra  410 / 410 Freeform GXP: 10.083% XP: -58544015 }
             {Rooms} 
             {
                 {1} {1258}
                 {2} {1249}
+                {3} {1251}
             }
         }
         {A Camera} 
@@ -6682,6 +6953,14 @@
                 {1} {1212}
             }
         }
+        {A Statue of Cancer the King} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1209}
+            }
+        }
         {A green mutant plant} 
         {
             {Description} {}
@@ -6705,6 +6984,15 @@
             {
                 {1} {1266}
                 {2} {1231}
+                {3} {1209}
+            }
+        }
+        {A tall street light} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1209}
             }
         }
         {Good fragment of light} 
@@ -6713,6 +7001,14 @@
             {Rooms} 
             {
                 {1} {1272}
+            }
+        }
+        {The 3-K Kill List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1209}
             }
         }
         {There is a hole here} 
@@ -14415,6 +14711,15 @@
                 {1} {24724}
             }
         }
+        {A giant canvas tent} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {37790}
+                {2} {24715}
+            }
+        }
         {A golden idol} 
         {
             {Description} {    A golden idol  This golden idol appears as a normal man with four arms.  You you recognize to be Vishnu, the god of mercy and light.  In each of his hands lies an object.  A glowing ball of fire in one hand, a bow in another, a mace in the third, and a sea shell in the last. It looks light. }
@@ -14453,6 +14758,14 @@
             {Rooms} 
             {
                 {1} {24727}
+            }
+        }
+        {An oakwood sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24761}
             }
         }
         {Bone White Armour} 
@@ -14520,6 +14833,14 @@
                 {1} {24751}
             }
         }
+        {Marble bench} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24762}
+            }
+        }
         {Mithril Battle-Axe} 
         {
             {Description} { This heavy two-handed battle-axe is made from a dull green-grey metal.  Its sleek black shaft is covered by a worn leather hand grip.  The reflective surface of the razor sharp, double-bladed axe never seems to dull in luster or sharpness.  The shaft of this mighty weapon is made from a rare, light-weight, unknown metal\; which helps to offset the heavy weight of the mithril axe located on its end. This weapon is in excellent condition.  This weapon is a class higher than 15 (edged)  This weapon gains benefits from your two-handed axe weapon skill. You must be level 10 to wield this weapon. It looks heavy. }
@@ -14562,11 +14883,12 @@
         }
         {Silver broadsword} 
         {
-            {Description} { up Aegis Invanis, the Centaur Warrior (Quiet)   Aegis Invanis, the Centaur Warrior (Quiet) This remarkable broadsword is nearly twice the length of the average human's arm.  Made of a blend of steel and the sacred metal known as silver, it is both light-weight and durable. Its razor-sharp blade gleams brightly with a holy radiance. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  This weapon gains benefits from your sword weapon skill. You must be level 17 to wield this weapon. }
+            {Description} { HP  862 /862 SP  459 /459  Ne'kra  562 / 578  So'kra  399 / 410 Freeform GXP: 7.663% XP: -64519287  HP  862 /862 SP  459 /459  Ne'kra  562 / 578  So'kra  399 / 410 Freeform GXP: 7.663% XP: -64519287  HP  862 /862 SP  459 /459  Ne'kra  578 / 578  So'kra  399 / 410 Freeform GXP: 7.663% XP: -64519287  HP  862 /862 SP  459 /459  Ne'kra  578 / 578  So'kra  410 / 410 Freeform GXP: 7.663% XP: -64519287  HP  862 /862 SP  459 /459  Ne'kra  578 / 578  So'kra  410 / 410 Freeform GXP: 7.663% XP: -64519287 Silver broadsword  This remarkable broadsword is nearly twice the length of the average human's arm.  Made of a blend of steel and the sacred metal known as silver, it is both light-weight and durable. Its razor-sharp blade gleams brightly with a holy radiance. This weapon is in excellent condition.  This weapon is a class higher than 15 (edged)  This weapon gains benefits from your sword weapon skill. You must be level 17 to wield this weapon. }
             {Rooms} 
             {
                 {1} {24720}
                 {2} {24751}
+                {3} {24715}
             }
         }
         {Silver key} 
@@ -14597,10 +14919,11 @@
         }
         {Steel breastplate} 
         {
-            {Description} { Steel breastplate  Made from solid stainless steel, this heavy breastplate is very dense, and because of this it offers superb protection.  While its weight might slow down the weaker warrior, for those with an above average strength it shouldn't prove to be any burden.  A silver crest of a thunderbolt has been chiseled into the center of this life-saving armour. The breastplate is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 13 edged, 14 blunt, poor ice, bad electric, good radiation }
+            {Description} { Steel breastplate  Made from solid stainless steel, this heavy breastplate is very dense, and because of this it offers superb protection.  While its weight might slow down the weaker warrior, for those with an above average strength it shouldn't prove to be any burden.  A silver crest of a thunderbolt has been chiseled into the center of this life-saving armour. The breastplate is in perfect condition. It appears to be light armour for a player of your level. You need your Appraisal skill raised to see more information. You must be level 10 to wear this.  }
             {Rooms} 
             {
                 {1} {24720}
+                {2} {24715}
             }
         }
         {Yellow gemstone} 
@@ -14715,6 +15038,7 @@
             {Rooms} 
             {
                 {1} {3991}
+                {2} {3979}
             }
         }
         {Animal remains} 
@@ -15058,6 +15382,7 @@
                 {1} {4295}
                 {2} {1486}
                 {3} {4297}
+                {4} {14080}
             }
         }
         {A gnarled club} 
@@ -15133,6 +15458,11 @@
                 {7} {19881}
                 {8} {6727}
                 {9} {4840}
+                {10} {4285}
+                {11} {6700}
+                {12} {4299}
+                {13} {4297}
+                {14} {4298}
             }
         }
         {A piece of blackrock} 
@@ -15288,6 +15618,8 @@
                 {24} {6717}
                 {25} {4840}
                 {26} {1538}
+                {27} {24454}
+                {28} {4299}
             }
         }
         {A piece of oakwood \x7B7\x7D} 
@@ -15399,6 +15731,7 @@
                 {5} {4297}
                 {6} {4295}
                 {7} {4840}
+                {8} {4296}
             }
         }
         {A sprig of rosemary} 
@@ -15429,12 +15762,15 @@
                 {3} {19935}
                 {4} {24451}
                 {5} {24454}
-                {6} {4291}
-                {7} {24452}
-                {8} {4295}
-                {9} {24449}
-                {10} {4297}
-                {11} {4840}
+                {6} {24452}
+                {7} {4295}
+                {8} {24449}
+                {9} {4297}
+                {10} {4840}
+                {11} {4289}
+                {12} {4290}
+                {13} {4291}
+                {14} {6700}
             }
         }
         {A suit of armor} 
@@ -16600,9 +16936,9 @@
                 {1} {6202}
                 {2} {6001}
                 {3} {6215}
-                {4} {22889}
-                {5} {6211}
-                {6} {6203}
+                {4} {6211}
+                {5} {6203}
+                {6} {22889}
             }
         }
         {A large signpost pointing west} 
@@ -16718,6 +17054,7 @@
                 {16} {5896}
                 {17} {6211}
                 {18} {6203}
+                {19} {22889}
             }
         }
         {A slimy piece of corrosive ooze} 
@@ -16792,6 +17129,7 @@
                 {26} {6211}
                 {27} {6203}
                 {28} {48494}
+                {29} {22889}
             }
         }
         {A sturdy stone lockbox} 
@@ -17195,6 +17533,14 @@
                 {1} {6006}
             }
         }
+        {There is a hole here} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4756}
+            }
+        }
         {Two people having a heated discussion} 
         {
             {Description} {}
@@ -17245,9 +17591,10 @@
                 {1} {5803}
                 {2} {4757}
                 {3} {4755}
-                {4} {4756}
-                {5} {6203}
-                {6} {5813}
+                {4} {6203}
+                {5} {5813}
+                {6} {22889}
+                {7} {4756}
             }
         }
         {Worn boots} 
@@ -18484,12 +18831,37 @@
                 {1} {304}
             }
         }
+        {A glass of milk} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {330}
+            }
+        }
+        {Jay Leno's Chin} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {311}
+                {2} {305}
+            }
+        }
         {Strap-on Beak} 
         {
             {Description} {   Strap-on Beak  This is a strap-on beak used to help follow Toocan Sam. Try it on, You will look really cool.  The helmet is in perfect condition. 1 edged  1 blunt  It looks light. }
             {Rooms} 
             {
                 {1} {303}
+            }
+        }
+        {The frozen, slightly moldy corpse of Jay leno} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {304}
             }
         }
     }
@@ -18898,12 +19270,28 @@
                 {1} {23325}
             }
         }
+        {A Trashcan} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23331}
+            }
+        }
         {A White Robe} 
         {
             {Description} { A soft linen white robe of simple design.  It clings smoothly to the skin providing an alluring sillohuette.  It appears to be cut in a design more fashionable for women than men. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 3 edged, 2 blunt It looks light.   }
             {Rooms} 
             {
                 {1} {23340}
+            }
+        }
+        {A bit of thyme} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {A brass key} 
@@ -18944,6 +19332,22 @@
             {Rooms} 
             {
                 {1} {45087}
+            }
+        }
+        {A large sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23331}
+            }
+        }
+        {A piece of marjoram} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {A shovel} 
@@ -20510,6 +20914,14 @@
                 {1} {152}
             }
         }
+        {A single gold coin} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {152}
+            }
+        }
         {A tall street light} 
         {
             {Description} {}
@@ -20534,7 +20946,31 @@
                 {1} {152}
             }
         }
+        {A wooden sign } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {152}
+            }
+        }
         {Death's Valued Customers List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {152}
+            }
+        }
+        {Donation bin } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {152}
+            }
+        }
+        {The instantly-jumpstart-to-level-10 machine } 
         {
             {Description} {}
             {Rooms} 
@@ -21701,6 +22137,14 @@
                 {3} {15788}
             }
         }
+        {A Student Toga} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15622}
+            }
+        }
         {A cubic stone, pearly white in color} 
         {
             {Description} { You pick up The electrocuted, freshly slain corpse of Nameless one and wrap A cubic pearly white ioun stone (burnt out)  A magical ioun stone, cubic in shape and pearly white in color. The magic in this stone has been expended. It looks light.  }
@@ -21715,6 +22159,14 @@
             {Rooms} 
             {
                 {1} {15789}
+            }
+        }
+        {An elegant tapestry} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15622}
             }
         }
         {Disc} 
@@ -22003,10 +22455,11 @@
         }
         {Emerald ring} 
         {
-            {Description} { Ice woman says: Welcome stranger.   }
+            {Description} {  up Emerald ring  A small, decorated, emerald ring.  You cannot surmise what powers it may or may not possess.  Perhaps an identification spell will reveal what you wish to know. It looks light.  Deadman: 0  Deadman: 0  HP  890 /890 SP  524 /524  Ne'kra  588 / 596  So'kra  420 / 420 Freeform GXP: 76.984% XP: -44956372  HP  890 /890 SP  524 /524  Ne'kra  596 / 596  So'kra  420 / 420 Freeform GXP: 76.984% XP: -44956372  HP  890 /890 SP  524 /524  Ne'kra  596 / 596  So'kra  420 / 420 Freeform GXP: 76.984% XP: -44956372 }
             {Rooms} 
             {
                 {1} {23884}
+                {2} {23854}
             }
         }
         {Glass flask (blue liquid)} 
@@ -22124,10 +22577,11 @@
         }
         {Tin ring} 
         {
-            {Description} {  Tin ring  A small, decorated, tin ring.  You cannot surmise what powers it may or may not possess.  Perhaps an identification spell will reveal what you wish to know. It looks light. }
+            {Description} {  up Tin ring  A small, decorated, tin ring.  You cannot surmise what powers it may or may not possess.  Perhaps an identification spell will reveal what you wish to know. It looks light.  Deadman: 0  Deadman: 0  HP  890 /890 SP  524 /524  Ne'kra  588 / 596  So'kra  420 / 420 Freeform GXP: 76.988% XP: -44957029  HP  890 /890 SP  524 /524  Ne'kra  596 / 596  So'kra  420 / 420 Freeform GXP: 76.988% XP: -44957029  HP  890 /890 SP  524 /524  Ne'kra  596 / 596  So'kra  420 / 420 Freeform GXP: 76.988% XP: -44957029 }
             {Rooms} 
             {
                 {1} {23855}
+                {2} {23854}
             }
         }
     }
@@ -22596,6 +23050,22 @@
     }
     {Mahjongg} 
     {
+        {A Black Tank} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {A Mahjongg tile} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {A Statue of Cancer the King} 
         {
             {Description} {}
@@ -22608,6 +23078,38 @@
                 {5} {1909}
             }
         }
+        {A big frickin' boulder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1947}
+            }
+        }
+        {A big red shoe} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {A bouncing bingo ball} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {A bronze plaque} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {A current in the flow of the Way} 
         {
             {Description} {}
@@ -22616,12 +23118,29 @@
                 {1} {1904}
             }
         }
+        {A huge box } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {A large ladder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {A sign} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {1904}
+                {2} {1900}
             }
         }
         {A single gold coin} 
@@ -22636,12 +23155,36 @@
                 {5} {1909}
             }
         }
+        {A small dispensing machine} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {A small worn book} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {1904}
+            }
+        }
+        {A strange boy} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {A street sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
             }
         }
         {A table with a gold dragon ring} 
@@ -22680,9 +23223,10 @@
                 {1} {1944}
                 {2} {1913}
                 {3} {1947}
-                {4} {1900}
-                {5} {1902}
-                {6} {1901}
+                {4} {1903}
+                {5} {1901}
+                {6} {1902}
+                {7} {1900}
             }
         }
         {Amphibian leg} 
@@ -22693,6 +23237,14 @@
                 {1} {1901}
             }
         }
+        {Arena Ticket} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {Bird feather} 
         {
             {Description} {}
@@ -22701,9 +23253,25 @@
                 {1} {1901}
             }
         }
+        {Erratio Forest} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {Faerie Lizard Wings} 
         {
             {Description} {   Faerie Lizard Wings These are the gossamer wings from a small faerie lizard. They are slighty translucent, and smell slighty musty. The cloak is in perfect condition. This armor has the following resistances: >6 edged, >6 blunt It looks light.  There are no active controllers  Doing a specific patrol. Going to patrol [mahjongg] #map run \x7B\x7Broomnote\x7D \x7Bmahjongg\x7D\x7D H 1560/1560 TS 13/13 D  128/128  E  164  Deftness 81.44 Corpses:  I  0 C 21 H 1560/1560 TS 11/13 D  128/128  E  164  Deftness 81.44 Corpses:  I  0 C 21 H 1560/1560 TS 11/13 D  128/128  E  164  Deftness 81.44 Corpses:  I  0 C 21 H 1560/1560 TS 11/13 D  128/128  E  177  Deftness 81.44 Corpses:  I  0 C 21 H 1560/1560 TS 11/13 D  128/128  E  177  Deftness 81.44 Corpses:  I  0 C 21 H 1560/1560 TS  6/13 D  128/128  E  177  Deftness 81.44 Corpses:  I  0 C 21 H 1560/1560 TS  6/13 D  128/128  E  180  Deftness 81.50 Corpses:  I  0 C 21   NW N NE     \ | /     / | \   SW   SE  	Forest of Despair (cliff) The woods in this area seem to be a little thinner, and a little more light shines down upon the forest floor. Also, a large cliff face lies to one side, blocking your passage.  Perhaps there is a way around it?    NW N NE     \ | /     / | \   	Forest of Despair (cliff) The woods in this area seem to be a little thinner, and a little more light shines down upon the forest floor. Also, a large cliff face lies to one side, blocking your passage.  Perhaps there is a way around it?    NW N NE     \ | /     / | \   SW   SE  	Forest of Despair (cliff) The woods in this area seem to be a little thinner, and a little more light shines down upon the forest floor. Also, a large cliff face lies to one side, blocking your passage.  Perhaps there is a way around it?    NW N    / | \    	Forest of Despair (cliff) The woods in this area seem to be a little thinner, and a little more light shines down upon the forest floor. Also, a large cliff face lies to one side, blocking your passage.  Perhaps there is a way around it?  You step through the portal back into the safety of the eastern forest.   =I= A fairy (Twinkling). }
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {Gloves of Acid Protection} 
+        {
+            {Description} {}
             {Rooms} 
             {
                 {1} {1900}
@@ -22759,6 +23327,30 @@
                 {3} {1926}
                 {4} {1900}
                 {5} {1909}
+            }
+        }
+        {The Good Humor, Ice Cream Truck} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {The Quickest Transport in the Rebel Armada} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {The Second Quickest Transport in the Rebel Armada} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1900}
             }
         }
         {Toad gland} 
@@ -27874,6 +28466,26 @@
             }
         }
     }
+    {Newbie Academy} 
+    {
+        {An oak desk } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13715}
+            }
+        }
+        {An oddly placed manhole} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13715}
+                {2} {48523}
+            }
+        }
+    }
     {Newbie Cathedral} 
     {
         {A Minami 10 sub machinegun} 
@@ -27914,6 +28526,14 @@
     }
     {Newbie Hell} 
     {
+        {A broken mirror fragment} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {27578}
+            }
+        }
         {Amulet of Empathic Connection} 
         {
             {Description} {    Amulet of Empathic Connection  This clear amulet is very light, as though made from the dust of crystals. The pendant is a simple round sphere of a slightly gray, glassy material. The amulet is in perfect condition.  It looks light.   }
@@ -27987,6 +28607,7 @@
             {Rooms} 
             {
                 {1} {13710}
+                {2} {13712}
             }
         }
         {A cutthroat sash} 
@@ -27995,7 +28616,27 @@
             {Rooms} 
             {
                 {1} {13730}
-                {2} {13727}
+                {2} {13732}
+                {3} {13731}
+                {4} {13727}
+            }
+        }
+        {A large red banner} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13716}
+            }
+        }
+        {A large wooden post } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13730}
+                {2} {13731}
+                {3} {13727}
             }
         }
         {A wooden pedestal containing a journal} 
@@ -28012,7 +28653,16 @@
             {Rooms} 
             {
                 {1} {13707}
-                {2} {13705}
+                {2} {13704}
+                {3} {13705}
+            }
+        }
+        {An important portal} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13716}
             }
         }
         {An oak desk} 
@@ -28021,6 +28671,7 @@
             {Rooms} 
             {
                 {1} {13710}
+                {2} {13712}
             }
         }
         {An oak desk } 
@@ -28029,6 +28680,24 @@
             {Rooms} 
             {
                 {1} {13709}
+            }
+        }
+        {Magical mirrors } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13722}
+                {2} {13723}
+                {3} {13721}
+            }
+        }
+        {The frozen, slightly moldy corpse of Thief} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13732}
             }
         }
         {Top Guild List} 
@@ -29997,6 +30666,7 @@
                 {3} {23835}
                 {4} {36214}
                 {5} {6220}
+                {6} {6673}
             }
         }
         {A Tome of 'Forge and Hammer', Volume I} 
@@ -30021,6 +30691,14 @@
             {Rooms} 
             {
                 {1} {3928}
+            }
+        }
+        {A Trashcan} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6673}
             }
         }
         {A big red button} 
@@ -30280,6 +30958,14 @@
                 {1} {151}
             }
         }
+        {A large sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6673}
+            }
+        }
         {A little brown monkey doll} 
         {
             {Description} {}
@@ -30397,6 +31083,7 @@
                 {4} {36215}
                 {5} {23835}
                 {6} {6220}
+                {7} {6673}
             }
         }
         {A skinned corpse of Vilgan, draped upon a sickle} 
@@ -30454,6 +31141,14 @@
             {Rooms} 
             {
                 {1} {4297}
+            }
+        }
+        {A suit of battered chainmail } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
             }
         }
         {A tall street light} 
@@ -30550,6 +31245,14 @@
             {Rooms} 
             {
                 {1} {17537}
+            }
+        }
+        {Breastplate of the Spirit} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
             }
         }
         {Cloak of the Spirit} 
@@ -30741,6 +31444,7 @@
                 {3} {23835}
                 {4} {36214}
                 {5} {6220}
+                {6} {6673}
             }
         }
         {The 3k Top Player List} 
@@ -31169,6 +31873,14 @@
                 {1} {50324}
                 {2} {50339}
                 {3} {50325}
+            }
+        }
+        {A dusty old bottle of Lapin Kulta} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49584}
             }
         }
         {A hip doorway} 
@@ -32038,6 +32750,14 @@
                 {1} {49589}
             }
         }
+        {A newly erected billboard} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49584}
+            }
+        }
         {A ring of house keys} 
         {
             {Description} {}
@@ -32073,7 +32793,8 @@
                 {4} {50326}
                 {5} {50325}
                 {6} {50323}
-                {7} {49584}
+                {7} {49586}
+                {8} {49584}
             }
         }
         {A slightly melted, frozen corpse of Vilgan} 
@@ -32107,6 +32828,14 @@
             {Rooms} 
             {
                 {1} {49584}
+            }
+        }
+        {A wooden sign } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49586}
             }
         }
         {A writhing tendril} 
@@ -32155,6 +32884,14 @@
             {Rooms} 
             {
                 {1} {49584}
+            }
+        }
+        {Donation bin } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49586}
             }
         }
         {Dundee hunting permit} 
@@ -32244,6 +32981,14 @@
             {
                 {1} {152}
                 {2} {49584}
+            }
+        }
+        {The instantly-jumpstart-to-level-10 machine } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49586}
             }
         }
         {Worn leather book} 
@@ -32499,6 +33244,7 @@
                 {3} {20933}
                 {4} {6750}
                 {5} {25239}
+                {6} {6874}
             }
         }
         {An ATM  Pinnacle Bank} 
@@ -32527,7 +33273,7 @@
         }
         {Baby Dragon Talons} 
         {
-            {Description} { These are the cute little talons from a baby dragon.  They seem to glisten in the light. This weapon is in excellent condition.  This weapon is class 15 (edged).  This weapon gains benefits from your exotic weapon skill. It looks light. }
+            {Description} {    Deadman: 0  Deadman: 0 Rabid Wolf   Rabid Wolf ]  Rabid Wolf   A flash of insidious insight strikes you! Rabid Wolf    Baby Dragon Talons  These are the cute little talons from a baby dragon.  They seem to glisten in the light. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 15 (edged).  This weapon gains benefits from your exotic weapon skill. It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {20887}
@@ -32553,6 +33299,21 @@
                 {21} {20855}
                 {22} {6824}
                 {23} {6755}
+                {24} {6879}
+                {25} {6877}
+                {26} {6878}
+                {27} {6856}
+                {28} {20812}
+                {29} {20793}
+                {30} {20789}
+                {31} {6880}
+                {32} {6855}
+                {33} {20791}
+                {34} {20796}
+                {35} {6909}
+                {36} {20797}
+                {37} {20792}
+                {38} {20807}
             }
         }
         {Black Scimitar} 
@@ -32614,7 +33375,7 @@
         }
         {Faerie Lizard Wings} 
         {
-            {Description} {  You pick up The brainless, freshly slain corpse of Faerie lizard and wrap Bonehead, you're at max hit points already. Faerie Lizard   Faerie Lizard     Your aura sparkles with blue lights!  Deadman: 0 Deadman: 0 Faerie Lizard Wings These are the gossamer wings from a small faerie lizard. They are slighty translucent, and smell slighty musty. The cloak is in perfect condition. This armor has the following resistances: 8 edged, 8 blunt It looks light. }
+            {Description} {    Rabid Wolf ]  Rabid Wolf   Rabid Wolf   Rabid Wolf   You press your advantage on your outsmarted foe! Your tactical advantage ends. Rabid Wolf   Faerie Lizard Wings These are the gossamer wings from a small faerie lizard. They are slighty translucent, and smell slighty musty. The cloak is in perfect condition. This armor has the following resistances: 8 edged, 8 blunt It looks light.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {6898}
@@ -32624,37 +33385,51 @@
                 {5} {20816}
                 {6} {6874}
                 {7} {6930}
-                {8} {20808}
-                {9} {20855}
-                {10} {20857}
-                {11} {20796}
-                {12} {6895}
-                {13} {6899}
-                {14} {37900}
-                {15} {37898}
-                {16} {20837}
-                {17} {20812}
-                {18} {6757}
-                {19} {6751}
-                {20} {6774}
-                {21} {6776}
-                {22} {20831}
-                {23} {20834}
-                {24} {20859}
-                {25} {20874}
-                {26} {20846}
-                {27} {6802}
-                {28} {6801}
-                {29} {20876}
-                {30} {6804}
-                {31} {6828}
-                {32} {6827}
-                {33} {6825}
-                {34} {6824}
-                {35} {6798}
-                {36} {6829}
-                {37} {6800}
-                {38} {6755}
+                {8} {20855}
+                {9} {20857}
+                {10} {6895}
+                {11} {6899}
+                {12} {37900}
+                {13} {37898}
+                {14} {20837}
+                {15} {20812}
+                {16} {6757}
+                {17} {6774}
+                {18} {6776}
+                {19} {20831}
+                {20} {20834}
+                {21} {20859}
+                {22} {20874}
+                {23} {20846}
+                {24} {6802}
+                {25} {6801}
+                {26} {20876}
+                {27} {6804}
+                {28} {6828}
+                {29} {6827}
+                {30} {6825}
+                {31} {6824}
+                {32} {6798}
+                {33} {6829}
+                {34} {6800}
+                {35} {6755}
+                {36} {6879}
+                {37} {6877}
+                {38} {6878}
+                {39} {6857}
+                {40} {6856}
+                {41} {20793}
+                {42} {6880}
+                {43} {6751}
+                {44} {20789}
+                {45} {6855}
+                {46} {20808}
+                {47} {20791}
+                {48} {20796}
+                {49} {6909}
+                {50} {20797}
+                {51} {20792}
+                {52} {20811}
             }
         }
         {Gelatinous Putty} 
@@ -32794,7 +33569,7 @@
         }
         {Stag Antlers} 
         {
-            {Description} {  Stag Antlers  This is a large 12 point rack of antlers.  It has a small tuft of bloody fur still attached to its base. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 12 (edged).  }
+            {Description} {  Deadman: 0  Deadman: 0 Rabid Wolf   Rabid Wolf ]  Rabid Wolf   You press your advantage on your outsmarted foe! Rabid Wolf   Stag Antlers  This is a large 12 point rack of antlers.  It has a small tuft of bloody fur still attached to its base. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 12 (edged).  }
             {Rooms} 
             {
                 {1} {6823}
@@ -32807,24 +33582,33 @@
                 {8} {6753}
                 {9} {6829}
                 {10} {76}
-                {11} {20808}
-                {12} {6751}
-                {13} {20920}
-                {14} {20939}
-                {15} {20955}
-                {16} {20824}
-                {17} {20859}
-                {18} {20860}
-                {19} {20837}
-                {20} {20843}
-                {21} {6801}
-                {22} {20876}
-                {23} {20842}
-                {24} {20855}
-                {25} {6804}
-                {26} {6824}
-                {27} {20792}
-                {28} {6757}
+                {11} {6751}
+                {12} {20920}
+                {13} {20939}
+                {14} {20955}
+                {15} {20824}
+                {16} {20859}
+                {17} {20860}
+                {18} {20837}
+                {19} {20843}
+                {20} {6801}
+                {21} {20876}
+                {22} {20842}
+                {23} {20855}
+                {24} {6804}
+                {25} {6824}
+                {26} {6757}
+                {27} {6879}
+                {28} {6877}
+                {29} {6857}
+                {30} {20812}
+                {31} {20789}
+                {32} {6855}
+                {33} {20811}
+                {34} {20808}
+                {35} {20796}
+                {36} {20797}
+                {37} {20792}
             }
         }
         {Superior fragment of destruction} 
@@ -32837,7 +33621,7 @@
         }
         {Sylvan Sword} 
         {
-            {Description} { This strange looking blade was obviously made by an expert. Its blade is in the shape of a long leaf and the hilt looks like a small tree trunk.  It is apparently a sword made by a sylvan elf. This weapon is in excellent condition.  This weapon is a class higher than 15 (edged)  This weapon gains benefits from your sword weapon skill. You must be level 10 to wield this weapon. }
+            {Description} {    Rabid Wolf ]  Rabid Wolf   Rabid Wolf   Rabid Wolf   You have become grounded in this plane yet again. Rabid Wolf   Sylvan Sword  This strange looking blade was obviously made by an expert. Its blade is in the shape of a long leaf and the hilt looks like a small tree trunk.  It is apparently a sword made by a sylvan elf. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  This weapon gains benefits from your sword weapon skill. You must be level 10 to wield this weapon. }
             {Rooms} 
             {
                 {1} {6883}
@@ -32852,27 +33636,39 @@
                 {10} {6785}
                 {11} {6819}
                 {12} {6761}
-                {13} {6751}
-                {14} {6757}
-                {15} {6753}
-                {16} {6754}
-                {17} {6756}
-                {18} {6774}
-                {19} {6776}
-                {20} {20939}
-                {21} {20938}
-                {22} {20953}
-                {23} {20824}
-                {24} {6835}
-                {25} {20834}
-                {26} {20859}
-                {27} {20874}
-                {28} {20860}
-                {29} {20837}
-                {30} {20846}
-                {31} {20862}
-                {32} {6804}
-                {33} {6755}
+                {13} {6757}
+                {14} {6753}
+                {15} {6754}
+                {16} {6756}
+                {17} {6774}
+                {18} {6776}
+                {19} {20939}
+                {20} {20938}
+                {21} {20953}
+                {22} {20824}
+                {23} {6835}
+                {24} {20834}
+                {25} {20859}
+                {26} {20874}
+                {27} {20860}
+                {28} {20837}
+                {29} {20846}
+                {30} {20862}
+                {31} {6804}
+                {32} {6755}
+                {33} {6877}
+                {34} {6856}
+                {35} {20812}
+                {36} {20793}
+                {37} {20789}
+                {38} {6751}
+                {39} {6855}
+                {40} {20811}
+                {41} {20808}
+                {42} {20791}
+                {43} {20796}
+                {44} {20797}
+                {45} {20792}
             }
         }
         {Templar Helmet} 
@@ -32893,7 +33689,7 @@
         }
         {Wolf claws} 
         {
-            {Description} {   Wyvern Wolf claws  This is a large paw cut from a wolf.  The claws jut from the fur menacingly and a single swipe with the claw could sever a limb.  It sits in your hand fairly clumsily. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 12 (edged).  This weapon gains benefits from your exotic weapon skill. }
+            {Description} {    Deadman: 0 Rabid Wolf   Rabid Wolf ]  Rabid Wolf   Your insidious inspiration flows through you as you make the most of each attack! Rabid Wolf gurgles in his own blood as he dies. You study the damage done to the corpse in an effort to learn how to best defeat your next foe.  Rabid Wolf Wolf claws  This is a large paw cut from a wolf.  The claws jut from the fur menacingly and a single swipe with the claw could sever a limb.  It sits in your hand fairly clumsily. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 12 (edged).  This weapon gains benefits from your exotic weapon skill. }
             {Rooms} 
             {
                 {1} {0}
@@ -32903,32 +33699,47 @@
                 {5} {6803}
                 {6} {6886}
                 {7} {6897}
-                {8} {20811}
-                {9} {20793}
-                {10} {6900}
-                {11} {6892}
-                {12} {6753}
-                {13} {6776}
-                {14} {20925}
-                {15} {20943}
-                {16} {20935}
-                {17} {6777}
-                {18} {20824}
-                {19} {6907}
-                {20} {6835}
-                {21} {20831}
-                {22} {20859}
-                {23} {20874}
-                {24} {20842}
-                {25} {20847}
-                {26} {6804}
-                {27} {6824}
-                {28} {20792}
+                {8} {6900}
+                {9} {6892}
+                {10} {6753}
+                {11} {6776}
+                {12} {20925}
+                {13} {20943}
+                {14} {20935}
+                {15} {6777}
+                {16} {20824}
+                {17} {6907}
+                {18} {6835}
+                {19} {20831}
+                {20} {20859}
+                {21} {20874}
+                {22} {20842}
+                {23} {20847}
+                {24} {6804}
+                {25} {6824}
+                {26} {6879}
+                {27} {6877}
+                {28} {6878}
+                {29} {6857}
+                {30} {20812}
+                {31} {20793}
+                {32} {6880}
+                {33} {6751}
+                {34} {20789}
+                {35} {6855}
+                {36} {20811}
+                {37} {20808}
+                {38} {20791}
+                {39} {20796}
+                {40} {6909}
+                {41} {20797}
+                {42} {20792}
+                {43} {20807}
             }
         }
         {Wyvern Talons} 
         {
-            {Description} {  These are the wicked red talons from a small wyvern.  They seem to glisten in the light.  Perhaps you can wield these...  This weapon is in excellent condition.  This weapon is a class higher than 15 (edged)  This weapon gains benefits from your exotic weapon skill. You must be level 10 to wield this weapon. It looks light. }
+            {Description} { up  These are the wicked red talons from a small wyvern.  They seem to glisten in the light.  Perhaps you can wield these...  This weapon is in excellent condition. This weapon deals edged and poison damage. This weapon is a class higher than 15 (edged)  This weapon gains benefits from your exotic weapon skill. You must be level 10 to wield this weapon. It looks light.   Deadman: 0 Wyvern   Rabid Wolf ]  Rabid Wolf   Rabid Wolf   Rabid Wolf   Rabid Wolf   }
             {Rooms} 
             {
                 {1} {30127}
@@ -32959,38 +33770,48 @@
                 {26} {6829}
                 {27} {20901}
                 {28} {6878}
-                {29} {6855}
-                {30} {3580}
-                {31} {20897}
-                {32} {6906}
-                {33} {6746}
-                {34} {20828}
-                {35} {20833}
-                {36} {6830}
-                {37} {37904}
-                {38} {20796}
-                {39} {20875}
-                {40} {6839}
-                {41} {6828}
-                {42} {6761}
-                {43} {20801}
-                {44} {6879}
-                {45} {25237}
-                {46} {25239}
-                {47} {20846}
-                {48} {6754}
-                {49} {20939}
-                {50} {20834}
-                {51} {20859}
-                {52} {20843}
-                {53} {20862}
-                {54} {6801}
-                {55} {20876}
-                {56} {20861}
-                {57} {20838}
-                {58} {6804}
-                {59} {6823}
-                {60} {6757}
+                {29} {3580}
+                {30} {20897}
+                {31} {6906}
+                {32} {6746}
+                {33} {20828}
+                {34} {20833}
+                {35} {6830}
+                {36} {37904}
+                {37} {20875}
+                {38} {6839}
+                {39} {6828}
+                {40} {6761}
+                {41} {20801}
+                {42} {25237}
+                {43} {25239}
+                {44} {20846}
+                {45} {6754}
+                {46} {20939}
+                {47} {20834}
+                {48} {20859}
+                {49} {20843}
+                {50} {20862}
+                {51} {6801}
+                {52} {20876}
+                {53} {20861}
+                {54} {20838}
+                {55} {6804}
+                {56} {6823}
+                {57} {6757}
+                {58} {6879}
+                {59} {6877}
+                {60} {6857}
+                {61} {6856}
+                {62} {20812}
+                {63} {20793}
+                {64} {6752}
+                {65} {6751}
+                {66} {6855}
+                {67} {20811}
+                {68} {20791}
+                {69} {20796}
+                {70} {20792}
             }
         }
         {easant's Rags } 
@@ -33166,6 +33987,67 @@
     }
     {Priests} 
     {
+        {-=\x7B* Top Priest List *\x7D=-} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25388}
+                {2} {25390}
+            }
+        }
+        {A Trashcan} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25382}
+                {2} {25396}
+                {3} {25419}
+                {4} {25379}
+            }
+        }
+        {A cauldron of witch potions } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15602}
+            }
+        }
+        {A table of votive candles } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25394}
+                {2} {25379}
+            }
+        }
+        {An unobtrusive plaque, set into a pillar} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25419}
+            }
+        }
+        {Fireseed Basket containing 0 fireseeds} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25423}
+            }
+        }
+        {Goodberry Basket containing 0 berries} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25423}
+            }
+        }
         {Gray Priest's Robes } 
         {
             {Description} {}
@@ -33180,6 +34062,25 @@
             {Rooms} 
             {
                 {1} {15595}
+            }
+        }
+        {Priest Junk box } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25423}
+            }
+        }
+        {Priest's box } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25382}
+                {2} {25396}
+                {3} {25419}
+                {4} {25379}
             }
         }
     }
@@ -35208,6 +36109,19 @@
             }
         }
     }
+    {Ralintaro's Tower} 
+    {
+        {A swirling vortex} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48289}
+                {2} {48286}
+                {3} {48288}
+            }
+        }
+    }
     {Ravenloft} 
     {
         {A black cube (pulsing)} 
@@ -36404,9 +37318,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {36603}
-                {2} {20060}
-                {3} {36604}
+                {1} {36604}
+                {2} {36603}
+                {3} {20060}
             }
         }
         {An ancient scroll} 
@@ -36414,8 +37328,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {36603}
-                {2} {36604}
+                {1} {36604}
+                {2} {36603}
             }
         }
         {An ancient silver bracelet} 
@@ -36451,6 +37365,14 @@
             }
         }
         {Mithril flask } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {20060}
+            }
+        }
+        {Platinum flask } 
         {
             {Description} {}
             {Rooms} 
@@ -37945,6 +38867,14 @@
                 {1} {24786}
             }
         }
+        {A huge box } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24786}
+            }
+        }
         {A large Tiger striped jellyfish} 
         {
             {Description} {}
@@ -38017,8 +38947,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {24786}
-                {2} {24785}
+                {1} {24785}
+                {2} {24786}
             }
         }
         {A silvery line } 
@@ -38034,8 +38964,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {25239}
-                {2} {25240}
+                {1} {25240}
+                {2} {25239}
             }
         }
         {An auction line} 
@@ -38195,11 +39125,11 @@
         }
         {Small Figurine} 
         {
-            {Description} {  Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light.  Deadman: 0 Psionic waves emanate from your body. Your aura sparkles with blue lights! Deadman: 0 }
+            {Description} { Deadman: 0  HP  890 /890 SP  524 /524  Ne'kra  598 / 614  So'kra  424 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  598 / 614  So'kra  424 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  614 / 614  So'kra  424 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  614 / 614  So'kra  430 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  614 / 614  So'kra  430 / 430 Freeform GXP: 67.167% XP: -92152649 Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light. }
             {Rooms} 
             {
-                {1} {25239}
-                {2} {25240}
+                {1} {25240}
+                {2} {25239}
             }
         }
         {Some translucent thread } 
@@ -38270,7 +39200,7 @@
         }
         {a pale orange capsule} 
         {
-            {Description} { This warm capsule vibrates in your hand and casts a pale orange glow.  Once belonging to some Balangool creature, the energy harnessed within can now be yours.  There are no obvious uses for this, other than perhaps swallowing it, but there is no telling what consequences that may bring you. It looks very light.  Deadman: 0  Deadman: 0  Deadman: 0  HP  890 /626 SP  426 /377  Ne'kra  560 / 560  So'kra  400 / 400 Freeform GXP: 6.586% XP: -119690639  HP  890 /626 SP  426 /377  Ne'kra  560 / 560  So'kra  400 / 400 Freeform GXP: 6.586% XP: -119690639 }
+            {Description} {Kratter[GUILD ANNOUNCE]  Drax has trained his Iron Runes skill!!!  }
             {Rooms} 
             {
                 {1} {25085}
@@ -38287,6 +39217,7 @@
                 {12} {24912}
                 {13} {24872}
                 {14} {24978}
+                {15} {25232}
             }
         }
         {barrier} 
@@ -40782,6 +41713,14 @@
                 {1} {17451}
             }
         }
+        {A Small ChaosBrand Television Set} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8302}
+            }
+        }
         {A Small ChaosBrand(tm) Television Set} 
         {
             {Description} {}
@@ -41048,6 +41987,14 @@
             {Rooms} 
             {
                 {1} {8281}
+            }
+        }
+        {A very valuable comic} 
+        {
+            {Description} {  A precious, valuable comic, all wrapped up in plastic so you can't even read the dang thing.  Some people are SO fanatic! It looks light.  Deadman: 0  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {24628}
             }
         }
         {A yellow schoolbus} 
@@ -41504,6 +42451,22 @@
             {Rooms} 
             {
                 {1} {17462}
+            }
+        }
+        {Tweezers } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24628}
+            }
+        }
+        {Tweezers (sterilized)} 
+        {
+            {Description} {   You study the damage done to the corpse in an effort to learn how to best defeat your next foe. the coffin's protective hold! Bonehead, you're at max hit points already. Bart is reading some comics  Tweezers (sterilized)   A nifty, alloy set of tweezers, with a metallic blue tip from the fire-wrought sterilization procedure! This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 8 (edged).  It looks light.  Deadman: 0  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {24628}
             }
         }
         {Veterinarian's Scrubs} 
@@ -43278,8 +44241,8 @@
             {Rooms} 
             {
                 {1} {21392}
-                {2} {42076}
-                {3} {21399}
+                {2} {21399}
+                {3} {42076}
             }
         }
         {A fork} 
@@ -48845,6 +49808,32 @@
     }
     {Uslopta's Tower} 
     {
+        {A bell} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48232}
+            }
+        }
+        {A chair} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48231}
+                {2} {48229}
+            }
+        }
+        {A spiral staircase} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48231}
+                {2} {48229}
+            }
+        }
         {A walking stick} 
         {
             {Description} {     A walking stick  This stick once belonged to Tardain, The Keeper of the Bell. He would use this to help him climb the steep stairs in the tower. Now it looks as if it might make a decent weapon. This weapon is in excellent condition.  This weapon is class 10 (blunt).  This weapon gains benefits from your polearm weapon skill. It looks light. }
@@ -49382,6 +50371,14 @@
                 {1} {25834}
             }
         }
+        {A KrustyBrand Medic-Alert Bracelet} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15634}
+            }
+        }
         {A LARGE sign} 
         {
             {Description} {}
@@ -49396,6 +50393,7 @@
             {Rooms} 
             {
                 {1} {15591}
+                {2} {15586}
             }
         }
         {A Rusty Saber} 
@@ -49427,12 +50425,40 @@
                 {5} {3919}
             }
         }
+        {A Student Toga} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {7347}
+                {2} {3938}
+                {3} {15579}
+                {4} {15578}
+                {5} {15586}
+                {6} {15581}
+                {7} {15583}
+            }
+        }
         {A Tome of 'Forge and Hammer', Volume I} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {4314}
+                {2} {15579}
+                {3} {15578}
+                {4} {15581}
+                {5} {15583}
+            }
+        }
+        {A Trashcan} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15583}
+                {2} {7347}
+                {3} {15593}
             }
         }
         {A Wayhaven Fishing Rod} 
@@ -49441,6 +50467,14 @@
             {Rooms} 
             {
                 {1} {4096}
+            }
+        }
+        {A cauldron of witch potions } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15593}
             }
         }
         {A fallen sign} 
@@ -49535,6 +50569,7 @@
                 {1} {3993}
                 {2} {4027}
                 {3} {3990}
+                {4} {4002}
             }
         }
         {A single gold coin} 
@@ -49562,7 +50597,8 @@
                 {1} {8955}
                 {2} {4314}
                 {3} {3919}
-                {4} {7350}
+                {4} {7351}
+                {5} {7350}
             }
         }
         {A small sign} 
@@ -49632,10 +50668,31 @@
         }
         {An Emerald} 
         {
-            {Description} { This deep green beauty of an emerald belongs at the throat of a beautiful woman.  Human, preferably! }
+            {Description} {    You study the damage done to the corpse in an effort to learn how to best defeat your next foe. You pick up The brainless, freshly slain corpse of A dwarven trader and You take an instant to gather your thoughts, clear your mind and focus on the task at hand. A Dwarven Trader  This deep green beauty of an emerald belongs at the throat of a beautiful woman.  Human, preferably! }
             {Rooms} 
             {
                 {1} {42743}
+                {2} {4107}
+                {3} {4101}
+            }
+        }
+        {An Incense Stick} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15645}
+                {2} {7351}
+                {3} {15627}
+            }
+        }
+        {An elegant tapestry} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15586}
+                {2} {15581}
             }
         }
         {Animal remains} 
@@ -49653,6 +50710,14 @@
             {Rooms} 
             {
                 {1} {36649}
+            }
+        }
+        {Notice board} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15586}
             }
         }
         {Nuke} 
@@ -49679,6 +50744,16 @@
                 {1} {3919}
             }
         }
+        {Priest's box } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15583}
+                {2} {7347}
+                {3} {15593}
+            }
+        }
         {Resurrection pill} 
         {
             {Description} {}
@@ -49695,12 +50770,28 @@
                 {1} {3919}
             }
         }
+        {The main desk} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15586}
+            }
+        }
         {The skin of Beloch} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {3919}
+            }
+        }
+        {Top Recruiters List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {15583}
             }
         }
         {Torch} 

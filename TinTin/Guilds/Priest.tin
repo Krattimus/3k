@@ -1,5 +1,108 @@
 #class {priest} {open}
 
+.registerEvent onNewMipGline onNewMipGlinePriest;
+.registerEvent onMobKilled onMobKilledPriest;
+.registerEvent onNewCombatRound onNewCombatRoundPriest;
+
+
+
+/**********************************************************************************
+	Kill trig
+**********************************************************************************/
+#alias {onMobKilledPriest}
+{
+	#var nothing 1;
+
+};
+
+/*************************************************************************************
+	Round of combat
+
+		#if {$my[hp][current] < $my[hp][max]} 
+	{
+		#delay {lifeforce} {#send !lifeforce} {0.5}
+	};
+	
+	#if {$my[sp][current] < $my[sp][max]} 
+	{
+		#delay {soulforce} {#send !soulforce} {0.5}
+	};
+
+
+*************************************************************************************/
+#alias onNewCombatRoundPriest
+{
+	#if {$currentRoundID <= 1}
+	{
+		#send !consider;
+	};
+
+
+};
+
+
+/*************************************************************************************
+	Parse MI
+*************************************************************************************/
+#ALIAS {onNewMipGlinePriest} 
+{
+	#var nothing 1;
+};
+
+/*************************************************************************************
+	Render hp bar
+*************************************************************************************/
+#alias {.renderPriestBar} 
+{
+	#if {"$cooler" == "on" || $corpses[cooler] > 0} 
+	{
+		#format {sb1_cooler} {%+2s} {$corpses[cooler]};
+		#var {sb1_cooler} { CL:<130>$sb1_cooler<088>};
+	};
+	#else
+	{
+			#var {sb1_cooler} {};
+	};
+	#if {"$freezer" == "on" || $corpses[freezer] > 0} 
+	{
+			#format {sb2_freezer} {%+2s} {$corpses[freezer]};
+			#var {sb2_freezer} { FZ:<130>$sb2_freezer<088>};
+	};
+	#else
+	{
+			#var {sb2_freezer} {};
+	};
+
+	#var    {my[hp][graph]}         {@graph{$my[hp][current];${my[hp][max]}}};
+	#var    {my[sp][graph]}         {@graph{$my[sp][current];$my[sp][max]}};
+	#var    {my[gp1][graph]}        {@graph{$my[gp1][current];$my[gp1][max]}};
+	#var    {my[gp2][graph]}        {@graph{$my[gp2][current];$my[gp2][max]}};
+	#var    {enemy[graph]}          {@graph{$enemy[hp];100}};
+	#format {hp}					{%-4s} {@colscale{$my[hp][current];$my[hp][max]}};
+	#format {hp_max}				{%-4s} {<128>$my[hp][max]<088>};
+	#format {sp}					{%-4s} {@colscale{$my[sp][current];$my[sp][max]}};
+	#format {sp_max}				{%-4s} {<128>$my[sp][max]<088>};
+	#format {gp1}                   {%-4s} {@colscale{$my[gp1][current];$my[gp1][max]}};
+	#format {gp1_max}               {%+4s} {<128>$my[gp1][max]<088>};
+	#format {gp2}                   {%-4s} {@colscale{$my[gp2][current];$my[gp2][max]}};
+	#format {gp2_max}               {%+4s} {<128>$my[gp2][max]<088>};
+	
+	#if { "$enemy[name]" != "" }
+	{
+		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
+	};
+	#else
+	{
+		#showme {  } {-6};
+	};
+	#showme {<048>HP<088>  ${hp}/${hp_max}  <048>SP<088>  ${sp}<048>/<088>${sp_max}<088> <048>Mana<088>  ${gp1}<048>/<088>${gp1_max}  <048>Piety<088>  ${gp2}%%<048><088>}  {-3};
+	#showme {$mip[gline][1]}{-4};
+};
+
+
+
+
+
 #act {{HP: (\d+)/(\d+) SP: (\d+)/(\d+) MANA: (\d+)/(\d+) PTY: \((\d+)\%\) E: \[([\w\s\-\~\,\(\)\']+)(?: : )?(\w+)?\]}} {
 	#var {my[hp][current]}	{%2};
 	#var {my[hp][max]}	{%3};
@@ -14,7 +117,8 @@
 	}
 }
 
-#act {{GXP\%: \[(\d+.\d+)\%\] PROT: (ON|OFF) VEST: (ON|OFF) BARK: (ON|OFF)}} {
+#act {{GXP\%: \[(\d+.\d+)\%\] PROT: (ON|OFF) VEST: (ON|OFF) BARK: (ON|OFF)}} 
+{
         #if {"$cooler" == "on" || $corpses[cooler] > 0} {
                 #format {sb1_cooler} {%+2s} {$corpses[cooler]};
                 #var {sb1_cooler} { CL:<139>$sb1_cooler<088>}
@@ -41,36 +145,6 @@
 	.renderHPBar
 }
 
-#alias {.renderHPBar} {
-	#if {$my[hp][current] < $my[hp][max]} {
-		#delay {lifeforce} {#send !lifeforce} {0.5}
-	};
-	#if {$my[sp][current] < $my[sp][max]} {
-		#delay {soulforce} {#send !soulforce} {0.5}
-	};
-
-	#var    {my[hp][graph]}         {@graph{$my[hp][current];${my[hp][max]}}};
-	#var    {my[sp][graph]}         {@graph{$my[sp][current];$my[sp][max]}};
-	#var    {my[gp1][graph]}        {@graph{$my[gp1][current];$my[gp1][max]}};
-	#var    {my[gp2][graph]}        {@graph{$my[gp2][current];$my[gp2][max]}};
-	#var    {enemy[graph]}          {@graph{$enemy[hp];100}};
-	#format {hp}                    {%+4s} {$my[hp][current]};
-	#format {hp_max}                {%+4s} {$my[hp][max]};
-	#format {sp}                    {%+4s} {$my[sp][current]};
-	#format {sp_max}                {%+4s} {$my[sp][max]};
-	#format {gp1}                   {%+4s} {$my[gp1][current]};
-	#format {gp1_max}               {%+4s} {$my[gp1][max]};
-	#format {gp2}                   {%+4s} {$my[gp2][current]};
-	#format {gp2_max}               {%+4s} {$my[gp2][max]};
-	#format {ehealth}               {%+7s} {$enemy[hp]%%};
-	#format {corpses[inventory]}    {%+2s} {$corpses[inventory]};
-	#format {corpses[coffin]}       {%+2s} {$corpses[coffin]};
-	#format {corpses[freezer]}      {%+2s} {$corpses[freezer]};
-
-}
-
-
-
 /* Heals */
 #NOP Guardian
 #unvar guard
@@ -93,12 +167,6 @@
 #alias {guard %1 %2} {
 	#var {guard[hp][lim]} {%1};
 	#var {guard[sp][lim]} {%2}
-}
-
-/* Corpse Trigger */
-#alias {corpsetrig} {
-	#send !wrap;
-	#send !get coins
 }
 
 #class {preist} {close}

@@ -1,0 +1,345 @@
+#showme Loading Kratjiit
+
+#var npc[failedActionResponse] 13;
+#var npc[refundResponse] 23;
+#var npc[questSuccess] 24;
+#var npc[questFail] 27;
+#var npc[questCheck] 0;
+#var npc[questCheckResponse] 1;
+
+#var npc[townPath]
+{
+	{1}{n}
+	{6}{e}
+	{9}{e}
+	{14}{s}
+	{69}{s}
+	{68}{s}
+	{76}{s}
+	{78}{s}
+	{81}{w}
+	{86}{w}
+	{87}{w}
+	{89}{n}
+	{90}{n}
+	{91}{n}
+	{61}{w}
+	{60}{n}
+	{59}{n}
+	{57}{e}
+	{49}{n}
+	{48}{n}
+	{25}{e}
+	{23}{e}
+	{22}{e}
+	{19}{s}
+	{16}{s}
+	{85}{n}
+};
+
+#var npc[emotes]
+{
+	{1}{invites you to see his wares}
+	{2}{PSSTs attempting to catch your attention to his wares}
+	{3}{cowers and takes a sip of skooma}	
+};
+
+#var npc[kratpraise]
+{
+	{1}{It's not every day you encounter a person of such unparalleled brilliance like Krat}
+};
+
+#var npc[sayings] 
+{
+	{1}{Krat`jiit has your wares!}
+	{2}{Kratiit heard the Khan of all Khans and Master of the Universe, Krat, likes to explore, but Kratiit always say one shouldn't go out unprepared.}
+	{3}{Don't face those lol gottems & traps empty-handed. You never know what might happen if you go 'east' in a serene sanctuary inside of a temple of safety.}
+	{4}{Seeking the most common gear to start your Kratastic great adventures? Then come have a look!}
+	{5}{Tips? Sure Kratiit has tips!}
+	{6}{PPPSST, Kratiit have marvels from all over! Even from other universes!}
+	{9}{Support local craftsmanship - our wares are crafted with heart, not just profit margins.}
+	{10}{SShhh, please try to be discrete. Corporate wizzes and big Cancer are always trying to prevent Krat'jiit from selling wares.}
+	{11}{Kratiit may not have many wares, but the passion for quality is immeasurable .... and .... Kratiit don't discriminate based on charisma.}
+	{12}{When you buy from Kratjiit, you're not just getting wares, you're supporting a dream.}
+	{13}{Thanks to Krat, Kratiit have picked up priesthood and am attempting to kick the skooma habits.}
+	{14}{Krat`jiit has your wares!}
+	{15}{In a world of mass-produced algorithmically designed gear, find the soul of craftsmanship in Krat`jiit wares.}
+	{16}{Choose wisely -- The corporations that only let you shop their vendors, or Krat`jiit where Krat`jiit offer character in Krat`jiit wares. And Pinnacle tax free!"}
+	{17}{Big city shops may have shiny repairs, but Krat`jiit got the ultimate wares.}
+};
+
+#var npc[keywords] 
+{
+	{marvel}{1}
+	{marvels}{1}
+	{universe}{1}
+	{universes}{1}
+	{ultimate}{1}
+	{ultimate wares}{1}
+	{attention}{2}
+	{multiverse}{3}
+	{universe}{3}
+	{universes}{3}
+	{krativerse}{4}
+	{help}{5}
+	{quest}{5}
+	{a very valuable comic}{6}
+	{comic}{6}
+	{comic book}{6}
+	{yes}{7}
+	{explorer}{8}
+	{wares}{9}
+	{list}{9}
+	{sell}{9}
+	{selling}{9}
+	{menu}{9}
+	{lol}{10}
+	{gottem}{10}
+	{hi}{11}
+	{look}{11}
+	{hello}{11}
+	{wizards}{22}
+	{dested}{22}
+	{cancer}{25}
+	{wiped}{26}
+	{memory}{26}
+};
+
+#var npc[responses] 
+{
+	{1}
+	{
+		{1}{tap}
+		{2}{#var npc[stallTimer] 1;}
+		{3}{wait}
+		{4}{say Krat'jiit ultimate wares aren't free! Maybe 10 coins for a skooma. Fair trade for Krativerse info. Yesss yesss.}
+	}
+	{2}
+	{
+		{1}{say The kind that brings snoopy wizards. Krat`jiit don't want to be dested. No no. Oh no, no indeed.}
+		{2}{shudder}
+	}
+	{3}
+	{
+		{1}{say Yes, there are many universes! They are known as a multiverse! Some multiverses even have their own names: like the one true timeline or the Krativerse.}
+	}
+	{4}
+	{
+		{1}{say Yesss, yesss. That is where Krat`jiit from. }
+		{2}{#var npc[stallTimer] 2;}
+		{3}{ponder}
+		{4}{#var npc[stallTimer] 4;}
+		{5}{say Krat`jiit doesn't remember much about it other than the ultimate wares, come to think of it, Krat`jiit can't seem to remember anything from more than 10 days ago.}
+		{6}{#var npc[stallTimer] 3;}
+		{7}{say Yesss....}
+		{8}{say Its like Krat`jiit memory gets wiped. Maybe you could help Krat`jiit...}
+	}
+	{5}
+	{
+		{1}{.evalQuest;}
+		{2}{say Ultimate wares are so valuable, Krat`jiit marked their location...}
+		{3}{say Yessss... Hidden knowledge in a comic book. A comic book about Heroes, Villains, Ego, Guardians, Avengers, Multiverses, and...}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say And about the Krativerse yess...}
+		{6}{#var npc[stallTimer] 4;}
+		{7}{say And all things Marvel and marvelous, like Krat.}
+		{8}{#var npc[stallTimer] 3;}
+		{9}{say If you bring Krat'jiit "A very valuable comic", Krat`jiit could recall what Krat`jiit know & help with getting the ultimate wares yesss}
+	}
+	{6}
+	{
+		{1}{say Yesss, Krat`jiit will tell you all Krat`jiit knows about the ultimate wares and the Krativerse if you bring Krat'jiit "A very valuable comic".}
+	}
+	{7}
+	{
+		{1}{say Yesss yesss}
+		{2}{nod}
+	}	
+	{8}
+	{
+		{1}{say Krat is so amazing. Krat`jiit strive to be like Krat everyday.}
+		{2}{beam}
+	}	
+	{9}
+	{
+		{1}{say Just give Krat`jiit the right amount of coins.}
+		{2}{say Krat`jiit has torches (50), shovels (100), ropes (125), ladders (150), bags (200), axes (225), pick axes (250), magic scrolls (1000) and other supplies for exploring.}
+		{3}{say Kraat`jiit even have wonderous marvels not on the menu. Ultimate wares from other universes! Just ask.};
+	}
+	{10}
+	{
+		{1}{say Yesss yesss, Gottems everywhere! Going east, looking at walls, attacking 'harmless and cute' animals, entering low rated zones, and entering endless dark pits of evil with no bottoms with warnings in red ansi!}
+	}
+	{11}
+	{
+		{1}{say Krat'jiit has wares! Maybe Krat`jiit can interest you in the ultimate wares? Yesss yesss. }
+	}
+	{12}
+	{
+		{1}{#var npc[questCheck] 1;}
+		{2}{nod;nod;nod;}
+		{3}{say Yesss, yesss, The ultimate wares! Marvelous indeed! They come from other universes. Krat`jiit know of one from the Krativerse... but .... }
+		{4}{shh}
+		{5}{#var npc[stallTimer] 1;}
+		{6}{say Let's be discrete, such powerful things can attract the wrong attention.}
+	}
+	{13}
+	{
+		{1}{say Kratjiit sorry. Krat`jiit is out of stock. Krat`jiit don't have wares.}
+		{2}{give $event[amountReceived] coins to $event[giver];}
+	}
+	{14}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser shovel;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}
+	{15}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser rope;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}
+	{16}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser ladder;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}
+	{17}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser torch;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}
+	{18}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser bag;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}
+	{19}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser pick;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}
+	{20}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser axe;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}	
+	{21}
+	{
+		{1}{say Yesss, yesss, here you go.}
+		{2}{.giveItemToPurchaser scroll;}
+		{3}{#var npc[stallTimer] 3;}
+		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+	}
+	{22}
+	{
+		{1}{shudder}
+	}
+	{23}
+	{
+		{1}{emote wonders what these coins are for.}
+		{2}{say Krat`jiit no thief. No need for these coins. Don't want to give the Pinnacle one percent excuse to dest Krat`jiit. Krat`jiit wants to sell wares.}
+		{3}{.refundCoins;}
+	}
+	{24}
+	{
+		{1}{emote claps excitedly!!}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say YES YES YES! This is It. Krat`jiit hid info on the ultimate wares in here. Krat`jiit's memory wouldn't forget this way. Can only remember a few days at a time. Info about the Krativerse}
+		{4}{#var npc[stallTimer] 3;}
+		{5}{emote flips through the pages reading.}
+		{6}{#var npc[stallTimer] 1;}
+		{7}{say It involves something about the monks. Something called mquests.}
+		{8}{#var npc[stallTimer] 2;}
+		{9}{emote pauses briefly.}
+		{10}{#var npc[stallTimer] 6;}
+		{11}{shake}
+		{12}{say No! This can't be.}
+		{13}{#var npc[stallTimer] 2;}
+		{14}{say This can't be at all}
+		{15}{say The pages are changing. Something is wrong. It's like someone is altering this universe from within the Krativerse!}
+		{16}{#var npc[stallTimer] 2;}
+		{17}{say There are others?}
+		{18}{#var npc[stallTimer] 2;}
+		{19}{say Other ... Kratarians.}
+		{20}{#var npc[stallTimer] 2;}
+		{21}{say It says there are other Kratarians walking amongst us in Pinnacle}
+		{22}{#var npc[stallTimer] 5;}
+		{23}{gasp}
+		{24}{say What does this mean? What is this gibberish forming here? }
+		{25}{drop comic}
+		{26}{say It... it... it says that I am a player controller non player character? A PCNPC? Krat`jiit's never heard these words before}
+		{27}{#var npc[stallTimer] 5;}
+		{28}{say \#if \{ \$npc\[responseSlot\] > \*npc\[responses\]\[\$npc\[playResponse\]\]\[-1\] \}}
+		{29}{say \#if \{ \$force[slot1][logout] \} }
+		{30}{#var npc[stallTimer] 3;}
+		{31}{say I}
+		{32}{#var npc[stallTimer] 5;}
+		{33}{say I}
+		{34}{stumble}
+		{35}{say I don't feel so good}
+		{36}{#var npc[stallTimer] 3;}
+		{37}{emote slowly begins disintegrating into a million specs of dust.}
+		{38}{#var npc[stallTimer] 5;}
+		{39}{.switchTo bard kratarian}
+	}
+	{25}
+	{
+		{1}{say Cancer only has a love of profit but leaves a trail of empty pockets in his wake.}
+	}
+	{26}
+	{
+		{1}{say Krat`jiit can't seem to remember anything from more than 10 days ago.}
+		{2}{say Its like Krat`jiit memory gets wiped. Maybe you could help Krat`jiit...}
+	}
+	{27}
+	{
+		{1}{say What is this?}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{.returnGivenItem}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say Thanks, but its not what Krat`jiit is looking for.}
+	}
+};	
+
+#var npc[lookingFor]
+{
+	{comic}{1}
+	{Comic}{1}
+	{egg}{1}
+	{Egg}{1}
+	{bottle}{1}
+	{Bottle}{1}
+	{bread}{1}
+	{Bread}{1}
+	{dice}{1}
+	{Dice}{1}	
+	{penny}{1}
+	{Penny}{1}	
+};
+
+#var npc[purchases]
+{
+	{10}{12}
+	{50}{17}
+	{100}{14}
+	{125}{15}
+	{150}{16}
+	{200}{18}
+	{225}{20}
+	{250}{19}
+	{1000}{21}
+};

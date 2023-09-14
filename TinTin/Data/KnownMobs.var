@@ -1142,12 +1142,21 @@
     }
     {Aegis Global} 
     {
+        {A busy pedestrian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
         {A wandering pedestrian} 
         {
             {Ratings} {0}
             {Rooms} 
             {
                 {1} {2456}
+                {2} {2499}
             }
         }
         {Aegis Assembler} 
@@ -1247,6 +1256,7 @@
                 {2} {15}
                 {3} {13}
                 {4} {12}
+                {5} {19}
             }
             {Rooms} 
             {
@@ -1271,6 +1281,39 @@
                 {19} {2552}
                 {20} {2537}
                 {21} {2510}
+                {22} {2499}
+            }
+        }
+        {Aegis Sentry Model 60-FT  !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {Aegis Sentry Model 60-FT !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {Aegis Sentry Model 62-CC  !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {Aegis Sentry Model 62-CC !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Aegis Soldier} 
@@ -1301,16 +1344,43 @@
                 {15} {2729}
             }
         }
+        {Blazing Agni :: Director of Xenogenetics} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+                {2} {2499}
+            }
+        }
         {Bloody Zombie} 
         {
             {Description} {NA}
             {Ratings} 
             {
                 {1} {12}
+                {2} {19}
             }
             {Rooms} 
             {
                 {1} {2546}
+                {2} {2499}
+            }
+        }
+        {Bloody zombie  !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {Bloody zombie !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Bullet-ridden Zombie} 
@@ -1374,10 +1444,20 @@
             {Ratings} 
             {
                 {1} {12}
+                {2} {19}
             }
             {Rooms} 
             {
                 {1} {2551}
+                {2} {2499}
+            }
+        }
+        {Faceless zombie !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Limping Zombie} 
@@ -1395,6 +1475,14 @@
                 {3} {2685}
                 {4} {2665}
                 {5} {2632}
+            }
+        }
+        {Major Henkey, PhD <?>} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Massive Zombie} 
@@ -1425,6 +1513,31 @@
             {Rooms} 
             {
                 {1} {2482}
+                {2} {2499}
+            }
+        }
+        {One-armed zombie  !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {One-armed zombie !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {Police Officer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Putrid Zombie} 
@@ -1437,6 +1550,14 @@
             {Rooms} 
             {
                 {1} {2478}
+            }
+        }
+        {Putrid zombie  !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
             }
         }
         {Ravaged Zombie} 
@@ -1473,6 +1594,7 @@
                 {3} {12}
                 {4} {13}
                 {5} {17}
+                {6} {19}
             }
             {Rooms} 
             {
@@ -1488,6 +1610,15 @@
                 {10} {2536}
                 {11} {2529}
                 {12} {2544}
+                {13} {2499}
+            }
+        }
+        {Rotting zombie !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Severely Burnt Zombie} 
@@ -1525,11 +1656,29 @@
             {Ratings} 
             {
                 {1} {12}
+                {2} {19}
             }
             {Rooms} 
             {
                 {1} {2510}
                 {2} {2503}
+                {3} {2499}
+            }
+        }
+        {Shambling zombie  !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
+        {Shambling zombie !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Shuffling Zombie} 
@@ -1550,6 +1699,14 @@
                 {6} {2738}
             }
         }
+        {Steve the Grasshopper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
+            }
+        }
         {Vomit-splattered Zombie} 
         {
             {Description} {NA}
@@ -1560,6 +1717,14 @@
             {Rooms} 
             {
                 {1} {2514}
+            }
+        }
+        {Vomit-splattered zombie !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
         {Wounded Zombie} 
@@ -1573,6 +1738,14 @@
             {Rooms} 
             {
                 {1} {2530}
+            }
+        }
+        {Wounded zombie !attacking Agni!} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {2499}
             }
         }
     }
@@ -2734,6 +2907,7 @@
                 {5} {150000}
                 {6} {72000}
                 {7} {70000}
+                {8} {42000}
             }
             {Rooms} 
             {
@@ -5371,6 +5545,7 @@
             {Rooms} 
             {
                 {1} {1280}
+                {2} {1284}
             }
         }
         {A basilisk} 
@@ -5397,6 +5572,15 @@
                 {1} {1328}
             }
         }
+        {A dragon} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1285}
+                {2} {1284}
+            }
+        }
         {A goblin} 
         {
             {Ratings} {0}
@@ -5405,6 +5589,7 @@
                 {1} {1310}
                 {2} {1317}
                 {3} {1337}
+                {4} {1283}
             }
         }
         {A knight} 
@@ -5423,6 +5608,7 @@
             {
                 {1} {1277}
                 {2} {1288}
+                {3} {1287}
             }
         }
         {A phoenix} 
@@ -5439,6 +5625,14 @@
             {Rooms} 
             {
                 {1} {1315}
+            }
+        }
+        {A troll} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1280}
             }
         }
         {A unicorn} 
@@ -5493,6 +5687,17 @@
             {
                 {1} {1288}
                 {2} {1275}
+                {3} {1312}
+            }
+        }
+        {An evil looking bard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1283}
+                {2} {1284}
+                {3} {1292}
             }
         }
         {An evil looking bladesinger} 
@@ -5511,6 +5716,17 @@
                 {1} {1291}
             }
         }
+        {An evil sorceress} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1285}
+                {2} {1284}
+                {3} {1283}
+                {4} {1287}
+            }
+        }
         {Archer} 
         {
             {Description} {  You cannot carry more. > }
@@ -5521,11 +5737,11 @@
             }
             {Rooms} 
             {
-                {1} {1275}
-                {2} {30115}
-                {3} {30116}
-                {4} {30114}
-                {5} {1313}
+                {1} {30115}
+                {2} {30116}
+                {3} {30114}
+                {4} {1313}
+                {5} {1275}
             }
         }
         {Banshee} 
@@ -5548,12 +5764,13 @@
             {Description} {   You are not attacking anything. You are not attacking anything.  (basilisk?) }
             {Ratings} 
             {
-                {1} {2100}
-                {2} {3200}
+                {1} {3200}
+                {2} {2100}
             }
             {Rooms} 
             {
                 {1} {30116}
+                {2} {1294}
             }
         }
         {Djinni} 
@@ -5682,10 +5899,12 @@
             {Ratings} 
             {
                 {1} {2400}
+                {2} {3200}
             }
             {Rooms} 
             {
                 {1} {30116}
+                {2} {1284}
             }
         }
         {Troll} 
@@ -7699,6 +7918,19 @@
             }
         }
     }
+    {Bard} 
+    {
+        {Lamont} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3959}
+                {2} {26640}
+                {3} {22091}
+            }
+        }
+    }
     {Barney's Studio} 
     {
         {A child star of the show} 
@@ -8321,7 +8553,8 @@
             {Ratings} {0}
             {Rooms} 
             {
-                {1} {4105}
+                {1} {4106}
+                {2} {4105}
             }
         }
         {Olof the butcher} 
@@ -10671,6 +10904,14 @@
                 {1} {7334}
             }
         }
+        {Faerie Lizard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {3580}
+            }
+        }
         {Fred the Used Car Salesman} 
         {
             {Rating} {}
@@ -11774,11 +12015,12 @@
                 {2} {98000}
                 {3} {30000}
                 {4} {32000}
+                {5} {34000}
             }
             {Rooms} 
             {
-                {1} {1258}
-                {2} {1249}
+                {1} {1249}
+                {2} {1258}
             }
         }
         {A War Correspondent} 
@@ -11795,6 +12037,22 @@
                 {1} {1210}
             }
         }
+        {A banshee} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1220}
+            }
+        }
+        {An evil sorceress} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1222}
+            }
+        }
         {Angry Horse} 
         {
             {Description} {  }
@@ -11806,15 +12064,17 @@
                 {4} {32000}
                 {5} {30000}
                 {6} {36000}
+                {7} {38000}
+                {8} {40000}
             }
             {Rooms} 
             {
                 {1} {1217}
                 {2} {30053}
-                {3} {1251}
-                {4} {1254}
-                {5} {1234}
-                {6} {1231}
+                {3} {1234}
+                {4} {1231}
+                {5} {1254}
+                {6} {1251}
             }
         }
         {Angry War Elephant} 
@@ -11833,10 +12093,18 @@
             {
                 {1} {1209}
                 {2} {6574}
-                {3} {1247}
-                {4} {1253}
-                {5} {1270}
-                {6} {1244}
+                {3} {1253}
+                {4} {1270}
+                {5} {1244}
+                {6} {1247}
+            }
+        }
+        {Blat the Valithyn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1209}
             }
         }
         {Funk on the Move} 
@@ -11909,6 +12177,7 @@
                 {4} {150000}
                 {5} {30000}
                 {6} {48000}
+                {7} {46000}
             }
             {Rooms} 
             {
@@ -11932,6 +12201,7 @@
                 {9} {150000}
                 {10} {32000}
                 {11} {34000}
+                {12} {50000}
             }
             {Rooms} 
             {
@@ -11998,6 +12268,14 @@
                 {4} {1253}
             }
         }
+        {The Developer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1210}
+            }
+        }
         {White Charioteer} 
         {
             {Description} { You pick up The bashed up, freshly slain corpse of White charioteer and > > }
@@ -12051,6 +12329,7 @@
                 {11} {30000}
                 {12} {32000}
                 {13} {34000}
+                {14} {36000}
             }
             {Rooms} 
             {
@@ -12066,8 +12345,8 @@
                 {10} {1225}
                 {11} {1214}
                 {12} {1223}
-                {13} {1232}
-                {14} {1224}
+                {13} {1224}
+                {14} {1232}
             }
         }
         {White Horseman} 
@@ -12079,8 +12358,8 @@
                 {2} {14}
                 {3} {96000}
                 {4} {150000}
-                {5} {34000}
-                {6} {32000}
+                {5} {32000}
+                {6} {34000}
             }
             {Rooms} 
             {
@@ -24182,6 +24461,39 @@
     }
     {Elven Hills} 
     {
+        {A sneaky bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27479}
+                {2} {27478}
+            }
+        }
+        {Elf} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {27479}
+                {2} {27480}
+                {3} {27477}
+            }
+        }
+        {Elf Guard} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {27481}
+            }
+        }
         {Elf King} 
         {
             {Description} {NA}
@@ -24192,6 +24504,17 @@
             {Rooms} 
             {
                 {1} {27482}
+            }
+        }
+        {Sneaky Bandit} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {27478}
             }
         }
     }
@@ -24567,6 +24890,15 @@
             {Rooms} 
             {
                 {1} {24758}
+                {2} {24759}
+            }
+        }
+        {Bern Zefess, the Elven Warrior} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24762}
             }
         }
         {Crage Unius, Ex-Centaur Captain} 
@@ -24597,6 +24929,24 @@
             {Rooms} 
             {
                 {1} {24720}
+                {2} {24715}
+            }
+        }
+        {Estaven Kevis, the Centaur Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {37790}
+                {2} {24715}
+            }
+        }
+        {Gev Cass, the Centaur Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24440}
             }
         }
         {Gev Cass, the Centaur Guard } 
@@ -24605,6 +24955,14 @@
             {Room} 
             {
                 {1} {24440}
+            }
+        }
+        {Hallas Linel, the Centaur Monk} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24716}
             }
         }
         {Hallas Linel, the Centaur Monk } 
@@ -24687,12 +25045,28 @@
                 {1} {24741}
             }
         }
+        {Kimber Maxim, Druidess of the fifth circle} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24709}
+            }
+        }
         {Kimber Maxim, Druidess of the fifth circle } 
         {
             {Rating} {}
             {Room} 
             {
                 {1} {24709}
+            }
+        }
+        {Luna Maray, the Centaur Elder Warrior-Mage} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24727}
             }
         }
         {Marel Sklesh, Half-elven Sorceress } 
@@ -24745,6 +25119,22 @@
                 {1} {37856}
             }
         }
+        {Ravel Ironmane the Centaur Chieftain} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {37795}
+            }
+        }
+        {Remy Anvastea, the Centaur Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24440}
+            }
+        }
         {Remy Anvastea, the Centaur Guard } 
         {
             {Rating} {}
@@ -24773,6 +25163,7 @@
             {Rooms} 
             {
                 {1} {24758}
+                {2} {24759}
             }
         }
         {Sasha Sarue, the Half-Elven Swordswoman} 
@@ -24780,8 +25171,8 @@
             {Ratings} {0}
             {Rooms} 
             {
-                {1} {24760}
-                {2} {24757}
+                {1} {24757}
+                {2} {24760}
             }
         }
         {Silverwind} 
@@ -25933,6 +26324,7 @@
             {Rooms} 
             {
                 {1} {24445}
+                {2} {4290}
             }
         }
         {A red-crested woodpecker} 
@@ -26088,6 +26480,14 @@
             {
                 {1} {4843}
                 {2} {7402}
+            }
+        }
+        {Bob Goblinface} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {7403}
             }
         }
         {Buzzard} 
@@ -27774,6 +28174,7 @@
                 {29} {5922}
                 {30} {5803}
                 {31} {5889}
+                {32} {22889}
             }
         }
         {A dark shimmer of a man} 
@@ -27899,6 +28300,7 @@
                 {33} {6211}
                 {34} {6203}
                 {35} {48494}
+                {36} {22889}
             }
         }
         {A housewife} 
@@ -27958,6 +28360,7 @@
                 {50} {5817}
                 {51} {6211}
                 {52} {6203}
+                {53} {22889}
             }
         }
         {A large black snake} 
@@ -28044,6 +28447,7 @@
                 {44} {45572}
                 {45} {6211}
                 {46} {48494}
+                {47} {22889}
             }
         }
         {A shimmering presence} 
@@ -28097,6 +28501,7 @@
                 {35} {5840}
                 {36} {6211}
                 {37} {6203}
+                {38} {22889}
             }
         }
         {A small cockroach} 
@@ -28521,6 +28926,7 @@
                 {46} {45572}
                 {47} {6211}
                 {48} {6203}
+                {49} {22889}
             }
         }
         {Guard sergeant} 
@@ -29101,9 +29507,11 @@
             {
                 {1} {5803}
                 {2} {4755}
-                {3} {4757}
-                {4} {6203}
-                {5} {5813}
+                {3} {6203}
+                {4} {5813}
+                {5} {22889}
+                {6} {4757}
+                {7} {4756}
             }
         }
         {Tommy the guard} 
@@ -31105,6 +31513,92 @@
     }
     {Grocery Store} 
     {
+        {A Booming Voice} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {313}
+                {2} {308}
+            }
+        }
+        {A Chorus} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {319}
+                {2} {314}
+            }
+        }
+        {A Cute Little Boy} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {311}
+            }
+        }
+        {A Lady who wishes she were Madge} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {310}
+                {2} {312}
+            }
+        }
+        {A Screaming Baby} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {313}
+                {2} {308}
+            }
+        }
+        {An annoying little girl} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {304}
+            }
+        }
+        {Bill Cosby} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {320}
+            }
+        }
+        {Booming Voice} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {313}
+            }
+        }
+        {Chorus} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {319}
+                {2} {314}
+            }
+        }
         {Girl} 
         {
             {Description} { the coffin's protective hold! }
@@ -31115,6 +31609,17 @@
             {Rooms} 
             {
                 {1} {304}
+            }
+        }
+        {Jay Leno} 
+        {
+            {Ratings} 
+            {
+                {1} {400}
+            }
+            {Rooms} 
+            {
+                {1} {311}
             }
         }
         {Lucky Charm} 
@@ -31129,6 +31634,63 @@
                 {1} {330}
             }
         }
+        {Madge} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {310}
+                {2} {312}
+            }
+        }
+        {Mr} 
+        {
+            {Ratings} 
+            {
+                {1} {3300}
+            }
+            {Rooms} 
+            {
+                {1} {311}
+            }
+        }
+        {Mr. Clean} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {316}
+                {2} {311}
+            }
+        }
+        {Mr. Lucky Charm} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {330}
+            }
+        }
+        {Northern} 
+        {
+            {Ratings} 
+            {
+                {1} {500}
+            }
+            {Rooms} 
+            {
+                {1} {319}
+            }
+        }
+        {Northern Bath Tissue Girl} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {320}
+                {2} {319}
+            }
+        }
         {Polar Bear} 
         {
             {Description} {NA}
@@ -31141,6 +31703,26 @@
                 {1} {331}
             }
         }
+        {Snuggles} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {314}
+            }
+        }
+        {Snuggles the Bear} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {314}
+                {2} {313}
+            }
+        }
         {Toucan} 
         {
             {Description} {  (toucan?) }
@@ -31148,6 +31730,14 @@
             {
                 {1} {400}
             }
+            {Rooms} 
+            {
+                {1} {303}
+            }
+        }
+        {Toucan Sam} 
+        {
+            {Ratings} {0}
             {Rooms} 
             {
                 {1} {303}
@@ -32020,6 +32610,7 @@
                 {4} {23322}
                 {5} {23338}
                 {6} {23323}
+                {7} {23331}
             }
         }
         {A Farmer} 
@@ -32038,6 +32629,14 @@
                 {2} {23338}
                 {3} {23337}
                 {4} {23322}
+            }
+        }
+        {A Frail Looking Man} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {A Guard} 
@@ -32089,6 +32688,15 @@
                 {8} {23330}
                 {9} {23321}
                 {10} {23328}
+                {11} {23331}
+            }
+        }
+        {A Wealthy Merchant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {A Young Man} 
@@ -32119,6 +32727,23 @@
                 {1} {23322}
                 {2} {23329}
                 {3} {23320}
+                {4} {23331}
+            }
+        }
+        {A large porcupine} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23331}
+            }
+        }
+        {An Eager Merchant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {Beastie} 
@@ -32176,6 +32801,14 @@
                 {1} {23337}
                 {2} {23336}
                 {3} {23330}
+            }
+        }
+        {Corristo the Wandering Traveler} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {Gaiboger} 
@@ -32250,6 +32883,14 @@
             {Rooms} 
             {
                 {1} {45075}
+            }
+        }
+        {Malvard, the Trader} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {Matt} 
@@ -32330,6 +32971,14 @@
             {Rooms} 
             {
                 {1} {45069}
+            }
+        }
+        {Rocky the Tough} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23331}
             }
         }
         {Sheriff} 
@@ -34520,6 +35169,14 @@
             }
         }
         {Princess Qi} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {152}
+            }
+        }
+        {Shala, Head Mistress of Newbieland} 
         {
             {Ratings} {0}
             {Rooms} 
@@ -38049,6 +38706,7 @@
                 {1} {23844}
                 {2} {23886}
                 {3} {23885}
+                {4} {23849}
             }
         }
         {Crystal Elder} 
@@ -38152,6 +38810,7 @@
                 {14} {23894}
                 {15} {23908}
                 {16} {23848}
+                {17} {23854}
             }
         }
         {Ice Youth} 
@@ -38175,6 +38834,7 @@
                 {13} {23848}
                 {14} {23847}
                 {15} {23844}
+                {16} {23850}
             }
         }
         {Man} 
@@ -38202,6 +38862,16 @@
                 {10} {23917}
                 {11} {23904}
                 {12} {23901}
+                {13} {23860}
+                {14} {23863}
+            }
+        }
+        {Orc} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {23844}
             }
         }
         {Woman} 
@@ -38225,6 +38895,10 @@
                 {8} {23905}
                 {9} {23852}
                 {10} {23912}
+                {11} {23847}
+                {12} {23854}
+                {13} {23857}
+                {14} {23866}
             }
         }
         {Young Person} 
@@ -38241,6 +38915,7 @@
                 {3} {23869}
                 {4} {23884}
                 {5} {23904}
+                {6} {23881}
             }
         }
         {man } 
@@ -39720,6 +40395,14 @@
     }
     {Mahjongg} 
     {
+        {A busy pedestrian} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {A cute koala} 
         {
             {Ratings} {0}
@@ -39778,6 +40461,14 @@
             }
         }
         {A truck named Skarsnik} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {A wandering pedestrian} 
         {
             {Ratings} {0}
             {Rooms} 
@@ -39979,6 +40670,7 @@
                 {10} {17}
                 {11} {38000}
                 {12} {32000}
+                {13} {18}
             }
             {Rooms} 
             {
@@ -39986,20 +40678,20 @@
                 {2} {1962}
                 {3} {1957}
                 {4} {1922}
-                {5} {1914}
-                {6} {1927}
-                {7} {1939}
-                {8} {1921}
-                {9} {1911}
-                {10} {1923}
-                {11} {1958}
-                {12} {1956}
-                {13} {1938}
-                {14} {1912}
-                {15} {1910}
-                {16} {1961}
-                {17} {1950}
-                {18} {1920}
+                {5} {1927}
+                {6} {1939}
+                {7} {1921}
+                {8} {1911}
+                {9} {1923}
+                {10} {1958}
+                {11} {1956}
+                {12} {1938}
+                {13} {1912}
+                {14} {1910}
+                {15} {1961}
+                {16} {1950}
+                {17} {1920}
+                {18} {1914}
             }
         }
         {Golden Phoenix} 
@@ -40032,11 +40724,11 @@
                 {7} {1916}
                 {8} {1924}
                 {9} {1969}
-                {10} {1903}
-                {11} {1929}
-                {12} {1917}
-                {13} {1944}
-                {14} {1902}
+                {10} {1929}
+                {11} {1917}
+                {12} {1944}
+                {13} {1902}
+                {14} {1903}
             }
         }
         {Green Chinese Dragon} 
@@ -40116,11 +40808,11 @@
                 {9} {1916}
                 {10} {1915}
                 {11} {1925}
-                {12} {1913}
-                {13} {1944}
-                {14} {1903}
-                {15} {1902}
-                {16} {1920}
+                {12} {1944}
+                {13} {1903}
+                {14} {1902}
+                {15} {1920}
+                {16} {1913}
             }
         }
         {Leaping Rat} 
@@ -40195,6 +40887,14 @@
                 {15} {1904}
             }
         }
+        {Major Henkey, PhD <?>} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {Marsh Snake} 
         {
             {Ratings} {0}
@@ -40228,6 +40928,14 @@
             }
         }
         {Plop the Valithyn} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
+        {Police Officer} 
         {
             {Ratings} {0}
             {Rooms} 
@@ -40330,28 +41038,28 @@
                 {9} {44000}
                 {10} {46000}
                 {11} {17}
-                {12} {18}
-                {13} {32000}
+                {12} {32000}
+                {13} {18}
             }
             {Rooms} 
             {
                 {1} {1923}
                 {2} {1914}
                 {3} {1958}
-                {4} {1910}
-                {5} {1956}
-                {6} {1961}
-                {7} {1950}
-                {8} {1927}
-                {9} {1921}
-                {10} {1957}
-                {11} {1912}
-                {12} {1939}
-                {13} {1962}
-                {14} {1922}
-                {15} {1911}
-                {16} {1920}
-                {17} {1951}
+                {4} {1956}
+                {5} {1961}
+                {6} {1950}
+                {7} {1927}
+                {8} {1921}
+                {9} {1957}
+                {10} {1912}
+                {11} {1939}
+                {12} {1962}
+                {13} {1922}
+                {14} {1911}
+                {15} {1920}
+                {16} {1951}
+                {17} {1910}
             }
         }
         {Red Rabbit} 
@@ -40444,6 +41152,14 @@
                 {1} {1900}
             }
         }
+        {Villager} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1900}
+            }
+        }
         {Voodoo's Jugger Support Mech} 
         {
             {Ratings} {0}
@@ -40508,25 +41224,26 @@
                 {11} {32000}
                 {12} {17}
                 {13} {18}
+                {14} {34000}
             }
             {Rooms} 
             {
                 {1} {1944}
-                {2} {1967}
-                {3} {1924}
-                {4} {1952}
-                {5} {1929}
-                {6} {1953}
-                {7} {1925}
-                {8} {1913}
-                {9} {1903}
-                {10} {1969}
-                {11} {1947}
-                {12} {1917}
-                {13} {1902}
-                {14} {1916}
-                {15} {1915}
-                {16} {1920}
+                {2} {1924}
+                {3} {1952}
+                {4} {1929}
+                {5} {1953}
+                {6} {1925}
+                {7} {1913}
+                {8} {1903}
+                {9} {1969}
+                {10} {1947}
+                {11} {1917}
+                {12} {1902}
+                {13} {1916}
+                {14} {1915}
+                {15} {1920}
+                {16} {1967}
             }
         }
     }
@@ -50030,6 +50747,26 @@
             }
         }
     }
+    {Newbie Academy} 
+    {
+        {Drake, The Combat Veteran} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13715}
+            }
+        }
+        {Paula Jones, the secretary} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13715}
+                {2} {48523}
+            }
+        }
+    }
     {Newbie Cathedral} 
     {
         {Gang Leader} 
@@ -50096,14 +50833,251 @@
             }
         }
     }
+    {Newbie Hell} 
+    {
+        {A sneaky bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27585}
+            }
+        }
+        {Baby Devil} 
+        {
+            {Ratings} 
+            {
+                {1} {200}
+            }
+            {Rooms} 
+            {
+                {1} {27586}
+            }
+        }
+        {Baby Plague Devil} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27586}
+            }
+        }
+        {Hellpuppy} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {27579}
+            }
+        }
+        {Sneaky Bandit} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {27585}
+            }
+        }
+    }
     {Newbieland} 
     {
+        {A bandit member} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13731}
+            }
+        }
         {A black ant} 
         {
             {Ratings} {0}
             {Rooms} 
             {
-                {1} {13725}
+                {1} {13727}
+                {2} {13725}
+            }
+        }
+        {A brigand member} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+                {2} {13728}
+            }
+        }
+        {A drunken thief} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13727}
+                {2} {13731}
+            }
+        }
+        {A fool-hardy thief} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13730}
+            }
+        }
+        {A foul smelling bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13727}
+            }
+        }
+        {A foul smelling brigand} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13727}
+                {2} {13731}
+            }
+        }
+        {A foul smelling cutthroat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+                {2} {13730}
+            }
+        }
+        {A foul smelling thief} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13727}
+                {2} {13732}
+                {3} {13728}
+                {4} {13731}
+            }
+        }
+        {A foul-mouthed bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13727}
+            }
+        }
+        {A foul-mouthed cutthroat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13730}
+                {2} {13731}
+                {3} {13727}
+            }
+        }
+        {A foul-mouthed thief} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13730}
+            }
+        }
+        {A red fox} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13726}
+                {2} {13725}
+                {3} {13732}
+                {4} {13731}
+                {5} {13714}
+                {6} {13729}
+            }
+        }
+        {An evil looking bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13727}
+            }
+        }
+        {An evil looking cutthroat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+            }
+        }
+        {An evil looking thief} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+            }
+        }
+        {An ill-mannered bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+                {2} {13728}
+            }
+        }
+        {An ill-mannered brigand} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+            }
+        }
+        {An ill-mannered cutthroat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13731}
+                {2} {13727}
+            }
+        }
+        {An overweight bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+                {2} {13730}
+            }
+        }
+        {An overweight brigand} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13727}
+                {2} {13730}
+            }
+        }
+        {An overweight cutthroat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+                {2} {13727}
             }
         }
         {Ant} 
@@ -50112,12 +51086,48 @@
             {Ratings} 
             {
                 {1} {6600}
-                {2} {100}
-                {3} {46000}
+                {2} {46000}
+                {3} {100}
             }
             {Rooms} 
             {
-                {1} {13725}
+                {1} {13727}
+                {2} {13725}
+            }
+        }
+        {Bandit} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13731}
+                {2} {13727}
+            }
+        }
+        {Brigand} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13731}
+            }
+        }
+        {Brigand of a secret order} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13732}
+                {2} {13728}
+            }
+        }
+        {Cutthroat of a secret order} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {13731}
+                {2} {13728}
             }
         }
         {Drake, The Combat Veteran} 
@@ -50138,9 +51148,10 @@
             {Rooms} 
             {
                 {1} {13732}
-                {2} {13729}
-                {3} {13714}
-                {4} {13726}
+                {2} {13726}
+                {3} {13725}
+                {4} {13714}
+                {5} {13729}
             }
         }
         {Jeffrey, The Tower Guard} 
@@ -50148,7 +51159,11 @@
             {Ratings} {0}
             {Rooms} 
             {
-                {1} {13724}
+                {1} {13713}
+                {2} {13716}
+                {3} {13725}
+                {4} {13711}
+                {5} {13724}
             }
         }
         {Jocelyn, The Brownie Queen} 
@@ -50165,6 +51180,7 @@
             {Rooms} 
             {
                 {1} {13710}
+                {2} {13712}
             }
         }
         {Shala, Head Mistress of Newbieland} 
@@ -50172,7 +51188,8 @@
             {Ratings} {0}
             {Rooms} 
             {
-                {1} {13704}
+                {1} {13705}
+                {2} {13704}
             }
         }
         {Thief} 
@@ -50181,15 +51198,16 @@
             {Ratings} 
             {
                 {1} {1200}
-                {2} {100}
-                {3} {10000}
+                {2} {10000}
+                {3} {100}
             }
             {Rooms} 
             {
-                {1} {13730}
-                {2} {13731}
-                {3} {13728}
-                {4} {13727}
+                {1} {13727}
+                {2} {13732}
+                {3} {13731}
+                {4} {13728}
+                {5} {13730}
             }
         }
     }
@@ -53029,6 +54047,14 @@
                 {1} {57}
             }
         }
+        {Cancer the tradesman} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6673}
+            }
+        }
         {Citizen} 
         {
             {Ratings} {0}
@@ -53055,6 +54081,15 @@
             {Rooms} 
             {
                 {1} {36214}
+                {2} {6673}
+            }
+        }
+        {Cur, the tradesman's dog} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6673}
             }
         }
         {Death} 
@@ -53281,6 +54316,17 @@
                 {19} {21690}
                 {20} {21686}
                 {21} {21685}
+            }
+        }
+        {Redactor} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {1}
             }
         }
         {Security Droid} 
@@ -53557,6 +54603,14 @@
                 {1} {30176}
             }
         }
+        {Blazing Agni :: Director of Xenogenetics} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {Ellegon's Jugger Support Mech} 
         {
             {Ratings} {0}
@@ -53573,12 +54627,36 @@
                 {1} {152}
             }
         }
+        {Homer Simpson} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {49584}
+            }
+        }
+        {Homer is sitting in the kiddie pool} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {49584}
+            }
+        }
         {Jela's Jugger Support Mech} 
         {
             {Ratings} {0}
             {Rooms} 
             {
                 {1} {50326}
+            }
+        }
+        {Marge Simpson} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {49584}
             }
         }
         {Matt the Tobacconist} 
@@ -53597,12 +54675,36 @@
                 {1} {50323}
             }
         }
+        {Princess Qi} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {49584}
+            }
+        }
         {Rolan the wise sage  <.>} 
         {
             {Ratings} {0}
             {Rooms} 
             {
                 {1} {49584}
+            }
+        }
+        {Santa's Little Helper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {49584}
+            }
+        }
+        {Shala, Head Mistress of Newbieland} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {49586}
             }
         }
         {Vaid :: Professor of Molecular Displacement} 
@@ -53853,6 +54955,14 @@
                 {1} {6746}
             }
         }
+        {A red-crested woodpecker} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6746}
+            }
+        }
         {A small furry groundhog} 
         {
             {Ratings} {0}
@@ -53906,6 +55016,11 @@
                 {16} {6892}
                 {17} {6891}
                 {18} {78}
+                {19} {20791}
+                {20} {20793}
+                {21} {6851}
+                {22} {6925}
+                {23} {20875}
             }
         }
         {Black Patrol Guard} 
@@ -54004,6 +55119,15 @@
             {
                 {1} {6883}
                 {2} {6899}
+                {3} {6886}
+            }
+        }
+        {Crysler C} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6827}
             }
         }
         {Drow} 
@@ -54054,8 +55178,8 @@
                 {2} {22000}
                 {3} {46000}
                 {4} {28000}
-                {5} {14000}
-                {6} {16000}
+                {5} {16000}
+                {6} {14000}
             }
             {Rooms} 
             {
@@ -54085,6 +55209,18 @@
                 {24} {6829}
                 {25} {6800}
                 {26} {6902}
+                {27} {6901}
+                {28} {6857}
+                {29} {6824}
+                {30} {20846}
+            }
+        }
+        {Giant Wasp} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {6746}
             }
         }
         {Guardswoman} 
@@ -54181,12 +55317,12 @@
             {Rooms} 
             {
                 {1} {62}
-                {2} {6874}
-                {3} {6882}
-                {4} {6750}
-                {5} {6754}
-                {6} {20920}
-                {7} {20933}
+                {2} {6754}
+                {3} {20920}
+                {4} {20933}
+                {5} {6874}
+                {6} {6750}
+                {7} {6882}
             }
         }
         {Rabid Wolf} 
@@ -54196,8 +55332,8 @@
             {
                 {1} {44000}
                 {2} {12000}
-                {3} {14000}
-                {4} {16000}
+                {3} {16000}
+                {4} {14000}
             }
             {Rooms} 
             {
@@ -54224,10 +55360,14 @@
                 {21} {6897}
                 {22} {6887}
                 {23} {6752}
-                {24} {20811}
-                {25} {20793}
-                {26} {6900}
-                {27} {20846}
+                {24} {20793}
+                {25} {6900}
+                {26} {20846}
+                {27} {20811}
+                {28} {20797}
+                {29} {20807}
+                {30} {20801}
+                {31} {6827}
             }
         }
         {Ragged Peasant} 
@@ -54293,6 +55433,7 @@
                 {21} {6751}
                 {22} {6798}
                 {23} {6901}
+                {24} {6797}
             }
         }
         {Sylvan Demon} 
@@ -54342,6 +55483,10 @@
                 {22} {6802}
                 {23} {6920}
                 {24} {6927}
+                {25} {6856}
+                {26} {6926}
+                {27} {20899}
+                {28} {6776}
             }
         }
         {Wild Stag} 
@@ -54356,6 +55501,10 @@
                 {1} {76}
                 {2} {85}
                 {3} {6751}
+                {4} {6903}
+                {5} {6752}
+                {6} {20808}
+                {7} {6888}
             }
         }
         {Wyvern} 
@@ -54364,14 +55513,14 @@
             {Ratings} 
             {
                 {1} {4400}
-                {2} {18000}
-                {3} {28000}
-                {4} {4300}
-                {5} {4600}
-                {6} {46000}
-                {7} {14000}
-                {8} {20000}
-                {9} {22000}
+                {2} {28000}
+                {3} {4300}
+                {4} {4600}
+                {5} {46000}
+                {6} {14000}
+                {7} {20000}
+                {8} {22000}
+                {9} {18000}
                 {10} {16000}
             }
             {Rooms} 
@@ -54397,30 +55546,35 @@
                 {19} {20887}
                 {20} {6803}
                 {21} {20899}
-                {22} {20791}
-                {23} {6797}
-                {24} {20905}
-                {25} {6887}
-                {26} {6801}
-                {27} {6832}
-                {28} {6802}
-                {29} {20803}
-                {30} {20925}
-                {31} {6717}
-                {32} {20895}
-                {33} {20901}
-                {34} {6878}
-                {35} {47}
-                {36} {6853}
-                {37} {20938}
-                {38} {6746}
-                {39} {6754}
-                {40} {3580}
-                {41} {20897}
-                {42} {6906}
-                {43} {6904}
-                {44} {20932}
-                {45} {6780}
+                {22} {6797}
+                {23} {20905}
+                {24} {6887}
+                {25} {6801}
+                {26} {6832}
+                {27} {6802}
+                {28} {20803}
+                {29} {20925}
+                {30} {6717}
+                {31} {20895}
+                {32} {20901}
+                {33} {6878}
+                {34} {47}
+                {35} {6853}
+                {36} {20938}
+                {37} {6746}
+                {38} {6754}
+                {39} {3580}
+                {40} {20897}
+                {41} {6906}
+                {42} {6904}
+                {43} {20932}
+                {44} {6780}
+                {45} {20791}
+                {46} {6909}
+                {47} {20797}
+                {48} {6908}
+                {49} {20954}
+                {50} {20955}
             }
         }
     }
@@ -55146,12 +56300,46 @@
     }
     {Priests} 
     {
+        {A small blue bird} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15596}
+            }
+        }
+        {Avellow the Curate} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15609}
+            }
+        }
+        {Gaia, Demi-Goddess of the Earth} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {25388}
+                {2} {25390}
+            }
+        }
+        {Janilev the Inquisitor} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15605}
+            }
+        }
         {Ulan the Historian} 
         {
             {Ratings} {0}
             {Rooms} 
             {
-                {1} {15595}
+                {1} {15596}
+                {2} {15595}
             }
         }
     }
@@ -58373,6 +59561,102 @@
             }
         }
     }
+    {Ralintaro's Tower} 
+    {
+        {A bat} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {48289}
+                {2} {48292}
+                {3} {48296}
+            }
+        }
+        {A field mouse} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {48295}
+                {2} {48286}
+                {3} {48294}
+            }
+        }
+        {A wolf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {48289}
+                {2} {48293}
+                {3} {48290}
+                {4} {48298}
+                {5} {48288}
+                {6} {48296}
+            }
+        }
+        {An owl} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {48286}
+                {2} {48287}
+            }
+        }
+        {Bat} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {48289}
+                {2} {48292}
+            }
+        }
+        {Mouse} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {48295}
+                {2} {48286}
+            }
+        }
+        {Owl} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {48286}
+                {2} {48287}
+            }
+        }
+        {Wolf} 
+        {
+            {Ratings} 
+            {
+                {1} {100}
+            }
+            {Rooms} 
+            {
+                {1} {48289}
+                {2} {48293}
+                {3} {48290}
+                {4} {48298}
+                {5} {48288}
+            }
+        }
+    }
     {Rampage of the Piggies} 
     {
         {Gordon} 
@@ -60638,9 +61922,9 @@
             }
             {Rooms} 
             {
-                {1} {36603}
-                {2} {20060}
-                {3} {36604}
+                {1} {36604}
+                {2} {36603}
+                {3} {20060}
             }
         }
         {Statue of a warrior} 
@@ -61783,6 +63067,7 @@
             {
                 {1} {24872}
                 {2} {24868}
+                {3} {25232}
             }
         }
         {A horde of massive broodlings} 
@@ -61819,6 +63104,14 @@
             }
         }
         {A tank named Prismelly} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24785}
+            }
+        }
+        {Avariel the Valithyn} 
         {
             {Ratings} {0}
             {Rooms} 
@@ -63388,19 +64681,19 @@
                 {251} {24810}
                 {252} {24801}
                 {253} {24797}
-                {254} {24787}
-                {255} {24933}
-                {256} {24977}
-                {257} {24921}
-                {258} {24851}
-                {259} {24884}
-                {260} {25226}
-                {261} {24896}
-                {262} {25112}
-                {263} {24981}
-                {264} {25065}
-                {265} {25063}
-                {266} {25116}
+                {254} {24933}
+                {255} {24977}
+                {256} {24921}
+                {257} {24851}
+                {258} {24884}
+                {259} {25226}
+                {260} {24896}
+                {261} {25112}
+                {262} {24981}
+                {263} {25065}
+                {264} {25063}
+                {265} {25116}
+                {266} {24787}
             }
         }
         {Pennywise the Valithyn} 
@@ -63419,6 +64712,22 @@
                 {1} {24785}
             }
         }
+        {Red Foot Soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24789}
+            }
+        }
+        {Red King} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24787}
+            }
+        }
         {Ripper} 
         {
             {Description} {  > > }
@@ -63434,6 +64743,7 @@
                 {8} {40000}
                 {9} {42000}
                 {10} {18}
+                {11} {70000}
             }
             {Rooms} 
             {
@@ -63458,56 +64768,56 @@
                 {19} {25236}
                 {20} {25235}
                 {21} {25234}
-                {22} {25232}
-                {23} {25231}
-                {24} {25229}
-                {25} {25225}
-                {26} {25213}
-                {27} {25210}
-                {28} {25209}
-                {29} {25208}
-                {30} {25211}
-                {31} {25207}
-                {32} {25206}
-                {33} {25181}
-                {34} {25179}
-                {35} {25178}
-                {36} {25086}
-                {37} {25085}
-                {38} {25084}
-                {39} {25082}
-                {40} {25083}
-                {41} {25081}
-                {42} {25079}
-                {43} {25080}
-                {44} {25078}
-                {45} {25047}
-                {46} {25043}
-                {47} {25016}
-                {48} {25012}
-                {49} {25013}
-                {50} {25003}
-                {51} {24946}
-                {52} {24945}
-                {53} {24944}
-                {54} {24943}
-                {55} {24940}
-                {56} {24939}
-                {57} {24911}
-                {58} {24909}
-                {59} {24908}
-                {60} {24877}
-                {61} {24873}
-                {62} {24868}
-                {63} {24875}
-                {64} {24938}
-                {65} {24942}
-                {66} {24872}
-                {67} {24907}
-                {68} {24936}
-                {69} {24941}
-                {70} {25011}
-                {71} {25212}
+                {22} {25231}
+                {23} {25229}
+                {24} {25225}
+                {25} {25213}
+                {26} {25210}
+                {27} {25209}
+                {28} {25208}
+                {29} {25211}
+                {30} {25207}
+                {31} {25206}
+                {32} {25181}
+                {33} {25179}
+                {34} {25178}
+                {35} {25086}
+                {36} {25085}
+                {37} {25084}
+                {38} {25082}
+                {39} {25083}
+                {40} {25081}
+                {41} {25079}
+                {42} {25080}
+                {43} {25078}
+                {44} {25047}
+                {45} {25043}
+                {46} {25016}
+                {47} {25012}
+                {48} {25013}
+                {49} {25003}
+                {50} {24946}
+                {51} {24945}
+                {52} {24944}
+                {53} {24943}
+                {54} {24940}
+                {55} {24939}
+                {56} {24911}
+                {57} {24909}
+                {58} {24908}
+                {59} {24877}
+                {60} {24873}
+                {61} {24868}
+                {62} {24875}
+                {63} {24938}
+                {64} {24942}
+                {65} {24872}
+                {66} {24907}
+                {67} {24936}
+                {68} {24941}
+                {69} {25011}
+                {70} {25212}
+                {71} {25232}
             }
         }
         {Saurmac's Jugger Support Mech} 
@@ -63532,6 +64842,7 @@
                 {7} {36000}
                 {8} {40000}
                 {9} {42000}
+                {10} {56000}
             }
             {Rooms} 
             {
@@ -63771,36 +65082,36 @@
                 {234} {25199}
                 {235} {25185}
                 {236} {25155}
-                {237} {25130}
-                {238} {25094}
-                {239} {25110}
-                {240} {25071}
-                {241} {25029}
-                {242} {24999}
-                {243} {24956}
-                {244} {24948}
-                {245} {24917}
-                {246} {24884}
-                {247} {24881}
-                {248} {24856}
-                {249} {24862}
-                {250} {24857}
-                {251} {24834}
-                {252} {24800}
-                {253} {24789}
-                {254} {24987}
-                {255} {24810}
-                {256} {24794}
-                {257} {24901}
-                {258} {24967}
-                {259} {24886}
-                {260} {24891}
-                {261} {25132}
-                {262} {24803}
-                {263} {24811}
-                {264} {24833}
-                {265} {25027}
-                {266} {25024}
+                {237} {25094}
+                {238} {25110}
+                {239} {25071}
+                {240} {25029}
+                {241} {24999}
+                {242} {24956}
+                {243} {24948}
+                {244} {24917}
+                {245} {24884}
+                {246} {24881}
+                {247} {24856}
+                {248} {24862}
+                {249} {24857}
+                {250} {24834}
+                {251} {24800}
+                {252} {24789}
+                {253} {24987}
+                {254} {24810}
+                {255} {24794}
+                {256} {24901}
+                {257} {24967}
+                {258} {24886}
+                {259} {24891}
+                {260} {25132}
+                {261} {24803}
+                {262} {24811}
+                {263} {24833}
+                {264} {25027}
+                {265} {25024}
+                {266} {25130}
             }
         }
         {Swole Capacitor} 
@@ -63852,6 +65163,46 @@
             {Rooms} 
             {
                 {1} {24786}
+            }
+        }
+        {White Charioteer} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24789}
+            }
+        }
+        {White Counsellor} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24789}
+            }
+        }
+        {White Foot Soldier} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24789}
+            }
+        }
+        {White King} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24789}
+            }
+        }
+        {White Priest} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24789}
             }
         }
         {Zamuza} 
@@ -66969,6 +68320,14 @@
                 {2} {8255}
             }
         }
+        {Bart} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24628}
+            }
+        }
         {Bart Simpson} 
         {
             {Ratings} {0}
@@ -66985,6 +68344,14 @@
             {Rooms} 
             {
                 {1} {8302}
+            }
+        }
+        {Bart is reading some comics} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24628}
             }
         }
         {Bea} 
@@ -67276,12 +68643,12 @@
                 {1} {8291}
                 {2} {8229}
                 {3} {8290}
-                {4} {8298}
-                {5} {8294}
-                {6} {8296}
-                {7} {8227}
-                {8} {8230}
-                {9} {8297}
+                {4} {8294}
+                {5} {8296}
+                {6} {8227}
+                {7} {8230}
+                {8} {8297}
+                {9} {8298}
             }
         }
         {Homer is confessing his sins} 
@@ -67302,6 +68669,14 @@
             {
                 {1} {8309}
                 {2} {50813}
+            }
+        }
+        {Homer is sitting in the kiddie pool} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24627}
             }
         }
         {Jasper sits in his chair, watching the world go by} 
@@ -67360,6 +68735,14 @@
             {Rooms} 
             {
                 {1} {17448}
+            }
+        }
+        {Marge Simpson} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {8298}
             }
         }
         {Matt Groening} 
@@ -72439,7 +73822,9 @@
             }
             {Rooms} 
             {
-                {1} {4093}
+                {1} {4092}
+                {2} {4090}
+                {3} {4093}
             }
         }
     }
@@ -74607,9 +75992,9 @@
             {Rooms} 
             {
                 {1} {4756}
-                {2} {4757}
-                {3} {5891}
-                {4} {5806}
+                {2} {5891}
+                {3} {5806}
+                {4} {4757}
             }
         }
         {Tommy the guard} 
@@ -83330,6 +84715,14 @@
                 {2} {37215}
             }
         }
+        {Tardain the Keeper of the Bell} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {48232}
+            }
+        }
     }
     {Vago's Stronghold} 
     {
@@ -85319,11 +86712,13 @@
             {Rooms} 
             {
                 {1} {4106}
-                {2} {4103}
-                {3} {4101}
-                {4} {4102}
-                {5} {4104}
-                {6} {4098}
+                {2} {4101}
+                {3} {4098}
+                {4} {4104}
+                {5} {4110}
+                {6} {22090}
+                {7} {4103}
+                {8} {4102}
             }
         }
         {A Burgher } 
@@ -85415,18 +86810,20 @@
             {Rooms} 
             {
                 {1} {4106}
-                {2} {4104}
-                {3} {4072}
-                {4} {4083}
-                {5} {4108}
-                {6} {4107}
-                {7} {4094}
-                {8} {4099}
-                {9} {4101}
-                {10} {4102}
-                {11} {4098}
-                {12} {4095}
-                {13} {4082}
+                {2} {4072}
+                {3} {4083}
+                {4} {4108}
+                {5} {4094}
+                {6} {4099}
+                {7} {4101}
+                {8} {4098}
+                {9} {4095}
+                {10} {4082}
+                {11} {4107}
+                {12} {4110}
+                {13} {22090}
+                {14} {4104}
+                {15} {4102}
             }
         }
         {A Dwarven Trader } 
@@ -85504,6 +86901,13 @@
             {Rooms} 
             {
                 {1} {7349}
+                {2} {7350}
+                {3} {15645}
+                {4} {7351}
+                {5} {15639}
+                {6} {15632}
+                {7} {15629}
+                {8} {15627}
             }
         }
         {A Priestess of Kourlyn} 
@@ -85525,8 +86929,10 @@
             {
                 {1} {15591}
                 {2} {7347}
-                {3} {15581}
-                {4} {7346}
+                {3} {7346}
+                {4} {15621}
+                {5} {15585}
+                {6} {15581}
             }
         }
         {A Student} 
@@ -85535,10 +86941,16 @@
             {Rooms} 
             {
                 {1} {15621}
-                {2} {7347}
-                {3} {7345}
-                {4} {7346}
-                {5} {7349}
+                {2} {7345}
+                {3} {7349}
+                {4} {7347}
+                {5} {7350}
+                {6} {7346}
+                {7} {3938}
+                {8} {15579}
+                {9} {15578}
+                {10} {15581}
+                {11} {15583}
             }
         }
         {A Thief} 
@@ -85568,16 +86980,18 @@
             {
                 {1} {4106}
                 {2} {4072}
-                {3} {4109}
-                {4} {4108}
-                {5} {4103}
-                {6} {3947}
-                {7} {4083}
-                {8} {4102}
-                {9} {4104}
-                {10} {4098}
-                {11} {4081}
-                {12} {4082}
+                {3} {3947}
+                {4} {4083}
+                {5} {4098}
+                {6} {4081}
+                {7} {4082}
+                {8} {4104}
+                {9} {4109}
+                {10} {4110}
+                {11} {49777}
+                {12} {4108}
+                {13} {4103}
+                {14} {4102}
             }
         }
         {A Wayhaven Merchant } 
@@ -85606,7 +87020,9 @@
                 {6} {4129}
                 {7} {22078}
                 {8} {22053}
-                {9} {49777}
+                {9} {4109}
+                {10} {3952}
+                {11} {49777}
             }
         }
         {A bridge guard} 
@@ -85656,12 +87072,21 @@
                 {3} {3997}
             }
         }
+        {A sailor} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {7350}
+            }
+        }
         {A weary Merchant} 
         {
             {Ratings} {0}
             {Rooms} 
             {
                 {1} {7351}
+                {2} {7350}
             }
         }
         {A young woman} 
@@ -85680,6 +87105,8 @@
             {Rooms} 
             {
                 {1} {15581}
+                {2} {15579}
+                {3} {15578}
             }
         }
         {An Ink Master} 
@@ -85795,36 +87222,39 @@
                 {34} {4097}
                 {35} {3936}
                 {36} {3944}
-                {37} {3931}
-                {38} {3926}
-                {39} {3932}
-                {40} {3933}
-                {41} {3924}
-                {42} {3918}
-                {43} {3917}
-                {44} {3916}
-                {45} {3914}
-                {46} {3913}
-                {47} {3912}
-                {48} {3911}
-                {49} {3934}
-                {50} {3935}
-                {51} {3910}
-                {52} {3946}
-                {53} {4098}
-                {54} {4099}
-                {55} {4070}
-                {56} {3945}
-                {57} {3949}
-                {58} {3950}
-                {59} {3948}
-                {60} {3915}
-                {61} {3920}
-                {62} {3947}
-                {63} {4083}
-                {64} {3909}
-                {65} {3919}
-                {66} {3922}
+                {37} {3932}
+                {38} {3933}
+                {39} {3924}
+                {40} {3918}
+                {41} {3917}
+                {42} {3916}
+                {43} {3914}
+                {44} {3913}
+                {45} {3912}
+                {46} {3911}
+                {47} {3934}
+                {48} {3935}
+                {49} {3910}
+                {50} {3946}
+                {51} {4098}
+                {52} {4099}
+                {53} {4070}
+                {54} {3949}
+                {55} {3950}
+                {56} {3948}
+                {57} {3919}
+                {58} {3922}
+                {59} {3920}
+                {60} {4083}
+                {61} {4002}
+                {62} {3929}
+                {63} {3931}
+                {64} {3926}
+                {65} {3909}
+                {66} {3915}
+                {67} {3947}
+                {68} {3945}
+                {69} {3952}
             }
         }
         {Citizen } 
@@ -85865,6 +87295,15 @@
                 {1} {4105}
             }
         }
+        {Green clad elf} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15638}
+                {2} {15634}
+            }
+        }
         {Kaleth} 
         {
             {Description} { Kaleth sneers at you as you examine him.  He's tall, thick, and one mean person.  He looks like he'd knock you around just for not having exact change.  He is in perfect health.    / | \   Bayside West continues to the north and south, following the route of the river.  The smell of stale beer wafts on the heavy breeze blowing up from the bay to the south. Old, dilapidated buildings and hovels straggle along the side of the street to the east, including a shady looking shop.   }
@@ -85887,6 +87326,17 @@
             {Rooms} 
             {
                 {1} {4117}
+            }
+        }
+        {Merribeth, Priestess of Gaia} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {15581}
+                {2} {7347}
+                {3} {15583}
+                {4} {15593}
             }
         }
         {Printer} 
@@ -85919,6 +87369,14 @@
             {Rooms} 
             {
                 {1} {42752}
+            }
+        }
+        {The Merchant Guild Bartender} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {4110}
             }
         }
         {The Merchant Guild Clerk} 
@@ -85977,6 +87435,9 @@
                 {13} {4102}
                 {14} {4098}
                 {15} {3915}
+                {16} {4104}
+                {17} {3976}
+                {18} {7350}
             }
         }
         {Wayhaven City Guard } 
@@ -86012,6 +87473,11 @@
                 {11} {4102}
                 {12} {4098}
                 {13} {3915}
+                {14} {4104}
+                {15} {3952}
+                {16} {4002}
+                {17} {3976}
+                {18} {7350}
             }
         }
         {Wyk - The hobbled old necromancer} 
@@ -86137,9 +87603,9 @@
             {Ratings} {0}
             {Rooms} 
             {
-                {1} {7352}
-                {2} {7354}
-                {3} {7353}
+                {1} {7354}
+                {2} {7353}
+                {3} {7352}
             }
         }
         {A weary Merchant} 
@@ -86214,6 +87680,22 @@
             {Rooms} 
             {
                 {1} {38200}
+            }
+        }
+        {Wayhaven City Guard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {7353}
+            }
+        }
+        {Wayhaven City Guard Sergeant} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {7353}
             }
         }
     }
@@ -86844,8 +88326,9 @@
                 {7} {32000}
                 {8} {34000}
                 {9} {38000}
-                {10} {36000}
-                {11} {15}
+                {10} {15}
+                {11} {36000}
+                {12} {40000}
             }
             {Rooms} 
             {
@@ -86886,8 +88369,10 @@
                 {35} {6589}
                 {36} {6616}
                 {37} {6615}
-                {38} {6649}
-                {39} {6648}
+                {38} {6648}
+                {39} {6649}
+                {40} {6639}
+                {41} {6574}
             }
         }
         {Erig} 
@@ -86917,11 +88402,11 @@
                 {12} {32000}
                 {13} {74000}
                 {14} {34000}
-                {15} {36000}
-                {16} {38000}
-                {17} {40000}
-                {18} {15}
-                {19} {17}
+                {15} {15}
+                {16} {17}
+                {17} {38000}
+                {18} {36000}
+                {19} {40000}
             }
             {Rooms} 
             {
@@ -86938,35 +88423,36 @@
                 {11} {6634}
                 {12} {6623}
                 {13} {6635}
-                {14} {6575}
-                {15} {6595}
-                {16} {6649}
-                {17} {6586}
-                {18} {6619}
-                {19} {6584}
-                {20} {6645}
-                {21} {6626}
-                {22} {6592}
-                {23} {6581}
-                {24} {6601}
-                {25} {6648}
-                {26} {6596}
-                {27} {6599}
-                {28} {6610}
-                {29} {6574}
-                {30} {6624}
-                {31} {6625}
-                {32} {6629}
-                {33} {6647}
-                {34} {6646}
-                {35} {6651}
-                {36} {6579}
-                {37} {6594}
-                {38} {6618}
-                {39} {6615}
-                {40} {6593}
-                {41} {6652}
-                {42} {6578}
+                {14} {6595}
+                {15} {6649}
+                {16} {6586}
+                {17} {6619}
+                {18} {6584}
+                {19} {6626}
+                {20} {6592}
+                {21} {6581}
+                {22} {6601}
+                {23} {6648}
+                {24} {6596}
+                {25} {6599}
+                {26} {6610}
+                {27} {6574}
+                {28} {6625}
+                {29} {6629}
+                {30} {6647}
+                {31} {6646}
+                {32} {6651}
+                {33} {6579}
+                {34} {6594}
+                {35} {6618}
+                {36} {6615}
+                {37} {6593}
+                {38} {6652}
+                {39} {6578}
+                {40} {6575}
+                {41} {6624}
+                {42} {6643}
+                {43} {6645}
             }
         }
         {Flesh Golem  !attacking Badluck!} 
@@ -86989,12 +88475,13 @@
                 {5} {42000}
                 {6} {6200}
                 {7} {17}
-                {8} {28000}
-                {9} {32000}
-                {10} {34000}
-                {11} {36000}
-                {12} {38000}
-                {13} {15}
+                {8} {32000}
+                {9} {34000}
+                {10} {15}
+                {11} {28000}
+                {12} {36000}
+                {13} {40000}
+                {14} {38000}
             }
             {Rooms} 
             {
@@ -87002,53 +88489,55 @@
                 {2} {148}
                 {3} {6635}
                 {4} {6590}
-                {5} {6638}
-                {6} {6650}
-                {7} {6646}
-                {8} {6647}
-                {9} {6629}
-                {10} {6591}
-                {11} {6601}
-                {12} {6600}
-                {13} {6599}
-                {14} {6580}
-                {15} {6576}
-                {16} {6579}
-                {17} {6574}
-                {18} {6628}
-                {19} {6634}
-                {20} {6621}
-                {21} {6617}
-                {22} {6593}
-                {23} {6630}
-                {24} {6610}
-                {25} {6612}
-                {26} {6577}
-                {27} {6596}
-                {28} {6613}
-                {29} {6652}
-                {30} {6585}
-                {31} {6626}
-                {32} {6603}
-                {33} {6606}
-                {34} {6622}
-                {35} {6611}
-                {36} {6578}
-                {37} {6645}
-                {38} {6648}
-                {39} {6583}
-                {40} {6588}
-                {41} {6609}
-                {42} {6616}
-                {43} {6615}
-                {44} {6614}
-                {45} {6608}
-                {46} {6595}
-                {47} {6594}
-                {48} {6586}
-                {49} {6651}
-                {50} {6584}
-                {51} {6625}
+                {5} {6650}
+                {6} {6646}
+                {7} {6647}
+                {8} {6629}
+                {9} {6591}
+                {10} {6601}
+                {11} {6600}
+                {12} {6599}
+                {13} {6580}
+                {14} {6576}
+                {15} {6579}
+                {16} {6574}
+                {17} {6628}
+                {18} {6634}
+                {19} {6621}
+                {20} {6617}
+                {21} {6630}
+                {22} {6610}
+                {23} {6612}
+                {24} {6577}
+                {25} {6596}
+                {26} {6613}
+                {27} {6652}
+                {28} {6585}
+                {29} {6626}
+                {30} {6603}
+                {31} {6606}
+                {32} {6622}
+                {33} {6611}
+                {34} {6578}
+                {35} {6645}
+                {36} {6648}
+                {37} {6583}
+                {38} {6588}
+                {39} {6609}
+                {40} {6616}
+                {41} {6615}
+                {42} {6614}
+                {43} {6608}
+                {44} {6595}
+                {45} {6594}
+                {46} {6586}
+                {47} {6651}
+                {48} {6584}
+                {49} {6625}
+                {50} {6593}
+                {51} {6602}
+                {52} {6623}
+                {53} {6638}
             }
         }
         {Glass Golem } 
@@ -87081,13 +88570,14 @@
                 {5} {56000}
                 {6} {15}
                 {7} {8900}
-                {8} {28000}
-                {9} {32000}
-                {10} {34000}
-                {11} {36000}
-                {12} {40000}
-                {13} {38000}
-                {14} {42000}
+                {8} {32000}
+                {9} {34000}
+                {10} {36000}
+                {11} {38000}
+                {12} {28000}
+                {13} {26000}
+                {14} {40000}
+                {15} {42000}
             }
             {Rooms} 
             {
@@ -87100,42 +88590,42 @@
                 {7} {6621}
                 {8} {6635}
                 {9} {6650}
-                {10} {6634}
-                {11} {6589}
-                {12} {6585}
-                {13} {6577}
-                {14} {6579}
-                {15} {6610}
-                {16} {6588}
-                {17} {6594}
-                {18} {6630}
-                {19} {6645}
-                {20} {6651}
-                {21} {6578}
-                {22} {6604}
-                {23} {6618}
-                {24} {6582}
-                {25} {6613}
-                {26} {6614}
-                {27} {6625}
-                {28} {6576}
-                {29} {6586}
-                {30} {6595}
-                {31} {6611}
-                {32} {6612}
-                {33} {6605}
-                {34} {6606}
-                {35} {6609}
-                {36} {6619}
-                {37} {6608}
-                {38} {6596}
-                {39} {6622}
-                {40} {6629}
-                {41} {6574}
-                {42} {6583}
-                {43} {6623}
-                {44} {6628}
-                {45} {6649}
+                {10} {6589}
+                {11} {6585}
+                {12} {6577}
+                {13} {6579}
+                {14} {6610}
+                {15} {6588}
+                {16} {6630}
+                {17} {6645}
+                {18} {6651}
+                {19} {6578}
+                {20} {6604}
+                {21} {6618}
+                {22} {6582}
+                {23} {6613}
+                {24} {6614}
+                {25} {6625}
+                {26} {6576}
+                {27} {6586}
+                {28} {6611}
+                {29} {6612}
+                {30} {6605}
+                {31} {6606}
+                {32} {6609}
+                {33} {6619}
+                {34} {6608}
+                {35} {6596}
+                {36} {6622}
+                {37} {6629}
+                {38} {6574}
+                {39} {6583}
+                {40} {6623}
+                {41} {6628}
+                {42} {6649}
+                {43} {6594}
+                {44} {6595}
+                {45} {6634}
             }
         }
         {Princess Qi} 
@@ -87169,11 +88659,12 @@
                 {8} {6000}
                 {9} {6100}
                 {10} {8000}
-                {11} {28000}
-                {12} {34000}
-                {13} {36000}
-                {14} {38000}
-                {15} {17}
+                {11} {34000}
+                {12} {36000}
+                {13} {17}
+                {14} {28000}
+                {15} {40000}
+                {16} {38000}
             }
             {Rooms} 
             {
@@ -87223,9 +88714,14 @@
                 {44} {6612}
                 {45} {6608}
                 {46} {6596}
-                {47} {6629}
-                {48} {6652}
-                {49} {6626}
+                {47} {6652}
+                {48} {6626}
+                {49} {6574}
+                {50} {6633}
+                {51} {6581}
+                {52} {6629}
+                {53} {6646}
+                {54} {6641}
             }
         }
         {Stone Golem} 
@@ -87243,8 +88739,9 @@
                 {8} {32000}
                 {9} {38000}
                 {10} {34000}
-                {11} {36000}
-                {12} {17}
+                {11} {17}
+                {12} {36000}
+                {13} {40000}
             }
             {Rooms} 
             {
@@ -87261,39 +88758,40 @@
                 {11} {6623}
                 {12} {6579}
                 {13} {6650}
-                {14} {6647}
-                {15} {6648}
-                {16} {6578}
-                {17} {6580}
-                {18} {6594}
-                {19} {6622}
-                {20} {6581}
-                {21} {6612}
-                {22} {6617}
-                {23} {6615}
-                {24} {6609}
-                {25} {6629}
-                {26} {6619}
-                {27} {6574}
-                {28} {6610}
-                {29} {6596}
-                {30} {6614}
-                {31} {6651}
-                {32} {6583}
-                {33} {6628}
-                {34} {6626}
-                {35} {6584}
-                {36} {6630}
-                {37} {6589}
-                {38} {6591}
-                {39} {6587}
-                {40} {6585}
-                {41} {6586}
-                {42} {6652}
-                {43} {6613}
-                {44} {6607}
-                {45} {6577}
+                {14} {6648}
+                {15} {6578}
+                {16} {6580}
+                {17} {6594}
+                {18} {6622}
+                {19} {6581}
+                {20} {6612}
+                {21} {6617}
+                {22} {6615}
+                {23} {6609}
+                {24} {6629}
+                {25} {6619}
+                {26} {6574}
+                {27} {6610}
+                {28} {6596}
+                {29} {6614}
+                {30} {6651}
+                {31} {6583}
+                {32} {6628}
+                {33} {6626}
+                {34} {6584}
+                {35} {6630}
+                {36} {6589}
+                {37} {6591}
+                {38} {6585}
+                {39} {6586}
+                {40} {6652}
+                {41} {6613}
+                {42} {6607}
+                {43} {6577}
+                {44} {6587}
+                {45} {6598}
                 {46} {6621}
+                {47} {6647}
             }
         }
         {Stone Golem [dying] } 
@@ -87317,10 +88815,11 @@
                 {6} {64000}
                 {7} {6500}
                 {8} {32000}
-                {9} {38000}
-                {10} {36000}
-                {11} {34000}
-                {12} {40000}
+                {9} {36000}
+                {10} {34000}
+                {11} {40000}
+                {12} {28000}
+                {13} {38000}
             }
             {Rooms} 
             {
@@ -87346,27 +88845,28 @@
                 {20} {6646}
                 {21} {6596}
                 {22} {6611}
-                {23} {6614}
-                {24} {6615}
-                {25} {6651}
-                {26} {6640}
-                {27} {6638}
-                {28} {6594}
-                {29} {6595}
-                {30} {6599}
-                {31} {6600}
-                {32} {6574}
-                {33} {6579}
-                {34} {6616}
-                {35} {6619}
-                {36} {6583}
-                {37} {6626}
-                {38} {6630}
-                {39} {6647}
-                {40} {6623}
-                {41} {6645}
-                {42} {6644}
-                {43} {6650}
+                {23} {6615}
+                {24} {6651}
+                {25} {6640}
+                {26} {6638}
+                {27} {6595}
+                {28} {6599}
+                {29} {6600}
+                {30} {6574}
+                {31} {6579}
+                {32} {6616}
+                {33} {6619}
+                {34} {6583}
+                {35} {6630}
+                {36} {6647}
+                {37} {6623}
+                {38} {6645}
+                {39} {6644}
+                {40} {6650}
+                {41} {6626}
+                {42} {6614}
+                {43} {6594}
+                {44} {6631}
             }
         }
         {Straw Golem  !attacking Badluck!} 
