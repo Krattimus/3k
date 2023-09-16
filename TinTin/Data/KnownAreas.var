@@ -764,8 +764,8 @@
             {26} {Letter C}
             {27} {Letter D}
             {28} {Letter M}
-            {29} {The Alphabet Serial Killer}
-            {30} {Letter O}
+            {29} {Letter O}
+            {30} {The Alphabet Serial Killer}
         }
         {Ratings} 
         {
@@ -2598,27 +2598,27 @@
             {86} {A quaint candy store}
             {87} {A toddler's sippy cup}
             {88} {A playhouse}
-            {89} {Overgrown swamp}
-            {90} {A velvet witch hat}
-            {91} {A large ladder}
-            {92} {A bronze plaque}
-            {93} {Erratio Forest}
-            {94} {A joystick}
-            {95} {Zippo Case}
-            {96} {An ancient runestone}
-            {97} {A bucket of water}
-            {98} {The Good Humor, Ice Cream Truck}
-            {99} {A Crazily Canted and Odd Pipe}
-            {100} {A set of puppy tracks}
-            {101} {A small dispensing machine}
-            {102} {A large whirlpool}
-            {103} {A writhing tendril}
-            {104} {A newly erected billboard}
-            {105} {A Small ChaosBrand Television Set}
-            {106} {A long leather leash hangs in midair}
-            {107} {A blazing comet}
-            {108} {An old dusty book}
-            {109} {A huge box }
+            {89} {A velvet witch hat}
+            {90} {A large ladder}
+            {91} {A bronze plaque}
+            {92} {Erratio Forest}
+            {93} {A joystick}
+            {94} {Zippo Case}
+            {95} {An ancient runestone}
+            {96} {A bucket of water}
+            {97} {The Good Humor, Ice Cream Truck}
+            {98} {A Crazily Canted and Odd Pipe}
+            {99} {A set of puppy tracks}
+            {100} {A small dispensing machine}
+            {101} {A large whirlpool}
+            {102} {A writhing tendril}
+            {103} {A long leather leash hangs in midair}
+            {104} {A blazing comet}
+            {105} {An old dusty book}
+            {106} {A huge box }
+            {107} {A newly erected billboard}
+            {108} {A Small ChaosBrand Television Set}
+            {109} {Overgrown swamp}
         }
         {Mobs} 
         {
@@ -2928,13 +2928,13 @@
             {14} {A Refugee}
             {15} {Angry War Elephant}
             {16} {Angry Horse}
-            {17} {Red Foot Soldier}
-            {18} {Blat the Valithyn}
-            {19} {A banshee}
-            {20} {An evil sorceress}
-            {21} {Red Cross Medic}
-            {22} {White Foot Soldier}
-            {23} {A War Correspondent}
+            {17} {Blat the Valithyn}
+            {18} {A banshee}
+            {19} {An evil sorceress}
+            {20} {Red Cross Medic}
+            {21} {White Foot Soldier}
+            {22} {A War Correspondent}
+            {23} {Red Foot Soldier}
         }
         {Ratings} 
         {
@@ -14614,46 +14614,46 @@
             {6} {Grimnebulin, Kyoujin's Necrotic Slake Moth}
             {7} {A tank named MRAP}
             {8} {Saurmac's Jugger Support Mech}
-            {9} {Pennywise the Valithyn}
-            {10} {A Groma}
-            {11} {Galga}
-            {12} {Balba}
-            {13} {Zamuza}
-            {14} {Generator}
-            {15} {Clone Soldier}
-            {16} {Leago}
-            {17} {Groma}
-            {18} {A Clone Soldier}
-            {19} {A Leeva}
-            {20} {A Cloud Eye}
-            {21} {Cloud Eye}
-            {22} {A massive black wandering spider}
-            {23} {Beautiful Chimera}
-            {24} {A horde of massive broodlings}
-            {25} {Betsy, Archangel's Red Roan Akhal-Teke}
-            {26} {Harbl the Grimare}
-            {27} {A tank named Prismelly}
-            {28} {Prism's Jugger Support Mech}
-            {29} {Badger's Jugger Support Mech}
-            {30} {A tank named Mushroom}
-            {31} {Vaid :: Professor of Molecular Displacement}
-            {32} {Blazing Agni :: Director of Xenogenetics}
-            {33} {Swole Capacitor}
-            {34} {Avariel the Valithyn}
-            {35} {Ender's LE Repair Droid Beans}
-            {36} {Leeva}
-            {37} {The Pope <?>}
-            {38} {Red King}
-            {39} {Red Foot Soldier}
-            {40} {White Priest}
-            {41} {White Foot Soldier}
-            {42} {White King}
-            {43} {White Counsellor}
-            {44} {White Charioteer}
-            {45} {Spiral Gun}
-            {46} {Ripper}
-            {47} {A Ripper}
-            {48} {The Developer}
+            {9} {A Groma}
+            {10} {Galga}
+            {11} {Balba}
+            {12} {Zamuza}
+            {13} {Generator}
+            {14} {Clone Soldier}
+            {15} {Leago}
+            {16} {Groma}
+            {17} {A Clone Soldier}
+            {18} {A Leeva}
+            {19} {A Cloud Eye}
+            {20} {Cloud Eye}
+            {21} {A massive black wandering spider}
+            {22} {Beautiful Chimera}
+            {23} {A horde of massive broodlings}
+            {24} {Betsy, Archangel's Red Roan Akhal-Teke}
+            {25} {Harbl the Grimare}
+            {26} {A tank named Prismelly}
+            {27} {Prism's Jugger Support Mech}
+            {28} {Badger's Jugger Support Mech}
+            {29} {A tank named Mushroom}
+            {30} {Vaid :: Professor of Molecular Displacement}
+            {31} {Blazing Agni :: Director of Xenogenetics}
+            {32} {Swole Capacitor}
+            {33} {Avariel the Valithyn}
+            {34} {Ender's LE Repair Droid Beans}
+            {35} {Leeva}
+            {36} {The Pope <?>}
+            {37} {Red King}
+            {38} {Red Foot Soldier}
+            {39} {White Priest}
+            {40} {White Foot Soldier}
+            {41} {White King}
+            {42} {White Counsellor}
+            {43} {White Charioteer}
+            {44} {Spiral Gun}
+            {45} {Ripper}
+            {46} {A Ripper}
+            {47} {The Developer}
+            {48} {Pennywise the Valithyn}
         }
         {Ratings} 
         {
@@ -15169,7 +15169,9 @@
             {44} {Metal Stinger (poisonous)}
             {45} {A mahogany bookcase}
             {46} {A newly erected billboard}
-            {47} {A personal computer}
+            {47} {A saxophone }
+            {48} {Halo_Of_Truth Quest Info}
+            {49} {A personal computer}
         }
         {Mobs} 
         {
@@ -15196,69 +15198,69 @@
             {21} {Homer}
             {22} {Attack Hound}
             {23} {Marge}
-            {24} {Bart}
-            {25} {Barney}
-            {26} {Moe}
-            {27} {Cartoon Roach}
-            {28} {Una Cucaracha Grande}
-            {29} {Homer is confessing his sins}
-            {30} {Ned Flanders}
-            {31} {Todd Flanders}
-            {32} {Rod Flanders}
-            {33} {Maude Flanders}
-            {34} {Dr. Julius Hibbert}
-            {35} {Dr. Nick Riviera}
-            {36} {Homer is here being operated on}
-            {37} {Moe the bartender}
-            {38} {Barney Gumble}
-            {39} {Snake}
-            {40} {Lionel Hutz, Attorney}
-            {41} {Police Chief Wiggum}
-            {42} {Lou the Police Officer}
-            {43} {Eddie the Police Officer}
-            {44} {Jasper sits in his chair, watching the world go by}
-            {45} {Herman is here telling war stories}
-            {46} {Apu}
-            {47} {Sanjay, Apu's brother}
-            {48} {Bart is sitting on the curb}
-            {49} {Milhouse is sitting on the curb}
-            {50} {A generically animated schoolboy}
-            {51} {A generically animated schoolgirl}
-            {52} {Homer is still eating dinner from last night}
-            {53} {Patty Bouvier}
-            {54} {Selma Bouvier}
-            {55} {Grampa Simpson}
-            {56} {Lisa Simpson}
-            {57} {Maggie Simpson}
-            {58} {Homer is sitting in the kiddie pool}
-            {59} {Sideshow Bob}
-            {60} {Marge Simpson}
-            {61} {Burns}
-            {62} {Hans Moleman}
-            {63} {A Nuclear Technician}
-            {64} {Guard}
-            {65} {A BurnsTech}
-            {66} {Burnstech(tm) Deluxe Robotic Guard}
-            {67} {A floating hand}
-            {68} {Floating Hand}
-            {69} {The Ghost of Jebediah Springfield}
-            {70} {Ghost}
-            {71} {A Burns Laboratories Winged Monkey}
-            {72} {Winged Monkey}
-            {73} {A Gigantic Electric Bumblebee}
-            {74} {Bee}
-            {75} {Radioactive Man}
-            {76} {Fallout Boy}
-            {77} {Waylon Smithers}
-            {78} {Smithers}
-            {79} {Mr. Burns}
-            {80} {The Reactor Core}
-            {81} {Santa's Little Helper}
-            {82} {Homer Simpson}
-            {83} {Bart is playing 3K}
-            {84} {A three-eyed squirrel}
-            {85} {A generically animated Springfield citizen}
-            {86} {A two-headed dog}
+            {24} {Barney}
+            {25} {Moe}
+            {26} {Cartoon Roach}
+            {27} {Una Cucaracha Grande}
+            {28} {Homer is confessing his sins}
+            {29} {Ned Flanders}
+            {30} {Todd Flanders}
+            {31} {Rod Flanders}
+            {32} {Maude Flanders}
+            {33} {Dr. Julius Hibbert}
+            {34} {Dr. Nick Riviera}
+            {35} {Homer is here being operated on}
+            {36} {Moe the bartender}
+            {37} {Barney Gumble}
+            {38} {Snake}
+            {39} {Lionel Hutz, Attorney}
+            {40} {Police Chief Wiggum}
+            {41} {Lou the Police Officer}
+            {42} {Eddie the Police Officer}
+            {43} {Jasper sits in his chair, watching the world go by}
+            {44} {Herman is here telling war stories}
+            {45} {Apu}
+            {46} {Sanjay, Apu's brother}
+            {47} {Bart is sitting on the curb}
+            {48} {Milhouse is sitting on the curb}
+            {49} {A generically animated schoolboy}
+            {50} {A generically animated schoolgirl}
+            {51} {Homer is still eating dinner from last night}
+            {52} {Patty Bouvier}
+            {53} {Selma Bouvier}
+            {54} {Grampa Simpson}
+            {55} {Maggie Simpson}
+            {56} {Homer is sitting in the kiddie pool}
+            {57} {Sideshow Bob}
+            {58} {Marge Simpson}
+            {59} {Burns}
+            {60} {Hans Moleman}
+            {61} {A Nuclear Technician}
+            {62} {Guard}
+            {63} {A BurnsTech}
+            {64} {Burnstech(tm) Deluxe Robotic Guard}
+            {65} {A floating hand}
+            {66} {Floating Hand}
+            {67} {The Ghost of Jebediah Springfield}
+            {68} {Ghost}
+            {69} {A Burns Laboratories Winged Monkey}
+            {70} {Winged Monkey}
+            {71} {A Gigantic Electric Bumblebee}
+            {72} {Bee}
+            {73} {Radioactive Man}
+            {74} {Fallout Boy}
+            {75} {Waylon Smithers}
+            {76} {Smithers}
+            {77} {Mr. Burns}
+            {78} {The Reactor Core}
+            {79} {A three-eyed squirrel}
+            {80} {A generically animated Springfield citizen}
+            {81} {A two-headed dog}
+            {82} {Santa's Little Helper}
+            {83} {Homer Simpson}
+            {84} {Lisa Simpson}
+            {85} {Bart is playing 3K}
+            {86} {Bart}
         }
         {Ratings} 
         {
@@ -19644,9 +19646,9 @@
             {19} {Steel Golem}
             {20} {Glass Golem}
             {21} {Straw Golem}
-            {22} {Mud Golem}
-            {23} {Flesh Golem}
-            {24} {Clay Golem}
+            {22} {Flesh Golem}
+            {23} {Clay Golem}
+            {24} {Mud Golem}
         }
         {Ratings} 
         {

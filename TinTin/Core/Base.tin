@@ -77,6 +77,12 @@
         #echo $math_format
 }
 
+#alias .loadNPC
+{
+	#read 3k/TinTin/Controllers/NpcController.tin;
+	#read 3k/TinTin/Controllers/%1.tin;
+};
+
 /*************************************************************************
 	Captures all text for a period of time
 *************************************************************************/

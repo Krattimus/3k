@@ -40,6 +40,7 @@
 
 #alias {.switchTo}
 {
+	.save;
 	#format {guild} {%n} {%1};
 	#read 3k/TinTin/Data/Character.var;
 	#var char[guild] $guild;
@@ -50,7 +51,9 @@
 	#showme Switching Guilds To $guild for %2;
 	#draw Yellow scroll line 1 1 1 80;
 
-	#end;
+	#unevent {SESSION DISCONNECTED};
+	#zap;
+	connect;
 };
 
 #alias {connect} 
@@ -143,7 +146,6 @@
 	#send pwho;
 	#send gs;
 	#send hp;
-	prompt >$nl$;
 	.mapOff;
 
 	#delay 0.35 {.render};
@@ -153,4 +155,12 @@
 {
 	.render;
 	#send !look;
+
+	$char[login];
+};
+
+#alias .login
+{
+	#var char[login] %0;
+	.save;
 };

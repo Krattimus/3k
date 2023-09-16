@@ -5361,6 +5361,7 @@
                 {14} {1896}
                 {15} {6534}
                 {16} {16709}
+                {17} {3112}
             }
         }
         {A Small ChaosBrand(tm) Television Set} 
@@ -5665,6 +5666,7 @@
                 {19} {1896}
                 {20} {6534}
                 {21} {16709}
+                {22} {3112}
             }
         }
         {A newspaper rack} 
@@ -6146,9 +6148,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {3112}
-                {2} {1895}
-                {3} {196}
+                {1} {1895}
+                {2} {196}
+                {3} {3112}
             }
         }
         {Psi Shield} 
@@ -39150,7 +39152,7 @@
         }
         {Small Figurine} 
         {
-            {Description} { Deadman: 0  HP  952 /952 SP  581 /581  Ne'kra  616 / 632  So'kra  423 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  616 / 632  So'kra  423 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  632 / 632  So'kra  423 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  632 / 632  So'kra  440 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  632 / 632  So'kra  440 / 440 Freeform GXP: 60.860% XP: 6982757 Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light. }
+            {Description} { This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light.  Deadman: 0  HP  954 /954 SP  581 /581  Ne'kra  634 / 650  So'kra  435 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  634 / 650  So'kra  435 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  650 / 650  So'kra  435 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  650 / 650  So'kra  450 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  650 / 650  So'kra  450 / 450 Freeform GXP: 43.274% XP: -1480851 Fully refreshed you end your revalrie.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {25240}
@@ -40943,6 +40945,14 @@
                 {1} {8294}
             }
         }
+        {A saxophone } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8429}
+            }
+        }
         {A sharp metal piece of a robot} 
         {
             {Description} {    up A sharp metal piece of a robot   Painted metallic blue, this unusually sharp chunk of metal seems hewn from a recently destroyed robot.  This would make a nasty weapon if you were to do that thing where you hold it in your hand and swing it about in a manner conducive to damage...OH yeah... 'wield' I think it's called...but don't quote me. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  You must be level 10 to wield this weapon. }
@@ -41078,6 +41088,14 @@
             {
                 {1} {8339}
                 {2} {8255}
+            }
+        }
+        {Halo_Of_Truth Quest Info} 
+        {
+            {Description} {  Bonehead, you're at max hit points already. Bart is playing 3K   Bart is playing 3K     Halo_Of_Truth Quest Info  It says:    Here's the info you wanted.  Enjoy!  -Sturm  It looks light.  Deadman: 0  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {8428}
             }
         }
         {Jasper ring} 

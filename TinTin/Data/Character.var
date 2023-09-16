@@ -2,11 +2,12 @@
 
 #VARIABLE {char}
 {
-    {area} {Chess Board}
-    {currentRoomID} {1210}
-    {guild} {Bladesinger}
+    {area} {Pinnacle}
+    {currentRoomID} {114}
+    {guild} {Bard}
     {isResting} {1}
-    {ourCharacter} {kratter}
+    {login} {.loadNPC KratarianMonk}
+    {ourCharacter} {kratarian}
     {restHP} {850}
     {resumeHP} {1000}
 }

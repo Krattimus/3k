@@ -52,16 +52,16 @@
 #var npc[sayings] 
 {
 	{1}{Krat`jiit has your wares!}
-	{2}{Kratiit heard the Khan of all Khans and Master of the Universe, Krat, likes to explore, but Kratiit always say one shouldn't go out unprepared.}
+	{2}{Krat`jiit heard the Khan of all Khans and Master of the Universe, Krat, likes to explore, but Krat`jiit always say one shouldn't go out unprepared.}
 	{3}{Don't face those lol gottems & traps empty-handed. You never know what might happen if you go 'east' in a serene sanctuary inside of a temple of safety.}
 	{4}{Seeking the most common gear to start your Kratastic great adventures? Then come have a look!}
-	{5}{Tips? Sure Kratiit has tips!}
-	{6}{PPPSST, Kratiit have marvels from all over! Even from other universes!}
+	{5}{Tips? Sure Krat`jiit has tips!}
+	{6}{PPPSST, Krat`jiit have marvels from all over! Even from other universes!}
 	{9}{Support local craftsmanship - our wares are crafted with heart, not just profit margins.}
 	{10}{SShhh, please try to be discrete. Corporate wizzes and big Cancer are always trying to prevent Krat'jiit from selling wares.}
-	{11}{Kratiit may not have many wares, but the passion for quality is immeasurable .... and .... Kratiit don't discriminate based on charisma.}
+	{11}{Krat`jiit may not have many wares, but the passion for quality is immeasurable .... and .... Krat`jiit don't discriminate based on charisma.}
 	{12}{When you buy from Kratjiit, you're not just getting wares, you're supporting a dream.}
-	{13}{Thanks to Krat, Kratiit have picked up priesthood and am attempting to kick the skooma habits.}
+	{13}{Thanks to Krat, Krat`jiit have picked up priesthood and am attempting to kick the skooma habits.}
 	{14}{Krat`jiit has your wares!}
 	{15}{In a world of mass-produced algorithmically designed gear, find the soul of craftsmanship in Krat`jiit wares.}
 	{16}{Choose wisely -- The corporations that only let you shop their vendors, or Krat`jiit where Krat`jiit offer character in Krat`jiit wares. And Pinnacle tax free!"}
@@ -103,6 +103,11 @@
 	{cancer}{25}
 	{wiped}{26}
 	{memory}{26}
+};
+
+#alias .thankGiver
+{
+	#send !say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.
 };
 
 #var npc[responses] 
@@ -186,63 +191,63 @@
 	{13}
 	{
 		{1}{say Kratjiit sorry. Krat`jiit is out of stock. Krat`jiit don't have wares.}
-		{2}{give $event[amountReceived] coins to $event[giver];}
+		{2}{.refundCoins}
 	}
 	{14}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser shovel;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver}
 	}
 	{15}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser rope;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver}
 	}
 	{16}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser ladder;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver;}
 	}
 	{17}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser torch;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver}
 	}
 	{18}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser bag;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver}
 	}
 	{19}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser pick;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver}
 	}
 	{20}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser axe;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver}
 	}	
 	{21}
 	{
 		{1}{say Yesss, yesss, here you go.}
 		{2}{.giveItemToPurchaser scroll;}
 		{3}{#var npc[stallTimer] 3;}
-		{4}{say Thank you $event[giver], for supporting the player economy and not the Greedy Pinnacle Monopoly.}
+		{4}{.thankGiver}
 	}
 	{22}
 	{
@@ -294,7 +299,8 @@
 		{36}{#var npc[stallTimer] 3;}
 		{37}{emote slowly begins disintegrating into a million specs of dust.}
 		{38}{#var npc[stallTimer] 5;}
-		{39}{.switchTo bard kratarian}
+		{39}{.login {.loadNPC KratarianMonkNpc}}
+		{40}{.switchTo bard kratarian}
 	}
 	{25}
 	{
@@ -319,16 +325,6 @@
 {
 	{comic}{1}
 	{Comic}{1}
-	{egg}{1}
-	{Egg}{1}
-	{bottle}{1}
-	{Bottle}{1}
-	{bread}{1}
-	{Bread}{1}
-	{dice}{1}
-	{Dice}{1}	
-	{penny}{1}
-	{Penny}{1}	
 };
 
 #var npc[purchases]

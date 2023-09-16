@@ -32,7 +32,7 @@
 	{6}{I mean, why can't the hero with a tragic past just stay dead anymore? Alternate dimensions? Retcon? Secret identities? Gimme a break.}
 	{7}{I hope the legendary Krat graces us with his presence!}
 	{8}{Krat's very step exudes an aura of majesty that leaves us all in awe}
-	{9}{ Please, allow me to bask in the radiance of Krat's extraordinary existence}
+	{9}{Please, allow me to bask in the radiance of Krat's extraordinary existence}
 };
 
 #var npc[keywords] 
@@ -163,27 +163,27 @@
 		{29}{say I will tell you what, meet me in a hidden alley off of Trade Way in Wayhaven's trading district and we can talk there.}
 		{30}{lose}
 		{31}{.go 49778;}
+		{32}{.loadNPC KratarianAlleyNpc}
 	}
 };	
 
 
-
-
-
 #var npc[lookingFor]
 {
-	{comic}{1}
-	{Comic}{1}
 	{egg}{1}
 	{Egg}{1}
 	{bottle}{1}
 	{Bottle}{1}
 	{bread}{1}
 	{Bread}{1}
+	{Loaf}{1}
+	{loaf}{1}	
 	{dice}{1}
 	{Dice}{1}	
 	{penny}{1}
 	{Penny}{1}	
+	{Rose}{1}
+	{rose}{1}	
 };
 
 #var npc[purchases]

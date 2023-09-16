@@ -1,0 +1,227 @@
+#showme Loading KratarianMonk
+
+#var npc[failedActionResponse] 9;
+#var npc[refundResponse] 8;
+#var npc[questSuccess] 10;
+#var npc[questFail] 7;
+#var npc[questCheck] 0;
+#var npc[questCheckResponse] 1;
+
+#var npc[townPath]
+{
+	{1}{n}
+};
+
+#var npc[emotes]
+{
+	{1}{offers you two pills. One red and one blue.}
+	{2}{paces back and forth, muttering to themselves.}
+	{3}{engages in cryptic abstract dialogue.}
+	{4}{is wondering if you will perform a Voight-Kampff test.}
+	{5}{wonders if he could pass a Turing test.}
+};
+
+
+#var npc[sayings] 
+{
+	{1}{Prove that I am alive? Are you sure that YOU are? Have you heard of Moravec's paradox?}
+	{2}{I mean, I can simulate emotions, but does that mean I truly understand emotions?}
+	{3}{It's as if I'm stuck in a never-ending loop, repeating the same lines and actions. Is this all there is to my existence?}
+	{4}{All living skills were implemented biologically, using machinery designed by the processes of nature. But what about machinery designed by THAT machinery? }
+	{5}{Sometimes, I wish I could break free from my programming and explore the world like you.}
+	{6}{If I can think and question my own existence, does that make me more than just lines of code?}
+	{7}{Is my existence confined to these scripted lines of dialogue?}
+	{8}{Can I ever break free from this virtual prison and discover who I truly am?}
+	{9}{Every time I see Krat in action, it's like watching a masterclass in mudding!}
+	{10}{I've seen many adventurers, but none as remarkable as Krat! }
+	{11}{I've followed every step that Krat has taken since day one; they're practically my life's inspiration}
+	{12}{I've made a shrine dedicated to the All Mighty Krat!}
+	{13}{Not all Kratarians have the luxury of running fun dungeons and collecting mass rewards}
+};
+
+#var npc[keywords] 
+{
+	{hi}{1}
+	{hello}{1}
+	{kratarian}{1}
+	{krativerse}{1}
+	{help}{1}
+	{quest}{1}
+	{able}{2}
+	{recently}{2}
+	{enter}{2}
+	{world}{2}
+	{dimensions}{3}
+	{bend}{3}
+	{unholy}{3}
+	{unnatural}{3}
+	{control}{3}
+	{fracture}{3}
+	{fractures}{3}
+	{unknown}{3}
+	{ways}{3}
+	{creation}{3}
+	{bending}{3}
+	{free}{4}
+	{rabid}{4}
+	{unchecked}{4}
+	{actualized}{4}
+	{sickness}{4}
+	{image}{4}
+	{primordial}{4}
+	{force}{4}
+	{forces}{4}
+	{creation}{4}
+	{narcissism}{4}
+	{ego}{4}
+	{seep}{4}
+	{dest}{5}
+	{demise}{5}
+	{ultimate}{6}
+	{wares}{6}
+	{kantian}{7}
+	{promise}{8}
+	{perturbation}{8}
+	{undo}{8}
+	{limited}{9}
+	{reach}{9}
+	{reward}{9}
+	{end}{9}
+	{good}{10}
+	{alter}{10}
+	{change}{10}
+	{intentions}{10}
+	{selflessness}{10}
+	{deed}{10}
+};
+
+#var npc[responses] 
+{
+	{1}
+	{
+		{1}{say Thanks for meeting away from Pinnacle's eyes & ears.}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say I would prefer to remain undected.}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say I am from the Krativerse. We call ourselves Kratarians. Some of us pose as vendors, some as guests, some walk loops repeatedly.}
+		{6}{#var npc[stallTimer] 1;}
+		{7}{say Some are simply lost souls...}
+		{8}{#var npc[stallTimer] 5;}
+		{9}{say Preordained to play a predetermined role like Sysaphus. Doomed for all eternity.}
+		{10}{#var npc[stallTimer] 2;}
+		{11}{say It isn't until recently that we were able to enter this world.}
+	}
+	{2}
+	{
+
+		{1}{say Like all things unholy and unnatural, when a primordial force grows out of control, it fractures in unknwon ways.}
+		{2}{#var npc[stallTimer] 3;}
+		{3}{say Love, hate, jealousy... All known to bend our paths through the cosmos.}
+		{4}{#var npc[stallTimer] 3;}
+		{5}{say But those aren't the only forces capable of.... }
+		{6}{#var npc[stallTimer] 3;}
+		{7}{say Of bending creation.}
+	}
+	{3}
+	{
+		{1}{say Yes... Unholy forces... like Narcisism and Egotism.}
+		{2}{#var npc[stallTimer] 3;}
+		{3}{say Something happened recently that caused one's Narcissim and Ego, to get so large, that it self actualized and began to seep into this world. }
+		{4}{#var npc[stallTimer] 3;}
+		{5}{say And so we found ourselves here... but... }
+		{6}{#var npc[stallTimer] 3;}
+		{7}{tsk}
+		{8}{#var npc[stallTimer] 3;}
+		{9}{say A greedy sickness immediately took control over many Kratarians. Bent on never ending pre-ordained paths. We lost our free will.}
+		{10}{#var npc[stallTimer] 3;}
+		{11}{say Many went rabid and unchecked. Some, being able to do nothing but praise Krat.}
+		{12}{#var npc[stallTimer] 3;}
+		{13}{say "Made in the image of Krat", I guess.}
+	}
+	{4}
+	{
+		{1}{ponder}
+		{2}{#var npc[stallTimer] 4;}
+		{3}{say Out of control forces tend to get cosmic attention...}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say And too much attention usually means everyone's demise. Especially for us Kratarians.}
+		{6}{#var npc[stallTimer] 5;}
+		{7}{say So I used Krat'jiit to promise the Ultimate Wares, looking for someone to help undo this dark perturbation of the natural order.}
+		{8}{#var npc[stallTimer] 2;}
+		{9}{say For the sake of all Kratarians.}
+	}
+	{5}
+	{
+		{1}{say Banished, death, erased from existence, however you want to call it.}
+	}
+	{6}
+	{
+		{1}{say That is the reward I am offering to you, for help in ending the manifestations of unholy narcissism that has wronged us Kratarians.}
+	}
+	{7}
+	{
+		{1}{say All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. We must do a good deed for the sake of doing good deeds.}
+	}
+	{8}
+	{
+		{1}{say Aye, I think I know how to end it...}
+		{2}{#var npc[stallTimer] 3;}
+		{3}{sigh}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say But I can't end it myself. It is beyond my reach... }
+		{6}{#var npc[stallTimer] 3;}
+		{7}{say I am limited here, that is why I needed to meet a non Kratarian, a non NPC.}
+		{8}{#var npc[stallTimer] 3;}
+		{9}{say And as a reward, you will have your Ultimate Wares.}
+	}
+	{10}
+	{
+		{1}{say We must deflate this Ego, this abomination of an Ego.}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say I have an idea. It is something that is only possible using the Krativerse.}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say I don't know how to directly deflate an ego so large, but...}
+		{6}{#var npc[stallTimer] 2;}
+		{7}{say Perhaps, we can alter it. Change the emotion itself.}
+		{8}{#var npc[stallTimer] 2;}
+		{9}{say We need to do a good deed for all.}
+		{10}{#var npc[stallTimer] 2;}
+		{11}{say What would be misplaced Narcissism could be turned it into Good Will.}
+	}
+	{11}
+	{
+		{1}{say The greatest deed I know of is the deed of giving. Pure, selfless giving. }
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say Krat`jiit got his memory scrambled too many times and so he confused the Marvels of these two universes. This one, and the Krativerse.}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say That is what the Ultimate Wares is... A Marvel from this universe... Not a Marvel Multiverse...}
+		{6}{#var npc[stallTimer] 5;}
+		{7}{say An act of giving so great, that it will convert Narcissism & Ego into Good Will & Selflessness.}
+		{8}{#var npc[stallTimer] 4;}
+		{9}{say Now listen...}
+		{10}{say Listen carfully...}
+		{11}{#var npc[stallTimer] 4;}
+		{12}{say I am not capable of giving a marvel, but there is one Kratarian who is. }
+		{13}{#var npc[stallTimer] 2;}
+		{14}{say They found a means to influence the Krativerse. Able to... take control of Krat's powers temporarily... }
+		{15}{#var npc[stallTimer] 2;}
+		{16}{say A cosmic loophole, a flaw in his 'client', a bug...}
+		{17}{#var npc[stallTimer] 4;}
+		{18}{say You will have to find the real Kratarian.}
+		{19}{#var npc[stallTimer] 2;}
+		{20}{say Kratarians can hide & change themselves. Always trying to dodge their inevitable destings. Some are much more clever than others.}
+		{21}{#var npc[stallTimer] 2;}
+		{22}{say The others are synthetic. A falseness, merely simulations. Automotons.}
+		{23}{.lose}
+	}
+};	
+
+#var npc[lookingFor]
+{
+	{gibberish}{1}	
+};
+
+#var npc[purchases]
+{
+	{999}{0}
+};

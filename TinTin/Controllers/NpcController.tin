@@ -35,12 +35,6 @@
 	Heard something say
 ***********************************************************/
 
-
-#alias .loadNPC
-{
-	#read 3k/TinTin/Controllers/%1Npc.tin;
-};
-
 #alias onHeardSayingNpc
 {
 	#if { $npc[playResponse] <= 0 }
