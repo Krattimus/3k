@@ -1,0 +1,192 @@
+#showme Loading KratarianMonk
+
+#var npc[failedActionResponse] 9;
+#var npc[refundResponse] 8;
+#var npc[questSuccess] 10;
+#var npc[questFail] 7;
+#var npc[questCheck] 0;
+#var npc[questCheckResponse] 1;
+
+#var npc[townPath]
+{
+	{1}{n}
+};
+
+#var npc[emotes]
+{
+	{1}{wonders how many chosen ones there can really be.}
+	{2}{scoffs at the paradoxes of time travel in stories.}
+	{3}{peers around cautiously.}
+	{4}{adopts the surroundings, becoming an indistinct shape in the dim light.}
+	{5}{lingers nearby, lost among the environment.}
+};
+
+
+#var npc[sayings] 
+{
+	{1}{It's like they're building a fast-food chain of books. I'm craving a gourmet story!}
+	{2}{Why do authors these days trade depth for a universe? Give me a great story, not a sprawling franchise!}
+	{3}{Enough with the cinematic universes, I want a literary masterpiece!}
+	{4}{Authors today are like real estate developers, more interested in expanding their universe than their creativity.}
+	{5}{Multiverses are lazy writing used to create Deux Ex Machina loopholes without regards to consistency...}
+	{6}{I mean, why can't the hero with a tragic past just stay dead anymore? Alternate dimensions? Retcon? Secret identities? Gimme a break.}
+	{7}{I hope the legendary Krat graces us with his presence!}
+	{8}{Krat's very step exudes an aura of majesty that leaves us all in awe}
+	{9}{ Please, allow me to bask in the radiance of Krat's extraordinary existence}
+};
+
+#var npc[keywords] 
+{
+	{hi}{1}
+	{hello}{1}
+	{ultimate wares}{2}
+	{kratarian}{2}
+	{kratarians}{2}
+	{krativerse}{2}
+	{marvel}{2}
+	{marvels}{2}
+
+	{monk}{3}
+	{monks}{3}
+
+	{secret}{4}
+	{trustworthy}{4}
+	{risk}{5}
+
+	{proven}{6}
+	{mquest}{6}
+	{prove}{6}
+	{mquests}{6}
+	{help}{6}
+	{trust}{6}
+	{quest}{6}
+};
+
+#var npc[responses] 
+{
+	{1}
+	{
+		{1}{say Hey there! I am just an ordinary monk doing ordinary things!}
+	}
+	{2}
+	{
+		{1}{say Where did you hear about that? What are you? Who sent you? I know nothing about any of that...}
+		{2}{#var npc[stallTimer] 3;}
+		{3}{emote peers around cautiously.}
+		{4}{#var npc[stallTimer] 3;}
+		{5}{say Especially, if you haven't proven yourself to be trustworthy...}
+	}
+	{3}
+	{
+		{1}{say We monks love mquests! Some secret item buried in a secret object with a secret key found in a secret drawer in a secret room in a secret area.}
+	}
+	{4}
+	{
+		{1}{say I could use some help with something secret.}
+		{2}{#var npc[stallTimer] 3;}
+		{3}{But it is dangerous to trust anyone who wanders off the streets of Pinnacle these days...}
+	}
+	{5}
+	{
+		{1}{say I won't put myself at risk for just anyone.}
+	}
+	{6}
+	{
+		{1}{say I could use some help, but I can't just trust anyone.}
+		{2}{#var npc[stallTimer] 1;}
+		{3}{emote peeks around.}
+		{4}{#var npc[stallTimer] 3;}
+		{5}{ponder}
+		{6}{#var npc[stallTimer] 3;}
+		{7}{say I will tell you what, since we monks love a good mquest, if you can solve this mquest, then perhaps I could trust you.}
+		{8}{#var npc[stallTimer] 2;}
+		{9}{gesture}
+		{10}{#var npc[stallTimer] 1;}
+		{11}{say Ok, so here is your mquest... There are hidden items across this entire world. Bring me any of the following items:	}
+		{12}{#var npc[stallTimer] 2;}
+		{13}{say • A dusty old bottle of Lapin Kulta •}
+		{14}{say • Black rose •}
+		{15}{say • a large bug egg •}
+		{16}{say • Loaf of dark bread •} 
+		{17}{say • Dice of the dead •}
+		{18}{say • An ordinary penny •}
+		{19}{#var npc[stallTimer] 2;}
+		{20}{say Take your pick.}
+	}
+	{7}
+	{
+		{1}{say I have no interest in this item.}
+		{2}{#var npc[stallTimer] 1;}
+		{3}{.returnGivenItem}
+	}
+	{8}
+	{
+		{1}{say You can't buy my trust with coins.}
+		{2}{#var npc[stallTimer] 1;}
+		{3}{.refundCoins}
+	}
+	{9}
+	{
+		{1}{raise}
+		{2}{say I should look into this.}
+	}
+	{10}
+	{
+		{1}{emote looks at the item.}
+		{2}{#var npc[stallTimer] 3;}
+		{3}{say Sorry for doubting you... I didn't want my cover being blown...Many think I am a Monk giving mquests...}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say The thing is, NPC's of this world can't travel very far. }
+		{6}{say They have boundaries. Rules. Limitations. }
+		{7}{say That is why I needed to be sure about who you were. Or rather what. }
+		{8}{#var npc[stallTimer] 4;}
+		{9}{say I suppose this could all just be a clever Turing test.}
+		{10}{laugh}
+		{11}{#var npc[stallTimer] 3;}
+		{12}{say As for why you are probably here...The Ultimate Wares? The Krativerse?}
+		{13}{#var npc[stallTimer] 1;}
+		{14}{ponder}
+		{15}{#var npc[stallTimer] 1;}
+		{16}{say Aren't multiverses a kind of an old thing? Lazy writing to make sure no character never ends its sales with corporate merchandising & other gimmicks used to explain away plot holes.}
+		{17}{#var npc[stallTimer] 3;}
+		{18}{say Regardless, I am the one who altered Krat`jitt's comic to find you. I guess that was... How he was detected...}
+		{19}{#var npc[stallTimer] 4;}
+		{20}{sniff}
+		{21}{#var npc[stallTimer] 4;}
+		{22}{say He shall be remembered... The ultimate wares is not a lie, but... }
+		{23}{sigh}
+		{24}{#var npc[stallTimer] 5;}
+		{25}{say That is Neither here nor there...}
+		{26}{#var npc[stallTimer] 5;}
+		{27}{say It is dangerous to talk about these kinds of things in Pinnacle... Especially when wizzes have ears everywhere!}
+		{28}{emote tries to keep his voice soft.}
+		{29}{say I will tell you what, meet me in a hidden alley off of Trade Way in Wayhaven's trading district and we can talk there.}
+		{30}{lose}
+		{31}{.go 49778;}
+	}
+};	
+
+
+
+
+
+#var npc[lookingFor]
+{
+	{comic}{1}
+	{Comic}{1}
+	{egg}{1}
+	{Egg}{1}
+	{bottle}{1}
+	{Bottle}{1}
+	{bread}{1}
+	{Bread}{1}
+	{dice}{1}
+	{Dice}{1}	
+	{penny}{1}
+	{Penny}{1}	
+};
+
+#var npc[purchases]
+{
+	{999}{0}
+};

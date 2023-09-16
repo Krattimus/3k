@@ -1428,10 +1428,11 @@
         }
         {The Letter S} 
         {
-            {Description} {  up The Letter S  This is a cardboard cut out of the letter S. It looks light.   H 1424/1569 TS 13/13 D 44/129  E 53 HO: 80.18 HI: 107.94 LO: 43.78 LI: 39.47 [0] |----------PM---------|  Letter S   divine strike hi H 1424/1569 TS 13/13 D 44/129  E 53  Endurance 44.00 Corpses:  I  0 C 80 H 1424/1569 TS 11/13 D 44/129  E 53  Endurance 44.00 Corpses:  I  0 C 80 H 1424/1569 TS 11/13 D 44/129  E 53  Endurance 44.00 Corpses:  I  0 C 80 H 1424/1569 TS 11/13 D 44/129  E 68  Endurance 44.00 Corpses:  I  0 C 80 The room is bathed in radiant light! Your tactical advantage ends. H 1509/1569 TS 11/13 D 44/129  E 68  Endurance 44.00 Corpses:  I  0 C 80 H 1509/1569 TS 11/13 D 44/129  E 68  Endurance 44.00 Corpses:  I  0 C 80 H 1509/1569 TS  6/13 D 44/129  E 68  Endurance 44.00 Corpses:  I  0 C 80 H 1509/1569 TS  6/13 D  2/129  E 68  Endurance 44.00 Corpses:  I  0 C 80 H 1509/1569 TS  6/13 D  2/129  E 71  Endurance 44.11 Corpses:  I  0 C 80 }
+            {Description} {     The Letter S  This is a cardboard cut out of the letter S. It looks light. Closing Inventory  Deadman: 0  HP  881 /881 SP  499 /516  Ne'kra  616 / 632  So'kra  423 / 440 Freeform GXP: 27.948% XP: -117504707  Deadman: 0  Deadman: 0  HP  881 /881 SP  516 /516  Ne'kra  616 / 632  So'kra  423 / 440 Freeform GXP: 27.948% XP: -117504707  HP  881 /881 SP  516 /516  Ne'kra  616 / 632  So'kra  423 / 440 Freeform GXP: 27.948% XP: -117504707  HP  881 /881 SP  516 /516  Ne'kra  632 / 632  So'kra  423 / 440 Freeform GXP: 27.948% XP: -117504707  HP  881 /881 SP  516 /516  Ne'kra  632 / 632  So'kra  440 / 440 Freeform GXP: 27.948% XP: -117504707  HP  881 /881 SP  516 /516  Ne'kra  632 / 632  So'kra  440 / 440 Freeform GXP: 27.948% XP: -117504707 }
             {Rooms} 
             {
                 {1} {2021}
+                {2} {2022}
             }
         }
         {The Letter U} 
@@ -6931,7 +6932,7 @@
         }
         {A Camera} 
         {
-            {Description} {    up into the coffin's protective hold! You sit down and begin to relax, allowing your mind to drift off to the Woodlands of the Spirit Realm. At one with this magical land, you begin to feel your body recuperate from its exhaustion. A Camera Ahhh.  No wonder Rather was having so much trouble.  This thing is a plastic toy.  It could no more take pictures than the pope could take a wife.  It looks light.  Deadman: 0  HP  637 /626 SP  426 /377  Ne'kra  544 / 560  So'kra  400 / 400 Freeform GXP: 5.819% XP: -111218421  HP  637 /626 SP  426 /377  Ne'kra  560 / 560  So'kra  400 / 400 Freeform GXP: 5.819% XP: -111218421  HP  637 /626 SP  426 /377  Ne'kra  560 / 560  So'kra  400 / 400 Freeform GXP: 5.819% XP: -111218421 Fully refreshed you end your revalrie.  Deadman: 0 }
+            {Description} {  Ahhh.  No wonder Rather was having so much trouble.  This thing is a plastic toy.  It could no more take pictures than the pope could take a wife.  It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {1210}
@@ -6947,7 +6948,7 @@
         }
         {A Medkit} 
         {
-            {Description} { A Medkit It's actually a bar of some Indian 9th century health food. Try it.  At the worse it'll taste bad.  At best.....  It looks light.   Your muscles ripple and bulge with power.  }
+            {Description} {  It's actually a bar of some Indian 9th century health food. Try it.  At the worse it'll taste bad.  At best.....  It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {1212}
@@ -31875,6 +31876,14 @@
                 {3} {50325}
             }
         }
+        {A dulled dagger} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49584}
+            }
+        }
         {A dusty old bottle of Lapin Kulta} 
         {
             {Description} {}
@@ -32742,6 +32751,14 @@
                 {4} {49584}
             }
         }
+        {A long fishing knife} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49584}
+            }
+        }
         {A medium box } 
         {
             {Description} {}
@@ -32844,6 +32861,14 @@
             {Rooms} 
             {
                 {1} {50325}
+            }
+        }
+        {An Incense Stick} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49584}
             }
         }
         {An auction line} 
@@ -39125,7 +39150,7 @@
         }
         {Small Figurine} 
         {
-            {Description} { Deadman: 0  HP  890 /890 SP  524 /524  Ne'kra  598 / 614  So'kra  424 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  598 / 614  So'kra  424 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  614 / 614  So'kra  424 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  614 / 614  So'kra  430 / 430 Freeform GXP: 67.167% XP: -92152649  HP  890 /890 SP  524 /524  Ne'kra  614 / 614  So'kra  430 / 430 Freeform GXP: 67.167% XP: -92152649 Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light. }
+            {Description} { Deadman: 0  HP  952 /952 SP  581 /581  Ne'kra  616 / 632  So'kra  423 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  616 / 632  So'kra  423 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  632 / 632  So'kra  423 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  632 / 632  So'kra  440 / 440 Freeform GXP: 60.860% XP: 6982757  HP  952 /952 SP  581 /581  Ne'kra  632 / 632  So'kra  440 / 440 Freeform GXP: 60.860% XP: 6982757 Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light. }
             {Rooms} 
             {
                 {1} {25240}

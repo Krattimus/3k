@@ -2,13 +2,13 @@
 
 #VARIABLE {char}
 {
-    {area} {Pinnacle}
-    {currentRoomID} {135}
-    {guild} {Monk}
-    {isResting} {0}
-    {ourCharacter} {krat}
-    {restHP} {700}
-    {resumeHP} {890}
+    {area} {Chess Board}
+    {currentRoomID} {1210}
+    {guild} {Bladesinger}
+    {isResting} {1}
+    {ourCharacter} {kratter}
+    {restHP} {850}
+    {resumeHP} {1000}
 }
 
 #CLASS {charvar} CLOSE

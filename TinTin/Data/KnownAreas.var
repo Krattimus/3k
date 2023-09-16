@@ -717,22 +717,22 @@
             {21} {The Letter D}
             {22} {The Letter Q}
             {23} {The Letter X}
-            {24} {The Letter S}
-            {25} {The Letter F}
-            {26} {A wibbly-wobbly frankfurter}
-            {27} {The Letter A}
-            {28} {The skin of Beloch \x7B7\x7D}
-            {29} {The Ring of Wonder}
-            {30} {A lightly glowing, onyx longsword (enchanted)}
-            {31} {A spiked blade (enchanted)}
-            {32} {Amethyst ring}
-            {33} {Garnet ring}
-            {34} {The skin of Beloch \x7B7\x7D}
-            {35} {Average fragment of willy}
-            {36} {The Letter G}
-            {37} {The Letter P}
-            {38} {The Letter B}
-            {39} {The Letter M}
+            {24} {The Letter F}
+            {25} {A wibbly-wobbly frankfurter}
+            {26} {The Letter A}
+            {27} {The skin of Beloch \x7B7\x7D}
+            {28} {The Ring of Wonder}
+            {29} {A lightly glowing, onyx longsword (enchanted)}
+            {30} {A spiked blade (enchanted)}
+            {31} {Amethyst ring}
+            {32} {Garnet ring}
+            {33} {The skin of Beloch \x7B7\x7D}
+            {34} {Average fragment of willy}
+            {35} {The Letter G}
+            {36} {The Letter P}
+            {37} {The Letter B}
+            {38} {The Letter M}
+            {39} {The Letter S}
         }
         {Mobs} 
         {
@@ -757,15 +757,15 @@
             {19} {Letter K}
             {20} {Letter P}
             {21} {Letter N}
-            {22} {Letter O}
-            {23} {Letter Y}
-            {24} {Letter X}
-            {25} {Letter U}
-            {26} {Letter a}
-            {27} {Letter C}
-            {28} {Letter D}
-            {29} {Letter M}
-            {30} {The Alphabet Serial Killer}
+            {22} {Letter Y}
+            {23} {Letter X}
+            {24} {Letter U}
+            {25} {Letter a}
+            {26} {Letter C}
+            {27} {Letter D}
+            {28} {Letter M}
+            {29} {The Alphabet Serial Killer}
+            {30} {Letter O}
         }
         {Ratings} 
         {
@@ -2897,18 +2897,18 @@
     {
         {Items} 
         {
-            {1} {A Medkit}
-            {2} {A patch of mist}
-            {3} {A green mutant plant}
-            {4} {A Crazily Canted and Odd Pipe}
-            {5} {Good fragment of light}
-            {6} {A Camera}
-            {7} {A Bundle of Clothes}
-            {8} {A single gold coin}
-            {9} {The 3-K Kill List}
-            {10} {A Statue of Cancer the King}
-            {11} {A tall street light}
-            {12} {There is a hole here}
+            {1} {A patch of mist}
+            {2} {A green mutant plant}
+            {3} {A Crazily Canted and Odd Pipe}
+            {4} {Good fragment of light}
+            {5} {A Bundle of Clothes}
+            {6} {A single gold coin}
+            {7} {The 3-K Kill List}
+            {8} {A Statue of Cancer the King}
+            {9} {A tall street light}
+            {10} {There is a hole here}
+            {11} {A Medkit}
+            {12} {A Camera}
         }
         {Mobs} 
         {
@@ -2922,19 +2922,19 @@
             {8} {Red Charioteer}
             {9} {Red Horseman}
             {10} {White Charioteer}
-            {11} {A War Correspondent}
-            {12} {Red King}
-            {13} {The Developer}
-            {14} {White Foot Soldier}
-            {15} {White Horseman}
-            {16} {A Refugee}
-            {17} {Red Cross Medic}
-            {18} {Angry War Elephant}
-            {19} {Angry Horse}
-            {20} {Red Foot Soldier}
-            {21} {Blat the Valithyn}
-            {22} {A banshee}
-            {23} {An evil sorceress}
+            {11} {Red King}
+            {12} {The Developer}
+            {13} {White Horseman}
+            {14} {A Refugee}
+            {15} {Angry War Elephant}
+            {16} {Angry Horse}
+            {17} {Red Foot Soldier}
+            {18} {Blat the Valithyn}
+            {19} {A banshee}
+            {20} {An evil sorceress}
+            {21} {Red Cross Medic}
+            {22} {White Foot Soldier}
+            {23} {A War Correspondent}
         }
         {Ratings} 
         {
@@ -12730,13 +12730,16 @@
             {162} {A wooden sign }
             {163} {The instantly-jumpstart-to-level-10 machine }
             {164} {Donation bin }
-            {165} {A single gold coin}
-            {166} {The 3-K Kill List}
-            {167} {A Statue of Cancer the King}
-            {168} {A tall street light}
-            {169} {A newly erected billboard}
-            {170} {A dusty old bottle of Lapin Kulta}
-            {171} {A huge box }
+            {165} {A newly erected billboard}
+            {166} {A dusty old bottle of Lapin Kulta}
+            {167} {A huge box }
+            {168} {A single gold coin}
+            {169} {An Incense Stick}
+            {170} {A dulled dagger}
+            {171} {A long fishing knife}
+            {172} {The 3-K Kill List}
+            {173} {A Statue of Cancer the King}
+            {174} {A tall street light}
         }
         {Mobs} 
         {
@@ -12768,6 +12771,7 @@
             {26} {Homer Simpson}
             {27} {Marge Simpson}
             {28} {Homer is sitting in the kiddie pool}
+            {29} {Paige the page}
         }
     }
     {Pirate Ship} 
@@ -14594,11 +14598,11 @@
             {72} {Ninja badge of honor }
             {73} {Clan Symbol of Nightmare Asylum}
             {74} {A huge box }
-            {75} {A swirling and humming barrier shield}
-            {76} {A sign you should certainly read}
-            {77} {Section Z game cabinet}
-            {78} {a pale orange capsule}
-            {79} {Small Figurine}
+            {75} {a pale orange capsule}
+            {76} {A swirling and humming barrier shield}
+            {77} {Small Figurine}
+            {78} {A sign you should certainly read}
+            {79} {Section Z game cabinet}
         }
         {Mobs} 
         {
