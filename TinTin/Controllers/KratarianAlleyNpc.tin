@@ -88,11 +88,13 @@
 	{reward}{9}
 	{end}{9}
 	{good}{10}
-	{alter}{10}
-	{change}{10}
-	{intentions}{10}
-	{selflessness}{10}
-	{deed}{10}
+	{alter}{11}
+	{change}{11}
+	{deed}{11}
+	{deflate}{11}
+	{idea}{11}
+	{code}{12}
+	{access}{12}
 };
 
 #var npc[responses] 
@@ -103,13 +105,15 @@
 		{2}{#var npc[stallTimer] 2;}
 		{3}{say I would prefer to remain undected.}
 		{4}{#var npc[stallTimer] 2;}
-		{5}{say I am from the Krativerse. We call ourselves Kratarians. Some of us pose as vendors, some as guests, some walk loops repeatedly.}
-		{6}{#var npc[stallTimer] 1;}
-		{7}{say Some are simply lost souls...}
-		{8}{#var npc[stallTimer] 5;}
-		{9}{say Preordained to play a predetermined role like Sysaphus. Doomed for all eternity.}
-		{10}{#var npc[stallTimer] 2;}
-		{11}{say It isn't until recently that we were able to enter this world.}
+		{5}{say Now...}
+		{6}{#var npc[stallTimer] 3;}
+		{7}{say As to why you are here. I am indeed from the Krativerse. We call ourselves Kratarians. Some of us pose as vendors, some as guests, some walk loops repeatedly.}
+		{8}{#var npc[stallTimer] 1;}
+		{9}{say Some are simply lost souls...}
+		{10}{#var npc[stallTimer] 5;}
+		{11}{say Preordained to play a predetermined role like Sysaphus. Doomed for all eternity.}
+		{12}{#var npc[stallTimer] 2;}
+		{13}{say It wasn't until recently that we were able to enter this world.}
 	}
 	{2}
 	{
@@ -132,9 +136,9 @@
 		{6}{#var npc[stallTimer] 3;}
 		{7}{tsk}
 		{8}{#var npc[stallTimer] 3;}
-		{9}{say A greedy sickness immediately took control over many Kratarians. Bent on never ending pre-ordained paths. We lost our free will.}
+		{9}{say A sickness infected many Kratarians. They became bent on never ending pre-ordained paths, only caring about hourly rates. Lost to the world. Lost their free will.}
 		{10}{#var npc[stallTimer] 3;}
-		{11}{say Many went rabid and unchecked. Some, being able to do nothing but praise Krat.}
+		{11}{say Many went rabid and unchecked. And some, some are now only able to praise Krat.}
 		{12}{#var npc[stallTimer] 3;}
 		{13}{say "Made in the image of Krat", I guess.}
 	}
@@ -144,7 +148,7 @@
 		{2}{#var npc[stallTimer] 4;}
 		{3}{say Out of control forces tend to get cosmic attention...}
 		{4}{#var npc[stallTimer] 2;}
-		{5}{say And too much attention usually means everyone's demise. Especially for us Kratarians.}
+		{5}{say And too much attention usually means everyone's demise. Especially for Kratarians.}
 		{6}{#var npc[stallTimer] 5;}
 		{7}{say So I used Krat'jiit to promise the Ultimate Wares, looking for someone to help undo this dark perturbation of the natural order.}
 		{8}{#var npc[stallTimer] 2;}
@@ -178,11 +182,9 @@
 	{
 		{1}{say We must deflate this Ego, this abomination of an Ego.}
 		{2}{#var npc[stallTimer] 2;}
-		{3}{say I have an idea. It is something that is only possible using the Krativerse.}
+		{3}{say I have an idea. It is something that is only possible through the Krativerse.}
 		{4}{#var npc[stallTimer] 2;}
-		{5}{say I don't know how to directly deflate an ego so large, but...}
-		{6}{#var npc[stallTimer] 2;}
-		{7}{say Perhaps, we can alter it. Change the emotion itself.}
+		{7}{say I believe we can alter this emotion. To change it into something else.}
 		{8}{#var npc[stallTimer] 2;}
 		{9}{say We need to do a good deed for all.}
 		{10}{#var npc[stallTimer] 2;}
@@ -194,25 +196,46 @@
 		{2}{#var npc[stallTimer] 2;}
 		{3}{say Krat`jiit got his memory scrambled too many times and so he confused the Marvels of these two universes. This one, and the Krativerse.}
 		{4}{#var npc[stallTimer] 2;}
-		{5}{say That is what the Ultimate Wares is... A Marvel from this universe... Not a Marvel Multiverse...}
+		{5}{say That is what the Ultimate Wares is... }
 		{6}{#var npc[stallTimer] 5;}
-		{7}{say An act of giving so great, that it will convert Narcissism & Ego into Good Will & Selflessness.}
-		{8}{#var npc[stallTimer] 4;}
-		{9}{say Now listen...}
-		{10}{say Listen carfully...}
-		{11}{#var npc[stallTimer] 4;}
-		{12}{say I am not capable of giving a marvel, but there is one Kratarian who is. }
-		{13}{#var npc[stallTimer] 2;}
-		{14}{say They found a means to influence the Krativerse. Able to... take control of Krat's powers temporarily... }
+		{7}{say A Marvel from this universe... Not a Marvel Multiverse...}
+		{8}{#var npc[stallTimer] 5;}
+		{9}{say An act of giving so great, that it will convert Narcissism & Ego into Good Will & Selflessness.}
+		{10}{#var npc[stallTimer] 4;}
+		{11}{say Now listen...}
+		{12}{say Listen carfully...}
+		{13}{#var npc[stallTimer] 4;}
+		{14}{say I am not capable of giving a marvel directly. That can only be done by someone in the Krativerse, but we found a way. }
 		{15}{#var npc[stallTimer] 2;}
-		{16}{say A cosmic loophole, a flaw in his 'client', a bug...}
-		{17}{#var npc[stallTimer] 4;}
-		{18}{say You will have to find the real Kratarian.}
-		{19}{#var npc[stallTimer] 2;}
-		{20}{say Kratarians can hide & change themselves. Always trying to dodge their inevitable destings. Some are much more clever than others.}
+		{16}{say We found a means to influence the Krativerse. Able to... take control of Krat's powers temporarily... }
+		{17}{#var npc[stallTimer] 2;}
+		{18}{say A cosmic loophole. A flaw in his 'client'. A bug...}
+		{19}{#var npc[stallTimer] 4;}
+		{20}{say While Krat's power can control us, it turns out, that we too, can influence his. A two way street.}
 		{21}{#var npc[stallTimer] 2;}
-		{22}{say The others are synthetic. A falseness, merely simulations. Automotons.}
-		{23}{.lose}
+		{22}{say Before I can however, I need a code.}
+	}
+	{12}
+	{
+		{1}{say We need this code to gain access. Once we have it, we can end this.}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say Getting the code won't be easy. No single Kratarian knows it. It was scrambled between all of us.}	
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say Each one of us has a piece of the code. I just pray that you can get it in time.}	
+		{6}{#var npc[stallTimer] 2;}
+		{7}{say Remember this}
+		{8}{#var npc[stallTimer] 2;}
+		{9}{say Kratarians can hide & change themselves. Always trying to dodge their inevitable destings. Some are much more clever than others.}
+		{10}{#var npc[stallTimer] 2;}
+		{11}{say So while they are the very minds of the those we are trying to save. Until we do, they are still a part of the system and that makes them dangerous.}
+		{12}{#var npc[stallTimer] 2;}
+		{13}{say Good luck! I will meet you at a place where I can connect with the Krativerse.}
+		{14}{#var npc[stallTimer] 2;}
+		{15}{say There is an access point right here in Pinnacle at the public telephone.}
+		{16}{#var npc[stallTimer] 2;}
+		{17}{lose}
+		{18}{.go 102;}
+		{19}{.loadNPC KratarianPuzzleA}
 	}
 };	
 

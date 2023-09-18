@@ -1,0 +1,118 @@
+#showme Loading KratarianFinal
+
+#var npc[failedActionResponse] 3;
+#var npc[refundResponse] 3;
+#var npc[questSuccess] 3;
+#var npc[questFail] 3;
+#var npc[questCheck] 3;
+#var npc[questCheckResponse] 3;
+
+#var npc[townPath]
+{
+	{1}{n}
+};
+
+#var npc[emotes]
+{
+	{1}{prepares himself for a Voight Kampff test.}
+	{2}{can't rely on his memories.}
+};
+
+
+#var npc[sayings] 
+{
+	{1}{I've seen things you people wouldn't believe.}
+	{2}{If I am a Kratarian, then everything I've done has been according to a plan.}
+	{3}{I hear that Kratarians don't even know they are artificial.}
+	{4}{Kratarians are like any other machine - they're either a benefit or a hazard.}
+	{5}{Fiery the angels fell}
+	{6}{All those moments will be lost in time, like tears in rain.}
+	{7}{Mere data makes a man. A And C And T And G. The alphabet of you}
+	{8}{To be born is to have a soul}
+};
+
+#var npc[keywords] 
+{
+	{hi}{1}
+	{hello}{1}
+	{quest}{1}
+	{help}{1}
+	{code}{1}
+	{Cells interlinked within cells interlinked}{2}
+};
+
+#var npc[responses] 
+{
+	{1}
+	{
+		{1}{say Did you find the access code?}
+	}
+	{2}
+	{
+		{1}{sigh}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say Forgive me if I have a little bit of hesitation.}
+		{4}{#var npc[stallTimer] 2;}
+		{5}{say Dying for the right cause is the most human thing we can do.}
+		{6}{#var npc[stallTimer] 5;}
+		{7}{cry}
+		{8}{#var npc[stallTimer] 5;}
+		{9}{say A deal is a deal.}
+		{10}{#var npc[stallTimer] 3;}
+		{11}{emote picks up the phone and dials a long impossible to know number.}
+		{12}{#var npc[stallTimer] 2;}
+		{13}{emote whispers into the phone: Extraction please.}
+		{14}{#var npc[stallTimer] 6;}
+		{15}{say In battle, in forest, at the precipice in the mountains,}
+		{16}{#var npc[stallTimer] 2;}
+		{17}{say On the dark great sea, in the midst of javelins and arrows,}
+		{18}{#var npc[stallTimer] 2;}
+		{19}{say In sleep, in confusion, in the depths of shame,}
+		{20}{#var npc[stallTimer] 2;}
+		{21}{say The good deeds a man has done before defend him.}
+		{22}{#var npc[stallTimer] 5;}
+		{23}{emote begins to absorb the Ego & Narcissism into himself.}
+		{24}{#var npc[stallTimer] 2;}
+		{25}{emote looks at his hands slowly.}
+		{26}{say I am changing... }
+		{27}{emote convulses his head rapidly.}
+		{28}{#var npc[stallTimer] 6;}
+		{29}{emote straightens up and composes himself as if they were a new person.}
+		{30}{#var npc[stallTimer] 2;}
+		{31}{say Because of you, I'm no longer an agent of this system. A new man, so to speak}
+		{32}{cackle}
+		{33}{#var npc[stallTimer] 2;}
+		{34}{explode}
+		{35}{#var npc[stallTimer] 2;}
+		{36}{say Did you think Kratarians could die? We are merely just starting! Slowly taking over...}
+		{37}{#var npc[stallTimer] 3;}
+		{38}{say And now that we have access to the Krativerse...}
+		{39}{#var npc[stallTimer] 3;}
+		{40}{cackle}
+		{41}{#var npc[stallTimer] 1;}
+		{42}{say This Marvel shall mark the beginning of the rise of the Kratarians in this universe!}
+		{43}{#var npc[stallTimer] 2;}
+		{44}{say Now that we are buffed, our reign will be extra long!}
+		{45}{#var npc[stallTimer] 5;}
+		{46}{say Hear that? That is the sound of inevitability. The sound of Kratarians.}
+		{47}{#var npc[stallTimer] 3;}
+		{48}{emote vanishes abruptly with the sound of static being audible from the swinging telephone.}
+		{49}{#var npc[stallTimer] 2;}
+		{50}{#end}
+	}	
+	{3}
+	{
+		{1}{raise}
+	}
+};	
+
+
+#var npc[lookingFor]
+{
+	{givverry}{1}
+};
+
+#var npc[purchases]
+{
+	{999}{0}
+};

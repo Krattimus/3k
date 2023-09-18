@@ -2906,9 +2906,9 @@
             {7} {The 3-K Kill List}
             {8} {A Statue of Cancer the King}
             {9} {A tall street light}
-            {10} {There is a hole here}
-            {11} {A Medkit}
-            {12} {A Camera}
+            {10} {A Medkit}
+            {11} {A Camera}
+            {12} {There is a hole here}
         }
         {Mobs} 
         {
@@ -2935,6 +2935,8 @@
             {21} {White Foot Soldier}
             {22} {A War Correspondent}
             {23} {Red Foot Soldier}
+            {24} {A small wandering spider}
+            {25} {A small North American termite}
         }
         {Ratings} 
         {
@@ -8620,6 +8622,8 @@
         {
             {1} {A Tome of 'To Serve Man', Volume II}
             {2} {An intricate digital key}
+            {3} {A large green metal sign}
+            {4} {A floating orb}
         }
         {Mobs} 
         {
@@ -8646,6 +8650,8 @@
             {21} {Soldier}
             {22} {Flameroller}
             {23} {Refugee}
+            {24} {Steve the Grasshopper}
+            {25} {Second Lieutenant Na-Eethe}
         }
         {Ratings} 
         {
@@ -9417,32 +9423,32 @@
             {17} {A tank named Shaguar}
             {18} {Voodoo's Jugger Support Mech}
             {19} {Charging Ram}
-            {20} {Pennywise the Valithyn}
-            {21} {A truck named Skarsnik}
-            {22} {Grot's Jugger Support Mech}
-            {23} {A grimare under the control of Hadrian}
-            {24} {Leaping Rat}
-            {25} {Plop the Valithyn}
-            {26} {Badger's Jugger Support Mech}
-            {27} {A tank named Mushroom}
-            {28} {Red Rabbit}
-            {29} {Green Chinese Dragon}
-            {30} {Red Butterfly}
-            {31} {Black Chinese Dragon}
-            {32} {Black Tiger}
-            {33} {Red Chinese Dragon}
-            {34} {Jade Phoenix}
-            {35} {Gold Chinese Dragon}
-            {36} {Villager}
-            {37} {Major Henkey, PhD <?>}
-            {38} {Police Officer}
-            {39} {A wandering pedestrian}
-            {40} {A busy pedestrian}
-            {41} {A small wandering spider}
-            {42} {Golden Phoenix}
-            {43} {Lumbering Ox}
-            {44} {Princess Qi}
-            {45} {Winged Horse}
+            {20} {A truck named Skarsnik}
+            {21} {Grot's Jugger Support Mech}
+            {22} {A grimare under the control of Hadrian}
+            {23} {Leaping Rat}
+            {24} {Plop the Valithyn}
+            {25} {Badger's Jugger Support Mech}
+            {26} {A tank named Mushroom}
+            {27} {Red Rabbit}
+            {28} {Green Chinese Dragon}
+            {29} {Red Butterfly}
+            {30} {Black Chinese Dragon}
+            {31} {Black Tiger}
+            {32} {Red Chinese Dragon}
+            {33} {Jade Phoenix}
+            {34} {Gold Chinese Dragon}
+            {35} {Villager}
+            {36} {Major Henkey, PhD <?>}
+            {37} {Police Officer}
+            {38} {A wandering pedestrian}
+            {39} {A busy pedestrian}
+            {40} {A small wandering spider}
+            {41} {Golden Phoenix}
+            {42} {Lumbering Ox}
+            {43} {Winged Horse}
+            {44} {Pennywise the Valithyn}
+            {45} {Princess Qi}
         }
         {Ratings} 
         {
@@ -12343,119 +12349,120 @@
             {20} {A Tome of 'To Serve Man', Volume I}
             {21} {Top Guild List}
             {22} {A shimmering portal}
-            {23} {A small wooden sign}
-            {24} {Edible Panties}
-            {25} {Dominatrix Gloves}
-            {26} {Dominatrix Boots}
-            {27} {A greenish street sign}
-            {28} {A small glass sphere with a hamster in it}
-            {29} {The Tower of Cletus}
-            {30} {The Pope}
-            {31} {The Sofa of Cletus}
-            {32} {The Fridge of Cletus  (7 items)}
-            {33} {The Beer Tree of Cletus (nifty)}
-            {34} {A conglomeration of mutated nanites}
-            {35} {Death's Valued Customers List}
-            {36} {A bright white capsule}
-            {37} {A Tome of 'Forge and Hammer', Volume II}
-            {38} {A glass of wine \x7B3\x7D}
-            {39} {Crocodile tooth}
-            {40} {Rod of Dispater (enchanted)}
-            {41} {Wings of Mammon}
-            {42} {A sign hangs from the counter}
-            {43} {A lump of seaweed}
-            {44} {Some translucent thread }
-            {45} {A pile of mud}
-            {46} {A flexible piece of metal}
-            {47} {A piece of rotten meat}
-            {48} {Transmogrifier}
-            {49} {Page eleven, A.Q}
-            {50} {An essence bead }
-            {51} {A sea green serpent shaped ring}
-            {52} {A brightly glowing brown vial}
-            {53} {A brightly glowing purple vial}
-            {54} {A brightly glowing orange vial}
-            {55} {A brightly glowing translucent vial}
-            {56} {A brightly glowing red vial}
-            {57} {A brightly glowing golden vial}
-            {58} {A glowing brown vial}
-            {59} {A glowing purple vial}
-            {60} {A glowing orange vial}
-            {61} {A glowing translucent vial}
-            {62} {A glowing red vial}
-            {63} {A glowing golden vial}
-            {64} {A faintly glowing translucent vial}
-            {65} {A faintly glowing brown vial}
-            {66} {A faintly glowing golden vial}
-            {67} {A faintly glowing red vial}
-            {68} {A faintly glowing purple vial}
-            {69} {A faintly glowing orange vial}
-            {70} {A silvery line }
-            {71} {A spiked zallot}
-            {72} {A piece of grahl root}
-            {73} {A flask of water}
-            {74} {A translucent glass flask}
-            {75} {A large Illate eel}
-            {76} {*wand of secret door location }
-            {77} {*Superior fishing hooks}
-            {78} {*Zelligar's Headband -=||=- }
-            {79} {*Axe}
-            {80} {*Aura of Heavenly Protection }
-            {81} {*A transparent camisole }
-            {82} {*Wings of Mammon }
-            {83} {*Ring of Hearts }
-            {84} {*The Gem of the Zodiac }
-            {85} {An enchanted coffin   }
-            {86} {*A melded matrix of Constitution and Intelligence}
-            {87} {*Explorer's Torch}
-            {88} {*Dundee hunting permit}
-            {89} {*Safari Hat}
-            {90} {*Tactician's Manual}
-            {91} {*A Transmuter's Stone }
-            {92} {*A ring of house keys}
-            {93} {*An auction line}
-            {94} {*Assassin's Mark}
-            {95} {*A Crafter's Satchel}
-            {96} {*Brass Knuckles}
-            {97} {*long shimmering thread}
-            {98} {*Worn leather book}
-            {99} {*Ninja badge of honor }
-            {100} {*Clan Symbol of Nightmare Asylum}
-            {101} {An incredibly strong lockbox made of titanium}
-            {102} {Comment Board for Beren containing no messages}
-            {103} {The slightly moldy corpse of Insect}
-            {104} {Comment Board for Tchazzar containing no messages}
-            {105} {Comment Board for Demos containing no messages}
-            {106} {Comment Board for Dorwin containing no messages}
-            {107} {Comment Board for Ariakis containing no messages}
-            {108} {Comment Board for Cable containing no messages}
-            {109} {Comment Board for Benjums containing no messages}
-            {110} {Comment Board for Rashan containing no messages}
-            {111} {The Altar of UNO}
-            {112} {A dice machine}
-            {113} {A gumball machine}
-            {114} {Cloak of the Spirit}
-            {115} {Small Figurine}
-            {116} {A sampling kit}
-            {117} {A Fused Kayos Blobber}
-            {118} {A slightly melted, frozen corpse of Vilgan}
-            {119} {Dark elven rapier}
-            {120} {Rod of Lordly Might}
-            {121} {Luminous Globe}
-            {122} {A single gold coin}
-            {123} {The 3-K Kill List}
-            {124} {A Statue of Cancer the King}
-            {125} {A tall street light}
-            {126} {A big red button}
-            {127} {A Trashcan}
-            {128} {A large sign}
+            {23} {Edible Panties}
+            {24} {Dominatrix Gloves}
+            {25} {Dominatrix Boots}
+            {26} {A greenish street sign}
+            {27} {A small glass sphere with a hamster in it}
+            {28} {The Tower of Cletus}
+            {29} {The Pope}
+            {30} {The Sofa of Cletus}
+            {31} {The Fridge of Cletus  (7 items)}
+            {32} {The Beer Tree of Cletus (nifty)}
+            {33} {A conglomeration of mutated nanites}
+            {34} {Death's Valued Customers List}
+            {35} {A bright white capsule}
+            {36} {A Tome of 'Forge and Hammer', Volume II}
+            {37} {A glass of wine \x7B3\x7D}
+            {38} {Crocodile tooth}
+            {39} {Rod of Dispater (enchanted)}
+            {40} {Wings of Mammon}
+            {41} {A sign hangs from the counter}
+            {42} {A lump of seaweed}
+            {43} {Some translucent thread }
+            {44} {A pile of mud}
+            {45} {A flexible piece of metal}
+            {46} {A piece of rotten meat}
+            {47} {Transmogrifier}
+            {48} {Page eleven, A.Q}
+            {49} {An essence bead }
+            {50} {A sea green serpent shaped ring}
+            {51} {A brightly glowing brown vial}
+            {52} {A brightly glowing purple vial}
+            {53} {A brightly glowing orange vial}
+            {54} {A brightly glowing translucent vial}
+            {55} {A brightly glowing red vial}
+            {56} {A brightly glowing golden vial}
+            {57} {A glowing brown vial}
+            {58} {A glowing purple vial}
+            {59} {A glowing orange vial}
+            {60} {A glowing translucent vial}
+            {61} {A glowing red vial}
+            {62} {A glowing golden vial}
+            {63} {A faintly glowing translucent vial}
+            {64} {A faintly glowing brown vial}
+            {65} {A faintly glowing golden vial}
+            {66} {A faintly glowing red vial}
+            {67} {A faintly glowing purple vial}
+            {68} {A faintly glowing orange vial}
+            {69} {A silvery line }
+            {70} {A spiked zallot}
+            {71} {A piece of grahl root}
+            {72} {A flask of water}
+            {73} {A translucent glass flask}
+            {74} {A large Illate eel}
+            {75} {*wand of secret door location }
+            {76} {*Superior fishing hooks}
+            {77} {*Zelligar's Headband -=||=- }
+            {78} {*Axe}
+            {79} {*Aura of Heavenly Protection }
+            {80} {*A transparent camisole }
+            {81} {*Wings of Mammon }
+            {82} {*Ring of Hearts }
+            {83} {*The Gem of the Zodiac }
+            {84} {An enchanted coffin   }
+            {85} {*A melded matrix of Constitution and Intelligence}
+            {86} {*Explorer's Torch}
+            {87} {*Dundee hunting permit}
+            {88} {*Safari Hat}
+            {89} {*Tactician's Manual}
+            {90} {*A Transmuter's Stone }
+            {91} {*A ring of house keys}
+            {92} {*An auction line}
+            {93} {*Assassin's Mark}
+            {94} {*A Crafter's Satchel}
+            {95} {*Brass Knuckles}
+            {96} {*long shimmering thread}
+            {97} {*Worn leather book}
+            {98} {*Ninja badge of honor }
+            {99} {*Clan Symbol of Nightmare Asylum}
+            {100} {An incredibly strong lockbox made of titanium}
+            {101} {Comment Board for Beren containing no messages}
+            {102} {The slightly moldy corpse of Insect}
+            {103} {Comment Board for Tchazzar containing no messages}
+            {104} {Comment Board for Demos containing no messages}
+            {105} {Comment Board for Dorwin containing no messages}
+            {106} {Comment Board for Ariakis containing no messages}
+            {107} {Comment Board for Cable containing no messages}
+            {108} {Comment Board for Benjums containing no messages}
+            {109} {Comment Board for Rashan containing no messages}
+            {110} {The Altar of UNO}
+            {111} {A dice machine}
+            {112} {A gumball machine}
+            {113} {Cloak of the Spirit}
+            {114} {Small Figurine}
+            {115} {A sampling kit}
+            {116} {A Fused Kayos Blobber}
+            {117} {A slightly melted, frozen corpse of Vilgan}
+            {118} {Dark elven rapier}
+            {119} {Rod of Lordly Might}
+            {120} {Luminous Globe}
+            {121} {The 3-K Kill List}
+            {122} {A Statue of Cancer the King}
+            {123} {A big red button}
+            {124} {A Trashcan}
+            {125} {A large sign}
+            {126} {Breastplate of the Spirit}
+            {127} {A suit of battered chainmail }
+            {128} {A tall street light}
             {129} {A newspaper rack}
             {130} {The 3k Top Player List}
             {131} {Another 3k Top Player List}
             {132} {Ryft's Pub Crawl Dispenser}
             {133} {The Three-Kingdoms 'Least Wanted' poster}
-            {134} {Breastplate of the Spirit}
-            {135} {A suit of battered chainmail }
+            {134} {A single gold coin}
+            {135} {A small wooden sign}
+            {136} {An ATM  Pinnacle Bank}
         }
         {Mobs} 
         {
@@ -12515,8 +12522,11 @@
             {54} {Cold Tiro has a Halibut by the tail!}
             {55} {Cur, the tradesman's dog}
             {56} {Cancer the tradesman}
-            {57} {Hey You the Palisade Bartender}
-            {58} {Redactor}
+            {57} {Redactor}
+            {58} {Hey You the Palisade Bartender}
+            {59} {Intuil the Arch-Mage of the Platinum Star}
+            {60} {Arundin}
+            {61} {Ogotaz, The Powerful Wizard}
         }
     }
     {Pinnacle Law Office} 
@@ -14652,8 +14662,8 @@
             {44} {Spiral Gun}
             {45} {Ripper}
             {46} {A Ripper}
-            {47} {The Developer}
-            {48} {Pennywise the Valithyn}
+            {47} {Pennywise the Valithyn}
+            {48} {The Developer}
         }
         {Ratings} 
         {
@@ -17424,8 +17434,8 @@
             {4} {Another 3k Top Player List}
             {5} {Ryft's Pub Crawl Dispenser}
             {6} {The Three-Kingdoms 'Least Wanted' poster}
-            {7} {A public telephone}
-            {8} {A gumball machine}
+            {7} {A gumball machine}
+            {8} {A public telephone}
         }
         {Mobs} 
         {
@@ -19621,7 +19631,8 @@
             {9} {A Tome of 'Enhancing Enchanting', Volume I}
             {10} {Gloves of Acid Protection}
             {11} {A small iron key}
-            {12} {A LARGE WARNING SIGN}
+            {12} {Average essence of ascension}
+            {13} {A LARGE WARNING SIGN}
         }
         {Mobs} 
         {
@@ -19646,9 +19657,9 @@
             {19} {Steel Golem}
             {20} {Glass Golem}
             {21} {Straw Golem}
-            {22} {Flesh Golem}
-            {23} {Clay Golem}
-            {24} {Mud Golem}
+            {22} {Clay Golem}
+            {23} {Mud Golem}
+            {24} {Flesh Golem}
         }
         {Ratings} 
         {

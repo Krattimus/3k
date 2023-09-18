@@ -12047,6 +12047,22 @@
                 {1} {1220}
             }
         }
+        {A small North American termite} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1209}
+            }
+        }
+        {A small wandering spider} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {1209}
+            }
+        }
         {An evil sorceress} 
         {
             {Ratings} {0}
@@ -37268,6 +37284,14 @@
                 {1} {1534}
             }
         }
+        {Second Lieutenant Na-Eethe} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {10358}
+            }
+        }
         {Shan} 
         {
             {Description} {NA}
@@ -37306,6 +37330,14 @@
                 {14} {10291}
                 {15} {10282}
                 {16} {10346}
+            }
+        }
+        {Steve the Grasshopper} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {10358}
             }
         }
         {Stowaway} 
@@ -54041,6 +54073,14 @@
                 {1} {49584}
             }
         }
+        {Arundin} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24350}
+            }
+        }
         {Briexeq} 
         {
             {Ratings} 
@@ -54205,6 +54245,14 @@
                 {1} {6222}
             }
         }
+        {Intuil the Arch-Mage of the Platinum Star} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24350}
+            }
+        }
         {Jinx} 
         {
             {Description} { His greasy raven-black hair is loosely pulled back from his finely boned face, while his pale eyes stare out in your direction.  His watchful alertness makes him seem older  than his apparent mid-thirty years.  He is wearing black robes with wide red tassels lining its borders.  The sandals upon his feet look worn, but seem to have withstood the test of time. He has a large top hat placed on his head, and a walking cane in his hand.  Overall he appears to be very calm and trustworthy.  He is in perfect health. 	Jinx is carrying:   }
@@ -54276,6 +54324,14 @@
             {Rooms} 
             {
                 {1} {17537}
+            }
+        }
+        {Ogotaz, The Powerful Wizard} 
+        {
+            {Ratings} {0}
+            {Rooms} 
+            {
+                {1} {24350}
             }
         }
         {Pennywise the Valithyn} 
@@ -88422,6 +88478,7 @@
                 {17} {38000}
                 {18} {36000}
                 {19} {40000}
+                {20} {82000}
             }
             {Rooms} 
             {
@@ -88468,6 +88525,7 @@
                 {41} {6624}
                 {42} {6643}
                 {43} {6645}
+                {44} {6632}
             }
         }
         {Flesh Golem  !attacking Badluck!} 

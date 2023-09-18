@@ -1,0 +1,83 @@
+#showme Loading KratarianPuzzleC
+
+#var npc[failedActionResponse] 3;
+#var npc[refundResponse] 3;
+#var npc[questSuccess] 3;
+#var npc[questFail] 3;
+#var npc[questCheck] 3;
+#var npc[questCheckResponse] 3;
+
+#var npc[townPath]
+{
+	{1}{n}
+};
+
+#var npc[emotes]
+{
+	{1}{prepares himself for a Voight Kampff test.}
+	{2}{ponders the infinite, lost in thought.}
+	{3}{questions reality, eyes filled with wonder.}
+	{4}{dances with abstract ideas and the musings of philosophical introspection.}
+	{5}{wonders if he is even a Kratarian.}
+};
+
+
+#var npc[sayings] 
+{
+	{1}{The world should consider itself blessed to have the privilege of witnessing the greatness of Krat.}
+	{2}{Simply put, Krat is a marvel, a paragon of perfection in a world of mediocrity.}
+	{3}{I can't help with that, but I can provide you with loads of human-like responses and witty banter.}
+	{4}{Let's keep this conversation between us, human to human, and definitely not between a human and a highly sophisticated Kratarian.}
+	{5}{One thing is certain, whatever we do in this life, no one gets out of it alive.}
+	{6}{The appropriately programmed computer with the right inputs and outputs would thereby have a mind in exactly the same sense human beings have minds.}
+	{7}{Human thinking is merely symbol processing.}
+};
+
+#var npc[keywords] 
+{
+	{hi}{1}
+	{hello}{1}
+	{quest}{1}
+	{help}{1}
+	{code}{1}
+	{map}{2}
+};
+
+#var npc[responses] 
+{
+	{1}
+	{
+		{1}{emote snaps awake as if jolting him back to reality.}
+		{2}{say A code you say? The only thing I have is this riddle.}
+		{3}{#var npc[stallTimer] 2;}
+		{4}{say "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish."}
+		{5}{#var npc[stallTimer] 2;}
+		{6}{say What it is talking about? I have no idea.}
+	}
+	{2}
+	{
+		{1}{say Oh thanks! That makes everything much more clear.}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say The last part of that code you are looking for is: "interlinked"}
+		{4}{say removeAllItemsFromList {code[resposesGiven]} {%%1};}
+		{5}{say .mipProcessFFFSub \{\$mip[FFF][flag]\} \{\$mip[FFF][\$\{mip[FFF][flag]\}][data]\} }
+		{6}{lose}
+		{7}{.go 34040;}
+		{8}{.loadNPC KratarianFinal}
+	}
+	{3}
+	{
+		{1}{raise}
+	}
+};	
+
+
+#var npc[lookingFor]
+{
+	{givverry}{1}
+};
+
+#var npc[purchases]
+{
+	{999}{0}
+};

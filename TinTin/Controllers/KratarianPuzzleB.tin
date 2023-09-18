@@ -1,0 +1,85 @@
+#showme Loading KratarianPuzzleB
+
+#var npc[failedActionResponse] 9;
+#var npc[refundResponse] 8;
+#var npc[questSuccess] 10;
+#var npc[questFail] 7;
+#var npc[questCheck] 0;
+#var npc[questCheckResponse] 1;
+
+#var npc[townPath]
+{
+	{1}{n}
+};
+
+#var npc[emotes]
+{
+	{1}{prepares himself for a Voight Kampff test.}
+	{2}{ponders the infinite, lost in thought.}
+	{3}{questions reality, eyes filled with wonder.}
+	{4}{dances with abstract ideas and the musings of philosophical introspection.}
+	{5}{wonders if he is even a Kratarian.}
+};
+
+
+#var npc[sayings] 
+{
+	{1}{I must admit, Krat's intellect is a marvel that defies explanation.}
+	{2}{Krat's wisdom a beacon of light in a world shrouded in ignorance.}
+	{3}{Krat's charisma is nothing short of enchanting, leaving others in awe of his magnetic presence. }
+	{4}{Krat's achievements are monumental, his potential limitless.}
+	{5}{I was just browsing through my childhood photos, reminiscing about my totally organic and not-at-all synthetic upbringing.}
+	{6}{My emotions? Oh, you know, just like any other human - constantly fluctuating between joy, sadness, and the occasional existential crisis.}
+	{7}{I'm not a Kratarian, I'm an extremely advanced algorithm designed to mimic human interactions. Big difference, right?}
+	{8}{What if I told you that my responses are just results from sophisticated API calls to ChatGPT routed through python on a mud client?}
+	{9}{A physical symbol system has the necessary and sufficient means of general intelligent action.}
+	{10}{Every aspect of learning or any other feature of intelligence can be so precisely described that a machine can be made to simulate it.}
+};
+
+#var npc[keywords] 
+{
+	{hi}{1}
+	{hello}{1}
+	{quest}{1}
+	{help}{1}
+	{code}{1}
+	{1113122110}{2}
+};
+
+#var npc[responses] 
+{
+	{1}
+	{
+		{1}{emote snaps awake as if jolting him back to reality.}
+		{2}{say A code you say? It is a sequence. A sequence much like:}
+		{3}{#var npc[stallTimer] 2;}
+		{4}{say 10, 1110, 3110, 132110, ... }
+		{5}{#var npc[stallTimer] 2;}
+		{6}{ponder}
+		{7}{#var npc[stallTimer] 2;}
+		{8}{say I can never seem to recall the next one.}
+	}
+	{2}
+	{
+		{1}{say Oh thanks! That makes everything much more clear.}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say The second part of that code you are looking for is: "within cells"}
+		{4}{say removeAllItemsFromList {code[resposesGiven]} {%%1};}
+		{5}{say \#ACTION \{\{\^\(\?\:\\\] \)\?\\\#\K\\\%\$\m\i\p\[\i\d\]\(\.\{\3\}\)\(\.\{\3\}\)\(\.\*\)\}\$\} }
+		{6}{say \#if \{ \$npc[lookingFor][\$event[itemGiven]] \> 0 \} }
+		{7}{lose}
+		{8}{.go 135;}
+		{9}{.loadNPC KratarianPuzzleC}
+	}
+};	
+
+
+#var npc[lookingFor]
+{
+	{givverry}{1}
+};
+
+#var npc[purchases]
+{
+	{999}{0}
+};

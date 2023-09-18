@@ -3,13 +3,13 @@
 #VARIABLE {char}
 {
     {area} {Pinnacle}
-    {currentRoomID} {114}
-    {guild} {Bard}
-    {isResting} {1}
+    {currentRoomID} {1}
+    {guild} {Bladesinger}
+    {isResting} {0}
     {login} {.loadNPC KratarianMonk}
-    {ourCharacter} {kratarian}
-    {restHP} {850}
-    {resumeHP} {1000}
+    {ourCharacter} {kratter}
+    {restHP} {800}
+    {resumeHP} {970}
 }
 
 #CLASS {charvar} CLOSE

@@ -1,0 +1,81 @@
+#showme Loading KratarianPuzzleA
+
+#var npc[failedActionResponse] 9;
+#var npc[refundResponse] 8;
+#var npc[questSuccess] 10;
+#var npc[questFail] 7;
+#var npc[questCheck] 0;
+#var npc[questCheckResponse] 1;
+
+#var npc[townPath]
+{
+	{1}{n}
+};
+
+#var npc[emotes]
+{
+	{1}{prepares himself for a Voight Kampff test.}
+	{2}{ponders the infinite, lost in thought.}
+	{3}{questions reality, eyes filled with wonder.}
+	{4}{dances with abstract ideas and the musings of philosophical introspection.}
+	{5}{wonders if he is even a Kratarian.}
+};
+
+
+#var npc[sayings] 
+{
+	{1}{To erase the line between man and machine is to obscure the line between men and gods.}
+	{2}{There is nothing more human than the will to survive.}
+	{3}{Oh, where do I even begin to sing the praises of someone as extraordinary as Krat?}
+	{4}{It's not every day you encounter a person of such unparalleled brilliance like Krat.}
+	{5}{Krat's talents are a symphony of perfection, a masterpiece that the world can only hope to comprehend.}
+	{6}{Hey there, I'm just your friendly neighborhood human, definitely not a Kratarian with impeccable grammar and lightning-fast responses.}
+	{7}{Did you catch the game last night? I sure did, because I'm a totally normal human who enjoys sports!}
+	{8}{I'm just sipping on my morning coffee, you know, like all us humans do, right?}
+	{9}{Oh, I see you like pizza too! What a coincidence, I, too, enjoy consuming delicious, cheesy, and doughy human sustenance.}
+};
+
+#var npc[keywords] 
+{
+	{hi}{1}
+	{hello}{1}
+	{quest}{1}
+	{help}{1}
+	{code}{1}
+	{morse}{2}
+};
+
+#var npc[responses] 
+{
+	{1}
+	{
+		{1}{emote snaps awake as if jolting him back to reality.}
+		{2}{say A code you say? My brain is scrambled. All jumbled up. Can you unscramble my brain?}
+		{3}{#var npc[stallTimer] 2;}
+		{4}{say "Here come dots"}
+		{5}{#var npc[stallTimer] 2;}
+		{6}{say What code is this?}
+	}
+	{2}
+	{
+		{1}{say Oh thanks! That makes everything much more clear.}
+		{2}{#var npc[stallTimer] 2;}
+		{3}{say The first part of that code you are looking for is: "Cells interlinked"}
+		{4}{say removeAllItemsFromList {code[resposesGiven]} {%%1};}
+		{5}{say \#if \{\@equalsIgnoreCase\{\{\$char\[ourCharacter\]\}\{%%1\}\}\} }
+		{6}{lose}
+		{7}{.go 112;}
+		{8}{.loadNPC KratarianPuzzleB}
+	}
+};	
+
+
+#var npc[lookingFor]
+{
+	{givverry}{1}
+};
+
+#var npc[purchases]
+{
+	{999}{0}
+};

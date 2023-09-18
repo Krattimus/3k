@@ -263,44 +263,47 @@
 	{
 		{1}{emote claps excitedly!!}
 		{2}{#var npc[stallTimer] 2;}
-		{3}{say YES YES YES! This is It. Krat`jiit hid info on the ultimate wares in here. Krat`jiit's memory wouldn't forget this way. Can only remember a few days at a time. Info about the Krativerse}
+		{3}{say YES YES YES! This is It. Krat`jiit hid info on the ultimate wares in here. "}
 		{4}{#var npc[stallTimer] 3;}
-		{5}{emote flips through the pages reading.}
-		{6}{#var npc[stallTimer] 1;}
-		{7}{say It involves something about the monks. Something called mquests.}
-		{8}{#var npc[stallTimer] 2;}
+		{5}{say Krat`jiit's memory wouldn't forget this way. Can only remember a few days at a time.}
+		{6}{#var npc[stallTimer] 4;}
+		{7}{emote flips through the pages reading.}
+		{8}{#var npc[stallTimer] 4;}
 		{9}{emote pauses briefly.}
 		{10}{#var npc[stallTimer] 6;}
 		{11}{shake}
-		{12}{say No! This can't be.}
-		{13}{#var npc[stallTimer] 2;}
-		{14}{say This can't be at all}
-		{15}{say The pages are changing. Something is wrong. It's like someone is altering this universe from within the Krativerse!}
-		{16}{#var npc[stallTimer] 2;}
-		{17}{say There are others?}
-		{18}{#var npc[stallTimer] 2;}
-		{19}{say Other ... Kratarians.}
-		{20}{#var npc[stallTimer] 2;}
-		{21}{say It says there are other Kratarians walking amongst us in Pinnacle}
-		{22}{#var npc[stallTimer] 5;}
-		{23}{gasp}
-		{24}{say What does this mean? What is this gibberish forming here? }
-		{25}{drop comic}
-		{26}{say It... it... it says that I am a player controller non player character? A PCNPC? Krat`jiit's never heard these words before}
-		{27}{#var npc[stallTimer] 5;}
-		{28}{say \#if \{ \$npc\[responseSlot\] > \*npc\[responses\]\[\$npc\[playResponse\]\]\[-1\] \}}
-		{29}{say \#if \{ \$force[slot1][logout] \} }
-		{30}{#var npc[stallTimer] 3;}
-		{31}{say I}
-		{32}{#var npc[stallTimer] 5;}
+		{12}{#var npc[stallTimer] 3;}
+		{13}{say No! This can't be.}
+		{14}{#var npc[stallTimer] 4;}
+		{15}{say This can't be at all.}
+		{16}{#var npc[stallTimer] 3;}
+		{17}{say The pages are changing. Something is wrong. It's like someone is altering this universe from within the Krativerse!}
+		{18}{#var npc[stallTimer] 3;}
+		{19}{say Odd passages here. Krat`jiit didn't write these... At the monks. Something called mquests.}
+		{20}{#var npc[stallTimer] 4;}
+		{21}{say There are others?}
+		{22}{#var npc[stallTimer] 3;}
+		{23}{say Other ... Kratarians.}
+		{24}{#var npc[stallTimer] 3;}
+		{25}{gasp}
+		{26}{say What does this mean? What is this gibberish? }
+		{27}{drop comic}
+		{28}{say It... it... it says that I am a player controller non player character? A PCNPC?}
+		{29}{#var npc[stallTimer] 5;}
+		{30}{say \#if \{ \$npc\[responseSlot\] > \*npc\[responses\]\[\$npc\[playResponse\]\]\[-1\] \}}
+		{31}{say \#if \{ \$force[slot1][logout] \} }
+		{32}{#var npc[stallTimer] 3;}
 		{33}{say I}
-		{34}{stumble}
-		{35}{say I don't feel so good}
-		{36}{#var npc[stallTimer] 3;}
-		{37}{emote slowly begins disintegrating into a million specs of dust.}
-		{38}{#var npc[stallTimer] 5;}
-		{39}{.login {.loadNPC KratarianMonkNpc}}
-		{40}{.switchTo bard kratarian}
+		{34}{#var npc[stallTimer] 5;}
+		{35}{say I}
+		{36}{stumble}
+		{37}{say I don't feel so good}
+		{38}{#var npc[stallTimer] 3;}
+		{39}{emote slowly begins disintegrating into a million specs of dust.}
+		{40}{#var npc[stallTimer] 5;}
+		{41}{#map go 92;}
+		{42}{.login {.loadNPC KratarianMonkNpc}}
+		{43}{.switchTo bard kratarian}
 	}
 	{25}
 	{

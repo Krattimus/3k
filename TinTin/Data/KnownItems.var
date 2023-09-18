@@ -21940,6 +21940,22 @@
                 {1} {10325}
             }
         }
+        {A floating orb} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {10358}
+            }
+        }
+        {A large green metal sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {10358}
+            }
+        }
         {An intricate digital key} 
         {
             {Description} { This key is fascinating!  It looks like a glossy silver tube, but small lights flicker and blink along it.  It is bound to dimension 1449665. It looks very light.    }
@@ -31087,6 +31103,7 @@
                 {5} {23835}
                 {6} {6220}
                 {7} {6673}
+                {8} {24350}
             }
         }
         {A skinned corpse of Vilgan, draped upon a sickle} 
@@ -31128,6 +31145,7 @@
             {
                 {1} {3928}
                 {2} {6675}
+                {3} {24350}
             }
         }
         {A spiked zallot} 
@@ -31162,12 +31180,12 @@
                 {1} {3115}
                 {2} {152}
                 {3} {6247}
-                {4} {17537}
-                {5} {36215}
-                {6} {23835}
-                {7} {36214}
-                {8} {6220}
-                {9} {6673}
+                {4} {36215}
+                {5} {23835}
+                {6} {36214}
+                {7} {6220}
+                {8} {6673}
+                {9} {17537}
             }
         }
         {A tattered cloak} 
@@ -31208,6 +31226,14 @@
             {Rooms} 
             {
                 {1} {148}
+            }
+        }
+        {An ATM  Pinnacle Bank} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24350}
             }
         }
         {An Illuminati Pyramid} 
@@ -39152,7 +39178,7 @@
         }
         {Small Figurine} 
         {
-            {Description} { This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light.  Deadman: 0  HP  954 /954 SP  581 /581  Ne'kra  634 / 650  So'kra  435 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  634 / 650  So'kra  435 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  650 / 650  So'kra  435 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  650 / 650  So'kra  450 / 450 Freeform GXP: 43.274% XP: -1480851  HP  954 /954 SP  581 /581  Ne'kra  650 / 650  So'kra  450 / 450 Freeform GXP: 43.274% XP: -1480851 Fully refreshed you end your revalrie.  Deadman: 0 }
+            {Description} {   Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light.  Deadman: 0  HP  948 /972 SP  581 /581  Ne'kra  688 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  HP  948 /972 SP  581 /581  Ne'kra  688 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  HP  948 /972 SP  581 /581  Ne'kra  704 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  HP  948 /972 SP  581 /581  Ne'kra  704 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  Deadman: 0 }
             {Rooms} 
             {
                 {1} {25240}
@@ -47204,6 +47230,7 @@
             {Rooms} 
             {
                 {1} {17540}
+                {2} {34051}
             }
         }
         {A newspaper rack} 
@@ -47219,8 +47246,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {34040}
-                {2} {17540}
+                {1} {17540}
+                {2} {34051}
+                {3} {34040}
             }
         }
         {A rabbit's foot} 
@@ -51472,6 +51500,14 @@
             {
                 {1} {6574}
                 {2} {6620}
+            }
+        }
+        {Average essence of ascension} 
+        {
+            {Description} {  You sit down and begin to relax, allowing your mind to drift off to the Woodlands of the Spirit Realm. At one with this magical land, you begin to feel your body recuperate from its exhaustion. Average essence of ascension  [ AVERAGE ESSENCE OF ASCENSION ]  Are those tiny little wings on the snow white fragment?  No, that can't be it, it's just spinning in an odd way.  You can assemble 5 of these essences into a single heart, or shatter the essence into 5 fragments.  This item can be stashed in a crafting satchel.  Type: Essence Of Ascension Minimum Skill: 52 Trivial Skill: 62 Deadman: 0  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {6632}
             }
         }
         {Average fragment of shadow} 
