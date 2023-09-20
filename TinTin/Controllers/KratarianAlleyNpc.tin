@@ -83,10 +83,10 @@
 	{promise}{8}
 	{perturbation}{8}
 	{undo}{8}
-	{limited}{9}
-	{reach}{9}
-	{reward}{9}
-	{end}{9}
+	{limited}{10}
+	{reach}{10}
+	{reward}{10}
+	{end}{10}
 	{good}{10}
 	{alter}{11}
 	{change}{11}
@@ -229,15 +229,21 @@
 		{10}{#var npc[stallTimer] 2;}
 		{11}{say So while they are the very minds of the those we are trying to save. Until we do, they are still a part of the system and that makes them dangerous.}
 		{12}{#var npc[stallTimer] 2;}
-		{13}{say Good luck! I will meet you at a place where I can connect with the Krativerse.}
+		{13}{say Good luck! Once you have the code, I will meet you at a place where I can connect with the Krativerse.}
 		{14}{#var npc[stallTimer] 2;}
 		{15}{say There is an access point right here in Pinnacle at the public telephone.}
-		{16}{#var npc[stallTimer] 2;}
-		{17}{lose}
-		{18}{.go 102;}
-		{19}{.loadNPC KratarianPuzzleA}
+		{16}{.giveQuestUpdate}
+		{17}{#var npc[stallTimer] 2;}
+		{18}{lose}
+		{19}{.go 102;}
+		{20}{.loadNPC KratarianPuzzleA}
 	}
 };	
+
+#alias .giveQuestUpdate
+{
+	say $event[speaker] has received instructions for obtaining the code for the Ultimate Wares (3/6)
+};
 
 #var npc[lookingFor]
 {

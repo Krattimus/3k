@@ -12,6 +12,7 @@
     #if { @startsWith{{%0}{A Crafter's Satchel}} } { #return 1; };
     #if { @startsWith{{%0}{A charcoal-grey kimono}} } { #return 1; };
     #if { @startsWith{{%0}{An obsidian-black kimono with}} } { #return 1; };
+    #if { @startsWith{{%0}{A blindingly bright white and}} } { #return 1; };
     #if { @startsWith{{%0}{An enchanted coffin}} } { #return 1; };
     #if { @startsWith{{%0}{Brass Knuckles}} } { #return 1; };    
     #if { @startsWith{{%0}{Section Z High Score Button}} } { #return 1; };    

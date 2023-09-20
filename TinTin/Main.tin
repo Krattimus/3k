@@ -154,9 +154,8 @@
 #action {^Prompt set.$} 
 {
 	.render;
-	#send !look;
-
 	$char[login];
+	#var char[login] look;
 };
 
 #alias .login

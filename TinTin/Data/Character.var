@@ -2,14 +2,14 @@
 
 #VARIABLE {char}
 {
-    {area} {Pinnacle}
-    {currentRoomID} {1}
-    {guild} {Bladesinger}
+    {area} {Simpsons Expansion}
+    {currentRoomID} {8244}
+    {guild} {Monk}
     {isResting} {0}
-    {login} {.loadNPC KratarianMonk}
-    {ourCharacter} {kratter}
+    {login} {look}
+    {ourCharacter} {krat}
     {restHP} {800}
-    {resumeHP} {970}
+    {resumeHP} {1010}
 }
 
 #CLASS {charvar} CLOSE

@@ -1,11 +1,11 @@
 #showme Loading KratarianPuzzleA
 
-#var npc[failedActionResponse] 9;
-#var npc[refundResponse] 8;
-#var npc[questSuccess] 10;
-#var npc[questFail] 7;
-#var npc[questCheck] 0;
-#var npc[questCheckResponse] 1;
+#var npc[failedActionResponse] 3;
+#var npc[refundResponse] 3;
+#var npc[questSuccess] 3;
+#var npc[questFail] 3;
+#var npc[questCheck] 3;
+#var npc[questCheckResponse] 3;
 
 #var npc[townPath]
 {
@@ -49,7 +49,7 @@
 {
 	{1}
 	{
-		{1}{emote snaps awake as if jolting him back to reality.}
+		{1}{emote snaps awake as if being jolted back to reality.}
 		{2}{say A code you say? My brain is scrambled. All jumbled up. Can you unscramble my brain?}
 		{3}{#var npc[stallTimer] 2;}
 		{4}{say "Here come dots"}
@@ -63,11 +63,21 @@
 		{3}{say The first part of that code you are looking for is: "Cells interlinked"}
 		{4}{say removeAllItemsFromList {code[resposesGiven]} {%%1};}
 		{5}{say \#if \{\@equalsIgnoreCase\{\{\$char\[ourCharacter\]\}\{%%1\}\}\} }
-		{6}{lose}
-		{7}{.go 112;}
-		{8}{.loadNPC KratarianPuzzleB}
+		{6}{.giveQuestUpdate}
+		{7}{lose}
+		{8}{.go 112;}
+		{9}{.loadNPC KratarianPuzzleB}
+	}
+	{3}
+	{
+		{1}{raise}
 	}
 };	
+
+#alias .giveQuestUpdate
+{
+	say $event[speaker] has received a piece of the code (4/6)
+};
 
 
 #var npc[lookingFor]

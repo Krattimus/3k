@@ -47,7 +47,7 @@
 {
 	{1}
 	{
-		{1}{emote snaps awake as if jolting him back to reality.}
+		{1}{emote snaps awake as if being jolted back to reality.}
 		{2}{say A code you say? The only thing I have is this riddle.}
 		{3}{#var npc[stallTimer] 2;}
 		{4}{say "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish."}
@@ -61,15 +61,21 @@
 		{3}{say The last part of that code you are looking for is: "interlinked"}
 		{4}{say removeAllItemsFromList {code[resposesGiven]} {%%1};}
 		{5}{say .mipProcessFFFSub \{\$mip[FFF][flag]\} \{\$mip[FFF][\$\{mip[FFF][flag]\}][data]\} }
-		{6}{lose}
-		{7}{.go 34040;}
-		{8}{.loadNPC KratarianFinal}
+		{6}{.giveQuestUpdate}
+		{7}{lose}
+		{8}{.go 34040;}
+		{9}{.loadNPC KratarianFinal}
 	}
 	{3}
 	{
 		{1}{raise}
 	}
 };	
+
+#alias .giveQuestUpdate
+{
+	say $event[speaker] has received a piece of the code (6/6)
+};
 
 
 #var npc[lookingFor]

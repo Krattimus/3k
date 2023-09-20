@@ -104,12 +104,12 @@
 		{10}{#var npc[stallTimer] 1;}
 		{11}{say Ok, so here is your mquest... There are hidden items across this entire world. Bring me any of the following items:	}
 		{12}{#var npc[stallTimer] 2;}
-		{13}{say • A dusty old bottle of Lapin Kulta •}
-		{14}{say • Black rose •}
-		{15}{say • a large bug egg •}
-		{16}{say • Loaf of dark bread •} 
-		{17}{say • Dice of the dead •}
-		{18}{say • An ordinary penny •}
+		{13}{say * A dusty old bottle of Lapin Kulta *}
+		{14}{say * Black rose *}
+		{15}{say * a large bug egg *}
+		{16}{say * Loaf of dark bread *} 
+		{17}{say * Dice of the dead *}
+		{18}{say * An ordinary penny *}
 		{19}{#var npc[stallTimer] 2;}
 		{20}{say Take your pick.}
 	}
@@ -149,7 +149,7 @@
 		{15}{#var npc[stallTimer] 1;}
 		{16}{ponder}
 		{17}{#var npc[stallTimer] 1;}
-		{18}{say Aren't multiverses a kind of an old thing? Lazy writing to make sure no character never ends its sales with corporate merchandising & other gimmicks used to explain away plot holes.}
+		{18}{say Aren't multiverses a kind of an old thing? Lazy writing to make sure no character ever ends its sales with corporate merchandising & other gimmicks used to explain away plot holes.}
 		{19}{#var npc[stallTimer] 3;}
 		{20}{say Regardless, I am the one who altered Krat`jitt's comic to find you. I guess that was... How he was detected...}
 		{21}{#var npc[stallTimer] 4;}
@@ -164,11 +164,17 @@
 		{30}{say It is dangerous to talk about these kinds of things around Pinnacle... Especially when wizzes have ears everywhere!}
 		{31}{emote tries to keep his voice soft.}
 		{32}{say I will tell you what, meet me in a hidden alley off of Trade Way in Wayhaven's trading district and we can talk there.}
-		{33}{lose}
-		{34}{.go 49778;}
-		{35}{.loadNPC KratarianAlleyNpc}
+		{33}{.giveQuestUpdate}
+		{34}{lose}
+		{35}{.go 49778;}
+		{36}{.loadNPC KratarianAlleyNpc}
 	}
 };	
+
+#alias .giveQuestUpdate
+{
+	say $event[giver] has earned the trust of a Kratarian (2/6)
+};
 
 
 #var npc[lookingFor]
@@ -187,6 +193,7 @@
 	{Penny}{1}	
 	{Rose}{1}
 	{rose}{1}	
+	{black rose}{1}
 };
 
 #var npc[purchases]

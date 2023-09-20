@@ -78,8 +78,8 @@
 		{27}{emote convulses his head rapidly.}
 		{28}{#var npc[stallTimer] 6;}
 		{29}{emote straightens up and composes himself as if they were a new person.}
-		{30}{#var npc[stallTimer] 2;}
-		{31}{say Because of you, I'm no longer an agent of this system. A new man, so to speak}
+		{30}{#var npc[stallTimer] 4;}
+		{31}{say Because of you, I'm no longer an agent of this system. A new man, so to speak.}
 		{32}{cackle}
 		{33}{#var npc[stallTimer] 2;}
 		{34}{explode}
@@ -98,13 +98,19 @@
 		{47}{#var npc[stallTimer] 3;}
 		{48}{emote vanishes abruptly with the sound of static being audible from the swinging telephone.}
 		{49}{#var npc[stallTimer] 2;}
-		{50}{#end}
+		{50}{.giveQuestUpdate}
+		{51}{#end}
 	}	
 	{3}
 	{
 		{1}{raise}
 	}
 };	
+
+#alias .giveQuestUpdate
+{
+	say $event[speaker] has triggered the Ultimate Wares from the Krativerse (Incoming!)
+};
 
 
 #var npc[lookingFor]

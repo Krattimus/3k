@@ -3963,7 +3963,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {34763}
+                {1} {30193}
+                {2} {34763}
             }
         }
         {A Trashcan} 
@@ -4011,6 +4012,14 @@
             }
         }
         {A single gold coin} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34763}
+            }
+        }
+        {A small ball of lint} 
         {
             {Description} {}
             {Rooms} 
@@ -4085,10 +4094,10 @@
             {Rooms} 
             {
                 {1} {34756}
-                {2} {30193}
-                {3} {34762}
-                {4} {34755}
-                {5} {34761}
+                {2} {34762}
+                {3} {34755}
+                {4} {34761}
+                {5} {30193}
             }
         }
         {Ideas board containing 81 messages } 
@@ -4104,7 +4113,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {34763}
+                {1} {30193}
+                {2} {34763}
             }
         }
         {The crystal of Myth Laerast} 
@@ -5353,15 +5363,15 @@
                 {6} {1165}
                 {7} {7030}
                 {8} {7024}
-                {9} {7023}
-                {10} {7013}
-                {11} {6541}
-                {12} {196}
-                {13} {6504}
-                {14} {1896}
-                {15} {6534}
-                {16} {16709}
-                {17} {3112}
+                {9} {6541}
+                {10} {196}
+                {11} {6504}
+                {12} {1896}
+                {13} {6534}
+                {14} {16709}
+                {15} {3112}
+                {16} {7023}
+                {17} {7013}
             }
         }
         {A Small ChaosBrand(tm) Television Set} 
@@ -5433,8 +5443,8 @@
             {Rooms} 
             {
                 {1} {19538}
-                {2} {1833}
-                {3} {7012}
+                {2} {7012}
+                {3} {1833}
             }
         }
         {A big red button} 
@@ -5514,8 +5524,8 @@
             {Rooms} 
             {
                 {1} {19538}
-                {2} {1833}
-                {3} {7012}
+                {2} {7012}
+                {3} {1833}
             }
         }
         {A giant silver spoon} 
@@ -5657,16 +5667,17 @@
                 {10} {6506}
                 {11} {1165}
                 {12} {7030}
-                {13} {7023}
-                {14} {7024}
-                {15} {7013}
-                {16} {6541}
-                {17} {6526}
-                {18} {6504}
-                {19} {1896}
-                {20} {6534}
-                {21} {16709}
-                {22} {3112}
+                {13} {7024}
+                {14} {7013}
+                {15} {6541}
+                {16} {6526}
+                {17} {6504}
+                {18} {1896}
+                {19} {6534}
+                {20} {16709}
+                {21} {3112}
+                {22} {7023}
+                {23} {7026}
             }
         }
         {A newspaper rack} 
@@ -5777,8 +5788,9 @@
             {Rooms} 
             {
                 {1} {19538}
-                {2} {7013}
+                {2} {7024}
                 {3} {7023}
+                {4} {7013}
             }
         }
         {A set of puppy tracks} 
@@ -5787,6 +5799,14 @@
             {Rooms} 
             {
                 {1} {6538}
+            }
+        }
+        {A shiny new postcard rack} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {7023}
             }
         }
         {A sign pointing to the Mist} 
@@ -6980,6 +7000,14 @@
                 {1} {1165}
             }
         }
+        {A sign you should certainly read} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1210}
+            }
+        }
         {A single gold coin} 
         {
             {Description} { You pick up The charred, glowing, brainless, sliced up, freshly slain You sit down and begin to relax, allowing your mind to drift off to the Woodlands of the Spirit Realm. At one with this magical land, you begin to feel your body recuperate from its exhaustion.  (a single gold coin?)  Deadman: 0  HP  700 /613 SP  352 /352  Ne'kra  544 / 560  So'kra  400 / 400 Freeform GXP: 25.448% XP: -83691655  HP  700 /613 SP  352 /352  Ne'kra  544 / 560  So'kra  400 / 400 Freeform GXP: 25.448% XP: -83691655  HP  700 /613 SP  352 /352  Ne'kra  560 / 560  So'kra  400 / 400 Freeform GXP: 25.448% XP: -83691655  HP  700 /613 SP  352 /352  Ne'kra  560 / 560  So'kra  400 / 400 Freeform GXP: 25.448% XP: -83691655 Fully refreshed you end your revalrie.  Deadman: 0 }
@@ -7296,7 +7324,7 @@
     {
         {A pail} 
         {
-            {Description} { A metal pail. You can put things in it. It is empty. It looks light.    / | \   }
+            {Description} {   Deadman: 0 Bonehead, you're at max hit points already. A pail  A metal pail. You can put things in it. It is empty. It looks light.  Deadman: 0    Bonehead, you're at max hit points already. Saving monk status. }
             {Rooms} 
             {
                 {1} {25261}
@@ -7312,10 +7340,26 @@
         }
         {A shovel} 
         {
-            {Description} {    A shovel  An old dirty shovel. This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 10 (blunt).  }
+            {Description} { up Bonehead, you're at max hit points already. A gardener   A gardener     A shovel  An old dirty shovel. This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 10 (blunt).  }
             {Rooms} 
             {
                 {1} {25261}
+            }
+        }
+        {Good Sorcerer Gerrik} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25259}
+            }
+        }
+        {Good Sorceress Mira} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25259}
             }
         }
         {Shovel} 
@@ -9974,6 +10018,14 @@
                 {1} {4880}
             }
         }
+        {A shining, onyx katana } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {A single gold coin} 
         {
             {Description} {   (a single gold coin?) Drow Teacher   Drow Teacher   Drow Teacher   Your body explodes in a *BLUR* of force and power! Your body is wracked in pain as the life force is sucked from you. Drow Teacher   Drow Teacher   Drow Teacher   Drow Teacher   Drow Teacher   Drow Infant Drow Infant Drow Teacher through her. Drow Teacher screams in pain as they become weaker! }
@@ -9991,6 +10043,14 @@
             }
         }
         {A swirling vortex of lightning} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A triple-edged, platinum foil } 
         {
             {Description} {}
             {Rooms} 
@@ -10227,6 +10287,14 @@
             }
         }
         {Malachite ring} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {Moonstone ring} 
         {
             {Description} {}
             {Rooms} 
@@ -12123,7 +12191,7 @@
         }
         {Huntor's Big Gun (enhanced)} 
         {
-            {Description} { (huntor's big gun (enhanced)?)  Bonehead, you're at max hit points already. }
+            {Description} { (huntor's big gun (enhanced)?)  Deadman: 0  Deadman: 0 Huntor }
             {Rooms} 
             {
                 {1} {29124}
@@ -22102,6 +22170,7 @@
                 {1} {14759}
                 {2} {14761}
                 {3} {14755}
+                {4} {14760}
             }
         }
         {A water fountain (broken)} 
@@ -22910,6 +22979,63 @@
             }
         }
     }
+    {MK } 
+    {
+        { Machine} 
+        {
+            {A LARGE sign} 
+            {
+                {Description} {}
+                {Rooms} 
+                {
+                    {1} {378}
+                }
+            }
+            {A Really Nice Looking Computer} 
+            {
+                {Description} {}
+                {Rooms} 
+                {
+                    {1} {378}
+                }
+            }
+            {Mortal Kombat } 
+            {
+                { Machine} 
+                {
+                    {Description} {}
+                    {Rooms} 
+                    {
+                        {1} {378}
+                    }
+                }
+            }
+            {Samurai Showdown Game} 
+            {
+                {Description} {}
+                {Rooms} 
+                {
+                    {1} {378}
+                }
+            }
+            {Section Z game cabinet} 
+            {
+                {Description} {}
+                {Rooms} 
+                {
+                    {1} {378}
+                }
+            }
+            {Virtual Adapter} 
+            {
+                {Description} {}
+                {Rooms} 
+                {
+                    {1} {378}
+                }
+            }
+        }
+    }
     {MTV Studios} 
     {
         {A monkey's beanie} 
@@ -23244,8 +23370,8 @@
                 {3} {1947}
                 {4} {1903}
                 {5} {1901}
-                {6} {1902}
-                {7} {1900}
+                {6} {1900}
+                {7} {1902}
             }
         }
         {Amphibian leg} 
@@ -24848,7 +24974,8 @@
                 {2} {27631}
                 {3} {27635}
                 {4} {27632}
-                {5} {27634}
+                {5} {27636}
+                {6} {27634}
             }
         }
         {You can 'zot' the zot boon off of any player} 
@@ -25201,7 +25328,7 @@
         }
         {A dwarven steel pick} 
         {
-            {Description} {  This is a dwarven steel pick that is used by the miners to dig out those precious gems from the dwarven mines.  It could also be used as a weapon if you wanted to wield it.  Just try to clean up the mess after you maim your foe. This weapon is in excellent condition.  This weapon is a class higher than 15 (edged)  This weapon gains benefits from your axe weapon skill. You must be level 10 to wield this weapon. }
+            {Description} {  Bonehead, you're at max hit points already. Xog, the exhausted dwarven miner  Psionic waves emanate from your body.  Deadman: 0 A dwarven steel pick This is a dwarven steel pick that is used by the miners to dig out those precious gems from the dwarven mines.  It could also be used as a weapon if you wanted to wield it.  Just try to clean up the mess after you maim your foe. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  This weapon gains benefits from your axe weapon skill. You must be level 10 to wield this weapon. }
             {Rooms} 
             {
                 {1} {30577}
@@ -30684,8 +30811,8 @@
                 {2} {36215}
                 {3} {23835}
                 {4} {36214}
-                {5} {6220}
-                {6} {6673}
+                {5} {6673}
+                {6} {6220}
             }
         }
         {A Tome of 'Forge and Hammer', Volume I} 
@@ -31101,9 +31228,9 @@
                 {3} {6675}
                 {4} {36215}
                 {5} {23835}
-                {6} {6220}
-                {7} {6673}
-                {8} {24350}
+                {6} {6673}
+                {7} {24350}
+                {8} {6220}
             }
         }
         {A skinned corpse of Vilgan, draped upon a sickle} 
@@ -31115,6 +31242,14 @@
             }
         }
         {A slightly melted, frozen corpse of Vilgan} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6220}
+            }
+        }
+        {A small ball of lint} 
         {
             {Description} {}
             {Rooms} 
@@ -31146,6 +31281,7 @@
                 {1} {3928}
                 {2} {6675}
                 {3} {24350}
+                {4} {151}
             }
         }
         {A spiked zallot} 
@@ -31183,9 +31319,9 @@
                 {4} {36215}
                 {5} {23835}
                 {6} {36214}
-                {7} {6220}
-                {8} {6673}
-                {9} {17537}
+                {7} {6673}
+                {8} {17537}
+                {9} {6220}
             }
         }
         {A tattered cloak} 
@@ -31472,8 +31608,8 @@
                 {2} {36215}
                 {3} {23835}
                 {4} {36214}
-                {5} {6220}
-                {6} {6673}
+                {5} {6673}
+                {6} {6220}
             }
         }
         {The 3k Top Player List} 
@@ -39178,7 +39314,7 @@
         }
         {Small Figurine} 
         {
-            {Description} {   Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light.  Deadman: 0  HP  948 /972 SP  581 /581  Ne'kra  688 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  HP  948 /972 SP  581 /581  Ne'kra  688 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  HP  948 /972 SP  581 /581  Ne'kra  704 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  HP  948 /972 SP  581 /581  Ne'kra  704 / 704  So'kra  480 / 480 Freeform GXP: 43.943% XP: -150391952  Deadman: 0 }
+            {Description} {   Small Figurine  This tiny figurine appears to be made in the image of a Balangool creature, though not one you can recall having seen before.  While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all.  It looks light.  Deadman: 0  HP  1000/1018  SP  597 /597  Ne'kra  688 / 704  So'kra  480 / 480 Freeform GXP: 118.317% XP: 1475131  HP  1000/1018  SP  597 /597  Ne'kra  688 / 704  So'kra  480 / 480 Freeform GXP: 118.317% XP: 1475131  HP  1000/1018  SP  597 /597  Ne'kra  704 / 704  So'kra  480 / 480 Freeform GXP: 118.317% XP: 1475131  HP  1000/1018  SP  597 /597  Ne'kra  704 / 704  So'kra  480 / 480 Freeform GXP: 118.317% XP: 1475131  Deadman: 0 }
             {Rooms} 
             {
                 {1} {25240}
@@ -41710,8 +41846,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {8244}
-                {2} {8243}
+                {1} {8243}
+                {2} {8244}
             }
         }
         {A KrustyBrand(tm) Bible} 
@@ -41788,6 +41924,7 @@
             {Rooms} 
             {
                 {1} {8302}
+                {2} {8298}
             }
         }
         {A Small ChaosBrand(tm) Television Set} 
@@ -41909,11 +42046,12 @@
                 {1} {8298}
                 {2} {8304}
                 {3} {8229}
-                {4} {8297}
-                {5} {8228}
-                {6} {8290}
-                {7} {8230}
-                {8} {8227}
+                {4} {8228}
+                {5} {8290}
+                {6} {8230}
+                {7} {8227}
+                {8} {8297}
+                {9} {8231}
             }
         }
         {A personal computer} 
@@ -41971,6 +42109,15 @@
             {
                 {1} {17460}
                 {2} {17461}
+            }
+        }
+        {A shiny new postcard rack} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8302}
+                {2} {8298}
             }
         }
         {A sign} 
@@ -42071,8 +42218,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {8240}
-                {2} {8246}
+                {1} {8246}
+                {2} {8240}
                 {3} {8232}
             }
         }
@@ -43212,8 +43359,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {35387}
-                {2} {35376}
+                {1} {35376}
+                {2} {35387}
             }
         }
         {A piece of an eggshell} 
@@ -46410,12 +46557,12 @@
             {Rooms} 
             {
                 {1} {4902}
-                {2} {4866}
-                {3} {4875}
-                {4} {4876}
-                {5} {4872}
-                {6} {4867}
-                {7} {4869}
+                {2} {4875}
+                {3} {4876}
+                {4} {4872}
+                {5} {4867}
+                {6} {4869}
+                {7} {4866}
             }
         }
         {A ridged, black, adamantium Staff \x7B2\x7D} 
@@ -47224,6 +47371,14 @@
     }
     {The Great Getaway} 
     {
+        {A Trashcan} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34040}
+            }
+        }
         {A gumball machine} 
         {
             {Description} {}
@@ -47231,6 +47386,14 @@
             {
                 {1} {17540}
                 {2} {34051}
+            }
+        }
+        {A large sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34040}
             }
         }
         {A newspaper rack} 
@@ -47257,6 +47420,14 @@
             {Rooms} 
             {
                 {1} {34057}
+            }
+        }
+        {An ATM  Pinnacle Bank} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34040}
             }
         }
         {Another 3k Top Player List} 
@@ -50492,8 +50663,8 @@
                 {1} {4314}
                 {2} {3918}
                 {3} {3917}
-                {4} {3913}
-                {5} {3919}
+                {4} {3919}
+                {5} {3913}
             }
         }
         {A Student Toga} 
@@ -51263,6 +51434,7 @@
                 {1} {34839}
                 {2} {34837}
                 {3} {34834}
+                {4} {34836}
             }
         }
         {A small sign} 
@@ -51283,6 +51455,7 @@
                 {3} {34846}
                 {4} {34847}
                 {5} {34844}
+                {6} {34848}
             }
         }
         {Bloodstone ring} 
@@ -51482,6 +51655,14 @@
             {Rooms} 
             {
                 {1} {6622}
+            }
+        }
+        {A sign you should certainly read} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6558}
             }
         }
         {A small brass key} 

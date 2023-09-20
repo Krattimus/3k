@@ -10,7 +10,7 @@
 /*********************************************************
 	NPC Data
 *********************************************************/
-#var npc[isActive] 0;
+#var npc[isActive] 1;
 #var npc[timeToTake] 20;
 #var npc[timeToTakeResponse] 40;
 #var npc[playResponse] 0;
