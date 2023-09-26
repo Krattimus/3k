@@ -10,7 +10,7 @@
 *************************************************************/
 #action {The %1 steps in the way as you attempt to go %2!} {.triggerEvent onBlockedMovement;};
 #action {The titan bars your way up the path!} {.triggerEvent onBlockedMovement;};
-#action {The spirit of Waldo appears before you.} { .triggerevent onblockedmovement;};
+#action {The spirit of Waldo appears before you.} { .triggerEvent onblockedmovement;};
 #action {Azrael gives you a small scratch, reminding you of her guard duty.} {.triggerEvent onBlockedMovement;};
 #action {There is a whole city to explore! No time to sleep} {.triggerEvent onBlockedMovement;};
 #action {%1 is not going to let you by.} { .triggerEvent onBlockedMovement; };
@@ -30,21 +30,27 @@
 #action {^The gate is down, you must raise it first.$} {.triggerEvent onBlockedMovement;}
 #action {^The guard pushes you back.$} {.triggerEvent onBlockedMovement;}
 #action {^The guard shoves you back.$} {.triggerEvent onBlockedMovement;}
-#action {Two gnolls rush out of the cave and block your path!} {.triggerevent onblockedmovement;};
+#action {Two gnolls rush out of the cave and block your path!} {.triggerEvent onblockedmovement;};
 #action {^The golem shoves you back.$} {.triggerEvent onBlockedMovement;}
-#action {^Policeman says: No one is allowed outside the city limits.} {.triggerevent onblockedmovement; }
-#action {^The closed security gate blocks your path.} {.triggerevent onblockedmovement; }
+#action {^Policeman says: No one is allowed outside the city limits.} {.triggerEvent onblockedmovement; }
+#action {^The closed security gate blocks your path.} {.triggerEvent onblockedmovement; }
 #action {^The door is closed.$} {.triggerEvent onBlockedMovement;}
 #action {^The knight bars your way west.$} {.triggerEvent onBlockedMovement;}
-#action {The guard prevents you from going that way.} {.triggerevent onblockedmovement;}
+#action {The guard prevents you from going that way.} {.triggerEvent onblockedmovement;}
 #action {You are too powerful to pass this gate.} {.triggerEvent onBlockedMovement;}
 
+#action {%1 gets in the way as you attempt to go %2!} {.triggerEvent onBlockedMovement;};
+#action {%1 gets in the way as you attempt to go %2.} {.triggerEvent onBlockedMovement;};
+#action {The shifting rubble traps you.  Dang it!} {.triggerEvent onBlockedMovement;};
+#action {%1 stands in your way!} {.triggerEvent onBlockedMovement;};
+#action {You can't get past the %1 in front of you.} {.triggerEvent onBlockedMovement;};
 #NOP Juggernauts
 #action {^The room is locked.} {.triggerEvent onBlockedMovement;}
 #action {^Dirk says: This area is for Wolves not } {.triggerEvent onBlockedMovement;}
 #action {^Harlow says: You are not allowed here please turn around and leave at once} {.triggerEvent onBlockedMovement;}
 #action {^Only members of clan jade falcon can go this way.} {.triggerEvent onBlockedMovement;}
 
+#action {The Usher steps in your path and says} {.triggerEvent onBlockedMovement;}
 #NOP Bards
 #action {^You can't go there!} {.triggerEvent onBlockedMovement;}
 

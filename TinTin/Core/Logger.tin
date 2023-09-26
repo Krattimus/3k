@@ -229,10 +229,6 @@
 	#map flag asciivnums on;
 	#line logmode html #map map $height $width O mapIDs.html;
 	#map flag asciivnums off;
-
-	.describeItems;
-	.describeMobs;
-	.describeInterests;
 };
 
 /**************************************************************

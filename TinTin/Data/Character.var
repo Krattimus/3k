@@ -2,8 +2,8 @@
 
 #VARIABLE {char}
 {
-    {area} {Simpsons Expansion}
-    {currentRoomID} {8244}
+    {area} {Mystic Seal}
+    {currentRoomID} {31780}
     {guild} {Monk}
     {isResting} {0}
     {login} {look}

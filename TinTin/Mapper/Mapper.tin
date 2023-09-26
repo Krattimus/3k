@@ -740,13 +740,46 @@ The area has changed
         };
 };
 
+/*****************************************************************************
+	Search map for rooms that have a substring in their long descriptions
+*****************************************************************************/
+#alias {.searchAreaForDesc}
+{	
+	#draw Yellow scroll line 1 1 1 80;
+	#map list {roomdesc} {%*%0%*} {roomarea} {$area} {variable} {rooms}; 
+	#foreach {*rooms[]} {roomID}  
+	{ 
+		#map at $roomID #map get all {roomdata};
+		#local exits {};
 
+		#foreach {*roomdata[exits][]} {exit} 
+		{
+			#if { "$exit" != "" }
+			{
+				#if { "$exits" == "" }
+				{
+					#local exits {$exit};
+				};
+				#ELSE 
+				{
+					#local exits {$exits,$exit};
+				};
+				
+			};
+		};
+
+
+		#echo {<129>Room<088> [<129>%+5s<088>] %-20.20s <129>%+40.30s <268>Exits %.30s<088> } {$roomID} {[<168>$roomdata[area]<088>]} {$roomdata[name]} {$exits}
+	};
+	
+	#draw Yellow scroll line 1 1 1 80;
+};
 
 
 /*****************************************************************************
 	Search map for rooms that have a substring in their long descriptions
 *****************************************************************************/
-#alias {.searchMapForDesc}  
+#alias {.searchMapForDesc}
 {	
 	#draw Yellow scroll line 1 1 1 80;
 	#map list {roomdesc} {%*%0%*} {variable} {rooms}; 
