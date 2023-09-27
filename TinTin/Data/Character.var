@@ -2,8 +2,8 @@
 
 #VARIABLE {char}
 {
-    {area} {Mystic Seal}
-    {currentRoomID} {31780}
+    {area} {Pinnacle}
+    {currentRoomID} {85}
     {guild} {Monk}
     {isResting} {0}
     {login} {look}

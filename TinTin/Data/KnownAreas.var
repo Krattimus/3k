@@ -1569,6 +1569,9 @@
             {6} {A diamond}
             {7} {Blue key}
             {8} {A bone necklace}
+            {9} {A sign}
+            {10} {Bracers of Protection +2}
+            {11} {Amulet of Rage}
         }
         {Mobs} 
         {
@@ -1578,39 +1581,41 @@
             {4} {Megaera}
             {5} {Atalanta}
             {6} {Guacamole}
-            {7} {Vacuo}
-            {8} {Hydra}
-            {9} {Leprechaun}
-            {10} {Gorgon}
-            {11} {Minotaur}
-            {12} {Scorpion}
-            {13} {Orc Guard}
-            {14} {Mirrordemon}
-            {15} {Rockgrub}
-            {16} {Disciple}
-            {17} {Caveman}
-            {18} {Lunasa}
-            {19} {Greyfox}
-            {20} {Muse}
-            {21} {Alecto}
-            {22} {Lars}
-            {23} {Cerebella}
-            {24} {Furious}
-            {25} {Leah}
-            {26} {Nimrod}
-            {27} {Echo}
-            {28} {Pyro}
-            {29} {Nitro}
-            {30} {Cyprus}
-            {31} {Billirubin}
-            {32} {Spirino}
-            {33} {Minos}
+            {7} {Hydra}
+            {8} {Leprechaun}
+            {9} {Gorgon}
+            {10} {Minotaur}
+            {11} {Scorpion}
+            {12} {Orc Guard}
+            {13} {Mirrordemon}
+            {14} {Rockgrub}
+            {15} {Disciple}
+            {16} {Caveman}
+            {17} {Lunasa}
+            {18} {Greyfox}
+            {19} {Muse}
+            {20} {Alecto}
+            {21} {Lars}
+            {22} {Cerebella}
+            {23} {Nimrod}
+            {24} {Echo}
+            {25} {Pyro}
+            {26} {Nitro}
+            {27} {Cyprus}
+            {28} {Billirubin}
+            {29} {Spirino}
+            {30} {Minos}
+            {31} {Hoarace the Tough}
+            {32} {Vacuo}
+            {33} {Leah}
             {34} {Cronos}
+            {35} {Furious}
         }
         {Ratings} 
         {
             {1} {160}
         }
+        {Wizard} {Mos}
     }
     {Balur's Cave} 
     {
@@ -2169,6 +2174,17 @@
             {6} {Verminator}
         }
     }
+    {Bowling City} 
+    {
+        {Items} 
+        {
+            {1} {A poster tacked over the sign}
+        }
+        {Mobs} 
+        {
+            {1} {Parking garage guard}
+        }
+    }
     {Brewery Swamp} 
     {
         {Items} 
@@ -2355,12 +2371,19 @@
         {Mobs} 
         {
             {1} {Angry Audience Member}
-            {2} {Rudolph Guiliani}
-            {3} {The Bodyguard}
-            {4} {A Lady}
-            {5} {An Usher}
-            {6} {Taxi Cab}
+            {2} {A Lady}
+            {3} {Taxi Cab}
+            {4} {The Bodyguard}
+            {5} {Rudolph Guiliani}
+            {6} {A New Yorker}
+            {7} {An audience member rushing to get to his seat}
+            {8} {An Usher}
         }
+        {Ratings} 
+        {
+            {1} {90}
+        }
+        {Wizard} {Pfunk}
     }
     {Carnegie Hall 2.0} 
     {
@@ -2373,14 +2396,37 @@
             {5} {*silver torch}
             {6} {X53.3 high-voltage taser baton}
             {7} {An expensive wool pashmina}
+            {8} {*silver torch (lit)}
+            {9} {A large red fireaxe (enchanted)}
+            {10} {X53.5 high-voltage taser baton (enchanted)}
+            {11} {A Carnegie Hall Ticket}
         }
         {Mobs} 
         {
-            {1} {Angry Audience Member}
-            {2} {Mel Brooks}
-            {3} {Large Usher}
-            {4} {An Usher}
-            {5} {An Audience Member}
+            {1} {The Bodyguard}
+            {2} {Michael Rudolph Guilioomberg}
+            {3} {An Audience Member}
+            {4} {Angry Audience Member}
+            {5} {Larry Mullen Jr}
+            {6} {Bono}
+            {7} {Adam Clayton}
+            {8} {The Edge}
+            {9} {Jay-z}
+            {10} {Beyonce}
+            {11} {Woody Allen}
+            {12} {Soon-yi}
+            {13} {Mel Brooks}
+            {14} {An audience member rushing to get to his seat}
+            {15} {Billy Crystal}
+            {16} {New York Chief of Police}
+            {17} {Chief of Police}
+            {18} {New York Fire Chief}
+            {19} {Fire Chief}
+            {20} {A Large Usher}
+            {21} {Large Usher}
+            {22} {Al Pacino Jr}
+            {23} {A polite audience member}
+            {24} {An Usher}
         }
     }
     {Carnelian's Lair} 
@@ -2559,91 +2605,91 @@
             {25} {A street sign}
             {26} {A giant silver spoon}
             {27} {A poster tacked over the sign}
-            {28} {A silvery tower}
-            {29} {A purple haze}
-            {30} {A funky-looking fog}
-            {31} {There is a hole here}
-            {32} {A small box of Laundry Detergent}
-            {33} {A piece of USA(r) Today}
-            {34} {A stand selling Mentos}
-            {35} {A little brown monkey doll}
-            {36} {A green mutant plant}
-            {37} {A patch of mist}
-            {38} {Erratic light}
-            {39} {A Book}
-            {40} {An Outhouse}
-            {41} {A spectral warehouse}
-            {42} {A White Fence}
-            {43} {An Illuminati Pyramid}
-            {44} {A staircase}
-            {45} {Armour of the Spirit}
-            {46} {Sword of Spirit (partially repaired)}
-            {47} {A piglet}
-            {48} {An empty door frame}
-            {49} {A sign pointing to the Mist}
-            {50} {A Small ChaosBrand(tm) Television Set}
-            {51} {A newspaper rack}
-            {52} {A very greasy hamburger}
-            {53} {An accommodation notice board}
-            {54} {A rusty old android}
-            {55} {A single gold coin}
-            {56} {The 3-K Kill List}
-            {57} {A Statue of Cancer the King}
-            {58} {A tall street light}
-            {59} {Hall of Game Shows}
-            {60} {A hip doorway}
-            {61} {Arena Ticket}
-            {62} {A wibbly-wobbly frankfurter}
-            {63} {A piece of USA Today}
-            {64} {A plastic magnifying glass}
-            {65} {A HUGE refrigerator}
-            {66} {A small playing card}
-            {67} {A Mahjongg tile}
-            {68} {A bouncing bingo ball}
-            {69} {An Intradimensional Bucket}
-            {70} {A hockey puck}
-            {71} {A swirling void}
-            {72} {Magic mushroom magically stuck in the ground}
-            {73} {A mud puddle}
-            {74} {A toy chest}
-            {75} {A quaint candy store}
-            {76} {A toddler's sippy cup}
-            {77} {A playhouse}
-            {78} {A velvet witch hat}
-            {79} {A large ladder}
-            {80} {A bronze plaque}
-            {81} {Erratio Forest}
-            {82} {A joystick}
-            {83} {Zippo Case}
-            {84} {An ancient runestone}
-            {85} {A bucket of water}
-            {86} {The Good Humor, Ice Cream Truck}
-            {87} {A set of puppy tracks}
-            {88} {A small dispensing machine}
-            {89} {A large whirlpool}
-            {90} {A writhing tendril}
-            {91} {A long leather leash hangs in midair}
-            {92} {A blazing comet}
-            {93} {An old dusty book}
-            {94} {A huge box }
-            {95} {Overgrown swamp}
-            {96} {A shiny new postcard rack}
-            {97} {A newly erected billboard}
-            {98} {A Crazily Canted and Odd Pipe}
-            {99} {A tasty-looking frankfurter}
-            {100} {A Weird Hanging Ladder}
-            {101} {A purple mutant plant}
-            {102} {A Chocolate Cake}
-            {103} {A Pumpkin}
-            {104} {A velvet rope}
-            {105} {A big red shoe}
-            {106} {A Hockey Ticket}
-            {107} {A giant faucet}
-            {108} {A banana peel}
-            {109} {An eighteenth hole flag}
-            {110} {A Small ChaosBrand Television Set}
-            {111} {A rusty ship anchor}
-            {112} {A laboratory building, floating in the void}
+            {28} {There is a hole here}
+            {29} {A small box of Laundry Detergent}
+            {30} {A piece of USA(r) Today}
+            {31} {A stand selling Mentos}
+            {32} {A little brown monkey doll}
+            {33} {A green mutant plant}
+            {34} {A patch of mist}
+            {35} {Erratic light}
+            {36} {A Book}
+            {37} {An Outhouse}
+            {38} {A spectral warehouse}
+            {39} {A White Fence}
+            {40} {An Illuminati Pyramid}
+            {41} {A staircase}
+            {42} {Armour of the Spirit}
+            {43} {Sword of Spirit (partially repaired)}
+            {44} {A piglet}
+            {45} {An empty door frame}
+            {46} {A sign pointing to the Mist}
+            {47} {A Small ChaosBrand(tm) Television Set}
+            {48} {A newspaper rack}
+            {49} {A very greasy hamburger}
+            {50} {An accommodation notice board}
+            {51} {A rusty old android}
+            {52} {A single gold coin}
+            {53} {The 3-K Kill List}
+            {54} {A Statue of Cancer the King}
+            {55} {A tall street light}
+            {56} {Hall of Game Shows}
+            {57} {A hip doorway}
+            {58} {Arena Ticket}
+            {59} {A wibbly-wobbly frankfurter}
+            {60} {A piece of USA Today}
+            {61} {A plastic magnifying glass}
+            {62} {A HUGE refrigerator}
+            {63} {A small playing card}
+            {64} {A Mahjongg tile}
+            {65} {A bouncing bingo ball}
+            {66} {An Intradimensional Bucket}
+            {67} {A hockey puck}
+            {68} {A swirling void}
+            {69} {Magic mushroom magically stuck in the ground}
+            {70} {A mud puddle}
+            {71} {A toy chest}
+            {72} {A quaint candy store}
+            {73} {A toddler's sippy cup}
+            {74} {A playhouse}
+            {75} {A velvet witch hat}
+            {76} {A large ladder}
+            {77} {Erratio Forest}
+            {78} {A joystick}
+            {79} {Zippo Case}
+            {80} {An ancient runestone}
+            {81} {A bucket of water}
+            {82} {The Good Humor, Ice Cream Truck}
+            {83} {A set of puppy tracks}
+            {84} {A small dispensing machine}
+            {85} {A large whirlpool}
+            {86} {A writhing tendril}
+            {87} {A blazing comet}
+            {88} {An old dusty book}
+            {89} {A huge box }
+            {90} {Overgrown swamp}
+            {91} {A shiny new postcard rack}
+            {92} {A newly erected billboard}
+            {93} {A Crazily Canted and Odd Pipe}
+            {94} {A tasty-looking frankfurter}
+            {95} {A Weird Hanging Ladder}
+            {96} {A purple mutant plant}
+            {97} {A Chocolate Cake}
+            {98} {A Pumpkin}
+            {99} {A velvet rope}
+            {100} {A big red shoe}
+            {101} {A Hockey Ticket}
+            {102} {A giant faucet}
+            {103} {A banana peel}
+            {104} {An eighteenth hole flag}
+            {105} {A Small ChaosBrand Television Set}
+            {106} {A rusty ship anchor}
+            {107} {A laboratory building, floating in the void}
+            {108} {A long leather leash hangs in midair}
+            {109} {A silvery tower}
+            {110} {A funky-looking fog}
+            {111} {A purple haze}
+            {112} {A bronze plaque}
         }
         {Mobs} 
         {
@@ -2793,6 +2839,11 @@
         {Items} 
         {
             {1} {A long leather leash hangs in midair}
+            {2} {A poster tacked over the sign}
+        }
+        {Mobs} 
+        {
+            {1} {Parking garage guard}
         }
         {Ratings} 
         {
@@ -5460,6 +5511,11 @@
             {2} {Drow Guard}
             {3} {Ant}
         }
+        {Ratings} 
+        {
+            {1} {53}
+        }
+        {Wizard} {Orthas}
     }
     {EMA Complex} 
     {
@@ -6080,14 +6136,16 @@
             {64} {A fading portal }
             {65} {A small stone crag}
             {66} {Castle Peeron}
-            {67} {A piece of crystalrock}
-            {68} {A piece of granite}
-            {69} {A piece of marjoram}
-            {70} {A bit of thyme}
-            {71} {A nwerm leaf}
-            {72} {A piece of oakwood}
-            {73} {A glowing portal}
-            {74} {A sprig of rosemary}
+            {67} {A piece of granite}
+            {68} {A bit of thyme}
+            {69} {A nwerm leaf}
+            {70} {A piece of oakwood}
+            {71} {A sprig of rosemary}
+            {72} {A glowing portal}
+            {73} {A piece of marjoram}
+            {74} {A gypsy's wagon}
+            {75} {A piece of crystalrock}
+            {76} {A Ruined Town}
         }
         {Mobs} 
         {
@@ -6113,83 +6171,86 @@
             {20} {Bill Dragonslayer}
             {21} {Bill Goblinface}
             {22} {Black Wolf}
-            {23} {A gray jay}
-            {24} {A large porcupine}
-            {25} {Rattle Snake}
-            {26} {A medium black bear}
-            {27} {Cindy the Mighty}
-            {28} {Hartly the Mighty}
-            {29} {Elf Traveller <.>}
-            {30} {Hartly the Legged}
-            {31} {Rocky Bullwinkle}
-            {32} {A scared warrior}
-            {33} {Barrett, Woodsman of the Forest}
-            {34} {A mean-looking sidewinder}
-            {35} {ure}
-            {36} {Tabol Dragonslayer}
-            {37} {Tabol}
-            {38} {Ghalein, Guardian of the Tower Gates}
-            {39} {A hermit}
-            {40} {Hill Dwarf}
-            {41} {A boa constrictor preying on small critters... or players}
-            {42} {A small furry groundhog}
-            {43} {A medium spotted bear}
-            {44} {Bill the Tough}
-            {45} {Mary the Wicked}
-            {46} {A Goblin Scout}
-            {47} {Jordance Bullwinkle}
-            {48} {Paculla, White Witch of the Vedma}
-            {49} {Orc}
-            {50} {A red-tailed hawk}
-            {51} {Snake}
-            {52} {A black and white skunk}
-            {53} {A young monk}
-            {54} {Bandit}
-            {55} {Plainsman}
-            {56} {Jor the Legged}
-            {57} {Jor Dragonslayer}
-            {58} {Taki the Mighty}
-            {59} {Elf Traveller <?>}
-            {60} {Taki the Quick}
-            {61} {Jordance the Newbie}
-            {62} {A small brown hare}
-            {63} {A buzzard}
-            {64} {A red-breasted robin}
-            {65} {Bob Goblinface}
-            {66} {Zarinth, Mage of the Flaming Palm}
-            {67} {Gemina, rogue of the black-hand}
-            {68} {Lord Marshinal, High priest of Morike}
-            {69} {Sir Prilmas, Knight of the Obsidian Order}
-            {70} {A mad hobgoblin}
-            {71} {The hobgoblin mage}
-            {72} {Citizen}
-            {73} {A large timber wolf}
-            {74} {Mass of Troll Flesh}
-            {75} {A hobgoblin kid}
-            {76} {A mean hobgoblin}
-            {77} {An ugly hobgoblin}
-            {78} {A hobgoblin}
-            {79} {The Hobgoblin King}
-            {80} {Hobgoblin}
-            {81} {Hobgoblin King}
-            {82} {Giant ant}
-            {83} {Larkin the Guard}
-            {84} {An arctic wolf}
-            {85} {A skeletal pirate}
-            {86} {A red-crested woodpecker}
-            {87} {Rul'taasa}
-            {88} {Human Traveller}
-            {89} {A large brown hare}
-            {90} {Corristo the Wandering Traveler}
-            {91} {Merchant}
-            {92} {Elf Traveller}
-            {93} {A small black wolf}
-            {94} {A large brown elk}
-            {95} {Squirrel}
-            {96} {Troll}
-            {97} {A medium brown hare}
-            {98} {A tufted titmouse}
-            {99} {A cooper's hawk}
+            {23} {A large porcupine}
+            {24} {Rattle Snake}
+            {25} {A medium black bear}
+            {26} {Cindy the Mighty}
+            {27} {Hartly the Mighty}
+            {28} {Elf Traveller <.>}
+            {29} {Hartly the Legged}
+            {30} {Rocky Bullwinkle}
+            {31} {A scared warrior}
+            {32} {Barrett, Woodsman of the Forest}
+            {33} {A mean-looking sidewinder}
+            {34} {ure}
+            {35} {Tabol Dragonslayer}
+            {36} {Tabol}
+            {37} {Ghalein, Guardian of the Tower Gates}
+            {38} {A hermit}
+            {39} {Hill Dwarf}
+            {40} {A boa constrictor preying on small critters... or players}
+            {41} {A small furry groundhog}
+            {42} {A medium spotted bear}
+            {43} {Bill the Tough}
+            {44} {Mary the Wicked}
+            {45} {A Goblin Scout}
+            {46} {Jordance Bullwinkle}
+            {47} {Paculla, White Witch of the Vedma}
+            {48} {Orc}
+            {49} {A red-tailed hawk}
+            {50} {Snake}
+            {51} {A black and white skunk}
+            {52} {A young monk}
+            {53} {Bandit}
+            {54} {Plainsman}
+            {55} {Jor the Legged}
+            {56} {Jor Dragonslayer}
+            {57} {Taki the Mighty}
+            {58} {Elf Traveller <?>}
+            {59} {Taki the Quick}
+            {60} {Jordance the Newbie}
+            {61} {A small brown hare}
+            {62} {A buzzard}
+            {63} {A red-breasted robin}
+            {64} {Bob Goblinface}
+            {65} {Zarinth, Mage of the Flaming Palm}
+            {66} {Gemina, rogue of the black-hand}
+            {67} {Lord Marshinal, High priest of Morike}
+            {68} {Sir Prilmas, Knight of the Obsidian Order}
+            {69} {A mad hobgoblin}
+            {70} {The hobgoblin mage}
+            {71} {Citizen}
+            {72} {A large timber wolf}
+            {73} {Mass of Troll Flesh}
+            {74} {A hobgoblin kid}
+            {75} {A mean hobgoblin}
+            {76} {An ugly hobgoblin}
+            {77} {A hobgoblin}
+            {78} {The Hobgoblin King}
+            {79} {Hobgoblin}
+            {80} {Hobgoblin King}
+            {81} {Giant ant}
+            {82} {Larkin the Guard}
+            {83} {An arctic wolf}
+            {84} {A skeletal pirate}
+            {85} {A red-crested woodpecker}
+            {86} {Rul'taasa}
+            {87} {A large brown hare}
+            {88} {Corristo the Wandering Traveler}
+            {89} {Elf Traveller}
+            {90} {A small black wolf}
+            {91} {A large brown elk}
+            {92} {Squirrel}
+            {93} {A medium brown hare}
+            {94} {A tufted titmouse}
+            {95} {A cooper's hawk}
+            {96} {A gray jay}
+            {97} {Troll}
+            {98} {Hoarace the Tough}
+            {99} {Merchant}
+            {100} {A bodyguard}
+            {101} {Human Traveller}
+            {102} {A travelling gypsy merchant}
         }
     }
     {Faunist Guild} 
@@ -7658,6 +7719,7 @@
             {37} {A Young Woman}
             {38} {A Townsperson}
             {39} {Malvard, the Trader}
+            {40} {Cold Tiro has a Halibut by the tail!}
         }
         {Ratings} 
         {
@@ -9468,11 +9530,11 @@
             {30} {A Black Tank}
             {31} {A big frickin' boulder}
             {32} {A huge box }
-            {33} {A wavering blue portal}
-            {34} {A single gold coin}
-            {35} {The 3-K Kill List}
-            {36} {A Statue of Cancer the King}
-            {37} {A tall street light}
+            {33} {A single gold coin}
+            {34} {The 3-K Kill List}
+            {35} {A Statue of Cancer the King}
+            {36} {A tall street light}
+            {37} {A wavering blue portal}
         }
         {Mobs} 
         {
@@ -9495,34 +9557,34 @@
             {17} {A truck named Skarsnik}
             {18} {Grot's Jugger Support Mech}
             {19} {A grimare under the control of Hadrian}
-            {20} {Leaping Rat}
-            {21} {Plop the Valithyn}
-            {22} {Badger's Jugger Support Mech}
-            {23} {A tank named Mushroom}
-            {24} {Green Chinese Dragon}
-            {25} {Jade Phoenix}
-            {26} {Gold Chinese Dragon}
-            {27} {Villager}
-            {28} {Major Henkey, PhD <?>}
-            {29} {Police Officer}
-            {30} {A wandering pedestrian}
-            {31} {A busy pedestrian}
-            {32} {A small wandering spider}
-            {33} {Golden Phoenix}
-            {34} {Pennywise the Valithyn}
-            {35} {Black Tiger}
-            {36} {Charging Ram}
-            {37} {Minerva's Jugger Support Mech}
-            {38} {A tank named Rickypp}
-            {39} {Black Chinese Dragon}
-            {40} {Winged Horse}
-            {41} {Red Butterfly}
-            {42} {White Tiger}
-            {43} {Red Chinese Dragon}
-            {44} {Red Rabbit}
-            {45} {Sea Serpent}
-            {46} {Princess Qi}
-            {47} {Lumbering Ox}
+            {20} {Plop the Valithyn}
+            {21} {Badger's Jugger Support Mech}
+            {22} {A tank named Mushroom}
+            {23} {Green Chinese Dragon}
+            {24} {Jade Phoenix}
+            {25} {Gold Chinese Dragon}
+            {26} {Villager}
+            {27} {Major Henkey, PhD <?>}
+            {28} {Police Officer}
+            {29} {A wandering pedestrian}
+            {30} {A busy pedestrian}
+            {31} {Golden Phoenix}
+            {32} {Pennywise the Valithyn}
+            {33} {Black Tiger}
+            {34} {Charging Ram}
+            {35} {Minerva's Jugger Support Mech}
+            {36} {A tank named Rickypp}
+            {37} {Black Chinese Dragon}
+            {38} {Winged Horse}
+            {39} {Red Butterfly}
+            {40} {White Tiger}
+            {41} {Red Chinese Dragon}
+            {42} {Red Rabbit}
+            {43} {Sea Serpent}
+            {44} {Lumbering Ox}
+            {45} {Leaping Rat}
+            {46} {A small wandering spider}
+            {47} {Princess Qi}
         }
         {Ratings} 
         {
@@ -9713,16 +9775,30 @@
         {Items} 
         {
             {1} {Big red shoes}
-            {2} {Milkshake}
-            {3} {Big Mac}
+            {2} {Big Mac}
+            {3} {Milkshake}
+            {4} {A Lady's Pocketbook}
+            {5} {pickle shield}
+            {6} {A worn out mop}
         }
         {Mobs} 
         {
-            {1} {Ronald Mcdonald}
-            {2} {Nathan the Cashier}
-            {3} {Mouse}
-            {4} {Annoying Customer}
+            {1} {Mouse}
+            {2} {An annoying customer}
+            {3} {Annoying Customer}
+            {4} {Nathan the Cashier}
+            {5} {Ronald McDonald}
+            {6} {Matt, the Bratty Kid}
+            {7} {Fat Lady}
+            {8} {Cheeseburger}
+            {9} {Chicken Mcnugget}
+            {10} {Grumpy Old Man}
         }
+        {Ratings} 
+        {
+            {1} {10}
+        }
+        {Wizard} {Tuesdai}
     }
     {Medlar Castle} 
     {
@@ -10224,11 +10300,13 @@
             {6} {A dwarven steel axe}
             {7} {A steel key}
             {8} {A die}
-            {9} {A wooden sign}
-            {10} {A fish shaped fountain}
-            {11} {Some jewels}
-            {12} {Row of battle pikes (adorned)}
-            {13} {A dwarven steel pick}
+            {9} {A fish shaped fountain}
+            {10} {Some jewels}
+            {11} {Row of battle pikes (adorned)}
+            {12} {A dwarven steel pick}
+            {13} {A mining wagon}
+            {14} {A wooden sign}
+            {15} {Row of battle pikes }
         }
         {Mobs} 
         {
@@ -10238,34 +10316,41 @@
             {4} {Dik, Knivur Homeguard Sentry}
             {5} {Yauut, Knivur Homeguard Sentry}
             {6} {Ynioz, Knivur Homeguard Sentry}
-            {7} {Tisha, Captain of the Dwarven Homeguard}
-            {8} {Bboerb, Knivur Homeguard Sentry}
-            {9} {Wweiey, Knivur Homeguard Sentry}
-            {10} {Ked, Knivur Homeguard Sentry}
-            {11} {Ree, Knivur Homeguard Sentry}
-            {12} {Rfeuzd, Knivur Homeguard Sentry}
-            {13} {Chooq, Knivur Homeguard Sentry}
-            {14} {Poh, Knivur Homeguard Sentry}
-            {15} {Cop, Knivur Homeguard Sentry}
-            {16} {Lseoz, a very rich dwarf}
-            {17} {Waylan the dwarven shopkeeper}
-            {18} {Mot, Elite Knivur Peacekeeper}
-            {19} {Lguuqq, Elite Knivur Peacekeeper}
-            {20} {Gwain, The Dwarven Brigade Leader}
-            {21} {The dwarven barkeeper Otto}
-            {22} {A drunk dwarf}
-            {23} {Bun, Elite Knivur Peacekeeper}
-            {24} {Hnoiy, Elite Knivur Peacekeeper}
-            {25} {Vek, Elite Knivur Peacekeeper}
-            {26} {The dwarven arch wizard Brempa}
-            {27} {A dwarf}
-            {28} {Xog, the exhausted dwarven miner}
-            {29} {Xog, Dwarven Miner}
+            {7} {Bboerb, Knivur Homeguard Sentry}
+            {8} {Wweiey, Knivur Homeguard Sentry}
+            {9} {Ked, Knivur Homeguard Sentry}
+            {10} {Ree, Knivur Homeguard Sentry}
+            {11} {Rfeuzd, Knivur Homeguard Sentry}
+            {12} {Chooq, Knivur Homeguard Sentry}
+            {13} {Poh, Knivur Homeguard Sentry}
+            {14} {Cop, Knivur Homeguard Sentry}
+            {15} {Lseoz, a very rich dwarf}
+            {16} {Waylan the dwarven shopkeeper}
+            {17} {Mot, Elite Knivur Peacekeeper}
+            {18} {Lguuqq, Elite Knivur Peacekeeper}
+            {19} {Gwain, The Dwarven Brigade Leader}
+            {20} {The dwarven barkeeper Otto}
+            {21} {A drunk dwarf}
+            {22} {Bun, Elite Knivur Peacekeeper}
+            {23} {Hnoiy, Elite Knivur Peacekeeper}
+            {24} {Vek, Elite Knivur Peacekeeper}
+            {25} {The dwarven arch wizard Brempa}
+            {26} {Xog, the exhausted dwarven miner}
+            {27} {Xog, Dwarven Miner}
+            {28} {Qer, the tired dwarven miner}
+            {29} {Pij, the under-paid dwarven miner}
+            {30} {Lub, the under-paid dwarven miner}
+            {31} {Woim, Elite Knivur Peacekeeper}
+            {32} {A dwarf}
+            {33} {Yiup, Knivur Homeguard Sentry}
+            {34} {Qiux, Knivur Homeguard Sentry}
+            {35} {Pbuuym, Knivur Homeguard Sentry}
+            {36} {Tisha, Captain of the Dwarven Homeguard}
         }
         {Ratings} 
         {
-            {1} {27}
-            {2} {70}
+            {1} {70}
+            {2} {27}
         }
         {Wizard} {Talismon}
     }
@@ -10798,6 +10883,7 @@
             {48} {Gold bar}
             {49} {Armour}
             {50} {Golden Idol}
+            {51} {The electrocuted, slightly moldy corpse of Shadowling}
         }
         {Mobs} 
         {
@@ -10836,61 +10922,63 @@
             {33} {Rocont the Scorpion, Apprentice Magician}
             {34} {Rocont}
             {35} {Fire elemental}
-            {36} {Shadow Demon}
-            {37} {Hewileria, the Water Nymph}
-            {38} {Hewileria}
-            {39} {Cytitiral}
-            {40} {Wimnalmal, the Water Nymph}
-            {41} {Wimnalmal}
-            {42} {Shalindra, the Water Nymph}
-            {43} {weird}
-            {44} {Neniane, the Water Nymph}
-            {45} {Cytitiral, the Water Nymph}
-            {46} {Water Weird}
-            {47} {Qsedia, the Water Nymph}
-            {48} {Water elemental}
-            {49} {Giant mass of seaweed}
-            {50} {Carnivorous Plant}
-            {51} {Ogrefish}
-            {52} {Goblin shark}
-            {53} {Threadtail}
-            {54} {Eel}
-            {55} {Octopus}
-            {56} {Anglerfish}
-            {57} {Squid}
-            {58} {an hunter}
-            {59} {Fish-man hunter}
-            {60} {Fish Man}
-            {61} {Gar}
-            {62} {Oarfish}
-            {63} {Gulper}
-            {64} {Lanternfish}
-            {65} {Jellyfish}
-            {66} {Crestfish}
-            {67} {Chimaera}
-            {68} {Rattail}
-            {69} {Viperfish}
-            {70} {Giant squid}
-            {71} {Giant octopus}
-            {72} {Leyopan, Apprentice Prestidigitator}
-            {73} {Kelianna, Apprentice Thaumaturge}
-            {74} {Mind flayer}
-            {75} {Air Elemental}
-            {76} {Bazna'ad, Apprentice Mage}
-            {77} {Piee Enat, Imp Apprentice}
-            {78} {arth Elemental}
-            {79} {Grey Earth Elemental}
-            {80} {Earth Elemental}
-            {81} {Shadow Dragon}
+            {36} {Hewileria, the Water Nymph}
+            {37} {Hewileria}
+            {38} {Cytitiral}
+            {39} {Wimnalmal, the Water Nymph}
+            {40} {Wimnalmal}
+            {41} {Shalindra, the Water Nymph}
+            {42} {weird}
+            {43} {Neniane, the Water Nymph}
+            {44} {Cytitiral, the Water Nymph}
+            {45} {Water Weird}
+            {46} {Qsedia, the Water Nymph}
+            {47} {Water elemental}
+            {48} {Giant mass of seaweed}
+            {49} {Carnivorous Plant}
+            {50} {Ogrefish}
+            {51} {Goblin shark}
+            {52} {Threadtail}
+            {53} {Eel}
+            {54} {Octopus}
+            {55} {Anglerfish}
+            {56} {Squid}
+            {57} {an hunter}
+            {58} {Fish-man hunter}
+            {59} {Fish Man}
+            {60} {Gar}
+            {61} {Oarfish}
+            {62} {Gulper}
+            {63} {Lanternfish}
+            {64} {Jellyfish}
+            {65} {Crestfish}
+            {66} {Chimaera}
+            {67} {Rattail}
+            {68} {Viperfish}
+            {69} {Giant squid}
+            {70} {Giant octopus}
+            {71} {Leyopan, Apprentice Prestidigitator}
+            {72} {Kelianna, Apprentice Thaumaturge}
+            {73} {Mind flayer}
+            {74} {Air Elemental}
+            {75} {Bazna'ad, Apprentice Mage}
+            {76} {Piee Enat, Imp Apprentice}
+            {77} {arth Elemental}
+            {78} {Grey Earth Elemental}
+            {79} {Earth Elemental}
+            {80} {Shadow Dragon}
+            {81} {A shadowling}
+            {82} {owling}
+            {83} {Shadow Demon}
         }
         {Ratings} 
         {
-            {1} {12}
-            {2} {9}
-            {3} {46}
-            {4} {3}
-            {5} {34}
-            {6} {23}
+            {1} {9}
+            {2} {46}
+            {3} {34}
+            {4} {23}
+            {5} {12}
+            {6} {3}
         }
         {Wizard} {Tramane}
     }
@@ -11044,51 +11132,53 @@
         {Items} 
         {
             {1} {Average heart of light}
-            {2} {A topaz gem}
-            {3} {An emerald gem}
-            {4} {A diamond gem}
-            {5} {The horn of Detherus}
-            {6} {Horn}
-            {7} {Shadowmail gloves}
-            {8} {Shadow Axe (enchanted)}
-            {9} {Shadowmail armour}
-            {10} {Topaz dust}
-            {11} {sapphire dust}
-            {12} {ruby dust}
-            {13} {A sapphire gem}
-            {14} {A ruby gem}
-            {15} {Ruby dust \x7B2\x7D}
-            {16} {Emerald dust}
-            {17} {Diamond dust}
-            {18} {A pulsating matrix of blue crystals}
+            {2} {The horn of Detherus}
+            {3} {Horn}
+            {4} {Shadow Axe (enchanted)}
+            {5} {Shadowmail armour}
+            {6} {Ruby dust \x7B2\x7D}
+            {7} {A pulsating matrix of blue crystals}
+            {8} {The electrocuted, maggot-infested remains of Shadowling}
+            {9} {A topaz gem}
+            {10} {Shadow Sword }
+            {11} {A ruby gem}
+            {12} {Shadowmail gloves}
+            {13} {A diamond gem}
+            {14} {topaz dust}
+            {15} {emerald dust}
+            {16} {ruby dust}
+            {17} {A sapphire gem}
+            {18} {sapphire dust}
+            {19} {An emerald gem}
+            {20} {diamond dust}
         }
         {Mobs} 
         {
-            {1} {A shadow demon}
-            {2} {Shadow Demon}
-            {3} {Mist Demon}
-            {4} {Shadow lord of the first circle}
-            {5} {Shadow Lord(1st)}
+            {1} {Detherus}
+            {2} {lord of the fourth circle}
+            {3} {lord of the third circle}
+            {4} {owling}
+            {5} {A shadowling}
             {6} {Detherus, shadow lord of the fifth circle}
-            {7} {Detherus}
-            {8} {lord of the fourth circle}
-            {9} {lord of the third circle}
-            {10} {Shadow lord of the fourth circle}
-            {11} {Shadow Lord(4th)}
-            {12} {Shadow Serpent}
-            {13} {A shadow demon-ape}
-            {14} {Shadow Ape}
-            {15} {Shadow lord of the third circle}
-            {16} {Shadow Lord(3rd)}
-            {17} {Shadow lord of the second circle}
-            {18} {Shadow Lord(2nd)}
-            {19} {Shapeshifter}
-            {20} {Shadowling}
-            {21} {A shadow serpent}
+            {7} {Shadow Lord(4th)}
+            {8} {Shadow Serpent}
+            {9} {Shapeshifter}
+            {10} {A shadow demon-ape}
+            {11} {Shadow Ape}
+            {12} {Shadow Lord(1st)}
+            {13} {A shadow demon}
+            {14} {Shadow Demon}
+            {15} {Mist Demon}
+            {16} {Shadow lord of the fourth circle}
+            {17} {Shadow lord of the first circle}
+            {18} {A shadow serpent}
+            {19} {Shadow lord of the third circle}
+            {20} {Shadow Lord(3rd)}
+            {21} {A shadow shapeshifter}
             {22} {A mist demon}
-            {23} {A shadow shapeshifter}
-            {24} {owling}
-            {25} {A shadowling}
+            {23} {Shadow lord of the second circle}
+            {24} {Shadow Lord(2nd)}
+            {25} {Shadowling}
         }
         {Ratings} 
         {
@@ -11657,9 +11747,10 @@
             {16} {Officer}
             {17} {Pedestrian}
             {18} {A wandering pedestrian}
-            {19} {Scruffy looking man}
-            {20} {A young punk}
-            {21} {Giant Mack Truck}
+            {19} {A young punk}
+            {20} {Giant Mack Truck}
+            {21} {A skinny white guy in a black trench coat}
+            {22} {Scruffy looking man}
         }
     }
     {Newbie Academy} 
@@ -11796,11 +11887,40 @@
     {
         {Items} 
         {
-            {1} {A balloon dock}
+            {1} {Forlorn}
+            {2} {Aquamarine Spherule}
+            {3} {Phase}
+            {4} {Majesty}
+            {5} {Signal}
+            {6} {Orange Spherule}
+            {7} {Humble}
+            {8} {Yellow Spherule}
+            {9} {Brown Spherule}
+            {10} {Aspect}
+            {11} {Promise}
+            {12} {Resonant}
+            {13} {A balloon dock}
         }
         {Mobs} 
         {
-            {1} {Gloom}
+            {1} {Grey}
+            {2} {Sparkling Glimmer}
+            {3} {Dulled Silver}
+            {4} {Peace}
+            {5} {Dismal}
+            {6} {Yellowish Glimmer}
+            {7} {Paragon}
+            {8} {Rapid}
+            {9} {Swoop}
+            {10} {Radiance}
+            {11} {Bulwark}
+            {12} {Impediment}
+            {13} {Hostile}
+            {14} {Mud}
+            {15} {Gloom}
+            {16} {Hunter green}
+            {17} {Resilient}
+            {18} {Timorous}
         }
         {Ratings} 
         {
@@ -12005,19 +12125,42 @@
             {8} {Jimmy}
         }
     }
+    {Orc Tunnel} 
+    {
+        {Mobs} 
+        {
+            {1} {A burly orc}
+            {2} {An orc thief}
+        }
+        {Ratings} 
+        {
+            {1} {12}
+        }
+        {Wizard} {Skinless}
+    }
     {Orc Village} 
     {
         {Items} 
         {
-            {1} {Light leather armour}
-            {2} {Armor of the Orc Chief}
-            {3} {A pair of heavy leather boots}
+            {1} {Armor of the Orc Chief}
+            {2} {Light leather armour}
+            {3} {A long, spiked club}
+            {4} {A large spear}
+            {5} {A pair of heavy leather boots}
+            {6} {Sword of the Orc Chief }
+            {7} {Armor of the Orc Chief }
+            {8} {A pair of heavy-duty boots }
         }
         {Mobs} 
         {
             {1} {A small brown hare}
-            {2} {Orc Soldier}
-            {3} {Burly Orc}
+            {2} {Orc Commander}
+            {3} {Orc Soldier}
+            {4} {dyguard}
+            {5} {Orc Bodyguard}
+            {6} {Graktah, Orc Chief}
+            {7} {Burly Orc}
+            {8} {Female Orc}
         }
         {Ratings} 
         {
@@ -12561,130 +12704,130 @@
             {14} {A Tome of 'Forge and Hammer', Volume I}
             {15} {A skinned corpse of Vilgan, draped upon a sickle}
             {16} {A little brown monkey doll}
-            {17} {A bronze plaque}
-            {18} {A Stall}
-            {19} {A small pedestal}
-            {20} {A Tome of 'To Serve Man', Volume I}
-            {21} {Top Guild List}
-            {22} {A shimmering portal}
-            {23} {Edible Panties}
-            {24} {Dominatrix Gloves}
-            {25} {Dominatrix Boots}
-            {26} {A small glass sphere with a hamster in it}
-            {27} {The Tower of Cletus}
-            {28} {The Pope}
-            {29} {The Sofa of Cletus}
-            {30} {The Fridge of Cletus  (7 items)}
-            {31} {The Beer Tree of Cletus (nifty)}
-            {32} {A conglomeration of mutated nanites}
-            {33} {Death's Valued Customers List}
-            {34} {A bright white capsule}
-            {35} {A Tome of 'Forge and Hammer', Volume II}
-            {36} {A glass of wine \x7B3\x7D}
-            {37} {Crocodile tooth}
-            {38} {Rod of Dispater (enchanted)}
-            {39} {Wings of Mammon}
-            {40} {A sign hangs from the counter}
-            {41} {A lump of seaweed}
-            {42} {Some translucent thread }
-            {43} {A pile of mud}
-            {44} {A flexible piece of metal}
-            {45} {A piece of rotten meat}
-            {46} {Transmogrifier}
-            {47} {Page eleven, A.Q}
-            {48} {An essence bead }
-            {49} {A sea green serpent shaped ring}
-            {50} {A brightly glowing brown vial}
-            {51} {A brightly glowing purple vial}
-            {52} {A brightly glowing orange vial}
-            {53} {A brightly glowing translucent vial}
-            {54} {A brightly glowing red vial}
-            {55} {A brightly glowing golden vial}
-            {56} {A glowing brown vial}
-            {57} {A glowing purple vial}
-            {58} {A glowing orange vial}
-            {59} {A glowing translucent vial}
-            {60} {A glowing red vial}
-            {61} {A glowing golden vial}
-            {62} {A faintly glowing translucent vial}
-            {63} {A faintly glowing brown vial}
-            {64} {A faintly glowing golden vial}
-            {65} {A faintly glowing red vial}
-            {66} {A faintly glowing purple vial}
-            {67} {A faintly glowing orange vial}
-            {68} {A silvery line }
-            {69} {A spiked zallot}
-            {70} {A piece of grahl root}
-            {71} {A flask of water}
-            {72} {A translucent glass flask}
-            {73} {A large Illate eel}
-            {74} {*wand of secret door location }
-            {75} {*Superior fishing hooks}
-            {76} {*Zelligar's Headband -=||=- }
-            {77} {*Axe}
-            {78} {*Aura of Heavenly Protection }
-            {79} {*A transparent camisole }
-            {80} {*Wings of Mammon }
-            {81} {*Ring of Hearts }
-            {82} {*The Gem of the Zodiac }
-            {83} {An enchanted coffin   }
-            {84} {*A melded matrix of Constitution and Intelligence}
-            {85} {*Explorer's Torch}
-            {86} {*Dundee hunting permit}
-            {87} {*Safari Hat}
-            {88} {*Tactician's Manual}
-            {89} {*A Transmuter's Stone }
-            {90} {*A ring of house keys}
-            {91} {*An auction line}
-            {92} {*Assassin's Mark}
-            {93} {*A Crafter's Satchel}
-            {94} {*Brass Knuckles}
-            {95} {*long shimmering thread}
-            {96} {*Worn leather book}
-            {97} {*Ninja badge of honor }
-            {98} {*Clan Symbol of Nightmare Asylum}
-            {99} {An incredibly strong lockbox made of titanium}
-            {100} {Comment Board for Beren containing no messages}
-            {101} {The slightly moldy corpse of Insect}
-            {102} {Comment Board for Tchazzar containing no messages}
-            {103} {Comment Board for Demos containing no messages}
-            {104} {Comment Board for Dorwin containing no messages}
-            {105} {Comment Board for Ariakis containing no messages}
-            {106} {Comment Board for Cable containing no messages}
-            {107} {Comment Board for Benjums containing no messages}
-            {108} {Comment Board for Rashan containing no messages}
-            {109} {The Altar of UNO}
-            {110} {A dice machine}
-            {111} {A gumball machine}
-            {112} {Cloak of the Spirit}
-            {113} {Small Figurine}
-            {114} {A sampling kit}
-            {115} {A Fused Kayos Blobber}
-            {116} {A slightly melted, frozen corpse of Vilgan}
-            {117} {Dark elven rapier}
-            {118} {Rod of Lordly Might}
-            {119} {Luminous Globe}
-            {120} {A big red button}
-            {121} {A Trashcan}
-            {122} {A large sign}
-            {123} {Breastplate of the Spirit}
-            {124} {A suit of battered chainmail }
-            {125} {A newspaper rack}
-            {126} {The 3k Top Player List}
-            {127} {Another 3k Top Player List}
-            {128} {Ryft's Pub Crawl Dispenser}
-            {129} {The Three-Kingdoms 'Least Wanted' poster}
-            {130} {A small ball of lint}
-            {131} {A greenish street sign}
-            {132} {A weathered wooden sign, pointing west}
-            {133} {A small wooden sign}
-            {134} {An ATM  Pinnacle Bank}
-            {135} {Inago's Neuro-Data Transfer Module}
-            {136} {A Tome of 'Enhancing Enchanting', Volume II}
-            {137} {A single gold coin}
-            {138} {The 3-K Kill List}
-            {139} {A Statue of Cancer the King}
-            {140} {A tall street light}
+            {17} {A Stall}
+            {18} {A small pedestal}
+            {19} {A Tome of 'To Serve Man', Volume I}
+            {20} {Top Guild List}
+            {21} {A shimmering portal}
+            {22} {Edible Panties}
+            {23} {Dominatrix Gloves}
+            {24} {Dominatrix Boots}
+            {25} {A small glass sphere with a hamster in it}
+            {26} {The Tower of Cletus}
+            {27} {The Pope}
+            {28} {The Sofa of Cletus}
+            {29} {The Fridge of Cletus  (7 items)}
+            {30} {The Beer Tree of Cletus (nifty)}
+            {31} {A conglomeration of mutated nanites}
+            {32} {Death's Valued Customers List}
+            {33} {A bright white capsule}
+            {34} {A Tome of 'Forge and Hammer', Volume II}
+            {35} {A glass of wine \x7B3\x7D}
+            {36} {Crocodile tooth}
+            {37} {Rod of Dispater (enchanted)}
+            {38} {Wings of Mammon}
+            {39} {A sign hangs from the counter}
+            {40} {A lump of seaweed}
+            {41} {Some translucent thread }
+            {42} {A pile of mud}
+            {43} {A flexible piece of metal}
+            {44} {A piece of rotten meat}
+            {45} {Transmogrifier}
+            {46} {Page eleven, A.Q}
+            {47} {An essence bead }
+            {48} {A sea green serpent shaped ring}
+            {49} {A brightly glowing brown vial}
+            {50} {A brightly glowing purple vial}
+            {51} {A brightly glowing orange vial}
+            {52} {A brightly glowing translucent vial}
+            {53} {A brightly glowing red vial}
+            {54} {A brightly glowing golden vial}
+            {55} {A glowing brown vial}
+            {56} {A glowing purple vial}
+            {57} {A glowing orange vial}
+            {58} {A glowing translucent vial}
+            {59} {A glowing red vial}
+            {60} {A glowing golden vial}
+            {61} {A faintly glowing translucent vial}
+            {62} {A faintly glowing brown vial}
+            {63} {A faintly glowing golden vial}
+            {64} {A faintly glowing red vial}
+            {65} {A faintly glowing purple vial}
+            {66} {A faintly glowing orange vial}
+            {67} {A silvery line }
+            {68} {A spiked zallot}
+            {69} {A piece of grahl root}
+            {70} {A flask of water}
+            {71} {A translucent glass flask}
+            {72} {A large Illate eel}
+            {73} {*wand of secret door location }
+            {74} {*Superior fishing hooks}
+            {75} {*Zelligar's Headband -=||=- }
+            {76} {*Axe}
+            {77} {*Aura of Heavenly Protection }
+            {78} {*A transparent camisole }
+            {79} {*Wings of Mammon }
+            {80} {*Ring of Hearts }
+            {81} {*The Gem of the Zodiac }
+            {82} {An enchanted coffin   }
+            {83} {*A melded matrix of Constitution and Intelligence}
+            {84} {*Explorer's Torch}
+            {85} {*Dundee hunting permit}
+            {86} {*Safari Hat}
+            {87} {*Tactician's Manual}
+            {88} {*A Transmuter's Stone }
+            {89} {*A ring of house keys}
+            {90} {*An auction line}
+            {91} {*Assassin's Mark}
+            {92} {*A Crafter's Satchel}
+            {93} {*Brass Knuckles}
+            {94} {*long shimmering thread}
+            {95} {*Worn leather book}
+            {96} {*Ninja badge of honor }
+            {97} {*Clan Symbol of Nightmare Asylum}
+            {98} {An incredibly strong lockbox made of titanium}
+            {99} {Comment Board for Beren containing no messages}
+            {100} {The slightly moldy corpse of Insect}
+            {101} {Comment Board for Tchazzar containing no messages}
+            {102} {Comment Board for Demos containing no messages}
+            {103} {Comment Board for Dorwin containing no messages}
+            {104} {Comment Board for Ariakis containing no messages}
+            {105} {Comment Board for Cable containing no messages}
+            {106} {Comment Board for Benjums containing no messages}
+            {107} {Comment Board for Rashan containing no messages}
+            {108} {The Altar of UNO}
+            {109} {A dice machine}
+            {110} {A gumball machine}
+            {111} {Cloak of the Spirit}
+            {112} {Small Figurine}
+            {113} {A sampling kit}
+            {114} {A Fused Kayos Blobber}
+            {115} {A slightly melted, frozen corpse of Vilgan}
+            {116} {Dark elven rapier}
+            {117} {Rod of Lordly Might}
+            {118} {Luminous Globe}
+            {119} {A big red button}
+            {120} {A Trashcan}
+            {121} {A large sign}
+            {122} {Breastplate of the Spirit}
+            {123} {A suit of battered chainmail }
+            {124} {A newspaper rack}
+            {125} {The 3k Top Player List}
+            {126} {Another 3k Top Player List}
+            {127} {Ryft's Pub Crawl Dispenser}
+            {128} {The Three-Kingdoms 'Least Wanted' poster}
+            {129} {A small ball of lint}
+            {130} {A greenish street sign}
+            {131} {A weathered wooden sign, pointing west}
+            {132} {A small wooden sign}
+            {133} {An ATM  Pinnacle Bank}
+            {134} {Inago's Neuro-Data Transfer Module}
+            {135} {A Tome of 'Enhancing Enchanting', Volume II}
+            {136} {A single gold coin}
+            {137} {The 3-K Kill List}
+            {138} {A Statue of Cancer the King}
+            {139} {A tall street light}
+            {140} {A bronze plaque}
         }
         {Mobs} 
         {
@@ -12753,6 +12896,9 @@
             {63} {Giant squid}
             {64} {Vilgan}
             {65} {A valithyn under the control of Blutash}
+            {66} {Shapeshifter}
+            {67} {Shadow Ape}
+            {68} {Shadow Lord(3rd)}
         }
     }
     {Pinnacle Law Office} 
@@ -15191,6 +15337,10 @@
         {
             {1} {Amulet of the Dragon}
         }
+        {Mobs} 
+        {
+            {1} {Shadow Demon}
+        }
     }
     {Shadow Tree} 
     {
@@ -17607,22 +17757,28 @@
             {35} {A little brown monkey doll}
             {36} {An Outhouse}
             {37} {A joystick}
-            {38} {A rattlesnake tail}
-            {39} {An ordinary penny}
-            {40} {A spoon}
-            {41} {A crystal bowling ball}
-            {42} {A fork}
-            {43} {Basset-brand pants}
-            {44} {Some Common Sense}
-            {45} {A bottle of bleach}
-            {46} {A mop }
-            {47} {An open cage with 4 four-foot long legs}
-            {48} {A closed cage}
-            {49} {A utility sink}
-            {50} {A complicated door }
-            {51} {A rather large orange}
-            {52} {A small box}
-            {53} {An idol}
+            {38} {An ordinary penny}
+            {39} {Some Common Sense}
+            {40} {An open cage with 4 four-foot long legs}
+            {41} {A rattlesnake tail}
+            {42} {A crystal bowling ball}
+            {43} {A fork}
+            {44} {A spoon}
+            {45} {A piece of paper}
+            {46} {A small box}
+            {47} {Basset-brand pants}
+            {48} {An idol}
+            {49} {A bottle of bleach}
+            {50} {A mop }
+            {51} {A wood plank}
+            {52} {A closed cage}
+            {53} {A rather large orange}
+            {54} {A utility sink}
+            {55} {A complicated door }
+            {56} {A large lumpy bag}
+            {57} {A beechnut}
+            {58} {A tree}
+            {59} {A torn useless bag}
         }
         {Mobs} 
         {
@@ -17635,16 +17791,23 @@
             {7} {Baldur's Border Collie}
             {8} {A bolwyn under the control of Azalin}
             {9} {Villager}
-            {10} {A comatose guard}
-            {11} {A senseless guard}
-            {12} {A stunned jet black rabbit}
-            {13} {A Redactor}
-            {14} {Eric Idle}
+            {10} {A Redactor}
+            {11} {Eric Idle}
+            {12} {A comatose guard}
+            {13} {A senseless guard}
+            {14} {A stunned jet black rabbit}
             {15} {A guard of the kingdom}
-            {16} {Paige the page}
-            {17} {Blaise Kayser}
-            {18} {A lazy ol' hound dog}
+            {16} {Blaise Kayser}
+            {17} {An enormously fat bald woman}
+            {18} {A tipsy little pinto}
             {19} {Redactor}
+            {20} {Jorge F. Pinto, Dean of Students}
+            {21} {Paige the page}
+            {22} {20 Mockeries of Humanity}
+            {23} {Mr. Monte}
+            {24} {A mob of disobedient students}
+            {25} {Mr. Vorzjes}
+            {26} {A lazy ol' hound dog}
         }
         {Ratings} 
         {
@@ -17821,15 +17984,24 @@
             {38} {Kresh Claws}
             {39} {Kresh Coat}
             {40} {Big Kresh Claws}
-            {41} {A Fire Visor (augmented)}
-            {42} {A Fire Shield (augmented)}
-            {43} {A Fire Ring (augmented)}
-            {44} {A Fire Helmet (augmented)}
-            {45} {A Fire Gloves (augmented)}
-            {46} {A Fire Cloak (augmented)}
-            {47} {A Fire Boots (augmented)}
-            {48} {A Fire Armor (augmented)}
-            {49} {A Fire Amulet (augmented)}
+            {41} {A Fire Visor }
+            {42} {A Fire Shield }
+            {43} {A Fire Ring }
+            {44} {A Fire Helmet }
+            {45} {A Fire Gloves }
+            {46} {A Fire Cloak }
+            {47} {A Fire Boots }
+            {48} {A Fire Armor }
+            {49} {A Fire Amulet }
+            {50} {A Fire Amulet (augmented)}
+            {51} {A Fire Armor (augmented)}
+            {52} {A Fire Boots (augmented)}
+            {53} {A Fire Cloak (augmented)}
+            {54} {A Fire Gloves (augmented)}
+            {55} {A Fire Helmet (augmented)}
+            {56} {A Fire Ring (augmented)}
+            {57} {A Fire Shield (augmented)}
+            {58} {A Fire Visor (augmented)}
         }
         {Mobs} 
         {
@@ -17896,9 +18068,11 @@
             {61} {Kresh Pack Leader}
             {62} {Small Kresh Pack}
             {63} {Warhaft}
-            {64} {A fire-lion from Mount Thunder}
-            {65} {A Demondim Mole}
+            {64} {A Demondim Weasel}
+            {65} {A fire-lion from Mount Thunder}
             {66} {A Demondim Badger}
+            {67} {A Demondim Mole}
+            {68} {Fire-lion}
         }
         {Ratings} 
         {
@@ -17923,6 +18097,16 @@
             {11} {Lore Sword (augmented)}
             {12} {Wolf Claws (augmented)}
             {13} {Booty}
+            {14} {A Spectre Ring }
+            {15} {A Spectre Visor }
+            {16} {A Spectre Shield }
+            {17} {A Spectre Boots }
+            {18} {A Spectre Gloves }
+            {19} {A Spectre Cloak }
+            {20} {A Spectre Helmet }
+            {21} {A Spectre Armor }
+            {22} {A Spectre Amulet }
+            {23} {Staff of Law }
         }
         {Mobs} 
         {
@@ -17935,38 +18119,45 @@
             {7} {A Ramen Cord Leader}
             {8} {A Ramen Cord}
             {9} {A Kresh}
-            {10} {Kevin --green}
-            {11} {A Spectre}
-            {12} {Kresh Pack Leader}
-            {13} {Medium Kresh Pack}
-            {14} {Living Tree}
-            {15} {Angry Tree}
-            {16} {Forestal of Garroting Deep}
-            {17} {Demondim Rat}
-            {18} {Vortex of Dread}
-            {19} {Demondim Spider}
-            {20} {Vortex of Terror}
-            {21} {Kresh}
-            {22} {Vortex of Horror}
-            {23} {Westron Wind}
-            {24} {Drinishok}
-            {25} {Northron Wind}
-            {26} {Tornado}
-            {27} {Wolf}
-            {28} {Demondim Raven}
-            {29} {Cavewight Warrior}
-            {30} {Big Cavewight Warrior}
-            {31} {Small Cavewight Warparty}
+            {10} {Kresh Pack Leader}
+            {11} {Medium Kresh Pack}
+            {12} {Living Tree}
+            {13} {Angry Tree}
+            {14} {Forestal of Garroting Deep}
+            {15} {Demondim Rat}
+            {16} {Vortex of Dread}
+            {17} {Demondim Spider}
+            {18} {Vortex of Terror}
+            {19} {Kresh}
+            {20} {Vortex of Horror}
+            {21} {Westron Wind}
+            {22} {Drinishok}
+            {23} {Northron Wind}
+            {24} {Tornado}
+            {25} {Wolf}
+            {26} {Demondim Raven}
+            {27} {Cavewight Warrior}
+            {28} {Big Cavewight Warrior}
+            {29} {Small Cavewight Warparty}
+            {30} {Lena}
+            {31} {Atiaran}
             {32} {Trell}
             {33} {An Old Woman}
-            {34} {A Stonedowner Herder}
-            {35} {A Stonedowner Farmer}
-            {36} {A Warhaft}
-            {37} {A Small Kresh Pack}
-            {38} {An Urvile Lorewarden Wedge}
-            {39} {A Small Cavewight Warparty}
-            {40} {A Skeleton}
-            {41} {Skeleton}
+            {34} {A Skeleton}
+            {35} {Skeleton}
+            {36} {A Spectre}
+            {37} {Kevin --Glowing Emerald Green}
+            {38} {Kevin --green}
+            {39} {Elena --Glowing Emerald Green}
+            {40} {Elena --green}
+            {41} {A Stonedowner Herder}
+            {42} {A Stonedowner Farmer}
+            {43} {A Warhaft}
+            {44} {A Small Kresh Pack}
+            {45} {An Urvile Lorewarden Wedge}
+            {46} {A Small Cavewight Warparty}
+            {47} {A Demondim Mole}
+            {48} {A Demondim Badger}
         }
     }
     {The Lost Village of Willothorn} 
@@ -19499,6 +19690,11 @@
             {1} {Taxi Cab}
             {2} {Mugger}
         }
+        {Ratings} 
+        {
+            {1} {40}
+        }
+        {Wizard} {Pfunk}
     }
     {Wayhaven} 
     {

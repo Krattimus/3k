@@ -3218,6 +3218,23 @@
                 {1} {29987}
             }
         }
+        {A sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23435}
+                {2} {23509}
+            }
+        }
+        {Amulet of Rage} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23514}
+            }
+        }
         {Average fragment of compassion} 
         {
             {Description} { Average fragment of compassion  [ AVERAGE FRAGMENT OF COMPASSION ]  A purple fragment like this really is a wonderful thing.  The way it twinkles as the colours bend in on itself.  This should probably go to someone who's down on their luck.  You can assemble 5 of these fragments into a single essence.  This item can be stashed in a crafting satchel.  Type: Fragment Of Compassion Minimum Skill: 30 Trivial Skill: 40 An Orc guard   You press your advantage on your outsmarted foe! An Orc guard   An Orc guard   An Orc guard   An Orc guard   An Orc guard   You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You steadily block the brunt of the incoming attack. An Orc guard An Orc guard }
@@ -3240,6 +3257,14 @@
             {Rooms} 
             {
                 {1} {29961}
+            }
+        }
+        {Bracers of Protection +2} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23514}
             }
         }
         {Invisible Shield} 
@@ -4618,6 +4643,17 @@
             }
         }
     }
+    {Bowling City} 
+    {
+        {A poster tacked over the sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17647}
+            }
+        }
+    }
     {Brewery Swamp} 
     {
         {A small box of Laundry Detergent} 
@@ -4871,6 +4907,30 @@
                 {1} {2356}
             }
         }
+        {*silver torch (lit)} 
+        {
+            {Description} {   You study the damage done to the corpse in an effort to learn  Deadman: 0 how to best defeat your next foe.  Bonehead, you're at max hit points already.  (*silver torch (lit)?)  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {2352}
+            }
+        }
+        {A Carnegie Hall Ticket} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {2377}
+            }
+        }
+        {A large red fireaxe (enchanted)} 
+        {
+            {Description} { You study the damage done to the corpse in an effort to learn how to best defeat your next foe.   New York Fire Chief     You lay hands upon yourself and feel healed.  (a large red fireaxe (enchanted)?)  Deadman: 0  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {2374}
+            }
+        }
         {An expensive ladies wristwatch} 
         {
             {Description} {   An expensive ladies wristwatch  This is a very expensive delicate wristwatch with four small diamonds set into the pearl white face. The ivory leather strap has been accented with dark green and pink stitching.  The time is currently five forty-five am.  The other is in perfect condition. This armor has the following resistances: 7 edged, 3 blunt, 2 fire, 1 ice, 1 mind, 2 energy, 4 poison It looks light.    Your tactical advantage ends.  You are standing in an aisle here that leads down to the front of the hall. On your west and southwest is a row of seats, most of them full.  The aisle leads north and east back into the foyer and north down towards the stage.  Onstage, the musicians of the orchestra are coming out to warm up their instruments. The concert is about to begin.  }
@@ -4919,6 +4979,14 @@
             {Rooms} 
             {
                 {1} {2390}
+            }
+        }
+        {X53.5 high-voltage taser baton (enchanted)} 
+        {
+            {Description} { A Large Usher Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {2376}
             }
         }
     }
@@ -5580,8 +5648,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {300}
-                {2} {196}
+                {1} {196}
+                {2} {300}
             }
         }
         {A giant faucet} 
@@ -5700,8 +5768,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {301}
-                {2} {16709}
+                {1} {16709}
+                {2} {301}
             }
         }
         {A mud puddle} 
@@ -5827,8 +5895,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {300}
-                {2} {196}
+                {1} {196}
+                {2} {300}
             }
         }
         {A purple mutant plant} 
@@ -5897,8 +5965,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {300}
-                {2} {196}
+                {1} {196}
+                {2} {300}
             }
         }
         {A single gold coin} 
@@ -6536,6 +6604,14 @@
             {Rooms} 
             {
                 {1} {301}
+            }
+        }
+        {A poster tacked over the sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17684}
             }
         }
     }
@@ -15500,6 +15576,14 @@
     }
     {Fantasy} 
     {
+        {A Ruined Town} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1495}
+            }
+        }
         {A bit of thyme} 
         {
             {Description} { A pinch of dried thyme.  This valuable herb is used in both  the seasoning of food and the treatment of illness.  Its scent  is just short of intoxicating.  }
@@ -15598,6 +15682,14 @@
             {Rooms} 
             {
                 {1} {37071}
+            }
+        }
+        {A gypsy's wagon} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1495}
             }
         }
         {A hole} 
@@ -15730,6 +15822,7 @@
                 {7} {7840}
                 {8} {1643}
                 {9} {1642}
+                {10} {1495}
             }
         }
         {A piece of crystalrock \x7B5\x7D} 
@@ -15796,6 +15889,7 @@
                 {1} {6557}
                 {2} {7840}
                 {3} {1639}
+                {4} {23432}
             }
         }
         {A piece of marjoram \x7B3\x7D} 
@@ -24080,6 +24174,22 @@
     }
     {Mcdonald's} 
     {
+        {A Lady's Pocketbook} 
+        {
+            {Description} {  You study the damage done to the corpse in an effort to learn how to best defeat your next foe. Fat lady   Deadman: 0 A Lady's Pocketbook  A red lady's pocketbook. You can <put> and <get> things from it. You can put things in it. It looks light.  Deadman: 0    You have become grounded in this plane yet again. }
+            {Rooms} 
+            {
+                {1} {34378}
+            }
+        }
+        {A worn out mop} 
+        {
+            {Description} {    You study the damage done to the corpse in an effort to learn how to best defeat your next foe.  Grumpy old man  Psionic waves emanate from your body.  Deadman: 0 A worn out mop  A worn out mop.  You could probably wield it. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 2 (edged).  It looks light.  Deadman: 0    Your unarmed frenzy ends. }
+            {Rooms} 
+            {
+                {1} {34382}
+            }
+        }
         {Big Mac} 
         {
             {Description} {  Big Mac It once was a Big Mac, now it's green and fuzzy, but you can eat it anyways. It looks light. Mouse H 1560/1560 TS 12/12 D  122/122  E  176  Accuracy 27.83 Corpses:  I  0 C  0 H 1560/1560 TS 12/12 D  122/122  E  176 HO: 0.00 HI: 0.00 LO: 24.89 LI: 0.00 [0] Mouse  H 1560/1560 TS 12/12 D  122/122  E  176 HO: 0.00 HI: 0.00 LO: 24.89 LI: 0.00 [0] Mouse  H 1560/1560 TS 12/12 D  122/122  E  176 HO: 0.00 HI: 0.00 LO: 0.00 LI: 0.00 [0] Mouse  H 1560/1560 TS 12/12 D  122/122  E  176 HO: 0.00 HI: 0.00 LO: 0.00 LI: 0.00 [13] |--M------------P-----|  Mouse  You press your advantage on your outsmarted foe! You swing the Sword of Spirit at your foe. H 1560/1560 TS 12/12 D  122/122  E  176 HO: 0.00 HI: 0.00 LO: 0.00 LI: 0.00 [13] |--M------------P-----|  Mouse   Engage H 1560/1560 TS 12/12 D  122/122  E  176 HO: 0.00 HI: 0.00 LO: 0.00 LI: 0.00 [13] |--M------------P-----|  Mouse   Engage H 1560/1560 TS 12/12 D  122/122  E  176 HO: 14.94 HI: 0.00 LO: 0.00 LI: 0.00 [13] |--M------------P-----|  Mouse   Engage Mouse advances! You advance! }
@@ -24099,10 +24209,18 @@
         }
         {Milkshake} 
         {
-            {Description} { A foamy milkshake.  It's your favorite flavor.  Maybe you should drink it. It looks light.  }
+            {Description} {  You study the damage done to the corpse in an effort to learn how to best defeat your next foe. Nathan the Cashier     Milkshake  A foamy milkshake.  It's your favorite flavor.  Maybe you should drink it. It looks light.  Deadman: 0  Deadman: 0    }
             {Rooms} 
             {
                 {1} {34377}
+            }
+        }
+        {pickle shield} 
+        {
+            {Description} {     You study the damage done to the corpse in an effort to learn how to best defeat your next foe. Cheeseburger   Deadman: 0 pickle shield    A hard, stale pickle.  You could use it as a shield.  The pickle is in perfect condition. This armor has the following resistances: 2 fire, 1 ice, 3 radiation It looks light.  Deadman: 0    You have become grounded in this plane yet again. }
+            {Rooms} 
+            {
+                {1} {34381}
             }
         }
     }
@@ -25806,6 +25924,14 @@
                 {1} {30553}
             }
         }
+        {A mining wagon} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {30575}
+            }
+        }
         {A steel key} 
         {
             {Description} {  A steel key  A small steel key It looks light. }
@@ -25829,6 +25955,7 @@
             {Rooms} 
             {
                 {1} {30555}
+                {2} {30525}
             }
         }
         {Adamantite Dual Staff} 
@@ -25845,6 +25972,14 @@
             {Rooms} 
             {
                 {1} {37843}
+            }
+        }
+        {Row of battle pikes } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {30507}
             }
         }
         {Row of battle pikes (adorned)} 
@@ -27554,6 +27689,14 @@
                 {1} {31838}
             }
         }
+        {The electrocuted, slightly moldy corpse of Shadowling} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {31780}
+            }
+        }
         {Tin flask (empty)} 
         {
             {Description} {     Grey Earth Elemental ]  Grey Earth Elemental   You press your advantage on your outsmarted foe! Grey Earth Elemental  N    / | \  It twinkles with the red light cast by the pulses of the warding runes on the walls.  Shadow gathers close to you just to the north, creeping in to swallow you in cold, inky blackness.  You seem to have reached a dead-end.  The only passage from here is north. =I= The electrocuted, freshly slain corpse of Earth elemental. }
@@ -27880,11 +28023,13 @@
     {
         {A diamond gem} 
         {
-            {Description} {   A diamond gem  A large diamond gem.  Its extreme value is prized chiefly because of its brilliance. It looks light.   Your tactical advantage ends. }
+            {Description} { Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  You steadily block the brunt of the incoming attack. Performing: hands Bonehead, you're at max hit points already. The impact soaks some of the blood from the robe into your body.  Deadman: 0 Zelligar's Headban d warms you with a radiant glow. You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {45333}
                 {2} {51053}
+                {3} {51090}
+                {4} {51078}
             }
         }
         {A pulsating matrix of blue crystals} 
@@ -27897,17 +28042,18 @@
         }
         {A ruby gem} 
         {
-            {Description} {    A ruby gem  An extremely rare and beautiful gem.  The red glow of this gem reminds you of its high value. It looks light.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  A shadowling   A shadowling   A shadowling   Your body is wracked in pain as the life force is sucked from you. A shadowling   A shadowling   A shadowling   A shadowling   A shadowling    You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack! You nimbly dodge Shadowling's attack!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You steadily block the brunt of the incoming attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  Shadowling surrounds you with its IICCCYY form.  Your amulet flashes, and you phase out of harms way! You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  Your amulet flashes, and you phase out of harms way! You lay hands upon yourself and feel healed. You haven't enough spell points to perform this power. }
+            {Description} {   A ruby gem  An extremely rare and beautiful gem.  The red glow of this gem reminds you of its high value. It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {51084}
                 {2} {51117}
                 {3} {51120}
+                {4} {51092}
             }
         }
         {A sapphire gem} 
         {
-            {Description} {  . Shadowling penetrates the light and swallows you with darkness.  Your amulet flashes, and you phase out of harms way!  Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attackYou steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! A Shadowling escapes from the Shadow Axe.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  Your amulet flashes, and you phase out of harms way!   A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling You lay hands upon yourself and feel healed. You haven't enough spell points to perform this power. Calling forth the ancient powers of the Prophet you open a gate to one of the realms and summon forth a powerful creature! A sapphire gem  This sapphire is a crystal of the mineral corundum.  Its blue color comes from the impurities in the corundum. It looks light.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You quickly tumble to avoid the brunt of the attack. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  Your amulet flashes, and you phase out of harms way!  Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  Your amulet flashes, and you phase out of harms way! You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. Hydra struck but did no damage to Shadowling. Hydra struck but did no damage to Shadowling. Hydra struck but did no damage to Shadowling. Hydra struck but did no damage to Shadowling. Hydra hit Shadowling very hard. A shadowling   A shadowling   A shadowling   Your insidious inspiration flows through you as you make the most of each attack! You outfox your opponent and take advantage of it! ***THAWHACK*** You critically hit A shadowling! ***THAWHACK*** You critically hit A shadowling!  Your body is wracked in pain as the life force is sucked from you. A shadowling   A shadowling   A shadowling   A shadowling   A shadowling    With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack!  Your amulet flashes, and you phase out of harms way! With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  Your amulet flashes, and you phase out of harms way! Your amulet flashes, and you phase out of harms way!  Your aura sparkles with blue lights!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  Your amulet flashes, and you phase out of harms way! You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  Shadowling penetrates the light and swallows you with darkness.  Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You nimbly dodge Shadowling's attack! You lay hands upon yourself and feel healed. You haven't enough spell points to perform this power. }
+            {Description} { You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! A shadowling ]  A shadowling   A shadowling   A shadowling   A shadowling   A shadowling   A shadowling   A shadowling   A shadowling    You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! A sapphire gem  This sapphire is a crystal of the mineral corundum.  Its blue color comes from the impurities in the corundum. It looks light. A shadowling A shadowling A shadowling A shadowling A shadowling through it. Shadowling screams in pain as they become weaker!  Deadman: 0  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You breathe through your SCUBA gear. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form. }
             {Rooms} 
             {
                 {1} {46425}
@@ -27916,6 +28062,8 @@
                 {4} {51075}
                 {5} {51120}
                 {6} {51121}
+                {7} {51091}
+                {8} {51078}
             }
         }
         {A topaz gem} 
@@ -27924,14 +28072,16 @@
             {Rooms} 
             {
                 {1} {45320}
+                {2} {51086}
             }
         }
         {An emerald gem} 
         {
-            {Description} {}
+            {Description} { You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  With skill and speed you dodge the attack!  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You nimbly dodge Shadowling's attack!  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You nimbly dodge Shadowling's attack! A shadowling ]  A shadowling   A shadowling   A shadowling    Deadman: 0 You press your advantage on your outsmarted foe! Your tactical advantage ends. A shadowling   A shadowling   A shadowling   A shadowling   A shadowling   Your aura sparkles with blue lights!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack!  With skill and speed you dodge the attack! You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  }
             {Rooms} 
             {
                 {1} {31944}
+                {2} {51078}
             }
         }
         {Average heart of light} 
@@ -27948,6 +28098,8 @@
             {Rooms} 
             {
                 {1} {51120}
+                {2} {51086}
+                {3} {51092}
             }
         }
         {Emerald dust} 
@@ -27958,6 +28110,9 @@
                 {1} {51016}
                 {2} {51017}
                 {3} {51120}
+                {4} {51091}
+                {5} {51086}
+                {6} {51092}
             }
         }
         {Horn} 
@@ -28003,6 +28158,8 @@
                 {1} {31944}
                 {2} {51070}
                 {3} {51120}
+                {4} {51086}
+                {5} {51092}
             }
         }
         {Shadow Axe (enchanted)} 
@@ -28011,6 +28168,15 @@
             {Rooms} 
             {
                 {1} {51075}
+            }
+        }
+        {Shadow Sword } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51086}
+                {2} {51088}
             }
         }
         {Shadowmail armour} 
@@ -28027,6 +28193,15 @@
             {Rooms} 
             {
                 {1} {51075}
+                {2} {51086}
+            }
+        }
+        {The electrocuted, maggot-infested remains of Shadowling} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51090}
             }
         }
         {The horn of Detherus} 
@@ -28045,21 +28220,29 @@
                 {1} {45327}
                 {2} {51104}
                 {3} {51120}
+                {4} {51087}
+                {5} {51086}
+                {6} {51092}
             }
         }
         {diamond dust} 
         {
-            {Description} { diamond dust  The broken bits and dust of a diamond. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  }
+            {Description} {  You study the damage done to the corpse in an effort to learn how to best defeat your next foe.  Deadman: 0 A shadowling   A shadowling Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. diamond dust  The broken bits and dust of a diamond. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  Deadman: 0 Your aura sparkles with blue lights!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  }
             {Rooms} 
             {
                 {1} {46426}
                 {2} {45333}
                 {3} {51117}
+                {4} {51091}
+                {5} {51092}
+                {6} {51089}
+                {7} {51086}
+                {8} {51078}
             }
         }
         {emerald dust} 
         {
-            {Description} {  emerald dust  The broken bits and dust of an emerald. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  The assault glances harmlessly off your aura. Shadowling penetrates the light and swallows you with darkness.  The assault glances harmlessly off your aura. Shadowling surrounds you with its IICCCYY form.  The assault glances harmlessly off your aura.  The assault glances harmlessly off your aura.  Your amulet flashes, and you phase out of harms way! The assault glances harmlessly off your aura. Shadowling penetrates the light and swallows you with darkness.  The assault glances harmlessly off your aura. Shadowling surrounds you with its IICCCYY form.  Your amulet flashes, and you phase out of harms way! The assault glances harmlessly off your aura.  The assault glances harmlessly off your aura. Shadowling penetrates the light and swallows you with darkness.  The assault glances harmlessly off your aura. Shadowling surrounds you with its IICCCYY form.  The assault glances harmlessly off your aura.  The assault glances harmlessly off your aura.  The assault glances harmlessly off your aura. Shadowling penetrates the light and swallows you with darkness.  The assault glances harmlessly off your aura. Shadowling surrounds you with its IICCCYY form.  The assault glances harmlessly off your aura.  The assault glances harmlessly off your aura. A shadowling ]  A shadowling   You have become grounded in this plane yet again. A shadowling   A shadowling   A shadowling   A shadowling    With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  Your amulet flashes, and you phase out of harms way!  Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed.  With skill and speed you dodge the attack! Performing: hands You do not have any spell points! You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  Your amulet flashes, and you phase out of harms way!  Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  Your amulet flashes, and you phase out of harms way!  Shadowling surrounds you with its IICCCYY form.  Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You do not have any spell points! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points!  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points!  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points! A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling You do not have any spell points! You haven't enough spell points to perform this power. }
+            {Description} { The broken bits and dust of an emerald. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  Deadman: 0  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  Deadman: 0 A shadowling   A shadowling   A shadowling   Your insidious inspiration flows through you as you make the most of each attack! ***THAWHACK*** You critically hit A shadowling!  A shadowling   A shadowling   A shadowling   A shadowling   Your aura sparkles with blue lights! A shadowling A shadowling A shadowling A shadowling A shadowling }
             {Rooms} 
             {
                 {1} {46424}
@@ -28071,11 +28254,15 @@
                 {7} {51104}
                 {8} {51120}
                 {9} {51121}
+                {10} {51091}
+                {11} {51088}
+                {12} {51092}
+                {13} {51078}
             }
         }
         {ruby dust} 
         {
-            {Description} {   ruby dust  The broken bits and dust of a ruby. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  Your amulet flashes, and you phase out of harms way!  Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. Performing: hands Bonehead, you're at max hit points already. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling surrounds you with its IICCCYY form.  Your amulet flashes, and you phase out of harms way! You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. A shadowling ]  A shadowling   A shadowling   A shadowling   A flash of insidious insight strikes you! **THWACK** You critically hit A shadowling!  ***THAWHACK*** You critically hit A shadowling!  A shadowling   A shadowling   A shadowling   A shadowling    You steadily block the brunt of the incoming attack }
+            {Description} {  A shadowling   A shadowling With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  Deadman: 0  You quickly tumble to avoid the brunt of the attack.  A Shadowling escapes from the Shadowmail gloves.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You quickly tumble to avoid the brunt of the attack.  With skill and speed you dodge the attack! ruby dust  The broken bits and dust of a ruby. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  Deadman: 0  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You nimbly dodge Shadowling's attack!  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. }
             {Rooms} 
             {
                 {1} {45321}
@@ -28083,11 +28270,16 @@
                 {3} {51075}
                 {4} {51091}
                 {5} {51121}
+                {6} {51090}
+                {7} {51086}
+                {8} {51093}
+                {9} {51083}
+                {10} {51078}
             }
         }
         {sapphire dust} 
         {
-            {Description} { The broken bits and dust of a sapphire. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You do not have any spell points! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points! Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack! Performing: hands You do not have any spell points!  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You do not have any spell points!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You do not have any spell points!  You steadily block the brunt of the incoming attack. Performing: hands You do not have any spell points! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You do not have any spell points! Shadowling surrounds you with its IICCCYY form.  Your amulet flashes, and you phase out of harms way! You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You do not have any spell points!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You do not have any spell points! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You do not have any spell points! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You do not have any spell points! You nimbly dodge Shadowling's attack! A shadowling ]  A shadowling   A shadowling   A shadowling   A shadowling   Your body is wracked in pain as the life force is sucked from you. A shadowling   A shadowling   A shadowling   A shadowling   A shadowling    You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  Shadowling surrounds you with its IICCCYY form.  Your amulet flashes, and you phase out of harms way!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling penetrates the light and swallows you with darkness.  Your amulet flashes, and you phase out of harms way!  Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  Your amulet flashes, and you phase out of harms way!  Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. Performing: hands Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling A shadowling You lay hands upon yourself and feel healed. You haven't enough spell points to perform this power. }
+            {Description} { You study the damage done to the corpse in an effort to learn how to best defeat your next foe.  Deadman: 0 All your corpses are already bigger than what is  here. A shadowling   A shadowling     A Shadowling escapes from the Shadowmail gloves.  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You steadily block the brunt of the incoming attack.  Deadman: 0 Shadowling penetrates the light and swallows you with darkness.  Shadowling surrounds you with its IICCCYY form.  With skill and speed you dodge the attack! You nimbly dodge Shadowling's attack!  Closing Inventory  Deadman: 0    }
             {Rooms} 
             {
                 {1} {46441}
@@ -28100,11 +28292,16 @@
                 {8} {51070}
                 {9} {51068}
                 {10} {51120}
+                {11} {51092}
+                {12} {51090}
+                {13} {51085}
+                {14} {51084}
+                {15} {51078}
             }
         }
         {topaz dust} 
         {
-            {Description} { The broken bits and dust of a topaz. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light. A shadowling   A shadowling   A shadowling   A shadowling   A shadowling   You bring your deadly natural weapons down on your opponent! A shadowling   A shadowling   A shadowling   A shadowling   A shadowling    You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  Your amulet flashes, and you phase out of harms way! Your amulet flashes, and you phase out of harms way!  Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack.  Your amulet flashes, and you phase out of harms way! You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling resists the hypnotizing effect of the headband! A Shadowling escapes from the Shadowmail gloves.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  Your amulet flashes, and you phase out of harms way! You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form. You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! A shadowling A shadowling A shadowling A shadowling A shadowling through it. Shadowling screams in pain as they become weaker! }
+            {Description} {   You study the damage done to the corpse in an effort to learn how to best defeat your next foe.  Deadman: 0 A shadowling   A shadowling  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! A Shadowling escapes from the Shadowmail gloves. Bonehead, you're at max hit points already. topaz dust  The broken bits and dust of a topaz. This was once a whole gem, but was destroyed in the chaos of combat. It's undoubtedly still worth something to the right person. It looks light.  Deadman: 0  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed. **LOW CAST** Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! You nimbly dodge Shadowling's attack!  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. Performing: hands You lay hands upon yourself and feel healed. The impact soaks some of the blood from the robe into your body. Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands You lay hands upon yourself and feel healed.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  With skill and speed you dodge the attack! Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack!  You steadily block the brunt of the incoming attack. Shadowling penetrates the light and swallows you with darkness.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Shadowling surrounds you with its IICCCYY form.  You steadily block the brunt of the incoming attack. You nimbly dodge Shadowling's attack! }
             {Rooms} 
             {
                 {1} {46433}
@@ -28117,6 +28314,9 @@
                 {8} {51082}
                 {9} {51113}
                 {10} {51120}
+                {11} {51088}
+                {12} {51085}
+                {13} {51078}
             }
         }
     }
@@ -29554,8 +29754,107 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {16527}
-                {2} {16530}
+                {1} {16530}
+                {2} {16527}
+            }
+        }
+        {Aquamarine Spherule} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16681}
+            }
+        }
+        {Aspect} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16664}
+            }
+        }
+        {Brown Spherule} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16648}
+            }
+        }
+        {Forlorn} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16531}
+                {2} {16603}
+            }
+        }
+        {Humble} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16615}
+                {2} {16616}
+            }
+        }
+        {Majesty} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16668}
+            }
+        }
+        {Orange Spherule} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16546}
+            }
+        }
+        {Phase} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16684}
+            }
+        }
+        {Promise} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16692}
+            }
+        }
+        {Resonant} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16564}
+            }
+        }
+        {Signal} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16649}
+            }
+        }
+        {Yellow Spherule} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {16631}
+                {2} {16628}
             }
         }
     }
@@ -29904,9 +30203,39 @@
     }
     {Orc Village} 
     {
+        {A large spear} 
+        {
+            {Description} {  You study the damage done to the corpse in an effort to learn how to best defeat your next foe. Orc Bodyguard   Orc Bodyguard     assassin to kill me, since they lack the courage to do The spear has an extremely long handle, making it too long to wield in one hand. Adorning the end of the spear is a large, serrated silver tip. Despite the great size of this weapon, it was made with such masterful craftsmanship that even the most studious pikeman would have difficulty finding a more well balanced weapon. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  This weapon gains benefits from your polearm weapon skill. You must be level 10 to wield this weapon. }
+            {Rooms} 
+            {
+                {1} {37329}
+            }
+        }
+        {A long, spiked club} 
+        {
+            {Description} {    Orc Bodyguard Graktah, Orc Chief through him. ***THAWHACK*** You critically hit Orc Bodyguard!  Orc Bodyguard screams in pain as they become weaker! A long, spiked club  Made from the trunk of a mighty oak tree, this huge spiked club is the weapon of choice of the Orc Armies. Huge metal spikes have been embedded into the end of the club, making it an especially dangerous weapon. This weapon is in excellent condition. This weapon deals edged and blunt damage. This weapon is class 12 (blunt).  This weapon gains benefits from your mace weapon skill. }
+            {Rooms} 
+            {
+                {1} {37340}
+                {2} {37320}
+                {3} {37296}
+                {4} {37329}
+            }
+        }
         {A pair of heavy leather boots} 
         {
-            {Description} { These are the boots worn by the everyday orcish grunt. They are heavy and functional. Little more is needed for the day to day life of an orc. They were apparently well crafted, but years of every day use have caused them to wear. Huge scars in the leather are quite visible from a short distance. It would take much care for anyone to use such equipment for an extended period of time. The boots are in perfect condition. You need your Appraisal skill raised to see more information.  It looks light. }
+            {Description} { These are the boots worn by the everyday orcish grunt. They are heavy and functional. Little more is needed for the day to day life of an orc. They were apparently well crafted, but years of every day use have caused them to wear. Huge scars in the leather are quite visible from a short distance. It would take much care for anyone to use such equipment for an extended period of time. The boots are in perfect condition. This armor has the following resistances: 7 edged, 7 blunt, 3 fire, 5 ice It looks light.  Deadman: 0 Your insidious inspiration fades. Graktah furrows his brow as if in deep thought.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {37339}
+                {2} {37331}
+                {3} {37296}
+                {4} {37329}
+            }
+        }
+        {A pair of heavy-duty boots } 
+        {
+            {Description} {}
             {Rooms} 
             {
                 {1} {37329}
@@ -29920,12 +30249,31 @@
                 {1} {37329}
             }
         }
+        {Armor of the Orc Chief } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {37329}
+            }
+        }
         {Light leather armour} 
         {
-            {Description} { This suit of light leather armour, is the basic armour used by the soldiers in the Orcish Army. This armour was apparently well made, but years of use and abuse has caused the quality to decrease significently. It would take constant care for such a piece of equipment to be useful for long. The armour is in perfect condition. It appears to be light armour for a player of your level. You need your Appraisal skill raised to see more information. You must be level 10 to wear this.  It looks light. }
+            {Description} { This suit of light leather armour, is the basic armour used by the soldiers in the Orcish Army. This armour was apparently well made, but years of use and abuse has caused the quality to decrease significently. It would take constant care for such a piece of equipment to be useful for long. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 14 edged, 18 blunt, 11 fire, 14 ice  You must be level 10 to wear this.  It looks light.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {37334}
+                {2} {37340}
+                {3} {37297}
+                {4} {37296}
+            }
+        }
+        {Sword of the Orc Chief } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {37329}
             }
         }
     }
@@ -31607,6 +31955,7 @@
             {
                 {1} {1895}
                 {2} {196}
+                {3} {151}
             }
         }
         {A conglomeration of mutated nanites} 
@@ -45273,9 +45622,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {21392}
-                {2} {21399}
-                {3} {42076}
+                {1} {21399}
+                {2} {42076}
+                {3} {21392}
             }
         }
         {A fork} 
@@ -47688,6 +48037,14 @@
                 {1} {42076}
             }
         }
+        {A beechnut} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51172}
+            }
+        }
         {A bit of thyme} 
         {
             {Description} {}
@@ -47730,8 +48087,8 @@
                 {1} {42081}
                 {2} {42076}
                 {3} {49312}
-                {4} {49313}
-                {5} {42077}
+                {4} {42077}
+                {5} {49313}
                 {6} {42080}
             }
         }
@@ -47751,8 +48108,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {42077}
-                {2} {42076}
+                {1} {42076}
+                {2} {42077}
             }
         }
         {A fork} 
@@ -47761,6 +48118,7 @@
             {Rooms} 
             {
                 {1} {42076}
+                {2} {42077}
             }
         }
         {A glass sign with moving liquid inside, pointing north} 
@@ -47801,6 +48159,14 @@
             {Rooms} 
             {
                 {1} {42076}
+            }
+        }
+        {A large lumpy bag} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51173}
             }
         }
         {A little brown monkey doll} 
@@ -47860,6 +48226,14 @@
                 {1} {42076}
             }
         }
+        {A piece of paper} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42077}
+            }
+        }
         {A quaint candy store} 
         {
             {Description} {}
@@ -47881,8 +48255,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {42077}
-                {2} {42076}
+                {1} {42076}
+                {2} {42077}
             }
         }
         {A single gold coin} 
@@ -47924,6 +48298,7 @@
             {Rooms} 
             {
                 {1} {42076}
+                {2} {42077}
             }
         }
         {A strange boy} 
@@ -47958,12 +48333,29 @@
                 {1} {42076}
             }
         }
+        {A torn useless bag} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51173}
+                {2} {51984}
+            }
+        }
         {A toy chest} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {42076}
+            }
+        }
+        {A tree} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51172}
             }
         }
         {A utility sink} 
@@ -47982,6 +48374,14 @@
             {Rooms} 
             {
                 {1} {42076}
+            }
+        }
+        {A wood plank} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {49312}
             }
         }
         {An Outhouse} 
@@ -48383,7 +48783,23 @@
                 {2} {41339}
             }
         }
+        {A Fire Amulet } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
         {A Fire Amulet (augmented)} 
+        {
+            {Description} {   a fire-lion from Mount Thunder   a fire-lion from Mount Thunder Your muscles ripple and bulge with power.  Deadman: 0     Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. A Fire Amulet (augmented) This solid amulet is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The amulet is in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 20 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  It looks light.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Armor } 
         {
             {Description} {}
             {Rooms} 
@@ -48393,6 +48809,14 @@
         }
         {A Fire Armor (augmented)} 
         {
+            {Description} {   Deadman: 0     Your aura sparkles with blue lights! A Fire Armor (augmented) This solid armor is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The armour is in perfect condition. It has a magical glow about it. It appears to be light armour for a player of your level. This armor has the following resistances: -1 edged, -1 blunt, 28 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 17 to wear this.  It looks heavy.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Boots } 
+        {
             {Description} {}
             {Rooms} 
             {
@@ -48400,6 +48824,14 @@
             }
         }
         {A Fire Boots (augmented)} 
+        {
+            {Description} { Deadman: 0  Your insidious inspiration fades. A Fire Boots (augmented) This solid boots is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The boots are in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 24 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  It looks light.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Cloak } 
         {
             {Description} {}
             {Rooms} 
@@ -48409,6 +48841,14 @@
         }
         {A Fire Cloak (augmented)} 
         {
+            {Description} {  Deadman: 0 You breathe through your SCUBA gear.   Your aura sparkles with blue lights! Your aura sparkles with blue lights! A Fire Cloak (augmented) This solid cloak is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The cloak is in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 24 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  It looks light.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Gloves } 
+        {
             {Description} {}
             {Rooms} 
             {
@@ -48416,6 +48856,14 @@
             }
         }
         {A Fire Gloves (augmented)} 
+        {
+            {Description} {    Deadman: 0     Your aura sparkles with blue lights!  Deadman: 0  Deadman: 0 A Fire Gloves (augmented) This solid gloves is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The gloves are in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 24 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  It looks light.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Helmet } 
         {
             {Description} {}
             {Rooms} 
@@ -48425,6 +48873,14 @@
         }
         {A Fire Helmet (augmented)} 
         {
+            {Description} {   Deadman: 0 Your aura sparkles with blue lights!  Your aura sparkles with blue lights! A Fire Helmet (augmented) This solid helmet is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The helmet is in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 24 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  It looks light. Kyoujin <HM-Seer>: that way lies madness... like pineapple on pizza  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Ring } 
+        {
             {Description} {}
             {Rooms} 
             {
@@ -48432,6 +48888,14 @@
             }
         }
         {A Fire Ring (augmented)} 
+        {
+            {Description} {  Deadman: 0  A Fire Ring (augmented) This solid ring is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The ring is in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 20 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  It looks light.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Shield } 
         {
             {Description} {}
             {Rooms} 
@@ -48441,6 +48905,14 @@
         }
         {A Fire Shield (augmented)} 
         {
+            {Description} {  Deadman: 0     Your skin slowly fades from the hardened scales into your natural texture. A Fire Shield (augmented) This solid shield is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The shield is in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 24 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  }
+            {Rooms} 
+            {
+                {1} {47226}
+            }
+        }
+        {A Fire Visor } 
+        {
             {Description} {}
             {Rooms} 
             {
@@ -48449,7 +48921,7 @@
         }
         {A Fire Visor (augmented)} 
         {
-            {Description} {}
+            {Description} {  This solid visor is made of midnight black basalt dug out of the very veins of Mouth Thunder.  It will withstand massive heat!  The other is in perfect condition. It has a magical glow about it. This armor has the following resistances: -1 edged, -1 blunt, 24 fire, -1 ice, -1 acid, -1 electric, -1 mind, -1 energy, -1 poison, -1 radiation  You must be level 10 to wear this.  It looks light.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {47226}
@@ -48822,6 +49294,81 @@
                 {5} {47149}
             }
         }
+        {A Spectre Amulet } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47247}
+                {2} {47246}
+            }
+        }
+        {A Spectre Armor } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47247}
+                {2} {47246}
+            }
+        }
+        {A Spectre Boots } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47242}
+            }
+        }
+        {A Spectre Cloak } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47244}
+            }
+        }
+        {A Spectre Gloves } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47244}
+            }
+        }
+        {A Spectre Helmet } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47247}
+                {2} {47246}
+            }
+        }
+        {A Spectre Ring } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47240}
+            }
+        }
+        {A Spectre Shield } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47242}
+            }
+        }
+        {A Spectre Visor } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47240}
+            }
+        }
         {An Acorn} 
         {
             {Description} {  An Acorn This acorn is fairly bursting with the healing power of the Land.  It looks light.  Your unarmed frenzy ends. }
@@ -48890,6 +49437,14 @@
             {Rooms} 
             {
                 {1} {3900}
+            }
+        }
+        {Staff of Law } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {47251}
             }
         }
         {Swordmaster Ring (augmented)} 
