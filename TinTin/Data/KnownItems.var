@@ -208,6 +208,14 @@
     }
     {3Kraft} 
     {
+        {A rather large orange} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {46303}
+            }
+        }
         {A tiny light} 
         {
             {Description} {}
@@ -48085,11 +48093,12 @@
             {Rooms} 
             {
                 {1} {42081}
-                {2} {42076}
-                {3} {49312}
-                {4} {42077}
+                {2} {51171}
+                {3} {42077}
+                {4} {42080}
                 {5} {49313}
-                {6} {42080}
+                {6} {49312}
+                {7} {42076}
             }
         }
         {A complicated door (closed) (locked)} 
@@ -48340,6 +48349,7 @@
             {
                 {1} {51173}
                 {2} {51984}
+                {3} {42081}
             }
         }
         {A toy chest} 
@@ -48355,7 +48365,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {51172}
+                {1} {51175}
+                {2} {51172}
+                {3} {51171}
             }
         }
         {A utility sink} 
@@ -48409,6 +48421,14 @@
                 {2} {42080}
                 {3} {49313}
                 {4} {42077}
+            }
+        }
+        {An open cage} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51170}
             }
         }
         {An open cage with 4 four-foot long legs} 

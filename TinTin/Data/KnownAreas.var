@@ -92,6 +92,7 @@
             {1} {Ring of Power(drained)}
             {2} {Ring of Power}
             {3} {A tiny light}
+            {4} {A rather large orange}
         }
         {Mobs} 
         {
@@ -12820,14 +12821,14 @@
             {130} {A greenish street sign}
             {131} {A weathered wooden sign, pointing west}
             {132} {A small wooden sign}
-            {133} {An ATM  Pinnacle Bank}
-            {134} {Inago's Neuro-Data Transfer Module}
-            {135} {A Tome of 'Enhancing Enchanting', Volume II}
-            {136} {A single gold coin}
-            {137} {The 3-K Kill List}
-            {138} {A Statue of Cancer the King}
-            {139} {A tall street light}
-            {140} {A bronze plaque}
+            {133} {Inago's Neuro-Data Transfer Module}
+            {134} {A Tome of 'Enhancing Enchanting', Volume II}
+            {135} {A single gold coin}
+            {136} {The 3-K Kill List}
+            {137} {A Statue of Cancer the King}
+            {138} {A tall street light}
+            {139} {A bronze plaque}
+            {140} {An ATM  Pinnacle Bank}
         }
         {Mobs} 
         {
@@ -12892,13 +12893,13 @@
             {59} {Cold Tiro has a Halibut by the tail!}
             {60} {Intuil the Arch-Mage of the Platinum Star}
             {61} {Arundin}
-            {62} {Ogotaz, The Powerful Wizard}
-            {63} {Giant squid}
-            {64} {Vilgan}
-            {65} {A valithyn under the control of Blutash}
-            {66} {Shapeshifter}
-            {67} {Shadow Ape}
-            {68} {Shadow Lord(3rd)}
+            {62} {Giant squid}
+            {63} {Vilgan}
+            {64} {A valithyn under the control of Blutash}
+            {65} {Shapeshifter}
+            {66} {Shadow Ape}
+            {67} {Shadow Lord(3rd)}
+            {68} {Ogotaz, The Powerful Wizard}
         }
     }
     {Pinnacle Law Office} 
@@ -15075,13 +15076,13 @@
             {39} {A Ripper}
             {40} {Ripper}
             {41} {A Massive Generator}
-            {42} {A Leeva}
-            {43} {The Developer}
-            {44} {A Leago}
-            {45} {Leago}
-            {46} {Leeva}
-            {47} {Cloud Eye}
-            {48} {Groma}
+            {42} {The Developer}
+            {43} {A Leago}
+            {44} {Leago}
+            {45} {Cloud Eye}
+            {46} {Groma}
+            {47} {A Leeva}
+            {48} {Leeva}
         }
         {Ratings} 
         {
@@ -17759,26 +17760,27 @@
             {37} {A joystick}
             {38} {An ordinary penny}
             {39} {Some Common Sense}
-            {40} {An open cage with 4 four-foot long legs}
-            {41} {A rattlesnake tail}
-            {42} {A crystal bowling ball}
-            {43} {A fork}
-            {44} {A spoon}
-            {45} {A piece of paper}
-            {46} {A small box}
-            {47} {Basset-brand pants}
-            {48} {An idol}
-            {49} {A bottle of bleach}
-            {50} {A mop }
+            {40} {A rattlesnake tail}
+            {41} {A crystal bowling ball}
+            {42} {A fork}
+            {43} {A spoon}
+            {44} {A piece of paper}
+            {45} {A small box}
+            {46} {Basset-brand pants}
+            {47} {An idol}
+            {48} {A bottle of bleach}
+            {49} {A mop }
+            {50} {A closed cage}
             {51} {A wood plank}
-            {52} {A closed cage}
-            {53} {A rather large orange}
-            {54} {A utility sink}
-            {55} {A complicated door }
-            {56} {A large lumpy bag}
-            {57} {A beechnut}
-            {58} {A tree}
-            {59} {A torn useless bag}
+            {52} {A large lumpy bag}
+            {53} {A beechnut}
+            {54} {An open cage}
+            {55} {A rather large orange}
+            {56} {A torn useless bag}
+            {57} {An open cage with 4 four-foot long legs}
+            {58} {A utility sink}
+            {59} {A tree}
+            {60} {A complicated door }
         }
         {Mobs} 
         {
@@ -17791,22 +17793,22 @@
             {7} {Baldur's Border Collie}
             {8} {A bolwyn under the control of Azalin}
             {9} {Villager}
-            {10} {A Redactor}
-            {11} {Eric Idle}
-            {12} {A comatose guard}
-            {13} {A senseless guard}
-            {14} {A stunned jet black rabbit}
-            {15} {A guard of the kingdom}
-            {16} {Blaise Kayser}
-            {17} {An enormously fat bald woman}
-            {18} {A tipsy little pinto}
-            {19} {Redactor}
-            {20} {Jorge F. Pinto, Dean of Students}
-            {21} {Paige the page}
-            {22} {20 Mockeries of Humanity}
-            {23} {Mr. Monte}
-            {24} {A mob of disobedient students}
-            {25} {Mr. Vorzjes}
+            {10} {A comatose guard}
+            {11} {A senseless guard}
+            {12} {A stunned jet black rabbit}
+            {13} {A tipsy little pinto}
+            {14} {An enormously fat bald woman}
+            {15} {A mob of disobedient students}
+            {16} {Mr. Vorzjes}
+            {17} {A Redactor}
+            {18} {Redactor}
+            {19} {Paige the page}
+            {20} {20 Mockeries of Humanity}
+            {21} {Mr. Monte}
+            {22} {Jorge F. Pinto, Dean of Students}
+            {23} {Blaise Kayser}
+            {24} {A guard of the kingdom}
+            {25} {Eric Idle}
             {26} {A lazy ol' hound dog}
         }
         {Ratings} 

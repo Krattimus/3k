@@ -162,5 +162,24 @@
         #map move $event[followDirection]; 
 } {1};
 
+#FUNCTION  getOppositeDirection
+{
+	#if { "%1" == "nw" }
+	{ #return se; };
+	#if { "%1" == "n" }
+	{ #return s; };
+	#if { "%1" == "ne" }
+	{ #return sw; };	
+	#if { "%1" == "e" }
+	{ #return w; };		
+	#if { "%1" == "se" }
+	{ #return nw; };			
+	#if { "%1" == "s" }
+	{ #return n; };				
+	#if { "%1" == "sw" }
+	{ #return ne; };					
+	#if { "%1" == "w" }
+	{ #return e; };						
+};
 
 #class {testbin} {close}

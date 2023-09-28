@@ -59,6 +59,7 @@
         #draw Yellow scroll line 1 1 1 80;
 };
 
+
 /**************************************************************
 	Remaps an exit to another direction .mapChangeExit n s
 	Will make the north exit become the south exit
