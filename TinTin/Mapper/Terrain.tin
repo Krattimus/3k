@@ -154,7 +154,7 @@
 
 	#if {"$rmcol" != ""} 
 	{
-		#map set roomcolor $rmcol
+		#map set roomcolor $rmcol;
 	};
 	
 	#if {$rmsym_len > 0} 

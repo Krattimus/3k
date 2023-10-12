@@ -12,19 +12,24 @@
 
 #alias .runeItem
 {
-	#send !pinscribe health on %1;
-	#delay 7 {
-		#send !pinscribe revalrie on %1;
-		#delay 7 {
-			#send !pinscribe power on %1;
-			#delay 7 {
-				#send !pinscribe spirit on %1;
-				#delay 7 {
-					#send !pinscribe rejuvenation on %1;
-				};
-			};
-		};
-	};
+        remove %1;
+        #send pprepare %1;
+        
+        #delay 7 {
+                #send !pinscribe health on %1;
+                #delay 7 {
+                        #send !pinscribe revalrie on %1;
+                        #delay 7 {
+                                #send !pinscribe power on %1;
+                                #delay 7 {
+                                        #send !pinscribe spirit on %1;
+                                        #delay 7 {
+                                                #send !pinscribe rejuvenation on %1;
+                                        };
+                                };
+                        };
+                };
+        };
 };
 
 
@@ -181,5 +186,62 @@
 	#if { "%1" == "w" }
 	{ #return e; };						
 };
+
+
+#alias .chew { 
+	chew on %1; 
+	chew on the %1; 
+	chew through %1; 
+	chew through the %1; 
+	chew into %1; 
+	eat %1; 
+	bite %1;
+};
+
+#alias .chomp {
+	.chew wall;
+	.chew walls;
+	.chew west wall;
+	.chew western wall;
+	.chew east wall;
+	.chew eastern wall;
+	.chew south wall;
+	.chew southern walls;
+	.chew north wall;
+	.chew northern walls;
+};
+
+
+#alias .disposeStash
+{
+        #5 {dispose essence;};
+        #5 {dispose fragment;};
+};
+
+#var leftTumbler 0;
+#var centerTumbler 1;
+#var rightTumbler 4;
+
+#alias .crackVault
+{
+    #showme --- Trying $leftTumbler $centerTumbler $rightTumbler ---;
+    #send dial $leftTumbler $centerTumbler $rightTumbler;
+    #math {rightTumbler} {$rightTumbler+1};
+
+    #if {$rightTumbler >= 101 }
+    {
+        #echo --------TUMBLER ROLL OVER $leftTumbler $centerTumbler $rightTumbler;
+        #var rightTumbler 1;
+        #math {centerTumbler} {$centerTumbler+1};
+        #if {$centerTumbler >= 101 }
+        {
+            #var centerTumbler 0;
+            #math {leftTumbler} {$leftTumbler+1};
+        };
+    };
+
+    #delay 0.15 { .crackVault; }
+};
+
 
 #class {testbin} {close}

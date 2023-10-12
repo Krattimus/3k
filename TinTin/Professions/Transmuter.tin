@@ -251,59 +251,59 @@
 
 #alias .transmute_ug_essence
 {
-    transmute_ug %1 {essence of ascension};
-    transmute_ug %1 {essence of blasting};
-    transmute_ug %1 {essence of compassion};
-    transmute_ug %1 {essence of damnation};
-    transmute_ug %1 {essence of destruction};
-    transmute_ug %1 {essence of knowledge};
-    transmute_ug %1 {essence of light};
-    transmute_ug %1 {essence of might};
-    transmute_ug %1 {essence of rage};
-    transmute_ug %1 {essence of rejuvenation};
-    transmute_ug %1 {essence of shadow};
-    transmute_ug %1 {essence of soul};
-    transmute_ug %1 {essence of the unseen};
-    transmute_ug %1 {essence of water};
-    transmute_ug %1 {essence of willy};
+    .transmute_ug %1 {essence of ascension};
+    .transmute_ug %1 {essence of blasting};
+    .transmute_ug %1 {essence of compassion};
+    .transmute_ug %1 {essence of damnation};
+    .transmute_ug %1 {essence of destruction};
+    .transmute_ug %1 {essence of knowledge};
+    .transmute_ug %1 {essence of light};
+    .transmute_ug %1 {essence of might};
+    .transmute_ug %1 {essence of rage};
+    .transmute_ug %1 {essence of rejuvenation};
+    .transmute_ug %1 {essence of shadow};
+    .transmute_ug %1 {essence of soul};
+    .transmute_ug %1 {essence of the unseen};
+    .transmute_ug %1 {essence of water};
+    .transmute_ug %1 {essence of willy};
 };
 
 #alias .transmute_ug_hearts
 {
-    transmute_ug %1 {heart of ascension};
-    transmute_ug %1 {heart of blasting};
-    transmute_ug %1 {heart of compassion};
-    transmute_ug %1 {heart of damnation};
-    transmute_ug %1 {heart of destruction};
-    transmute_ug %1 {heart of knowledge};
-    transmute_ug %1 {heart of light};
-    transmute_ug %1 {heart of might};
-    transmute_ug %1 {heart of rage};
-    transmute_ug %1 {heart of rejuvenation};
-    transmute_ug %1 {heart of shadow};
-    transmute_ug %1 {heart of soul};
-    transmute_ug %1 {heart of the unseen};
-    transmute_ug %1 {heart of water};
-    transmute_ug %1 {heart of willy};
+    .transmute_ug %1 {heart of ascension};
+    .transmute_ug %1 {heart of blasting};
+    .transmute_ug %1 {heart of compassion};
+    .transmute_ug %1 {heart of damnation};
+    .transmute_ug %1 {heart of destruction};
+    .transmute_ug %1 {heart of knowledge};
+    .transmute_ug %1 {heart of light};
+    .transmute_ug %1 {heart of might};
+    .transmute_ug %1 {heart of rage};
+    .transmute_ug %1 {heart of rejuvenation};
+    .transmute_ug %1 {heart of shadow};
+    .transmute_ug %1 {heart of soul};
+    .transmute_ug %1 {heart of the unseen};
+    .transmute_ug %1 {heart of water};
+    .transmute_ug %1 {heart of willy};
 };
 
 #alias .transmute_ug_fragments
 {
-    transmute_ug %1 {fragment of ascension};
-    transmute_ug %1 {fragment of blasting};
-    transmute_ug %1 {fragment of compassion};
-    transmute_ug %1 {fragment of damnation};
-    transmute_ug %1 {fragment of destruction};
-    transmute_ug %1 {fragment of knowledge};
-    transmute_ug %1 {fragment of light};
-    transmute_ug %1 {fragment of might};
-    transmute_ug %1 {fragment of rage};
-    transmute_ug %1 {fragment of rejuvenation};
-    transmute_ug %1 {fragment of shadow};
-    transmute_ug %1 {fragment of soul};
-    transmute_ug %1 {fragment of the unseen};
-    transmute_ug %1 {fragment of water};
-    transmute_ug %1 {fragment of willy};
+    .transmute_ug %1 {fragment of ascension};
+    .transmute_ug %1 {fragment of blasting};
+    .transmute_ug %1 {fragment of compassion};
+    .transmute_ug %1 {fragment of damnation};
+    .transmute_ug %1 {fragment of destruction};
+    .transmute_ug %1 {fragment of knowledge};
+    .transmute_ug %1 {fragment of light};
+    .transmute_ug %1 {fragment of might};
+    .transmute_ug %1 {fragment of rage};
+    .transmute_ug %1 {fragment of rejuvenation};
+    .transmute_ug %1 {fragment of shadow};
+    .transmute_ug %1 {fragment of soul};
+    .transmute_ug %1 {fragment of the unseen};
+    .transmute_ug %1 {fragment of water};
+    .transmute_ug %1 {fragment of willy};
 };
 
 #class transmuter {close}
