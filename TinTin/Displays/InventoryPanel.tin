@@ -34,6 +34,8 @@
     #if { @startsWith{{%0}{Hoarder's Satchel}} } { #return 1; };
     #if { @startsWith{{%0}{Swordsman's Armband}} } { #return 1; };
     #if { @startsWith{{%0}{You can 'zot' the zot}} } { #return 1; };
+    #if { @startsWith{{%0}{A Set of Glowing Dice}} } { #return 1; };
+    #if { @startsWith{{%0}{A Reforger's Kit}} } { #return 1; };
 
     #return 0;
 };

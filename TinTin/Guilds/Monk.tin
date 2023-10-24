@@ -16,7 +16,7 @@
 #var monk[crits] {};
 #var monk[stun] {};
 #var monk[hide] {};
-#var monk[hideThreshold] 800;
+#var monk[hideThreshold] 2000;
 #var monk[method] {Tiger};
 #var monk[isActive] 1;
 #list {monk[gxp][history][list]} create {};
@@ -126,6 +126,11 @@
 
 	#if { $monk[isActive] }
 	{
+		#if { $my[hp][current] <= $my[hp][max] }
+		{
+			#send !hands;
+		};
+
 		#if { $monk[ae][current] >= 3 && "$monk[hide]" == "OFF" && $monk[ae][reset] >= 85 }
 		{
 			#send !hide of the dragon;
@@ -275,6 +280,18 @@
 
 #gag {Psionic waves emanate from your body.};
 
+#gag {A flash of insidious insight strikes you!};
+#gag {You enter a state of unarmed frenzy!};
+#gag {Your aura sparkles with blue lights!};
+#gag {Your amulet flashes, and you phase out of harms way!};
+#gag {A bolt of pure energy flies out of the sky striking %w};
+#gag {You bring your deadly natural weapons down on your opponent!};
+#gag {Bonehead, you're at max hit points already.};
+#gag {Performing: hands};
+#gag {Your body explodes in a *BLUR* of force and power!};
+
+
+
 #highlight {You relax your mind and body and concentrate on the ancient powers of} {<048>};
 #highlight {defense.  Energy swirls within you and the knowledge of countless} {<048>};
 #highlight {generations pours into you.  Channeling your energy you feel your skin} {<048>};
@@ -287,6 +304,12 @@
 #highlight {and settle in on the fighting method of the %1.} {<048>};
 
 
+#gag {Your unarmed frenzy ends.};
+#gag {You find a pressure point and bore down!};
+#gag {Your body is wracked in pain as the life force is sucked from you};
+
+#gag {^You take an instant to gather your thoughts, clear your mind and$};
+#gag {^focus on the task at hand.$}
  
  
 

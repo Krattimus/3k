@@ -19,6 +19,8 @@
 };
 
 
+#action {The captain announces: Welcome to The Martian Colony.}{#map go 22760;};
+
 #action {You squeeze your way into the Erratio forest} {#map go 34133; #var area {Erratio Forest}; };
 
 #action {AREA NAME: Diablo2 Normal 20+ Nightmare 40+ Hell 60+} {#var area {Diablo2}; } {4};

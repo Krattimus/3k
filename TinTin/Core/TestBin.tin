@@ -2,116 +2,7 @@
 #class {testbin} {kill}
 #class {testbin} {open}
 
-
-#action {Corath returns the item} 
-{
-
-
-
-};
-
-#alias .runeItem
-{
-        remove %1;
-        #send pprepare %1;
-        
-        #delay 7 {
-                #send !pinscribe health on %1;
-                #delay 7 {
-                        #send !pinscribe revalrie on %1;
-                        #delay 7 {
-                                #send !pinscribe power on %1;
-                                #delay 7 {
-                                        #send !pinscribe spirit on %1;
-                                        #delay 7 {
-                                                #send !pinscribe rejuvenation on %1;
-                                        };
-                                };
-                        };
-                };
-        };
-};
-
-
-#gag {Your unarmed frenzy ends.};
-#gag {You find a pressure point and bore down!};
-#gag {Your body is wracked in pain as the life force is sucked from you};
-
-#gag {^You take an instant to gather your thoughts, clear your mind and$};
-#gag {^focus on the task at hand.$}
-
-#alias .rune
-{
-        pinscribe %1 on helmet;
-        pinscribe %1 on gloves;
-        pinscribe %1 on armbands;
-        pinscribe %1 on greaves;
-        pinscribe %1 on breastplate;
-
-};
-#alias .disposeFish
-{
-        dispose A small Wanisiki lobster;
-        dispose A small Arani starfish;
-        dispose A small blue Moonfish scale;
-        dispose A small Illate eel;
-        dispose A small Tiger striped jellyfish;    
-        dispose A small Sarasious sea urchin;    
-        dispose A medium sized Wanisiki lobster;
-        dispose A medium sized Illate eel;
-        dispose seaweed;
-        dispose branch;
-        dispose A medium sized Arani starfish;
-};
-
-#alias .pick
-{
-        pick box;
-        open box;
-};
-
 #alias .change { transmogrify %0; };
-
-#alias .laCubes
-{
-        la cube;
-        la cube 2;
-        la cube 3;
-        la cube 4;
-};      
-
-#action {The cube starts to flicker in and out of existence} {wield axe}
-#action {A bright beam of light slams from the shimmering into the gigantic cube} {unwield axe};
-
-#var gate 0;
-
-#gag {A flash of insidious insight strikes you!};
-#gag {You enter a state of unarmed frenzy!};
-#gag {Your aura sparkles with blue lights!};
-#gag {Your amulet flashes, and you phase out of harms way!};
-#gag {A bolt of pure energy flies out of the sky striking %w};
-#gag {You bring your deadly natural weapons down on your opponent!};
-#gag {Bonehead, you're at max hit points already.};
-#gag {Performing: hands};
-#gag {Your body explodes in a *BLUR* of force and power!};
-
-#action {{You are able to identify (.*)...}} 
-{
-	#SUBSTITUTE {%2} {<338>%2<088>};
-        #DELAY {1} {#UNSUBSTITUTE {%2}};
-        .logChat {<108>[Found]<088> - %2};
-};
-
-#alias .makeRing
-{
-        plant seed;
-        plant seed;
-        plant hammer;
-        chop tree;
-        whittle ring;
-        take ring;
-};
-
 
 #NOP List all Roomnotes for 'go' alias
 #alias .noteList2
@@ -133,16 +24,6 @@
 };
 
 
-
-#alias .ttt
-{
-        #map find 1;
-        #path save forward pathToWalk;
-        #foreach {$pathToWalk} {step} 
-        {
-                #showme STEP [$step];
-        };
-};
 
 #action {Raest leaves %1\.} 
 { 
@@ -167,50 +48,6 @@
         #map move $event[followDirection]; 
 } {1};
 
-#FUNCTION  getOppositeDirection
-{
-	#if { "%1" == "nw" }
-	{ #return se; };
-	#if { "%1" == "n" }
-	{ #return s; };
-	#if { "%1" == "ne" }
-	{ #return sw; };	
-	#if { "%1" == "e" }
-	{ #return w; };		
-	#if { "%1" == "se" }
-	{ #return nw; };			
-	#if { "%1" == "s" }
-	{ #return n; };				
-	#if { "%1" == "sw" }
-	{ #return ne; };					
-	#if { "%1" == "w" }
-	{ #return e; };						
-};
-
-
-#alias .chew { 
-	chew on %1; 
-	chew on the %1; 
-	chew through %1; 
-	chew through the %1; 
-	chew into %1; 
-	eat %1; 
-	bite %1;
-};
-
-#alias .chomp {
-	.chew wall;
-	.chew walls;
-	.chew west wall;
-	.chew western wall;
-	.chew east wall;
-	.chew eastern wall;
-	.chew south wall;
-	.chew southern walls;
-	.chew north wall;
-	.chew northern walls;
-};
-
 
 #alias .disposeStash
 {
@@ -218,30 +55,6 @@
         #5 {dispose fragment;};
 };
 
-#var leftTumbler 0;
-#var centerTumbler 1;
-#var rightTumbler 4;
-
-#alias .crackVault
-{
-    #showme --- Trying $leftTumbler $centerTumbler $rightTumbler ---;
-    #send dial $leftTumbler $centerTumbler $rightTumbler;
-    #math {rightTumbler} {$rightTumbler+1};
-
-    #if {$rightTumbler >= 101 }
-    {
-        #echo --------TUMBLER ROLL OVER $leftTumbler $centerTumbler $rightTumbler;
-        #var rightTumbler 1;
-        #math {centerTumbler} {$centerTumbler+1};
-        #if {$centerTumbler >= 101 }
-        {
-            #var centerTumbler 0;
-            #math {leftTumbler} {$leftTumbler+1};
-        };
-    };
-
-    #delay 0.15 { .crackVault; }
-};
 
 
 #class {testbin} {close}

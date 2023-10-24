@@ -1,6 +1,11 @@
 #showme READING Explorer
 #class {explorer} {open}
 
+#alias {eport} { .mapGo cot; #send !eport; };
+
+
+#action {The cube starts to flicker in and out of existence} {wield axe}
+#action {A bright beam of light slams from the shimmering into the gigantic cube} {unwield axe};
 
 #alias .dispense
 {
@@ -126,6 +131,7 @@
         jump;s;w;portal; portal eforest;s;s;sw;w;nw;enter mist;
 };
 
+#var gate 0
 #alias postRavenloft
 {
         #if { $settings[bootRun] }
@@ -152,6 +158,20 @@
 	Ansify search results
 ************************************************************************/
 #macro \e[15~ {esearch};
+
+#highlight {You move plants and flowers around, peer closely at the soil, and study} {<038>};
+#highlight {the room carefully, but find nothing.} {<038>};
+
+
+#highlight {[Security System Activated. Intruders Detected. All Primary} {<018>};
+#highlight {and Secondary Security Systems Have Been Engaged. Control} {<018>};
+#highlight {Lockout Sequence In Progress.]} {<018>};
+
+
+ 
+ 
+ 
+
 #highlight {You search your surroundings thoroughly but come up with nothing.} {<038>};
 #highlight {You search a bit and find nothing.} {<038>};
 #highlight {Try as you might, you can't seem to move it.  Maybe there is some sort} {<038>};

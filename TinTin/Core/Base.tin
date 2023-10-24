@@ -6,10 +6,10 @@
 	Calculator
 **************************************************************/
 #var dirs[n] yonder;
-#var dirs[s] overhere;
-#var dirs[e] thatway;
-#var dirs[w] thisway;
-#var dirs[u] anotherway;
+#var dirs[s] anotherway;
+#var dirs[e] thisway;
+#var dirs[w] overhere;
+#var dirs[u] thatway;
 #var dirs[d] overthere;
 
 #alias {.n} { #send !$dirs[n]; #map move n; };
@@ -65,6 +65,27 @@
 	#draw Yellow scroll line 1 1 1 80;
 	#showme Exits ($exits2);
 	#draw Yellow scroll line 1 1 1 80;
+};
+
+
+#FUNCTION  getOppositeDirection
+{
+	#if { "%1" == "nw" }
+	{ #return se; };
+	#if { "%1" == "n" }
+	{ #return s; };
+	#if { "%1" == "ne" }
+	{ #return sw; };	
+	#if { "%1" == "e" }
+	{ #return w; };		
+	#if { "%1" == "se" }
+	{ #return nw; };			
+	#if { "%1" == "s" }
+	{ #return n; };				
+	#if { "%1" == "sw" }
+	{ #return ne; };					
+	#if { "%1" == "w" }
+	{ #return e; };						
 };
 
 /*************************************************************************

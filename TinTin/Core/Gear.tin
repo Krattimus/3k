@@ -14,6 +14,35 @@
 };
 
 
+#alias {.dupeRolm} 
+{
+	#send !(duplicate item rod;
+	auction rod;
+	10;
+	11;
+	48;
+	get rod;
+	touch anchor rune
+};
+
+#alias .makeRing
+{
+        plant seed;
+        plant seed;
+        plant hammer;
+        chop tree;
+        whittle ring;
+        take ring;
+};
+
+#action {{You are able to identify (.*)...}} 
+{
+	#SUBSTITUTE {%2} {<338>%2<088>};
+        #DELAY {1} {#UNSUBSTITUTE {%2}};
+        .logChat {<108>[Found]<088> - %2};
+};
+
+
 #ACTION {{This ring would appear to help with your (\w*\s?-?\w*)}} {
 	#SUBSTITUTE {%2} {<338>%2<088>}; 
 	#DELAY {2} {#UNSUBSTITUTE {%2}};
@@ -35,5 +64,215 @@
 #gag {You feel great!};
 #gag {Your body is packed with strength!};
 
+
+
+#nop ============================================================;
+#nop  Gaidin's Rod of Lordly Might script;
+#nop  "rolm <rune>" or "rolm types" to use;
+#nop ============================================================;
+#nop  Before using, you will probably want to change the first;
+#nop  action to send the notice to wherever you will see it.;
+#nop ============================================================;
+#nop  "rolm reload" also works, if you update the path in the;
+#nop  rolm alias below;
+#nop ============================================================;
+#nop  Additional information from:;
+#nop   https://wemudtogether.com/fantasy/rolm/;
+
+#action {^Upon the %1, the %2 rune glows brightly again.} {
+	#nop %1 %2;
+	event_raise e_notice {RoLM - %2 rune reset.};
+};
+
+
+#alias {rolm_show_header} {
+   #if {$G_SCREENREADER} {
+      #showme Rod of Lordly Might - %1;
+   };
+   #else {
+      #showme ................................................................................;
+      #showme ..;
+      #showme .. Rod of Lordly Might - %1;
+      #showme ..;
+   };
+};
+
+#alias {rolm_show_body_line} {
+   #if {$G_SCREENREADER} {
+      #showme %1;
+   };
+   #else {
+      #showme .. %1;
+   };
+};
+
+#alias {rolm_show_rune} {
+   rolm_show_header {%1};
+   rolm_show_body_line {Rune: %1};
+   rolm_show_body_line {Unlocked by: %2};
+   rolm_show_body_line {Effect: %3};
+   rolm_show_body_line {Notes: %4};
+   rolm_show_footer;
+};
+
+#alias {rolm_show_footer} {
+   #if {$G_SCREENREADER} {
+      #nop;
+   };
+   #else {
+      #showme ..;
+      #showme ................................................................................;
+   };
+};
+
+#alias {rolm_show_types} {
+   rolm_show_header {Damage/Weapon Types};
+   rolm_show_body_line {Rune        Form                 Weapon Type    Damage type};
+   #if {!$G_SCREENREADER} {
+      rolm_show_body_line {..........  .............        .............  ...........};
+   };
+   rolm_show_body_line {Star        Rod of Lordly Might  mace           blunt};
+   rolm_show_body_line {Dragon      DragonSword          sword          fire};
+   rolm_show_body_line {Frost       GlacialAxe           axe            ice};
+   rolm_show_body_line {Lightning   VoltSpear            lance          electric};
+   rolm_show_body_line {Comet       SolarFlail           mace           energy};
+   rolm_show_body_line {Aurora      PhotonSphere         exotic         radiation};
+   rolm_show_body_line {Viper       VenomClaw            dagger         poison};
+   rolm_show_body_line {Arachne     AcidSlinger          gun            acid};
+   rolm_show_body_line {Reaper      HolyScythe           polearm        edged};
+   rolm_show_body_line {Crown       PsiMace              mace           mental};
+   #if {!$G_SCREENREADER} {
+      rolm_show_body_line {...........................................................};
+   };
+   rolm_show_body_line {};
+   rolm_show_body_line {Star is unlocked by default, others are unlocked by using the previous rune.};
+   rolm_show_footer;
+};
+
+#alias {.rolm} {
+   #if {"%1" == ""} {#showme RoLM what?;#showme Syntax is "rolm <rune>" or "rolm types" for weapon/damage types;#return};
+   #if {"%1" == "reload"} {#showme Reloading RoLM file...;#read {util/rolm.tin};#return};
+
+   #switch {"%1"} {
+      #case {"types"} {
+         rolm_show_types;
+      };
+      #case {"star"} {
+         rolm_show_types;
+      };
+      #case {"dragon"} {
+         rolm_show_types;
+      };
+      #case {"frost"} {
+         rolm_show_types;
+      };
+      #case {"lightning"} {
+         rolm_show_types;
+      };
+      #case {"comet"} {
+         rolm_show_types;
+      };
+      #case {"aurora"} {
+         rolm_show_types;
+      };
+      #case {"viper"} {
+         rolm_show_types;
+      };
+      #case {"arachne"} {
+         rolm_show_types;
+      };
+      #case {"reaper"} {
+         rolm_show_types;
+      };
+      #case {"crown"} {
+         rolm_show_types;
+      };
+      #case {"sun"} {
+         rolm_show_rune {Sun} {Wielding RoLM in any form in combat} {Shifts RoLM to unlocked runes based on mob weakness.} {Becomes moon rune while active, touch moon to deactivate};
+      };
+      #case {"moon"} {
+         rolm_show_rune {Moon} {Unlocks with sun rune} {Deactivate weapon shifting} {Becomes sun rune when deactivated};
+      };
+      #case {"phoenix"} {
+         rolm_show_rune {Phoenix} {Fighting "complex" enemies (e.g. damage immunities)} {Brief period of SP regen} {Becomes ashes rune after activation};
+      };
+      #case {"ashes"} {
+         rolm_show_rune {Ashes} {Unlocked with phoenix rune} {Brief period of HP regen} {Becomes phoenix after activation};
+      };
+      #case {"angel"} {
+         rolm_show_rune {Angel} {Combat in dark rooms} {Provides extra attacks against good-aligned} {Touching rune toggles between angel/demon};
+      };
+      #case {"demon"} {
+         rolm_show_rune {Demon} {Unlocks with angel rune} {Provides extra attacks against good-aligned} {Touching rune toggles between angel/demon};
+      };
+      #case {"heart"} {
+         rolm_show_rune {Heart} {Unlocked by default} {Heals ~200hp/100hp overmax} {Costs 1 charge};
+      };
+      #case {"spark"} {
+         rolm_show_rune {Spark} {Unlocked by default} {Heals ~700sp overmax} {Costs 1 charge};
+      };
+      #case {"scroll"} {
+         rolm_show_rune {Scroll} {Unlocked by default} {Give a hint about unlocking runes} {};
+      };
+      #case {"anchor"} {
+         rolm_show_rune {Anchor} {Unlocked by default} {Sets the target room for winch, eye, and lasso runes} {Costs 1 charge};
+      };
+      #case {"winch"} {
+         rolm_show_rune {Winch} {Fighting while drunk} {Teleports you to the room set by anchor} {Costs 2 charges};
+      };
+      #case {"eye"} {
+         rolm_show_rune {Eye} {Fighting while drunk} {Shows you to the room set by anchor and eagle} {Costs 1 charge};
+      };
+      #case {"lasso"} {
+         rolm_show_rune {Lasso} {Fight smaller (<1M) mobs} {Teleports items to the room set by anchor} {Costs 1 charge};
+      };
+      #case {"dove"} {
+         rolm_show_rune {Dove} {Fight evil-aligned mobs} {Peaces the room} {Costs 1 charge};
+      };
+      #case {"skull"} {
+         rolm_show_rune {Skull} {Fight good-aligned mobs} {UNKNOWN} {};
+      };
+      #case {"ghost"} {
+         rolm_show_rune {Ghost} {Fight neutral-aligned mobs} {Fear effect} {Costs 1 charge};
+      };
+      #case {"eagle"} {
+         rolm_show_rune {Eagle} {Fight in brighly lit rooms} {Room watch power (toggles to cloud when active)} {Costs 1 charge};
+      };
+      #case {"cloud"} {
+         rolm_show_rune {Cloud} {Counterpoint to eagle rune} {Eagle rune becomes cloud rune when active} {};
+      };
+      #case {"owl"} {
+         rolm_show_rune {Owl} {Fighting large (>100M) mobs} {Boosts XP by ~30% for 10 minutes} {Costs 2 charges, 1 hour cooldown};
+      };
+      #case {"scales"} {
+         rolm_show_rune {Scales} {Fighting midrange mobs} {Decreases weight of an item} {Costs ? charges};
+      };
+      #case {"raven"} {
+         rolm_show_rune {Raven} {Unlocks with crown rune} {DoT for 5-10 rounds} {Costs 1 charge};
+      };
+      #case {"gremlin"} {
+         rolm_show_rune {Gremlin} {Fight behind someone after unlocking Arachne} {Reduce enemy AC by 25%} {Costs 1 charge, 20 minute cooldown};
+      };
+      #case {"cairn"} {
+         rolm_show_rune {Cairn} {Fight undead enemies} {Creates corpses} {Costs 1 charge, creates 1-3 ~(--***) corpses};
+      };
+      #case {"armillary"} {
+         rolm_show_rune {Armillary} {Unlocks through combat (after orrey) and requires raven rune} {Room reset} {Costs 3 charges};
+      };
+      #case {"aegis"} {
+         rolm_show_rune {Aegis} {Unlocks through combat} {Passive protection proc, activate for brief damage shield} {Costs 1 charge for active use};
+      };
+      #case {"orrery"} {
+         rolm_show_rune {Orrery} {Unlocks through combat} {Brief period of reflective damage} {Costs 1 charge};
+      };
+      #case {"infinity"} {
+         rolm_show_rune {Infinity} {Master all other runes} {Restores all charges to the RoLM} {6 hour cooldown};
+      };
+      #case {"diamond"} {
+         rolm_show_rune {Diamond} {Unlocked by default} {Shows remaining RoLM charges} {};
+      };
+      #default {#showme Unknown RoLM rune};
+   };
+};
 
 #class {gear} {close}

@@ -43,6 +43,29 @@
 /**********************************************************************************
 	Inscribe runes
 **********************************************************************************/
+#alias .runeItem
+{
+        remove %1;
+        #send pprepare %1;
+        
+        #delay 7 {
+                #send !pinscribe health on %1;
+                #delay 7 {
+                        #send !pinscribe revalrie on %1;
+                        #delay 7 {
+                                #send !pinscribe power on %1;
+                                #delay 7 {
+                                        #send !pinscribe spirit on %1;
+                                        #delay 7 {
+                                                #send !pinscribe rejuvenation on %1;
+                                        };
+                                };
+                        };
+                };
+        };
+};
+
+
 #alias .runeAllItems
 {
 	#var bladesinger[runeSlot] 1;
