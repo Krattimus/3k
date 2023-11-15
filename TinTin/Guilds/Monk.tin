@@ -126,7 +126,7 @@
 
 	#if { $monk[isActive] }
 	{
-		#if { $my[hp][current] <= $my[hp][max] }
+		#if { $my[hp][current] < $my[hp][max]-50 }
 		{
 			#send !hands;
 		};

@@ -2,14 +2,14 @@
 
 #VARIABLE {char}
 {
-    {area} {Pinnacle}
-    {currentRoomID} {5}
+    {area} {Wayhaven}
+    {currentRoomID} {15621}
     {guild} {Monk}
     {isResting} {0}
     {login} {look}
     {ourCharacter} {krat}
-    {restHP} {950}
-    {resumeHP} {1050}
+    {restHP} {900}
+    {resumeHP} {1200}
 }
 
 #CLASS {charvar} CLOSE

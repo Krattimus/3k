@@ -162,6 +162,7 @@
 #highlight {You move plants and flowers around, peer closely at the soil, and study} {<038>};
 #highlight {the room carefully, but find nothing.} {<038>};
 
+#highlight {That is not here or it is uninteresting. (%1?)} {<038>};
 
 #highlight {[Security System Activated. Intruders Detected. All Primary} {<018>};
 #highlight {and Secondary Security Systems Have Been Engaged. Control} {<018>};

@@ -19,7 +19,7 @@
 #HIGHLIGHT {You feel your body rejuvenate as the spirit realm flows into you.} {<128>};
 #gag {Doing combat strategy: rejuvenate.};
 #gag {Casting this spell would not benefit you at this time.};
-
+#gag {Your evade2 strategy forces you to: rejuvenate};
 #var bladesinger[runes] 
 {
 	{greaves}{{1}{health}{2}{revalrie}{3}{power}{4}{battle}{5}{stone}}
@@ -156,12 +156,20 @@
 	{
 		#if { $my[gp1][current] < $my[gp1][max]/2 && !$char[isResting] }
 		{
+			#draw Yellow scroll line 1 1 1 80;
+			#showme Initiating a rest due to HP;
+			#draw Yellow scroll line 1 1 1 80;
+			#var controllers[current] resting;
 			#var char[isResting] 1;
 			.stop;
 		};
 
 		#if { $my[hp][current] <= $char[restHP] && !$char[isResting] }
 		{
+			#draw Yellow scroll line 1 1 1 80;
+			#showme Initiating a rest due to Ne'Kra;
+			#draw Yellow scroll line 1 1 1 80;
+			#var controllers[current] resting;
 			#var char[isResting] 1;
 			.stop;
 		};

@@ -1,0 +1,55 @@
+#class {bot} {open}
+
+
+.registerEvent onMobKilled onMobKilledLostKnights;
+
+#ALIAS {onMobKilledLostKnights} {
+	challenge;aa;
+} {5};
+
+#action {There are no other challenge partners available right now}
+{
+	#if {$currentRoomID == 28825}
+	{
+		w;challenge;aa;
+	};
+	#elseif {$currentRoomID == 28826}
+	{
+		w;challenge;aa;
+	};
+	#elseif {$currentRoomID == 28827}
+	{
+		ne;challenge;aa;
+	};
+	#elseif {$currentRoomID == 28828}
+	{
+		e;challenge;aa;
+	};	
+	#elseif {$currentRoomID == 28829}
+	{
+		e;challenge;aa;
+	};		
+	#elseif {$currentRoomID == 28830}
+	{
+		n;challenge;aa;
+	};	
+	#elseif {$currentRoomID == 28831}
+	{
+		w;challenge;aa;
+	};		
+	#elseif {$currentRoomID == 28832}
+	{
+		w;challenge;aa;
+	};		
+	#elseif {$currentRoomID == 28833}
+	{
+		n;challenge;aa;
+	};		
+	#elseif {$currentRoomID == 28834}
+	{
+		door;
+	};	
+};
+
+
+#class {bot} {close}
