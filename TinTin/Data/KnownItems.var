@@ -3538,6 +3538,17 @@
             }
         }
     }
+    {Ashridge Acres} 
+    {
+        {A sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {22486}
+            }
+        }
+    }
     {Askar's Aviary} 
     {
         {A serving tray} 
@@ -6781,6 +6792,14 @@
                 {1} {8144}
             }
         }
+        {Houston - Midway Shuttlecraft} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8137}
+            }
+        }
     }
     {Bowling City} 
     {
@@ -6801,6 +6820,67 @@
             {Rooms} 
             {
                 {1} {17595}
+            }
+        }
+    }
+    {Browning Estate} 
+    {
+        {A crystal ball glows with visions of a head chanting} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48474}
+            }
+        }
+        {A ghostly conductor instructs an ethereal orchestra} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48475}
+            }
+        }
+        {A silver frame} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48486}
+            }
+        }
+        {A walking suit of armour} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48468}
+                {2} {48471}
+            }
+        }
+        {A wooden set of doors are opened} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48459}
+            }
+        }
+        {An old hearse} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48459}
+            }
+        }
+        {Several tombstones} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {48458}
+                {2} {48457}
             }
         }
     }
@@ -7715,6 +7795,18 @@
             }
         }
     }
+    {Cavern} 
+    {
+        {Diamond ring} 
+        {
+            {Description} {  You take an instant to gather your thoughts, clear your mind and focus on the task at hand. Serpent Dragon    Diamond Ring of Heroism  Forged in the blood of a lion, this ring will provide its wearer with both boldness and courage in battle.  The presence of such courage often gives the wearer greater accuracy and sureness with each swing.  Unfortunately, bravery can lead to foolhardiness. Be cautious of the wisdom of your actions when wearing this ring. The ring is in perfect condition. It has a magical glow about it.  It looks light.  Deadman: 0  Deadman: 0  You have become grounded in this plane yet again.    / | \\  }
+            {Rooms} 
+            {
+                {1} {30476}
+                {2} {30475}
+            }
+        }
+    }
     {Chaos} 
     {
         { a preserved, glowing corpse of Baby dragon} 
@@ -7802,8 +7894,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {4152}
-                {2} {4151}
+                {1} {4151}
+                {2} {4152}
             }
         }
         {A Book} 
@@ -7811,8 +7903,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6524}
-                {2} {6526}
+                {1} {6526}
+                {2} {6524}
                 {3} {6525}
             }
         }
@@ -7850,6 +7942,8 @@
                 {11} {196}
                 {12} {17595}
                 {13} {1811}
+                {14} {6524}
+                {15} {6505}
             }
         }
         {A Crap} 
@@ -7870,11 +7964,12 @@
                 {3} {197}
                 {4} {7027}
                 {5} {1811}
-                {6} {1812}
-                {7} {196}
-                {8} {1833}
-                {9} {1165}
-                {10} {16709}
+                {6} {1833}
+                {7} {1165}
+                {8} {16709}
+                {9} {17595}
+                {10} {196}
+                {11} {1812}
             }
         }
         {A HUGE refrigerator} 
@@ -7890,6 +7985,7 @@
                 {6} {6533}
                 {7} {6521}
                 {8} {16709}
+                {9} {6501}
             }
         }
         {A Hockey Ticket} 
@@ -7955,32 +8051,33 @@
             {
                 {1} {1814}
                 {2} {1811}
-                {3} {6506}
-                {4} {1165}
-                {5} {7030}
-                {6} {6541}
-                {7} {6504}
-                {8} {6534}
-                {9} {16709}
-                {10} {3112}
-                {11} {7023}
-                {12} {7024}
-                {13} {6539}
-                {14} {22731}
-                {15} {3577}
-                {16} {196}
-                {17} {7013}
-                {18} {7026}
-                {19} {7012}
-                {20} {7027}
-                {21} {6537}
-                {22} {1833}
-                {23} {300}
-                {24} {1815}
-                {25} {1812}
-                {26} {1896}
-                {27} {22732}
-                {28} {6501}
+                {3} {1165}
+                {4} {7030}
+                {5} {6541}
+                {6} {6504}
+                {7} {6534}
+                {8} {16709}
+                {9} {3112}
+                {10} {7023}
+                {11} {7024}
+                {12} {6539}
+                {13} {22731}
+                {14} {3577}
+                {15} {196}
+                {16} {7013}
+                {17} {7026}
+                {18} {7012}
+                {19} {7027}
+                {20} {6537}
+                {21} {1833}
+                {22} {300}
+                {23} {1815}
+                {24} {1896}
+                {25} {22732}
+                {26} {6501}
+                {27} {1812}
+                {28} {6506}
+                {29} {6505}
             }
         }
         {A Small ChaosBrand(tm) Television Set} 
@@ -8052,9 +8149,9 @@
                 {6} {1816}
                 {7} {1814}
                 {8} {4139}
-                {9} {1812}
-                {10} {196}
-                {11} {1833}
+                {9} {196}
+                {10} {1833}
+                {11} {1812}
             }
         }
         {A White Fence} 
@@ -8062,8 +8159,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6505}
-                {2} {196}
+                {1} {196}
+                {2} {6505}
             }
         }
         {A banana peel} 
@@ -8157,12 +8254,13 @@
                 {7} {7023}
                 {8} {7024}
                 {9} {6540}
-                {10} {196}
-                {11} {1895}
-                {12} {1165}
-                {13} {1814}
-                {14} {1812}
-                {15} {16709}
+                {10} {1895}
+                {11} {1165}
+                {12} {1814}
+                {13} {1812}
+                {14} {16709}
+                {15} {196}
+                {16} {3112}
             }
         }
         {A bouncing frankfurter} 
@@ -8174,12 +8272,12 @@
                 {2} {1165}
                 {3} {1816}
                 {4} {1814}
-                {5} {17595}
-                {6} {1812}
-                {7} {196}
-                {8} {1833}
-                {9} {1811}
-                {10} {16709}
+                {5} {196}
+                {6} {1833}
+                {7} {1811}
+                {8} {16709}
+                {9} {17595}
+                {10} {1812}
             }
         }
         {A bronze plaque} 
@@ -8195,11 +8293,13 @@
                 {6} {1895}
                 {7} {1811}
                 {8} {1896}
-                {9} {6501}
-                {10} {301}
-                {11} {1812}
-                {12} {196}
-                {13} {16709}
+                {9} {301}
+                {10} {1812}
+                {11} {16709}
+                {12} {6524}
+                {13} {6501}
+                {14} {17595}
+                {15} {196}
             }
         }
         {A bucket of water} 
@@ -8273,6 +8373,14 @@
                 {1} {6541}
                 {2} {196}
                 {3} {6540}
+            }
+        }
+        {A heavy brick and iron gate } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4152}
             }
         }
         {A hip doorway} 
@@ -8353,9 +8461,10 @@
                 {5} {196}
                 {6} {3112}
                 {7} {1896}
-                {8} {1895}
-                {9} {6521}
+                {8} {6521}
+                {9} {6524}
                 {10} {6501}
+                {11} {1895}
             }
         }
         {A large sign} 
@@ -8399,8 +8508,8 @@
             {Rooms} 
             {
                 {1} {16709}
-                {2} {301}
-                {3} {16697}
+                {2} {16697}
+                {3} {301}
             }
         }
         {A magical sleigh} 
@@ -8426,6 +8535,7 @@
                 {7} {6533}
                 {8} {196}
                 {9} {3113}
+                {10} {6524}
             }
         }
         {A newly erected billboard} 
@@ -8435,33 +8545,33 @@
             {
                 {1} {1815}
                 {2} {301}
-                {3} {6505}
-                {4} {19101}
-                {5} {16697}
-                {6} {1814}
-                {7} {6537}
-                {8} {6501}
-                {9} {6506}
-                {10} {1165}
-                {11} {7030}
-                {12} {7024}
-                {13} {6541}
-                {14} {6526}
-                {15} {6504}
-                {16} {1896}
-                {17} {6534}
-                {18} {16709}
-                {19} {3112}
-                {20} {7023}
-                {21} {6539}
-                {22} {22731}
-                {23} {196}
-                {24} {7013}
-                {25} {7026}
-                {26} {1833}
-                {27} {1813}
-                {28} {1811}
-                {29} {22732}
+                {3} {19101}
+                {4} {16697}
+                {5} {1814}
+                {6} {6537}
+                {7} {6501}
+                {8} {6506}
+                {9} {1165}
+                {10} {7030}
+                {11} {7024}
+                {12} {6541}
+                {13} {6526}
+                {14} {6504}
+                {15} {1896}
+                {16} {6534}
+                {17} {16709}
+                {18} {3112}
+                {19} {7023}
+                {20} {6539}
+                {21} {22731}
+                {22} {196}
+                {23} {7013}
+                {24} {7026}
+                {25} {1833}
+                {26} {1813}
+                {27} {1811}
+                {28} {22732}
+                {29} {6505}
             }
         }
         {A newspaper rack} 
@@ -8480,12 +8590,12 @@
                 {1} {196}
                 {2} {1165}
                 {3} {16709}
-                {4} {6501}
-                {5} {1812}
-                {6} {3112}
-                {7} {1816}
-                {8} {6521}
-                {9} {1833}
+                {4} {1812}
+                {5} {3112}
+                {6} {1816}
+                {7} {6521}
+                {8} {1833}
+                {9} {6501}
             }
         }
         {A piece of USA Today} 
@@ -8496,14 +8606,15 @@
                 {1} {7031}
                 {2} {6539}
                 {3} {7013}
-                {4} {1895}
-                {5} {16697}
-                {6} {16700}
-                {7} {1815}
-                {8} {1165}
-                {9} {196}
-                {10} {1814}
-                {11} {19200}
+                {4} {16697}
+                {5} {16700}
+                {6} {1815}
+                {7} {1165}
+                {8} {196}
+                {9} {1814}
+                {10} {19200}
+                {11} {17595}
+                {12} {1895}
             }
         }
         {A piece of USA(r) Today} 
@@ -8593,9 +8704,10 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6525}
-                {2} {6526}
-                {3} {6521}
+                {1} {6526}
+                {2} {6521}
+                {3} {6524}
+                {4} {6525}
             }
         }
         {A red mutant plant} 
@@ -8608,6 +8720,8 @@
                 {3} {4139}
                 {4} {1814}
                 {5} {7012}
+                {6} {6524}
+                {7} {6501}
             }
         }
         {A rusty old android} 
@@ -8662,6 +8776,7 @@
             {Rooms} 
             {
                 {1} {40107}
+                {2} {3112}
             }
         }
         {A sign pointing to the Mist} 
@@ -8712,10 +8827,12 @@
                 {2} {6539}
                 {3} {6502}
                 {4} {1895}
-                {5} {6501}
-                {6} {1896}
-                {7} {6521}
-                {8} {22731}
+                {5} {6521}
+                {6} {22731}
+                {7} {6524}
+                {8} {6501}
+                {9} {1896}
+                {10} {196}
             }
         }
         {A small playing card} 
@@ -8726,6 +8843,7 @@
                 {1} {4151}
                 {2} {4140}
                 {3} {1811}
+                {4} {4152}
             }
         }
         {A small, dark hole} 
@@ -8803,6 +8921,8 @@
                 {2} {6504}
                 {3} {6502}
                 {4} {6521}
+                {5} {6524}
+                {6} {6525}
             }
         }
         {A tall street light} 
@@ -8842,11 +8962,13 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6524}
-                {2} {6504}
-                {3} {6503}
-                {4} {6526}
-                {5} {6521}
+                {1} {6504}
+                {2} {6503}
+                {3} {6526}
+                {4} {6521}
+                {5} {6524}
+                {6} {6525}
+                {7} {6505}
             }
         }
         {A velvet rope} 
@@ -8872,17 +8994,18 @@
                 {1} {1896}
                 {2} {1897}
                 {3} {6504}
-                {4} {6505}
-                {5} {17595}
-                {6} {16709}
-                {7} {6541}
-                {8} {6501}
-                {9} {1898}
-                {10} {6526}
-                {11} {7012}
-                {12} {1895}
-                {13} {196}
-                {14} {3112}
+                {4} {17595}
+                {5} {16709}
+                {6} {6541}
+                {7} {6501}
+                {8} {1898}
+                {9} {6526}
+                {10} {7012}
+                {11} {1895}
+                {12} {196}
+                {13} {3112}
+                {14} {6524}
+                {15} {6505}
             }
         }
         {A very greasy hamburger} 
@@ -8901,6 +9024,8 @@
                 {9} {198}
                 {10} {197}
                 {11} {196}
+                {12} {6524}
+                {13} {6525}
             }
         }
         {A wibbly-wobbly frankfurter} 
@@ -8925,10 +9050,10 @@
                 {2} {16697}
                 {3} {6534}
                 {4} {196}
-                {5} {17595}
-                {6} {1811}
-                {7} {22733}
-                {8} {16709}
+                {5} {1811}
+                {6} {22733}
+                {7} {16709}
+                {8} {17595}
             }
         }
         {An Illuminati Pyramid} 
@@ -8961,8 +9086,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6525}
-                {2} {6526}
+                {1} {6526}
+                {2} {6525}
             }
         }
         {An Ultimate Disc} 
@@ -9006,15 +9131,18 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {196}
-                {2} {7024}
-                {3} {1816}
-                {4} {7025}
-                {5} {1896}
-                {6} {1812}
-                {7} {4140}
-                {8} {4139}
-                {9} {1814}
+                {1} {7024}
+                {2} {1816}
+                {3} {7025}
+                {4} {1896}
+                {5} {1812}
+                {6} {4140}
+                {7} {4139}
+                {8} {1814}
+                {9} {6524}
+                {10} {6501}
+                {11} {17595}
+                {12} {196}
             }
         }
         {An empty door frame} 
@@ -9051,18 +9179,19 @@
                 {1} {17730}
                 {2} {4140}
                 {3} {6502}
-                {4} {6501}
-                {5} {16709}
-                {6} {1896}
-                {7} {1897}
-                {8} {1898}
-                {9} {1812}
-                {10} {6540}
-                {11} {6541}
-                {12} {7027}
-                {13} {1895}
-                {14} {1815}
-                {15} {196}
+                {4} {16709}
+                {5} {1896}
+                {6} {1897}
+                {7} {1898}
+                {8} {1812}
+                {9} {6540}
+                {10} {6541}
+                {11} {7027}
+                {12} {1895}
+                {13} {1815}
+                {14} {196}
+                {15} {6524}
+                {16} {6501}
             }
         }
         {Armadillo Skin} 
@@ -9123,7 +9252,8 @@
                 {2} {196}
                 {3} {6523}
                 {4} {6526}
-                {5} {6525}
+                {5} {6524}
+                {6} {6525}
             }
         }
         {Erratio Forest} 
@@ -9178,6 +9308,8 @@
                 {2} {6504}
                 {3} {6502}
                 {4} {6521}
+                {5} {6524}
+                {6} {6525}
             }
         }
         {Overgrown swamp} 
@@ -14346,12 +14478,29 @@
     }
     {Darkmoore Mansion} 
     {
+        {A grand piano} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {21295}
+            }
+        }
         {A pair of white gloves} 
         {
             {Description} { A pair of white gloves  A pair of white gloves like a butler would wear. The gloves are in perfect condition. This armor has the following resistances: 1 edged, 2 blunt, 1 fire, 1 ice It looks light.  }
             {Rooms} 
             {
                 {1} {21215}
+            }
+        }
+        {A small but sharp hook} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {43637}
+                {2} {43642}
             }
         }
         {Cruelty of a thousand children} 
@@ -16046,6 +16195,14 @@
         {Turquoise ring} 
         {
             {Description} {   You are able to identify Turquoise Ring of Adornment...   You are able to identify The Sword of Insults... Skipping: Bracelet of Ulmedea will bind on pickup. up Turquoise Ring of Adornment  This pretty little ring has no purpose other than the aesthetic. 	 You may be able to get a good monetary price for it at the local 	 trading post, however. The ring is in perfect condition. It has a magical glow about it.  It looks light.   Delundar the Emancipator   Delundar the Emancipator   }
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {WispShield } 
+        {
+            {Description} {}
             {Rooms} 
             {
                 {1} {4880}
@@ -21044,9 +21201,58 @@
     }
     {EMA Complex} 
     {
+        {A bright red coca-cola vending machine} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42424}
+            }
+        }
+        {A huge yellow dump truck} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42419}
+                {2} {42417}
+            }
+        }
+        {A large blue hazmat truck} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42420}
+            }
+        }
+        {A light blue sweeper} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42422}
+            }
+        }
+        {A massive yellow excavator} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42421}
+            }
+        }
+        {A thick clipboard } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42425}
+            }
+        }
         {Armoured Vest} 
         {
-            {Description} { This thick black vest looks like it would provide good protection. It is padded in front and back and seems to contain a heavy alloy underneath the padding to absorb blows. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: >10 edged, >10 blunt, 8 fire, 8 ice, 4 acid, 2 energy  You must be level 10 to wear this.  It looks light.   H 1560/1560 TS 12/12 D  124/124  E  170  Deftness 65.83 Corpses:  I  0 C 19 H 1560/1560 TS 10/12 D  124/124  E  170  Deftness 65.83 Corpses:  I  0 C 19 H 1560/1560 TS 10/12 D  124/124  E  170  Deftness 65.83 Corpses:  I  0 C 19 H 1560/1560 TS 10/12 D  124/124  E  178  Deftness 65.83 Corpses:  I  0 C 19 H 1560/1560 TS 10/12 D  124/124  E  178  Deftness 65.83 Corpses:  I  0 C 19 H 1560/1560 TS  6/12 D  124/124  E  178  Deftness 65.83 Corpses:  I  0 C 19 H 1560/1560 TS  6/12 D  124/124  E  178  Deftness 65.89 Corpses:  I  0 C 19    / | \   This elegant office includes a huge desk and chair, a set of marble floor lamps, a luxurious looking high backed sofa and two extra chairs that sit across from the sofa in the middle of the room. The north wall of the room is completely made of glass, giving you a great view of the Atlanta skyline and the Megatech building that stands gleaming in sun to the northeast. }
+            {Description} { Armoured Vest  This thick black vest looks like it would provide good protection. It is padded in front and back and seems to contain a heavy alloy underneath the padding to absorb blows. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 15 edged, 17 blunt, 8 fire, 8 ice, 4 acid, 2 energy  You must be level 10 to wear this.  It looks light.  Deadman: 0  Deadman: 0 Deadman: 0 }
             {Rooms} 
             {
                 {1} {42432}
@@ -21058,19 +21264,29 @@
             {Rooms} 
             {
                 {1} {38025}
+                {2} {38027}
             }
         }
         {Delta Elite Machine Gun} 
         {
-            {Description} { up Delta Elite Machine Gun  This shiny semi automatic machine gun looks like it could put a decent sized hole in something if given the opportunity. It has a stamped marking on the butt that reads 'Property of EMA'. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 4 (edged).  This weapon gains benefits from your gun weapon skill. The Delta Elite Machine Gun is currently not loaded. It looks light.   }
+            {Description} {  EMA Guard   Deadman: 0 Delta Elite Machine Gun  This shiny semi automatic machine gun looks like it could put a decent sized hole in something if given the opportunity. It has a stamped marking on the butt that reads 'Property of EMA'. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 4 (edged).  This weapon gains benefits from your gun weapon skill. The Delta Elite Machine Gun is currently not loaded. It looks light.  Deadman: 0 \\ | /     / | \\  The security station exists to ensure only those with proper clearance are permitted inside the Research and Development area. A metal desk sits against the wall with a plain metal chair behind it. A row of monitors hangs on the wall above. A camera swivels back and forth from its place in the corner of the wall and ceiling, filming any and all that pass by. }
             {Rooms} 
             {
                 {1} {38025}
+                {2} {38027}
+            }
+        }
+        {EMA hard hat} 
+        {
+            {Description} {     Deadman: 0 EMA hard hat  This bright yellow protective headgear is worn by the drivers that work in Atlanta's EMA Complex. The hat is made of hard plastic and has the letters 'EMA' stenciled on the front in blue. The helmet is in perfect condition. This armor has the following resistances: 6 edged, 6 blunt, 3 fire, 3 ice, 4 acid It looks light.  Deadman: 0    }
+            {Rooms} 
+            {
+                {1} {42423}
             }
         }
         {EMA lab coat} 
         {
-            {Description} {    You pick up The sliced up, freshly slain corpse of Ema scientist and wrap EMA lab coat  This white lab coat is worn over the clothes and is typically used by the scientists in Atlanta's Emergency Management Agency. It doesn't look like it would offer a great deal of protection, but it sure makes you look brainy. The cloak is in perfect condition. This armor has the following resistances: 2 edged, 2 blunt, 2 fire, 2 ice, 2 acid It looks light.   H 1560/1560 TS 12/12 D  124/124  E  178  Deftness 65.33 Corpses:  I  0 C 17 H 1560/1560 TS  6/12 D  124/124  E  178  Deftness 65.33 Corpses:  I  0 C 17 H 1560/1560 TS  6/12 D  124/124  E  178  Deftness 65.33 Corpses:  I  0 C 17 }
+            {Description} { EMA lab coat  This white lab coat is worn over the clothes and is typically used by the scientists in Atlanta's Emergency Management Agency. It doesn't look like it would offer a great deal of protection, but it sure makes you look brainy. The cloak is in perfect condition. This armor has the following resistances: 2 edged, 2 blunt, 2 fire, 2 ice, 2 acid It looks light.  Deadman: 0  Deadman: 0  }
             {Rooms} 
             {
                 {1} {38036}
@@ -21078,15 +21294,32 @@
         }
         {a thick clipboard} 
         {
-            {Description} {  This clipboard is made of red reinforced plastic. Typically used to hold pieces of paper, it looks like it might be sturdy and lightweight enough to make a decent weapon too if one were to bash someone over the head with it. You're much too civilized for that type of behavior though, right? This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 12 (blunt).  It looks light.   H 1560/1560 TS 12/12 D  124/124  E  167  Deftness 65.00 Corpses:  I  0 C 15 H 1560/1560 TS 10/12 D  124/124  E  167  Deftness 65.00 Corpses:  I  0 C 15 H 1560/1560 TS 10/12 D  124/124  E  167  Deftness 65.00 Corpses:  I  0 C 15 H 1560/1560 TS 10/12 D  124/124  E  178  Deftness 65.00 Corpses:  I  0 C 15 H 1560/1560 TS 10/12 D  124/124  E  178  Deftness 65.00 Corpses:  I  0 C 15 H 1560/1560 TS  6/12 D  124/124  E  178  Deftness 65.00 Corpses:  I  0 C 15 H 1560/1560 TS  6/12 D  124/124  E  178  Deftness 65.06 Corpses:  I  0 C 15 }
+            {Description} {  EMA Garage Foreman   Deadman: 0 a thick clipboard  This clipboard is made of red reinforced plastic. Typically used to hold pieces of paper, it looks like it might be sturdy and lightweight enough to make a decent weapon too if one were to bash someone over the head with it. You're much too civilized for that type of behavior though, right? This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 12 (blunt).  It looks light.  Deadman: 0   N    / | \\   }
             {Rooms} 
             {
                 {1} {42425}
+                {2} {42420}
+            }
+        }
+        {screwdriver} 
+        {
+            {Description} {  Deadman: 0 screwdriver  This industrial strength screwdriver is used in the EMA garage for fixing the agency's vehicles. It is 12 inches long with a hard plastic handle and a flattened end for tightening screws. It looks like it could also take a decent sized chunk out of someone if used as a weapon. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 12 (edged).  It looks light.  Deadman: 0    }
+            {Rooms} 
+            {
+                {1} {42422}
             }
         }
     }
     {Einstein's Cottage} 
     {
+        {A red mutant plant} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {7044}
+            }
+        }
         {Einstein's brain} 
         {
             {Description} {    Einstein's brain  Wow! Einstein's brain is actually even bigger than you imagined. Now if you could only find out how to use this thing, and you might become just as smart as him!  }
@@ -21499,6 +21732,7 @@
                 {2} {4752}
                 {3} {4755}
                 {4} {4756}
+                {5} {4753}
             }
         }
     }
@@ -22466,6 +22700,7 @@
                 {2} {8486}
                 {3} {1521}
                 {4} {8471}
+                {5} {8964}
             }
         }
         {A glittering dagger} 
@@ -22641,6 +22876,8 @@
                 {14} {8952}
                 {15} {7840}
                 {16} {8964}
+                {17} {8506}
+                {18} {1504}
             }
         }
         {A piece of blackrock \x7B6\x7D} 
@@ -22704,6 +22941,7 @@
                 {15} {8486}
                 {16} {8493}
                 {17} {8964}
+                {18} {8506}
             }
         }
         {A piece of crystalrock \x7B5\x7D} 
@@ -22783,6 +23021,7 @@
                 {12} {8964}
                 {13} {8511}
                 {14} {1521}
+                {15} {8506}
             }
         }
         {A piece of lava \x7B3\x7D} 
@@ -22887,6 +23126,9 @@
                 {63} {1521}
                 {64} {14059}
                 {65} {20144}
+                {66} {1511}
+                {67} {1505}
+                {68} {14053}
             }
         }
         {A piece of oakwood \x7B7\x7D} 
@@ -22903,6 +23145,7 @@
             {Rooms} 
             {
                 {1} {1534}
+                {2} {6570}
             }
         }
         {A pulsing portal } 
@@ -23005,6 +23248,7 @@
                 {36} {9009}
                 {37} {1521}
                 {38} {7840}
+                {39} {1511}
             }
         }
         {A small dandelion \x7B4\x7D} 
@@ -23121,6 +23365,7 @@
                 {9} {1633}
                 {10} {4244}
                 {11} {20143}
+                {12} {1641}
             }
         }
         {A sprig of rosemary \x7B6\x7D} 
@@ -24386,22 +24631,25 @@
         }
         {Giant Platemail} 
         {
-            {Description} {     Giant Platemail  Made from some unidentifiable black metal, this platemail should protect you fairly well from almost any attack. A symbol of fire adorns the front of this armour. The armour is in perfect condition. It has a magical glow about it. It appears to be light armour for a player of your level. 10 edged  10 blunt  10 fire  It looks heavy. }
+            {Description} {   Male fire giant ]  Male fire giant   You have become grounded in this plane yet again. You outfox your opponent and take advantage of it! Male fire giant   Your aura sparkles with blue lights!   / | \\  This section of the cavern appears to be some sort of guard room. Very little adorns this room except a small table and a few chairs. A few torches allow you to notice deep scars in the rock walls of this room. =I= The brainless, freshly slain corpse of Fire giant guard \x7B2\x7D. Giant Platemail  Made from some unidentifiable black metal, this platemail should protect you fairly well from almost any attack. A symbol of fire adorns the front of this armour. The armour is in perfect condition. It has a magical glow about it. It appears to be light armour for a player of your level. This armor has the following resistances: 10 edged, 10 blunt, 10 fire, 5 acid, 5 energy It looks heavy.  Deadman: 0  Deadman: 0 Male fire giant   Male fire giant   Male fire giant ]  Male fire giant   You press your advantage on your outsmarted foe!  Male fire giant   }
             {Rooms} 
             {
                 {1} {24034}
+                {2} {24032}
+                {3} {24036}
             }
         }
         {Giant axe} 
         {
-            {Description} {    Giant axe  This giant axe looks a lot like an oversized battle axe. In the right hands, it could probably cleave a human in two. This weapon is in excellent condition.  This weapon is class 14 (edged).  This weapon gains benefits from your two-handed axe weapon skill. It looks heavy. }
+            {Description} {    Fire giant guard     Giant axe  This giant axe looks a lot like an oversized battle axe. In the right hands, it could probably cleave a human in two. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 14 (edged).  This weapon gains benefits from your two-handed axe weapon skill. It looks heavy.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {24042}
                 {2} {24036}
                 {3} {24025}
-                {4} {24032}
-                {5} {24026}
+                {4} {24026}
+                {5} {24034}
+                {6} {24032}
             }
         }
         {Spear} 
@@ -27723,6 +27971,14 @@
                 {1} {23322}
             }
         }
+        {A Regal Statue} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23322}
+            }
+        }
         {A Silverwood Bow} 
         {
             {Description} { A beautiful silverwood bow. Light seems almost to reflect from its smooth, perfect surface. The bowstring appears to shimmer in the light. Surely this is not an ordinary bow. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  This weapon gains benefits from your bow weapon skill. You must be level 10 to wield this weapon. There are 10 arrows in the quiver. }
@@ -27803,6 +28059,14 @@
                 {1} {45087}
             }
         }
+        {A group of children playing a game} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {23334}
+            }
+        }
         {A large sign} 
         {
             {Description} {}
@@ -27863,6 +28127,14 @@
             {Rooms} 
             {
                 {1} {23381}
+            }
+        }
+        {An Old Crumbling Tower} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36277}
             }
         }
         {An enchanted amulet of flying} 
@@ -40624,6 +40896,17 @@
                 {2} {17706}
             }
         }
+        {A knobbly-looking lego tree} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17694}
+                {2} {17698}
+                {3} {17703}
+                {4} {17688}
+            }
+        }
         {A large colorful sign} 
         {
             {Description} {}
@@ -40690,6 +40973,9 @@
             {Rooms} 
             {
                 {1} {17694}
+                {2} {17695}
+                {3} {17697}
+                {4} {17688}
             }
         }
         {A small sign tacked to the counter} 
@@ -40905,6 +41191,14 @@
             {
                 {1} {13710}
                 {2} {13712}
+            }
+        }
+        {A beautiful gold engagement ring} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {13721}
             }
         }
         {A cutthroat sash} 
@@ -50908,12 +51202,55 @@
                 {5} {36547}
             }
         }
+        {A iron door} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36538}
+                {2} {36540}
+            }
+        }
+        {A large bonfire} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36537}
+            }
+        }
         {A nasty, sardonyx scimitar} 
         {
             {Description} {  (a nasty, sardonyx scimitar?) }
             {Rooms} 
             {
                 {1} {37603}
+            }
+        }
+        {A roasted macaque carcass} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36537}
+            }
+        }
+        {A steel door} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36538}
+                {2} {36540}
+            }
+        }
+        {A wood door} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36538}
+                {2} {36540}
             }
         }
         {An ice gremlin claw} 
@@ -50923,6 +51260,14 @@
             {
                 {1} {1809}
                 {2} {1803}
+            }
+        }
+        {Cozy bedrolls} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1795}
             }
         }
         {Dagger of Gold} 
@@ -51885,7 +52230,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {377}
+                {1} {372}
+                {2} {375}
+                {3} {377}
             }
         }
         {A Dirty Cargo Shuttle} 
@@ -52399,9 +52746,9 @@
                 {15} {14564}
                 {16} {14563}
                 {17} {14580}
-                {18} {367}
-                {19} {8110}
-                {20} {8070}
+                {18} {8110}
+                {19} {8070}
+                {20} {367}
             }
         }
         {A wide brimmed hat} 
@@ -57196,7 +57543,7 @@
         }
         {A KrustyBrand(tm) Medic-Alert Bracelet} 
         {
-            {Description} {   up Grampa Simpson A KrustyBrand(tm) Medic-Alert Bracelet  This is a small metal chain with a pendant that says...     Current afflictions: Tendency to Speak Loudly     Allergic to:  This item is legendary and you cannot possess more than one. The bracelet is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 10 fire, 10 ice, 5 acid, 1 electric, 1 mind, 1 energy, 1 poison, 1 radiation It looks light.  Deadman: 0  Deadman: 0 }
+            {Description} { Grampa Simpson A KrustyBrand(tm) Medic-Alert Bracelet  This is a small metal chain with a pendant that says...     Current afflictions: Tendency to Speak Loudly     Allergic to:  This item is legendary and you cannot possess more than one. The bracelet is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 10 fire, 10 ice, 5 acid, 1 electric, 1 mind, 1 energy, 1 poison, 1 radiation It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {8296}
@@ -57569,7 +57916,7 @@
         }
         {A transparent camisole} 
         {
-            {Description} {  A transparent camisole   YoWzA!  This white piece of lingerie is trimmed with innocent lace yet is almost completely see-through!  You get all hot and sweaty as you picture Vraal reclining on a posturepedic in one of these...  The lingerie is in perfect condition. It looks unbreakable.  It looks light.  Deadman: 0  Deadman: 0 }
+            {Description} {     A transparent camisole   YoWzA!  This white piece of lingerie is trimmed with innocent lace yet is almost completely see-through!  You get all hot and sweaty as you picture Vraal reclining on a posturepedic in one of these...  The lingerie is in perfect condition. It looks unbreakable.  It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {8281}
@@ -57603,12 +57950,12 @@
         }
         {An Itchy Mouse-ears hat} 
         {
-            {Description} {  An Itchy Mouse-ears hat   This beanie has two large gray mouse-ears protruding from the top of it...an EXTREMELY embarrasing accessory..  The helmet is in perfect condition. This armor has the following resistances: 10 edged, 10 radiation It looks light.  Deadman: 0  Deadman: 0 }
+            {Description} { Deadman: 0 Your skin slowly fades from the hardened scales into your natural texture.  This beanie has two large gray mouse-ears protruding from the top of it...an EXTREMELY embarrasing accessory..  The helmet is in perfect condition. This armor has the following resistances: 10 edged, 10 radiation It looks light.  Deadman: 0 }
             {Rooms} 
             {
-                {1} {8278}
-                {2} {8281}
-                {3} {8269}
+                {1} {8281}
+                {2} {8269}
+                {3} {8278}
             }
         }
         {An Itchy Mouse-ears hat \x7B2\x7D} 
@@ -57649,7 +57996,7 @@
         }
         {An adult diaper} 
         {
-            {Description} {     An adult diaper   Who needs toilets!  The other is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 1 radiation It looks light.  Deadman: 0  Deadman: 0 }
+            {Description} {   Deadman: 0 Patty shifts her position and you see up her dress.  Kill yourself. Psionic waves emanate from your body. Your wild ambition takes a back seat to prudence. An adult diaper   Who needs toilets!  The other is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 1 radiation It looks light.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {8296}
@@ -57804,7 +58151,7 @@
         }
         {Dominatrix Boots} 
         {
-            {Description} {    up A half-naked actress  Black leather, with steel zippers running down the lengths... very intimidating accessories indeed.  These have a tag on the soles that says 'Grace Jones Model'.  The boots are in perfect condition. This armor has the following resistances: 6 edged, 6 blunt It looks light.  Deadman: 0 }
+            {Description} {  A half-naked actress  Black leather, with steel zippers running down the lengths... very intimidating accessories indeed.  These have a tag on the soles that says 'Grace Jones Model'.  The boots are in perfect condition. This armor has the following resistances: 6 edged, 6 blunt It looks light.  Deadman: 0  }
             {Rooms} 
             {
                 {1} {8281}
@@ -57820,7 +58167,7 @@
         }
         {Dominatrix Gloves} 
         {
-            {Description} {  These extremely tight black leather gloves certainly ain't no Isotoners! Don't go gift-wrapping them and giving them to Aunt Edna!  Unless you live in the mid-west where it would be understandable.  Muah these wouldn't even fit OJ!  The gloves are in perfect condition. This armor has the following resistances: 1 edged, 1 radiation It looks light.  Deadman: 0  Deadman: 0 }
+            {Description} {  These extremely tight black leather gloves certainly ain't no Isotoners! Don't go gift-wrapping them and giving them to Aunt Edna!  Unless you live in the mid-west where it would be understandable.  Muah these wouldn't even fit OJ!  The gloves are in perfect condition. This armor has the following resistances: 1 edged, 1 radiation It looks light.  Deadman: 0  }
             {Rooms} 
             {
                 {1} {8281}
@@ -57836,7 +58183,7 @@
         }
         {Edible Panties} 
         {
-            {Description} {   Deadman: 0 Edible Panties   These unsubstantial panties are meant to be eaten off someone's body!  You don't know whether to be turned on or disgusted by this.  It looks light.  Deadman: 0 }
+            {Description} {   Edible Panties   These unsubstantial panties are meant to be eaten off someone's body!  You don't know whether to be turned on or disgusted by this.  It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {8280}
@@ -57977,7 +58324,7 @@
         }
         {Kevlar Composite Bulletproof Vest} 
         {
-            {Description} {  A Springfield Studios gatepost guard  This bulletproof vest is standard gear for any sort of security guard.  It's granite-colored exterior contains a flexible composite of fibrous kevlar materials, which lends this VERY useful vest a lot of heft.  But you're none enough to handle it!  The breastplate is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 14 edged, 12 blunt, 8 fire, 8 ice }
+            {Description} { up A Springfield Studios gatepost guard This bulletproof vest is standard gear for any sort of security guard.  It's granite-colored exterior contains a flexible composite of fibrous kevlar materials, which lends this VERY useful vest a lot of heft.  But you're none enough to handle it!  The breastplate is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 14 edged, 12 blunt, 8 fire, 8 ice }
             {Rooms} 
             {
                 {1} {8281}
@@ -59946,7 +60293,7 @@
         }
         {A strangely dense wooden hammer (enchanted)} 
         {
-            {Description} {   Terra, Knight of Earth  Deadman: 0  Deadman: 0 }
+            {Description} { You lay hands upon yourself and feel healed. Terra, Knight of Earth   Terra, Knight of Earth   Terra, Knight of Earth Your aura sparkles with blue lights! You lay hands upon yourself and feel healed.  (a strangely dense wooden hammer (enchanted)?)  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {25491}
@@ -60401,55 +60748,69 @@
     {
         {A Beretta Pistol} 
         {
-            {Description} { This is a very impressive firearm.  You could punch some ugly holes in people with this thing. This weapon is in excellent condition. This weapon deals magic damage. This weapon is class 14 (energy).  This weapon gains benefits from your gun weapon skill. It looks light.   }
+            {Description} { This is a very impressive firearm.  You could punch some ugly holes in people with this thing. This weapon is in excellent condition. This weapon deals magic damage. This weapon is class 14 (energy).  This weapon gains benefits from your gun weapon skill. It looks light.  Deadman: 0  Deadman: 0 }
             {Rooms} 
             {
                 {1} {34901}
                 {2} {34894}
                 {3} {34906}
-                {4} {34969}
-                {5} {34916}
+                {4} {34916}
+                {5} {34970}
                 {6} {34899}
-                {7} {34970}
+                {7} {34969}
+                {8} {34918}
+                {9} {34913}
             }
         }
         {A Blackjack} 
         {
-            {Description} {  A Blackjack  A glove designed to do extra damage when it hits.  You know that this thing will come in handy! The gloves are in perfect condition. This armor has the following resistances: 4 edged, 4 blunt, 4 ice It looks light. H 1560/1560 TS 12/12 D  122/122  E  176  Accuracy 24.78 Corpses:  I  0 C  0 H 1560/1560 TS  6/12 D  122/122  E  176  Accuracy 24.78 Corpses:  I  0 C  0 H 1560/1560 TS  6/12 D  122/122  E  176  Accuracy 24.78 Corpses:  I  0 C  0   / | \  You make your way through the smoke-thick air, coughing and gagging on the stench of stale tobacco and old beer.  This is not a high-end of the scale joint.  }
+            {Description} { You know that this thing will come in handy! The gloves are in perfect condition. This armor has the following resistances: 4 edged, 4 blunt, 4 ice It looks light.  Deadman: 0  Deadman: 0 Mental energies pour into you from the power of the Ancients.     Saving monk status. }
             {Rooms} 
             {
-                {1} {34913}
-                {2} {34920}
-                {3} {34952}
-                {4} {34914}
-                {5} {34899}
-                {6} {34968}
-                {7} {34912}
+                {1} {34920}
+                {2} {34952}
+                {3} {34914}
+                {4} {34968}
+                {5} {34912}
+                {6} {34899}
+                {7} {34969}
+                {8} {34919}
+                {9} {34913}
             }
         }
         {A Knife} 
         {
-            {Description} { This knife was obviously designed for quick, effortless gutting of opponents.....or victims. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 14 (edged).  This weapon gains benefits from your dagger weapon skill. It looks light. }
-            {Rooms} 
-            {
-                {1} {41860}
-            }
-        }
-        {A Robe} 
-        {
-            {Description} {    A Robe  These robes could be KKK apparel were it not for the absence of hoods. These people don't seem to care if they're discovered. The cloak is in perfect condition. This armor has the following resistances: 1 edged, 1 blunt It looks light. H 1560/1560 TS 12/12 D  122/122  E  176  Accuracy 25.89 Corpses:  I  0 C  0 H 1560/1560 TS  6/12 D  122/122  E  176  Accuracy 25.89 Corpses:  I  0 C  0 H 1560/1560 TS  6/12 D  122/122  E  176  Accuracy 25.89 Corpses:  I  0 C  0 }
+            {Description} {   A Knife  This knife was obviously designed for quick, effortless gutting of opponents.....or victims. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 14 (edged).  This weapon gains benefits from your dagger weapon skill. It looks light.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {41860}
                 {2} {34945}
             }
         }
+        {A Mouse Steak} 
+        {
+            {Description} {   You have become grounded in this plane yet again. A Mouse Steak A lovely slice of prime mouse rib.  It looks delicious.  It looks light.  You wonder who made the massive hole in the wall.  Looks like someone beat you to anything that might have been here! Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {34919}
+            }
+        }
+        {A Robe} 
+        {
+            {Description} {  Witness Priest These robes could be KKK apparel were it not for the absence of hoods. These people don't seem to care if they're discovered. The cloak is in perfect condition. This armor has the following resistances: 1 edged, 1 blunt It looks light.  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {34945}
+                {2} {41860}
+            }
+        }
         {A Sunlamp} 
         {
-            {Description} { This is a rather ratty looking sunlamp.  I rather doubt it would give you a Bermuda tan.  More like a Boston pasty glow. This weapon is in excellent condition. This weapon deals radiation damage. This weapon is class 10 (radiation).  It looks light. }
+            {Description} { This is a rather ratty looking sunlamp.  I rather doubt it would give you a Bermuda tan.  More like a Boston pasty glow. This weapon is in excellent condition. This weapon deals radiation damage. This weapon is class 10 (radiation).  It looks light.  Deadman: 0 Psionic waves emanate from your body.  Deadman: 0 }
             {Rooms} 
             {
                 {1} {34969}
+                {2} {41859}
             }
         }
         {A Timber Rattler Fang} 
@@ -60470,27 +60831,54 @@
                 {11} {41775}
             }
         }
+        {A Trashcan} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34929}
+            }
+        }
+        {A large sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {34929}
+            }
+        }
         {Bag} 
         {
-            {Description} { Bag  A bag.  You can put things in it. It looks light. H 1560/1560 TS 12/12 D  122/122  E  170 HO: 36.26 HI: 118.93 LO: 45.74 LI: 24.85 [0] |--MP-----------------|  Moneybags the Banker (sneering)   divine strike hi H 1560/1560 TS 12/12 D  122/122  E  170  Accuracy 25.83 Corpses:  I  0 C  0 H 1560/1560 TS 10/12 D  122/122  E  170  Accuracy 25.83 Corpses:  I  0 C  0 H 1560/1560 TS 10/12 D  122/122  E  170  Accuracy 25.83 Corpses:  I  0 C  0 H 1560/1560 TS 10/12 D  122/122  E  176  Accuracy 25.83 Corpses:  I  0 C  0 H 1560/1560 TS 10/12 D  122/122  E  176  Accuracy 25.83 Corpses:  I  0 C  0 H 1560/1560 TS  6/12 D  122/122  E  176  Accuracy 25.83 Corpses:  I  0 C  0 H 1560/1560 TS  6/12 D  122/122  E  176  Accuracy 25.89 Corpses:  I  0 C  0 }
+            {Description} { A bag.  You can put things in it. It looks light.  Deadman: 0    / | \\  A nearly empty vault.  This county has no need for great amounts of cash.  The walls and floor are nearly empty. Deadman: 0 }
             {Rooms} 
             {
                 {1} {34969}
+                {2} {41859}
             }
         }
         {Bodyarmour} 
         {
-            {Description} { A heavy, bulletproof vest.  This thing could stop a Mack truck.  If you were strong enough to wear it! The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: >10 edged, >10 blunt, 10 energy  You must be level 10 to wear this.  }
+            {Description} { A heavy, bulletproof vest.  This thing could stop a Mack truck.  If you were strong enough to wear it! The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 17 edged, 18 blunt, 10 energy  You must be level 10 to wear this.  }
             {Rooms} 
             {
                 {1} {34901}
                 {2} {34908}
                 {3} {34915}
-                {4} {34969}
-                {5} {34916}
-                {6} {34929}
+                {4} {34916}
+                {5} {34929}
+                {6} {34970}
                 {7} {34899}
-                {8} {34970}
+                {8} {34969}
+                {9} {34918}
+                {10} {34913}
+            }
+        }
+        {Bonds} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {41859}
             }
         }
         {Fangsword} 
@@ -64621,11 +65009,51 @@
     {
         {A Crap} 
         {
-            {Description} { A slimy, turgid piece of shit.  You can throw it at someone, but that wouldn't be very nice. It looks light. AREA RATING -> Like taking Candy from a Baby Monster class range since inception: 1,039 to 7,075 Monster class range for this boot  : 1,105 to 6,317  (Average: 3,711) This area has 2 discovered rooms. This room starts with a monster in it at least sometimes. }
+            {Description} {    A Crap  A slimy, turgid piece of shit.  You can throw it at someone, but that wouldn't be very nice. It looks light.  Deadman: 0  Deadman: 0  }
             {Rooms} 
             {
                 {1} {41753}
                 {2} {41752}
+            }
+        }
+        {A Roll of Toilet Paper} 
+        {
+            {Description} {    Al Bundy A Roll of Toilet Paper This is the finest, softest tp known to man.  Wars would be fought to get this stuff were it not for the fact that they can be bought for $2 a 6-roll pack at any local supermarket.  It looks light.  Deadman: 0  Deadman: 0 }
+            {Rooms} 
+            {
+                {1} {41752}
+            }
+        }
+        {A bronze plaque} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {41752}
+            }
+        }
+        {A magazine rack} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {41752}
+            }
+        }
+        {A mud puddle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {41752}
+            }
+        }
+        {A patch of mist} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {41752}
             }
         }
     }
@@ -67481,9 +67909,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {19448}
-                {2} {19450}
-                {3} {19471}
+                {1} {19450}
+                {2} {19471}
+                {3} {19448}
             }
         }
         {A vile patch of weeds} 
@@ -67491,8 +67919,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {19448}
-                {2} {19450}
+                {1} {19450}
+                {2} {19448}
             }
         }
         {Cruel Cabbage Shield} 
@@ -69107,9 +69535,9 @@
             {Rooms} 
             {
                 {1} {34839}
-                {2} {34837}
-                {3} {34834}
-                {4} {34836}
+                {2} {34834}
+                {3} {34836}
+                {4} {34837}
             }
         }
         {A small sign} 
@@ -69128,10 +69556,10 @@
                 {1} {34852}
                 {2} {34849}
                 {3} {34847}
-                {4} {34844}
-                {5} {34848}
-                {6} {34851}
-                {7} {34846}
+                {4} {34848}
+                {5} {34851}
+                {6} {34846}
+                {7} {34844}
             }
         }
         {Bloodstone ring} 
@@ -69169,6 +69597,14 @@
         {Lead ring} 
         {
             {Description} {   up Tigger A small, decorated, lead ring.  You cannot surmise what powers it may or may not possess.  Perhaps an identification spell will reveal what you wish to know. It looks light. Ant   Ant   Ant   }
+            {Rooms} 
+            {
+                {1} {41902}
+            }
+        }
+        {Pyrite ring} 
+        {
+            {Description} {  Tigger Pyrite ring  A small, decorated, pyrite ring.  You cannot surmise what powers it may or may not possess.  Perhaps an identification spell will reveal what you wish to know. It looks light.  Deadman: 0  Deadman: 0 Psionic waves emanate from your body.   Deadman: 0 }
             {Rooms} 
             {
                 {1} {41902}
