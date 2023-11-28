@@ -24,6 +24,12 @@
 };
 
 
+#FUNCTION {isAvoidOnFor} 
+{
+    #map at %0 #map roomflag avoid get {avoidOn};
+    #return $avoidOn;
+};
+
 
 #action {Raest leaves %1\.} 
 { 
