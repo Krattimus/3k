@@ -2252,13 +2252,13 @@
             {13} {An elven guardian sword }
             {14} {Fruitcake}
             {15} {Sugar plumbs}
-            {16} {A warning sign}
-            {17} {Elven archery bracers}
-            {18} {A curved elven bow}
-            {19} {A set of burning logs}
-            {20} {A pot filled with boiling water}
-            {21} {An elven guardian sword}
-            {22} {amulet}
+            {16} {Elven archery bracers}
+            {17} {A curved elven bow}
+            {18} {amulet}
+            {19} {An elven guardian sword}
+            {20} {A set of burning logs}
+            {21} {A pot filled with boiling water}
+            {22} {A warning sign}
         }
         {Mobs} 
         {
@@ -2269,29 +2269,30 @@
             {5} {Cur, the tradesman's dog}
             {6} {Cancer the tradesman}
             {7} {An elven guardian   !attacking Voodoo!}
-            {8} {A frightened ghost elf}
-            {9} {Voodoo's Jugger Support Mech}
-            {10} {A tank named Shaguar}
-            {11} {A strong elven soldier}
-            {12} {A burly elven soldier}
-            {13} {A fat ghost elf}
-            {14} {A scared ghost elf}
-            {15} {Harbl the Grimare}
-            {16} {A thin ghost elf}
-            {17} {A young ghost elf}
-            {18} {A huge elven skeleton}
-            {19} {A nimble elven archer}
-            {20} {Elven Archer}
-            {21} {Yihan, the Elven Shade}
-            {22} {Yihan}
-            {23} {An elven guardian}
-            {24} {Elven Guardian}
-            {25} {An Elven Lich}
-            {26} {Guyahi, the Banshee Queen}
-            {27} {Guyahi}
-            {28} {l hound}
-            {29} {A loyal hound}
-            {30} {Loyal Hound}
+            {8} {Voodoo's Jugger Support Mech}
+            {9} {A tank named Shaguar}
+            {10} {A strong elven soldier}
+            {11} {A burly elven soldier}
+            {12} {A scared ghost elf}
+            {13} {Harbl the Grimare}
+            {14} {Elven Archer}
+            {15} {Awk the happy red panda}
+            {16} {Yihan, the Elven Shade}
+            {17} {Yihan}
+            {18} {Elven Guardian}
+            {19} {An Elven Lich}
+            {20} {Guyahi, the Banshee Queen}
+            {21} {Guyahi}
+            {22} {l hound}
+            {23} {Loyal Hound}
+            {24} {A nimble elven archer}
+            {25} {A huge elven skeleton}
+            {26} {An elven guardian}
+            {27} {A loyal hound}
+            {28} {A fat ghost elf}
+            {29} {A frightened ghost elf}
+            {30} {A young ghost elf}
+            {31} {A thin ghost elf}
         }
         {Ratings} 
         {
@@ -3637,15 +3638,15 @@
             {135} {A stand selling Mentos}
             {136} {A staircase}
             {137} {A Weird Hanging Ladder}
-            {138} {A bouncing frankfurter}
-            {139} {A Crazily Canted and Odd Pipe}
-            {140} {A bouncing bingo ball}
-            {141} {A laboratory building, floating in the void}
-            {142} {A Small ChaosBrand Television Set}
-            {143} {A rusty ship anchor}
-            {144} {Arena Ticket}
-            {145} {A small dispensing machine}
-            {146} {A bronze plaque}
+            {138} {A Crazily Canted and Odd Pipe}
+            {139} {A bouncing bingo ball}
+            {140} {A laboratory building, floating in the void}
+            {141} {A Small ChaosBrand Television Set}
+            {142} {A rusty ship anchor}
+            {143} {Arena Ticket}
+            {144} {A small dispensing machine}
+            {145} {A bronze plaque}
+            {146} {A bouncing frankfurter}
             {147} {A newly erected billboard}
         }
         {Mobs} 
@@ -3725,10 +3726,10 @@
             {73} {A Disoreinted Typo}
             {74} {A two-headed dog}
             {75} {A three-eyed squirrel}
-            {76} {A generically animated Springfield citizen}
-            {77} {A foul-smelling Armadillo}
-            {78} {A scientist}
-            {79} {Villager}
+            {76} {A scientist}
+            {77} {Villager}
+            {78} {A foul-smelling Armadillo}
+            {79} {A generically animated Springfield citizen}
         }
         {Ratings} 
         {
@@ -5470,225 +5471,225 @@
             {13} {WispShield (0%) \x7B2\x7D}
             {14} {Enormous Worm Tooth (enchanted)}
             {15} {Right side of a talisman}
-            {16} {Luminous Globe}
-            {17} {Sodalite ring}
-            {18} {The skin of Beloch \x7B2\x7D}
-            {19} {A sharp, granite no-dachi (enchanted)}
-            {20} {Bloodstone ring}
-            {21} {Steel ring}
-            {22} {A shining, onyx bastardsword (enchanted)}
-            {23} {A huge box (contains 78 items)}
-            {24} {Bracelet of Ulmedea \x7B2\x7D}
+            {16} {Sodalite ring}
+            {17} {The skin of Beloch \x7B2\x7D}
+            {18} {A sharp, granite no-dachi (enchanted)}
+            {19} {Bloodstone ring}
+            {20} {Steel ring}
+            {21} {A shining, onyx bastardsword (enchanted)}
+            {22} {A huge box (contains 78 items)}
+            {23} {Bracelet of Ulmedea \x7B2\x7D}
+            {24} {The skin of Beloch \x7B4\x7D}
             {25} {The skin of Beloch \x7B4\x7D}
-            {26} {The skin of Beloch \x7B4\x7D}
+            {26} {The skin of Beloch \x7B3\x7D}
             {27} {The skin of Beloch \x7B3\x7D}
             {28} {The skin of Beloch \x7B3\x7D}
             {29} {The skin of Beloch \x7B3\x7D}
             {30} {The skin of Beloch \x7B3\x7D}
             {31} {The skin of Beloch \x7B3\x7D}
-            {32} {The skin of Beloch \x7B3\x7D}
-            {33} {*crystal blue stone}
-            {34} {*Champ Bear's Headband \x7Bexcellent\x7D (worn on head)}
-            {35} {*Willie's Kilt (worn)}
-            {36} {*A Veggie Taco (crisp)}
-            {37} {*Zelligar's Headband -=|[.oOo.]|=- (worn)}
-            {38} {*A Gigantic Pop}
-            {39} {*The Dragon Shell Armor (worn)}
-            {40} {*The Aurothon Shield (worn)}
-            {41} {*A sticky cocoon \x7Bunyielding\x7D (worn)}
-            {42} {*Aegis Bodyarmor [polished] (worn)}
-            {43} {*Kevlar Bracers (worn)}
-            {44} {*A supple leather bag (41% full)}
-            {45} {*Amulet of the Spirit \x7Bradiant\x7D (worn around neck)}
-            {46} {*A pair of earmuffs (worn)}
-            {47} {*a Starfleet com badge (worn)}
-            {48} {*a visor (worn)}
-            {49} {*Bracers of the Spirit \x7Bradiant\x7D (worn)}
-            {50} {*Redaxe (wielded) (enchanted)}
-            {51} {*a warrior's bandolier (worn)}
-            {52} {*phylactery of the mists (worn)}
-            {53} {*Lumberjack Suspenders}
-            {54} {*a shimmering orange tether to your immortal soul (dim)}
-            {55} {*Clan Symbol of For Friends Sake}
-            {56} {*a link to the PortalChat line}
-            {57} {*A scavenger hunt item list (item list)}
+            {32} {*crystal blue stone}
+            {33} {*Champ Bear's Headband \x7Bexcellent\x7D (worn on head)}
+            {34} {*Willie's Kilt (worn)}
+            {35} {*A Veggie Taco (crisp)}
+            {36} {*Zelligar's Headband -=|[.oOo.]|=- (worn)}
+            {37} {*A Gigantic Pop}
+            {38} {*The Dragon Shell Armor (worn)}
+            {39} {*The Aurothon Shield (worn)}
+            {40} {*A sticky cocoon \x7Bunyielding\x7D (worn)}
+            {41} {*Aegis Bodyarmor [polished] (worn)}
+            {42} {*Kevlar Bracers (worn)}
+            {43} {*A supple leather bag (41% full)}
+            {44} {*Amulet of the Spirit \x7Bradiant\x7D (worn around neck)}
+            {45} {*A pair of earmuffs (worn)}
+            {46} {*a Starfleet com badge (worn)}
+            {47} {*a visor (worn)}
+            {48} {*Bracers of the Spirit \x7Bradiant\x7D (worn)}
+            {49} {*Redaxe (wielded) (enchanted)}
+            {50} {*a warrior's bandolier (worn)}
+            {51} {*phylactery of the mists (worn)}
+            {52} {*Lumberjack Suspenders}
+            {53} {*a shimmering orange tether to your immortal soul (dim)}
+            {54} {*Clan Symbol of For Friends Sake}
+            {55} {*a link to the PortalChat line}
+            {56} {*A scavenger hunt item list (item list)}
+            {57} {The skin of Beloch \x7B3\x7D}
             {58} {The skin of Beloch \x7B3\x7D}
-            {59} {The skin of Beloch \x7B3\x7D}
-            {60} {*DragonBlade (wielded)}
-            {61} {*A little bear named Freeway (excited) (worn)}
-            {62} {*A little silver bell}
-            {63} {*Silver key}
-            {64} {*Ring of Magical Deflection}
-            {65} {*A melded matrix of Dexterity and Strength}
-            {66} {*Ring of Hearts (worn on left hand)}
-            {67} {*A sticky cocoon \x7Bunyielding\x7D (worn)}
-            {68} {*Aura of Heavenly Protection \x7Bshimmering\x7D (worn)}
-            {69} {*A Gnomish Pack}
-            {70} {*Demon Spider Carapace (worn)}
-            {71} {*The Glass Ring (worn on right hand)}
-            {72} {*A small brass key \x7B2\x7D}
-            {73} {*A small panel (girthy) (worn)}
-            {74} {*Alien Queen's skin (caustic) (worn)}
-            {75} {*The Glass Boots (worn on feet)}
-            {76} {*A wand of illumination (18) (held)}
-            {77} {*Mace}
-            {78} {An enchanted coffin  [....|.]  [FULL]}
-            {79} {*The Glass Gloves (worn on hands)}
-            {80} {*A plastic specimen bag}
-            {81} {*A set of keys}
-            {82} {*phylactery of the mists}
-            {83} {*Death's Freezer (2 corpses)}
-            {84} {*Party banner of No Pants Party}
-            {85} {*Juggernaut Clan Medallion}
-            {86} {*a sexy black apron (almost lacy) (worn)}
-            {87} {*Set of Mace Spikes}
-            {88} {*Book of Matches}
-            {89} {*Royal Seal of Keyloncia}
-            {90} {*Clan Symbol of Anger Management}
-            {91} {*A Hangman's Noose}
-            {92} {*A Transmuter's Stone (filled with 162 colours)}
-            {93} {A ridged, black, adamantium Staff \x7B6\x7D}
-            {94} {Long Sword \x7B2\x7D}
-            {95} {Superior fragment of light}
-            {96} {Average fragment of damnation}
-            {97} {Good essence of light}
-            {98} {Quesadilla Codpiece (massive) (worn)}
-            {99} {*wand of secret door location (13)}
-            {100} {*Zelligar's Headband -~<\x7B8\x7D>~- (worn)}
-            {101} {*Gloves of Acid Protection}
-            {102} {*Wings of Mammon (worn)}
-            {103} {*wand of secret door location (10) \x7B2\x7D}
-            {104} {*wand of secret door location (14)}
-            {105} {An enchanted coffin (29 corpses)  [...|..]  [FULL]}
-            {106} {Explorer's Torch}
-            {107} {Dundee hunting permit}
-            {108} {Safari Hat}
-            {109} {Tactician's Manual}
-            {110} {A Transmuter's Stone (filled with 164 colours)}
-            {111} {A ring of house keys}
-            {112} {An auction line}
-            {113} {Assassin's Mark}
-            {114} {A Crafter's Satchel}
-            {115} {Brass Knuckles}
-            {116} {Long shimmering thread}
-            {117} {Worn leather book}
-            {118} {Ninja badge of honor (Adept)}
-            {119} {Clan Symbol of Nightmare Asylum}
+            {59} {*DragonBlade (wielded)}
+            {60} {*A little bear named Freeway (excited) (worn)}
+            {61} {*A little silver bell}
+            {62} {*Silver key}
+            {63} {*Ring of Magical Deflection}
+            {64} {*A melded matrix of Dexterity and Strength}
+            {65} {*Ring of Hearts (worn on left hand)}
+            {66} {*A sticky cocoon \x7Bunyielding\x7D (worn)}
+            {67} {*Aura of Heavenly Protection \x7Bshimmering\x7D (worn)}
+            {68} {*A Gnomish Pack}
+            {69} {*Demon Spider Carapace (worn)}
+            {70} {*The Glass Ring (worn on right hand)}
+            {71} {*A small brass key \x7B2\x7D}
+            {72} {*A small panel (girthy) (worn)}
+            {73} {*Alien Queen's skin (caustic) (worn)}
+            {74} {*The Glass Boots (worn on feet)}
+            {75} {*A wand of illumination (18) (held)}
+            {76} {*Mace}
+            {77} {An enchanted coffin  [....|.]  [FULL]}
+            {78} {*The Glass Gloves (worn on hands)}
+            {79} {*A plastic specimen bag}
+            {80} {*A set of keys}
+            {81} {*phylactery of the mists}
+            {82} {*Death's Freezer (2 corpses)}
+            {83} {*Party banner of No Pants Party}
+            {84} {*Juggernaut Clan Medallion}
+            {85} {*a sexy black apron (almost lacy) (worn)}
+            {86} {*Set of Mace Spikes}
+            {87} {*Book of Matches}
+            {88} {*Royal Seal of Keyloncia}
+            {89} {*Clan Symbol of Anger Management}
+            {90} {*A Hangman's Noose}
+            {91} {*A Transmuter's Stone (filled with 162 colours)}
+            {92} {A ridged, black, adamantium Staff \x7B6\x7D}
+            {93} {Long Sword \x7B2\x7D}
+            {94} {Superior fragment of light}
+            {95} {Average fragment of damnation}
+            {96} {Good essence of light}
+            {97} {Quesadilla Codpiece (massive) (worn)}
+            {98} {*wand of secret door location (13)}
+            {99} {*Zelligar's Headband -~<\x7B8\x7D>~- (worn)}
+            {100} {*Gloves of Acid Protection}
+            {101} {*Wings of Mammon (worn)}
+            {102} {*wand of secret door location (10) \x7B2\x7D}
+            {103} {*wand of secret door location (14)}
+            {104} {An enchanted coffin (29 corpses)  [...|..]  [FULL]}
+            {105} {Explorer's Torch}
+            {106} {Dundee hunting permit}
+            {107} {Safari Hat}
+            {108} {Tactician's Manual}
+            {109} {A Transmuter's Stone (filled with 164 colours)}
+            {110} {A ring of house keys}
+            {111} {An auction line}
+            {112} {Assassin's Mark}
+            {113} {A Crafter's Satchel}
+            {114} {Brass Knuckles}
+            {115} {Long shimmering thread}
+            {116} {Worn leather book}
+            {117} {Ninja badge of honor (Adept)}
+            {118} {Clan Symbol of Nightmare Asylum}
+            {119} {The skin of Beloch \x7B3\x7D}
             {120} {The skin of Beloch \x7B3\x7D}
             {121} {The skin of Beloch \x7B3\x7D}
-            {122} {The skin of Beloch \x7B3\x7D}
+            {122} {The skin of Beloch \x7B4\x7D}
             {123} {The skin of Beloch \x7B4\x7D}
             {124} {The skin of Beloch \x7B4\x7D}
             {125} {The skin of Beloch \x7B4\x7D}
-            {126} {The skin of Beloch \x7B4\x7D}
-            {127} {WispShield (0%)}
-            {128} {The skin of Beloch \x7B6\x7D}
-            {129} {WispShield (0%) \x7B5\x7D}
-            {130} {The skin of Beloch \x7B6\x7D}
-            {131} {WispShield (0%) \x7B5\x7D}
-            {132} {Aviate's average Astral Construct}
-            {133} {The skin of Beloch \x7B6\x7D}
-            {134} {WispShield (0%) \x7B5\x7D}
-            {135} {The skin of Beloch \x7B6\x7D}
-            {136} {WispShield (0%) \x7B5\x7D}
-            {137} {The skin of Beloch \x7B6\x7D}
-            {138} {WispShield (0%) \x7B5\x7D}
-            {139} {The skin of Beloch \x7B6\x7D}
-            {140} {WispShield (0%) \x7B5\x7D}
-            {141} {The skin of Beloch \x7B6\x7D}
-            {142} {WispShield (0%) \x7B5\x7D}
-            {143} {The skin of Beloch \x7B6\x7D}
-            {144} {WispShield (0%) \x7B5\x7D}
-            {145} {A steel longsword}
-            {146} {Titanium ring}
-            {147} {Tin ring}
-            {148} {The skin of Beloch \x7B6\x7D}
-            {149} {WispShield (0%) \x7B5\x7D}
-            {150} {The skin of Beloch \x7B6\x7D}
-            {151} {WispShield (0%) \x7B5\x7D}
-            {152} {A cloud of noxious vapors surrounding Beloch}
-            {153} {A swirling vortex of lightning}
-            {154} {God Crafted Plate Mail}
-            {155} {The Blade of Ghoti }
-            {156} {An engraved, steel blade}
-            {157} {Pyrite ring}
-            {158} {Zinc ring}
-            {159} {Malachite ring}
-            {160} {An ENORMOUS club}
-            {161} {A ridged, black, adamantium Staff}
-            {162} {Rift to a nether plane of darkness}
-            {163} {A deformed, impaled corpse of Drider guard}
-            {164} {A flood of pure darkness}
-            {165} {An unkindness of dark ravens}
-            {166} {A radiant sickle}
-            {167} {A pool of blood beneath Beloch}
-            {168} {Rabbit's Foot}
-            {169} {Rift to a nether plane of death}
-            {170} {A shining, onyx katana }
-            {171} {A triple-edged, platinum foil }
-            {172} {Aluminum ring}
-            {173} {Moonstone ring}
-            {174} {*PsiMace }
-            {175} {*holy torch }
-            {176} {You can 'zot' the zot boon off of any player}
-            {177} {*A sticky cocoon }
-            {178} {*A side of rice }
-            {179} {*A Veggie Taco }
-            {180} {*Zelligar's Headband -=||=- }
-            {181} {*Brave Heart Lion's Mane }
-            {182} {*Cheer Bear's Gloves }
-            {183} {*Grumpy's Galoshes }
-            {184} {*Party banner of RuneTacoz & InfinityBurritos}
-            {185} {*Ruby tinted cloak }
-            {186} {*Greenstone amulet }
-            {187} {*Ring of Magical Deflection }
-            {188} {*Breastplate of the Spirit }
-            {189} {*Greaves of the Spirit }
-            {190} {*Bracers of the Spirit }
-            {191} {*A pouch of moon-rocks }
-            {192} {An enchanted coffin  }
-            {193} {*An ortus crystal}
-            {194} {*A Talar crystal }
-            {195} {*A Kulnara crystal }
-            {196} {*A Vontara crystal}
-            {197} {*A Ryala crystal}
-            {198} {*thin pleather gloves}
-            {199} {*brown leather boots}
-            {200} {*heavy steel breastplate}
-            {201} {*chicken-bone greaves}
-            {202} {*wooden sword}
-            {203} {*An auction line}
-            {204} {*long shimmering thread}
-            {205} {*An amber crystal}
-            {206} {*A Reforger's Kit}
-            {207} {*Worn leather book}
-            {208} {*A ring of house keys}
-            {209} {*A hand in the game of Euchre}
-            {210} {A gold wedding ring }
-            {211} {*Assassin's Mark}
-            {212} {*Tactician's Manual}
-            {213} {*A Crafter's Satchel}
-            {214} {*Clan Symbol of Scruffy Nerf Herders}
-            {215} {*Safari Hat}
-            {216} {*Dundee hunting permit}
-            {217} {*A Magician's Top Hat}
-            {218} {*PRB Chatline}
-            {219} {*A scavenger hunt item list }
-            {220} {*A Quintar Crystal Amulet}
-            {221} {Ring of Hearts}
-            {222} {Boots of the Spirit}
-            {223} {Cloak of the Spirit}
-            {224} {Anvil}
-            {225} {A KrustyBrand Medic-Alert Bracelet}
-            {226} {A purple bead necklace}
-            {227} {Aura of Heavenly Protection}
-            {228} {The aura of order fades into the infrared, giving you a slight headache}
-            {229} {Light drifts slowly across the manifestation of order}
-            {230} {An aura of pure order }
-            {231} {A brilliant glowing, ever-growing sphere of energy}
-            {232} {Potion giving you the finger}
+            {126} {WispShield (0%)}
+            {127} {The skin of Beloch \x7B6\x7D}
+            {128} {WispShield (0%) \x7B5\x7D}
+            {129} {The skin of Beloch \x7B6\x7D}
+            {130} {WispShield (0%) \x7B5\x7D}
+            {131} {Aviate's average Astral Construct}
+            {132} {The skin of Beloch \x7B6\x7D}
+            {133} {WispShield (0%) \x7B5\x7D}
+            {134} {The skin of Beloch \x7B6\x7D}
+            {135} {WispShield (0%) \x7B5\x7D}
+            {136} {The skin of Beloch \x7B6\x7D}
+            {137} {WispShield (0%) \x7B5\x7D}
+            {138} {The skin of Beloch \x7B6\x7D}
+            {139} {WispShield (0%) \x7B5\x7D}
+            {140} {The skin of Beloch \x7B6\x7D}
+            {141} {WispShield (0%) \x7B5\x7D}
+            {142} {The skin of Beloch \x7B6\x7D}
+            {143} {WispShield (0%) \x7B5\x7D}
+            {144} {A steel longsword}
+            {145} {Titanium ring}
+            {146} {Tin ring}
+            {147} {The skin of Beloch \x7B6\x7D}
+            {148} {WispShield (0%) \x7B5\x7D}
+            {149} {The skin of Beloch \x7B6\x7D}
+            {150} {WispShield (0%) \x7B5\x7D}
+            {151} {A cloud of noxious vapors surrounding Beloch}
+            {152} {A swirling vortex of lightning}
+            {153} {God Crafted Plate Mail}
+            {154} {The Blade of Ghoti }
+            {155} {An engraved, steel blade}
+            {156} {Pyrite ring}
+            {157} {Zinc ring}
+            {158} {Malachite ring}
+            {159} {An ENORMOUS club}
+            {160} {A ridged, black, adamantium Staff}
+            {161} {Rift to a nether plane of darkness}
+            {162} {A deformed, impaled corpse of Drider guard}
+            {163} {A flood of pure darkness}
+            {164} {An unkindness of dark ravens}
+            {165} {A radiant sickle}
+            {166} {A pool of blood beneath Beloch}
+            {167} {Rabbit's Foot}
+            {168} {Rift to a nether plane of death}
+            {169} {A shining, onyx katana }
+            {170} {A triple-edged, platinum foil }
+            {171} {Aluminum ring}
+            {172} {Moonstone ring}
+            {173} {*PsiMace }
+            {174} {*holy torch }
+            {175} {You can 'zot' the zot boon off of any player}
+            {176} {*A sticky cocoon }
+            {177} {*A side of rice }
+            {178} {*A Veggie Taco }
+            {179} {*Zelligar's Headband -=||=- }
+            {180} {*Brave Heart Lion's Mane }
+            {181} {*Cheer Bear's Gloves }
+            {182} {*Grumpy's Galoshes }
+            {183} {*Party banner of RuneTacoz & InfinityBurritos}
+            {184} {*Ruby tinted cloak }
+            {185} {*Greenstone amulet }
+            {186} {*Ring of Magical Deflection }
+            {187} {*Breastplate of the Spirit }
+            {188} {*Greaves of the Spirit }
+            {189} {*Bracers of the Spirit }
+            {190} {*A pouch of moon-rocks }
+            {191} {An enchanted coffin  }
+            {192} {*An ortus crystal}
+            {193} {*A Talar crystal }
+            {194} {*A Kulnara crystal }
+            {195} {*A Vontara crystal}
+            {196} {*A Ryala crystal}
+            {197} {*thin pleather gloves}
+            {198} {*brown leather boots}
+            {199} {*heavy steel breastplate}
+            {200} {*chicken-bone greaves}
+            {201} {*wooden sword}
+            {202} {*An auction line}
+            {203} {*long shimmering thread}
+            {204} {*An amber crystal}
+            {205} {*A Reforger's Kit}
+            {206} {*Worn leather book}
+            {207} {*A ring of house keys}
+            {208} {*A hand in the game of Euchre}
+            {209} {A gold wedding ring }
+            {210} {*Assassin's Mark}
+            {211} {*Tactician's Manual}
+            {212} {*A Crafter's Satchel}
+            {213} {*Clan Symbol of Scruffy Nerf Herders}
+            {214} {*Safari Hat}
+            {215} {*Dundee hunting permit}
+            {216} {*A Magician's Top Hat}
+            {217} {*PRB Chatline}
+            {218} {*A scavenger hunt item list }
+            {219} {*A Quintar Crystal Amulet}
+            {220} {Ring of Hearts}
+            {221} {Boots of the Spirit}
+            {222} {Cloak of the Spirit}
+            {223} {Anvil}
+            {224} {A KrustyBrand Medic-Alert Bracelet}
+            {225} {A purple bead necklace}
+            {226} {Aura of Heavenly Protection}
+            {227} {The aura of order fades into the infrared, giving you a slight headache}
+            {228} {Light drifts slowly across the manifestation of order}
+            {229} {An aura of pure order }
+            {230} {A brilliant glowing, ever-growing sphere of energy}
+            {231} {Potion giving you the finger}
+            {232} {WispShield }
             {233} {The skin of Beloch}
-            {234} {WispShield }
+            {234} {Luminous Globe}
         }
         {Mobs} 
         {
@@ -5714,23 +5715,32 @@
             {20} {Calator Ondonto the Dracopixie}
             {21} {Mustakia the packmule}
             {22} {Avatar of Elentil}
-            {23} {A tank named Nacelle}
-            {24} {Ellegon's Jugger Support Mech}
-            {25} {A tank named Altitude}
-            {26} {Atticus's Jugger Support Mech}
-            {27} {Spirit of Amonath}
-            {28} {Grimnebulin, Kyoujin's Necrotic Slake Moth}
-            {29} {Taleast the Psicorps Second Lieutenant}
-            {30} {Mystic Unicorn}
-            {31} {A small toaster}
-            {32} {Korlat}
-            {33} {Kitt, Nightrider's Shiny Black Trans-Am}
-            {34} {Delundar}
-            {35} {Whiskeyjack the striped squirrel}
-            {36} {Beloch}
-            {37} {Drow Altar Guard}
-            {38} {Simonz's MN-2E General Maintenance Droid Alfred}
-            {39} {Beloch <^>}
+            {23} {A tank named Altitude}
+            {24} {Atticus's Jugger Support Mech}
+            {25} {Spirit of Amonath}
+            {26} {Grimnebulin, Kyoujin's Necrotic Slake Moth}
+            {27} {Taleast the Psicorps Second Lieutenant}
+            {28} {Mystic Unicorn}
+            {29} {A small toaster}
+            {30} {Korlat}
+            {31} {Kitt, Nightrider's Shiny Black Trans-Am}
+            {32} {Delundar}
+            {33} {Drow Altar Guard}
+            {34} {Simonz's MN-2E General Maintenance Droid Alfred}
+            {35} {Beloch <^>}
+            {36} {Duergar Citizen}
+            {37} {A tank named Nacelle}
+            {38} {Ellegon's Jugger Support Mech}
+            {39} {Neelix, Ellegon's Irish Wolfhound}
+            {40} {Taleast the Psicorps Major General}
+            {41} {A tank named Mushroom}
+            {42} {Badger's Jugger Support Mech}
+            {43} {Beloch}
+            {44} {A fat hairy wandering spider}
+            {45} {Spaz's Jugger Support Mech}
+            {46} {A tank named Spoz}
+            {47} {Whiskeyjack the striped squirrel}
+            {48} {Grimshanks, Kirwan's Rampaging Blood Monkey}
         }
         {Ratings} 
         {
@@ -8496,111 +8506,183 @@
             {7} {Stone door (south)}
             {8} {Arch door (west)}
             {9} {A statue of Kalas}
-            {10} {Stone table}
-            {11} {Wooden bench}
-            {12} {Dragonne }
-            {13} {Plinth}
-            {14} {Sturdy Desk}
-            {15} {Luminous Globe}
-            {16} {Mourning Raven Mask}
-            {17} {Crystal Ball}
-            {18} {Circular Table}
-            {19} {A broken sword}
-            {20} {Solid Chunk of Ceiling}
-            {21} {Small Chunk of Ceiling}
-            {22} {The skeletal remains of someone}
-            {23} {Hard Chunk of Ceiling}
-            {24} {Corpse of an Unfortunate Adventurer}
-            {25} {Lattice door }
-            {26} {Iron lattice door }
-            {27} {Massive iron door }
-            {28} {Brass Keys on a Corroded Ring}
-            {29} {Hippogriff Corpse}
-            {30} {Owlbear Corpse}
-            {31} {Ettin Corpse}
-            {32} {Iron door }
-            {33} {Torch}
-            {34} {Glass Flask}
-            {35} {Torch }
-            {36} {Large Oak Cask}
-            {37} {Stone door}
-            {38} {An ancient paper scroll }
-            {39} {Large Glass Jar}
+            {10} {Mourning Raven Mask}
+            {11} {An ancient paper scroll }
+            {12} {*Party banner of rictor's party}
+            {13} {*Ring of Hearts }
+            {14} {*Wand of security }
+            {15} {*Brass Keys on a Corroded Ring}
+            {16} {*An ancient gold foil scroll }
+            {17} {*A magic goose feather}
+            {18} {The Gem of the Zodiac }
+            {19} {*Iridescent Incense}
+            {20} {*A transparent camisole }
+            {21} {*Aura of Heavenly Protection }
+            {22} {*wand of secret door location }
+            {23} {*Axe}
+            {24} {*Zelligar's Headband -~<\x7B8\x7D>~- }
+            {25} {Explorer's Torch}
+            {26} {Clan Symbol of Nightmare Asylum}
+            {27} {Ninja badge of honor }
+            {28} {Worn leather book}
+            {29} {Long shimmering thread}
+            {30} {Brass Knuckles}
+            {31} {A Crafter's Satchel}
+            {32} {Assassin's Mark}
+            {33} {An auction line}
+            {34} {A ring of house keys}
+            {35} {A Transmuter's Stone }
+            {36} {Tactician's Manual}
+            {37} {Safari Hat}
+            {38} {Dundee hunting permit}
+            {39} {Fat Glass Jar}
             {40} {Lock Pick}
-            {41} {*Party banner of rictor's party}
-            {42} {*Ring of Hearts }
-            {43} {*Wand of security }
-            {44} {*Brass Keys on a Corroded Ring}
-            {45} {*An ancient gold foil scroll }
-            {46} {*A magic goose feather}
-            {47} {The Gem of the Zodiac }
-            {48} {*Iridescent Incense}
-            {49} {*A transparent camisole }
-            {50} {*Aura of Heavenly Protection }
-            {51} {*wand of secret door location }
-            {52} {*Axe}
-            {53} {*Zelligar's Headband -~<\x7B8\x7D>~- }
-            {54} {Explorer's Torch}
-            {55} {Clan Symbol of Nightmare Asylum}
-            {56} {Ninja badge of honor }
-            {57} {Worn leather book}
-            {58} {Long shimmering thread}
-            {59} {Brass Knuckles}
-            {60} {A Crafter's Satchel}
-            {61} {Assassin's Mark}
-            {62} {An auction line}
-            {63} {A ring of house keys}
-            {64} {A Transmuter's Stone }
-            {65} {Tactician's Manual}
-            {66} {Safari Hat}
-            {67} {Dundee hunting permit}
-            {68} {Fat Glass Jar}
-            {69} {Glass Jar}
-            {70} {Stone door }
-            {71} {Wooden door }
-            {72} {Oak Chest}
-            {73} {Black Cloak}
-            {74} {Arch door }
+            {41} {Torch }
+            {42} {Black Cloak}
+            {43} {An ancient papyrus scroll}
+            {44} {Lattice door }
+            {45} {Solid Chunk of Ceiling}
+            {46} {Corpse of an Unfortunate Adventurer}
+            {47} {Stone table}
+            {48} {Wooden bench}
+            {49} {Large Glass Jar}
+            {50} {Glass Jar}
+            {51} {Dragonne }
+            {52} {Plinth}
+            {53} {Sturdy Desk}
+            {54} {Brass Keys on a Corroded Ring}
+            {55} {Ettin Corpse}
+            {56} {Owlbear Corpse}
+            {57} {Hippogriff Corpse}
+            {58} {A broken sword}
+            {59} {Small Chunk of Ceiling}
+            {60} {The petrified remains of someone}
+            {61} {Hard Chunk of Ceiling}
+            {62} {Fist-sized Chunk of Ceiling}
+            {63} {Iron door }
+            {64} {The skeletal remains of someone}
+            {65} {A battered helmet}
+            {66} {Iron lattice door }
+            {67} {Massive iron door }
+            {68} {Arch door }
+            {69} {Crystal Ball}
+            {70} {Circular Table}
+            {71} {Oak Chest}
+            {72} {Wooden door }
+            {73} {Stone door }
+            {74} {Torch}
+            {75} {Glass Flask}
+            {76} {Large Oak Cask}
+            {77} {Stone door}
+            {78} {Luminous Globe}
+            {79} {A single gold coin}
+            {80} {The 3-K Kill List}
+            {81} {A Statue of Cancer the King}
+            {82} {A tall street light}
         }
         {Mobs} 
         {
             {1} {Hamatula}
             {2} {Osyluth}
-            {3} {Barbazu}
-            {4} {Abishai}
-            {5} {Jaguarundi}
-            {6} {Scrag}
-            {7} {Xorn}
-            {8} {Alhoon}
-            {9} {Otyugh}
-            {10} {Tabaxi}
-            {11} {Green slime}
-            {12} {An Archaeologist}
-            {13} {Xeg-yi}
-            {14} {Rat}
-            {15} {Gorgon}
-            {16} {Shrieker}
-            {17} {Ghost}
-            {18} {ub}
-            {19} {Larva}
-            {20} {Big Rot Grub}
-            {21} {Rot Grub}
-            {22} {Gorgimera}
-            {23} {Small gray mouse}
-            {24} {Hairy Spider}
-            {25} {Small brown rat}
-            {26} {Volt}
-            {27} {A fiendish black cloaker}
-            {28} {Cloaker}
-            {29} {Small brown bat}
+            {3} {Abishai}
+            {4} {Jaguarundi}
+            {5} {Alhoon}
+            {6} {Green slime}
+            {7} {An Archaeologist}
+            {8} {Rat}
+            {9} {Ghost}
+            {10} {ub}
+            {11} {Larva}
+            {12} {Otyugh}
+            {13} {Barbazu}
+            {14} {A fiendish black cloaker}
+            {15} {Cloaker}
+            {16} {Xeg-yi}
+            {17} {Xorn}
+            {18} {Big Rot Grub}
+            {19} {Rot Grub}
+            {20} {Scrag}
+            {21} {Shrieker}
+            {22} {Gorgon}
+            {23} {Tabaxi}
+            {24} {t Grub}
+            {25} {Gorgimera}
+            {26} {Ixitxachitl}
+            {27} {Small brown bat}
+            {28} {Hairy Spider}
+            {29} {Small brown rat}
+            {30} {Small gray mouse}
+            {31} {Volt}
         }
         {Ratings} 
         {
-            {1} {134}
+            {1} {22}
             {2} {62}
             {3} {97}
+            {4} {50}
+            {5} {35}
+            {6} {1}
+            {7} {134}
         }
         {Wizard} {Frank}
+    }
+    {Faunist Guild 2.0} 
+    {
+        {Items} 
+        {
+            {1} {Ettin Corpse}
+            {2} {Corpse of an Unfortunate Adventurer}
+            {3} {A broken sword}
+            {4} {The skeletal remains of someone}
+            {5} {The petrified remains of someone}
+            {6} {Hippogriff Corpse}
+            {7} {Brass Keys on a Corroded Ring}
+            {8} {Hard Chunk of Ceiling}
+            {9} {Iron door }
+            {10} {Small Chunk of Ceiling}
+            {11} {Fist-sized Chunk of Ceiling}
+            {12} {A battered helmet}
+            {13} {Lattice door }
+            {14} {Big Chunk of Ceiling}
+            {15} {Iron lattice door }
+            {16} {Massive iron door }
+            {17} {Black Cloak}
+            {18} {Circular Table}
+            {19} {Wooden door }
+            {20} {Oak Chest}
+            {21} {Sturdy Desk}
+            {22} {Arch door }
+            {23} {Torch}
+            {24} {Glass Flask}
+            {25} {Large Oak Cask}
+            {26} {Stone table}
+            {27} {Wooden bench}
+            {28} {Large Glass Jar}
+            {29} {Fat Glass Jar}
+            {30} {Glass Jar}
+            {31} {Dragonne }
+            {32} {Plinth}
+            {33} {Stone door }
+            {34} {Stone door}
+            {35} {Luminous Globe}
+        }
+        {Mobs} 
+        {
+            {1} {Ixitxachitl}
+            {2} {Xeg-yi}
+            {3} {Shrieker}
+            {4} {Gorgon}
+            {5} {A fiendish black cloaker}
+            {6} {Tabaxi}
+            {7} {Big Rot Grub}
+            {8} {t Grub}
+            {9} {Small brown bat}
+            {10} {Small gray mouse}
+            {11} {Small brown rat}
+            {12} {Hairy Spider}
+            {13} {Xorn}
+            {14} {Volt}
+        }
     }
     {Fidohell} 
     {
@@ -10738,47 +10820,49 @@
     {
         {Items} 
         {
-            {1} {A High Times Magazine}
-            {2} {A pot pipe (full)}
-            {3} {A crib}
-            {4} {A mud encrusted rake}
-            {5} {A Statue}
+            {1} {A crib}
+            {2} {A pot pipe }
+            {3} {A pot pipe (full)}
+            {4} {A High Times Magazine}
+            {5} {A mud encrusted rake}
+            {6} {A Statue}
         }
         {Mobs} 
         {
-            {1} {Magenta the Artistic Hippie}
-            {2} {Ironbark the Tree-Hugging Hippie}
-            {3} {Maryjane the Skipping Hippie}
-            {4} {Honeycomb the Teaching Hippie}
-            {5} {Lizzie the Pottery Hippie}
-            {6} {Birch the Handy Hippie}
-            {7} {A Horse}
-            {8} {A little sheepie}
-            {9} {A huge cow}
-            {10} {Wheatfeld the Farming Hippie}
-            {11} {A chicken}
-            {12} {Neil the Smelly Hippie}
-            {13} {Neil}
-            {14} {Roan the Groovy Hippie}
-            {15} {Roan}
-            {16} {Charlie the Hippie Kitty}
-            {17} {Windfare the Hippie Poet}
-            {18} {Magnolia the Flower Child}
-            {19} {Steamroller the Pipe Child}
-            {20} {Joy the Baby Hippie}
-            {21} {Shadowstar the Easy Hippie}
-            {22} {Moonbeam the Horny Hippie}
-            {23} {Loam the Stoner Hippie}
-            {24} {Granny the Nagging Hippie}
-            {25} {Sally the Sewing Hippie}
-            {26} {Ferrah the Sewing Hippie}
-            {27} {Jobe the Harvesting Hippie}
-            {28} {A Raccoon}
-            {29} {A Mouse}
-            {30} {A Rabbit}
-            {31} {A Mole}
-            {32} {Sunny the Cooking Hippie}
+            {1} {Magnolia the Flower Child}
+            {2} {Steamroller the Pipe Child}
+            {3} {Joy the Baby Hippie}
+            {4} {Shadowstar the Easy Hippie}
+            {5} {Moonbeam the Horny Hippie}
+            {6} {Loam the Stoner Hippie}
+            {7} {Sally the Sewing Hippie}
+            {8} {Ferrah the Sewing Hippie}
+            {9} {Roan the Groovy Hippie}
+            {10} {Roan}
+            {11} {Neil the Smelly Hippie}
+            {12} {Neil}
+            {13} {Charlie the Hippie Kitty}
+            {14} {Charlie}
+            {15} {Jobe the Harvesting Hippie}
+            {16} {A Raccoon}
+            {17} {A Rabbit}
+            {18} {A Mouse}
+            {19} {A Mole}
+            {20} {Sunny the Cooking Hippie}
+            {21} {Granny the Nagging Hippie}
+            {22} {Ironbark the Tree-Hugging Hippie}
+            {23} {Maryjane the Skipping Hippie}
+            {24} {Honeycomb the Teaching Hippie}
+            {25} {Magenta the Artistic Hippie}
+            {26} {Lizzie the Pottery Hippie}
+            {27} {Birch the Handy Hippie}
+            {28} {A Horse}
+            {29} {A little sheepie}
+            {30} {A huge cow}
+            {31} {Wheatfeld the Farming Hippie}
+            {32} {A chicken}
             {33} {Grampa the Old Hippie}
+            {34} {Windfare the Hippie Poet}
         }
         {Ratings} 
         {
@@ -12896,47 +12980,50 @@
             {23} {A busy pedestrian}
             {24} {Minerva's Jugger Support Mech}
             {25} {A tank named Rickypp}
-            {26} {White Tiger}
-            {27} {Demon Guard}
-            {28} {Bik, Zik's Chow Chow}
-            {29} {A tank named Qik}
-            {30} {Zik's Jugger Support Mech}
-            {31} {Xaryl's aerial servant Princess}
-            {32} {Betsy, Archangel's Red Roan Akhal-Teke}
-            {33} {Beautiful Chimera}
-            {34} {Pennywise the Valithyn}
-            {35} {Red Butterfly}
-            {36} {Orsurus the Guide}
-            {37} {Black Tiger}
-            {38} {Zeitgeist, Vegor's German Shepherd Dog}
-            {39} {Vegor's Jugger Support Mech}
-            {40} {Ellegon's Jugger Support Mech}
-            {41} {A tank named Nacelle}
-            {42} {Maverik's Jugger Support Mech}
-            {43} {A cargo truck named Tomcat}
-            {44} {Mammon}
-            {45} {Green Chinese Dragon}
-            {46} {Leaping Rat}
-            {47} {A small wandering spider}
-            {48} {Charging Ram}
-            {49} {Deathessence the Valithyn}
-            {50} {A horde of massive broodlings}
-            {51} {Blue Dolphin}
-            {52} {Purple Butterfly}
-            {53} {Black Chinese Dragon}
-            {54} {Lumbering Ox}
-            {55} {Blat the Valithyn}
-            {56} {Porky, Glazed's Cavalier King Charles Spaniel}
-            {57} {Winged Horse}
-            {58} {Jade Phoenix}
-            {59} {Sea Serpent}
-            {60} {Princess Qi}
-            {61} {Ned Flanders}
-            {62} {Golden Phoenix}
-            {63} {Gold Chinese Dragon}
-            {64} {Red Chinese Dragon}
-            {65} {Red Rabbit}
-            {66} {Lrille, Fuzzy's Golden Retriever}
+            {26} {Demon Guard}
+            {27} {Bik, Zik's Chow Chow}
+            {28} {A tank named Qik}
+            {29} {Zik's Jugger Support Mech}
+            {30} {Xaryl's aerial servant Princess}
+            {31} {Betsy, Archangel's Red Roan Akhal-Teke}
+            {32} {Beautiful Chimera}
+            {33} {Pennywise the Valithyn}
+            {34} {Orsurus the Guide}
+            {35} {Zeitgeist, Vegor's German Shepherd Dog}
+            {36} {Vegor's Jugger Support Mech}
+            {37} {Ellegon's Jugger Support Mech}
+            {38} {A tank named Nacelle}
+            {39} {Maverik's Jugger Support Mech}
+            {40} {A cargo truck named Tomcat}
+            {41} {Mammon}
+            {42} {A small wandering spider}
+            {43} {Charging Ram}
+            {44} {Deathessence the Valithyn}
+            {45} {A horde of massive broodlings}
+            {46} {Blue Dolphin}
+            {47} {Blat the Valithyn}
+            {48} {Porky, Glazed's Cavalier King Charles Spaniel}
+            {49} {Winged Horse}
+            {50} {Jade Phoenix}
+            {51} {Princess Qi}
+            {52} {Ned Flanders}
+            {53} {Gold Chinese Dragon}
+            {54} {Lrille, Fuzzy's Golden Retriever}
+            {55} {White Tiger}
+            {56} {Lumbering Ox}
+            {57} {Golden Phoenix}
+            {58} {Leaping Rat}
+            {59} {Red Chinese Dragon}
+            {60} {Green Chinese Dragon}
+            {61} {Black Chinese Dragon}
+            {62} {Black Tiger}
+            {63} {Sea Serpent}
+            {64} {Red Rabbit}
+            {65} {The 7 of Hearts}
+            {66} {A Gardener}
+            {67} {The 5 of Hearts}
+            {68} {Purple Butterfly}
+            {69} {Red Butterfly}
         }
         {Ratings} 
         {
@@ -14381,31 +14468,31 @@
             {31} {A statue of Rauthgar}
             {32} {A statue of Jodan}
             {33} {A slimey something}
-            {34} {*** A wild magic portal ***}
-            {35} {Animal Bones}
-            {36} {Gaming Die}
-            {37} {Myril Ring}
-            {38} {Old Blue Bottle}
-            {39} {A spider leg}
-            {40} {A pink granite obelisk}
-            {41} {Rotted boot}
-            {42} {Explorer's Pith Helmet }
-            {43} {Rock Hammer }
-            {44} {A park bench}
-            {45} {A statue of Ziose}
-            {46} {Luminous Globe}
-            {47} {A sundial}
-            {48} {A white marble obelisk}
-            {49} {A stone pillar}
-            {50} {A huge shrubbery}
-            {51} {Broken Foot}
-            {52} {Fern tendril}
-            {53} {A jaguar pelt}
-            {54} {A Notice Sign}
-            {55} {A piece of oakwood}
-            {56} {A nwerm leaf}
-            {57} {A raised bed garden}
-            {58} {Crypt}
+            {34} {Animal Bones}
+            {35} {Gaming Die}
+            {36} {Myril Ring}
+            {37} {Old Blue Bottle}
+            {38} {A spider leg}
+            {39} {A pink granite obelisk}
+            {40} {Rotted boot}
+            {41} {Explorer's Pith Helmet }
+            {42} {Rock Hammer }
+            {43} {A park bench}
+            {44} {A statue of Ziose}
+            {45} {Luminous Globe}
+            {46} {A sundial}
+            {47} {A white marble obelisk}
+            {48} {A stone pillar}
+            {49} {A huge shrubbery}
+            {50} {Broken Foot}
+            {51} {Fern tendril}
+            {52} {A jaguar pelt}
+            {53} {A Notice Sign}
+            {54} {A piece of oakwood}
+            {55} {A nwerm leaf}
+            {56} {A raised bed garden}
+            {57} {Crypt}
+            {58} {*** A wild magic portal ***}
         }
         {Mobs} 
         {
@@ -14438,28 +14525,28 @@
             {27} {Black Abishai}
             {28} {Snake}
             {29} {Red Abishai}
-            {30} {An Archaeologist}
-            {31} {Fern}
-            {32} {A Grizzled Explorer}
-            {33} {Jaguarundi}
-            {34} {Abishai}
-            {35} {Erinyes}
-            {36} {Spinagon}
-            {37} {Hamatula}
-            {38} {Osyluth}
-            {39} {Barbazu}
-            {40} {Green Erinyes}
-            {41} {Red jaguarundi stalking the rubble}
-            {42} {A tropical fern}
-            {43} {Alhoon}
+            {30} {Fern}
+            {31} {A Grizzled Explorer}
+            {32} {Jaguarundi}
+            {33} {Abishai}
+            {34} {Erinyes}
+            {35} {Spinagon}
+            {36} {Hamatula}
+            {37} {Osyluth}
+            {38} {Barbazu}
+            {39} {Green Erinyes}
+            {40} {Red jaguarundi stalking the rubble}
+            {41} {A tropical fern}
+            {42} {Alhoon}
+            {43} {An Archaeologist}
         }
         {Ratings} 
         {
             {1} {70}
             {2} {34}
-            {3} {32}
-            {4} {200}
-            {5} {55}
+            {3} {55}
+            {4} {32}
+            {5} {200}
         }
         {Wizard} {Bran}
     }
@@ -14469,48 +14556,55 @@
         {
             {1} {Ivory Wand}
             {2} {A black basalt obelisk}
-            {3} {Luminous Globe}
-            {4} {Gaming Die}
-            {5} {Average essence of ascension}
-            {6} {Magical willow harp}
-            {7} {Silver Key (glowing)}
-            {8} {Magical swamp cedar harp}
-            {9} {A fragment of a book}
-            {10} {Fern tendril \x7B3\x7D}
-            {11} {A cracked clay jug}
-            {12} {A statue of Kyron}
-            {13} {A ancient skeleton}
-            {14} {Old Blue Bottle}
-            {15} {A green oxidized bronze obelisk}
-            {16} {A slimey something}
-            {17} {The putrid, slightly moldy corpse of Hydra}
-            {18} {A brown sandstone obelisk}
-            {19} {Fern tendril \x7B3\x7D}
-            {20} {Magical pearwood harp}
-            {21} {Sapphire Earring (broken)}
-            {22} {A rose quartz obelisk}
-            {23} {Fern tendril \x7B3\x7D}
-            {24} {Mausoleum}
-            {25} {A statue of Nocturnis}
-            {26} {A statue of Galan}
-            {27} {A rusted iron obelisk}
-            {28} {Crypt}
-            {29} {A white marble obelisk}
-            {30} {A hand}
-            {31} {Fern tendril}
-            {32} {Rotted boot}
-            {33} {*** A wild magic portal ***}
-            {34} {Animal Bones}
-            {35} {A jaguar pelt}
-            {36} {A jaguarundi pelt}
-            {37} {A statue of Kalas}
-            {38} {A statue of Torickii}
-            {39} {A park bench}
-            {40} {A raised bed garden}
-            {41} {A pink granite obelisk}
-            {42} {A sundial}
-            {43} {A stone pillar}
-            {44} {A huge shrubbery}
+            {3} {Gaming Die}
+            {4} {Average essence of ascension}
+            {5} {Magical willow harp}
+            {6} {Silver Key (glowing)}
+            {7} {Magical swamp cedar harp}
+            {8} {A fragment of a book}
+            {9} {Fern tendril \x7B3\x7D}
+            {10} {A cracked clay jug}
+            {11} {A statue of Kyron}
+            {12} {A ancient skeleton}
+            {13} {Old Blue Bottle}
+            {14} {A green oxidized bronze obelisk}
+            {15} {A slimey something}
+            {16} {The putrid, slightly moldy corpse of Hydra}
+            {17} {A brown sandstone obelisk}
+            {18} {Fern tendril \x7B3\x7D}
+            {19} {Magical pearwood harp}
+            {20} {Sapphire Earring (broken)}
+            {21} {A rose quartz obelisk}
+            {22} {Fern tendril \x7B3\x7D}
+            {23} {Mausoleum}
+            {24} {A statue of Nocturnis}
+            {25} {A statue of Galan}
+            {26} {A rusted iron obelisk}
+            {27} {Crypt}
+            {28} {A white marble obelisk}
+            {29} {A hand}
+            {30} {Fern tendril}
+            {31} {Rotted boot}
+            {32} {Animal Bones}
+            {33} {A jaguar pelt}
+            {34} {A statue of Kalas}
+            {35} {A statue of Torickii}
+            {36} {A park bench}
+            {37} {A raised bed garden}
+            {38} {A pink granite obelisk}
+            {39} {A sundial}
+            {40} {A stone pillar}
+            {41} {A huge shrubbery}
+            {42} {*** A wild magic portal ***}
+            {43} {Myril Cloak}
+            {44} {A jaguarundi pelt}
+            {45} {Myril Ring}
+            {46} {Myril Pair of Gloves}
+            {47} {Torch}
+            {48} {Glass Flask}
+            {49} {Stone door}
+            {50} {Large Oak Cask}
+            {51} {Luminous Globe}
         }
         {Mobs} 
         {
@@ -14518,51 +14612,53 @@
             {2} {Xorn}
             {3} {Otyugh}
             {4} {Vulture}
-            {5} {Small gray mouse}
-            {6} {Ixitxachitl}
-            {7} {Red jaguarundi stalking the rubble}
-            {8} {Hairy Spider}
-            {9} {Black Spinagon}
-            {10} {Alhoon}
-            {11} {Crow}
-            {12} {An Archaeologist}
-            {13} {Black panther hunting in the dark}
-            {14} {Dark jaguarundi hunting in the dark}
-            {15} {d green Spinagon}
-            {16} {Red Abishai}
-            {17} {Abishai}
-            {18} {Condor}
-            {19} {Brown Spinagon}
-            {20} {Mottled green Spinagon}
-            {21} {h}
-            {22} {u}
-            {23} {Green Erinyes}
-            {24} {Banana Spider}
-            {25} {Buzzard}
-            {26} {Gray Erinyes}
-            {27} {Blue Erinyes}
-            {28} {A Grizzled Explorer}
-            {29} {la}
-            {30} {Dark spotted jaguar lays in wait}
-            {31} {A tropical fern}
-            {32} {Starling}
-            {33} {Black Abishai}
-            {34} {Archaeologist}
-            {35} {Osyluth}
-            {36} {Spinagon}
-            {37} {Jaguarundi}
-            {38} {Hamatula}
-            {39} {Fern}
-            {40} {Jaguar}
-            {41} {Beholder}
-            {42} {Demon}
-            {43} {Barbazu}
-            {44} {Erinyes}
+            {5} {Ixitxachitl}
+            {6} {Red jaguarundi stalking the rubble}
+            {7} {Black Spinagon}
+            {8} {Alhoon}
+            {9} {Crow}
+            {10} {Black panther hunting in the dark}
+            {11} {d green Spinagon}
+            {12} {Red Abishai}
+            {13} {Condor}
+            {14} {Brown Spinagon}
+            {15} {h}
+            {16} {Green Erinyes}
+            {17} {Banana Spider}
+            {18} {Buzzard}
+            {19} {Gray Erinyes}
+            {20} {Blue Erinyes}
+            {21} {A Grizzled Explorer}
+            {22} {Dark spotted jaguar lays in wait}
+            {23} {Starling}
+            {24} {Black Abishai}
+            {25} {Archaeologist}
+            {26} {Spinagon}
+            {27} {Jaguar}
+            {28} {Beholder}
+            {29} {Demon}
+            {30} {Erinyes}
+            {31} {Dark jaguarundi hunting in the dark}
+            {32} {A tropical fern}
+            {33} {Fern}
+            {34} {Small brown bat}
+            {35} {Small brown rat}
+            {36} {Abishai}
+            {37} {Osyluth}
+            {38} {Jaguarundi}
+            {39} {Hamatula}
+            {40} {Small gray mouse}
+            {41} {Hairy Spider}
+            {42} {u}
+            {43} {la}
+            {44} {Mottled green Spinagon}
+            {45} {Barbazu}
+            {46} {An Archaeologist}
         }
         {Ratings} 
         {
-            {1} {32}
-            {2} {55}
+            {1} {55}
+            {2} {32}
             {3} {200}
         }
         {Wizard} {Frank}
@@ -15325,22 +15421,25 @@
             {3} {Sugar plumbs}
             {4} {A ruined headstone}
             {5} {A single gold coin}
+            {6} {A simple headstone}
         }
         {Mobs} 
         {
-            {1} {A powerful elven soldier}
-            {2} {A Dark Priest !attacking Voodoo!}
-            {3} {A Shadowfiend  !attacking Voodoo!}
-            {4} {A Dark Genie  !attacking Voodoo!}
-            {5} {Dark Genie}
-            {6} {A tank named Shaguar}
-            {7} {Voodoo's Jugger Support Mech}
-            {8} {Banu, the Dark Mystic Visionary !attacking Voodoo!}
-            {9} {Banu}
+            {1} {A Dark Priest !attacking Voodoo!}
+            {2} {A Shadowfiend  !attacking Voodoo!}
+            {3} {A Dark Genie  !attacking Voodoo!}
+            {4} {Dark Genie}
+            {5} {A tank named Shaguar}
+            {6} {Voodoo's Jugger Support Mech}
+            {7} {Banu, the Dark Mystic Visionary !attacking Voodoo!}
+            {8} {Banu}
+            {9} {A powerful elven soldier}
+            {10} {A Dark Priest}
         }
         {Ratings} 
         {
-            {1} {11}
+            {1} {22}
+            {2} {11}
         }
         {Wizard} {Revelation}
     }
@@ -16311,12 +16410,12 @@
             {45} {Safari Hat}
             {46} {Dundee hunting permit}
             {47} {A single gold coin}
-            {48} {The Advanced Knight's Tour Game Board}
-            {49} {The Knight's Tour Game Board}
-            {50} {The Axe Challenge Game Board}
-            {51} {The Challenger Board}
-            {52} {A heavy anvil}
-            {53} {A massive forge}
+            {48} {The Challenger Board}
+            {49} {A heavy anvil}
+            {50} {A massive forge}
+            {51} {The Advanced Knight's Tour Game Board}
+            {52} {The Knight's Tour Game Board}
+            {53} {The Axe Challenge Game Board}
             {54} {A sign}
             {55} {A flowing water fountain}
         }
@@ -16327,40 +16426,40 @@
             {3} {A tall elven skeleton}
             {4} {A short elven skeleton}
             {5} {A cloth-wrapped elven skeleton}
-            {6} {A powerful elven soldier}
-            {7} {Sally, the tournament organizer <?>}
-            {8} {Sally, the tournament organizer <.>}
-            {9} {An Aspiring Knight  <^>}
-            {10} {Class Knight  <^> at}
-            {11} {A lady-in-waiting <?>}
-            {12} {Johannes, the bartender <?>}
-            {13} {A lady-in-waiting <.>}
-            {14} {A young man  <.>}
-            {15} {Johannes, the bartender <.>}
-            {16} {A young man  <!>}
-            {17} {A strong elven soldier}
-            {18} {A Knight-in-Training}
-            {19} {A lady-in-waiting <!>}
-            {20} {Johannes, the bartender <!>}
-            {21} {Larry, the arena boss <.>}
-            {22} {Larry, the arena boss <!>}
-            {23} {A Knighted Officer <^>}
-            {24} {A Knight Commander <^>}
-            {25} {Pennywise the Valithyn}
-            {26} {Larry, the arena boss <?.>}
-            {27} {Page}
-            {28} {Squire}
-            {29} {Knight Trainee}
-            {30} {Knighted Officer}
-            {31} {Knight Commander}
-            {32} {A lady-in-waiting}
-            {33} {Johannes, the bartender}
-            {34} {Bub, the blacksmith}
-            {35} {An Elite Knight of the Lost Order}
-            {36} {A town elder}
-            {37} {A young man}
-            {38} {Larry, the arena boss <?>}
-            {39} {A young man  <?>}
+            {6} {Sally, the tournament organizer <?>}
+            {7} {Sally, the tournament organizer <.>}
+            {8} {An Aspiring Knight  <^>}
+            {9} {Class Knight  <^> at}
+            {10} {A lady-in-waiting <?>}
+            {11} {Johannes, the bartender <?>}
+            {12} {A lady-in-waiting <.>}
+            {13} {Johannes, the bartender <.>}
+            {14} {A young man  <!>}
+            {15} {A lady-in-waiting <!>}
+            {16} {Johannes, the bartender <!>}
+            {17} {Larry, the arena boss <!>}
+            {18} {A Knighted Officer <^>}
+            {19} {A Knight Commander <^>}
+            {20} {Pennywise the Valithyn}
+            {21} {Larry, the arena boss <?.>}
+            {22} {Page}
+            {23} {Squire}
+            {24} {Knight Trainee}
+            {25} {Knighted Officer}
+            {26} {Knight Commander}
+            {27} {A lady-in-waiting}
+            {28} {Johannes, the bartender}
+            {29} {Bub, the blacksmith}
+            {30} {A town elder}
+            {31} {A young man}
+            {32} {A powerful elven soldier}
+            {33} {Larry, the arena boss <?>}
+            {34} {An Elite Knight of the Lost Order}
+            {35} {A young man  <?>}
+            {36} {A Knight-in-Training}
+            {37} {A strong elven soldier}
+            {38} {Larry, the arena boss <.>}
+            {39} {A young man  <.>}
             {40} {A Knight of the Lost Order}
         }
         {Ratings} 
@@ -17852,82 +17951,88 @@
         {Items} 
         {
             {1} {Gardening Shears}
-            {2} {Gardening Shovel}
-            {3} {A dreamwraith}
-            {4} {A ray of sunlight}
-            {5} {An undead hand, grasping Queen of Hearts}
-            {6} {Ring of Hearts}
-            {7} {A marble bench}
-            {8} {*Ring of Hearts }
-            {9} {*A feather from a black dove}
-            {10} {*Balangool Helmet }
-            {11} {*Party banner of vagrant's party}
-            {12} {*a pale green capsule}
-            {13} {*Vagrant's Velvet Hat}
-            {14} {*Balangool Boots }
-            {15} {*PsiMace }
-            {16} {*A transparent camisole }
-            {17} {*Guyahi's Amulet }
-            {18} {*a swirling and humming barrier shield }
-            {19} {*Gold Ring of Unburden }
-            {20} {*Mythic Knight's Shield }
-            {21} {*Bracers of the Spirit }
-            {22} {*The mask of Gemino Mortis }
-            {23} {*An ancient skull}
-            {24} {*The Orb of Stealth }
-            {25} {*A Cerveza }
-            {26} {*Zelligar's Headband -=||=- }
-            {27} {*Radioactive Armour }
-            {28} {*Bag}
-            {29} {*Death's Freezer }
-            {30} {*phylactery of the mists }
-            {31} {The Necronomicon }
-            {32} {*a miniature}
-            {33} {*a velvet bag}
-            {34} {An enchanted coffin  }
-            {35} {*Lord Stanley's Cup}
-            {36} {*A Crafter's Satchel}
-            {37} {*a sexy black apron }
-            {38} {*Clan Symbol of Divine Intervention}
-            {39} {*A Hangman's Noose}
-            {40} {*An auction line}
-            {41} {*Worn leather book}
-            {42} {*A leather bound book by Bilbo and Ryft}
-            {43} {*Safari Hat}
-            {44} {*Dundee hunting permit}
-            {45} {*long shimmering thread}
-            {46} {*A Magician's Top Hat}
-            {47} {A gold wedding ring }
-            {48} {*Tactician's Manual}
-            {49} {*A Reforger's Kit}
-            {50} {*Assassin's Mark}
-            {51} {*A ring of house keys}
-            {52} {*Purple Speedo }
-            {53} {A flood of pure darkness}
-            {54} {An unkindness of dark ravens}
-            {55} {A pool of blood beneath Queen of Hearts}
-            {56} {A brilliant glowing, ever-growing sphere of energy}
-            {57} {A gleaming sickle}
+            {2} {A dreamwraith}
+            {3} {A ray of sunlight}
+            {4} {An undead hand, grasping Queen of Hearts}
+            {5} {*Ring of Hearts }
+            {6} {*A feather from a black dove}
+            {7} {*Balangool Helmet }
+            {8} {*Party banner of vagrant's party}
+            {9} {*a pale green capsule}
+            {10} {*Vagrant's Velvet Hat}
+            {11} {*Balangool Boots }
+            {12} {*PsiMace }
+            {13} {*A transparent camisole }
+            {14} {*Guyahi's Amulet }
+            {15} {*a swirling and humming barrier shield }
+            {16} {*Gold Ring of Unburden }
+            {17} {*Mythic Knight's Shield }
+            {18} {*Bracers of the Spirit }
+            {19} {*The mask of Gemino Mortis }
+            {20} {*An ancient skull}
+            {21} {*The Orb of Stealth }
+            {22} {*A Cerveza }
+            {23} {*Zelligar's Headband -=||=- }
+            {24} {*Radioactive Armour }
+            {25} {*Bag}
+            {26} {*Death's Freezer }
+            {27} {*phylactery of the mists }
+            {28} {The Necronomicon }
+            {29} {*a miniature}
+            {30} {*a velvet bag}
+            {31} {An enchanted coffin  }
+            {32} {*Lord Stanley's Cup}
+            {33} {*A Crafter's Satchel}
+            {34} {*a sexy black apron }
+            {35} {*Clan Symbol of Divine Intervention}
+            {36} {*A Hangman's Noose}
+            {37} {*An auction line}
+            {38} {*Worn leather book}
+            {39} {*A leather bound book by Bilbo and Ryft}
+            {40} {*Safari Hat}
+            {41} {*Dundee hunting permit}
+            {42} {*long shimmering thread}
+            {43} {*A Magician's Top Hat}
+            {44} {A gold wedding ring }
+            {45} {*Tactician's Manual}
+            {46} {*A Reforger's Kit}
+            {47} {*Assassin's Mark}
+            {48} {*A ring of house keys}
+            {49} {*Purple Speedo }
+            {50} {A flood of pure darkness}
+            {51} {An unkindness of dark ravens}
+            {52} {A pool of blood beneath Queen of Hearts}
+            {53} {A gleaming sickle}
+            {54} {Luminous Globe}
+            {55} {A brilliant glowing, ever-growing sphere of energy}
+            {56} {Gardening Shovel}
+            {57} {A marble bench}
             {58} {A marble plaque}
+            {59} {Ring of Hearts}
         }
         {Mobs} 
         {
             {1} {Torgo, Kirwan's esquire}
-            {2} {The 4 of Hearts}
-            {3} {Simonz's MN-2E General Maintenance Droid Alfred}
-            {4} {The 2 of Hearts}
-            {5} {Kizar the Valithyn}
-            {6} {Queen of Hearts}
-            {7} {The 6 of Hearts}
-            {8} {The 7 of Hearts}
-            {9} {The 10 of Hearts}
-            {10} {The 5 of Hearts}
-            {11} {The 8 of Hearts}
-            {12} {The 9 of Hearts}
-            {13} {The Queen of Hearts}
-            {14} {Avariel the Valithyn}
-            {15} {A Gardener}
-            {16} {The 3 of Hearts}
+            {2} {Simonz's MN-2E General Maintenance Droid Alfred}
+            {3} {The 2 of Hearts}
+            {4} {Kizar the Valithyn}
+            {5} {Avariel the Valithyn}
+            {6} {The 6 of Hearts}
+            {7} {Whiskeyjack the striped squirrel}
+            {8} {A tank named Altitude}
+            {9} {Atticus's Jugger Support Mech}
+            {10} {Grimshanks, Kirwan's Rampaging Blood Monkey}
+            {11} {A fat hairy wandering spider}
+            {12} {The Queen of Hearts}
+            {13} {The 7 of Hearts}
+            {14} {The 5 of Hearts}
+            {15} {The 8 of Hearts}
+            {16} {The 4 of Hearts}
+            {17} {The 9 of Hearts}
+            {18} {The 3 of Hearts}
+            {19} {The 10 of Hearts}
+            {20} {A Gardener}
+            {21} {Queen of Hearts}
         }
         {Ratings} 
         {
@@ -19361,44 +19466,44 @@
             {38} {A small camoflauged tent}
             {39} {A posted bulletin }
             {40} {An old abandoned trailer home}
-            {41} {Virtual Adapter}
-            {42} {Mortal Kombat ][ Machine}
-            {43} {Samurai Showdown Game}
-            {44} {A Really Nice Looking Computer}
-            {45} {A LARGE sign}
-            {46} {A pile of rubble}
-            {47} {A pile of rubble }
-            {48} {A Black Tank}
-            {49} {A faintly lit doorway}
-            {50} {A very important bulletin }
-            {51} {A virtual reality pod}
-            {52} {A peace pipe }
-            {53} {A jacket made of hemp }
-            {54} {A roach}
-            {55} {A silver jacket}
-            {56} {A suit of body armour}
-            {57} {A pair of combat boots}
-            {58} {A plasma rifle}
-            {59} {A silvery pod}
-            {60} {COMSTAR - Midway Shuttlecraft}
-            {61} {A cluttered desk}
-            {62} {An id card}
-            {63} {A designer business suit}
-            {64} {An enormous walnut desk}
-            {65} {An imitation walnut desk}
-            {66} {An acrylic desk}
-            {67} {A laptop computer}
-            {68} {An environmental suit}
-            {69} {Heavy work gloves}
-            {70} {A Dirty Cargo Shuttle}
-            {71} {A large wooden crate}
-            {72} {A magazine rack}
-            {73} {A rundown trailer}
-            {74} {A large three story building}
-            {75} {A whirring terminal}
-            {76} {A D.C. Megatech bullet train}
-            {77} {Houston - Midway Shuttlecraft}
-            {78} {A recently built building}
+            {41} {A pile of rubble}
+            {42} {A pile of rubble }
+            {43} {A Black Tank}
+            {44} {A faintly lit doorway}
+            {45} {A peace pipe }
+            {46} {A jacket made of hemp }
+            {47} {A roach}
+            {48} {A silver jacket}
+            {49} {A suit of body armour}
+            {50} {A pair of combat boots}
+            {51} {A plasma rifle}
+            {52} {A silvery pod}
+            {53} {COMSTAR - Midway Shuttlecraft}
+            {54} {A cluttered desk}
+            {55} {An id card}
+            {56} {A designer business suit}
+            {57} {An enormous walnut desk}
+            {58} {An imitation walnut desk}
+            {59} {An acrylic desk}
+            {60} {A laptop computer}
+            {61} {An environmental suit}
+            {62} {Heavy work gloves}
+            {63} {A Dirty Cargo Shuttle}
+            {64} {A large wooden crate}
+            {65} {A rundown trailer}
+            {66} {A large three story building}
+            {67} {A whirring terminal}
+            {68} {A D.C. Megatech bullet train}
+            {69} {A recently built building}
+            {70} {Virtual Adapter}
+            {71} {Mortal Kombat ][ Machine}
+            {72} {Samurai Showdown Game}
+            {73} {A Really Nice Looking Computer}
+            {74} {A LARGE sign}
+            {75} {Houston - Midway Shuttlecraft}
+            {76} {A magazine rack}
+            {77} {A very important bulletin }
+            {78} {A virtual reality pod}
         }
         {Mobs} 
         {
@@ -19447,34 +19552,34 @@
             {43} {A 1973 Plymouth Duster, back from the dead}
             {44} {A typical teenage driver}
             {45} {Desert Lizard}
-            {46} {A retiree enjoying his free time}
-            {47} {A thin starving coyote}
-            {48} {A speedy roadrunner}
-            {49} {A hungry-looking vulture}
-            {50} {Major Henkey, PhD <?>}
-            {51} {A vr junkie}
-            {52} {A rastafarian}
-            {53} {A weary looking man}
-            {54} {A drunken station worker}
-            {55} {Kirsten the Midways barkeep}
-            {56} {A burly looking man}
-            {57} {A corporate wage slave}
-            {58} {Angela Myers, the Midways station exec}
-            {59} {A mid-level executive}
-            {60} {A genetic engineer}
-            {61} {A primly dressed secretary}
-            {62} {A red-tailed squirrel}
-            {63} {A lynx stalking its prey}
-            {64} {An iguana lounging on a branch}
-            {65} {A python lying in ambush}
-            {66} {A weary wage slave}
-            {67} {A weary station worker}
-            {68} {A Midways technician}
-            {69} {A smartly dressed woman}
-            {70} {A tired woman sorely in need of her vacation}
-            {71} {Arms Merchant}
-            {72} {A space marine}
-            {73} {Major Henkey, PhD <.>}
+            {46} {A thin starving coyote}
+            {47} {A speedy roadrunner}
+            {48} {A hungry-looking vulture}
+            {49} {A vr junkie}
+            {50} {A rastafarian}
+            {51} {A weary looking man}
+            {52} {A drunken station worker}
+            {53} {Kirsten the Midways barkeep}
+            {54} {A burly looking man}
+            {55} {A corporate wage slave}
+            {56} {Angela Myers, the Midways station exec}
+            {57} {A mid-level executive}
+            {58} {A genetic engineer}
+            {59} {A primly dressed secretary}
+            {60} {A red-tailed squirrel}
+            {61} {A lynx stalking its prey}
+            {62} {An iguana lounging on a branch}
+            {63} {A python lying in ambush}
+            {64} {A weary wage slave}
+            {65} {A weary station worker}
+            {66} {A Midways technician}
+            {67} {A tired woman sorely in need of her vacation}
+            {68} {Arms Merchant}
+            {69} {Major Henkey, PhD <.>}
+            {70} {Major Henkey, PhD <?>}
+            {71} {A retiree enjoying his free time}
+            {72} {A smartly dressed woman}
+            {73} {A space marine}
         }
     }
     {Scorpion Caves} 
@@ -19623,121 +19728,121 @@
             {22} {Average fragment of rejuvenation}
             {23} {Poor fragment of water}
             {24} {barrier}
-            {25} {Luminous Globe}
-            {26} {A pale green capsule}
-            {27} {Scroll of the Universe}
-            {28} {*The mask of Gemino Mortis }
-            {29} {*Shield of the Spirit }
-            {30} {*A sticky cocoon }
-            {31} {*Party banner of al's party}
-            {32} {*Bioplasm Capsule}
-            {33} {*An auction line}
-            {34} {Minor gem of focusing }
-            {35} {*Clan Symbol of The Filthy Casuals}
-            {36} {*long shimmering thread}
-            {37} {*Dundee hunting permit}
-            {38} {*asbestos corset }
-            {39} {*a shimmering red tether to your immortal soul }
-            {40} {*a sexy black apron }
-            {41} {*A ring of house keys}
-            {42} {*Acrobat's Bodysuit }
-            {43} {*Assassin's Mark}
-            {44} {*A Crafter's Satchel}
-            {45} {*Safari Hat}
-            {46} {*Triathlete's Iron Man Trophy}
-            {47} {*Worn leather book}
-            {48} {*A Transmuter's Stone }
-            {49} {*a swirling and humming barrier shield }
-            {50} {*Moonstone Ring of Speed }
-            {51} {*A transparent camisole }
-            {52} {You can 'zot' the zot boon off of any player}
-            {53} {*Axe}
-            {54} {Resurrection pill}
-            {55} {*Bracers of the Spirit }
-            {56} {*Zelligar's Headband -~<\x7B8\x7D>~- }
-            {57} {An enchanted coffin   }
-            {58} {*Cloak of the Spirit }
-            {59} {Explorer's Torch}
-            {60} {Dundee hunting permit}
-            {61} {Safari Hat}
-            {62} {Tactician's Manual}
-            {63} {A Transmuter's Stone }
-            {64} {A ring of house keys}
-            {65} {An auction line}
-            {66} {Assassin's Mark}
-            {67} {A Crafter's Satchel}
-            {68} {Brass Knuckles}
-            {69} {Long shimmering thread}
-            {70} {Worn leather book}
-            {71} {Ninja badge of honor }
-            {72} {Clan Symbol of Nightmare Asylum}
-            {73} {A huge box }
-            {74} {The tattered remains of the Mass XP List}
-            {75} {A single gold coin}
-            {76} {The 3-K Kill List}
-            {77} {A Statue of Cancer the King}
-            {78} {A tall street light}
-            {79} {A swirling and humming barrier shield}
-            {80} {Small Figurine}
-            {81} {A sign you should certainly read}
-            {82} {Section Z game cabinet}
-            {83} {a pale blue capsule}
-            {84} {a pale orange capsule}
+            {25} {Scroll of the Universe}
+            {26} {*The mask of Gemino Mortis }
+            {27} {*Shield of the Spirit }
+            {28} {*A sticky cocoon }
+            {29} {*Party banner of al's party}
+            {30} {*Bioplasm Capsule}
+            {31} {*An auction line}
+            {32} {Minor gem of focusing }
+            {33} {*Clan Symbol of The Filthy Casuals}
+            {34} {*long shimmering thread}
+            {35} {*Dundee hunting permit}
+            {36} {*asbestos corset }
+            {37} {*a shimmering red tether to your immortal soul }
+            {38} {*a sexy black apron }
+            {39} {*A ring of house keys}
+            {40} {*Acrobat's Bodysuit }
+            {41} {*Assassin's Mark}
+            {42} {*A Crafter's Satchel}
+            {43} {*Safari Hat}
+            {44} {*Triathlete's Iron Man Trophy}
+            {45} {*Worn leather book}
+            {46} {*A Transmuter's Stone }
+            {47} {*a swirling and humming barrier shield }
+            {48} {*Moonstone Ring of Speed }
+            {49} {*A transparent camisole }
+            {50} {You can 'zot' the zot boon off of any player}
+            {51} {*Axe}
+            {52} {Resurrection pill}
+            {53} {*Bracers of the Spirit }
+            {54} {*Zelligar's Headband -~<\x7B8\x7D>~- }
+            {55} {An enchanted coffin   }
+            {56} {*Cloak of the Spirit }
+            {57} {Explorer's Torch}
+            {58} {Dundee hunting permit}
+            {59} {Safari Hat}
+            {60} {Tactician's Manual}
+            {61} {A Transmuter's Stone }
+            {62} {A ring of house keys}
+            {63} {An auction line}
+            {64} {Assassin's Mark}
+            {65} {A Crafter's Satchel}
+            {66} {Brass Knuckles}
+            {67} {Long shimmering thread}
+            {68} {Worn leather book}
+            {69} {Ninja badge of honor }
+            {70} {Clan Symbol of Nightmare Asylum}
+            {71} {A huge box }
+            {72} {The tattered remains of the Mass XP List}
+            {73} {A single gold coin}
+            {74} {The 3-K Kill List}
+            {75} {A Statue of Cancer the King}
+            {76} {A tall street light}
+            {77} {A swirling and humming barrier shield}
+            {78} {A sign you should certainly read}
+            {79} {a pale green capsule}
+            {80} {Luminous Globe}
+            {81} {a pale orange capsule}
+            {82} {a pale blue capsule}
+            {83} {Small Figurine}
+            {84} {Section Z game cabinet}
         }
         {Mobs} 
         {
-            {1} {Brain}
-            {2} {The Pope <.>}
-            {3} {Whiskeyjack the striped squirrel}
-            {4} {Grimnebulin, Kyoujin's Necrotic Slake Moth}
-            {5} {A tank named MRAP}
-            {6} {Saurmac's Jugger Support Mech}
-            {7} {Galga}
-            {8} {Balba}
-            {9} {Zamuza}
-            {10} {A massive black wandering spider}
-            {11} {Beautiful Chimera}
-            {12} {A horde of massive broodlings}
-            {13} {Betsy, Archangel's Red Roan Akhal-Teke}
-            {14} {Harbl the Grimare}
-            {15} {A tank named Prismelly}
-            {16} {Prism's Jugger Support Mech}
-            {17} {Badger's Jugger Support Mech}
-            {18} {A tank named Mushroom}
-            {19} {Vaid :: Professor of Molecular Displacement}
-            {20} {Blazing Agni :: Director of Xenogenetics}
-            {21} {Swole Capacitor}
-            {22} {Avariel the Valithyn}
-            {23} {Ender's LE Repair Droid Beans}
-            {24} {Red King}
-            {25} {Red Foot Soldier}
-            {26} {White Priest}
-            {27} {White Foot Soldier}
-            {28} {White King}
-            {29} {White Counsellor}
-            {30} {White Charioteer}
-            {31} {Pennywise the Valithyn}
-            {32} {A Massive Generator}
-            {33} {A small velociraptor}
-            {34} {Generator}
-            {35} {Blah the Valithyn}
-            {36} {Deathessence the Valithyn}
-            {37} {A Leeva}
-            {38} {A Groma}
-            {39} {A Spiral Gun}
-            {40} {Groma}
-            {41} {A Ripper}
-            {42} {The Pope <?>}
-            {43} {Leeva}
-            {44} {The Developer}
-            {45} {A Leago}
-            {46} {Leago}
-            {47} {A Clone Soldier}
-            {48} {Clone Soldier}
-            {49} {Spiral Gun}
-            {50} {A Cloud Eye}
-            {51} {Cloud Eye}
-            {52} {Ripper}
+            {1} {The Pope <.>}
+            {2} {Whiskeyjack the striped squirrel}
+            {3} {Grimnebulin, Kyoujin's Necrotic Slake Moth}
+            {4} {A tank named MRAP}
+            {5} {Saurmac's Jugger Support Mech}
+            {6} {Galga}
+            {7} {Balba}
+            {8} {Zamuza}
+            {9} {A massive black wandering spider}
+            {10} {Beautiful Chimera}
+            {11} {A horde of massive broodlings}
+            {12} {Betsy, Archangel's Red Roan Akhal-Teke}
+            {13} {Harbl the Grimare}
+            {14} {A tank named Prismelly}
+            {15} {Prism's Jugger Support Mech}
+            {16} {Badger's Jugger Support Mech}
+            {17} {A tank named Mushroom}
+            {18} {Vaid :: Professor of Molecular Displacement}
+            {19} {Blazing Agni :: Director of Xenogenetics}
+            {20} {Swole Capacitor}
+            {21} {Avariel the Valithyn}
+            {22} {Ender's LE Repair Droid Beans}
+            {23} {Red King}
+            {24} {Red Foot Soldier}
+            {25} {White Priest}
+            {26} {White Foot Soldier}
+            {27} {White King}
+            {28} {White Counsellor}
+            {29} {White Charioteer}
+            {30} {Pennywise the Valithyn}
+            {31} {A Massive Generator}
+            {32} {A small velociraptor}
+            {33} {Blah the Valithyn}
+            {34} {Deathessence the Valithyn}
+            {35} {A Leeva}
+            {36} {A Groma}
+            {37} {A Spiral Gun}
+            {38} {Groma}
+            {39} {The Pope <?>}
+            {40} {A Leago}
+            {41} {Leeva}
+            {42} {Leago}
+            {43} {Generator}
+            {44} {Spiral Gun}
+            {45} {A Clone Soldier}
+            {46} {Clone Soldier}
+            {47} {A Cloud Eye}
+            {48} {Cloud Eye}
+            {49} {A Ripper}
+            {50} {Ripper}
+            {51} {Brain}
+            {52} {The Developer}
         }
         {Ratings} 
         {
@@ -20895,31 +21000,31 @@
             {93} {A generically animated schoolgirl}
             {94} {Grampa Simpson}
             {95} {Grampa}
-            {96} {Guard}
-            {97} {A half-naked actress}
-            {98} {Actress}
-            {99} {Bart is playing 3K}
-            {100} {Patty Bouvier}
-            {101} {Selma Bouvier}
-            {102} {Homer Simpson}
-            {103} {Santa's Little Helper}
-            {104} {Actor Troy McClure}
-            {105} {A campy film director}
-            {106} {A Springfield Studios gatepost guard}
-            {107} {A three-eyed squirrel}
-            {108} {A generically animated Springfield citizen}
-            {109} {A two-headed dog}
-            {110} {Maude Flanders}
-            {111} {Todd Flanders}
-            {112} {Rod Flanders}
-            {113} {Ned Flanders}
-            {114} {Ned's Guardian Angel}
+            {96} {Bart is playing 3K}
+            {97} {Patty Bouvier}
+            {98} {Selma Bouvier}
+            {99} {Homer Simpson}
+            {100} {Santa's Little Helper}
+            {101} {Maude Flanders}
+            {102} {Todd Flanders}
+            {103} {Rod Flanders}
+            {104} {Ned Flanders}
+            {105} {Ned's Guardian Angel}
+            {106} {A two-headed dog}
+            {107} {A generically animated Springfield citizen}
+            {108} {A three-eyed squirrel}
+            {109} {A Springfield Studios gatepost guard}
+            {110} {Guard}
+            {111} {Actor Troy McClure}
+            {112} {A campy film director}
+            {113} {A half-naked actress}
+            {114} {Actress}
         }
         {Ratings} 
         {
             {1} {130}
         }
-        {Wizard} {Turnhold}
+        {Wizard} {Sioux}
     }
     {Sin City} 
     {
@@ -21273,11 +21378,11 @@
             {4} {Firebat --  at}
             {5} {Firebat}
             {6} {Scv}
-            {7} {SCV -- at}
-            {8} {Firebat -- at}
-            {9} {Marine -- at}
-            {10} {Marine --  at}
-            {11} {SCV --  at}
+            {7} {Firebat -- at}
+            {8} {Marine -- at}
+            {9} {Marine --  at}
+            {10} {SCV --  at}
+            {11} {SCV -- at}
         }
         {Ratings} 
         {
@@ -21589,8 +21694,8 @@
         {Ratings} 
         {
             {1} {3}
-            {2} {12}
-            {3} {7}
+            {2} {7}
+            {3} {12}
         }
         {Wizard} {Watson}
     }
@@ -22025,7 +22130,8 @@
             {15} {Good fragment of ascension}
             {16} {Average fragment of shadow}
             {17} {A very blue tree}
-            {18} {A strangely dense wooden hammer (enchanted)}
+            {18} {A gigantic blue seed}
+            {19} {A strangely dense wooden hammer (enchanted)}
         }
         {Mobs} 
         {
@@ -23939,39 +24045,42 @@
         {Items} 
         {
             {1} {A warning sign}
-            {2} {A Trashcan}
-            {3} {A large metal anvil}
-            {4} {A rusted forge}
-            {5} {A straight black wand}
-            {6} {A piece of oakwood}
-            {7} {Mythic Knight's Helmet}
-            {8} {Mythic Knight's Shield}
-            {9} {Mythic Knight's Boots}
-            {10} {The Challenger Board}
-            {11} {A tall street light}
+            {2} {A large metal anvil}
+            {3} {A rusted forge}
+            {4} {A straight black wand}
+            {5} {A piece of oakwood}
+            {6} {Mythic Knight's Helmet}
+            {7} {Mythic Knight's Shield}
+            {8} {Mythic Knight's Boots}
+            {9} {The Challenger Board}
+            {10} {A tall street light}
+            {11} {A long black rod}
+            {12} {A Trashcan}
         }
         {Mobs} 
         {
             {1} {A small brown hare}
             {2} {Elf Traveller}
-            {3} {Human Traveller}
-            {4} {A tufted titmouse}
-            {5} {A bloody elven skeleton}
-            {6} {An Elite Knight of the Lost Order}
-            {7} {A scared elven citizen}
-            {8} {Cold Tiro has a Halibut by the tail!}
-            {9} {Knighted Officer}
-            {10} {Knight Commander}
-            {11} {Knight Grand Champion}
-            {12} {A powerful elven soldier}
-            {13} {A battered elven skeleton}
-            {14} {The Grand Master Knight of the Lost Order}
-            {15} {A short elven skeleton}
-            {16} {A cloth-wrapped elven skeleton}
-            {17} {A tall elven skeleton}
-            {18} {A strong elven soldier}
-            {19} {A slender elven soldier}
-            {20} {A burly elven soldier}
+            {3} {A tufted titmouse}
+            {4} {A bloody elven skeleton}
+            {5} {An Elite Knight of the Lost Order}
+            {6} {A scared elven citizen}
+            {7} {Cold Tiro has a Halibut by the tail!}
+            {8} {Knighted Officer}
+            {9} {Knight Commander}
+            {10} {Knight Grand Champion}
+            {11} {A battered elven skeleton}
+            {12} {The Grand Master Knight of the Lost Order}
+            {13} {A cloth-wrapped elven skeleton}
+            {14} {A tall elven skeleton}
+            {15} {Human Traveller}
+            {16} {Snake}
+            {17} {Giant Wasp}
+            {18} {A powerful elven soldier}
+            {19} {A strong elven soldier}
+            {20} {A short elven skeleton}
+            {21} {A burly elven soldier}
+            {22} {A slender elven soldier}
         }
         {Ratings} 
         {
@@ -25888,32 +25997,34 @@
             {5} {Jasper ring}
             {6} {Jade ring}
             {7} {Pyrite ring}
-            {8} {A small sign}
-            {9} {A fallen oak tree}
-            {10} {A tree stump}
-            {11} {Strange markings}
-            {12} {Zinc ring}
+            {8} {Zinc ring}
+            {9} {A small sign}
+            {10} {A fallen oak tree}
+            {11} {A tree stump}
+            {12} {Strange markings}
+            {13} {Iron ring}
         }
         {Mobs} 
         {
             {1} {Chipmunk}
-            {2} {Christopher Robin}
+            {2} {B5\x7D}
             {3} {B5\x7D}
             {4} {B5\x7D}
             {5} {B5\x7D}
             {6} {B5\x7D}
             {7} {B5\x7D}
-            {8} {B5\x7D}
-            {9} {Ant}
+            {8} {Ant}
+            {9} {B5\x7D}
             {10} {B5\x7D}
             {11} {B5\x7D}
             {12} {Kanga}
             {13} {Roo}
-            {14} {P-p-p-piglet}
-            {15} {B5\x7D}
-            {16} {Snake}
-            {17} {Red-breasted Robin}
-            {18} {Tigger}
+            {14} {Christopher Robin}
+            {15} {P-p-p-piglet}
+            {16} {B5\x7D}
+            {17} {Snake}
+            {18} {Red-breasted Robin}
+            {19} {Tigger}
         }
         {Ratings} 
         {

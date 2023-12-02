@@ -3,7 +3,7 @@
 /*************************************************************************
 	Using the numbers vaf, track and record damage data
 *************************************************************************/
-
+.registerEvent onMobKilled onMobKilledDamage;
 /*************************************************************************
 	Resets variables as combat starts to record before combat ends
 *************************************************************************/
@@ -26,11 +26,6 @@
 	#var dmg[mob] {};
 }
 
-#gag {Electricity crackles through your fingers.};
-#gag {You take an instant to gather your thoughts, clear your mind%*};
-#gag {You quickly tumble to avoid the brunt of the attack.};
-#gag {You lay hands upon yourself and feel healed.};
-#gag {With skill and speed you dodge the attack!};
 /*************************************************************************
 	Highlight 
 *************************************************************************/
@@ -58,7 +53,9 @@
 *************************************************************************/
 #alias {onMobKilledDamage}
 {
-
+	#draw Yellow scroll line 1 1 1 80;
+	#showme $event[mobKilled] killed in $currentRoundID rounds;
+	#draw Yellow scroll line 1 1 1 80;
 };	
 
 /*************************************************************************

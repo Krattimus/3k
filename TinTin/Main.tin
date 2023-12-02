@@ -127,7 +127,7 @@
 	#read 3k/TinTin/Controllers/Miner.tin;
 	
 	#NOP { *********** Mis ************ };
-	#NOP { #read 3k/TinTin/Vaf/Damage.tin };
+	#read 3k/TinTin/Vaf/Damage.tin;
 
 	#NOP { *********** Tools ************ };
 	#read 3k/TinTin/Core/Logger.tin;
