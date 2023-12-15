@@ -25,6 +25,9 @@
 .registerEvent onMobKilled onMobKilledMonk;
 .registerEvent onNewCombatRound onNewCombatRoundMonk;
 
+
+#gag {You hit %1.};
+
 /**********************************************************************************
 	Kill trig
 **********************************************************************************/

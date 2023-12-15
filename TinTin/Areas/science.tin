@@ -138,9 +138,11 @@ Once we see this, we can conclude the room description is over
 *************************************************************/
 #act {=X={.*}} 
 {
-	#draw Yellow scroll line 1 1 1 80;
-        #var filtered @filterScience{{$long}};
-	#echo <303>$filtered<088>;
+	
+        #var filtered @filterScience{{$roomdesc}};
+
+        #draw Yellow scroll line 1 1 1 80;
+        #script {python 3k/TinTin/Tools/nounsetup.py "$filtered"};
 	#draw Yellow scroll line 1 1 1 80;
 
 	#if {"$longcap" == "on"} 
@@ -159,47 +161,7 @@ Once we see this, we can conclude the room description is over
 {
         
 	#var room %2;
-	#var exits %3;
-        #replace exits {,} {;};
-        #foreach {$exits} {eachexit} 
-        {
-                #switch {"$eachexit"} 
-                {
-                        #case {"north"}		{#map dig n};
-                        #case {"east"}		{#map dig e};
-                        #case {"south"}		{#map dig s};
-                        #case {"west"}		{#map dig w};
-                        #case {"northwest"}	{#map dig nw};
-                        #case {"northeast"}	{#map dig ne};
-                        #case {"southeast"}	{#map dig se};
-                        #case {"southwest"}	{#map dig sw};
-                        #case {"up"}		{#map dig u};
-                        #case {"down"}		{#map dig d};
-                        #default		{#map dig $eachexit}
-                }
-        };
-        #map get {roomexit} {rexit};
-        #foreach {$rexit} {eachexit} 
-        {
-                #map at {$eachexit} 
-                {
-                        #map get {roomarea} {eacharea};
-                        #if {"$eacharea" == ""} 
-                        {
-                                #map set {roomcolor} {<118>}
-                        };
-                };
-        };
 
-        #if {$roomname_len == 0} 
-        {
-                #map set roomname {%2 (%3)}
-        };
-        #if {$roomarea_len == 0} 
-        {
-                #map set roomarea {$area};
-                #map set roomcolor
-        };
         #if {$roomdesc_len == 0 || "$finding_here" == "on"} 
         {
                 #var longcap on;

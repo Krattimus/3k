@@ -8,6 +8,8 @@
 };
 
 
+#action {Your mind is filled with the word '%1'.} { #var bansheeCode %1; };
+
 #alias {.sash}
 {
 	remove sash;

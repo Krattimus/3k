@@ -2,7 +2,40 @@
 #class {testbin} {kill}
 #class {testbin} {open}
 
+
+#alias .displayJapanese
+{
+        #read 3k/TinTin/Areas/science.tin;
+};
+
 #alias .change { transmogrify %0; };
+
+#alias {.la}
+{
+        #send !la %0;
+        #var capturedText {};
+        .captureFor 2 {onLookedAt};
+}
+
+#alias {onLookedAt}
+{
+        #var translate $capturedText;  
+        #replace {translate} {{[^a-zA-Z0-9 :]}} {};
+        #replace {translate} {   } {};
+        #replace {translate} {  } {. };
+
+        #replace {translate} {  } { };
+        #replace {translate} {  } { };
+        #replace {translate} {  } { };
+        #replace {translate} {  } { };
+        #if { @strlen{$translate} > 5 }
+        {
+                #draw Yellow scroll line 1 1 1 80;
+                #script {python 3k/TinTin/Tools/nounsetup.py "$translate"};
+                #draw Yellow scroll line 1 1 1 80;
+        };
+};
+
 
 #NOP List all Roomnotes for 'go' alias
 #alias .noteList2

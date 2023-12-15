@@ -3,9 +3,20 @@
 /***************************************************************
 	Lowest priority capture action, keep appending to var
 ***************************************************************/
-#action {%1}
+#event {RECEIVED LINE}
 {
-	#var capturedText { ${capturedText}%1 }
-} {8};
+	#if { "%1" != "" && "%1" != ">" }
+	{
+		#if { @containsNoCase{ {$itemToDrop} {#K%} } }
+		{
+
+		};
+		#ELSE 
+		{
+			#var line %1;			
+			#var capturedText { ${capturedText}%1 }	
+		};
+	};
+};
 
 #class {capture} {close}

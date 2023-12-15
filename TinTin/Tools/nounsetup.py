@@ -1,11 +1,11 @@
-import nltk
-import ssl
+from deep_translator import GoogleTranslator
+import sys
+from tintin import TinTin
 
-try:
-    _create_unverified_https_context = ssl._create_unverified_context
-except AttributeError:
-    pass
-else:
-    ssl._create_default_https_context = _create_unverified_https_context
+if not sys.warnoptions:
+    import warnings
+    warnings.simplefilter("ignore")
 
-nltk.download()
+to_translate = str(sys.argv[1])
+translated = GoogleTranslator(source='auto', target='ja').translate(to_translate)
+TinTin.echo(translated)
