@@ -1944,10 +1944,11 @@
         }
         {The Letter A} 
         {
-            {Description} { This is a cardboard cut out of the letter A. It looks light.    Your tactical advantage ends. Your insidious inspiration fades. }
+            {Description} {   The coffin expels a corpse!  up into the coffin's protective hold! The coffin is full!  Bonehead, you're at max hit points already. #K%92813089FFFN~0~K~~E~526~J~G2N: <y64227312>  <cChi Focus>: <gThought>  <yAE>: <g11>/58% Bonehead, you're at max hit points already. You hit Letter a 6 times for 4622 damage. The Letter A This is a cardboard cut out of the letter A. It looks light. #K%92813006FFFN~0 You have become grounded in this plane yet again. Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. SPROING!!!  The the letter a leaps from your grasp! ******************************************* You have arrived at a dungeon entrance. Type 'help dungeons' for details. ******************************************* =S=Alphabet Room (u,s)=S= #K%92813006DDDu~s =M= The Alphabet Serial Killer <?>. }
             {Rooms} 
             {
                 {1} {2006}
+                {2} {2005}
             }
         }
         {The Letter B} 
@@ -2025,10 +2026,11 @@
         }
         {The Letter K} 
         {
-            {Description} {  The Letter K  This is a cardboard cut out of the letter K. It looks light. Your muscles ripple and bulge with power.  HP  2245/1209  SP  1122/1122  Chi  346 / 348  Peace  301 / 315  }
+            {Description} { #K%21020082FFFN~0~K~~E~526~J~G2N: <y64192680>  <cChi Focus>: <gThought>  <yAE>: <g10>/11% Bonehead, you're at max hit points already. You hit Letter P 2 times for 1448 damage. #K%21020011AAC9.3 days #K%21020011AAF3.2 days The Letter K This is a cardboard cut out of the letter K. It looks light. #K%21020006FFFN~0 You have become grounded in this plane yet again. Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {2017}
+                {2} {2018}
             }
         }
         {The Letter L} 
@@ -2318,8 +2320,8 @@
             {
                 {1} {4723}
                 {2} {4728}
-                {3} {4724}
-                {4} {4725}
+                {3} {4725}
+                {4} {4724}
             }
         }
         {Wooden club} 
@@ -3066,6 +3068,14 @@
                 {1} {25886}
             }
         }
+        {A nicked, balsam club} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25895}
+            }
+        }
         {A nicked, pine club} 
         {
             {Description} { up A dark elven ghoul   (a nicked, pine club?) }
@@ -3103,7 +3113,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {25900}
+                {1} {25901}
+                {2} {25902}
+                {3} {25900}
             }
         }
         {Armour} 
@@ -3149,6 +3161,7 @@
             {
                 {1} {25886}
                 {2} {25888}
+                {3} {25895}
             }
         }
         {Dragonscale Shield} 
@@ -5184,9 +5197,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {3959}
-                {2} {3973}
-                {3} {26640}
+                {1} {3973}
+                {2} {26640}
+                {3} {3959}
             }
         }
         {A newspaper rack} 
@@ -5194,9 +5207,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {3959}
-                {2} {3973}
-                {3} {26640}
+                {1} {3973}
+                {2} {26640}
+                {3} {3959}
             }
         }
         {A silver plaque} 
@@ -5246,6 +5259,14 @@
             {Rooms} 
             {
                 {1} {3968}
+            }
+        }
+        {Bard voting booth with 7 topics} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {26625}
             }
         }
         {Statues of Loomer and Xiola} 
@@ -7328,7 +7349,7 @@
         }
         {Cheer Bear's Gloves \x7Blegendary\x7D} 
         {
-            {Description} { These gloves were once worn by Cheer Bear. They are made of glowing yellow rubber. The gloves are in perfect condition. It looks unbreakable. This armor has the following resistances: 8 edged, 8 blunt, 8 fire, 8 ice, 8 acid, 8 electric, 8 mind, 8 energy, 8 poison, 8 radiation  You must be level 43 to wear this.  It looks light.  Deadman: 0 Cheer Bear   Cheer Bear     }
+            {Description} { #K%44401094FFFC~2409~N~0~K~~E~526~J~G2N: <y336738>  <cChi Focus>: <gThought>  <yAE>: <g13>/22% Bonehead, you're at max hit points already. Cheer Bear's Gloves \x7Blegendary\x7D These gloves were once worn by Cheer Bear. They are made of glowing yellow rubber. The gloves are in perfect condition. It looks unbreakable. This armor has the following resistances: 8 edged, 8 blunt, 8 fire, 8 ice, 8 acid, 8 electric, 8 mind, 8 energy, 8 poison, 8 radiation You must be level 43 to wear this. It looks light. }
             {Rooms} 
             {
                 {1} {36071}
@@ -8166,6 +8187,8 @@
                 {7} {16709}
                 {8} {6501}
                 {9} {1165}
+                {10} {22731}
+                {11} {6505}
             }
         }
         {A Hockey Ticket} 
@@ -8230,35 +8253,41 @@
             {Rooms} 
             {
                 {1} {1814}
-                {2} {1811}
-                {3} {1165}
-                {4} {7030}
-                {5} {6541}
-                {6} {6534}
-                {7} {16709}
-                {8} {3112}
-                {9} {7023}
-                {10} {6539}
-                {11} {22731}
-                {12} {3577}
-                {13} {196}
-                {14} {7013}
-                {15} {7026}
-                {16} {7012}
-                {17} {7027}
-                {18} {6537}
-                {19} {1833}
-                {20} {300}
-                {21} {1815}
-                {22} {1896}
-                {23} {22732}
-                {24} {1812}
-                {25} {6506}
-                {26} {6505}
-                {27} {6503}
-                {28} {7024}
-                {29} {6501}
-                {30} {6504}
+                {2} {1165}
+                {3} {7030}
+                {4} {6541}
+                {5} {6534}
+                {6} {16709}
+                {7} {3112}
+                {8} {7023}
+                {9} {6539}
+                {10} {22731}
+                {11} {3577}
+                {12} {196}
+                {13} {7013}
+                {14} {7012}
+                {15} {7027}
+                {16} {1833}
+                {17} {300}
+                {18} {1815}
+                {19} {1896}
+                {20} {22732}
+                {21} {1812}
+                {22} {6506}
+                {23} {6503}
+                {24} {7024}
+                {25} {6501}
+                {26} {6504}
+                {27} {7032}
+                {28} {1899}
+                {29} {6502}
+                {30} {6537}
+                {31} {6538}
+                {32} {1811}
+                {33} {16700}
+                {34} {6505}
+                {35} {7026}
+                {36} {1895}
             }
         }
         {A Small ChaosBrand(tm) Television Set} 
@@ -8442,6 +8471,7 @@
                 {14} {196}
                 {15} {3112}
                 {16} {7024}
+                {17} {1811}
             }
         }
         {A bouncing frankfurter} 
@@ -8489,8 +8519,8 @@
             {Rooms} 
             {
                 {1} {6504}
-                {2} {22731}
-                {3} {22733}
+                {2} {22733}
+                {3} {22731}
             }
         }
         {A fortune cookie} 
@@ -8499,6 +8529,7 @@
             {Rooms} 
             {
                 {1} {6539}
+                {2} {16700}
             }
         }
         {A funky-looking fog} 
@@ -8602,8 +8633,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6526}
-                {2} {6533}
+                {1} {6533}
+                {2} {6526}
             }
         }
         {A kangaroo suit (broken)} 
@@ -8647,8 +8678,8 @@
                 {8} {6521}
                 {9} {6524}
                 {10} {6501}
-                {11} {1895}
-                {12} {1165}
+                {11} {1165}
+                {12} {1895}
             }
         }
         {A large sign} 
@@ -8731,34 +8762,43 @@
                 {2} {19101}
                 {3} {16697}
                 {4} {1814}
-                {5} {6537}
-                {6} {6506}
-                {7} {1165}
-                {8} {7030}
-                {9} {6541}
-                {10} {6526}
-                {11} {6534}
-                {12} {16709}
-                {13} {3112}
-                {14} {7023}
-                {15} {6539}
-                {16} {22731}
-                {17} {7013}
-                {18} {7026}
-                {19} {1833}
-                {20} {1813}
-                {21} {22732}
-                {22} {6505}
-                {23} {7024}
-                {24} {196}
-                {25} {1811}
-                {26} {6501}
-                {27} {6504}
-                {28} {6536}
-                {29} {1896}
-                {30} {301}
-                {31} {16698}
-                {32} {6503}
+                {5} {6506}
+                {6} {1165}
+                {7} {7030}
+                {8} {6541}
+                {9} {6534}
+                {10} {7023}
+                {11} {6539}
+                {12} {7013}
+                {13} {1833}
+                {14} {22732}
+                {15} {7024}
+                {16} {6501}
+                {17} {6504}
+                {18} {6536}
+                {19} {1896}
+                {20} {301}
+                {21} {16698}
+                {22} {6503}
+                {23} {7032}
+                {24} {1899}
+                {25} {3113}
+                {26} {16709}
+                {27} {6537}
+                {28} {3112}
+                {29} {6538}
+                {30} {22731}
+                {31} {1811}
+                {32} {16700}
+                {33} {6505}
+                {34} {1813}
+                {35} {6533}
+                {36} {6540}
+                {37} {3579}
+                {38} {7026}
+                {39} {6526}
+                {40} {4140}
+                {41} {196}
             }
         }
         {A newspaper rack} 
@@ -8783,6 +8823,7 @@
                 {7} {6521}
                 {8} {1833}
                 {9} {6501}
+                {10} {1896}
             }
         }
         {A piece of USA Today} 
@@ -8910,6 +8951,8 @@
                 {5} {7012}
                 {6} {6524}
                 {7} {6501}
+                {8} {1896}
+                {9} {6505}
             }
         }
         {A rusty old android} 
@@ -8944,8 +8987,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6538}
-                {2} {1896}
+                {1} {1896}
+                {2} {6538}
+                {3} {1811}
             }
         }
         {A shiny new postcard rack} 
@@ -8974,6 +9018,7 @@
             {
                 {1} {16697}
                 {2} {16698}
+                {3} {6538}
             }
         }
         {A silvery tower} 
@@ -9088,6 +9133,7 @@
                 {12} {1811}
                 {13} {22733}
                 {14} {196}
+                {15} {6538}
             }
         }
         {A street sign} 
@@ -9095,9 +9141,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {1897}
-                {2} {1896}
-                {3} {1898}
+                {1} {1896}
+                {2} {1898}
+                {3} {1897}
             }
         }
         {A swirling void} 
@@ -9107,11 +9153,11 @@
             {
                 {1} {1896}
                 {2} {6504}
-                {3} {6502}
-                {4} {6521}
-                {5} {6524}
-                {6} {6525}
-                {7} {6503}
+                {3} {6521}
+                {4} {6524}
+                {5} {6525}
+                {6} {6503}
+                {7} {6502}
             }
         }
         {A tall street light} 
@@ -9241,9 +9287,9 @@
                 {4} {196}
                 {5} {1811}
                 {6} {22733}
-                {7} {16709}
-                {8} {17595}
-                {9} {6501}
+                {7} {17595}
+                {8} {6501}
+                {9} {16709}
             }
         }
         {An Illuminati Pyramid} 
@@ -9343,6 +9389,7 @@
             {
                 {1} {16697}
                 {2} {16698}
+                {3} {6538}
             }
         }
         {An old dusty book} 
@@ -9462,6 +9509,7 @@
                 {8} {1896}
                 {9} {6502}
                 {10} {6526}
+                {11} {22731}
             }
         }
         {Gloves of the Spirit \x7Bradiant\x7D} 
@@ -9497,11 +9545,11 @@
             {
                 {1} {1896}
                 {2} {6504}
-                {3} {6502}
-                {4} {6521}
-                {5} {6524}
-                {6} {6525}
-                {7} {6503}
+                {3} {6521}
+                {4} {6524}
+                {5} {6525}
+                {6} {6503}
+                {7} {6502}
             }
         }
         {Overgrown swamp} 
@@ -9632,6 +9680,7 @@
             {
                 {1} {22732}
                 {2} {6504}
+                {3} {6505}
             }
         }
         {a lead pipe} 
@@ -12323,8 +12372,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6549}
-                {2} {6545}
+                {1} {6545}
+                {2} {6549}
             }
         }
         {A floating diamond-shaped spectacle (Cobalt)} 
@@ -12597,11 +12646,12 @@
         }
         {A radiant sardonyx gem} 
         {
-            {Description} {   You have become grounded in this plane yet again.  (a radiant sardonyx gem?)  Deadman: 0  Deadman: 0    Your tactical advantage ends. }
+            {Description} { (a radiant sardonyx gem?) #K%44401013FFFC~2278~N~0 Bonehead, you're at max hit points already. =S=secluded cove (se,sw,n,s)=S= #K%44401012DDDse~sw~n~s =S=secluded cove (sw,nw,w,e)=S= #K%44401012DDDsw~nw~w~e =S=secluded cove (w)=S= #K%44401004DDDw =M= Tyra Janera, Warlock of the Demoniac Triad. }
             {Rooms} 
             {
                 {1} {6547}
                 {2} {6551}
+                {3} {6549}
             }
         }
         {A radiant spinel gem} 
@@ -12997,7 +13047,7 @@
         }
         {Ruinic Cloak of the Triad (ensorcelled)} 
         {
-            {Description} { Deadman: 0 Ruinic Cloak of the Triad (ensorcelled) The ruinic cloak is adorned with blood colored runes that have been embedded within the fabric.  The material is coarse and not entirely light weight, however, it will still provide rather decent protection against the elements of nature.  The symbols upon the apparel vary in design and you surmize that their presence marks this piece of clothing as one with magical properties.  The cloak is in perfect condition. It has a magical glow about it. This armor has the following resistances: 1 edged, 1 blunt, 3 fire, 3 ice, -3 acid, 9 electric, -2 mind, 9 energy It looks light.  Deadman: 0 }
+            {Description} {  Ruinic Cloak of the Triad (ensorcelled) The ruinic cloak is adorned with blood colored runes that have been embedded within the fabric.  The material is coarse and not entirely light weight, however, it will still provide rather decent protection against the elements of nature.  The symbols upon the apparel vary in design and you surmize that their presence marks this piece of clothing as one with magical properties. The cloak is in perfect condition. It has a magical glow about it. This armor has the following resistances: 1 edged, 1 blunt, 3 fire, 3 ice, -3 acid, 9 electric, -2 mind, 9 energy It looks light. Ok. #K%44401020BADsecluded cove (w) #K%44401004DDDw #K%44401134FFFC~2288~K~Tyra Janera, Warlock of the Demoniac Triad~L~100~M~~J~G2N: <y517824>  <cChi Focus>: <gThought>  <yAE>: <g9>/37% Your insidious inspiration flows through you as you make the most of each attack! #K%44401006FFFN~1 Bonehead, you're at max hit points already.  With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already. Tyra Janera, Warlock of the Demoniac Triad Monster class: Really Big (12). }
             {Rooms} 
             {
                 {1} {6551}
@@ -15757,6 +15807,14 @@
                 {1} {4880}
             }
         }
+        {A bloody khopesh} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {A brilliant glowing, ever-growing sphere of energy} 
         {
             {Description} {}
@@ -15774,6 +15832,30 @@
             }
         }
         {A deformed, impaled corpse of Drider guard} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A double-edged, bronze falchion } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A dull, steel bastardsword } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A dull, steel blade} 
         {
             {Description} {}
             {Rooms} 
@@ -15805,6 +15887,14 @@
                 {1} {4880}
             }
         }
+        {A jagged, iron sabre} 
+        {
+            {Description} {   Bonehead, you're at max hit points already.  (a jagged, iron sabre?) #K%33484075FFFJ~G2N: <y97806641>  <cChi Focus>: <gThought>  <yAE>: <g9>/70% Bonehead, you're at max hit points already. Saving monk status. }
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {A lightly glowing, onyx blade (enchanted)} 
         {
             {Description} {    (a lightly glowing, onyx blade (enchanted)?) Delundar the Emancipator   Delundar the Emancipator     }
@@ -15813,9 +15903,41 @@
                 {1} {4880}
             }
         }
+        {A lightly glowing, sardonyx foil } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {A nasty sword} 
         {
             {Description} { This is the fabled sword of insults.  And like the Singing Sword, this one talks on its own, but it also says some pretty rude stuff.  It seems to be a well crafted weapon. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 12 (edged).  This weapon gains benefits from your sword weapon skill. }
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A nasty, titanium katana } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A nicked, steel blade} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A nicked, steel blade } 
+        {
+            {Description} {}
             {Rooms} 
             {
                 {1} {4880}
@@ -15838,6 +15960,14 @@
             }
         }
         {A radiant sickle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A razor-sharp, titanium no-dachi} 
         {
             {Description} {}
             {Rooms} 
@@ -15901,6 +16031,14 @@
                 {1} {4949}
             }
         }
+        {A singled edged, mithril blade } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {A singled edged, steel blade} 
         {
             {Description} { This is an very wicked-looking blade, that is made of shining  stainless steel. It has a hand-and-half wire-wrapped hilt and a  short crossguard made of silver and the balancing pommel is silver too. The long blade is divided down the middle with a long slot  that starts at the tip and runs a third of the way down the blade,  then continues after a bracing for another quarter of the length and after a second bracing for the final quarter of length. This weapon has an excellent heft and balance, and is razor-sharp.  This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  This weapon gains benefits from your sword weapon skill. You must be level 10 to wield this weapon. It looks light.  Deadman: 0  Deadman: 0 }
@@ -15926,6 +16064,22 @@
             }
         }
         {A triple-edged, platinum foil } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A white bastardsword} 
+        {
+            {Description} {     White Marble Bastardsword A magnificently crafted white sword.  A beautifully crafted white marble bastardsword.  From the workmanship apparent in this weapon, you imagine that it's more for ceremonial dress than actual fighting.  Though the edge does appear to be very keen. This weapon is in excellent condition. This weapon deals edged and radiation damage. This weapon is class 14 (edged). This weapon gains benefits from your sword weapon skill. }
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {A white shortsword} 
         {
             {Description} {}
             {Rooms} 
@@ -16014,6 +16168,30 @@
             }
         }
         {An engraved, steel blade} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {An extremely sharp, ebony scimitar } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {An extremely sharp, mithril khopesh } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {An extremely sharp, steel cutlass } 
         {
             {Description} {}
             {Rooms} 
@@ -16165,6 +16343,14 @@
                 {1} {4880}
             }
         }
+        {Emerald ring} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {Enormous Worm Tooth (enchanted)} 
         {
             {Description} {     (enormous worm tooth (enchanted)?)    }
@@ -16181,7 +16367,23 @@
                 {1} {4880}
             }
         }
+        {Garnet ring} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {God Crafted Plate Mail} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {Gold ring} 
         {
             {Description} {}
             {Rooms} 
@@ -16274,6 +16476,22 @@
                 {1} {4880}
             }
         }
+        {Opal ring} 
+        {
+            {Description} { #K%33484088FFFN~0~K~~E~526~J~G2N: <y97806641>  <cChi Focus>: <gThought>  <yAE>: <g9>/69% Bonehead, you're at max hit points already. Opal ring A small, decorated, opal ring.  You cannot surmise what powers it may or may not possess.  Perhaps an identification spell will reveal what you wish to know. It looks light. #K%33484006FFFN~0 Your insidious inspiration fades. Bonehead, you're at max hit points already. #K%33484007BAE0.00 }
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {Pearl ring} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {Potion giving you the finger} 
         {
             {Description} {}
@@ -16354,6 +16572,14 @@
                 {1} {4880}
             }
         }
+        {Silver ring} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
         {Sodalite ring} 
         {
             {Description} {     Deadman: 0  up Psionic waves emanate from your body. Sodalite ring  A small, decorated, sodalite ring.  You cannot surmise what powers it may or may not possess.  Perhaps an identification spell will reveal what you wish to know. It looks light.  Deadman: 0 }
@@ -16395,6 +16621,22 @@
             }
         }
         {The aura of order fades into the infrared, giving you a slight headache} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {The charred, maggot-infested remains of Beloch} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {The charred, slightly moldy corpse of Beloch} 
         {
             {Description} {}
             {Rooms} 
@@ -16461,6 +16703,14 @@
         {Titanium ring} 
         {
             {Description} {}
+            {Rooms} 
+            {
+                {1} {4880}
+            }
+        }
+        {Topaz ring} 
+        {
+            {Description} {   Topaz Ring of the Seven Seas This ring swirls in blue and green colors. A deep blue wave crashing with white foam makes up the adornment of the ring. It is cold to the touch and quite mesmerizing. The ring is in perfect condition. It has a magical glow about it. It looks very light. Bonehead, you're at max hit points already. Psionic waves emanate from your body. }
             {Rooms} 
             {
                 {1} {4880}
@@ -18570,7 +18820,40 @@
             {Description} {}
             {Rooms} 
             {
+                {1} {29057}
+                {2} {29055}
+            }
+        }
+        {A large ladder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
                 {1} {29055}
+            }
+        }
+        {A newly erected billboard} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29057}
+            }
+        }
+        {A plastic magnifying glass} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29057}
+            }
+        }
+        {A quaint candy store} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29057}
             }
         }
         {A rusty ship anchor} 
@@ -18579,6 +18862,22 @@
             {Rooms} 
             {
                 {1} {29055}
+            }
+        }
+        {A swirling void} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29055}
+            }
+        }
+        {A toy chest} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29057}
             }
         }
         {Dexter's Computer} 
@@ -18595,6 +18894,14 @@
             {Rooms} 
             {
                 {1} {29124}
+            }
+        }
+        {Magic mushroom magically stuck in the ground} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29055}
             }
         }
     }
@@ -19517,6 +19824,14 @@
                 {1} {28835}
             }
         }
+        {A Small ChaosBrand Television Set} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28835}
+            }
+        }
         {A Small ChaosBrand(tm) Television Set} 
         {
             {Description} {}
@@ -19549,7 +19864,23 @@
                 {1} {28835}
             }
         }
+        {A red mutant plant} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28835}
+            }
+        }
         {A small box of Laundry Detergent} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28835}
+            }
+        }
+        {A small dispensing machine} 
         {
             {Description} {}
             {Rooms} 
@@ -19574,6 +19905,14 @@
             }
         }
         {A writhing tendril} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28835}
+            }
+        }
+        {The Good Humor, Ice Cream Truck} 
         {
             {Description} {}
             {Rooms} 
@@ -21011,10 +21350,11 @@
         }
         {Poor fragment of willy} 
         {
-            {Description} { [ POOR FRAGMENT OF WILLY ]  You want to chuckle, you really do, but there's nothing funny about a tiny willy.  You can assemble 5 of these fragments into a single essence.  This item can be stashed in a crafting satchel.  Type: Fragment Of Willy Minimum Skill: 27 Trivial Skill: 37     }
+            {Description} { <cChi Focus>: <gThought>  <yAE>:  <g12>/21% Bonehead, you're at max hit points already. You hit Toad 6 times for 4202 damage. Bonehead, you're at max hit points already. Poor fragment of willy [ POOR FRAGMENT OF WILLY ] You want to chuckle, you really do, but there's nothing funny about a tiny willy.  You can assemble 5 of these fragments into a single essence. This item can be stashed in a crafting satchel. Type: Fragment Of Willy Minimum Skill: 27 Trivial Skill: 37 }
             {Rooms} 
             {
                 {1} {3128}
+                {2} {3198}
             }
         }
         {Poor heart of soul} 
@@ -21605,7 +21945,7 @@
         }
         {Einstein's brain} 
         {
-            {Description} {    Einstein's brain  Wow! Einstein's brain is actually even bigger than you imagined. Now if you could only find out how to use this thing, and you might become just as smart as him!  }
+            {Description} { up into the coffin's protective hold! The coffin is full!  #K%44401093FFFC~2373~N~0~K~~E~526~J~G2N: <y511974>  <cChi Focus>: <gThought>  <yAE>: <g5>/84% Bonehead, you're at max hit points already. Einstein's brain Wow! Einstein's brain is actually even bigger than you imagined. Now if you could only find out how to use this thing, and you might become just as smart as him!  }
             {Rooms} 
             {
                 {1} {7044}
@@ -21613,7 +21953,7 @@
         }
         {Einstein's ugly pants} 
         {
-            {Description} { This is Einstein's ugly brown pants, really really out of fashion. When Einstein wore them you thought they looked great... how strange!  It looks light.  Deadman: 0  Deadman: 0     Bonehead, you're at max hit points already. }
+            {Description} {   Einstein's ugly pants This is Einstein's ugly brown pants, really really out of fashion. When Einstein wore them you thought they looked great... how strange!  It looks light. #K%44401059CAAflapchat~Flappers~Apocalypse~Apocalypse flaps : oops, wl Apocalypse flaps : oops, wl #K%44401103FFFN~0~K~A huge braincell~L~1~M~~J~G2N: <y511974>  <cChi Focus>: <gThought>  <yAE>: <g5>/85% #K%44401009FFFN~0~K~ Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {7044}
@@ -22014,8 +22354,8 @@
                 {1} {4751}
                 {2} {4752}
                 {3} {4755}
-                {4} {4756}
-                {5} {4753}
+                {4} {4753}
+                {5} {4756}
             }
         }
     }
@@ -26315,14 +26655,14 @@
                 {9} {5981}
                 {10} {5980}
                 {11} {5839}
-                {12} {5922}
-                {13} {5984}
-                {14} {5983}
-                {15} {45572}
-                {16} {5896}
-                {17} {6211}
-                {18} {6203}
-                {19} {22889}
+                {12} {5984}
+                {13} {5983}
+                {14} {45572}
+                {15} {5896}
+                {16} {6211}
+                {17} {6203}
+                {18} {22889}
+                {19} {5922}
             }
         }
         {A slimy piece of corrosive ooze} 
@@ -26356,12 +26696,12 @@
                 {8} {5825}
                 {9} {5912}
                 {10} {5913}
-                {11} {5922}
-                {12} {5984}
-                {13} {5898}
-                {14} {45572}
-                {15} {6211}
-                {16} {6203}
+                {11} {5984}
+                {12} {5898}
+                {13} {45572}
+                {14} {6211}
+                {15} {6203}
+                {16} {5922}
             }
         }
         {A street sign} 
@@ -26389,15 +26729,15 @@
                 {18} {5834}
                 {19} {5822}
                 {20} {5896}
-                {21} {5922}
-                {22} {5807}
-                {23} {5819}
-                {24} {5840}
-                {25} {5839}
-                {26} {6211}
-                {27} {6203}
-                {28} {48494}
-                {29} {22889}
+                {21} {5807}
+                {22} {5819}
+                {23} {5840}
+                {24} {5839}
+                {25} {6211}
+                {26} {6203}
+                {27} {48494}
+                {28} {22889}
+                {29} {5922}
             }
         }
         {A sturdy stone lockbox} 
@@ -26863,6 +27203,7 @@
                 {5} {5813}
                 {6} {22889}
                 {7} {4756}
+                {8} {5922}
             }
         }
         {Worn boots} 
@@ -27225,7 +27566,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {44750}
+                {1} {44748}
+                {2} {44789}
+                {3} {44750}
             }
         }
         {Death's Valued Customers List} 
@@ -27246,7 +27589,7 @@
         }
         {Ninja Suit} 
         {
-            {Description} { Method: Serpent  Crits: On  Stun: On  Hide: OFF  G2N: Deadman: 0 Ninja Suit  Made of a clean white material, this suit provides ease of movement, but not much protection. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 6 edged, 6 blunt It looks light.  Deadman: 0 }
+            {Description} {    Ninja Suit Made of a clean white material, this suit provides ease of movement, but not much protection. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 6 edged, 6 blunt It looks light. #K%03327075FFFJ~G2N: <y81513033>  <cChi Focus>: <gStatic>  <yAE>: <g13>/46% Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {44836}
@@ -27269,7 +27612,7 @@
         }
         {Ninja-To} 
         {
-            {Description} {  Light Ninja Guard   Method: Serpent  Crits: On  Stun: On  Hide: OFF  G2N: Deadman: 0 <y53474836>  <cChi Focus>: <gThought>  <yAE>: <g12>/50% Ninja-To  This is a short, two and a half foot, straight-bladed version of the katana. In the hands of someone who knows how to properly wield it, it can cause serious damage to your foe. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 14 (edged).  This weapon gains benefits from your sword weapon skill. }
+            {Description} { Ninja Suit: Ok.  up into the coffin's protective hold!  #K%03327095FFFC~2606~N~0~K~~E~526~J~G2N: <y81513033>  <cChi Focus>: <gStatic>  <yAE>: <g13>/45% Bonehead, you're at max hit points already. #K%03327042CAAshout~Shout~Crolack~Crolack shouts: w/l Crolack shouts: w/l Ninja-To This is a short, two and a half foot, straight-bladed version of the katana. In the hands of someone who knows how to properly wield it, it can cause serious damage to your foe. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 14 (edged). This weapon gains benefits from your sword weapon skill. }
             {Rooms} 
             {
                 {1} {44834}
@@ -28134,6 +28477,25 @@
                 {2} {42681}
                 {3} {42680}
                 {4} {42679}
+            }
+        }
+    }
+    {Gentech} 
+    {
+        {A holo-display emblem of the Gentech Medical Class} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25344}
+            }
+        }
+        {A holo-display emblem of the Gentech Offense Division} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25344}
             }
         }
     }
@@ -32423,7 +32785,8 @@
                 {4} {22437}
                 {5} {22435}
                 {6} {22453}
-                {7} {22454}
+                {7} {22455}
+                {8} {22454}
             }
         }
     }
@@ -34690,6 +35053,8 @@
                 {5} {1919}
                 {6} {1915}
                 {7} {1900}
+                {8} {1940}
+                {9} {1944}
             }
         }
         {A big frickin' boulder} 
@@ -34802,6 +35167,8 @@
                 {5} {1909}
                 {6} {1919}
                 {7} {1915}
+                {8} {1940}
+                {9} {1944}
             }
         }
         {A small dispensing machine} 
@@ -34856,6 +35223,8 @@
                 {5} {1919}
                 {6} {1915}
                 {7} {1900}
+                {8} {1940}
+                {9} {1944}
             }
         }
         {A ticket to see 'Hotel Transylvania'} 
@@ -34890,10 +35259,10 @@
                 {1} {1913}
                 {2} {1947}
                 {3} {1903}
-                {4} {1900}
-                {5} {1944}
-                {6} {1901}
-                {7} {1902}
+                {4} {1944}
+                {5} {1900}
+                {6} {1902}
+                {7} {1901}
             }
         }
         {A writhing tendril} 
@@ -35044,6 +35413,8 @@
                 {5} {1919}
                 {6} {1915}
                 {7} {1900}
+                {8} {1940}
+                {9} {1944}
             }
         }
         {The Good Humor, Ice Cream Truck} 
@@ -35068,6 +35439,14 @@
             {Rooms} 
             {
                 {1} {1900}
+            }
+        }
+        {The electrocuted, slightly moldy corpse of Gang member} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {1969}
             }
         }
         {Toad gland} 
@@ -35160,6 +35539,17 @@
     }
     {Mantle Corps} 
     {
+        {A bench} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24243}
+                {2} {24216}
+                {3} {24213}
+                {4} {24185}
+            }
+        }
         {A loose cigarette} 
         {
             {Description} { A cheap cigarette with a Coughin Nail logo on the filter. If you have eight or more cigarettes you can bundle them into a pack. It looks light.   H 1560/1560 TS 12/12 D 89/124  E  160  Deftness 50.56 Corpses:  I  0 C  1 H 1560/1560 TS 10/12 D 89/124  E  160  Deftness 50.56 Corpses:  I  0 C  1 H 1560/1560 TS 10/12 D 89/124  E  160  Deftness 50.56 Corpses:  I  0 C  1 H 1560/1560 TS 10/12 D 89/124  E  173  Deftness 50.56 Corpses:  I  0 C  1 H 1560/1560 TS 10/12 D 89/124  E  173  Deftness 50.56 Corpses:  I  0 C  1 H 1560/1560 TS  6/12 D 89/124  E  173  Deftness 50.56 Corpses:  I  0 C  1 H 1560/1560 TS  6/12 D 96/124  E  173  Deftness 50.56 Corpses:  I  0 C  1 H 1560/1560 TS  6/12 D 96/124  E  176  Deftness 50.61 Corpses:  I  0 C  1 }
@@ -35185,6 +35575,7 @@
             {Rooms} 
             {
                 {1} {24199}
+                {2} {24200}
             }
         }
         {A shiv} 
@@ -35196,13 +35587,30 @@
                 {2} {24233}
             }
         }
+        {A sign has been posted here} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24183}
+            }
+        }
+        {A small pile of gravel} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {24245}
+            }
+        }
         {A yellow sign} 
         {
             {Description} {}
             {Rooms} 
             {
-                {1} {24197}
-                {2} {24184}
+                {1} {24184}
+                {2} {24197}
+                {3} {24185}
             }
         }
         {An employment kiosk} 
@@ -37478,6 +37886,14 @@
                 {1} {27634}
             }
         }
+        {Ring of Hearts} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {27636}
+            }
+        }
         {Ring of Hearts } 
         {
             {Description} {}
@@ -37578,10 +37994,10 @@
             {
                 {1} {27650}
                 {2} {27632}
-                {3} {27636}
-                {4} {27631}
-                {5} {27635}
-                {6} {27634}
+                {3} {27631}
+                {4} {27635}
+                {5} {27634}
+                {6} {27636}
             }
         }
         {Turnhold's Scotch Hotline } 
@@ -37598,6 +38014,27 @@
             {Rooms} 
             {
                 {1} {27636}
+            }
+        }
+    }
+    {Monte's Well} 
+    {
+        {The well} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36123}
+                {2} {53185}
+            }
+        }
+        {Well sword} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {36123}
+                {2} {53185}
             }
         }
     }
@@ -38713,7 +39150,8 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {14215}
+                {1} {14192}
+                {2} {14215}
             }
         }
         {A junked Yokohamma 9000XFXTZ sports car} 
@@ -38722,7 +39160,24 @@
             {Rooms} 
             {
                 {1} {14133}
-                {2} {14132}
+                {2} {14134}
+                {3} {14132}
+            }
+        }
+        {A large plastic key} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {14215}
+            }
+        }
+        {A small plastic key} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {14215}
             }
         }
         {G.D.S. Shirt} 
@@ -38754,6 +39209,7 @@
             {Rooms} 
             {
                 {1} {14192}
+                {2} {14215}
             }
         }
     }
@@ -41655,6 +42111,14 @@
     }
     {Necropolis} 
     {
+        {A Statue of Cancer the King} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28841}
+            }
+        }
         {A bone wand} 
         {
             {Description} {}
@@ -41663,12 +42127,39 @@
                 {1} {27698}
             }
         }
+        {A glass sign with moving liquid inside, pointing north} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28841}
+            }
+        }
+        {A gleaming sickle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28836}
+                {2} {28841}
+            }
+        }
+        {A radiant sickle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28841}
+            }
+        }
         {A ruined headstone} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {28847}
+                {2} {28841}
+                {3} {28842}
             }
         }
         {A simple headstone} 
@@ -41677,6 +42168,8 @@
             {Rooms} 
             {
                 {1} {28839}
+                {2} {28842}
+                {3} {28841}
             }
         }
         {A single gold coin} 
@@ -41685,6 +42178,61 @@
             {Rooms} 
             {
                 {1} {28847}
+                {2} {28841}
+            }
+        }
+        {A tall street light} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28841}
+            }
+        }
+        {An Unholy Tome of Charisma} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28842}
+            }
+        }
+        {An energy spear} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28836}
+                {2} {28841}
+            }
+        }
+        {An old headstone} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28842}
+                {2} {28841}
+            }
+        }
+        {An unkindness of dark ravens} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28836}
+                {2} {28841}
+            }
+        }
+        {Cable's colossal Astral Construct} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28846}
+                {2} {28842}
+                {3} {28836}
+                {4} {28841}
             }
         }
         {Fruitcake} 
@@ -41695,12 +42243,30 @@
                 {1} {28836}
             }
         }
+        {Remains of a Dark Priest} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28839}
+                {2} {28842}
+                {3} {28841}
+            }
+        }
         {Sugar plumbs} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {28847}
+            }
+        }
+        {The 3-K Kill List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28841}
             }
         }
     }
@@ -45243,8 +45809,34 @@
             {Rooms} 
             {
                 {1} {6673}
-                {2} {6681}
-                {3} {6679}
+                {2} {6680}
+                {3} {6681}
+                {4} {6679}
+            }
+        }
+        {A PAB Chatline dispenser} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6676}
+            }
+        }
+        {A PRB Chatline dispenser} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6676}
+            }
+        }
+        {A Sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17554}
+                {2} {17555}
             }
         }
         {A Stall} 
@@ -45262,11 +45854,11 @@
             {
                 {1} {23835}
                 {2} {36214}
-                {3} {6247}
-                {4} {6673}
-                {5} {36215}
-                {6} {17537}
-                {7} {6220}
+                {3} {36215}
+                {4} {17537}
+                {5} {6220}
+                {6} {6673}
+                {7} {6247}
             }
         }
         {A Tome of 'Enhancing Enchanting', Volume II} 
@@ -45316,7 +45908,17 @@
             {
                 {1} {6677}
                 {2} {6679}
-                {3} {6673}
+                {3} {6675}
+                {4} {6676}
+                {5} {6673}
+            }
+        }
+        {A board of rules} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6680}
             }
         }
         {A bright white capsule} 
@@ -45381,6 +45983,14 @@
             {Rooms} 
             {
                 {1} {6690}
+            }
+        }
+        {A brilliant glowing, ever-growing sphere of energy} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
             }
         }
         {A bronze plaque} 
@@ -45481,6 +46091,14 @@
                 {1} {151}
             }
         }
+        {A flood of pure darkness} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
+            }
+        }
         {A glass of wine \x7B3\x7D} 
         {
             {Description} {}
@@ -45495,6 +46113,14 @@
             {Rooms} 
             {
                 {1} {3115}
+            }
+        }
+        {A gleaming sickle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
             }
         }
         {A glowing brown vial} 
@@ -45553,13 +46179,21 @@
                 {1} {151}
             }
         }
+        {A golden scythe} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
+            }
+        }
         {A greenish street sign} 
         {
             {Description} {}
             {Rooms} 
             {
-                {1} {151}
-                {2} {24350}
+                {1} {24350}
+                {2} {151}
             }
         }
         {A gumball machine} 
@@ -45578,12 +46212,29 @@
                 {1} {151}
             }
         }
+        {A large metal box} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
+            }
+        }
+        {A large metal box, humming quietly} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
+            }
+        }
         {A large sign} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {6673}
+                {2} {6676}
             }
         }
         {A little brown monkey doll} 
@@ -45608,10 +46259,12 @@
             {Rooms} 
             {
                 {1} {6673}
-                {2} {6681}
-                {3} {6679}
-                {4} {17541}
-                {5} {17537}
+                {2} {17541}
+                {3} {6680}
+                {4} {6681}
+                {5} {6679}
+                {6} {17542}
+                {7} {17537}
             }
         }
         {A patch of mist} 
@@ -45705,11 +46358,12 @@
                 {2} {6675}
                 {3} {23835}
                 {4} {24350}
-                {5} {6247}
-                {6} {6673}
-                {7} {36215}
-                {8} {17537}
-                {9} {6220}
+                {5} {36215}
+                {6} {17537}
+                {7} {6220}
+                {8} {6673}
+                {9} {151}
+                {10} {6247}
             }
         }
         {A skinned corpse of Vilgan, draped upon a sickle} 
@@ -45744,6 +46398,14 @@
                 {1} {36215}
             }
         }
+        {A small ivory bottle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
+            }
+        }
         {A small pedestal} 
         {
             {Description} {}
@@ -45759,8 +46421,8 @@
             {
                 {1} {3928}
                 {2} {6675}
-                {3} {151}
-                {4} {24350}
+                {3} {24350}
+                {4} {151}
             }
         }
         {A spiked zallot} 
@@ -45794,14 +46456,15 @@
             {
                 {1} {3115}
                 {2} {152}
-                {3} {23835}
-                {4} {36214}
-                {5} {6247}
-                {6} {6673}
-                {7} {36215}
+                {3} {36214}
+                {4} {36215}
+                {5} {17541}
+                {6} {6220}
+                {7} {23835}
                 {8} {17537}
-                {9} {17541}
-                {10} {6220}
+                {9} {6673}
+                {10} {151}
+                {11} {6247}
             }
         }
         {A tattered cloak} 
@@ -45834,6 +46497,7 @@
             {Rooms} 
             {
                 {1} {152}
+                {2} {151}
             }
         }
         {A user graph, hanging on the wall} 
@@ -45842,8 +46506,9 @@
             {Rooms} 
             {
                 {1} {6673}
-                {2} {6679}
+                {2} {6680}
                 {3} {6681}
+                {4} {6679}
             }
         }
         {A weapon with the letter F imprinted on it} 
@@ -45860,6 +46525,7 @@
             {Rooms} 
             {
                 {1} {24350}
+                {2} {151}
             }
         }
         {An ATM  Pinnacle Bank} 
@@ -45868,6 +46534,14 @@
             {Rooms} 
             {
                 {1} {24350}
+            }
+        }
+        {An Emerald} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
             }
         }
         {An Illuminati Pyramid} 
@@ -45902,13 +46576,38 @@
                 {1} {151}
             }
         }
+        {An unkindness of dark ravens} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
+            }
+        }
         {Another 3k Top Player List} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {17541}
-                {2} {17537}
+                {2} {17542}
+                {3} {17537}
+            }
+        }
+        {Balangool Gloves } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
+            }
+        }
+        {Bitter, chilling darkness fills the room here} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
             }
         }
         {Board Directions Sign} 
@@ -45917,8 +46616,17 @@
             {Rooms} 
             {
                 {1} {6673}
-                {2} {6681}
-                {3} {6679}
+                {2} {6680}
+                {3} {6681}
+                {4} {6679}
+            }
+        }
+        {Bone ring} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
             }
         }
         {Breastplate of the Spirit} 
@@ -45927,6 +46635,14 @@
             {Rooms} 
             {
                 {1} {151}
+            }
+        }
+        {Cable's colossal Astral Construct} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
             }
         }
         {Clan Flag Stand} 
@@ -46012,6 +46728,14 @@
                 {2} {51228}
             }
         }
+        {Crimson Cloak of the Dark Mystic } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
+            }
+        }
         {Crocodile tooth} 
         {
             {Description} {}
@@ -46061,6 +46785,14 @@
                 {1} {151}
             }
         }
+        {Iguild Vote voting booth with 1 topic} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6678}
+            }
+        }
         {Inago's Neuro-Data Transfer Module} 
         {
             {Description} {}
@@ -46075,6 +46807,22 @@
             {Rooms} 
             {
                 {1} {151}
+            }
+        }
+        {Moon disk} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6247}
+            }
+        }
+        {Mr. Coffee} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6676}
             }
         }
         {OMP voting booth} 
@@ -46093,12 +46841,36 @@
                 {1} {151}
             }
         }
+        {Player Advisory Board containing no messages} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {6676}
+            }
+        }
         {Player's voting booth} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {6682}
+            }
+        }
+        {Regulation Postal Vest} 
+        {
+            {Description} { #K%39006094FFFN~0~K~~E~526~G~407~J~G2N: <y66984243>  <cChi Focus>: <gStatic>  <yAE>: <g13>/56% Regulation Postal Vest This is a Regulation Postal Vest of the Pinnacle Post Office. It is made from some unidentifiable brown fabric, and has been smudged, torn, and stained with regulation blue and black ink, as well as some decidedly non-regulation blood. The other is in perfect condition. This armor has the following resistances: 2 blunt It looks light. #K%39006006FFFN~0 The prism stone slowly spins about your head. }
+            {Rooms} 
+            {
+                {1} {117}
+            }
+        }
+        {Regulation Postal Visor (brown)} 
+        {
+            {Description} {   Regulation Postal Visor (brown) This is a Regulation Postal Visor of the Pinnacle Post Office. It is a boring and unremarkable brown, except for the motto embroidered across the brim in bright yellow thread.  It looks like it's about as old as Pinnacle itself. The helmet is in perfect condition. This armor has the following resistances: 1 blunt, 1 mind It looks light. }
+            {Rooms} 
+            {
+                {1} {117}
             }
         }
         {Rod of Dispater (enchanted)} 
@@ -46123,7 +46895,8 @@
             {Rooms} 
             {
                 {1} {17541}
-                {2} {17537}
+                {2} {17542}
+                {3} {17537}
             }
         }
         {Small Figurine} 
@@ -46142,6 +46915,14 @@
                 {1} {151}
             }
         }
+        {Sportsline Dispenser} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17537}
+            }
+        }
         {The 3-K Kill List} 
         {
             {Description} {}
@@ -46149,11 +46930,11 @@
             {
                 {1} {23835}
                 {2} {36214}
-                {3} {6247}
-                {4} {6673}
-                {5} {36215}
-                {6} {17537}
-                {7} {6220}
+                {3} {36215}
+                {4} {17537}
+                {5} {6220}
+                {6} {6673}
+                {7} {6247}
             }
         }
         {The 3k Top Player List} 
@@ -46162,7 +46943,8 @@
             {Rooms} 
             {
                 {1} {17541}
-                {2} {17537}
+                {2} {17542}
+                {3} {17537}
             }
         }
         {The Altar of UNO} 
@@ -46180,6 +46962,14 @@
             {Rooms} 
             {
                 {1} {36215}
+            }
+        }
+        {The Dragon Shell Armor} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {151}
             }
         }
         {The Fridge of Cletus  (7 items)} 
@@ -46236,7 +47026,8 @@
             {Rooms} 
             {
                 {1} {17541}
-                {2} {17537}
+                {2} {17542}
+                {3} {17537}
             }
         }
         {The Top Quester List} 
@@ -46363,6 +47154,28 @@
             {Rooms} 
             {
                 {1} {107}
+            }
+        }
+    }
+    {Pinnacle Sports Bar} 
+    {
+        {A TV set, it is currently off} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17551}
+            }
+        }
+        {Sportsline Dispenser} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17538}
+                {2} {17550}
+                {3} {17548}
+                {4} {17546}
             }
         }
     }
@@ -46665,6 +47478,22 @@
                 {1} {49584}
             }
         }
+        {A Mahjongg tile} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
+        {A Small ChaosBrand Television Set} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {A Statue of Cancer the King} 
         {
             {Description} {}
@@ -46691,15 +47520,23 @@
                 {1} {152}
             }
         }
+        {A bronze plaque} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {A colossal box } 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {50323}
-                {2} {50339}
-                {3} {50324}
-                {4} {50325}
+                {2} {50325}
+                {3} {50339}
+                {4} {50324}
             }
         }
         {A colossal box (contains 13 items)} 
@@ -46845,10 +47682,11 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {50338}
+                {1} {50323}
                 {2} {49584}
                 {3} {50327}
-                {4} {50326}
+                {4} {50338}
+                {5} {50326}
             }
         }
         {A huge box (contains 10 items)} 
@@ -47691,12 +48529,28 @@
                 {4} {49584}
             }
         }
+        {A large ladder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {A large sack } 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {50323}
+            }
+        }
+        {A little brown monkey doll} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
             }
         }
         {A long fishing knife} 
@@ -47715,12 +48569,28 @@
                 {1} {49589}
             }
         }
+        {A mud puddle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {A newly erected billboard} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {49584}
+            }
+        }
+        {A piece of USA Today} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
             }
         }
         {A ring of house keys} 
@@ -47739,6 +48609,14 @@
                 {1} {49584}
             }
         }
+        {A sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {A sign hangs from the counter} 
         {
             {Description} {}
@@ -47755,11 +48633,11 @@
                 {1} {50333}
                 {2} {152}
                 {3} {50327}
-                {4} {50326}
-                {5} {50323}
-                {6} {49586}
-                {7} {50325}
-                {8} {49584}
+                {4} {50323}
+                {5} {49586}
+                {6} {50325}
+                {7} {49584}
+                {8} {50326}
             }
         }
         {A slightly melted, frozen corpse of Vilgan} 
@@ -47770,12 +48648,28 @@
                 {1} {49584}
             }
         }
+        {A small dispensing machine} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {A small wooden sign} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {50333}
+            }
+        }
+        {A street sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
             }
         }
         {A tall street light} 
@@ -47787,6 +48681,7 @@
                 {2} {50323}
                 {3} {50325}
                 {4} {49584}
+                {5} {50326}
             }
         }
         {A tree} 
@@ -47805,6 +48700,14 @@
                 {1} {49584}
             }
         }
+        {A wavering blue portal} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {A wooden sign } 
         {
             {Description} {}
@@ -47819,6 +48722,14 @@
             {Rooms} 
             {
                 {1} {50325}
+            }
+        }
+        {An Illuminati Pyramid} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
             }
         }
         {An Incense Stick} 
@@ -47875,6 +48786,7 @@
             {Rooms} 
             {
                 {1} {49586}
+                {2} {50326}
             }
         }
         {Dundee hunting permit} 
@@ -47967,12 +48879,29 @@
                 {3} {49584}
             }
         }
+        {The Quickest Transport in the Rebel Armada} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
+        {The Second Quickest Transport in the Rebel Armada} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {50326}
+            }
+        }
         {The instantly-jumpstart-to-level-10 machine } 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {49586}
+                {2} {50326}
             }
         }
         {Worn leather book} 
@@ -48209,6 +49138,17 @@
             {Rooms} 
             {
                 {1} {14648}
+            }
+        }
+    }
+    {Poker Room} 
+    {
+        {The card room cashier} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17558}
             }
         }
     }
@@ -49491,6 +50431,14 @@
                 {1} {17500}
             }
         }
+        {Ring of Hearts} 
+        {
+            {Description} {  Ring of Hearts This is a lovely silver ring with a gorgeous fillagree. It is heavy for a ring. It also glows with power. A huge heart shaped ruby is mounted in the center. This ring would appear to help with your evaluation, chef, and regeneration skills. The ring is in perfect condition. It has a magical glow about it. This armor provides special defense against melee attacks. This armor has the following resistances: 8 edged, 8 blunt, 4 fire, 15 mind, 5 energy, 5 radiation It looks very light. Bonehead, you're at max hit points already. A Gardener arrives. 5 of Hearts leaves west. 3 of Hearts leaves west. 5 of Hearts arrives. #K%70829007BAE0.00 }
+            {Rooms} 
+            {
+                {1} {17503}
+            }
+        }
     }
     {Queen of Heart's Garden 2.0} 
     {
@@ -50067,6 +51015,14 @@
                 {1} {4142}
             }
         }
+        {A Chocolate Cake} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
         {A Crazily Canted and Odd Pipe} 
         {
             {Description} {}
@@ -50075,7 +51031,39 @@
                 {1} {4143}
             }
         }
+        {A HUGE refrigerator} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
+        {A Small ChaosBrand Television Set} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
+        {A Statue of Cancer the King} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4142}
+            }
+        }
         {A Weird Hanging Ladder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
+        {A bouncing bingo ball} 
         {
             {Description} {}
             {Rooms} 
@@ -50096,8 +51084,10 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {4143}
-                {2} {4146}
+                {1} {4146}
+                {2} {4143}
+                {3} {4142}
+                {4} {4144}
             }
         }
         {A bronze plaque} 
@@ -50116,7 +51106,23 @@
                 {1} {4145}
             }
         }
+        {A fearsome red dragon claw grasping Queen of Hearts} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4145}
+            }
+        }
         {A flood of pure darkness} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
+        {A glass sign with moving liquid inside, pointing north} 
         {
             {Description} {}
             {Rooms} 
@@ -50129,11 +51135,27 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {4145}
-                {2} {4143}
+                {1} {4143}
+                {2} {4145}
             }
         }
         {A gold wedding ring } 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
+        {A large ladder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
+        {A little brown monkey doll} 
         {
             {Description} {}
             {Rooms} 
@@ -50147,12 +51169,12 @@
             {Rooms} 
             {
                 {1} {4141}
-                {2} {4143}
-                {3} {4147}
-                {4} {4148}
-                {5} {4145}
-                {6} {4146}
-                {7} {4144}
+                {2} {4147}
+                {3} {4144}
+                {4} {4146}
+                {5} {4148}
+                {6} {4143}
+                {7} {4145}
             }
         }
         {A marble plaque} 
@@ -50160,15 +51182,23 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {4144}
-                {2} {4149}
-                {3} {4142}
-                {4} {4145}
-                {5} {4148}
-                {6} {4141}
-                {7} {4147}
-                {8} {4146}
+                {1} {4149}
+                {2} {4144}
+                {3} {4145}
+                {4} {4142}
+                {5} {4146}
+                {6} {4147}
+                {7} {4148}
+                {8} {4141}
                 {9} {4143}
+            }
+        }
+        {A mud puddle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
             }
         }
         {A pool of blood beneath Queen of Hearts} 
@@ -50188,6 +51218,22 @@
                 {1} {4145}
             }
         }
+        {A single gold coin} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4142}
+            }
+        }
+        {A small dispensing machine} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
         {A small playing card} 
         {
             {Description} {}
@@ -50204,12 +51250,36 @@
                 {1} {4143}
             }
         }
+        {A tall street light} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4142}
+            }
+        }
         {A temporal vortex} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {4143}
+            }
+        }
+        {A very greasy hamburger} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
+            }
+        }
+        {A wicked hellfire creature resembling Buff Vampire} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4145}
             }
         }
         {An enchanted coffin  } 
@@ -50235,6 +51305,23 @@
             {Rooms} 
             {
                 {1} {4143}
+                {2} {4145}
+            }
+        }
+        {Average fragment of shadow} 
+        {
+            {Description} { A really large pile of gold coins: Ok. Ring of Hearts: Ok. The coffin expels a corpse!  up into the coffin's protective hold! The coffin is full!  #K%76307022FFFA~2834~N~0~K~~E~526 Bonehead, you're at max hit points already. You hit Queen of Hearts 3 times for 970 damage. The 5 admires a fountain. Saving clan status. Bonehead, you're at max hit points already. Average fragment of shadow [ AVERAGE FRAGMENT OF SHADOW ] The only evidence of this little shadow is a smidge that could be confused with dust.  Or is that its shadow?  You can assemble 5 of these fragments into a single essence. This item can be stashed in a crafting satchel. Type: Fragment Of Shadow Minimum Skill: 6 Trivial Skill: 16 }
+            {Rooms} 
+            {
+                {1} {4144}
+            }
+        }
+        {Aviate's large Astral Construct} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4148}
             }
         }
         {Cable's colossal Astral Construct} 
@@ -50274,18 +51361,51 @@
                 {4} {4143}
             }
         }
-        {Ring of Hearts} 
+        {Moon disk} 
         {
-            {Description} {  up into the coffin's protective hold!  #K%57023015FFFN~0~K~~E~526 The gardener snips an out of place branch. Ring of Hearts This is a lovely silver ring with a gorgeous fillagree. It is heavy for a ring. It also glows with power. A huge heart shaped ruby is mounted in the center. This ring would appear to help with your caching, gun, and counterpoise skills. The ring is in perfect condition. It has a magical glow about it. This armor provides special defense against melee attacks. This armor has the following resistances: 8 edged, 8 blunt, 4 fire, 15 mind, 5 energy, 5 radiation It looks very light. #K%57023006FFFN~0 You have become grounded in this plane yet again. A Gardener leaves northeast. The card sits on the path, it looks relaxed. }
+            {Description} {}
             {Rooms} 
             {
                 {1} {4145}
-                {2} {4149}
-                {3} {4148}
-                {4} {4142}
-                {5} {4144}
-                {6} {4143}
-                {7} {4147}
+            }
+        }
+        {Rift to a nether plane of oblivion} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4146}
+            }
+        }
+        {Ring of Hearts} 
+        {
+            {Description} {  #K%28089006FFFN~0 Your tactical advantage ends. Bonehead, you're at max hit points already. 2 of Hearts leaves southeast. Ring of Hearts This is a lovely silver ring with a gorgeous fillagree. It is heavy for a ring. It also glows with power. A huge heart shaped ruby is mounted in the center. This ring would appear to help with your free cast, power, and maintenance skills. The ring is in perfect condition. It has a magical glow about it. This armor provides special defense against melee attacks. This armor has the following resistances: 8 edged, 8 blunt, 4 fire, 15 mind, 5 energy, 5 radiation It looks very light. }
+            {Rooms} 
+            {
+                {1} {4147}
+                {2} {4146}
+                {3} {4142}
+                {4} {4149}
+                {5} {4148}
+                {6} {4144}
+                {7} {4143}
+                {8} {4145}
+            }
+        }
+        {The 3-K Kill List} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4142}
+            }
+        }
+        {The Good Humor, Ice Cream Truck} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4143}
             }
         }
         {The Necronomicon } 
@@ -51636,7 +52756,7 @@
         }
         {Long Sword} 
         {
-            {Description} {   Drider Guard   Drider Guard   Long Sword  This is a shaded Long Sword. This weapon is in excellent condition. This weapon deals edged and magic damage. This weapon is class 13 (edged).  This weapon gains benefits from your sword weapon skill. It looks light.   }
+            {Description} { #K%77092096FFFC~2725~N~0~K~~G~413~J~G2N: <y66558657>  <cChi Focus>: <gThought>  <yAE>: <g13>/10% Bonehead, you're at max hit points already. You hit Drider Guard 1 time for 677 damage. Long Sword This is a shaded Long Sword. This weapon is in excellent condition. This weapon deals edged and magic damage. This weapon is class 13 (edged). This weapon gains benefits from your sword weapon skill. It looks light. }
             {Rooms} 
             {
                 {1} {4861}
@@ -52704,6 +53824,7 @@
             {Rooms} 
             {
                 {1} {4314}
+                {2} {4315}
             }
         }
         {Poor heart of rage} 
@@ -53478,6 +54599,14 @@
                 {2} {30175}
             }
         }
+        {A well-read newspaper containing no messages} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {30175}
+            }
+        }
     }
     {Red Creek} 
     {
@@ -53729,8 +54858,8 @@
             {Rooms} 
             {
                 {1} {20060}
-                {2} {36603}
-                {3} {36604}
+                {2} {36604}
+                {3} {36603}
             }
         }
         {An ancient scroll} 
@@ -55027,10 +56156,10 @@
             {
                 {1} {2052}
                 {2} {14219}
-                {3} {14122}
-                {4} {1395}
-                {5} {14221}
-                {6} {14255}
+                {3} {1395}
+                {4} {14221}
+                {5} {14255}
+                {6} {14122}
             }
         }
         {Chondrite} 
@@ -55966,6 +57095,7 @@
             {Rooms} 
             {
                 {1} {25239}
+                {2} {24786}
             }
         }
         {A small globe of light floating near Vagrant} 
@@ -56177,7 +57307,7 @@
         }
         {Small Figurine} 
         {
-            {Description} { While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all. It looks light. #K%60832083FFFC~2690~J~G2N: <y72881298>  <cChi Focus>: <gThought>  <yAE>: <g11>/71% }
+            {Description} { While roughly humanoid in shape, the features are grotesquely alien in character.  What may well be eyes protrude from beneath a metal helmet atop what may well be a head.  Veiny muscle can be seen between the sinewy cords that trace the figures frame.  What this is made of is not readily apparent, but it is not ceramic, glass, plastic, or anything you'd normally find in a figurine's composition - it feels organic, save the very visible seam that runs along the sides, top, and bottom of the figure, suggesting that it may have been made in a mold of some sort after all. It looks light. }
             {Rooms} 
             {
                 {1} {25240}
@@ -56313,7 +57443,7 @@
         }
         {a pale orange capsule} 
         {
-            {Description} {     Deadman: 0  Deadman: 0 a pale orange capsule  This warm capsule vibrates in your hand and casts a pale orange glow.  Once belonging to some Balangool creature, the energy harnessed within can now be yours.  There are no obvious uses for this, other than perhaps swallowing it, but there is no telling what consequences that may bring you. It looks very light. }
+            {Description} {     All your corpses are already bigger than what is here.  #K%53868086FFFN~0~K~~E~526~J~G2N: <y8613284>  <cChi Focus>: <gStatic>  <yAE>: <g2>/88% Bonehead, you're at max hit points already. a pale orange capsule This warm capsule vibrates in your hand and casts a pale orange glow.  Once belonging to some Balangool creature, the energy harnessed within can now be yours.  There are no obvious uses for this, other than perhaps swallowing it, but there is no telling what consequences that may bring you. It looks very light. }
             {Rooms} 
             {
                 {1} {25085}
@@ -56355,6 +57485,8 @@
                 {37} {25234}
                 {38} {25235}
                 {39} {25179}
+                {40} {24858}
+                {41} {24910}
             }
         }
         {barrier} 
@@ -58705,13 +59837,13 @@
         }
         {A Lightning Bolt Helmet (shining)} 
         {
-            {Description} {    Radioactive Man (superhero) A Lightning Bolt Helmet (shining)   This is a red, form-fitting cap with a glowing yellow lightning bolt protruding from its vertex!  It appears to have once been the headress of a superhero, you would be honored to wear such a unique item. The helmet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 10 fire, 10 electric, 10 energy, 12 radiation It looks light.  Deadman: 0  Deadman: 0  Fallout Boy ]  Fallout Boy   You outfox your opponent and take advantage of it! Fallout Boy   }
+            {Description} { #K%69860093FFFN~0~K~~E~526~G~401~J~G2N: <y52183499>  <cChi Focus>: <gStatic>  <yAE>: <g7>/50%   Fallout Boy sobs over his partner's death! This is a red, form-fitting cap with a glowing yellow lightning bolt protruding from its vertex!  It appears to have once been the headress of a superhero, you would be honored to wear such a unique item. The helmet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 10 fire, 10 electric, 10 energy, 12 radiation It looks light. }
             {Rooms} 
             {
                 {1} {8417}
                 {2} {17466}
-                {3} {8415}
-                {4} {8416}
+                {3} {8416}
+                {4} {8415}
             }
         }
         {A Mexican Cockroach's Exoskeleton} 
@@ -58725,13 +59857,13 @@
         }
         {A Monkey's Claw} 
         {
-            {Description} {  A Burns Laboratories Winged Monkey (experiment #14B)   A Burns Laboratories Winged Monkey (experiment #14B) A Monkey's Claw   The razor sharp nails at the end of the fingers twitch violently in post-mortem spasms!  This monkey's claw has been severed at the wrist, providing you with a brown, fuzzy, instrument of destruction like only Mother Nature could ever provide. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 15 (edged).  It looks light.  Deadman: 0  Deadman: 0     }
+            {Description} { #K%69860087FFFN~0~K~~G~403~J~G2N: <y52185249>  <cChi Focus>: <gStatic>  <yAE>: <g9>/48% A Monkey's Claw  The razor sharp nails at the end of the fingers twitch violently in post-mortem spasms!  This monkey's claw has been severed at the wrist, providing you with a brown, fuzzy, instrument of destruction like only Mother Nature could ever provide. This weapon is in excellent condition. This weapon deals edged damage. This weapon is class 15 (edged). It looks light. #K%69860006FFFN~0 =S=**An UNBELIEVABLY Restricted Area** (s,d)=S= #K%69860006DDDs~d =M= A Gigantic Electric Bumblebee (buzzing). }
             {Rooms} 
             {
                 {1} {8417}
-                {2} {8414}
-                {3} {17464}
-                {4} {8413}
+                {2} {17464}
+                {3} {8413}
+                {4} {8414}
             }
         }
         {A Small ChaosBrand Television Set} 
@@ -58744,7 +59876,7 @@
         }
         {A Synthetic Honeycomb} 
         {
-            {Description} {  A Gigantic Electric Bumblebee (buzzing) A Synthetic Honeycomb   This is a small yellow honeycomb made of industrial rubber, filled with a form of synthetic honey!  It looks delicious, your mouth waters as if you were some kind of pooh bear. It looks light.  Deadman: 0  Deadman: 0     }
+            {Description} {  #K%69860094FFFC~3113~N~0~K~~E~526~J~G2N: <y52184464>  <cChi Focus>: <gStatic>  <yAE>: <g8>/49% A Synthetic Honeycomb  This is a small yellow honeycomb made of industrial rubber, filled with a form of synthetic honey!  It looks delicious, your mouth waters as if you were some kind of pooh bear. It looks light. =S=**An UNBELIEVABLY Restricted Area** (s,n)=S= #K%69860006DDDs~n =M= Radioactive Man (superhero). }
             {Rooms} 
             {
                 {1} {8416}
@@ -58774,10 +59906,11 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {8409}
-                {2} {8412}
-                {3} {8413}
-                {4} {8408}
+                {1} {8412}
+                {2} {8413}
+                {3} {8407}
+                {4} {8409}
+                {5} {8408}
             }
         }
         {A colony of mystical mind fungus} 
@@ -58892,8 +60025,8 @@
                 {3} {8378}
                 {4} {8385}
                 {5} {8386}
-                {6} {8316}
-                {7} {8317}
+                {6} {8317}
+                {7} {8316}
                 {8} {8315}
             }
         }
@@ -58939,7 +60072,7 @@
         }
         {A sharp metal piece of a robot} 
         {
-            {Description} {  A BurnsTech(tm) Robotic Guard (95% loyal)   A BurnsTech(tm) Robotic Guard (95% loyal)     A sharp metal piece of a robot   Painted metallic blue, this unusually sharp chunk of metal seems hewn from a recently destroyed robot.  This would make a nasty weapon if you were to do that thing where you hold it in your hand and swing it about in a manner conducive to damage...OH yeah... 'wield' I think it's called...but don't quote me. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged)  You must be level 10 to wield this weapon. }
+            {Description} { Painted metallic blue, this unusually sharp chunk of metal seems hewn from a recently destroyed robot.  This would make a nasty weapon if you were to do that thing where you hold it in your hand and swing it about in a manner conducive to damage...OH yeah... 'wield' I think it's called...but don't quote me. This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged) You must be level 10 to wield this weapon. }
             {Rooms} 
             {
                 {1} {17460}
@@ -59059,8 +60192,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {8410}
-                {2} {8411}
+                {1} {8411}
+                {2} {8412}
+                {3} {8410}
             }
         }
         {Blade of the Aether} 
@@ -59150,7 +60284,7 @@
         }
         {Jasper ring} 
         {
-            {Description} {  You are able to identify Jasper Ring of Regeneration...   Jasper Ring of Regeneration  Magically vested amidst the enchanted forges of potent mages, these circlets were specifically crafted for prominent individuals from ancient eras.  As a result, this ring may bestow temporary or even harmful effects to its owner.  On occasion, a person may discover a permanent boon due to a coincidental harmony with the initial crafting of the ring.  |----------| The ring is in perfect condition. It has a magical glow about it.  It looks light.    }
+            {Description} { #K%69860094FFFC~3113~N~0~K~~E~526~J~G2N: <y52182215>  <cChi Focus>: <gStatic>  <yAE>: <g6>/52% Jasper Ring of Regeneration Magically vested amidst the enchanted forges of potent mages, these circlets were specifically crafted for prominent individuals from ancient eras.  As a result, this ring may bestow temporary or even harmful effects to its owner.  On occasion, a person may discover a permanent boon due to a coincidental harmony with the initial crafting of the ring.  |----------| The ring is in perfect condition. It has a magical glow about it. It looks light. }
             {Rooms} 
             {
                 {1} {8416}
@@ -59184,7 +60318,7 @@
         }
         {Metal Stinger (poisonous)} 
         {
-            {Description} {  Metal Stinger (poisonous)   Metallic yellow, this gigantic 3-foot spike of metal sparkles with evil, deadly BurnsTech(tm) industrial poison.  You can swing it like a pole, or stab it into the heart of your foe, dissolving its innards in a final act of desecration.  With this in your grasp, you win. This weapon is in excellent condition. This weapon deals poison damage. This weapon is a class higher than 15 (poison)  This weapon gains benefits from your polearm weapon skill. You must be level 10 to wield this weapon. }
+            {Description} {   #K%69860044BAD**An UNBELIEVABLY Restricted Area** (s,n) #K%69860006DDDs~n #K%69860006FFFN~0 Your insidious inspiration fades. Ok. Metal Stinger (poisonous)  Metallic yellow, this gigantic 3-foot spike of metal sparkles with evil, deadly BurnsTech(tm) industrial poison.  You can swing it like a pole, or stab it into the heart of your foe, dissolving its innards in a final act of desecration.  With this in your grasp, you win. This weapon is in excellent condition. This weapon deals poison damage. This weapon is a class higher than 15 (poison) This weapon gains benefits from your polearm weapon skill. You must be level 10 to wield this weapon. }
             {Rooms} 
             {
                 {1} {8416}
@@ -59222,10 +60356,11 @@
         }
         {String of Love and Happiness} 
         {
-            {Description} {    String of Love and Happiness  This braided string is made out of many strands of silk, entwined in such a beautiful and attractive manner that it seems to shine with unprecedented radiance and attraction.  Waves of blue and orange shimmer about the rope's surface, creating amazingly complex fractal patterns which make the string appear to contort within itself, and even disappear at times.  The string is so strong that you think you could string anything and wear it around your neck as a beautiful decoration, or just wear the string itself as a symbol of love. The amulet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 1 edged, 1 blunt It looks light.  }
+            {Description} {  up into the coffin's protective hold!  Bonehead, you're at max hit points already. #K%92813096FFFC~2711~N~0~K~~E~526~J~G2N: <y64836760>  <cChi Focus>: <gThought>  <yAE>: <g12>/4 7% Bonehead, you're at max hit points already. You hit Paul Mccartney 3 times for 2139 damage. Your aura sparkles with blue lights! Your aura sparkles with blue lights! String of Love and Happiness This braided string is made out of many strands of silk, entwined in such a beautiful and attractive manner that it seems to shine with unprecedented radiance and attraction.  Waves of blue and orange shimmer about the rope's surface, creating amazingly complex fractal patterns which make the string appear to contort within itself, and even disappear at times.  The string is so strong that you think you could string anything and wear it around your neck as a beautiful decoration, or just wear the string itself as a symbol of love. The amulet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 1 edged, 1 blunt It looks light. }
             {Rooms} 
             {
                 {1} {8238}
+                {2} {8327}
             }
         }
         {The doors to Burns Manor} 
@@ -59237,13 +60372,39 @@
                 {2} {8392}
             }
         }
+        {The electrocuted, maggot-infested remains of Guard} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8408}
+            }
+        }
+        {The electrocuted, slightly moldy corpse of Bee} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8413}
+            }
+        }
+        {The electrocuted, slightly moldy corpse of Fallout boy} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8414}
+                {2} {8415}
+            }
+        }
         {Torn bits of human flesh} 
         {
             {Description} {}
             {Rooms} 
             {
-                {1} {8410}
-                {2} {8411}
+                {1} {8411}
+                {2} {8412}
+                {3} {8410}
             }
         }
         {Tweezers (sterilized)} 
@@ -59874,7 +61035,7 @@
         }
         {A KrustyBrand(tm) Bible} 
         {
-            {Description} {    You lay hands upon yourself and feel healed. Ned Flanders (very good)   Ned Flanders (very good)   Ned Flanders (very good)  Bonehead, you're at max hit points already. A KrustyBrand(tm) Bible   Eww, a bible!  Yuck...  It looks light.  Deadman: 0  Deadman: 0  You steadily block the brunt of the incoming attack. Performing: hands Bonehead, you're at max hit points already.  With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already. You nimbly dodge Ned's Guardian Angel's attack! Ned's Guardian Angel takes A blessed sword (enchanted). Psionic waves emanate from your body. Ned's Guardian Angel (heavenly) ]  Ned's Guardian Angel (heavenly)   Ned's Guardian Angel (heavenly)   Ned's Guardian Angel (heavenly)   A flash of insidious insight strikes you! You press your advantage on your outsmarted foe! Your wild ambition drives you ever onward! Your body explodes in a *BLUR* of force and power! }
+            {Description} { up into the coffin's protective hold! The coffin is full!  Bonehead, you're at max hit points already. #K%23361028FFFC~2121~N~0~K~~E~526~G~416 Bonehead, you're at max hit points already. A KrustyBrand(tm) Bible  Eww, a bible!  Yuck...  It looks light.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already. Ned's Guardian Angel takes The brainless, freshly slain corpse of Brigitte. #K%23361130FFFC~2139~N~0~K~Ned's Guardian Angel (heavenly)~L~100~M~~J~G2N: <y78568941>  <cChi Focus>: <gThought>  <yAE>: <g11>/55% Bonehead, you're at max hit points already. A flash of insidious insight strikes you! }
             {Rooms} 
             {
                 {1} {8245}
@@ -59893,7 +61054,7 @@
         }
         {A KrustyBrand(tm) Medic-Alert Bracelet} 
         {
-            {Description} { Grampa Simpson  This is a small metal chain with a pendant that says...     Current afflictions: Tendency to Speak Loudly     Allergic to:  This item is legendary and you cannot possess more than one. The bracelet is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 10 fire, 10 ice, 5 acid, 1 electric, 1 mind, 1 energy, 1 poison, 1 radiation It looks light.  Deadman: 0 }
+            {Description} {   An adult diaper: Ok. The coffin expels a corpse!  up into the coffin's protective hold! The coffin is full!  Bonehead, you're at max hit points already. #K%07624089FFFN~0~K~~E~526~J~G2N: <y77753038>  <cChi Focus>: <gThought>  <yAE>: <g12>/60% Bonehead, you're at max hit points already. #K%07624080FFFN~0~J~G2N: <y77753038>  <cChi Focus>: <gThought>  <yAE>: <g12>/61% Your wild ambition takes a back seat to prudence. You have become grounded in this plane yet again. Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. A KrustyBrand(tm) Medic-Alert Bracelet This is a small metal chain with a pendant that says...     Current afflictions: Tendency to Speak Loudly     Allergic to:  This item is legendary and you cannot possess more than one. The bracelet is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 10 fire, 10 ice, 5 acid, 1 electric, 1 mind, 1 energy, 1 poison, 1 radiation It looks light. }
             {Rooms} 
             {
                 {1} {8296}
@@ -59905,11 +61066,14 @@
             {Rooms} 
             {
                 {1} {8281}
+                {2} {17463}
+                {3} {17465}
+                {4} {17466}
             }
         }
         {A Lightning Bolt Helmet (shining)} 
         {
-            {Description} {  up into the coffin's protective hold! #K%57023089FFFN~0 ~K~~E~526~J~G2N: <y72586337>  <cChi Focus>: <gThought>  <yAE>: <g11>/80%  You quickly tumble to avoid the brunt of the attack. Fallout Boy hit you. A Lightning Bolt Helmet (shining)  This is a red, form-fitting cap with a glowing yellow lightning bolt protruding from its vertex!  It appears to have once been the headress of a superhero, you would be honored to wear such a unique item.  The helmet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 10 fire, 10 electric, 10 energy, 30 radiation You must be level 17 to wear this. It looks light. }
+            {Description} { up into the coffin's protective hold! The coffin is full!  #K%98326088FFFN~0~K~~E~526~J~G2N: <y58903795>  <cChi Focus>: <gStatic>  <yAE>: <g12>/42%  With skill and speed you dodge the attack! A Lightning Bolt Helmet (shining)  This is a red, form-fitting cap with a glowing yellow lightning bolt protruding from its vertex!  It appears to have once been the headress of a superhero, you would be honored to wear such a unique item.  The helmet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 10 fire, 10 electric, 10 energy, 30 radiation You must be level 17 to wear this. It looks light. }
             {Rooms} 
             {
                 {1} {17468}
@@ -59936,7 +61100,7 @@
         }
         {A Monkey's Claw} 
         {
-            {Description} {  #K%57023089FFF N~0~K~~E~526~J~G2N: <y72606946>  <cChi Focus>: <gThought>  <yAE>: <g13>/40% A Monkey's Claw  The razor sharp nails at the end of the fingers twitch violently in post-mortem spasms!  This monkey's claw has been severed at the wrist, providing you with a brown, fuzzy, instrument of destruction like only Mother Nature could ever provide.  This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged) This weapon gains benefits from your exotic weapon skill. You must be level 17 to wield this weapon. It looks light. }
+            {Description} { #K%38708088FFFN~0~K~~E~526~J~G2N: <y57852339>  <cChi Focus>: <gStatic>  <yAE>: <g11>/68% A Monkey's Claw  The razor sharp nails at the end of the fingers twitch violently in post-mortem spasms!  This monkey's claw has been severed at the wrist, providing you with a brown, fuzzy, instrument of destruction like only Mother Nature could ever provide.  This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged) This weapon gains benefits from your exotic weapon skill. You must be level 17 to wield this weapon. It looks light. #K%38708006FFFN~0 }
             {Rooms} 
             {
                 {1} {8281}
@@ -59982,13 +61146,22 @@
         }
         {A Synthetic Honeycomb} 
         {
-            {Description} { up into the c offin's protective hold! #K%57023089FFFN~0~K~~E~526~J~G2N: <y72596683>  <cChi Focus>: <gThought>  <yAE>: <g12>/58% A Synthetic Honeycomb  This is a small yellow honeycomb made of industrial rubber, filled with a form of synthetic honey!  It looks delicious, your mouth waters as if you were some kind of pooh bear.  It looks light. }
+            {Description} { up into the coffin's protective hold! The coffin is full!  #K%98326094FFFN~0~K~~E~526~G~416~J~G2N: <y58913198>  <cChi Focus>: <gStatic>  <yAE>: <g13>/27% A Synthetic Honeycomb  This is a small yellow honeycomb made of industrial rubber, filled with a form of synthetic honey!  It looks delicious, your mouth waters as if you were some kind of pooh bear.  It looks light. }
             {Rooms} 
             {
                 {1} {8281}
                 {2} {17468}
-                {3} {17466}
-                {4} {17465}
+                {3} {17464}
+                {4} {17466}
+                {5} {17465}
+            }
+        }
+        {A Tome of 'Enhancing Enchanting', Volume I} 
+        {
+            {Description} { #K%40790088FFFN~0~K~~E~526~J~G2N: <y64072155>  <cChi Focus>: <gStatic>  <yAE>: <g14>/14% A Tome of 'Enhancing Enchanting', Volume I The many colours on this gaudy book dance before your very eyes.  Every now and then the colours condense to form words of power describing methods to infuse gems with incredible power.  The most common word formed seems to be 'SEBASTIEN', over and over again.  And over again.  Perhaps you can read it? Tradeskill : Enchanter Minimum Skill: 1 Trivial Skill: 33 It looks light. }
+            {Rooms} 
+            {
+                {1} {17465}
             }
         }
         {A Transmuter's Stone } 
@@ -60014,9 +61187,11 @@
             {
                 {1} {17452}
                 {2} {17454}
-                {3} {17458}
-                {4} {17459}
-                {5} {17461}
+                {3} {17461}
+                {4} {17458}
+                {5} {17460}
+                {6} {17459}
+                {7} {17464}
             }
         }
         {A blessed sword } 
@@ -60043,6 +61218,14 @@
             {Rooms} 
             {
                 {1} {8244}
+            }
+        }
+        {A dirty dog collar} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {8290}
             }
         }
         {A jungle gym} 
@@ -60108,15 +61291,15 @@
             {Rooms} 
             {
                 {1} {8298}
-                {2} {8228}
-                {3} {8231}
-                {4} {8230}
-                {5} {8297}
-                {6} {8304}
-                {7} {8290}
-                {8} {8227}
-                {9} {8306}
-                {10} {8229}
+                {2} {8231}
+                {3} {8230}
+                {4} {8297}
+                {5} {8290}
+                {6} {8306}
+                {7} {8229}
+                {8} {8228}
+                {9} {8304}
+                {10} {8227}
             }
         }
         {A personal computer} 
@@ -60178,12 +61361,13 @@
         }
         {A sharp metal piece of a robot} 
         {
-            {Description} {   You pick up The charred, freshly slain corpse of Burns guard and wrap  it up into the coffin's protective hold! You lay hands upon yourself and feel healed. A sharp metal piece of a robot  Painted metallic blue, this unusually sharp chunk of metal seems hewn from a recently destroyed robot.  This would make a nasty weapon if you were to do that thing where you hold it in your hand and swing it about in a manner conducive to damage...OH yeah... 'wield' I think it's called...but don't quote me.  This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged) You must be level 25 to wield this weapon. }
+            {Description} {  #K%38708088FFFN~0~K~~E~526~J~G2N: <y57917164>  <cChi Focus>: <gStatic>  <yAE>: <g12>/47% A sharp metal piece of a robot  Painted metallic blue, this unusually sharp chunk of metal seems hewn from a recently destroyed robot.  This would make a nasty weapon if you were to do that thing where you hold it in your hand and swing it about in a manner conducive to damage...OH yeah... 'wield' I think it's called...but don't quote me.  This weapon is in excellent condition. This weapon deals edged damage. This weapon is a class higher than 15 (edged) You must be level 25 to wield this weapon. }
             {Rooms} 
             {
                 {1} {8281}
                 {2} {17460}
                 {3} {17461}
+                {4} {17463}
             }
         }
         {A shiny new postcard rack} 
@@ -60274,7 +61458,7 @@
         }
         {A transparent camisole} 
         {
-            {Description} {    A transparent camisole  YoWzA!  This white piece of lingerie is trimmed with innocent lace yet is almost completely see-through!  You get all hot and sweaty as you picture Vraal reclining on a posturepedic in one of these...  The lingerie is in perfect condition. It looks unbreakable. It looks light. #K%02317069FFFJ~G2N: <y77183492>  <cChi Focus>: <gThought>  <yAE>: <g14>/12% }
+            {Description} {     A transparent camisole  YoWzA!  This white piece of lingerie is trimmed with innocent lace yet is almost completely see-through!  You get all hot and sweaty as you picture Vraal reclining on a posturepedic in one of these...  The lingerie is in perfect condition. It looks unbreakable. It looks light. #K%07624007BAE0.00 #K%07624076FFFJ~G2N: <y77761269>  <cChi Focus>: <gThought>  <yAE>: <g13>/41% Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {8281}
@@ -60308,14 +61492,16 @@
         }
         {An Itchy Mouse-ears hat} 
         {
-            {Description} {    #K%02317006FFFN~0 =S=The Main Promenade of Springfield Studios (n,s,w,e)=S= #K%02317010DDDn~s~w~e An Itchy Mouse-ears hat  This beanie has two large gray mouse-ears protruding from the top of it...an EXTREMELY embarrasing accessory..  The helmet is in perfect condition. This armor has the following resistances: 10 edged, 10 radiation It looks light. }
+            {Description} {  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already. #K%58371128FFFK~A Springfield Studios gatepost guard~L~100~M~~I~<cMethod>: <yCrane>  <cCrits>: <gOn>  <cStun>: <gOn>  <cHide>: <rOFF> Bonehead, you're at max hit points already. Your insidious inspiration flows through you as you make the most of each attack! You bring your deadly natural weapons down on your opponent! #K%58371056BACKER-POW!!!!!!  You've knocked your foe unconscious!!! #K%58371119BACPOP!  Veins pop forth from A Springfield Studios gatepost guard's head, spraying blood into the air like a fountain. You hit Guard. You hit Guard. You hit Guard. You hit Guard. #K%58371090FFFN~1~L~98~E~522~J~G2N: <y78677909>  <cChi Focus>: <gThought>  <yAE>: <g8>/97% Bonehead, you're at max hit points already. An Itchy Mouse-ears hat  This beanie has two large gray mouse-ears protruding from the top of it...an EXTREMELY embarrasing accessory..  The helmet is in perfect condition. This armor has the following resistances: 10 edged, 10 radiation It looks light. A Springfield Studios gatepost guard Monster class: Really Big (15). You relax your mind and body and concentrate on the ancient powers of defense.  Energy swirls within you and the knowledge of countless generations pours into you.  Channeling your energy you feel your skin become hardened like the Scales of a Dragon. You reach out and touch your foe, sending death bringing vibrations through him. You find a pressure point and bore down! Guard screams in pain as they become weaker! }
             {Rooms} 
             {
                 {1} {8281}
-                {2} {8270}
-                {3} {8278}
-                {4} {8269}
-                {5} {8274}
+                {2} {8278}
+                {3} {8274}
+                {4} {8270}
+                {5} {8267}
+                {6} {8268}
+                {7} {8269}
             }
         }
         {An Itchy Mouse-ears hat \x7B2\x7D} 
@@ -60356,7 +61542,7 @@
         }
         {An adult diaper} 
         {
-            {Description} { Deadman: 0    An adult diaper   Who needs toilets!  The other is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 1 radiation It looks light.  Deadman: 0  This is where it all happens...the living room.  The place where families come together and live out their lives in harmony. There is always an entertaining family show on the television, there are couches and chairs for stimulating family discussion, and there is a waffle on the ceiling.  }
+            {Description} {    An adult diaper  Who needs toilets!  The other is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 1 radiation It looks light. Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {8296}
@@ -60452,7 +61638,8 @@
             {Rooms} 
             {
                 {1} {17467}
-                {2} {17462}
+                {2} {17461}
+                {3} {17462}
             }
         }
         {Blade of the Aether } 
@@ -60461,7 +61648,9 @@
             {Rooms} 
             {
                 {1} {8281}
-                {2} {17463}
+                {2} {17464}
+                {3} {17462}
+                {4} {17463}
             }
         }
         {Book of Matches} 
@@ -60514,7 +61703,7 @@
         }
         {Dominatrix Boots} 
         {
-            {Description} { up into the coffin's protective hold! The coffin is full!  #K%02317088FFFN~0~K~~E~526~G~410~J~G2N: <y77183492>  <cChi Focus>: <gThought>  <yAE>: <g14>/11% Dominatrix Boots  Black leather, with steel zippers running down the lengths... very intimidating accessories indeed.  These have a tag on the soles that says 'Grace Jones Model'.  The boots are in perfect condition. This armor has the following resistances: 6 edged, 6 blunt It looks light. }
+            {Description} { up into the coffin's protective hold! The coffin is full!  Bonehead, you're at max hit points already. #K%07624089FFFN~0~K~~E~526~J~G2N: <y77761269>  <cChi Focus>: <gThought>  <yAE>: <g13>/40% Bonehead, you're at max hit points already. Dominatrix Boots  Black leather, with steel zippers running down the lengths... very intimidating accessories indeed.  These have a tag on the soles that says 'Grace Jones Model'.  The boots are in perfect condition. This armor has the following resistances: 6 edged, 6 blunt It looks light. }
             {Rooms} 
             {
                 {1} {8281}
@@ -60530,7 +61719,7 @@
         }
         {Dominatrix Gloves} 
         {
-            {Description} {  #K%02317006FFFN~0  This part of the studio is simply a small lounge where the actors/actresses wait while the crew is preparing to set up another take or scene.  Usually an actor will spend 95% of his/her time waiting around, why not make him/her comfortable as can be while he/she gets paid hundreds of dollars per hour.  =X=  There are two obvious exits: north, east    =X= #K%02317006DDDn~e =I= The brainless, freshly slain corpse of Dharma. #K%02317069CAAhm~High Mortal~Maverik~Maverik <HM-Champion>: 120 for ammy i think Maverik <HM-Champion>: 120 for ammy i think Dominatrix Gloves  These extremely tight black leather gloves certainly ain't no Isotoners! Don't go gift-wrapping them and giving them to Aunt Edna!  Unless you live in the mid-west where it would be understandable.  Muah these wouldn't even fit OJ!  The gloves are in perfect condition. This armor has the following resistances: 1 edged, 1 radiation It looks light. The brainless, freshly slain corpse of Dharma: Ok. }
+            {Description} { These extremely tight black leather gloves certainly ain't no Isotoners! Don't go gift-wrapping them and giving them to Aunt Edna!  Unless you live in the mid-west where it would be understandable.  Muah these wouldn't even fit OJ!  The gloves are in perfect condition. This armor has the following resistances: 1 edged, 1 radiation It looks light. Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {8281}
@@ -60546,7 +61735,7 @@
         }
         {Edible Panties} 
         {
-            {Description} {  #K%02317066CAAhm~High Mortal~Maverik~Maverik <HM-Champion>: used to do guyahi Maverik <HM-Champion>: used to do guyahi Edible Panties  These unsubstantial panties are meant to be eaten off someone's body!  You don't know whether to be turned on or disgusted by this.  It looks light. }
+            {Description} {   Edible Panties  These unsubstantial panties are meant to be eaten off someone's body!  You don't know whether to be turned on or disgusted by this.  It looks light. Your insidious inspiration fades. Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {8280}
@@ -60567,7 +61756,9 @@
             {Rooms} 
             {
                 {1} {8281}
-                {2} {17463}
+                {2} {17464}
+                {3} {17462}
+                {4} {17463}
             }
         }
         {Garnet ring} 
@@ -60662,7 +61853,7 @@
         }
         {Ivory flask (cream liquid)} 
         {
-            {Description} {   Ned's Guardian Angel (heavenly) through him. You drive your attack past ned's guardian angel's resistances! Ned's Guardian Angel screams in pain as they become weaker!  (ivory flask (cream liquid)?)  Deadman: 0  Deadman: 0 }
+            {Description} {    impenetrable. #K%23361132BACSSPPLLLUUUURRRTTTTT!!!  Suddenly, a fissure appears in Ned's Guardian Angel (heavenly)'s skull and blood sprays out around you!!! You hit Ned's Guardian Angel. You hit Ned's Guardian Angel. You hit Ned's Guardian Angel. You hit Ned's Guardian Angel.  **THWACK** You critically hit Ned's Guardian Angel (heavenly)! You hit Ned's Guardian Angel. Bonehead, you're at max hit points already. #K%23361098FFFC~2145~N~1~L~99~E~522~J~G2N: <y78568641>  <cChi Focus>: <gThought>  <yAE>: <g11>/55% Bonehead, you're at max hit points already. Ivory Potion of Righteousness (cream liquid) This is a cream magical potion of purity.  Rumors hold that 	this potion was originally conceived by a powerful cleric of good who 	strove to cure a friend afflicted with madness.  Unfortunately, the 	cleric's creation did not have the desired effect.  However, the 	madness of his companion was altered into a more benevolent form of 	lunacy. It looks light. Ned's Guardian Angel (heavenly) Monster class: Really Big (17). You reach out and touch your foe, sending death bringing vibrations through him. You find a pressure point and bore down! Ned's Guardian Angel screams in pain as they become weaker! }
             {Rooms} 
             {
                 {1} {8244}
@@ -60696,14 +61887,16 @@
         }
         {Kevlar Composite Bulletproof Vest} 
         {
-            {Description} { up into the coffin's protective hold! The coffin is full!  #K%02317082FFFN~0~K~~E~526~J~G2N: <y77194245>  <cChi Focus>: <gThought>  <yAE>: <g10>/94% Kevlar Composite Bulletproof Vest  This bulletproof vest is standard gear for any sort of security guard.  It's granite-colored exterior contains a flexible composite of fibrous kevlar materials, which lends this VERY useful vest a lot of heft.  But you're none enough to handle it!  The breastplate is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 14 edged, 12 blunt, 8 fire, 8 ice }
+            {Description} { up into the coffin's protective hold! The coffin is full!  #K%58371088FFFN~0~K~~E~526~J~G2N: <y78678229>  <cChi Focus>: <gThought>  <yAE>: <g8>/97% Bonehead, you're at max hit points already. Kevlar Composite Bulletproof Vest  This bulletproof vest is standard gear for any sort of security guard.  It's granite-colored exterior contains a flexible composite of fibrous kevlar materials, which lends this VERY useful vest a lot of heft.  But you're none enough to handle it!  The breastplate is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 14 edged, 12 blunt, 8 fire, 8 ice }
             {Rooms} 
             {
                 {1} {8281}
                 {2} {8278}
                 {3} {8274}
-                {4} {8269}
-                {5} {8270}
+                {4} {8270}
+                {5} {8267}
+                {6} {8268}
+                {7} {8269}
             }
         }
         {Kevlar Composite Bulletproof Vest \x7B2\x7D} 
@@ -60755,11 +61948,13 @@
             {Rooms} 
             {
                 {1} {8281}
+                {2} {17464}
+                {3} {17465}
             }
         }
         {Metal Stinger (poisonous) (enchanted)} 
         {
-            {Description} {  #K%57023006FFFN~0 Your insidious inspiration fades. Your wild ambition takes a back seat to prudence.  (metal stinger (poisonous) (enchanted)?) }
+            {Description} {  #K%98326006FFFN~0  (metal stinger (poisonous) (enchanted)?) }
             {Rooms} 
             {
                 {1} {17468}
@@ -60834,6 +62029,14 @@
                 {2} {8281}
             }
         }
+        {Sardonyx ring} 
+        {
+            {Description} {  #K%24097094FFFN~0~K~~E~526~G~403~J~G2N: <y63863133>  <cChi Focus>: <gStatic>  <yAE>: <g13>/25% Bonehead, you're at max hit points already. Sardonyx Ring of Regeneration Magically vested amidst the enchanted forges of potent mages, these circlets were specifically crafted for prominent individuals from ancient eras.  As a result, this ring may bestow temporary or even harmful effects to its owner.  On occasion, a person may discover a permanent boon due to a coincidental harmony with the initial crafting of the ring.  |----------| The ring is in perfect condition. It has a magical glow about it. It looks light. }
+            {Rooms} 
+            {
+                {1} {17467}
+            }
+        }
         {Shield of the Spirit} 
         {
             {Description} {}
@@ -60882,6 +62085,46 @@
                 {1} {8244}
             }
         }
+        {The charred, slightly moldy corpse of Burns guard} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17467}
+            }
+        }
+        {The electrocuted, slightly moldy corpse of Bee} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17465}
+            }
+        }
+        {The electrocuted, slightly moldy corpse of Burns guard} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17461}
+            }
+        }
+        {The electrocuted, slightly moldy corpse of Fallout boy} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17466}
+            }
+        }
+        {The electrocuted, slightly moldy corpse of Smithers} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {17467}
+            }
+        }
         {The maggot-infested remains of Hockey Fan} 
         {
             {Description} {}
@@ -60912,7 +62155,8 @@
             {Rooms} 
             {
                 {1} {17467}
-                {2} {17462}
+                {2} {17461}
+                {3} {17462}
             }
         }
         {Tweezers } 
@@ -61886,19 +63130,19 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {21400}
-                {2} {21480}
-                {3} {1904}
-                {4} {21425}
-                {5} {21430}
-                {6} {21450}
-                {7} {21407}
-                {8} {21426}
-                {9} {21427}
-                {10} {21404}
-                {11} {21405}
-                {12} {21406}
-                {13} {21420}
+                {1} {21480}
+                {2} {1904}
+                {3} {21425}
+                {4} {21430}
+                {5} {21450}
+                {6} {21407}
+                {7} {21426}
+                {8} {21427}
+                {9} {21404}
+                {10} {21405}
+                {11} {21406}
+                {12} {21420}
+                {13} {21400}
             }
         }
         {A sign} 
@@ -62732,6 +63976,22 @@
                 {1} {25474}
             }
         }
+        {A bouncing bingo ball} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+            }
+        }
+        {A bronze plaque} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25462}
+            }
+        }
         {A gigantic blue seed} 
         {
             {Description} {}
@@ -62740,12 +64000,103 @@
                 {1} {25539}
             }
         }
-        {A strangely dense wooden hammer (enchanted)} 
+        {A glass sign with moving liquid inside, pointing north} 
         {
-            {Description} {  You pick up The brainless, freshly slain corpse of Terra, knight of earth  Deadman: 0 Terra, Knight of Earth   Terra, Knight of Earth Deadman: 0 }
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25462}
+            }
+        }
+        {A hockey puck} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+                {2} {25462}
+            }
+        }
+        {A large ladder} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+                {2} {25462}
+            }
+        }
+        {A mud puddle} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25462}
+            }
+        }
+        {A piece of USA Today} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+            }
+        }
+        {A red mutant plant} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+            }
+        }
+        {A small dispensing machine} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+                {2} {25462}
+            }
+        }
+        {A strange boy} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+            }
+        }
+        {A strangely dense wooden hammer } 
+        {
+            {Description} {}
             {Rooms} 
             {
                 {1} {25491}
+            }
+        }
+        {A strangely dense wooden hammer (enchanted)} 
+        {
+            {Description} { #K%70829016FFFC~2192~N~0~K~ Bonehead, you're at max hit points already. You hit Terra, Knight of Earth 2 times for 1725 damage. Your aura sparkles with blue lights! #K%70829020FFFA~3030~C~2228~N~0 Bonehead, you're at max hit points already. Average essence of shadow [ AVERAGE ESSENCE OF SHADOW ] Whatever the essence of light was, this one is obviously its inverse.  Luckily it doesn't suck up quite too much light.  You can assemble 5 of these essences into a single heart, or shatter the essence into 5 fragments. This item can be stashed in a crafting satchel. Type: Essence Of Shadow Minimum Skill: 37 Trivial Skill: 47  (a strangely dense wooden hammer (enchanted)?) }
+            {Rooms} 
+            {
+                {1} {25491}
+            }
+        }
+        {A tall street light} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25462}
+            }
+        }
+        {A tree} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25462}
             }
         }
         {A very blue tree} 
@@ -62772,6 +64123,14 @@
                 {1} {25462}
             }
         }
+        {An eighteenth hole flag} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+            }
+        }
         {An iridescent piece of bark} 
         {
             {Description} {}
@@ -62786,6 +64145,14 @@
             {Rooms} 
             {
                 {1} {25546}
+            }
+        }
+        {Average essence of shadow} 
+        {
+            {Description} { A strangely dense wooden hammer (enchanted): Ok.  up in }
+            {Rooms} 
+            {
+                {1} {25491}
             }
         }
         {Average essence of the unseen} 
@@ -62806,12 +64173,13 @@
         }
         {Average fragment of shadow} 
         {
-            {Description} {    Average fragment of shadow  [ AVERAGE FRAGMENT OF SHADOW ]  The only evidence of this little shadow is a smidge that could be confused with dust.  Or is that its shadow?  You can assemble 5 of these fragments into a single essence.  This item can be stashed in a crafting satchel.  Type: Fragment Of Shadow Minimum Skill: 6 Trivial Skill: 16 Deadman: 0  Deadman: 0    }
+            {Description} { up into the coffin's protective hold! The coffin is full!  #K%07624088FFFN~0~K~~E~526~J~G2N: <y78403416>  <cChi Focus>: <gThought>  <yAE>: <g8>/90% Bonehead, you're at max hit points already. Average fragment of shadow [ AVERAGE FRAGMENT OF SHADOW ] The only evidence of this little shadow is a smidge that could be confused with dust.  Or is that its shadow?  You can assemble 5 of these fragments into a single essence. This item can be stashed in a crafting satchel. Type: Fragment Of Shadow Minimum Skill: 6 Trivial Skill: 16 }
             {Rooms} 
             {
                 {1} {25537}
                 {2} {25525}
                 {3} {25535}
+                {4} {25471}
             }
         }
         {Average heart of light} 
@@ -62820,6 +64188,15 @@
             {Rooms} 
             {
                 {1} {25528}
+            }
+        }
+        {Erratio Forest} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25473}
+                {2} {25462}
             }
         }
         {Good fragment of ascension} 
@@ -62864,6 +64241,14 @@
             {Rooms} 
             {
                 {1} {25537}
+            }
+        }
+        {Superior heart of the unseen} 
+        {
+            {Description} {     #K%07624006FFFN~0 Bonehead, you're at max hit points already. Superior heart of the unseen [ SUPERIOR HEART OF THE UNSEEN ] The nothingness is enormous.  It encompasses huge, absolutely massive amounts of nothing.  Every time you look at this you see all of nothing.  And it's confusing!  You can shatter this heart into 5 essences. This item can be stashed in a crafting satchel. Type: Heart Of The Unseen Minimum Skill: 82 Trivial Skill: 92 }
+            {Rooms} 
+            {
+                {1} {25471}
             }
         }
         {The electrocuted, slightly moldy corpse of Root warrior} 
@@ -62982,6 +64367,14 @@
                 {1} {21390}
             }
         }
+        {A Piece of the Way} 
+        {
+            {Description} {  up into the coffin's protective hold!  #K%03327087FFFN~0~K~~E~526~J~G2N: <y81515435>  <cChi Focus>: <gStatic>  <yAE>: <g8>/97% Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. =S=Tao Te Cheng (return,continue)=S= #K%03327018DDDreturn~continue A Piece of the Way Everything is something.  Something is nothing.  Nothing is everything.  Therefore, this is something, nothing at all, yet everything. It looks light. #K%03327006FFFN~0 Bonehead, you're at max hit points already. You return to wherefore you came.  =S=A room full of books (n,s)=S= #K%03327006DDDn~s =I= A small worn book. =I= A table with a gold dragon ring. AREA NAME: The Book Nook [Nanook] AREA RATING -> A Leap in the Dark Monster class range since inception: 61,828 to 67,339 This area has 9 discovered rooms. }
+            {Rooms} 
+            {
+                {1} {21399}
+            }
+        }
         {A boring-looking newspaper} 
         {
             {Description} {}
@@ -63021,9 +64414,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {42076}
-                {2} {21392}
-                {3} {21399}
+                {1} {21392}
+                {2} {21399}
+                {3} {42076}
             }
         }
         {A fork} 
@@ -63555,6 +64948,14 @@
                 {1} {53009}
             }
         }
+        {A Sparkling Tower} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {5923}
+            }
+        }
         {A Tome of 'To Serve Man', Volume I} 
         {
             {Description} {}
@@ -63570,6 +64971,14 @@
             {Rooms} 
             {
                 {1} {22889}
+            }
+        }
+        {A bit of thyme} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {5923}
             }
         }
         {A deadly sharp meatcleaver} 
@@ -63689,10 +65098,10 @@
                 {6} {51140}
                 {7} {6204}
                 {8} {6202}
-                {9} {6001}
-                {10} {6203}
-                {11} {22889}
-                {12} {6211}
+                {9} {6203}
+                {10} {22889}
+                {11} {6211}
+                {12} {6001}
             }
         }
         {A large signpost pointing west} 
@@ -63700,10 +65109,10 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {6001}
-                {2} {5999}
-                {3} {5990}
-                {4} {6002}
+                {1} {5999}
+                {2} {5990}
+                {3} {6002}
+                {4} {6001}
                 {5} {6000}
             }
         }
@@ -63808,6 +65217,7 @@
             {
                 {1} {6203}
                 {2} {5812}
+                {3} {5923}
             }
         }
         {A pint of Knight's Ale} 
@@ -63834,6 +65244,14 @@
                 {1} {6203}
             }
         }
+        {A sign pointing southwest} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {5922}
+            }
+        }
         {A signpost pointing south} 
         {
             {Description} {}
@@ -63850,19 +65268,20 @@
                 {9} {45572}
                 {10} {5978}
                 {11} {6204}
-                {12} {5898}
-                {13} {5839}
-                {14} {6202}
-                {15} {5981}
-                {16} {5980}
-                {17} {5834}
-                {18} {5923}
-                {19} {5989}
-                {20} {22889}
-                {21} {5928}
-                {22} {5896}
-                {23} {5922}
-                {24} {5983}
+                {12} {5839}
+                {13} {6202}
+                {14} {5981}
+                {15} {5980}
+                {16} {5834}
+                {17} {5923}
+                {18} {5989}
+                {19} {22889}
+                {20} {5928}
+                {21} {5896}
+                {22} {5922}
+                {23} {5983}
+                {24} {5898}
+                {25} {5807}
             }
         }
         {A single gold coin} 
@@ -63893,6 +65312,14 @@
             {Rooms} 
             {
                 {1} {20712}
+            }
+        }
+        {A small dandelion} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {5891}
             }
         }
         {A small desk} 
@@ -63958,9 +65385,9 @@
                 {19} {22889}
                 {20} {5928}
                 {21} {5984}
-                {22} {5898}
-                {23} {5922}
-                {24} {6204}
+                {22} {5922}
+                {23} {6204}
+                {24} {5898}
             }
         }
         {A street sign} 
@@ -64004,9 +65431,9 @@
                 {34} {5896}
                 {35} {5822}
                 {36} {5891}
-                {37} {5807}
-                {38} {5898}
-                {39} {5922}
+                {37} {5898}
+                {38} {5922}
+                {39} {5807}
             }
         }
         {A strong lockbox made of steel} 
@@ -65492,7 +66919,7 @@
         }
         {A ridged, black, adamantium Staff} 
         {
-            {Description} {  Drow Temple Guard Bonehead, you're at max hit points already. A ridged, black, adamantium Staff  This is a ridged, polished, and exceptionally well constructed adamantium staff.  Waves of energy seem to pulse through it. This weapon is in excellent condition. This weapon deals blunt and magic damage. This weapon is class 15 (blunt).  This weapon gains benefits from your polearm weapon skill. }
+            {Description} { Waves of energy seem to pulse through it. This weapon is in excellent condition. This weapon deals blunt and magic damage. This weapon is class 15 (blunt). This weapon gains benefits from your polearm weapon skill. }
             {Rooms} 
             {
                 {1} {4902}
@@ -65502,6 +66929,7 @@
                 {5} {4869}
                 {6} {4867}
                 {7} {4866}
+                {8} {4868}
             }
         }
         {A ridged, black, adamantium Staff \x7B2\x7D} 
@@ -65667,7 +67095,7 @@
         }
         {Long Sword} 
         {
-            {Description} {  Drow warrior Deadman: 0    Bonehead, you're at max hit points already. Long Sword  This is a shaded Long Sword. This weapon is in excellent condition. This weapon deals edged and magic damage. This weapon is class 13 (edged).  This weapon gains benefits from your sword weapon skill. It looks light.  O  |    \\   }
+            {Description} { #K%77092089FFFN~0~K~~G~412~J~G2N: <y66557822>  <cChi Focus>: <gThought>  <yAE>: <g13>/18% Bonehead, you're at max hit points already. You hit Drow Warrior 2 times for 1754 damage. Long Sword This is a shaded Long Sword. This weapon is in excellent condition. This weapon deals edged and magic damage. This weapon is class 13 (edged). This weapon gains benefits from your sword weapon skill. It looks light. }
             {Rooms} 
             {
                 {1} {4858}
@@ -65675,15 +67103,15 @@
                 {3} {4960}
                 {4} {4853}
                 {5} {4854}
-                {6} {4855}
-                {7} {4857}
-                {8} {4953}
-                {9} {4859}
-                {10} {4856}
-                {11} {4860}
-                {12} {4864}
-                {13} {4945}
-                {14} {4861}
+                {6} {4953}
+                {7} {4860}
+                {8} {4864}
+                {9} {4945}
+                {10} {4861}
+                {11} {4857}
+                {12} {4855}
+                {13} {4856}
+                {14} {4859}
             }
         }
         {Long Sword \x7B2\x7D} 
@@ -65845,6 +67273,7 @@
             {
                 {1} {42076}
                 {2} {49313}
+                {3} {42080}
             }
         }
         {A bronze plaque} 
@@ -65871,11 +67300,11 @@
             {
                 {1} {42081}
                 {2} {51171}
-                {3} {42077}
-                {4} {42076}
+                {3} {42076}
+                {4} {49312}
                 {5} {49313}
-                {6} {42080}
-                {7} {49312}
+                {6} {42077}
+                {7} {42080}
             }
         }
         {A complicated door (closed) (locked)} 
@@ -65905,6 +67334,14 @@
             {
                 {1} {42076}
                 {2} {42077}
+            }
+        }
+        {A fork stuck in the road} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {51171}
             }
         }
         {A glass sign with moving liquid inside, pointing north} 
@@ -66143,8 +67580,8 @@
             {Rooms} 
             {
                 {1} {51171}
-                {2} {51172}
-                {3} {51175}
+                {2} {51175}
+                {3} {51172}
             }
         }
         {A utility sink} 
@@ -66152,9 +67589,9 @@
             {Description} {}
             {Rooms} 
             {
-                {1} {42080}
-                {2} {49312}
-                {3} {49313}
+                {1} {49312}
+                {2} {49313}
+                {3} {42080}
             }
         }
         {A weathered wooden sign, pointing west} 
@@ -67611,9 +69048,9 @@
             {Rooms} 
             {
                 {1} {17537}
-                {2} {17543}
-                {3} {13208}
-                {4} {17544}
+                {2} {13208}
+                {3} {17544}
+                {4} {17543}
             }
         }
         {A sign hangs from the counter} 
@@ -67646,9 +69083,9 @@
             {Rooms} 
             {
                 {1} {17537}
-                {2} {17543}
-                {3} {13208}
-                {4} {17544}
+                {2} {13208}
+                {3} {17544}
+                {4} {17543}
             }
         }
         {Ryft's Pub Crawl Dispenser} 
@@ -67657,9 +69094,9 @@
             {Rooms} 
             {
                 {1} {17537}
-                {2} {17543}
-                {3} {13208}
-                {4} {17544}
+                {2} {13208}
+                {3} {17544}
+                {4} {17543}
             }
         }
         {The 3-K Kill List} 
@@ -67676,9 +69113,9 @@
             {Rooms} 
             {
                 {1} {17537}
-                {2} {17543}
-                {3} {13208}
-                {4} {17544}
+                {2} {13208}
+                {3} {17544}
+                {4} {17543}
             }
         }
         {The Three-Kingdoms 'Least Wanted' poster} 
@@ -67687,9 +69124,9 @@
             {Rooms} 
             {
                 {1} {17537}
-                {2} {17543}
-                {3} {13208}
-                {4} {17544}
+                {2} {13208}
+                {3} {17544}
+                {4} {17543}
             }
         }
     }
@@ -67742,7 +69179,7 @@
         }
         {An ancient rice paper scroll} 
         {
-            {Description} {  Miracle Max Deadman: 0  Deadman: 0 }
+            {Description} {   up into the coffin's protective hold!  #K%44401086FFFN~0~K~~E~526~J~G2N: <y543142>  <cChi Focus>: <gThought>  <yAE>: <g6>/89% Bonehead, you're at max hit points already.  (an ancient rice paper scroll?) #K%44401006FFFN~0 Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {49972}
@@ -68012,6 +69449,8 @@
                 {2} {28895}
                 {3} {28890}
                 {4} {28892}
+                {5} {28906}
+                {6} {28908}
             }
         }
         {A gleaming sickle} 
@@ -68023,6 +69462,9 @@
                 {2} {28895}
                 {3} {28890}
                 {4} {28892}
+                {5} {28893}
+                {6} {28915}
+                {7} {28908}
             }
         }
         {A glowing ball of light following Vagrant} 
@@ -68033,12 +69475,22 @@
                 {1} {28887}
             }
         }
+        {A golden scythe} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28906}
+                {2} {28908}
+            }
+        }
         {A large metal box} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {28926}
+                {2} {28923}
             }
         }
         {A large metal box, humming quietly} 
@@ -68047,6 +69499,33 @@
             {Rooms} 
             {
                 {1} {28926}
+                {2} {28923}
+            }
+        }
+        {A magical sword} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28898}
+                {2} {28915}
+            }
+        }
+        {A magical, shimmering mace} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28908}
+            }
+        }
+        {A mystical, psionic rapier} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28908}
+                {2} {28923}
             }
         }
         {A radiant sickle} 
@@ -68057,6 +69536,9 @@
                 {1} {28887}
                 {2} {28895}
                 {3} {28890}
+                {4} {28915}
+                {5} {28908}
+                {6} {28923}
             }
         }
         {A small globe of light floating near Vagrant} 
@@ -68084,6 +69566,8 @@
                 {2} {28895}
                 {3} {28890}
                 {4} {28892}
+                {5} {28908}
+                {6} {28923}
             }
         }
         {An unkindness of dark ravens} 
@@ -68095,6 +69579,39 @@
                 {2} {28895}
                 {3} {28890}
                 {4} {28892}
+                {5} {28893}
+                {6} {28915}
+                {7} {28923}
+                {8} {28906}
+                {9} {28908}
+            }
+        }
+        {Cable's colossal Astral Construct} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28893}
+                {2} {28915}
+                {3} {28923}
+                {4} {28906}
+                {5} {28908}
+            }
+        }
+        {Crook and flail} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28915}
+            }
+        }
+        {Lightning disk} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28915}
             }
         }
         {Luminous Globe} 
@@ -68111,12 +69628,39 @@
                 {7} {27662}
             }
         }
+        {Moon disk} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28923}
+                {2} {28906}
+                {3} {28908}
+            }
+        }
+        {Sceptre of Ra} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28915}
+                {2} {28908}
+            }
+        }
         {Section Z game cabinet} 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {27662}
+            }
+        }
+        {Silvered snake} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {28908}
             }
         }
         {Spinning draydill} 
@@ -68533,6 +70077,22 @@
                 {1} {27696}
             }
         }
+        {A dull white wand} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {27698}
+            }
+        }
+        {A glowing white wand} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {27698}
+            }
+        }
         {A large metal anvil} 
         {
             {Description} {}
@@ -68565,7 +70125,23 @@
                 {1} {27699}
             }
         }
+        {A slender white gold wand} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {27698}
+            }
+        }
         {A straight black wand} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {27698}
+            }
+        }
+        {A sturdy wooden staff} 
         {
             {Description} {}
             {Rooms} 
@@ -68629,12 +70205,12 @@
     {
         {A Broken Arrow} 
         {
-            {Description} {   Sagittarius the Archer A Broken Arrow  A slender and well crafted wooden arrow.  Unfortunately, the head is missing and the shaft is splintered. It looks light.  Deadman: 0  Deadman: 0 }
+            {Description} {    All your corpses are already bigger than what is here.  #K%44401099FFFC~2303~N~0~K~~E~526~G~402~J~G2N: <y526737>  <cChi Focus>: <gThought>  <yAE>: <g0>/84% Bonehead, you're at max hit points already. A Broken Arrow A slender and well crafted wooden arrow.  Unfortunately, the head is missing and the shaft is splintered. It looks light. #K%44401077FFFN~0~J~G2N: <y526737>  <cChi Focus>: <gThought>  <yAE>: <g0>/85% Bonehead, you're at max hit points already. }
             {Rooms} 
             {
-                {1} {29584}
-                {2} {29590}
-                {3} {29588}
+                {1} {29590}
+                {2} {29588}
+                {3} {29584}
             }
         }
         {A Crazily Canted and Odd Pipe} 
@@ -68647,7 +70223,7 @@
         }
         {A Large Crab Claw} 
         {
-            {Description} {     Water is pressing its way into your lungs.  You are drowning! A Large Crab Claw  A very heavy and quite odorous claw from a giant crab.  The claw is about 6 feet long.  You are pretty sure you don't want to know what size crab this could have possibly come from. An industrial crane might move this behemoth.  Deadman: 0  Deadman: 0 Water is pressing its way into your lungs.  You are drowning! }
+            {Description} {    Water is pressing its way into your lungs.  You are drowning! #K%44401013FFFC~2303~N~0 Bonehead, you're at max hit points already. A Large Crab Claw A very heavy and quite odorous claw from a giant crab.  The claw is about 6 feet long.  You are pretty sure you don't want to know what size crab this could have possibly come from. An industrial crane might move this behemoth. }
             {Rooms} 
             {
                 {1} {29572}
@@ -68665,7 +70241,7 @@
         }
         {A Small Lute} 
         {
-            {Description} {  Capricorn the Sea-Goat   Capricorn the Sea-Goat A Small Lute  A stringed instrument having a body shaped like a pear sliced lengthwise and a neck with a fretted fingerboard that is bent just below the tuning pegs. It looks light.  Deadman: 0 Deadman: 0 }
+            {Description} { up into the coffin's protective hold! The coffin is full! Bonehead, you're at max hit points already. A Small Lute A stringed instrument having a body shaped like a pear sliced lengthwise and a neck with a fretted fingerboard that is bent just below the tuning pegs. It looks light. #K%44401093FFFC~2303~N~0~K~~E~528~J~G2N: <y526169>  <cChi Focus>: <gThought>  <yAE>: <g0>/86% Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {29594}
@@ -68675,11 +70251,12 @@
         }
         {A Thick Golden Cloak} 
         {
-            {Description} { up Aries the Ram   Aries the Ram     A Thick Golden Cloak  An amazing shock of thick golden fleece.  It must have come from a truly magnificent animal. The cloak is in perfect condition. This armor has the following resistances: 5 edged, 5 blunt, -1 fire, 5 ice, 5 electric, 5 energy It looks light. Deadman: 0 }
+            {Description} {  #K%44401093FFFC~2288~N~0~K~~E~526~J~G2N: <y533071>  <cChi Focus>: <gThought>  <yAE>: <g4>/73% Bonehead, you're at max hit points already. A Thick Golden Cloak An amazing shock of thick golden fleece.  It must have come from a truly magnificent animal. The cloak is in perfect condition. This armor has the following resistances: 5 edged, 5 blunt, -1 fire, 5 ice, 5 electric, 5 energy It looks light. =S=A Crystalline Hallway ~ First House (portal,archway,forward,left,right)=S= #K%44401036DDDportal~archway~forward~left~right =S=A Crystalline Hallway (right,left)=S= #K%44401013DDDright~left =S=A Crystalline Hallway ~ Second House (left,right,archway)=S= #K%44401021DDDleft~right~archway =S=Inside the Second House (archway)=S= #K%44401010DDDarchway =M= Taurus the Bull. Ok. #K%44401036BADInside the Second House (archway) #K%44401010DDDarchway #K%44401111FFFC~2298~N~0~K~Taurus the Bull~L~100~M~~J~G2N: <y533071>  <cChi Focus>: <gThought>  <yAE>: <g4>/74% Your insidious inspiration flows through you as you make the most of each attack!  ***THAWHACK*** You critically hit Taurus the Bull! You hit Taurus. #K%44401011FFFN~1~L~92 Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. You quickly tumble to avoid the brunt of the attack. Performing: hands Bonehead, you're at max hit points already. Taurus the Bull Monster class: 16000 }
             {Rooms} 
             {
                 {1} {29566}
                 {2} {29558}
+                {3} {29563}
             }
         }
         {A Tome of 'Deep Delving', Volume I} 
@@ -68700,11 +70277,11 @@
         }
         {A Water Urn} 
         {
-            {Description} { A Water Urn  An urn made of some unearthly metal.  It has an image of a man drawing water into an urn just like this one painted on its side.  Though it would look silly, you could probably wear it as a helmet, the metal is very resilient. The helmet is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 5 fire, 5 ice, 2 acid, -1 electric, 5 radiation It looks light.  Deadman: 0 Deadman: 0 }
+            {Description} { #K%44401093FFFC~2303~N~0~K~~E~526~J~G2N: <y525594>  <cChi Focus>: <gThought>  <yAE>: <g0>/90% Bonehead, you're at max hit points already. A Water Urn An urn made of some unearthly metal.  It has an image of a man drawing water into an urn just like this one painted on its side.  Though it would look silly, you could probably wear it as a helmet, the metal is very resilient. The helmet is in perfect condition. This armor has the following resistances: 10 edged, 10 blunt, 5 fire, 5 ice, 2 acid, -1 electric, 5 radiation It looks light. #K%44401006FFFN~0 You have become grounded in this plane yet again. Bonehead, you're at max hit points already. =S=A Crystalline Hallway ~ Eleventh House (left,right,forward,archway)=S= #K%44401029DDDleft~right~forward~archway }
             {Rooms} 
             {
-                {1} {29594}
-                {2} {29590}
+                {1} {29590}
+                {2} {29594}
             }
         }
         {A Weird Hanging Ladder} 
@@ -68723,6 +70300,22 @@
                 {1} {29577}
             }
         }
+        {A bouncing bingo ball} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29571}
+            }
+        }
+        {A bouncing frankfurter} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29571}
+            }
+        }
         {A bronze plaque} 
         {
             {Description} {}
@@ -68733,14 +70326,30 @@
                 {3} {29565}
             }
         }
-        {Amulet of Scorpio} 
+        {A patch of mist} 
         {
-            {Description} {  Deadman: 0 Amulet of Scorpio  This strange amulet appears to be made from some sort of shiny black chitin shaped into a crude triangle.  A green drop of poison has solidified dripping off the end. The amulet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 10 poison It looks light. [Auction House] One has placed Rod of Lordly Might up for bids at the  Deadman: 0 [Auction House] Esper has placed Gold Ring of Pickling up for bids at for 249999!)  Deadman: 0 Scorpio the Scorpion   Scorpio the Scorpion     [Auction] Robert : 5,000 going twice! }
+            {Description} {}
             {Rooms} 
             {
-                {1} {29584}
-                {2} {29588}
-                {3} {29582}
+                {1} {29571}
+            }
+        }
+        {A writhing tendril} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {29571}
+            }
+        }
+        {Amulet of Scorpio} 
+        {
+            {Description} {  #K%44401093FFFC~2289~N~0~K~~E~526~J~G2N: <y527310>  <cChi Focus>: <gThought>  <yAE>: <g0>/83% Bonehead, you're at max hit points already. Amulet of Scorpio This strange amulet appears to be made from some sort of shiny black chitin shaped into a crude triangle.  A green drop of poison has solidified dripping off the end. The amulet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 10 poison It looks light. #K%44401084FFFC~2299~N~0~J~G2N: <y527310>  <cChi Focus>: <gThought>  <yAE>: <g0>/84% Bonehead, you're at max hit points already. }
+            {Rooms} 
+            {
+                {1} {29588}
+                {2} {29582}
+                {3} {29584}
             }
         }
         {An old dusty book} 
@@ -68769,7 +70378,7 @@
         }
         {Gemini Gloves} 
         {
-            {Description} {  You pick up The brainless, freshly slain corpse of Gemini brother and wrap  A Gemini Brother   A Gemini Brother A pair of dark blue gloves.  They are made of some strange cloth.  They are soft and supple, almost like silk, but seem much more impervious than regular silk.  They bear the symbol of the Gemini Twins. The gloves are in perfect condition. This armor has the following resistances: 8 edged, 8 blunt, 6 fire, 6 ice, 4 poison It looks light.  Deadman: 0  You have become grounded in this plane yet again. }
+            {Description} { #K%44401093FFFC~2303~N~0~K~~E~526~J~G2N: <y531523>  <cChi Focus>: <gThought>  <yAE>: <g2>/75% Bonehead, you're at max hit points already. Gemini Gloves A pair of dark blue gloves.  They are made of some strange cloth.  They are soft and supple, almost like silk, but seem much more impervious than regular silk.  They bear the symbol of the Gemini Twins. The gloves are in perfect condition. This armor has the following resistances: 8 edged, 8 blunt, 6 fire, 6 ice, 4 poison It looks light.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already. #K%44401105FFFN~0~K~A Gemini Brother~L~100~M~~J~G2N: <y531523>  <cChi Focus>: <gThought>  <yAE>: <g2>/76% #K%44401099BACPOP!  Veins pop forth from A Gemini Brother's head, spraying blood into the air like a fountain. You hit Gemini Brother. You hit Gemini Brother. You hit Gemini Brother. You hit Gemini Brother.  You hit Gemini Brother. #K%44401088FFFN~1~L~54~E~522~J~G2N: <y531247>  <cChi Focus>: <gThought>  <yAE>: <g2>/76% Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {29570}
@@ -68778,11 +70387,11 @@
         }
         {Shield of Libra} 
         {
-            {Description} {  Libra the Scales   Libra the Scales A flat round shield.  It is made of some metal you have never before seen.  It is unadorned except for the small symbol of a pair of scales engraved in the center. The shield is in perfect condition. This armor has the following resistances: 14 edged, 14 blunt, 9 fire, 9 ice, 8 acid, -1 electric, 5 energy It looks light.  Deadman: 0 }
+            {Description} {    All your corpses are already bigger than what is here.  #K%44401099FFFC~2303~N~0~K~~E~526~G~403~J~G2N: <y527881>  <cChi Focus>: <gThought>  <yAE>: <g0>/82% Bonehead, you're at max hit points already. Psionic waves emanate from your body. Shield of Libra A flat round shield.  It is made of some metal you have never before seen.  It is unadorned except for the small symbol of a pair of scales engraved in the center. The shield is in perfect condition. This armor has the following resistances: 14 edged, 14 blunt, 9 fire, 9 ice, 8 acid, -1 electric, 5 energy It looks light. =S=A Crystalline Hallway ~ Seventh House (left,right,forward,archway)=S= #K%44401029DDDleft~right~forward~archway =S=A Crystalline Hallway (right,left)=S= #K%44401013DDDright~left =S=A Crystalline Hallway ~ Eighth House (left,right,archway)=S= #K%44401021DDDleft~right~archway =S=Inside the Eighth House (archway)=S= #K%44401010DDDarchway =M= Scorpio the Scorpion. #K%44401036BADInside the Eighth House (archway) #K%44401010DDDarchway #K%44401077FFFN~0~J~G2N: <y527881>  <cChi Focus>: <gThought>  <yAE>: <g0>/83% Bonehead, you're at max hit points already. Psionic waves emanate from your body. Scorpio walks slowly around the room making horrible clicking sounds. Ok. }
             {Rooms} 
             {
-                {1} {29582}
-                {2} {29578}
+                {1} {29578}
+                {2} {29582}
             }
         }
         {The Gem of the Zodiac } 
@@ -68811,7 +70420,7 @@
         }
         {The Hammer of the Zodiac (enchanted)} 
         {
-            {Description} {   up  Eternus, The Smith of the Cosmos   Eternus, The Smith of the Cosmos (the hammer of the zodiac (enchanted)?) You grip the hammer tightly. Deadman: 0  Deadman: 0    }
+            {Description} {   The coffin expels a corpse!  up into the coffin's protective hold! The coffin is full!  #K%44401092FFFN~0~K~~E~526~G~414~J~G2N: <y523260>  <cChi Focus>: <gThought>  <yAE>: <g0>/97% Bonehead, you're at max hit points already.  (the hammer of the zodiac (enchanted)?) You grip the hammer tightly.  }
             {Rooms} 
             {
                 {1} {29560}
@@ -68819,7 +70428,7 @@
         }
         {The Hide of Leo} 
         {
-            {Description} { the coffin's protective hold! Leo the Lion   Leo the Lion     Psionic waves emanate from your body. The Hide of Leo  The hide from the amazing incarnation, Leo the Lion.  It appears to be nearly as impervious to physical blows for you as it was for him. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 28 edged, 28 blunt, 5 ice, 5 acid, 5 electric, 3 poison  You must be level 17 to wear this.  It looks light.  Deadman: 0 }
+            {Description} { #K%44401099FFFC~2303~N~0~K~~E~526~G~405~J~G2N: <y529437>  <cChi Focus>: <gThought>  <yAE>: <g0>/79% Bonehead, you're at max hit points already. The Hide of Leo The hide from the amazing incarnation, Leo the Lion.  It appears to be nearly as impervious to physical blows for you as it was for him. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 28 edged, 28 blunt, 5 ice, 5 acid, 5 electric, 3 poison You must be level 17 to wear this. It looks light. }
             {Rooms} 
             {
                 {1} {29576}
@@ -68829,11 +70438,11 @@
         }
         {Virgo's Slippers} 
         {
-            {Description} {  Virgo the Virgin   Virgo the Virgin     Virgo's Slippers  A pair of cloth and wooden slippers.  They look very comfortable.  They appear to be the kind of ordinary slippers worn by any cosmic incarnation. The boots are in perfect condition. This armor has the following resistances: 5 edged, 5 blunt, 3 fire, 3 ice, 3 poison It looks light.  Deadman: 0 Deadman: 0    Psionic waves emanate from your body. }
+            {Description} {  up into the coffin's protective hold! The coffin is full! #K%44401093FFFC~2303~N~0~K~~E~526~J~G2N: <y528752>  <cChi Focus>: <gThought>  <yAE>: <g0>/81% Bonehead, you're at max hit points already. Virgo's Slippers A pair of cloth and wooden slippers.  They look very comfortable.  They appear to be the kind of ordinary slippers worn by any cosmic incarnation. The boots are in perfect condition. This armor has the following resistances: 5 edged, 5 blunt, 3 fire, 3 ice, 3 poison It looks light. =S=A Crystalline Hallway ~ Sixth House (left,right,archway)=S= #K%44401021DDDleft~right~archway =S=A Crystalline Hallway (right,left)=S= #K%44401013DDDright~left =S=A Crystalline Hallway ~ Seventh House (left,right,forward,archway)=S= #K%44401029DDDleft~right~forward~archway =S=Inside the Seventh House (archway)=S= #K%44401010DDDarchway =M= Libra the Scales. Ok. #K%44401037BADInside the Seventh House (archway) #K%44401010DDDarchway #K%44401034FFFN~0~K~Libra the Scales~L~100~M~ #K%44401006FFFN~1 Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already. Libra the Scales Monster class: 32000 }
             {Rooms} 
             {
-                {1} {29578}
-                {2} {29576}
+                {1} {29576}
+                {2} {29578}
             }
         }
     }
@@ -69364,12 +70973,28 @@
     }
     {Tree of Life} 
     {
+        {A Tome of 'Harnessing the Chaos', Volume I} 
+        {
+            {Description} { up into the coffin's protective hold!  #K%44401086FFFN~0~K~~E~526~J~G2N: <y539083>  <cChi Focus>: <gThought>  <yAE>: <g11>/3% Bonehead, you're at max hit points already. A Tome of 'Harnessing the Chaos', Volume I You can see the faint outlines of your hands through this ethereal book.  The wispy mist swirls around to form the words 'Harnessing the Chaos, Volume I' on the front.  Underneath the title is the name 'Torix'.  Inside are disturbing details about how to capture the escaping life energy of dying creatures.  Perhaps you can read it?  Dare you? Tradeskill : Wrangler Minimum Skill: 1 Trivial Skill: 33 It looks light. #K%44401006FFFN~0 Bonehead, you're at max hit points already. }
+            {Rooms} 
+            {
+                {1} {24594}
+            }
+        }
         {A small sign.  } 
         {
             {Description} {}
             {Rooms} 
             {
                 {1} {24584}
+            }
+        }
+        {Armour of the Spirit} 
+        {
+            {Description} {   up into the coffin's protective hold! #K%44401091FFFN~0~K~~E~526~G~411~J~G2N: <y535694>  <cChi Focus>: <gThought>  <yAE>: <g7>/9% Bonehead, you're at max hit points already. Armour of the Spirit This armour is the slate gray color of Chokmah.  Only one who has the wisdom to comprehend the sacred truths can hope to benefit from this well crafted gift. The armour is in perfect condition. It has a magical glow about it. It appears to be light armour for a player of your level. This armor has the following resistances: 22 edged, 22 blunt, 35 mind, 12 energy You must be level 17 to wear this. }
+            {Rooms} 
+            {
+                {1} {24604}
             }
         }
         {Boots of the Spirit \x7Bradiant\x7D} 
@@ -69380,12 +71005,28 @@
                 {1} {24613}
             }
         }
+        {Bracers of the Spirit} 
+        {
+            {Description} { #K%44401086FFFN~0~K~~E~526~J~G2N: <y542177>  <cChi Focus>: <gThought>  <yAE>: <g3>/97% Bonehead, you're at max hit points already. Psionic waves emanate from your body. Bracers of the Spirit These bracers are striped with the earth tones of Malkuth. You must first master the physical before you can begin the quest of self enlightenment. The other is in perfect condition. It has a magical glow about it. This armor has the following resistances: 15 mind, 8 energy It looks light. }
+            {Rooms} 
+            {
+                {1} {24585}
+            }
+        }
         {Breastplate of the Spirit \x7Bradiant\x7D} 
         {
             {Description} {   Ratziel, archangel of Chockmah \x7Bglowing\x7D   Ratziel, archangel of Chockmah \x7Bglowing\x7D This armour is the slate gray color of Chokmah.  Only one who has the wisdom to comprehend the sacred truths can hope to benefit from this well crafted gift. The breastplate is in perfect condition. It looks unbreakable. It appears to be medium armour for a player of your level. This armor has the following resistances: 45 edged, 45 blunt, 45 mind, 24 energy  You must be level 17 to wear this.  }
             {Rooms} 
             {
                 {1} {24623}
+            }
+        }
+        {Cloak of the Spirit} 
+        {
+            {Description} { You steadily block the brunt of the incoming attack. Performing: hands Bonehead, you're at max hit points already.  You steadily block the brunt of the incoming attack. With skill and speed you dodge the attack! Performing: hands Bonehead, you're at max hit points already. Khamael resists the hypnotizing effect of the headband! #K%44401038BADTemple of Geburah (onward,turnaway) #K%44401018DDDonward~turnaway #K%44401043FFFK~Khamael, archangel of Geburah~L~100~M~ You press your advantage on your outsmarted foe! #K%44401006FFFN~1 A bolt of pure energy flies out of the sky striking Khamael! Bonehead, you're at max hit points already. Khamael, archangel of Geburah Monster class: 32000 }
+            {Rooms} 
+            {
+                {1} {24596}
             }
         }
         {Gloves of the Spirit \x7Bradiant\x7D} 
@@ -69398,10 +71039,11 @@
         }
         {Helmet of the Spirit} 
         {
-            {Description} {  Helmet of the Spirit  This helmet is the pale blue color of Chesed.  It requires mercy to receive, as showing mercy is often a sign of strength. The helmet is in perfect condition. It has a magical glow about it. This armor has the following resistances: >4 edged, >4 blunt, >4 mind It looks light.   }
+            {Description} { up into the coffin's protective hold!  #K%44401085FFFN~0~K~~E~526~J~G2N: <y537611>  <cChi Focus>: <gThought>  <yAE>: <g9>/6% Bonehead, you're at max hit points already. Your skin slowly fades from the hardened scales into your natural texture. Helmet of the Spirit This helmet is the pale blue color of Chesed.  It requires mercy to receive, as showing mercy is often a sign of strength. The helmet is in perfect condition. It has a magical glow about it. This armor has the following resistances: 10 edged, 10 blunt, 12 mind It looks light. =S=Path to Binah (turnaway,doorway)=S= #K%44401019DDDturnaway~doorway =S=Temple of Binah (turnaway,onward)=S= #K%44401018DDDturnaway~onward =M= Tzaphkiel, archangel of Binah. Ok. }
             {Rooms} 
             {
                 {1} {24598}
+                {2} {24600}
             }
         }
         {Helmet of the Spirit \x7Bradiant\x7D} 
@@ -69418,6 +71060,14 @@
             {Rooms} 
             {
                 {1} {24587}
+            }
+        }
+        {Sword of Spirit (enchanted)} 
+        {
+            {Description} {   up into the coffin's protective hold!  #K%44401086FFFN~0~K~~E~526~J~G2N: <y534889>  <cChi Focus>: <gThought>  <yAE>: <g6>/10% Bonehead, you're at max hit points already.  (sword of spirit (enchanted)?) #K%44401006FFFN~0 Bonehead, you're at max hit points already. }
+            {Rooms} 
+            {
+                {1} {24605}
             }
         }
         {Sword of Spirit \x7Bradiant\x7D (enchanted)} 
@@ -69546,6 +71196,7 @@
             {Rooms} 
             {
                 {1} {17556}
+                {2} {17560}
             }
         }
         {A newspaper rack} 
@@ -69623,6 +71274,7 @@
             {Rooms} 
             {
                 {1} {17539}
+                {2} {17558}
             }
         }
         {Top Scavenger Hunters List} 
@@ -69631,6 +71283,7 @@
             {Rooms} 
             {
                 {1} {17556}
+                {2} {17560}
             }
         }
     }
@@ -70800,12 +72453,21 @@
                 {1} {32534}
             }
         }
-        {The Book of Voodoo Ritual (closed)} 
+        {The Book of Voodoo Ritual } 
         {
-            {Description} {  All your corpses are already bigger than what is here. #K%64626088FFFN~0~K~~E~526~G~416~J~G2N: <y77206929>  <cChi Focus>: <gThought>  <yAE>: <g11>/85%  (the book of voodoo ritual (closed)?) #K%64626073FFFN~0~J~G2N: <y77206929>  <cChi Focus>: <gThought>  <yAE>: <g11>/86% }
+            {Description} {}
             {Rooms} 
             {
                 {1} {32535}
+            }
+        }
+        {The Book of Voodoo Ritual (closed)} 
+        {
+            {Description} {    up into the coffin's protective hold!  #K%44401100FFFC~2541~N~0~K~~E~526~G~413~J~G2N: <y335263>  <cChi Focus>: <gThought>  <yAE>: <g12>/28% Bonehead, you're at max hit points already.  (the book of voodoo ritual (closed)?) There is no corpse here. =S=A crossroads in the hideout (n,s,w,e)=S= #K%44401010DDDn~s~w~e }
+            {Rooms} 
+            {
+                {1} {32535}
+                {2} {32527}
             }
         }
         {The electrocuted, slightly moldy corpse of Canzo} 
@@ -70844,7 +72506,7 @@
         }
         {an ancient ritual rattle} 
         {
-            {Description} { #K%60711089FFFN~0~K~~E~526~J~G2N: <y77521599>  <cChi Focus>: <gThought>  <yAE>: <g13>/11% an ancient ritual rattle This rattle is known as the asson, a ritual symbol of the priestly office made from a hollow calabash gourd.  It is filled with stones, snake vertebrae and small bones and is decorated with beads on the handle.  The asson serves as the voice of invocation and controls the direction of a ritual. When an apprentice is ritually raised to priestly authority, he is said to have been 'given the asson'. This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 10 (blunt). }
+            {Description} { up into the coffin's protective hold!  #K%44401086FFFN~0~K~~E~526~J~G2N: <y330876>  <cChi Focus>: <gThought>  <yAE>: <g9>/36% Bonehead, you're at max hit points already. an ancient ritual rattle This rattle is known as the asson, a ritual symbol of the priestly office made from a hollow calabash gourd.  It is filled with stones, snake vertebrae and small bones and is decorated with beads on the handle.  The asson serves as the voice of invocation and controls the direction of a ritual. When an apprentice is ritually raised to priestly authority, he is said to have been 'given the asson'. This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 10 (blunt). }
             {Rooms} 
             {
                 {1} {32533}
@@ -71298,12 +72960,21 @@
                 {7} {42714}
             }
         }
-        {A Club} 
+        {A City Official Pass} 
         {
-            {Description} {  Made of weak plasterboard, this thing is barely superior to a tree limb.  Only a real down and outer would use it.  This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 6 (blunt).  This weapon gains benefits from your mace weapon skill. It looks light. A Thief   A Thief   A Thief   A Thief screeches in agony and falls to the ground, dead. A Thief  }
+            {Description} {}
             {Rooms} 
             {
-                {1} {25813}
+                {1} {3909}
+            }
+        }
+        {A Club} 
+        {
+            {Description} {  #K%79651082FFFN~0~K~~J~G2N: <y46577448>  <cChi Focus>: <gStatic>  <yAE>: <g14>/32% #K%79651006FFFN~0     \\ | / =S=-= Kraken Street =- (w) =S=  W ---*--- Darkness shrouds the area, all sun cut off by the looming buildings. =X=  There is one obvious exit: west =X= #K%79651004DDDw #K%79651044HABnoun~buildings~buildings~exa #N/search #N =I= The electrocuted, freshly slain corpse of A thief \x7B2\x7D. A Club Made of weak plasterboard, this thing is barely superior to a tree limb.  Only a real down and outer would use it. This weapon is in excellent condition. This weapon deals blunt damage. This weapon is class 6 (blunt). This weapon gains benefits from your mace weapon skill. It looks light.     \\ | / =S=-= Kraken Street =- (w) =S=  W ---*--- Darkness shrouds the area, all sun cut off by the looming buildings. =X=  There is one obvious exit: west =X= #K%79651004DDDw #K%79651044HABnoun~buildings~buildings~exa #N/search #N =I= The electrocuted, freshly slain corpse of A thief \x7B2\x7D. }
+            {Rooms} 
+            {
+                {1} {25808}
+                {2} {25813}
             }
         }
         {A Gladhand} 
@@ -71339,6 +73010,14 @@
                 {2} {15586}
             }
         }
+        {A Merchant Guild Sash} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {4110}
+            }
+        }
         {A Rusty Saber} 
         {
             {Description} { Your muscles ripple and bulge with power. }
@@ -71356,6 +73035,14 @@
                 {1} {15591}
             }
         }
+        {A Smuggler} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {42708}
+            }
+        }
         {A Stall} 
         {
             {Description} {}
@@ -71365,7 +73052,9 @@
                 {2} {3918}
                 {3} {3917}
                 {4} {3913}
-                {5} {3919}
+                {5} {24582}
+                {6} {3921}
+                {7} {3919}
             }
         }
         {A Student Toga} 
@@ -71406,11 +73095,11 @@
         }
         {A Wayhaven Fishing Rod} 
         {
-            {Description} {  A Wayhaven Fishing Rod This luxurious fishing rod will positively will the fish out of the water and into your catch bag!  So belly up to a good spot on the river and CATCH FISH!  It looks light. H 3204/1596 TS 14/14 D  140/140  E  202  Power 59.78 Corpses:  I  0 C  1 H 3204/1596 TS  7/14 D  140/140  E  202  Power 59.78 Corpses:  I  0 C  1 H 3204/1596 TS  7/14 D  140/140  E  202  Power 59.78 Corpses:  I  0 C  1 }
+            {Description} {   All your corpses are already bigger than what is here.  #K%61126088FFFN~0~K~~G~403~J~G2N: <y50288004>  <cChi Focus>: <gStatic>  <yAE>: <g14>/46% A Wayhaven Fishing Rod This luxurious fishing rod will positively will the fish out of the water and into your catch bag!  So belly up to a good spot on the river and CATCH FISH! It looks light. #K%61126006FFFN~0 }
             {Rooms} 
             {
-                {1} {4096}
-                {2} {4111}
+                {1} {4111}
+                {2} {4096}
             }
         }
         {A cauldron of witch potions } 
@@ -71515,7 +73204,11 @@
                 {1} {4314}
                 {2} {3948}
                 {3} {3926}
-                {4} {3909}
+                {4} {3910}
+                {5} {3931}
+                {6} {3945}
+                {7} {3949}
+                {8} {3909}
             }
         }
         {A sign} 
@@ -71649,6 +73342,14 @@
                 {3} {15627}
             }
         }
+        {An Old Sign} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {25799}
+            }
+        }
         {An elegant tapestry} 
         {
             {Description} {}
@@ -71669,6 +73370,14 @@
             {
                 {1} {3990}
                 {2} {3992}
+            }
+        }
+        {Chromatic Sash} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3919}
             }
         }
         {Engagement Ring} 
@@ -71723,6 +73432,14 @@
                 {3} {15593}
             }
         }
+        {Pure Something} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3919}
+            }
+        }
         {Resurrection pill} 
         {
             {Description} {}
@@ -71731,7 +73448,23 @@
                 {1} {3919}
             }
         }
+        {Ring of Hearts} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3919}
+            }
+        }
         {Section Z game cabinet} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3919}
+            }
+        }
+        {The Gem of the Zodiac } 
         {
             {Description} {}
             {Rooms} 
@@ -71773,6 +73506,14 @@
                 {1} {4314}
             }
         }
+        {Zelligar's Headband -=||=-} 
+        {
+            {Description} {}
+            {Rooms} 
+            {
+                {1} {3919}
+            }
+        }
         {Zelligar's Headband =(\x7B.\x7D)=} 
         {
             {Description} {}
@@ -71802,7 +73543,7 @@
     {
         {Silver Dragon Scale (magical)} 
         {
-            {Description} { up Silver Dragon Scale (magical)  This is a scale from the mystical Silver Dragon, master of magical elements. As you bring it into the light, the scale begins to sparkle and reflect a halo of light. You bet that this scale retains some of its previous owner's magical properties. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: >10 edged, >10 blunt, >10 fire, >10 acid  You must be level 10 to wear this.  }
+            {Description} { #K%61126088FFFN~0~K~~E~526~J~G2N: <y50288161>  <cChi Focus>: <gStatic>  <yAE>: <g14>/42% #K%61126007BAE0.05 Silver Dragon Scale (magical) This is a scale from the mystical Silver Dragon, master of magical elements. As you bring it into the light, the scale begins to sparkle and reflect a halo of light. You bet that this scale retains some of its previous owner's magical properties. The armour is in perfect condition. It appears to be light armour for a player of your level. This armor has the following resistances: 24 edged, 24 blunt, 24 fire, 20 acid You must be level 10 to wear this. }
             {Rooms} 
             {
                 {1} {4079}
@@ -72222,8 +73963,8 @@
                 {3} {34847}
                 {4} {34848}
                 {5} {34851}
-                {6} {34844}
-                {7} {34846}
+                {6} {34846}
+                {7} {34844}
             }
         }
         {Bloodstone ring} 
@@ -72296,6 +74037,14 @@
         {The electrocuted, maggot-infested remains of Tigger} 
         {
             {Description} {}
+            {Rooms} 
+            {
+                {1} {41902}
+            }
+        }
+        {Turquoise ring} 
+        {
+            {Description} {  Bonehead, you're at max hit points already. #K%07624096FFFC~2699~N~0~K~~E~526~J~G2N: <y77726466>  <cChi Focus>: <gThought>  <yAE>: <g13>/46% Bonehead, you're at max hit points already. Turquoise Ring of Speed A beautifully crafted ring with the power to enhance your reflexes. The ring is in perfect condition. It has a magical glow about it. It looks light. #K%07624080FFFN~0~J~G2N: <y77726466>  <cChi Focus>: <gThought>  <yAE>: <g13>/47% Bonehead, you're at max hit points already. Bonehead, you're at max hit points already. }
             {Rooms} 
             {
                 {1} {41902}

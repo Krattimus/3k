@@ -3,6 +3,55 @@
 #class {testbin} {open}
 
 
+
+#function listMin
+{
+        #var min 99999999;
+        #var list ${%1};
+
+        #loop &list[] 1 index
+        {
+                #if { $list[+$index] < $min }
+                {
+                        #var min $list[+$index];
+                };
+        };
+
+        #return $min;
+};
+
+#function listAverage
+{
+        #var runningSum 0;
+        #var list ${%1};
+        #list {list} {size} {listSize};
+
+        #loop &list[] 1 index
+        {
+                #math {runningSum} {$runningSum+$list[+$index]};
+        };
+
+        #math average {$runningSum/$listSize};
+        #return $average;
+};
+
+
+#function listMax
+{
+        #var max 0;
+        #var list ${%1};
+
+        #loop &list[] 1 index
+        {
+                #if { $list[+$index] > $max }
+                {
+                        #var max $list[+$index];
+                };
+        };
+
+        #return $max;
+};
+
 #alias .displayJapanese
 {
         #read 3k/TinTin/Areas/science.tin;
@@ -35,6 +84,68 @@
                 #draw Yellow scroll line 1 1 1 80;
         };
 };
+
+
+#alias uploadToByronAPI
+{
+	#draw Yellow scroll line 1 1 1 80;
+        #script {response} {3k/TinTin/Tools/byronAPI.sh '%1' '%2' '%3'};
+        #var areas[%1][Byron] {$response};
+	#draw Yellow scroll line 1 1 1 80;
+};
+
+
+#function ratingForArea
+{
+        #var ratings $areas[%0][Ratings];
+
+        #var totalRating 0;
+        #foreach {$ratings[]} {rating}  
+        {
+                #math {totalRating} {$rating+$totalRating};
+        };
+
+        #return $totalRating;
+};
+
+/**************************************************************
+	Prints out how many unique 'areas' are in the map
+**************************************************************/
+#alias {.mapAreaCount}
+{
+	#draw Yellow scroll line 1 1 1 80;
+	#var areaList {};
+        #map list {roomname} {%*} {variable} {rooms}; 
+
+        #var myVal 50;
+	#foreach {*rooms[]} {roomID}  
+	{
+	        #map get all {roomdata} $roomID;
+                #var areaName $roomdata[area];
+                #if { "$areaList[$areaName]" != "1" }
+                {
+                        #if { @strlen{ {$areaName} } > 2 && "$areaName" != "\$area" }
+                        {
+                                #var ratings {@ratingForArea{$areaName}};
+                                #var areaList[$areaName] 1;
+                                #var wizard $areas[$areaName][Wizard];
+
+                                #echo {Area '$areaName' by '$wizard' - Rating: '$ratings'};                                        
+                                uploadToByronAPI {$areaName} {$ratings} {$wizard};
+
+                                #math myVal {$myVal+1};                                
+                        };
+                };
+
+                
+        };
+
+        .save;
+        #showme Number of unique areas: @getNumElements{areaList};
+        #draw Yellow scroll line 1 1 1 80;
+};
+
+
 
 
 #NOP List all Roomnotes for 'go' alias

@@ -19,6 +19,16 @@
 #var monk[hideThreshold] 2000;
 #var monk[method] {Tiger};
 #var monk[isActive] 1;
+#var monk[dps] 0;
+#var monk[dpsOn] {  };
+#var monk[dpsOff] {  };
+#var monk[toughHands] 0;
+#var monk[commandIndex] 0;
+#var monk[roundCommand] 0;
+#var monk[roundNumber] -1;
+#var monk[stall] 0;
+#var monk[commands] { {0}{\(heal $char[ourCharacter]}{1}{hmheal}{2}{eat rice}{3}{drink soda}{4}{drink cerveza}{5}{\(protection}{6}{hmshield}{7}{chiforce 450} };
+
 #list {monk[gxp][history][list]} create {};
 
 .registerEvent onNewMipGline onNewMipGlineMonk;
@@ -26,7 +36,41 @@
 .registerEvent onNewCombatRound onNewCombatRoundMonk;
 
 
-#gag {You hit %1.};
+#alias .round
+{
+	#var monk[roundNumber] %1;
+	#var monk[roundCommand] %2;
+};
+
+#alias .dpsOn
+{
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Switching to Dps Mode;
+	#draw Yellow scroll line 1 1 1 80;
+
+	$monk[dpsOn];
+	
+	#var monk[dps] 1;
+};
+
+#alias .dpsOff
+{
+	#draw Yellow scroll line 1 1 1 80;
+	#showme Switching to Tank Mode with $monk[commands][$monk[commandIndex]];
+	#draw Yellow scroll line 1 1 1 80;
+
+	$monk[dpsOff];
+
+	hotd;
+	#var monk[dps] 0;
+	doShield;
+};
+
+#alias doShield
+{
+	#send $monk[commands][$monk[commandIndex]];
+	#math {monk[commandIndex]} {($monk[commandIndex]+1) % 5e}
+};
 
 /**********************************************************************************
 	Kill trig
@@ -43,6 +87,7 @@
 		#send !hands;
 	};
 	
+	#var monk[commandIndex] 0;
 	#var monk[palm] 0;
 	#var monk[pressure] 0;
 };
@@ -116,6 +161,11 @@
 	#var monk[palm] 0;
 };
 
+#alias .toughHands
+{
+	#var monk[toughHands] %1;
+};
+
 /*************************************************************************************
 	Round of combat
 *************************************************************************************/
@@ -129,28 +179,101 @@
 
 	#if { $monk[isActive] }
 	{
-		#if { $my[hp][current] < $my[hp][max]-50 }
+		#math {spNormalized} {($my[sp][current]*100 / $my[sp][max]*100)/100};
+		#math {hpNormalized} {($my[hp][current]*100 / $my[hp][max]*100)/100};
+
+		#NOP { Tough hands, auto send X hands per round for tough fights };
+		#var toughToGo $monk[toughHands];
+        #while { $toughToGo > 0 }
+        {
+			#send !hands;
+            #math {toughToGo} {$toughToGo-1};
+        };
+
+		#NOP { If in tank mode cycle SP healing };
+		#if { $monk[stall] > 0 }
+		{
+			#math {monk[stall]} {$monk[stall]-1};
+		};
+
+		#if { $monk[dps] == 0 && $monk[stall] <= 0 }
+		{
+			#if {$spNormalized <= 25 }
+			{
+				.doShield;
+				#var monk[stall] 5;
+
+				#draw Yellow scroll line 1 1 1 80;
+				#showme SP Healing;
+				#draw Yellow scroll line 1 1 1 80;
+			};
+		};
+
+		#NOP { If .round was used, it will cast here };
+		#if { $monk[roundNumber] == $currentRoundID }
+		{
+			#draw Yellow scroll line 1 1 1 80;
+			#showme $monk[roundCommand];
+			#draw Yellow scroll line 1 1 1 80;
+			#send $monk[roundCommand];
+			#var monk[roundNumber] -1;
+			#var monk[roundCommand] { };
+		};
+
+		#NOP { Auto hands };
+		#if { $hpNormalized < 90 }
 		{
 			#send !hands;
 		};
 
-		#if { $monk[ae][current] >= 3 && "$monk[hide]" == "OFF" && $monk[ae][reset] >= 85 }
+		#NOP { Toggle between tank and dps mode };
+		#if { $spNormalized < 20 && $monk[dps] == 1 }
+		{
+			.dpsOff;
+		};
+
+		#if { $spNormalized > 95 && $monk[dps] == 0 }
+		{
+			.dpsOn;
+		};
+
+		#NOP { Auto cast hide of the dragon to save sp drain by spreading it out };
+		#if { $patroller[isPatrolling] }
+		{
+			#if { $spNormalized < 90 && $monk[ae][current] >= 3 && "$monk[hide]" == "OFF" }
+			{
+				#math shieldRemaining {5-$monk[ae][reset]/20};
+				#math currentShields { $monk[ae][current]/2};
+				#if { $currentShields > $shieldRemaining }
+				{
+					#draw Yellow scroll line 1 1 1 80;
+					#showme Preventing SP Drain;
+					#draw Yellow scroll line 1 1 1 80;
+					#send !hide of the dragon;
+				};
+
+			};
+		}; 
+		#elseif { $monk[ae][current] >= 3 && "$monk[hide]" == "OFF" && $monk[ae][reset] >= 82 }
 		{
 			#send !hide of the dragon;
 			#var monk[hide] {*ACTIVE*};
 		};
 
+		#NOP { Auto cast palm };
 		#if { !$monk[palm] && $monk[ae][current] > 0}
 		{
 			#send !palm;
 		};
 
+		#NOP { Auto cast pressure };
 		#if { !$monk[pressure] }
 		{
 			#send !pressure;
 		};
 
-		#if { $my[hp][current] <= $monk[hideThreshold] }
+		#NOP { Auto cast hotd };
+		#if { $hpNormalized < 80 && $monk[hide] != "*ACTIVE*" }
 		{
 			#send !hide of the dragon;
 			#var monk[hide] {*ACTIVE*};
@@ -226,7 +349,8 @@
 	
 	#if { "$enemy[name]" != "" }
 	{
-		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088>} {-6};
+		#var dmgReport @getDamageReport{};
+		#showme {<148>$enemy[name]<088> <048>(<138>$event[rating]<048>)<088> <048>[<138>$mip[round]<048>]<088> $enemy[graph]<088> $dmgReport} {-6};
 	};
 	#else
 	{

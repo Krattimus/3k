@@ -40,25 +40,6 @@
         #map link %0 $currentRoomID;
 };
 
-/**************************************************************
-	Prints out how many unique 'areas' are in the map
-**************************************************************/
-#alias {.mapAreaCount}
-{
-	#draw Yellow scroll line 1 1 1 80;
-	#var areaList {};
-        #map list {roomname} {%*} {variable} {rooms}; 
-
-	#foreach {*rooms[]} {roomID}  
-	{
-	        #map get all {roomdata} $roomID;
-                #var areaList[$roomdata[area]] 1;
-        };
-
-        #showme Number of unique areas: @getNumElements{areaList};
-        #draw Yellow scroll line 1 1 1 80;
-};
-
 
 /**************************************************************
 	Remaps an exit to another direction .mapChangeExit n s

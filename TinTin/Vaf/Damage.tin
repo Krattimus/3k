@@ -4,6 +4,8 @@
 	Using the numbers vaf, track and record damage data
 *************************************************************************/
 .registerEvent onMobKilled onMobKilledDamage;
+.registerEvent onMobAttacked onMobAttackedDamage;
+
 /*************************************************************************
 	Resets variables as combat starts to record before combat ends
 *************************************************************************/
@@ -24,12 +26,16 @@
 	#var dmg[totalHits] 0;
 	#var dmg[insight] 0;
 	#var dmg[mob] {};
+	#var dmg[averageThisRound] 0;
+	#var dmg[avgHits] {};
 }
 
 /*************************************************************************
 	Highlight 
 *************************************************************************/
-#sub {You hit %* %d time%*for %d damage.} {<088> You hit %1 %2 time%3for <118>%4<088> damage.}
+#gag {%1 resists the hypnotizing effect of the headband!};
+#gag {{^You hit ((?!damage).)*$}};
+#sub {You hit %* %d time%*for %d damage.} {<088>You hit <148>%1<038> <138>%2<088> time%3for <118>%4<088> damage.};
 
 /*************************************************************************
 	Detect assassin perk
@@ -56,6 +62,7 @@
 	#draw Yellow scroll line 1 1 1 80;
 	#showme $event[mobKilled] killed in $currentRoundID rounds;
 	#draw Yellow scroll line 1 1 1 80;
+	resetDamage;
 };	
 
 /*************************************************************************
@@ -75,13 +82,17 @@
 	#var dmg[mob] $event[mobAttacked];
 };
 
-
-/*************************************************************************
-	A mob was spawned
-*************************************************************************/
-#alias onMobSpawnedDamage
+#function getDamageReport
 {
-	resetDamage;
+	#var report {};
+	
+	#var listSize *dmg[avgHits][-1];
+	#if { $listSize > 0 }
+	{
+		#var report {<148>Min<088>: <138>@listMin{{dmg[avgHits]}}<088> <148>Avg<088>: <138>@listAverage{{dmg[avgHits]}}<088> <148>Max<088>: <138>@listMax{{dmg[avgHits]}}<088>};
+	};
+
+	#return $report;
 };
 
 /*************************************************************************
@@ -108,6 +119,8 @@
 		#var dmg[roundID] $mip[round];
 		#var dmg[damageThisRound] $currentHit;
 		#math {dmg[totalHits]} {$dmg[totalHits] + $hitCount};
+		#math {dmg[averageThisRound]} {$currentHit/$hitCount};
+		#list dmg[avgHits] add $dmg[averageThisRound];
 	};
 
 	#NOP Determine if min hit;
