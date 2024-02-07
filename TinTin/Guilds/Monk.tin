@@ -36,6 +36,7 @@
 .registerEvent onNewCombatRound onNewCombatRoundMonk;
 
 
+
 #alias .round
 {
 	#var monk[roundNumber] %1;
@@ -63,10 +64,10 @@
 
 	hotd;
 	#var monk[dps] 0;
-	doShield;
+	.doShield;
 };
 
-#alias doShield
+#alias .doShield
 {
 	#send $monk[commands][$monk[commandIndex]];
 	#math {monk[commandIndex]} {($monk[commandIndex]+1) % 5e}

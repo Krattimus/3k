@@ -249,6 +249,25 @@
     };
 };
 
+#alias .transmuteAll
+{
+    .transmute_ug_essence poor;
+    .transmute_ug_hearts poor;
+    .transmute_ug_fragments poor;
+
+    .transmute_ug_essence average;
+    .transmute_ug_hearts average;
+    .transmute_ug_fragments average;    
+
+    .transmute_ug_essence good;
+    .transmute_ug_hearts good;
+    .transmute_ug_fragments good;    
+
+    .transmute_ug_essence superior;
+    .transmute_ug_hearts superior;
+    .transmute_ug_fragments superior;        
+};
+
 #alias .transmute_ug_essence
 {
     .transmute_ug %1 {essence of ascension};

@@ -3,68 +3,68 @@
 #class {testbin} {open}
 
 
-
-#function listMin
+#alias .phoenix
 {
-        #var min 99999999;
-        #var list ${%1};
-
-        #loop &list[] 1 index
-        {
-                #if { $list[+$index] < $min }
-                {
-                        #var min $list[+$index];
-                };
-        };
-
-        #return $min;
+    hotd;
+    method phoenix;
+    #math {craneRound} {$currentRoundID+30};
+    .round $craneRound {method crane};
 };
 
-#function listAverage
+#alias .shadow
 {
-        #var runningSum 0;
-        #var list ${%1};
-        #list {list} {size} {listSize};
-
-        #loop &list[] 1 index
-        {
-                #math {runningSum} {$runningSum+$list[+$index]};
-        };
-
-        #math average {$runningSum/$listSize};
-        #return $average;
+	hotd;
+	method shadow;
+	#math {craneRound} {$currentRoundID+30};
+	.round $craneRound {method crane};
 };
 
 
-#function listMax
+#alias .transmuteAll
 {
-        #var max 0;
-        #var list ${%1};
+    .transmute_ug_essence poor;
+    .transmute_ug_hearts poor;
+    .transmute_ug_fragments poor;
 
-        #loop &list[] 1 index
-        {
-                #if { $list[+$index] > $max }
-                {
-                        #var max $list[+$index];
-                };
-        };
+    .transmute_ug_essence average;
+    .transmute_ug_hearts average;
+    .transmute_ug_fragments average;    
 
-        #return $max;
+    .transmute_ug_essence good;
+    .transmute_ug_hearts good;
+    .transmute_ug_fragments good;    
+
+    .transmute_ug_essence superior;
+    .transmute_ug_hearts superior;
+    .transmute_ug_fragments superior;        
 };
 
-#alias .displayJapanese
-{
-        #read 3k/TinTin/Areas/science.tin;
-};
 
 #alias .change { transmogrify %0; };
 
-#alias {.la}
+
+#alias .openAIDesc
 {
-        #send !la %0;
-        #var capturedText {};
-        .captureFor 2 {onLookedAt};
-}
+        #draw Yellow scroll line 1 1 1 80;
+        #script {python 3k/TinTin/Tools/aiImageGenerator.py "Create with a fantasy style of the following scene. $textToSend"};
+        #draw Yellow scroll line 1 1 1 80;
+};
+
+#alias .openAIRoom
+{
+        #if { "%1" == "" }
+        {
+                #draw Yellow scroll line 1 1 1 80;
+                #script {python 3k/TinTin/Tools/aiImageGenerator.py "Create with a fantasy style of the following scene. $roomdesc."};
+                #draw Yellow scroll line 1 1 1 80;
+        };
+        #ELSE 
+        {
+                #draw Yellow scroll line 1 1 1 80;
+                #script {python 3k/TinTin/Tools/aiImageGenerator.py "Create with a fantasy style of the following scene. $roomdesc. %0."};
+                #draw Yellow scroll line 1 1 1 80;
+        };
+};
 
 #alias {onLookedAt}
 {
@@ -84,7 +84,6 @@
                 #draw Yellow scroll line 1 1 1 80;
         };
 };
-
 
 #alias uploadToByronAPI
 {
