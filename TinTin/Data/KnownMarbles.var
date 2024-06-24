@@ -20,7 +20,7 @@
     {asphalt} {0}
     {azure} {1}
     {azurite} {0}
-    {basalt} {0}
+    {basalt} {1}
     {beet} {0}
     {beige} {1}
     {benzene} {0}
@@ -118,6 +118,7 @@
     {indium} {1}
     {ink} {0}
     {inyxx} {1}
+    {iris} {0}
     {iron} {1}
     {isopropanol} {0}
     {ivory} {1}
@@ -165,6 +166,7 @@
     {oak} {1}
     {obsidian} {1}
     {ochre} {1}
+    {oil} {0}
     {olive} {1}
     {onyx} {1}
     {opal} {1}
@@ -257,6 +259,7 @@
     {ultraviolet} {1}
     {uranium} {1}
     {urchin} {1}
+    {urea} {0}
     {urethane} {0}
     {vanilla} {1}
     {varnish} {0}
