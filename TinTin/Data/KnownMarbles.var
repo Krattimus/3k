@@ -3,225 +3,273 @@
 #VARIABLE {marbles}
 {
     {ABS} {0}
+    {acetone} {0}
+    {acrylic} {0}
+    {agate} {1}
+    {alabaster} {1}
+    {alizarian} {1}
+    {amber} {1}
+    {amethyst} {1}
+    {ametrine} {1}
+    {aon} {1}
+    {apple} {1}
+    {apricot} {1}
+    {aquamarine} {1}
+    {argon} {0}
+    {arsenic} {1}
+    {asphalt} {0}
+    {azure} {1}
+    {azurite} {0}
     {basalt} {0}
     {beet} {0}
-    {beige} {0}
+    {beige} {1}
     {benzene} {0}
-    {beryl} {0}
-    {black} {0}
-    {blood} {0}
+    {beryl} {1}
+    {black} {1}
+    {blood} {1}
     {bloodstone} {0}
-    {blue} {0}
-    {bone} {0}
+    {blue} {1}
+    {bone} {1}
     {brass} {0}
-    {brimstone} {0}
-    {bronze} {0}
-    {brown} {0}
-    {bubble} {0}
-    {burgundy} {0}
+    {brimstone} {1}
+    {bronze} {1}
+    {brown} {1}
+    {bubble} {1}
+    {burgundy} {1}
     {butane} {0}
-    {butterscotch} {0}
+    {butterscotch} {1}
     {cadmium} {0}
     {calcite} {0}
     {calcium} {0}
     {camphor} {0}
-    {canary} {0}
+    {canary} {1}
     {candy} {0}
-    {caramel} {0}
+    {caramel} {1}
     {carbon} {0}
     {cement} {0}
     {ceramic} {0}
     {cerise} {0}
-    {cerulean} {0}
+    {cerulean} {1}
     {chartreuse} {0}
-    {cheese} {0}
-    {cherry} {0}
-    {chocolate} {0}
+    {cheese} {1}
+    {cherry} {1}
+    {chocolate} {1}
     {chondrite} {0}
-    {chrome} {0}
-    {chrysoberyl} {0}
-    {clay} {0}
-    {clear} {0}
-    {coal} {0}
-    {concrete} {0}
-    {coral} {0}
-    {cork} {0}
+    {chrome} {1}
+    {chrysoberyl} {1}
+    {clay} {1}
+    {clear} {1}
+    {coal} {1}
+    {concrete} {1}
+    {coral} {1}
+    {cork} {1}
     {cream} {0}
-    {crimson} {0}
-    {crunchberry} {0}
-    {crystal} {0}
-    {cyan} {0}
+    {crimson} {1}
+    {crunchberry} {1}
+    {crystal} {1}
+    {cyan} {1}
     {darkness} {0}
-    {diamond} {0}
-    {dilithium} {0}
+    {diamond} {1}
+    {dilithium} {1}
     {dogfood} {0}
     {donut} {0}
-    {drab} {0}
+    {drab} {1}
     {draconite} {0}
     {dragon} {0}
+    {ebonite} {1}
+    {ebony} {1}
+    {ecru} {1}
+    {ectoplasm} {1}
+    {egg} {1}
+    {eggshell} {1}
+    {einsteinium} {1}
+    {electrum} {1}
+    {enamel} {0}
     {fertilizer} {0}
     {fiber} {0}
-    {fire} {0}
+    {fire} {1}
     {fuchsia} {0}
-    {fulgurite} {0}
+    {fulgurite} {1}
     {gasoline} {0}
     {gelatin} {0}
-    {glass} {0}
+    {glass} {1}
     {glycerine} {0}
     {gold} {0}
-    {granite} {0}
-    {graphite} {0}
+    {granite} {1}
+    {graphite} {1}
     {gray} {0}
-    {grease} {0}
-    {green} {0}
-    {greywacke} {0}
-    {gum} {0}
-    {gypsum} {0}
+    {grease} {1}
+    {green} {1}
+    {greywacke} {1}
+    {gum} {1}
+    {gypsum} {1}
     {hair} {0}
     {hamster} {0}
-    {hazel} {0}
+    {hazel} {1}
     {heartstone} {0}
     {hellfire} {0}
     {hematite} {0}
-    {hemp} {0}
+    {hemp} {1}
+    {hondrite} {1}
     {hydraulic} {0}
     {hydrogen} {0}
-    {jade} {0}
-    {jet} {0}
+    {ice} {1}
+    {indigo} {1}
+    {indium} {1}
+    {ink} {0}
+    {inyxx} {1}
+    {iron} {1}
+    {isopropanol} {0}
+    {ivory} {1}
+    {jade} {1}
+    {jet} {1}
     {kaolin} {0}
     {kerosene} {0}
-    {khaki} {0}
+    {khaki} {1}
     {lag} {0}
-    {lapis} {0}
-    {lavender} {0}
-    {lead} {0}
+    {lapis} {1}
+    {lavender} {1}
+    {lead} {1}
     {leaf} {0}
-    {leather} {0}
-    {lego} {0}
+    {leather} {1}
+    {lego} {1}
     {licorice} {0}
     {light} {0}
-    {lime} {0}
+    {lime} {1}
     {limestone} {0}
-    {lint} {0}
+    {lint} {1}
     {lithium} {0}
-    {magenta} {0}
+    {magenta} {1}
     {maize} {0}
     {malt} {0}
     {marbozo} {0}
-    {maroon} {0}
+    {maroon} {1}
     {mauve} {0}
     {mayonnaise} {0}
     {menthol} {0}
-    {mercury} {0}
+    {mercury} {1}
     {milk} {0}
     {mint} {0}
-    {mithril} {0}
-    {moonlight} {0}
-    {moonstone} {0}
-    {moss} {0}
-    {mud} {0}
+    {mithril} {1}
+    {moonlight} {1}
+    {moonstone} {1}
+    {moss} {1}
+    {mud} {1}
     {muscle} {0}
     {naphtha} {0}
     {navy} {0}
-    {neon} {0}
-    {nickel} {0}
+    {neon} {1}
+    {nickel} {1}
     {nitroglycerine} {0}
     {nylon} {0}
+    {oak} {1}
+    {obsidian} {1}
+    {ochre} {1}
+    {olive} {1}
+    {onyx} {1}
+    {opal} {1}
+    {orange} {1}
+    {ore} {0}
     {paint} {0}
     {paper} {0}
-    {pastry} {0}
-    {peach} {0}
-    {peanut} {0}
-    {pearl} {0}
-    {peridot} {0}
+    {pastry} {1}
+    {peach} {1}
+    {peanut} {1}
+    {pearl} {1}
+    {peridot} {1}
     {periwinkle} {0}
     {phenol} {0}
-    {pink} {0}
+    {pink} {1}
     {pitch} {0}
-    {plasma} {0}
-    {plastic} {0}
+    {plasma} {1}
+    {plastic} {1}
     {platinum} {0}
     {polyethylene} {0}
     {polystyrene} {1}
-    {poop} {0}
+    {poop} {1}
     {potassium} {0}
-    {potato} {0}
+    {potato} {1}
     {propane} {0}
-    {puce} {0}
+    {puce} {1}
     {purple} {0}
-    {pyrite} {0}
-    {pyrope} {0}
+    {pyrite} {1}
+    {pyrope} {1}
     {quartz} {0}
-    {rainbow} {0}
-    {raisin} {0}
-    {red} {0}
-    {renal} {0}
+    {rainbow} {1}
+    {raisin} {1}
+    {red} {1}
+    {renal} {1}
     {rock} {0}
     {root} {0}
-    {rose} {0}
+    {rose} {1}
     {rubber} {0}
-    {ruby} {0}
-    {saffron} {0}
-    {sage} {0}
+    {ruby} {1}
+    {saffron} {1}
+    {sage} {1}
     {sand} {0}
-    {sandstone} {0}
-    {sapphire} {0}
+    {sandstone} {1}
+    {sapphire} {1}
     {sausage} {0}
-    {scarlet} {0}
-    {seaweed} {0}
-    {sepia} {0}
-    {shale} {0}
+    {scarlet} {1}
+    {seaweed} {1}
+    {sepia} {1}
+    {shale} {1}
     {shampoo} {0}
-    {sienna} {0}
-    {silicon} {0}
-    {silicone} {0}
-    {silk} {0}
-    {silver} {0}
+    {sienna} {1}
+    {silicon} {1}
+    {silicone} {1}
+    {silk} {1}
+    {silver} {1}
     {snow} {0}
     {soap} {0}
     {sodalite} {0}
     {soul} {0}
-    {spinel} {0}
-    {spirit} {0}
-    {spruce} {0}
+    {spinel} {1}
+    {spirit} {1}
+    {spruce} {1}
     {starch} {0}
-    {steel} {0}
+    {steel} {1}
     {stellar} {0}
-    {stone} {0}
-    {sugar} {0}
-    {sulfur} {0}
+    {stone} {1}
+    {sugar} {1}
+    {sulfur} {1}
     {talc} {0}
-    {tan} {0}
-    {tangerine} {0}
+    {tan} {1}
+    {tangerine} {1}
     {taupe} {0}
-    {teal} {0}
+    {teal} {1}
     {tektite} {0}
-    {tensor} {0}
+    {tensor} {1}
     {testicle} {0}
-    {tin} {0}
-    {titanium} {0}
-    {tobacco} {0}
+    {tin} {1}
+    {titanium} {1}
+    {tobacco} {1}
     {toner} {0}
     {toothpaste} {0}
-    {topaz} {0}
+    {topaz} {1}
     {tourmaline} {0}
     {trinitrotoluene} {0}
-    {tulip} {0}
+    {tulip} {1}
     {tungsten} {0}
-    {turquoise} {0}
-    {typo} {0}
-    {vanilla} {0}
+    {turquoise} {1}
+    {typo} {1}
+    {ultramarine} {1}
+    {ultraviolet} {1}
+    {uranium} {1}
+    {urchin} {1}
+    {urethane} {0}
+    {vanilla} {1}
     {varnish} {0}
-    {vermillion} {0}
-    {viridian} {0}
+    {vermillion} {1}
+    {viridian} {1}
     {vitamin} {0}
-    {wax} {0}
+    {wax} {1}
     {wheat} {0}
-    {wood} {0}
+    {wood} {1}
     {wool} {0}
     {xylene} {0}
     {yeast} {0}
-    {yellow} {0}
+    {yellow} {1}
     {zinc} {0}
 }
 

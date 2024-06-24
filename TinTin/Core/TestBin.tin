@@ -11,17 +11,25 @@
     .round $craneRound {method crane};
 };
 
-
+#action {You pull an %1 marble out of your butt.}
+{
+        .addMarble %1;
+};
 
 #action {You pull a %1 marble out of your butt.}
 {
-        #if { &marbles[%1] }
+        .addMarble %1;
+};
+
+#alias .addMarble
+{
+        #if { &marbles[%0] }
         {
 
-        }
+        };
         #else
         {
-                #var marbles[%1] 0;
+                #var marbles[%0] 0;
         };
 
         #class marblesvar write 3k/TinTin/Data/KnownMarbles.var;
@@ -35,6 +43,11 @@
 	.round $craneRound {method crane};
 };
 
+#alias .foundMarble 
+{
+        #var marbles[%0] 1;
+        #class marblesvar write 3k/TinTin/Data/KnownMarbles.var;
+};
 
 #alias .transmuteAll
 {
