@@ -177,6 +177,7 @@
 	#undelay {decisionStall};
 	#var deadManCount 0;
 	#var patroller[canWalk] 0;
+	#var found[player] 0;
 	#path walk;
 }
 

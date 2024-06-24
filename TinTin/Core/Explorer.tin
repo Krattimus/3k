@@ -159,6 +159,15 @@
 ************************************************************************/
 #macro \e[15~ {esearch};
 
+#highlight {After a brief search, you quickly decide you do not know what you are}  {<038>};
+#highlight {searching for.}  {<038>};
+
+#highlight {A quick search reveals not even a bean!}  {<038>};
+
+#highlight {You decide not to touch anything, just in case it absorbs you.}  {<038>};
+
+
+
 #highlight {You move plants and flowers around, peer closely at the soil, and study} {<038>};
 #highlight {the room carefully, but find nothing.} {<038>};
 

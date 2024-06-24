@@ -11,6 +11,14 @@
     .round $craneRound {method crane};
 };
 
+
+
+#action {You pull a %1 marble out of your butt.}
+{
+        #var marbles[%1] 1;
+        #class marblesvar write 3k/TinTin/Data/KnownMarbles.var;
+};
+
 #alias .shadow
 {
 	hotd;

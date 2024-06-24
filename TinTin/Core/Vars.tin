@@ -28,6 +28,8 @@
 #class areasvar kill
 #read 3k/TinTin/Data/KnownAreas.var
 
+#class marblesvar kill;
+#read 3k/TinTin/Data/KnownMarbles.var;
 
 
 #CLASS {vars} CLOSE

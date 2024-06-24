@@ -228,7 +228,7 @@
 		};
 
 		#NOP { Toggle between tank and dps mode };
-		#if { $spNormalized < 20 && $monk[dps] == 1 }
+		#if { $spNormalized < 40 && $monk[dps] == 1 }
 		{
 			.dpsOff;
 		};

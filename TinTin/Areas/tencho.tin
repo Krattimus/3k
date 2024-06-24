@@ -1,0 +1,50 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 35317;
+#var patrol[area] {Tencho};
+#var patrol[path] {n;n;n;gate;w;w;n;e;d;n;e;n;w;e;s;w;s;u;w;n;n;e;w;s;s;s;e;e;n;n;n;e;e;s;w;e;s;s;w;n;d;e;ne;se;sw;ne;nw;sw;w;u;s;e;n;n;n;w;w;s;s;s;s;s;s;}
+
+
+/******************************************************************************
+	What to attack
+
+    Non hardcore:
+        {Queen's Elite Guardswoman}{guard}
+        {Black Patrol Guard}{guard}
+        {Black Patrol Leader}{guard}
+
+
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{Sho Kosugi}{sho}
+    {Bolo Yeung}{bolo}
+    {Danny Inosato}{danny}
+    {Ogre Magi}{ogre}
+    {Warrior}{warrior}
+    {Guard}{guard}
+    {Vampire}{vampire}
+    {Thug}{thug}
+    {Queen's Elite Guardswoman}{guard}
+    {Monk}{monk}
+    {Peasant}{peasant}   
+};
+
+#action {The coffin is full} { take all; };
+
+#action {The guards will not let you past without a fight!} { #map undo; };
+ 
+
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+
+
+#class {bot} {close}

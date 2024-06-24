@@ -1,0 +1,72 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 26522;
+#var patrol[area] {Abyss};
+#var level 20;
+#if { "$level" == "" }
+{
+	#var level 20;
+};
+
+#var patrol[path] {#$level d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+};
+
+.registerEvent onMobFound onMobFoundAbyss;
+#alias onMobFoundAbyss
+{
+	aa;
+	#var patroller[canWalk] 0;
+};
+
+#action {All your corpses are already bigger than what is here} {take corpse;dispose corpse};
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+#class {bot} {close}

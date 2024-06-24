@@ -6,11 +6,11 @@
 	Calculator
 **************************************************************/
 #var dirs[n] yonder;
-#var dirs[s] anotherway;
-#var dirs[e] thisway;
-#var dirs[w] overhere;
-#var dirs[u] thatway;
-#var dirs[d] overthere;
+#var dirs[s] thisway;
+#var dirs[e] overhere;
+#var dirs[w] thatway;
+#var dirs[u] overthere;
+#var dirs[d] anotherway;
 
 #alias {.n} { #send !$dirs[n]; #map move n; };
 #alias {.s} { #send !$dirs[s]; #map move s; };
@@ -197,6 +197,7 @@
 	#class areasvar write 3k/TinTin/Data/KnownAreas.var;
 	#class notessvar write 3k/TinTin/Data/KnownNotes.var;
 	#class charvar write 3k/TinTin/Data/Character.var;
+	#class marblesvar write 3k/TinTin/Data/KnownMarbles.var;
 };
 
 /*************************************************************************

@@ -1,64 +1,126 @@
 #class {bot} {open}
 
-#var {no_loop} {0}
-#var {no_home} {0}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 5159;
+#var patrol[area] {Abyss};
+#var patrol[path] {portal;}
 
-#var patrol[path] {}
+.registerEvent onMobFound onMobFoundAbyss;
 
-#act {^=M= %1\.} {
-	#var patroller[shouldKill] demon;
-	#regex {%0} {attacking you}		{#alias {k} {#NOP}};
-	#regex {%1} {A jeep named}		{#var patroller[shouldKill] {}};
-	#regex {%1} {A truck named}		{#var patroller[shouldKill] {}};
-	#regex {%1} {A cargo truck named}	{#var patroller[shouldKill] {}};
-	#regex {%1} {A ambulance named}		{#var patroller[shouldKill] {}};
-	#regex {%1} {A rover named}		{#var patroller[shouldKill] {}};
-	#regex {%1} {Jugger Support Mech}	{#var patroller[shouldKill] {}};
-	#regex {%1} {A tank named}		{#var patroller[shouldKill] {}};
-	#regex {%1} {small fire mite}		{#var patroller[shouldKill] {}};
-	#regex {%1} {bound by}			{#var patroller[shouldKill] {}};
-	#regex {%1} {Blob the blob golem}	{#var patroller[shouldKill] {}};
-
-	#if {"$patroller[shouldKill]" == ""} {
-		#nop
-	} {
-		_check_mob
-	}
-}
-
-#act {You cannot go } {#path walk}
-
-#alias depth {
+#alias .depth 
+{
 	#var depth %0;
 	#path unzip {${depth}d};
 	#path delete;
 	#path save forward {depth_path}
-}
+};
 
-#alias square {
-	#local temp {};
-	#local temp2 {};
-	#local width {};
-	#local radius {};
+#alias .square 
+{
+	#var temp2 {};
+	#var temp3 {};
+	#var temp4 {};
+	#var width {};
+	#var radius {};
 
 	#math {radius} {%0 / 3};
-	#math {width} {$radius * 2};
+	#math {radius} {$radius-1};
 
-	#local temp {${radius}w${radius}s};
+	#if { $radius < 1 }
+	{
+		#var radius 1;
+	};
 
-	#$width #cat temp2 ${width}e1n${width}w1n;
+	#math {width} {$radius*2};
 
-	#path unzip {${temp};${temp2}};
+
+
+	#var temp2 {${radius}w${radius}s};
+	#$width #cat temp3 ${width}e1n${width}w1n;
+	#var temp4 {${radius}s${radius}e;};
+
+	#path unzip {${temp2};${temp3};};
 	#path delete;
-	#path save forward {abyss_path}
-}
+	#path save forward {abyss_path};
+	
+	#path unzip {${temp4}};
+	#path save forward {abyss_path2};
+};
 
-#alias abyss {
-	depth %0;
-	square %0;
-	#path unzip {${depth_path};${abyss_path}}
-}
+#alias .abyss 
+{
+	.depth %0;
+	.square %0;
+	#path unzip {${depth_path};${abyss_path};${abyss_path2}};
+	#path save forward {patrol[path]};
 
+	#echo {<202> Patrol Started <088>};
+	
+	.triggerEvent onControllerStarted {$patroller[controllerID]};
+	#var deadManCount 0;
+	#var patroller[canWalk] 0;
+	#var patroller[attacking] 0;
+	#var patroller[isPatrolling] 1;
+	#var currentController patrol;
+	glance;
+};
+
+
+
+
+#alias onMobFoundAbyss
+{
+	aa;
+	#var patroller[canWalk] 0;
+};
+
+#action {All your corpses are already bigger than what is here} {take corpse;dispose corpse};
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	#20 d;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;
+	d;w;w;w;w;n;n;n;n;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;e; e; e; e; e; e; e; e; s; w; w; w; w; w; w; w; w; s;n;n;n;n;e;e;e;e;	
+
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
 #class {bot} {close}

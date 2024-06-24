@@ -26,6 +26,9 @@
     {Ragged Peasant}{peasant}
     {Sylvan Elf}{elf}
     {Wyvern}{wyvern}
+    {Queen's Elite Guardswoman}{guard}
+    {Black Patrol Guard}{guard}
+    {Black Patrol Leader}{guard}    
 };
 
 /******************************************************************************
