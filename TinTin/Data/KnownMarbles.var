@@ -127,7 +127,7 @@
     {kaolin} {0}
     {kerosene} {0}
     {khaki} {1}
-    {lag} {0}
+    {lag} {1}
     {lapis} {1}
     {lavender} {1}
     {lead} {1}
@@ -204,7 +204,7 @@
     {rock} {0}
     {root} {0}
     {rose} {1}
-    {rubber} {0}
+    {rubber} {1}
     {ruby} {1}
     {saffron} {1}
     {sage} {1}
@@ -240,7 +240,7 @@
     {tangerine} {1}
     {taupe} {0}
     {teal} {1}
-    {tektite} {0}
+    {tektite} {1}
     {tensor} {1}
     {testicle} {0}
     {tin} {1}

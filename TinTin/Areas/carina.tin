@@ -1,28 +1,31 @@
 #class {bot} {open}
 
-#var {no_loop} {1}
-#var {no_home} {0}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
 
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 201;
+#var patrol[area] {Carina's Observatory};
 #var {patrol[path]} {n;w;e;e;n;n;e;stairs;s;w;e;n;stairs;w;w;n;{w;search rings;get key};s;s;w;n;out;e;e;s;s}
 
-#act {^=M= {A rude tourist|A tourist that looks confused|A tourist who forgot to shower|A wandering tourist|Carina the leading Astronomer|Cepheus the Stargazer|Observatory scientist|Observatory specialist|Observatory technician|Observatory Tour Guide}} {
-	#switch {"%1"} {
-		#case {"A rude tourist"}			{#var patroller[shouldKill] tourist};
-		#case {"A tourist that looks confused"}		{#var patroller[shouldKill] tourist};
-		#case {"A tourist who forgot to shower"}	{#var patroller[shouldKill] tourist};
-		#case {"A wandering tourist"}			{#var patroller[shouldKill] tourist};
-		#case {"Carina the leading Astronomer"}		{#var patroller[shouldKill] carina};
-		#case {"Cepheus the Stargazer"}			{#var patroller[shouldKill] cepheus};
-		#case {"Observatory scientist"}			{#var patroller[shouldKill] scientist};
-		#case {"Observatory specialist"}		{#var patroller[shouldKill] specialist};
-		#case {"Observatory technician"}		{#var patroller[shouldKill] technician};
-		#case {"Observatory Tour Guide"}		{#var patroller[shouldKill] guide}
-	};
-        _check_mob
-}
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{tourist}{tourist}
+	{Carina}{carina}
+	{Cepheus}{cepheus}
+	{scientist}{scientist}
+	{specialist}{specialist}
+	{technician}{technician}
+	{Guide}{guide}
+};
 
-#NOP human will also work for all mobs in this area
+/******************************************************************************
+	Additional scripting used for this area
 
+			...
+
+*******************************************************************************/
 #class {bot} {close}

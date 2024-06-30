@@ -44,13 +44,6 @@
 .registerEvent onExitedRoom onExitedRoomBase;
 .registerEvent onDebugLog onDebugLogBase;
 
-#event {CLASS DESTROYED bot}
-{
-	.unregisterEvent onEnteredRoom onEnteredRoomBase;
-	.unregisterEvent onExitedRoom onExitedRoomBase;
-	.unregisterEvent onDebugLog onDebugLogBase;
-};
-
 /************************************************************
 	Debug log
 ************************************************************/

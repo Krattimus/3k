@@ -1,0 +1,18 @@
+#class {bot} {open}
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 32427;
+#var patrol[area] {Bombfrak's Abbey};
+#var patrol[path] {n;n;e;s;n;n;e;d;w;e;s;s;w;e;e;w;s;s;w;e;e;w;s;s;w;e;e;w;s;s;w;e;e;w;s;s;w;e;e;w;s;e;w;n;n;n;n;n;n;n;n;n;n;n;u;w;s;s;w;s}
+
+#var patrol[shouldKillList] 
+{
+	{Worshipper}{worshipper}
+	{Bailey}{bailey}
+	{Anti-Technologist}{human}
+};
+
+#class {bot} {close}
+

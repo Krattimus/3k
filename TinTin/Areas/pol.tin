@@ -5,7 +5,13 @@
 *******************************************************************************/
 #var patrol[startingLocation] 6746;
 #var patrol[area] {Portal of Life};
-#var patrol[path] {n;n;n;nw;nw;n;se;se;n;nw;nw;ne;n;se;ne;s;sw;se;ne;s;sw;s;s;ne;n;se;ne;ne;ne;nw;nw;nw;n;nw;ne;se;s;se;se;n;nw;n;se;se;s;s;se;n;n;n;n;n;n;n;n;nw;s;s;s;sw;n;n;n;sw;s;s;sw;sw;nw;n;se;ne;nw;ne;nw;ne;ne;ne;nw;nw;nw;nw;nw;s;se;sw;se;sw;se;sw;s;s;nw;sw;n;ne;nw;nw;n;se;se;n;nw;ne;n;n;sw;s;sw;n;sw;sw;sw;sw;sw;sw;s;ne;s;se;n;n;ne;s;s;s;ne;n;n;se;s;se;sw;se;sw;nw;sw;nw;nw;nw;s;s;s;s;s;s;ne;se;n;nw;n;ne;ne;se;ne;se;sw;sw;nw;sw;se;se;sw;s;se;se;se;se;se;s;s}
+#var patrol[path] {n;n;n;nw;nw;n;se;se;n;nw;nw;ne;n;se;ne;s;sw;se;ne;s;sw;s;s;ne;n;se;ne;ne;ne;nw;nw;nw;n;nw;ne;se;s;se;se;n;nw;n;se;se;s;s;se;n;n;n;n;n;n;
+n;n;nw;s;s;s;sw;n;n;n;sw;s;s;sw;sw;nw;n;se;ne;nw;ne;nw;ne;ne;ne;nw;nw;nw;nw;nw;s;se;sw;se;sw;se;sw;s;s;nw;sw;n;ne;nw;nw;n;se;se;n;nw;ne;n;n;sw;s;sw;n;sw;sw;
+sw;sw;sw;sw;s;ne;s;se;n;n;ne;s;s;s;ne;n;n;se;s;se;sw;se;sw;nw;sw;nw;nw;nw;s;s;s;s;s;s;ne;se;n;nw;n;ne;ne;se;ne;se;sw;sw;nw;sw;se;se;sw;s;se;se;se;se;se;s;s;
+n;n;nw;nw;nw;nw;nw;nw;nw;sw;sw;sw;sw;n;n;nw;u;d;se;ne;u;d;sw;s;s;ne;ne;ne;n;n;n;n;n;n;n;n;nw;nw;nw;n;n;nw;u;d;se;ne;u;d;sw;s;s;se;se;se;
+ne;ne;ne;ne;ne;ne;ne;ne;n;n;n;n;n;nw;u;d;se;ne;u;d;sw;s;s;s;s;s;se;se;se;se;se;se;se;se;ne;ne;ne;n;n;nw;u;d;se;ne;u;d;sw;s;s;sw;sw;sw;
+s;s;s;s;s;s;s;s;se;se;se;n;n;nw;u;d;se;ne;u;d;sw;s;s;nw;nw;nw;nw;sw;sw;sw;sw;sw;sw;sw;s;s
+}
 
 /******************************************************************************
 	What to attack
@@ -22,9 +28,14 @@
 	{Faerie Lizard}{lizard}
     {Wild Stag}{stag}
     {Baby Dragon}{dragon}
+    {Guard}{guard}
+    {Guardian}{guardian}
+    {Warrior}{warrior}
     {Rabid Wolf}{wolf}
     {Ragged Peasant}{peasant}
     {Sylvan Elf}{elf}
+    {Demon}{demon}
+    {Templar}{templar}
     {Wyvern}{wyvern}
     {Queen's Elite Guardswoman}{guard}
     {Black Patrol Guard}{guard}

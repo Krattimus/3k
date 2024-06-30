@@ -1,17 +1,2 @@
-#class {bot} {open}
-
-#var {no_loop} {0}
-#var {no_home} {1}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
-
-#var {patrol[path]} {out;w;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;s;w;w;w;w;s;e;e;e;e;e;n;n;n;n;n;enter}
-
-#act {=M= {A|An} {Baby|Young|Mature|Old} Chinchilla} {
-	#var patroller[shouldKill] chinchilla;
-	_check_mob
-}
-
-#class {bot} {close}
-
-
+#read 3k/TinTin/Areas/chinchilla2.tin
+#var patrol[startingLocation] 20967;

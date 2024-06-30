@@ -3,7 +3,7 @@
 /******************************************************************************
 	Data to be used for this patrol
 *******************************************************************************/
-#var patrol[startingLocation] 26522;
+#var patrol[startingLocation] 5159;
 #var patrol[area] {Abyss};
 #var level 20;
 #if { "$level" == "" }
@@ -11,7 +11,13 @@
 	#var level 20;
 };
 
-#var patrol[path] {#$level d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
+#event {CLASS DESTROYED bot}
+{
+	.unregisterEvent onMobFound onMobFoundAbyss;
+};
+
+
+#var patrol[path] {d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
 d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
 d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;
 d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;d;

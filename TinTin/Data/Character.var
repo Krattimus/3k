@@ -3,7 +3,7 @@
 #VARIABLE {char}
 {
     {area} {Pinnacle}
-    {currentRoomID} {106}
+    {currentRoomID} {1}
     {guild} {Monk}
     {isResting} {0}
     {login} {look}

@@ -2,14 +2,149 @@
 #class {testbin} {kill}
 #class {testbin} {open}
 
+#var shop {};
 
-#alias .phoenix
+
+#alias .1
 {
-    hotd;
-    method phoenix;
-    #math {craneRound} {$currentRoundID+30};
-    .round $craneRound {method crane};
+        .goPatrolling westersea_slumpatrol;
 };
+
+#alias .2
+{
+        .goPatrolling pol;
+};
+#alias .3
+{
+        .goPatrolling gencorps;
+};
+#alias .4
+{
+        .goPatrolling tencho;
+};
+#alias .5
+{
+        .goPatrolling solchem;
+};
+#alias .6
+{
+        .goPatrolling bombfreaks_abbey;
+};
+#alias .7
+{
+        .goPatrolling carnegie;
+};
+#alias .8
+{
+        .goPatrolling carnegie2;
+};
+
+#alias .9
+{
+        .goPatrolling catacombs;
+};
+
+#alias .10
+{
+        .goPatrolling hippie_commune;
+};
+
+#alias .11
+{
+        .goPatrolling orc_village;
+};
+
+#alias .54
+{
+        .goPatrolling pol2;
+};
+
+
+#alias .50
+{
+        .goPatrolling pol3;
+};
+
+
+#alias .51
+{
+        .goPatrolling derthalas;
+};
+
+#alias .52
+{
+        .goPatrolling crystals1;
+};
+
+#alias .53
+{
+        .goPatrolling catacombs2;
+};
+
+
+#alias .help
+{
+        #draw Yellow scroll line 1 1 1 80;
+        #showme Common Patrols;
+        #draw Yellow scroll line 1 1 1 80;
+        #showme    .1    westersea_slumpatrol        22k;
+        #showme    .2    pol                         50k+;
+        #showme    .3    gencorps                    18k; 
+        #showme    .4    tencho                      ;
+        #showme    .5    solchem                     ;
+        #showme    .6    bombfreaks_abbey            35k;
+        #showme    .7    carnegie                    ;
+        #showme    .8    carnegie2                   ;
+        #showme    .9    catacombs                   ;
+        #showme    .10   hippie_commune              17k; 
+        #showme    .11   orc_village                 17k; 
+          
+        #draw Yellow scroll line 1 1 1 80;
+        #showme Slower patrols;
+        #draw Yellow scroll line 1 1 1 80;
+        #showme    .50   pol3;
+        #showme    .51   derthalas;
+        #showme    .52   crystals1;
+        #showme    .53   catacombs2;
+        #showme    .54   pol2;       
+        #draw Yellow scroll line 1 1 1 80;
+        #showme Shops;
+        #draw Yellow scroll line 1 1 1 80;
+        #showme    angelo       atlanta         blingdenwood    chaos;
+        #showme    cowville     crydee          darkmoore       detroit;
+        #showme    harfain      katin           luddite         mews;
+        #showme    nethack      sydermans       tencho          wayhaven;
+        #showme    xaxis;
+};
+
+#alias .all
+{
+        .shop %1;
+        .morgue;
+        .bank;
+};
+#alias .shop
+{
+        .stop;
+        #var shop {%1};
+        .go $shops[%1];
+        sell all;
+};
+
+#alias .morgue
+{
+        .go morgue;
+        sell coffin;
+        #20 {wrap};
+        sell coffin;
+};
+
+#alias .bank
+{
+        .go bank;
+        deposit all;
+};
+
 
 #action {You pull an %1 marble out of your butt.}
 {
@@ -35,19 +170,14 @@
         #class marblesvar write 3k/TinTin/Data/KnownMarbles.var;
 };
 
-#alias .shadow
-{
-	hotd;
-	method shadow;
-	#math {craneRound} {$currentRoundID+30};
-	.round $craneRound {method crane};
-};
-
 #alias .foundMarble 
 {
         #var marbles[%0] 1;
         #class marblesvar write 3k/TinTin/Data/KnownMarbles.var;
 };
+
+
+
 
 #alias .transmuteAll
 {
@@ -93,6 +223,28 @@
                 #script {python 3k/TinTin/Tools/aiImageGenerator.py "Create with a fantasy style of the following scene. $roomdesc. %0."};
                 #draw Yellow scroll line 1 1 1 80;
         };
+};
+
+#var capturedText {};
+
+.registerEvent onLookedAt onLookedAtTestBin;
+
+#alias {onLookedAtTestBin}
+{
+        #showme CAPTURED TEXT: $capturedText;
+};
+
+#alias {.lookAt}
+{
+        #send look at %0;
+        #var capturedText {};	
+        #read 3k/TinTin/Core/CaptureAll.tin;
+
+        #delay {end_capture} 
+        {
+                #CLASS {capture} {kill};
+                .triggerEvent onLookedAt;
+        } {3};
 };
 
 #alias {onLookedAt}

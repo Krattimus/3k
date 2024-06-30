@@ -36,6 +36,21 @@
 .registerEvent onNewCombatRound onNewCombatRoundMonk;
 
 
+#alias .shadow
+{
+	hotd;
+	method shadow;
+	#math {craneRound} {$currentRoundID+30};
+	.round $craneRound {method crane};
+};
+
+#alias .phoenix
+{
+    hotd;
+    method phoenix;
+    #math {craneRound} {$currentRoundID+30};
+    .round $craneRound {method crane};
+};
 
 #alias .round
 {

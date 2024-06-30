@@ -381,24 +381,15 @@
 *********************************************************/
 #alias {.startPatrol}
 {
-	#NOP "$patrolArea" == "$patrol[area]";
-	#if { "$patrol[startingLocation]" == "$patrol[startedAt]" }
-	{
-		#echo {<202> Patrol Started <088>};
+	#echo {<202> Patrol Started <088>};
 
-		.triggerEvent onControllerStarted {$patroller[controllerID]};
-		#var deadManCount 0;
-		#var patroller[canWalk] 0;
-		#var patroller[attacking] 0;
-		#var patroller[isPatrolling] 1;
-		#var currentController patrol;
-		glance;
-	};
-	#else
-	{
-		#echo {<202> We are not in the right area <088>};
-		.triggerEvent onControllerStopped {$patroller[controllerID]};
-	}
+	.triggerEvent onControllerStarted {$patroller[controllerID]};
+	#var deadManCount 0;
+	#var patroller[canWalk] 0;
+	#var patroller[attacking] 0;
+	#var patroller[isPatrolling] 1;
+	#var currentController patrol;
+	glance;
 };
 
 /*********************************************************

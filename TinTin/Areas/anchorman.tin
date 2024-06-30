@@ -1,15 +1,33 @@
 #class {bot} {open}
 
-#var {no_loop} {1}
-#var {no_home} {0}
-#var {hardmode} {0}
-#var {settings[shouldVacuum]} {1}
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 4206;
+#var patrol[area] {Anchorman};
+#var patrol[path] {w;w;w;nw;ne;e;e;e;se;nw;n;e;e;out;w;w;w;w;w;nw;nw;n;e;s;se;e;e;e;e;e;ne;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;s;sw;sw;ne;ne;n;w;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;n;ne;sw;w;w;w;w;w;w;w;nw;se;s;s;s;s;s;s;se;e;s;s;sw;se;e;e;e;}
 
-#var {patrol[path]} {ne;sw;n;n;w;e;n;e;w;n;enter;e;u;d;se;nw;e;w;w;n;w;e;n;s;s;s;s;s;s;s}
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{Brick}{human}
+	{Wes}{human}
+	{Frank}{human}
+	{Arturo}{human}
+	{Brian}{human}
+	{Harken}{human}
+	{Champ}{human}
+	{Garth}{human}
+	{Veronica}{human}
+	{Ron}{human}
+};
 
-#act {^=M= {Brick Tamland|Wes Mantooth|Frank Vitchard|Arturo Mendes|Brian Fantana|Ed Harken|Champ Kind|Garth Holladay|Veronica Corningstone|Ron Burgundy}} {
-	#var patroller[shouldKill] human;
-	_check_mob
-}
+/******************************************************************************
+	Additional scripting used for this area
 
+			...
+
+*******************************************************************************/
 #class {bot} {close}

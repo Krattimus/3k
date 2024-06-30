@@ -316,14 +316,14 @@
 
 #function listMax
 {
-        #var max 0;
-        #var list ${%1};
+	#var max 0;
+	#var list ${%1};
 
-        #loop &list[] 1 index
-        {
-                #if { $list[+$index] > $max }
-                {
-                        #var max $list[+$index];
+	#loop &list[] 1 index
+	{
+			#if { $list[+$index] > $max }
+			{
+					#var max $list[+$index];
                 };
         };
 
