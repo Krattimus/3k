@@ -688,12 +688,12 @@
             {36} {Vomit-splattered Zombie}
             {37} {Limping Zombie}
             {38} {Ravaged Zombie}
-            {39} {Severely Burnt Zombie}
-            {40} {Aegis Soldier}
-            {41} {Charred Zombie}
-            {42} {Bullet-ridden Zombie}
-            {43} {Massive Zombie}
-            {44} {Shuffling Zombie}
+            {39} {Aegis Soldier}
+            {40} {Charred Zombie}
+            {41} {Bullet-ridden Zombie}
+            {42} {Shuffling Zombie}
+            {43} {Severely Burnt Zombie}
+            {44} {Massive Zombie}
         }
         {Ratings} 
         {
@@ -895,29 +895,29 @@
         }
         {Mobs} 
         {
-            {1} {Sectoid}
-            {2} {Surgeon}
-            {3} {Tendril of Energy}
-            {4} {Asoua Aspian}
-            {5} {Asoua}
-            {6} {Michael Aspian}
-            {7} {Mike Aspian}
-            {8} {ian}
-            {9} {Despian}
-            {10} {Ragnok Aspian}
-            {11} {Ragnok}
-            {12} {Varant Aspian}
-            {13} {Varant}
-            {14} {A Floater}
-            {15} {Floater}
-            {16} {oid Leader}
-            {17} {Sectoid Leader}
-            {18} {A Muton Man}
-            {19} {Muton}
-            {20} {Edro Aspian}
-            {21} {Edro}
-            {22} {A Sectoid}
-            {23} {A Despian}
+            {1} {Surgeon}
+            {2} {Tendril of Energy}
+            {3} {Asoua Aspian}
+            {4} {Asoua}
+            {5} {Michael Aspian}
+            {6} {ian}
+            {7} {Ragnok Aspian}
+            {8} {Ragnok}
+            {9} {Varant Aspian}
+            {10} {Varant}
+            {11} {A Floater}
+            {12} {oid Leader}
+            {13} {Sectoid Leader}
+            {14} {A Muton Man}
+            {15} {Muton}
+            {16} {Edro Aspian}
+            {17} {Edro}
+            {18} {A Sectoid}
+            {19} {A Despian}
+            {20} {Floater}
+            {21} {Mike Aspian}
+            {22} {Despian}
+            {23} {Sectoid}
         }
         {Ratings} 
         {
@@ -1303,12 +1303,12 @@
             {11} {Jellybean}
             {12} {Ice Cream Sandwich}
             {13} {Honeycomb}
-            {14} {Gingerbread}
-            {15} {Froyo}
-            {16} {Eclair}
-            {17} {Donut}
-            {18} {Cupcake}
-            {19} {Apple Fanboy}
+            {14} {Eclair}
+            {15} {Donut}
+            {16} {Cupcake}
+            {17} {Apple Fanboy}
+            {18} {Gingerbread}
+            {19} {Froyo}
         }
         {Ratings} 
         {
@@ -1374,6 +1374,8 @@
             {25} {A tufted titmouse}
             {26} {Town Peasant}
             {27} {Willow the gnome}
+            {28} {Ninja Warrior}
+            {29} {A Vampire}
         }
         {Ratings} 
         {
@@ -1799,24 +1801,24 @@
             {21} {Banshee}
             {22} {Goblin}
             {23} {A stone golem}
-            {24} {Golem}
-            {25} {An archer}
-            {26} {A phoenix}
-            {27} {Phoenix}
-            {28} {Sorceress}
-            {29} {A unicorn}
-            {30} {A War Correspondent}
-            {31} {Vilgan}
-            {32} {Troll}
-            {33} {Wizard}
-            {34} {A goblin}
-            {35} {A knight}
-            {36} {Kratjiit's storm servant Mycroft}
-            {37} {Archer}
-            {38} {An Elemental}
-            {39} {Knight}
-            {40} {Unicorn}
-            {41} {Kratjiit's dust devil Mycroft}
+            {24} {An archer}
+            {25} {A phoenix}
+            {26} {Phoenix}
+            {27} {Sorceress}
+            {28} {A unicorn}
+            {29} {A War Correspondent}
+            {30} {Vilgan}
+            {31} {Troll}
+            {32} {Wizard}
+            {33} {A goblin}
+            {34} {A knight}
+            {35} {Kratjiit's storm servant Mycroft}
+            {36} {Archer}
+            {37} {An Elemental}
+            {38} {Knight}
+            {39} {Unicorn}
+            {40} {Kratjiit's dust devil Mycroft}
+            {41} {Golem}
         }
         {Ratings} 
         {
@@ -2080,81 +2082,82 @@
         {
             {1} {Earl}
             {2} {Drone}
-            {3} {A Huge F}
-            {4} {An F}
-            {5} {A Skinny F}
-            {6} {A Young F}
-            {7} {The Green Lightning Gang Leader}
-            {8} {Member}
-            {9} {Cowboy}
-            {10} {A Channel 17 news reporter}
-            {11} {A Channel 32 news reporter}
-            {12} {Death, clad in black}
-            {13} {Death}
-            {14} {A Typical Fat Driver}
-            {15} {Ares Roadster}
-            {16} {Truck Driver}
-            {17} {A Five-year-old Delinquent}
-            {18} {Worker}
-            {19} {A common street thug}
-            {20} {A huge F.T.S! gang member}
-            {21} {A newspaper vendor}
-            {22} {Executive}
-            {23} {A Typical Commuter}
-            {24} {Reporter}
-            {25} {Homeless Woman}
-            {26} {Homeless Man}
-            {27} {A Channel 1 news reporter}
-            {28} {A Bored Security Guard}
-            {29} {Barney Kitias}
-            {30} {Enforcer}
-            {31} {A Channel 29 news reporter}
-            {32} {Mack Truck}
-            {33} {Politician}
-            {34} {Mr. Johnson}
-            {35} {Amos the barkeep}
-            {36} {A Green Lightning gang member}
-            {37} {A low-level corporate executive}
-            {38} {A city worker}
-            {39} {Toyota-chrysler Jackrabbit 2050}
-            {40} {A homeless woman}
-            {41} {A 4th Reich security guard}
-            {42} {Plymouth Duster}
-            {43} {A Rich Bastard Driver}
-            {44} {Ares Roadster, trying to kill you}
-            {45} {Giant Mack Truck}
-            {46} {Mitsubishi Nightliner}
-            {47} {Bmw Poleis}
-            {48} {A Typical Male Driver}
-            {49} {The CyberPope}
-            {50} {Pope}
-            {51} {Church Police}
-            {52} {ch police}
-            {53} {A church police}
-            {54} {A cyberpriest}
-            {55} {An FCCCP Bible-beater}
-            {56} {A homeless vagrant}
-            {57} {A church usher}
-            {58} {A homeless man}
-            {59} {Thug}
-            {60} {Volkswagon Emperor}
-            {61} {Aztech Uno}
-            {62} {A typical teenage driver}
-            {63} {A young F.T.S! gang member}
-            {64} {A Typical Female Driver}
-            {65} {Porsche 944 Turbo}
-            {66} {A Volkswagon Emperor}
-            {67} {A 1973 Plymouth Duster, back from the dead}
-            {68} {A vile scum of a politician}
-            {69} {An Aztech Uno}
-            {70} {An Atlanta Metro police officer}
-            {71} {A BMW Poleis}
-            {72} {A Huge Security Guard}
-            {73} {Blade}
-            {74} {Huge Mack Truck}
-            {75} {Blade the apathetic}
-            {76} {Clan MacCleod Haggis the store-owner}
-            {77} {Baby Dragon}
+            {3} {The Green Lightning Gang Leader}
+            {4} {Cowboy}
+            {5} {A Channel 17 news reporter}
+            {6} {A Channel 32 news reporter}
+            {7} {Death, clad in black}
+            {8} {Death}
+            {9} {A Typical Fat Driver}
+            {10} {Ares Roadster}
+            {11} {Truck Driver}
+            {12} {Worker}
+            {13} {A common street thug}
+            {14} {A huge F.T.S! gang member}
+            {15} {A newspaper vendor}
+            {16} {Executive}
+            {17} {A Typical Commuter}
+            {18} {Reporter}
+            {19} {Homeless Woman}
+            {20} {Homeless Man}
+            {21} {A Channel 1 news reporter}
+            {22} {A Bored Security Guard}
+            {23} {Barney Kitias}
+            {24} {Enforcer}
+            {25} {A Channel 29 news reporter}
+            {26} {Mack Truck}
+            {27} {Politician}
+            {28} {Mr. Johnson}
+            {29} {Amos the barkeep}
+            {30} {A Green Lightning gang member}
+            {31} {A low-level corporate executive}
+            {32} {A city worker}
+            {33} {Toyota-chrysler Jackrabbit 2050}
+            {34} {A homeless woman}
+            {35} {A 4th Reich security guard}
+            {36} {Plymouth Duster}
+            {37} {A Rich Bastard Driver}
+            {38} {Ares Roadster, trying to kill you}
+            {39} {Giant Mack Truck}
+            {40} {Mitsubishi Nightliner}
+            {41} {Bmw Poleis}
+            {42} {A Typical Male Driver}
+            {43} {The CyberPope}
+            {44} {Pope}
+            {45} {Church Police}
+            {46} {ch police}
+            {47} {A church police}
+            {48} {A cyberpriest}
+            {49} {An FCCCP Bible-beater}
+            {50} {A homeless vagrant}
+            {51} {A church usher}
+            {52} {A homeless man}
+            {53} {Thug}
+            {54} {A typical teenage driver}
+            {55} {A young F.T.S! gang member}
+            {56} {A Typical Female Driver}
+            {57} {Porsche 944 Turbo}
+            {58} {A Volkswagon Emperor}
+            {59} {A 1973 Plymouth Duster, back from the dead}
+            {60} {A vile scum of a politician}
+            {61} {An Aztech Uno}
+            {62} {An Atlanta Metro police officer}
+            {63} {A BMW Poleis}
+            {64} {A Huge Security Guard}
+            {65} {Huge Mack Truck}
+            {66} {Blade the apathetic}
+            {67} {Clan MacCleod Haggis the store-owner}
+            {68} {Baby Dragon}
+            {69} {Volkswagon Emperor}
+            {70} {Aztech Uno}
+            {71} {A Young F}
+            {72} {Member}
+            {73} {A Skinny F}
+            {74} {Blade}
+            {75} {A Five-year-old Delinquent}
+            {76} {Officer}
+            {77} {An F}
+            {78} {A Huge F}
         }
         {Ratings} 
         {
@@ -3346,12 +3349,14 @@
             {5} {A Worshipper}
             {6} {An Anti-Technologist Guard}
             {7} {echnologist Elite Guard}
-            {8} {Elite Guard}
-            {9} {Police Chief Bailey}
-            {10} {Police Chief}
-            {11} {Robert, High Priest of the Bomb Worshippers}
-            {12} {Radiation God}
-            {13} {Guard}
+            {8} {Police Chief Bailey}
+            {9} {Police Chief}
+            {10} {Robert, High Priest of the Bomb Worshippers}
+            {11} {Radiation God}
+            {12} {Guard}
+            {13} {Elite Guard}
+            {14} {Wasp}
+            {15} {Worshipper}
         }
         {Ratings} 
         {
@@ -3837,12 +3842,12 @@
             {10} {A wimpy kid}
             {11} {An airborne model helicopter}
             {12} {The Shopkeeper}
-            {13} {A New Yorker}
-            {14} {An Usher}
-            {15} {A Sleeping Audience Member}
+            {13} {A Sleeping Audience Member}
+            {14} {An Audience Member}
+            {15} {A Polite Audience Member}
             {16} {Angry Audience Member}
-            {17} {An Audience Member}
-            {18} {A Polite Audience Member}
+            {17} {An Usher}
+            {18} {A New Yorker}
         }
         {Ratings} 
         {
@@ -3979,48 +3984,50 @@
         {
             {1} {The Skeleton Chieftain}
             {2} {A Wandering Skeleton}
-            {3} {A Huge Zombie}
-            {4} {A stewbird}
-            {5} {A buzzard}
-            {6} {A vulture}
-            {7} {Taki Dragonslayer}
-            {8} {Wayhaven City Guard}
-            {9} {Wayhaven City Guard Sergeant}
-            {10} {Citizen}
-            {11} {Merchant}
-            {12} {A medium brown hare}
-            {13} {Elf Traveller}
-            {14} {Zarinth, Mage of the Flaming Palm}
-            {15} {Gemina, rogue of the black-hand}
-            {16} {Lord Marshinal, High priest of Morike}
-            {17} {Sir Prilmas, Knight of the Obsidian Order}
-            {18} {A large timber wolf}
-            {19} {Jordance the Mighty}
-            {20} {Human Traveller}
-            {21} {e Rat}
-            {22} {An old Druid}
-            {23} {Yellow Musk Zombie}
-            {24} {A rotting corpse}
-            {25} {An ancient skeleton}
-            {26} {A huge rotting corpse}
-            {27} {A statue of a dwarf}
-            {28} {A Ghoul Militia}
-            {29} {A vampire soldier}
-            {30} {ire}
-            {31} {A statue crafted of wood}
-            {32} {A Vampire}
-            {33} {Dwarven Statue}
-            {34} {A Ghoul}
-            {35} {Ghoul Militia}
-            {36} {Wood Golem}
-            {37} {Stone Golem}
-            {38} {Crystal Golem}
-            {39} {Iron Golem}
-            {40} {An Evil Lich}
-            {41} {A large Rat}
-            {42} {A Guide of Catacombs}
-            {43} {A Giant Rat}
-            {44} {A Goblin Warrior}
+            {3} {A stewbird}
+            {4} {A buzzard}
+            {5} {A vulture}
+            {6} {Taki Dragonslayer}
+            {7} {Wayhaven City Guard}
+            {8} {Wayhaven City Guard Sergeant}
+            {9} {Citizen}
+            {10} {Merchant}
+            {11} {A medium brown hare}
+            {12} {Elf Traveller}
+            {13} {Zarinth, Mage of the Flaming Palm}
+            {14} {Gemina, rogue of the black-hand}
+            {15} {Lord Marshinal, High priest of Morike}
+            {16} {Sir Prilmas, Knight of the Obsidian Order}
+            {17} {A large timber wolf}
+            {18} {Jordance the Mighty}
+            {19} {Human Traveller}
+            {20} {e Rat}
+            {21} {An old Druid}
+            {22} {Yellow Musk Zombie}
+            {23} {A rotting corpse}
+            {24} {An ancient skeleton}
+            {25} {A huge rotting corpse}
+            {26} {A statue of a dwarf}
+            {27} {A Ghoul Militia}
+            {28} {A vampire soldier}
+            {29} {ire}
+            {30} {A statue crafted of wood}
+            {31} {Dwarven Statue}
+            {32} {A Ghoul}
+            {33} {Ghoul Militia}
+            {34} {Wood Golem}
+            {35} {Stone Golem}
+            {36} {Crystal Golem}
+            {37} {Iron Golem}
+            {38} {An Evil Lich}
+            {39} {A large Rat}
+            {40} {A Guide of Catacombs}
+            {41} {A Giant Rat}
+            {42} {A Goblin Warrior}
+            {43} {A Vampire}
+            {44} {A Huge Zombie}
+            {45} {Sabretoothed Tiger}
+            {46} {Orc}
         }
         {Ratings} 
         {
@@ -4084,22 +4091,23 @@
             {17} {A statue of a dwarf}
             {18} {A Ghoul Militia}
             {19} {l}
-            {20} {Ghoul Militia}
-            {21} {A statue crafted of wood}
-            {22} {A featureless stone statue}
-            {23} {A massive creature of iron}
-            {24} {A vampire soldier}
-            {25} {ire}
-            {26} {Dwarven Statue}
-            {27} {Wood Golem}
-            {28} {Stone Golem}
-            {29} {Crystal Golem}
-            {30} {Iron Golem}
-            {31} {An Evil Lich}
+            {20} {A statue crafted of wood}
+            {21} {A featureless stone statue}
+            {22} {A massive creature of iron}
+            {23} {A vampire soldier}
+            {24} {ire}
+            {25} {Dwarven Statue}
+            {26} {Wood Golem}
+            {27} {Stone Golem}
+            {28} {Crystal Golem}
+            {29} {Iron Golem}
+            {30} {An Evil Lich}
+            {31} {Ghoul Militia}
         }
         {Ratings} 
         {
             {1} {4}
+            {2} {24}
         }
         {Wizard} {Nanook}
     }
@@ -4495,6 +4503,9 @@
             {108} {Hawkeyes's Jugger Support Mech}
             {109} {A Burly Guard}
             {110} {A foul-smelling Armadillo}
+            {111} {A Vampire}
+            {112} {A Rabbit}
+            {113} {Snake}
         }
         {Ratings} 
         {
@@ -4638,6 +4649,26 @@
         {
             {1} {A small snow leopard}
             {2} {Parking garage guard}
+            {3} {Guard}
+            {4} {Teen}
+            {5} {Hoodlum}
+            {6} {Chick}
+            {7} {Car}
+            {8} {Shopper}
+            {9} {Liberal}
+            {10} {Lady}
+            {11} {Cashier}
+            {12} {Cop}
+            {13} {Speaker}
+            {14} {Rack}
+            {15} {Attendant}
+            {16} {Joe}
+            {17} {Salesman}
+            {18} {Bum}
+            {19} {Cripple}
+            {20} {Frederique}
+            {21} {Girl}
+            {22} {Boy}
         }
         {Ratings} 
         {
@@ -5915,6 +5946,8 @@
             {18} {A boy}
             {19} {Crydee Guard}
             {20} {A prisoner}
+            {21} {A Wandering Skeleton}
+            {22} {A Vampire}
         }
         {Ratings} 
         {
@@ -6475,6 +6508,8 @@
             {90} {A madman}
             {91} {A peacekeeper}
             {92} {Barker, Mr. Barker to you}
+            {93} {Stag}
+            {94} {Wyvern}
         }
         {Ratings} 
         {
@@ -7684,27 +7719,29 @@
             {42} {A small black spider gang member}
             {43} {Metallaskull Member}
             {44} {E}
-            {45} {Faerie Lizard}
-            {46} {Baby Dragon}
-            {47} {Wild Stag}
-            {48} {Shadow Guard}
-            {49} {Nuke Dealer}
-            {50} {Metro Cop}
-            {51} {Homeless Man}
-            {52} {Baglady}
-            {53} {A leggy Metallaskull gang member}
-            {54} {O.C.P. Riot Officer}
-            {55} {Punk}
-            {56} {A huge Metallaskull gang member}
-            {57} {A stocky Metallaskull gang member}
-            {58} {E.D. 260}
-            {59} {E.D. 1000}
-            {60} {Crysler C.O.F. turbo}
-            {61} {E.D. 280}
-            {62} {Nuke Addict}
-            {63} {Teasel}
-            {64} {Ninja Warrior}
-            {65} {Yakuza Thug}
+            {45} {Baby Dragon}
+            {46} {Wild Stag}
+            {47} {Shadow Guard}
+            {48} {Nuke Dealer}
+            {49} {Metro Cop}
+            {50} {Homeless Man}
+            {51} {Baglady}
+            {52} {A leggy Metallaskull gang member}
+            {53} {O.C.P. Riot Officer}
+            {54} {Punk}
+            {55} {A huge Metallaskull gang member}
+            {56} {A stocky Metallaskull gang member}
+            {57} {E.D. 260}
+            {58} {E.D. 1000}
+            {59} {Crysler C.O.F. turbo}
+            {60} {E.D. 280}
+            {61} {Nuke Addict}
+            {62} {Teasel}
+            {63} {Ninja Warrior}
+            {64} {Yakuza Thug}
+            {65} {Danny Inosato}
+            {66} {Black Patrol Guard}
+            {67} {Faerie Lizard}
         }
         {Ratings} 
         {
@@ -9132,15 +9169,23 @@
             {12} {A red-tailed hawk}
             {13} {A large porcupine}
             {14} {A big ant}
-            {15} {Ant}
-            {16} {A drow elf guard}
-            {17} {Drow Guard}
-            {18} {Sulina the drow elf temptress}
-            {19} {A drow elf elite guard}
-            {20} {Drow Elite Guard}
-            {21} {A large grey wolf}
-            {22} {Jipona the drow elf}
-            {23} {Wolf}
+            {15} {A drow elf guard}
+            {16} {Sulina the drow elf temptress}
+            {17} {A drow elf elite guard}
+            {18} {A large grey wolf}
+            {19} {Jipona the drow elf}
+            {20} {Trahnon}
+            {21} {Wartniiflium}
+            {22} {Vagramon}
+            {23} {Durhal}
+            {24} {Telina}
+            {25} {Sulina}
+            {26} {Wolf}
+            {27} {Jipona}
+            {28} {Drow Guard}
+            {29} {Tilasmana}
+            {30} {Ant}
+            {31} {Drow Elite Guard}
         }
         {Ratings} 
         {
@@ -9180,7 +9225,7 @@
             {6} {Ema Scientist}
             {7} {Ema Admin}
             {8} {Ema Director}
-            {9} {EMA Worker}
+            {9} {Ema Worker}
         }
         {Ratings} 
         {
@@ -9388,20 +9433,20 @@
         }
         {Mobs} 
         {
-            {1} {Elven Guard}
-            {2} {Kerridis, an Elven Warrior}
-            {3} {Aris, an Elven Warrior}
-            {4} {Dorilian, an Elven Warrior}
-            {5} {Yriadne, an Elven Warrior}
-            {6} {Celyndil, an Elven Warrior}
-            {7} {A large porcupine}
-            {8} {Black Wolf}
-            {9} {Kerridis}
-            {10} {Aris}
-            {11} {Dorilian}
-            {12} {Yriadne}
-            {13} {Celyndil}
-            {14} {Eremon}
+            {1} {Kerridis, an Elven Warrior}
+            {2} {Aris, an Elven Warrior}
+            {3} {Dorilian, an Elven Warrior}
+            {4} {Yriadne, an Elven Warrior}
+            {5} {Celyndil, an Elven Warrior}
+            {6} {A large porcupine}
+            {7} {Black Wolf}
+            {8} {Kerridis}
+            {9} {Aris}
+            {10} {Dorilian}
+            {11} {Yriadne}
+            {12} {Celyndil}
+            {13} {Eremon}
+            {14} {Elven Guard}
         }
         {Ratings} 
         {
@@ -9543,37 +9588,59 @@
             {11} {Inferno}
             {12} {Night Hag}
             {13} {Spirit Bear}
-            {14} {Mary}
-            {15} {Johny}
-            {16} {Karrie}
-            {17} {Starla}
-            {18} {Treant}
-            {19} {Ayla}
-            {20} {Rex}
-            {21} {Aegis Invanis, the Centaur Warrior}
-            {22} {Aegis}
-            {23} {Silverwind the Holy Pegasus}
-            {24} {Silverwind}
-            {25} {Tashara Ovolis, the Centaur Herbalist}
-            {26} {Starla Vigil, the pretty Elven Child}
-            {27} {Johny Linel, Apprentice Centaur Warrior}
-            {28} {Karrie Linel, the Snobby Centaur}
-            {29} {Mary Foster, the Rich Kid}
-            {30} {Vesta Cass, the Centaur Guard}
-            {31} {Crage Unius, Ex-Centaur Captain}
-            {32} {Devin Marack, the Elven Scholar}
-            {33} {Sasha Sarue, the Half-Elven Swordswoman}
-            {34} {Ayla Muru, the Centaur Guardian}
-            {35} {Rex Massel, the Centaur Guardian}
-            {36} {Bern Zefess, the Elven Warrior}
-            {37} {Hallas Linel, the Centaur Monk}
-            {38} {Luna Maray, the Centaur Elder Warrior-Mage}
-            {39} {Remy Anvastea, the Centaur Guard}
-            {40} {Gev Cass, the Centaur Guard}
-            {41} {Kimber Maxim, Druidess of the fifth circle}
-            {42} {Estaven Kevis, the Centaur Guard}
-            {43} {Estaven}
-            {44} {Ravel Ironmane the Centaur Chieftain}
+            {14} {Aegis Invanis, the Centaur Warrior}
+            {15} {Silverwind the Holy Pegasus}
+            {16} {Tashara Ovolis, the Centaur Herbalist}
+            {17} {Starla Vigil, the pretty Elven Child}
+            {18} {Johny Linel, Apprentice Centaur Warrior}
+            {19} {Karrie Linel, the Snobby Centaur}
+            {20} {Mary Foster, the Rich Kid}
+            {21} {Vesta Cass, the Centaur Guard}
+            {22} {Crage Unius, Ex-Centaur Captain}
+            {23} {Devin Marack, the Elven Scholar}
+            {24} {Sasha Sarue, the Half-Elven Swordswoman}
+            {25} {Ayla Muru, the Centaur Guardian}
+            {26} {Rex Massel, the Centaur Guardian}
+            {27} {Bern Zefess, the Elven Warrior}
+            {28} {Hallas Linel, the Centaur Monk}
+            {29} {Luna Maray, the Centaur Elder Warrior-Mage}
+            {30} {Remy Anvastea, the Centaur Guard}
+            {31} {Gev Cass, the Centaur Guard}
+            {32} {Kimber Maxim, Druidess of the fifth circle}
+            {33} {Estaven Kevis, the Centaur Guard}
+            {34} {Ravel Ironmane the Centaur Chieftain}
+            {35} {Remy}
+            {36} {Gev}
+            {37} {Kimber}
+            {38} {Hallas}
+            {39} {Estaven}
+            {40} {Laurel}
+            {41} {Zandra}
+            {42} {Unis}
+            {43} {Ridge}
+            {44} {Nevis}
+            {45} {Grevis}
+            {46} {Farra}
+            {47} {Luna}
+            {48} {Vesta}
+            {49} {Crage}
+            {50} {Devin}
+            {51} {Starla}
+            {52} {Johny}
+            {53} {Mary}
+            {54} {Karrie}
+            {55} {Ovaleea}
+            {56} {Twilight}
+            {57} {Mandol}
+            {58} {Marel}
+            {59} {Aegis}
+            {60} {Silverwind}
+            {61} {Treant}
+            {62} {Davos}
+            {63} {Ayla}
+            {64} {Rex}
+            {65} {Sasha}
+            {66} {Bern}
         }
         {Ratings} 
         {
@@ -10232,20 +10299,20 @@
             {127} {Corristo the Wandering Traveler}
             {128} {Larkin the Guard}
             {129} {Elven Traveller}
-            {130} {Orc}
-            {131} {Ghalein, Guardian of the Tower Gates}
-            {132} {A poplar}
-            {133} {A red-tailed hawk}
-            {134} {Human Traveller}
-            {135} {A black and white skunk}
-            {136} {A red-breasted robin}
-            {137} {Troll}
-            {138} {A young monk}
-            {139} {A red-crested woodpecker}
-            {140} {A large brown elk}
-            {141} {Vulture}
-            {142} {Merchant}
-            {143} {A small red fox}
+            {130} {Ghalein, Guardian of the Tower Gates}
+            {131} {A poplar}
+            {132} {A red-tailed hawk}
+            {133} {Human Traveller}
+            {134} {A black and white skunk}
+            {135} {A red-breasted robin}
+            {136} {Troll}
+            {137} {A young monk}
+            {138} {A red-crested woodpecker}
+            {139} {A large brown elk}
+            {140} {Vulture}
+            {141} {Merchant}
+            {142} {A small red fox}
+            {143} {Orc}
         }
     }
     {Faunist Guild} 
@@ -11549,8 +11616,8 @@
             {6} {Burn}
             {7} {M516 Patroller}
             {8} {Compound Guard}
-            {9} {Strike Guard}
-            {10} {Gencorps Officer}
+            {9} {Gencorps Officer}
+            {10} {Strike Guard}
         }
         {Ratings} 
         {
@@ -12244,6 +12311,7 @@
             {12} {Faerie Lizard}
             {13} {Ragged Peasant}
             {14} {A small brown hare}
+            {15} {Snake}
         }
         {Ratings} 
         {
@@ -12533,6 +12601,12 @@
             {51} {A Young Woman}
             {52} {A Townsperson}
             {53} {Malvard, the Trader}
+            {54} {Wyvern}
+            {55} {Mischievous Ruffian}
+            {56} {Tough Looking Brigand}
+            {57} {Sally}
+            {58} {Gencorps Officer}
+            {59} {Samurai Guard}
         }
         {Ratings} 
         {
@@ -13032,6 +13106,7 @@
             {32} {A chicken}
             {33} {Grampa the Old Hippie}
             {34} {Windfare the Hippie Poet}
+            {35} {Ferrah}
         }
         {Ratings} 
         {
@@ -14194,6 +14269,12 @@
             {6} {A Mischievous Imp}
             {7} {Ghoul}
             {8} {A ghoul}
+            {9} {A Vampire}
+            {10} {Baby Dragon}
+            {11} {A Vampire Soldier}
+            {12} {Strike Guard}
+            {13} {Yakuza Guard}
+            {14} {Gencorps Officer}
         }
         {Ratings} 
         {
@@ -14508,16 +14589,28 @@
             {1} {Church Police}
             {2} {A Typical Female Driver}
             {3} {Volkswagon Emperor}
-            {4} {Aztech Uno}
-            {5} {A Huge F}
-            {6} {Thug}
-            {7} {Truck Driver}
-            {8} {Huge Mack Truck}
-            {9} {Mitsubishi Nightliner}
-            {10} {An Atlanta Metro police officer}
-            {11} {Ares Roadster, trying to kill you}
-            {12} {A BMW Poleis}
-            {13} {A Huge Security Guard}
+            {4} {A Huge F}
+            {5} {Thug}
+            {6} {An Atlanta Metro police officer}
+            {7} {Ares Roadster, trying to kill you}
+            {8} {A BMW Poleis}
+            {9} {A Huge Security Guard}
+            {10} {A Five-year-old Delinquent}
+            {11} {Truck Driver}
+            {12} {Mitsubishi Nightliner}
+            {13} {Huge Mack Truck}
+            {14} {Bmw Poleis}
+            {15} {Toyota-chrysler Jackrabbit 2050}
+            {16} {A Typical Teenage Driver}
+            {17} {Politician}
+            {18} {Aztech Uno}
+            {19} {A Rich Bastard Driver}
+            {20} {Porsche 944 Turbo}
+            {21} {Ares Roadster}
+            {22} {A Typical Fat Driver}
+            {23} {Plymouth Duster}
+            {24} {A Typical Commuter}
+            {25} {A Typical Male Driver}
         }
         {Ratings} 
         {
@@ -14560,25 +14653,27 @@
         {Mobs} 
         {
             {1} {Gargoyle}
-            {2} {Aviarol}
-            {3} {Djinn}
-            {4} {Effriit}
-            {5} {A Priestess of Kourlyn}
-            {6} {e}
-            {7} {A Shade}
-            {8} {ow}
-            {9} {wraith}
-            {10} {A Mistwraith}
-            {11} {An Imp}
-            {12} {The Nameless One}
-            {13} {A Shadow}
-            {14} {The High Priestess of Kourlyn}
-            {15} {Shadow}
-            {16} {Shade}
-            {17} {Mistwraith}
-            {18} {High Priestess}
-            {19} {Nameless One}
-            {20} {Imp}
+            {2} {A Priestess of Kourlyn}
+            {3} {e}
+            {4} {A Shade}
+            {5} {ow}
+            {6} {wraith}
+            {7} {A Mistwraith}
+            {8} {An Imp}
+            {9} {The Nameless One}
+            {10} {A Shadow}
+            {11} {The High Priestess of Kourlyn}
+            {12} {Shadow}
+            {13} {Shade}
+            {14} {High Priestess}
+            {15} {Nameless One}
+            {16} {Vivaror}
+            {17} {Djinn}
+            {18} {Cohesard}
+            {19} {Effriit}
+            {20} {Aviarol}
+            {21} {Imp}
+            {22} {Mistwraith}
         }
         {Ratings} 
         {
@@ -15312,6 +15407,8 @@
             {2} {A sturdy blacksmith}
             {3} {A lazy weaver}
             {4} {A well armed guard}
+            {5} {Strike Guard}
+            {6} {A Vampire}
         }
         {Ratings} 
         {
@@ -15998,6 +16095,10 @@
         {Items} 
         {
             {1} {A gnarled club}
+        }
+        {Mobs} 
+        {
+            {1} {Marsh Goblin}
         }
         {Ratings} 
         {
@@ -17546,43 +17647,43 @@
             {4} {Ixitxachitl}
             {5} {Volt}
             {6} {d green Spinagon}
-            {7} {Spider}
-            {8} {Veteran adventurer}
-            {9} {Black panther hunting in the dark}
-            {10} {Dark jaguarundi hunting in the dark}
-            {11} {Green Abishai}
-            {12} {Jaguar}
-            {13} {Mottled green Spinagon}
-            {14} {Vulture}
-            {15} {Brown Spinagon}
-            {16} {Condor}
-            {17} {Dark spotted jaguar lays in wait}
-            {18} {Hairy Spider}
-            {19} {h}
-            {20} {Buzzard}
-            {21} {Banana Spider}
-            {22} {Gray Erinyes}
-            {23} {Black Spinagon}
-            {24} {u}
-            {25} {Blue Erinyes}
-            {26} {la}
-            {27} {Black Abishai}
-            {28} {Snake}
-            {29} {Red Abishai}
-            {30} {Fern}
-            {31} {A Grizzled Explorer}
-            {32} {Jaguarundi}
-            {33} {Abishai}
-            {34} {Erinyes}
-            {35} {Spinagon}
-            {36} {Hamatula}
-            {37} {Osyluth}
-            {38} {Barbazu}
-            {39} {Green Erinyes}
-            {40} {Red jaguarundi stalking the rubble}
-            {41} {A tropical fern}
-            {42} {Alhoon}
-            {43} {An Archaeologist}
+            {7} {Veteran adventurer}
+            {8} {Black panther hunting in the dark}
+            {9} {Dark jaguarundi hunting in the dark}
+            {10} {Green Abishai}
+            {11} {Mottled green Spinagon}
+            {12} {Vulture}
+            {13} {Brown Spinagon}
+            {14} {Condor}
+            {15} {Dark spotted jaguar lays in wait}
+            {16} {Hairy Spider}
+            {17} {h}
+            {18} {Buzzard}
+            {19} {Banana Spider}
+            {20} {Gray Erinyes}
+            {21} {Black Spinagon}
+            {22} {u}
+            {23} {Blue Erinyes}
+            {24} {la}
+            {25} {Black Abishai}
+            {26} {Snake}
+            {27} {Red Abishai}
+            {28} {Fern}
+            {29} {A Grizzled Explorer}
+            {30} {Jaguarundi}
+            {31} {Spinagon}
+            {32} {Hamatula}
+            {33} {Osyluth}
+            {34} {Green Erinyes}
+            {35} {Red jaguarundi stalking the rubble}
+            {36} {A tropical fern}
+            {37} {Alhoon}
+            {38} {An Archaeologist}
+            {39} {Spider}
+            {40} {Barbazu}
+            {41} {Erinyes}
+            {42} {Abishai}
+            {43} {Jaguar}
         }
         {Ratings} 
         {
@@ -18933,6 +19034,9 @@
             {55} {Small Dog}
             {56} {Giant Bat}
             {57} {Succubus}
+            {58} {A Vampire}
+            {59} {Baby Dragon}
+            {60} {A Ghoul}
         }
         {Ratings} 
         {
@@ -19697,6 +19801,7 @@
             {48} {Parsely the Skeletal Cow}
             {49} {Moss the Ghoulish Cow}
             {50} {Bromide the Mad-Scientist Cow}
+            {51} {Strike Guard}
         }
         {Ratings} 
         {
@@ -19976,7 +20081,8 @@
             {5} {Orc Bodyguard}
             {6} {Graktah, Orc Chief}
             {7} {Burly Orc}
-            {8} {Female Orc}
+            {8} {Young Orc}
+            {9} {Female Orc}
         }
         {Ratings} 
         {
@@ -21097,6 +21203,9 @@
             {7} {Wyvern}
             {8} {A New Yorker}
             {9} {Tough Looking Brigand}
+            {10} {Taxi Cab}
+            {11} {Queen's Elite Guardswoman}
+            {12} {Mugger}
         }
         {Ratings} 
         {
@@ -21647,13 +21756,16 @@
             {32} {Ragged Peasant}
             {33} {Black Patrol Guard}
             {34} {Black Patrol Leader}
-            {35} {Queen's Elite Guardswoman}
-            {36} {Faerie Lizard}
-            {37} {Shadow Guard}
-            {38} {Sylvan Elf}
-            {39} {Wyvern}
-            {40} {Stag}
-            {41} {Baby Dragon}
+            {35} {Stag}
+            {36} {Chamber Guardian}
+            {37} {Toyota-chrysler Jackrabbit 2050}
+            {38} {A Typical Female Driver}
+            {39} {Shadow Guard}
+            {40} {Faerie Lizard}
+            {41} {Queen's Elite Guardswoman}
+            {42} {Baby Dragon}
+            {43} {Wyvern}
+            {44} {Sylvan Elf}
         }
         {Ratings} 
         {
@@ -21712,23 +21824,24 @@
             {10} {Warrior of the Mist}
             {11} {Green Dragon Beast}
             {12} {Sylvan Demon}
-            {13} {Black Patrol Leader}
-            {14} {White Dragon Beast}
-            {15} {Shadow Guard}
-            {16} {Drow Patrol Guard}
-            {17} {Cave Lizard}
-            {18} {Lizard}
-            {19} {Lesser Demon}
-            {20} {Rabid Wolf}
-            {21} {Wild Stag}
-            {22} {Black Patrol Guard}
-            {23} {Ragged Peasant}
-            {24} {Sylvan Elf}
-            {25} {Queen's Elite Guardswoman}
-            {26} {Cleric of Lathander}
-            {27} {Wyvern}
-            {28} {Faerie Lizard}
-            {29} {Baby Dragon}
+            {13} {White Dragon Beast}
+            {14} {Shadow Guard}
+            {15} {Drow Patrol Guard}
+            {16} {Cave Lizard}
+            {17} {Lizard}
+            {18} {Lesser Demon}
+            {19} {Rabid Wolf}
+            {20} {Wild Stag}
+            {21} {Ragged Peasant}
+            {22} {Sylvan Elf}
+            {23} {Queen's Elite Guardswoman}
+            {24} {Cleric of Lathander}
+            {25} {Faerie Lizard}
+            {26} {Baby Dragon}
+            {27} {Stag}
+            {28} {Black Patrol Guard}
+            {29} {Black Patrol Leader}
+            {30} {Wyvern}
         }
         {Ratings} 
         {
@@ -24666,12 +24779,12 @@
             {124} {A Clone Soldier}
             {125} {The Developer}
             {126} {A Leeva}
-            {127} {Leeva}
-            {128} {A Ripper}
-            {129} {Clone Soldier}
-            {130} {Ripper}
-            {131} {Groma}
-            {132} {Cloud Eye}
+            {127} {A Ripper}
+            {128} {Ripper}
+            {129} {Groma}
+            {130} {Cloud Eye}
+            {131} {Leeva}
+            {132} {Clone Soldier}
         }
         {Ratings} 
         {
@@ -26273,14 +26386,14 @@
             {4} {A Righteous Dmr Member}
             {5} {A Slick Dmr Member}
             {6} {Dmr Leader}
-            {7} {A huge DMR member}
-            {8} {A rager member}
-            {9} {A DMR member}
-            {10} {Rager Gang Member}
-            {11} {Dmr Gang Member}
-            {12} {A Tough Rager Member}
-            {13} {A Huge Rager Member}
-            {14} {A Quick Rager Member}
+            {7} {A rager member}
+            {8} {A DMR member}
+            {9} {Rager Gang Member}
+            {10} {Dmr Gang Member}
+            {11} {A Tough Rager Member}
+            {12} {A Huge Rager Member}
+            {13} {A Quick Rager Member}
+            {14} {A Huge Dmr Member}
         }
         {Ratings} 
         {
@@ -26558,12 +26671,12 @@
         }
         {Mobs} 
         {
-            {1} {Stonebound Enchantress}
-            {2} {Gargoyle Sentinel}
-            {3} {Spectral Guardian}
-            {4} {Lurking Boulderfiend}
-            {5} {Obsidian Serpent}
-            {6} {Stoneform Mimic}
+            {1} {Gargoyle Sentinel}
+            {2} {Spectral Guardian}
+            {3} {Lurking Boulderfiend}
+            {4} {Obsidian Serpent}
+            {5} {Stoneform Mimic}
+            {6} {Stonebound Enchantress}
         }
         {Ratings} 
         {
@@ -27511,45 +27624,47 @@
             {18} {Bratenpy}
             {19} {Small Demon}
             {20} {Kxegkm el}
-            {21} {Terrifying Demon}
-            {22} {Katgrolod}
-            {23} {Drow Magistrate}
-            {24} {Jlys}
-            {25} {Juykgf}
-            {26} {Quadrupedal Demon}
-            {27} {Iiepi}
-            {28} {l fire mite}
-            {29} {A small fire mite}
-            {30} {Xouuf}
-            {31} {Moronic Demon}
-            {32} {Ihib}
-            {33} {Yeufk}
-            {34} {Xryh}
-            {35} {Vyokrx}
-            {36} {Bratendon}
-            {37} {Kattilles}
-            {38} {Beltenard}
-            {39} {Bratenles}
-            {40} {Tyleppy}
-            {41} {Miniature Demon}
-            {42} {Enormous Demon}
-            {43} {Blue Demon}
-            {44} {Crunchy Demon}
-            {45} {Hexed Demon}
-            {46} {Purple Demon}
-            {47} {Abyssmal Demon}
-            {48} {Gargantuan Demon}
-            {49} {Pink Demon}
-            {50} {Bipedal Demon}
-            {51} {Demon}
-            {52} {Spherical Demon}
-            {53} {Horrifying Demon}
-            {54} {Nasty Demon}
-            {55} {Large Demon}
-            {56} {Grey Demon}
-            {57} {Alabaster Demon}
-            {58} {Fire Mite}
-            {59} {Humanoid Demon}
+            {21} {Katgrolod}
+            {22} {Jlys}
+            {23} {Juykgf}
+            {24} {Quadrupedal Demon}
+            {25} {Iiepi}
+            {26} {l fire mite}
+            {27} {A small fire mite}
+            {28} {Xouuf}
+            {29} {Moronic Demon}
+            {30} {Ihib}
+            {31} {Yeufk}
+            {32} {Xryh}
+            {33} {Vyokrx}
+            {34} {Bratendon}
+            {35} {Kattilles}
+            {36} {Beltenard}
+            {37} {Bratenles}
+            {38} {Tyleppy}
+            {39} {Enormous Demon}
+            {40} {Blue Demon}
+            {41} {Hexed Demon}
+            {42} {Purple Demon}
+            {43} {Abyssmal Demon}
+            {44} {Gargantuan Demon}
+            {45} {Pink Demon}
+            {46} {Demon}
+            {47} {Nasty Demon}
+            {48} {Grey Demon}
+            {49} {Large Demon}
+            {50} {Terrifying Demon}
+            {51} {Horrifying Demon}
+            {52} {Drow Magistrate}
+            {53} {Miniature Demon}
+            {54} {Spherical Demon}
+            {55} {Fire Mite}
+            {56} {Bipedal Demon}
+            {57} {Krolepae}
+            {58} {Humanoid Demon}
+            {59} {Kellepdin}
+            {60} {Alabaster Demon}
+            {61} {Crunchy Demon}
         }
         {Ratings} 
         {
@@ -27572,8 +27687,9 @@
         {Mobs} 
         {
             {1} {An Andean Jaguar}
-            {2} {Piranha Monkey}
-            {3} {Dean Champion}
+            {2} {Dean Champion}
+            {3} {Sgt Raymond Perez}
+            {4} {Piranha Monkey}
         }
         {Ratings} 
         {
@@ -27623,8 +27739,15 @@
         }
         {Mobs} 
         {
-            {1} {Barbarian Jemadar}
-            {2} {Barbarian Hunter}
+            {1} {Ground Hog}
+            {2} {Barbarian}
+            {3} {Beetle}
+            {4} {Barbarian Mystical Seer}
+            {5} {Barbarian Hunter}
+            {6} {Barbarian Jemadar}
+            {7} {Barbarian Lord}
+            {8} {Red Fox}
+            {9} {Bison}
         }
         {Ratings} 
         {
@@ -28133,7 +28256,9 @@
             {107} {Harbour magistrate}
             {108} {A highborn}
             {109} {A servant}
-            {110} {Troll}
+            {110} {A Vampire}
+            {111} {Templar}
+            {112} {Troll}
         }
         {Ratings} 
         {
@@ -28357,9 +28482,9 @@
             {5} {A highborn}
             {6} {leader}
             {7} {looking brigand}
-            {8} {Tough Looking Brigand}
-            {9} {Mischievous Ruffian}
-            {10} {Shady Leader}
+            {8} {Mischievous Ruffian}
+            {9} {Shady Leader}
+            {10} {Tough Looking Brigand}
         }
         {Ratings} 
         {
@@ -28605,8 +28730,8 @@
             {48} {Drow Temple Guard}
             {49} {Guard}
             {50} {Drow Altar Guard}
-            {51} {Drider Guard}
-            {52} {Elite Drow warrior}
+            {51} {Elite Drow warrior}
+            {52} {Drider Guard}
             {53} {Elite Drow}
             {54} {Drow Warrior}
         }
@@ -31982,11 +32107,11 @@
         {
             {1} {Mugger}
             {2} {A Yellow City Taxi Cab}
-            {3} {Taxi Cab}
-            {4} {Giant Mack Truck}
-            {5} {A young punk}
-            {6} {Scruffy looking man}
-            {7} {Henry Tudor, owner of the Wax Museum}
+            {3} {Giant Mack Truck}
+            {4} {A young punk}
+            {5} {Scruffy looking man}
+            {6} {Henry Tudor, owner of the Wax Museum}
+            {7} {Taxi Cab}
         }
         {Ratings} 
         {
@@ -32163,6 +32288,7 @@
             {84} {Wayhaven City Guard Sergeant}
             {85} {Citizen}
             {86} {Black Wolf}
+            {87} {Gencorps Officer}
         }
         {Ratings} 
         {
@@ -32608,6 +32734,9 @@
             {2} {Stone Golem}
             {3} {Sand Golem}
             {4} {Caffa the Shopkeeper}
+            {5} {Stag}
+            {6} {Wyvern}
+            {7} {A Vampire}
         }
         {Ratings} 
         {
@@ -32935,111 +33064,111 @@
             {30} {Urys, Drow Princess}
             {31} {Arriana, Drow Princess}
             {32} {Bashnadderei}
-            {33} {Umber Hulk}
-            {34} {Sneaky Thief}
-            {35} {Oranin Kerar, Drow Princess <^>}
-            {36} {Drow Palace Guard <^>}
-            {37} {Arriana, Drow Princess <^>}
-            {38} {Eleari, Drow Princess <^>}
-            {39} {Eleari}
-            {40} {Urys, Drow Princess <^>}
-            {41} {Drow Guardian}
-            {42} {Drider Guard}
-            {43} {Elemental}
-            {44} {Drow Palace Guard}
-            {45} {Shook Shirek}
-            {46} {Drow warrior <^>}
-            {47} {Elite Drow warrior <^>}
-            {48} {emple Guard <^>}
-            {49} {Drow Temple Guard}
-            {50} {Drow Cleric <^>}
-            {51} {Drow Soldier <^>}
-            {52} {agistrate  <^>}
-            {53} {Drow Magistrate  <^>}
-            {54} {Eltanin}
-            {55} {rison Guard <^>}
-            {56} {Drow Cleric}
-            {57} {Demon Guard}
-            {58} {Ghost of Titan}
-            {59} {Drow Soldier}
-            {60} {Vasynase}
-            {61} {Nasethandra}
-            {62} {Cur, the tradesman's dog}
-            {63} {Cancer the tradesman}
-            {64} {Small Black Dragon}
-            {65} {Small Blue Dragon}
-            {66} {Small White Dragon}
-            {67} {Whip Snake}
-            {68} {Gor Shirek}
-            {69} {The Dragon Guardian}
-            {70} {Drow Prison Guard}
-            {71} {Vasyrach}
-            {72} {Armed Demon}
-            {73} {Small Red Dragon}
-            {74} {Brave Elven Warrior}
-            {75} {Armored Demon}
-            {76} {Oranin Kerar}
-            {77} {Big Ugly}
-            {78} {Arriana}
-            {79} {Mfuexz}
-            {80} {Alabaster Demon}
-            {81} {Fxyr}
-            {82} {Soint ip}
-            {83} {Horrifying Demon}
-            {84} {Mhag}
-            {85} {Vaoatml}
-            {86} {Gargantuan Demon}
-            {87} {Kyo}
-            {88} {Hexed Demon}
-            {89} {Oeear}
-            {90} {Xjezjn}
-            {91} {Nxeh}
-            {92} {Qbyndr}
-            {93} {Pxemaj}
-            {94} {Iuawye}
-            {95} {Ziycr}
-            {96} {Liahv}
-            {97} {Buyhzlu}
-            {98} {Oyoym}
-            {99} {Qzyujn}
-            {100} {Ihig}
-            {101} {Large Demon}
-            {102} {Jlek}
-            {103} {Foionzb}
-            {104} {Ryyxx}
-            {105} {Roywu}
-            {106} {Oqumzy}
-            {107} {Uaeufcn}
-            {108} {Humanoid Demon}
-            {109} {Oozing Mass}
-            {110} {The Jabberwocky}
-            {111} {Jabberwocky}
-            {112} {Large Devil}
-            {113} {Urys}
-            {114} {Crunchy Demon}
-            {115} {Spherical Demon}
-            {116} {Qcatin og}
-            {117} {Va}
-            {118} {Moronic Demon}
-            {119} {Hraj}
-            {120} {Branatharus}
-            {121} {Drow Warrior}
-            {122} {agistrate}
-            {123} {Pelgroles the Succubus}
-            {124} {Pelgroles}
-            {125} {l fire mite}
-            {126} {Ioooe}
-            {127} {Enormous Demon}
-            {128} {A small fire mite}
-            {129} {Nasty Demon}
-            {130} {Miniature Demon}
-            {131} {Abyssmal Demon}
-            {132} {Blue Demon}
-            {133} {Demon}
-            {134} {Small Demon}
-            {135} {Fire Mite}
-            {136} {Two-headed Troll}
-            {137} {Bandriggan Predator Demon}
+            {33} {Sneaky Thief}
+            {34} {Oranin Kerar, Drow Princess <^>}
+            {35} {Drow Palace Guard <^>}
+            {36} {Arriana, Drow Princess <^>}
+            {37} {Eleari, Drow Princess <^>}
+            {38} {Eleari}
+            {39} {Urys, Drow Princess <^>}
+            {40} {Drow Guardian}
+            {41} {Drider Guard}
+            {42} {Elemental}
+            {43} {Drow Palace Guard}
+            {44} {Shook Shirek}
+            {45} {Drow warrior <^>}
+            {46} {Elite Drow warrior <^>}
+            {47} {emple Guard <^>}
+            {48} {Drow Temple Guard}
+            {49} {Drow Cleric <^>}
+            {50} {Drow Soldier <^>}
+            {51} {agistrate  <^>}
+            {52} {Drow Magistrate  <^>}
+            {53} {Eltanin}
+            {54} {rison Guard <^>}
+            {55} {Drow Cleric}
+            {56} {Demon Guard}
+            {57} {Ghost of Titan}
+            {58} {Drow Soldier}
+            {59} {Vasynase}
+            {60} {Nasethandra}
+            {61} {Cur, the tradesman's dog}
+            {62} {Cancer the tradesman}
+            {63} {Small Black Dragon}
+            {64} {Small Blue Dragon}
+            {65} {Small White Dragon}
+            {66} {Whip Snake}
+            {67} {Gor Shirek}
+            {68} {The Dragon Guardian}
+            {69} {Drow Prison Guard}
+            {70} {Vasyrach}
+            {71} {Armed Demon}
+            {72} {Small Red Dragon}
+            {73} {Brave Elven Warrior}
+            {74} {Armored Demon}
+            {75} {Oranin Kerar}
+            {76} {Big Ugly}
+            {77} {Arriana}
+            {78} {Mfuexz}
+            {79} {Alabaster Demon}
+            {80} {Fxyr}
+            {81} {Soint ip}
+            {82} {Horrifying Demon}
+            {83} {Mhag}
+            {84} {Vaoatml}
+            {85} {Gargantuan Demon}
+            {86} {Kyo}
+            {87} {Hexed Demon}
+            {88} {Oeear}
+            {89} {Xjezjn}
+            {90} {Nxeh}
+            {91} {Qbyndr}
+            {92} {Pxemaj}
+            {93} {Iuawye}
+            {94} {Ziycr}
+            {95} {Liahv}
+            {96} {Buyhzlu}
+            {97} {Oyoym}
+            {98} {Qzyujn}
+            {99} {Ihig}
+            {100} {Large Demon}
+            {101} {Jlek}
+            {102} {Foionzb}
+            {103} {Ryyxx}
+            {104} {Roywu}
+            {105} {Oqumzy}
+            {106} {Uaeufcn}
+            {107} {Humanoid Demon}
+            {108} {Oozing Mass}
+            {109} {The Jabberwocky}
+            {110} {Jabberwocky}
+            {111} {Large Devil}
+            {112} {Urys}
+            {113} {Crunchy Demon}
+            {114} {Spherical Demon}
+            {115} {Qcatin og}
+            {116} {Va}
+            {117} {Moronic Demon}
+            {118} {Hraj}
+            {119} {Branatharus}
+            {120} {Drow Warrior}
+            {121} {agistrate}
+            {122} {Pelgroles the Succubus}
+            {123} {Pelgroles}
+            {124} {l fire mite}
+            {125} {Ioooe}
+            {126} {Enormous Demon}
+            {127} {A small fire mite}
+            {128} {Nasty Demon}
+            {129} {Miniature Demon}
+            {130} {Abyssmal Demon}
+            {131} {Blue Demon}
+            {132} {Demon}
+            {133} {Small Demon}
+            {134} {Fire Mite}
+            {135} {Bandriggan Predator Demon}
+            {136} {Umber Hulk}
+            {137} {Two-headed Troll}
             {138} {Strong Drow Warrior}
             {139} {Hell Hound}
             {140} {Drow Magistrate}

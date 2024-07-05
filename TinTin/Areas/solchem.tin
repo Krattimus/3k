@@ -26,5 +26,7 @@
 #action {Level Alpha entry card: Ok} {gl;};
 #action {Level Beta entry card: Ok} {gl;};
 
-#action {You climb through the hole and crawl through the piping, into the tank}{l;};
+#action {The door whirrs closed.}{gl;};
+
+#action {You climb through the hole and crawl through the piping, into the tank}{gl;};
 #class {bot} {close}

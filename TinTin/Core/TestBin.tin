@@ -34,10 +34,6 @@
 {
         .goPatrolling carnegie;
 };
-#alias .8
-{
-        .goPatrolling carnegie2;
-};
 
 #alias .9
 {
@@ -54,10 +50,11 @@
         .goPatrolling orc_village;
 };
 
-#alias .54
+#alias .12
 {
-        .goPatrolling pol2;
+        .goPatrolling durhals_ant_caves;
 };
+
 
 
 #alias .50
@@ -80,7 +77,16 @@
 {
         .goPatrolling catacombs2;
 };
+#alias .54
+{
+        .goPatrolling pol2;
+};
 
+
+#alias .55
+{
+        .goPatrolling carnegie2;
+};
 
 #alias .help
 {
@@ -90,15 +96,15 @@
         #showme    .1    westersea_slumpatrol        22k;
         #showme    .2    pol                         50k+;
         #showme    .3    gencorps                    18k; 
-        #showme    .4    tencho                      ;
-        #showme    .5    solchem                     ;
+        #showme    .4    tencho                      50k;
+        #showme    .5    solchem                     18k;
         #showme    .6    bombfreaks_abbey            35k;
-        #showme    .7    carnegie                    ;
-        #showme    .8    carnegie2                   ;
-        #showme    .9    catacombs                   ;
+        #showme    .7    carnegie                    45k;
+        #showme    .8    EMPTY;
+        #showme    .9    catacombs                   75k;
         #showme    .10   hippie_commune              17k; 
         #showme    .11   orc_village                 17k; 
-          
+        #showme    .12   durhals_ant_caves           30k;
         #draw Yellow scroll line 1 1 1 80;
         #showme Slower patrols;
         #draw Yellow scroll line 1 1 1 80;
@@ -107,6 +113,7 @@
         #showme    .52   crystals1;
         #showme    .53   catacombs2;
         #showme    .54   pol2;       
+        #showme    .55   carnegie2                   ;
         #draw Yellow scroll line 1 1 1 80;
         #showme Shops;
         #draw Yellow scroll line 1 1 1 80;
