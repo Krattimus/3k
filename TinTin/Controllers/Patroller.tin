@@ -207,8 +207,16 @@
 	#if { $patroller[isPatrolling] }
 	{
 		#echo {<202> Failed Movement <088>};
-		#var patroller[isPatrolling] 0;
-		.triggerEvent onControllerStopped {$patroller[controllerID]};
+
+		#if { $superPatrol }
+		{
+			.doNextSuperPatrol;
+		};
+		#else
+		{
+				#var patroller[isPatrolling] 0;
+			.triggerEvent onControllerStopped {$patroller[controllerID]};
+		};
 	};
 };
 
@@ -349,7 +357,76 @@
 		{
 			#end;
 		};		
+
+		.doNextSuperPatrol;
+	
 	};
+};
+
+#alias {.doNextSuperPatrol}
+{
+
+	#if { $superPatrol }
+	{
+		#echo {<202> Super Patrol Next Round - Selling At $whichShop <088>};
+		.shop $whichShop;
+		#if { $whichPatrol == 1 }
+		{
+			#var whichPatrol 3;
+		};
+		#elseif { $whichPatrol == 3 }
+		{
+			#var whichPatrol 4;
+		};
+		#elseif { $whichPatrol == 4 }
+		{
+			#var whichPatrol 5;
+		};			
+		#elseif { $whichPatrol == 5 }
+		{
+			#var whichPatrol 6;
+		};						
+		#elseif { $whichPatrol == 6 }
+		{
+			#var whichPatrol 7;
+		};						
+		#elseif { $whichPatrol == 7 }
+		{
+			#var whichPatrol 8;
+		};												
+		#elseif { $whichPatrol == 8 }
+		{
+			#var whichPatrol 10;
+		};															
+		#elseif { $whichPatrol == 10 }
+		{
+			#var whichPatrol 11;
+		};						
+		#elseif { $whichPatrol == 11 }
+		{
+			#var whichPatrol 12;
+		};						
+		#else
+		{
+			#var whichPatrol 1;
+			#var superPatrol 0;
+		};																								
+
+		#if { $superPatrol }
+		{
+			#delay 4 {
+				#echo {<202> Super Patrol Next Round - Selling Corpses<088>};	
+				.morgue
+			};
+
+
+			#delay 8 {
+				#echo {<202> Super Patrol Next Round - Starting .$whichPatrol<088>};	
+				.$whichPatrol;
+			};
+		};
+	};
+
 };
 
 /*********************************************************

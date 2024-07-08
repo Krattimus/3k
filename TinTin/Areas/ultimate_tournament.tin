@@ -1,0 +1,40 @@
+#class {bot} {open}
+
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 26681;
+#var patrol[area] {Ultimate Tournament};
+#var patrol[path] {w;n;s;s;s;s;s;s;s;s;s;w;s;n;n;n;n;n;n;n;n;n;n;n;w;s;s;s;s;s;s;s;s;s;s;s;w;n;n;n;n;n;n;n;n;n;n;n;w;s;s;s;s;s;s;s;take disc;drop disc;s;s;s;s;e;e;e;n;e;n;n;n;n;n;n;n;n;e}
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{spectator}{human}
+	{Skittlebrau}{human};
+	{Deuces}{human};
+};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+#action {You may not move while holding the game disc}
+{
+	drop disc;
+	#map undo;
+	#path move backward;
+	.doBehaviorPatrol;
+};
+
+#action {You drop Game Disc.}
+{
+	.doBehaviorPatrol;
+} {3};
+
+#class {bot} {close}

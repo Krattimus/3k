@@ -1,0 +1,32 @@
+#class {bot} {open}
+
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 8965;
+#var patrol[area] {Fire Giant Lair};
+#var patrol[path]  { n;nw;n;n;nw;w;e;d;n;n;s;s;u;se;ne;n;n;d;n;nw;ne;s;n;se;sw;s;u;s;s;se;s;s;n;w;u;e;s;e;e;n;n;w;w;s;n;e;e;s;w;d;sw;sw;sw;sw;sw;sw;sw;e;e;e;e;e;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;n;w;w;w;w;w;w;w;w;w;w;w;w;w;w;n;e;e;e;e;e;e;e;e;e;e;e;e;e;e;sw;sw;sw;sw;sw;sw;sw;u;e;s;w;w;n;w;d;e;s;sw;s };
+
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{fire giant}{giant}
+	{Giant}{giant}
+	{giant}{giant}
+	{Guard}{guard}
+	{Salamander}{salamander}
+	{Dragon}{dragon}
+	{Efreet}{efreet}
+};
+
+#action {The elemental won't let you enter the portal}{aa;};
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+#class {bot} {close}

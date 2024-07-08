@@ -5,6 +5,14 @@
 #var shop {};
 
 
+#alias .superPatrol
+{
+        #var whichPatrol %1;
+        #var whichShop %2;
+        #var superPatrol 1;
+        .$whichPatrol;
+};
+
 #alias .1
 {
         .goPatrolling westersea_slumpatrol;
@@ -35,6 +43,11 @@
         .goPatrolling carnegie;
 };
 
+#alias .8
+{
+        .goPatrolling ultimate_tournament;
+};
+
 #alias .9
 {
         .goPatrolling catacombs;
@@ -53,6 +66,11 @@
 #alias .12
 {
         .goPatrolling durhals_ant_caves;
+};
+
+#alias .13
+{
+        .goPatrolling fire_giant_lair;
 };
 
 
@@ -100,11 +118,12 @@
         #showme    .5    solchem                     18k;
         #showme    .6    bombfreaks_abbey            35k;
         #showme    .7    carnegie                    45k;
-        #showme    .8    EMPTY;
+        #showme    .8    ultimate_tournament         35k;
         #showme    .9    catacombs                   75k;
         #showme    .10   hippie_commune              17k; 
         #showme    .11   orc_village                 17k; 
         #showme    .12   durhals_ant_caves           30k;
+        #showme    .13   fire_giant_lair            ??;
         #draw Yellow scroll line 1 1 1 80;
         #showme Slower patrols;
         #draw Yellow scroll line 1 1 1 80;
