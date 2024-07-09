@@ -21,6 +21,21 @@
 	{wolf}{wolf}
 };
 
+
+#action {A closed door blocks your way}
+{
+	#map undo;
+	#path move backward;
+	open door;
+	.doBehaviorPatrol;
+};
+
+#action {%1 will not let you pass the curtain.}
+{
+	aa;
+	#map undo;
+	#path move backward;
+};
 /******************************************************************************
 	Additional scripting used for this area
 

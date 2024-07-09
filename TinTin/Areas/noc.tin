@@ -28,7 +28,7 @@
 	{Glimmer}{glimmer}	
 
 
-
+	
 	{Paragon}{paragon}
 	{Peace}{peace}
 	{Radiance}{radiance}
@@ -44,6 +44,7 @@
 };
 
 #action {Impediment appears.} {aa;};
+#action {Shadow appears.} {aa;};
 /******************************************************************************
 	Additional scripting used for this area
 			...

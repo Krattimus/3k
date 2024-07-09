@@ -8,10 +8,7 @@
 #var patrol[area] {Kord Mutual};
 #var patrol[path] 
 {
-	e;e;n;w;w;n;e;e;n;w;w;s;e;e;s;w;w;s;
-	e;e;n;n;s;w;w;n;e;n;e;e;s;w;w;s;n;e;e;s;w;s;
-	w;w;n;e;e;n;w;w;s;s;e;e;e;n;n;w;w;s;s;w;w;
-	e;e;n;n;e;s;s;w;w;
+	e;e;n;w;w;n;e;e;n;w;w;s;e;e;s;w;w;s;e;e;n;n;s;w;w;n;e;n;e;e;s;w;w;s;n;e;e;s;w;s;w;w;n;e;e;n;w;w;s;s;e;e;e;n;n;w;w;s;s;w;w;e;e;n;n;e;s;s;w;w;
 };
 
 #action {The driver gets out of the}{aa;};

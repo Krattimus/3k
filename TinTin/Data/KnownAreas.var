@@ -1376,6 +1376,7 @@
             {27} {Willow the gnome}
             {28} {Ninja Warrior}
             {29} {A Vampire}
+            {30} {Shadow Guard}
         }
         {Ratings} 
         {
@@ -1610,9 +1611,17 @@
         {
             {1} {Tourist}
             {2} {George McClellan}
-            {3} {General Robert E}
-            {4} {General Robert E. Lee}
-            {5} {A tourist}
+            {3} {General Robert E. Lee}
+            {4} {A tourist}
+            {5} {Union Artillery}
+            {6} {Union Cavalry}
+            {7} {General George B}
+            {8} {General Robert E}
+            {9} {Confederate Artillery}
+            {10} {Antietam Tourist}
+            {11} {Confederate Cavalry}
+            {12} {Confederate Infantry}
+            {13} {Union Infantry}
         }
         {Ratings} 
         {
@@ -1737,14 +1746,14 @@
             {17} {A Dark Bishop of Arcanarton}
             {18} {Arcanarton the Arch-Lich}
             {19} {An evil imp}
-            {20} {Follower of Arcanarton}
-            {21} {Imp}
-            {22} {Machination}
-            {23} {Ghoul}
+            {20} {Machination}
+            {21} {Ghoul}
+            {22} {Follower of Arcanarton}
+            {23} {Dark Priest of Arcanarton}
             {24} {Dark Bishop}
-            {25} {Dark Priest of Arcanarton}
-            {26} {Animated Corpse}
-            {27} {Arcanarton}
+            {25} {Animated Corpse}
+            {26} {Arcanarton}
+            {27} {Imp}
         }
         {Ratings} 
         {
@@ -2089,80 +2098,81 @@
             {7} {Death, clad in black}
             {8} {Death}
             {9} {A Typical Fat Driver}
-            {10} {Ares Roadster}
-            {11} {Truck Driver}
-            {12} {Worker}
-            {13} {A common street thug}
-            {14} {A huge F.T.S! gang member}
-            {15} {A newspaper vendor}
-            {16} {Executive}
-            {17} {A Typical Commuter}
-            {18} {Reporter}
-            {19} {Homeless Woman}
-            {20} {Homeless Man}
-            {21} {A Channel 1 news reporter}
-            {22} {A Bored Security Guard}
-            {23} {Barney Kitias}
-            {24} {Enforcer}
-            {25} {A Channel 29 news reporter}
-            {26} {Mack Truck}
-            {27} {Politician}
-            {28} {Mr. Johnson}
-            {29} {Amos the barkeep}
-            {30} {A Green Lightning gang member}
-            {31} {A low-level corporate executive}
-            {32} {A city worker}
-            {33} {A homeless woman}
-            {34} {A 4th Reich security guard}
-            {35} {Plymouth Duster}
-            {36} {A Rich Bastard Driver}
-            {37} {Ares Roadster, trying to kill you}
-            {38} {Giant Mack Truck}
-            {39} {Mitsubishi Nightliner}
-            {40} {Bmw Poleis}
-            {41} {A Typical Male Driver}
-            {42} {The CyberPope}
-            {43} {Pope}
-            {44} {Church Police}
-            {45} {ch police}
-            {46} {A church police}
-            {47} {A cyberpriest}
-            {48} {An FCCCP Bible-beater}
-            {49} {A homeless vagrant}
-            {50} {A church usher}
-            {51} {A homeless man}
-            {52} {Thug}
-            {53} {A typical teenage driver}
-            {54} {A young F.T.S! gang member}
-            {55} {A Typical Female Driver}
-            {56} {Porsche 944 Turbo}
-            {57} {A Volkswagon Emperor}
-            {58} {A 1973 Plymouth Duster, back from the dead}
-            {59} {A vile scum of a politician}
-            {60} {An Aztech Uno}
-            {61} {An Atlanta Metro police officer}
-            {62} {A BMW Poleis}
-            {63} {A Huge Security Guard}
-            {64} {Huge Mack Truck}
-            {65} {Blade the apathetic}
-            {66} {Clan MacCleod Haggis the store-owner}
-            {67} {Baby Dragon}
-            {68} {Volkswagon Emperor}
-            {69} {Aztech Uno}
-            {70} {A Young F}
-            {71} {Member}
-            {72} {A Skinny F}
-            {73} {Blade}
-            {74} {A Five-year-old Delinquent}
-            {75} {Officer}
-            {76} {An F}
-            {77} {A Huge F}
-            {78} {Toyota-chrysler Jackrabbit 2050}
-            {79} {Peasant}
-            {80} {Wyvern}
-            {81} {Sylvan Elf}
-            {82} {A Vampire}
-            {83} {A Vampire Soldier}
+            {10} {Truck Driver}
+            {11} {Worker}
+            {12} {A common street thug}
+            {13} {A huge F.T.S! gang member}
+            {14} {A newspaper vendor}
+            {15} {Executive}
+            {16} {A Typical Commuter}
+            {17} {Reporter}
+            {18} {Homeless Woman}
+            {19} {Homeless Man}
+            {20} {A Channel 1 news reporter}
+            {21} {A Bored Security Guard}
+            {22} {Barney Kitias}
+            {23} {Enforcer}
+            {24} {A Channel 29 news reporter}
+            {25} {Mack Truck}
+            {26} {Politician}
+            {27} {Mr. Johnson}
+            {28} {Amos the barkeep}
+            {29} {A Green Lightning gang member}
+            {30} {A low-level corporate executive}
+            {31} {A city worker}
+            {32} {A homeless woman}
+            {33} {A 4th Reich security guard}
+            {34} {Plymouth Duster}
+            {35} {A Rich Bastard Driver}
+            {36} {Ares Roadster, trying to kill you}
+            {37} {Giant Mack Truck}
+            {38} {Mitsubishi Nightliner}
+            {39} {Bmw Poleis}
+            {40} {A Typical Male Driver}
+            {41} {The CyberPope}
+            {42} {Pope}
+            {43} {Church Police}
+            {44} {ch police}
+            {45} {A church police}
+            {46} {A cyberpriest}
+            {47} {An FCCCP Bible-beater}
+            {48} {A homeless vagrant}
+            {49} {A church usher}
+            {50} {A homeless man}
+            {51} {Thug}
+            {52} {A typical teenage driver}
+            {53} {A young F.T.S! gang member}
+            {54} {A Typical Female Driver}
+            {55} {Porsche 944 Turbo}
+            {56} {A Volkswagon Emperor}
+            {57} {A 1973 Plymouth Duster, back from the dead}
+            {58} {A vile scum of a politician}
+            {59} {An Aztech Uno}
+            {60} {An Atlanta Metro police officer}
+            {61} {A BMW Poleis}
+            {62} {A Huge Security Guard}
+            {63} {Huge Mack Truck}
+            {64} {Blade the apathetic}
+            {65} {Clan MacCleod Haggis the store-owner}
+            {66} {Baby Dragon}
+            {67} {Volkswagon Emperor}
+            {68} {Aztech Uno}
+            {69} {A Young F}
+            {70} {Member}
+            {71} {A Skinny F}
+            {72} {Blade}
+            {73} {A Five-year-old Delinquent}
+            {74} {Officer}
+            {75} {An F}
+            {76} {A Huge F}
+            {77} {Toyota-chrysler Jackrabbit 2050}
+            {78} {Peasant}
+            {79} {Wyvern}
+            {80} {Sylvan Elf}
+            {81} {A Vampire}
+            {82} {A Vampire Soldier}
+            {83} {Ares Roadster}
+            {84} {Samurai Guard}
         }
         {Ratings} 
         {
@@ -3190,6 +3200,8 @@
         {Mobs} 
         {
             {1} {Aika Highwalker}
+            {2} {A Vampire Runner}
+            {3} {Gencorps Officer}
         }
         {Ratings} 
         {
@@ -3358,10 +3370,11 @@
             {9} {Police Chief}
             {10} {Robert, High Priest of the Bomb Worshippers}
             {11} {Radiation God}
-            {12} {Guard}
-            {13} {Wasp}
-            {14} {Worshipper}
+            {12} {Wasp}
+            {13} {Worshipper}
+            {14} {An Usher}
             {15} {Elite Guard}
+            {16} {Guard}
         }
         {Ratings} 
         {
@@ -4032,8 +4045,8 @@
             {43} {Troll}
             {44} {A Vampire}
             {45} {A Ghoul}
-            {46} {A Goblin Warrior}
-            {47} {A Giant Rat}
+            {46} {A Giant Rat}
+            {47} {A Goblin Warrior}
         }
         {Ratings} 
         {
@@ -4509,9 +4522,9 @@
             {108} {Hawkeyes's Jugger Support Mech}
             {109} {A Burly Guard}
             {110} {A foul-smelling Armadillo}
-            {111} {A Vampire}
-            {112} {A Rabbit}
-            {113} {Snake}
+            {111} {A Rabbit}
+            {112} {Snake}
+            {113} {A Vampire}
         }
         {Ratings} 
         {
@@ -5017,15 +5030,15 @@
             {18} {Murse the Valithyn}
             {19} {Sweetpea Riviera}
             {20} {Red Cross Medic}
-            {21} {White Horseman}
-            {22} {White Counsellor}
-            {23} {White Charioteer}
-            {24} {White Foot Soldier}
-            {25} {White Priest}
-            {26} {Modrock the Valithyn}
-            {27} {A small wandering spider}
-            {28} {A War Correspondent}
-            {29} {A foul-smelling Armadillo}
+            {21} {White Counsellor}
+            {22} {White Charioteer}
+            {23} {White Foot Soldier}
+            {24} {White Priest}
+            {25} {Modrock the Valithyn}
+            {26} {A small wandering spider}
+            {27} {A War Correspondent}
+            {28} {A foul-smelling Armadillo}
+            {29} {White Horseman}
         }
         {Ratings} 
         {
@@ -5293,14 +5306,18 @@
         }
         {Mobs} 
         {
-            {1} {Bootboy}
-            {2} {Bouncer}
-            {3} {Roadie}
-            {4} {Rick Barton}
-            {5} {Matt Kelly}
-            {6} {Skinhead}
-            {7} {Punk}
-            {8} {A Disoreinted Typo}
+            {1} {Matt Kelly}
+            {2} {A Disoreinted Typo}
+            {3} {Bootboy}
+            {4} {Bouncer}
+            {5} {A Fan}
+            {6} {Eugene the Bouncer}
+            {7} {Roadie}
+            {8} {Al Barr}
+            {9} {Rick Barton}
+            {10} {Punk}
+            {11} {Skinhead}
+            {12} {A Teenage Fan}
         }
     }
     {Codename: Kodiak} 
@@ -5581,9 +5598,9 @@
             {9} {George Weathermay}
             {10} {A goblyn}
             {11} {Brenan Ovranam, Warlock of the Demoniac Triad}
-            {12} {A Direwolf Familiar}
-            {13} {Raqna Klaver, Warlock of the Demoniac Triad}
-            {14} {Tyra Janera, Warlock of the Demoniac Triad}
+            {12} {Raqna Klaver, Warlock of the Demoniac Triad}
+            {13} {Tyra Janera, Warlock of the Demoniac Triad}
+            {14} {A Direwolf Familiar}
             {15} {Brenan Ovranam}
             {16} {Raqna Klaver}
             {17} {Tyra Janera}
@@ -5954,6 +5971,8 @@
             {20} {A prisoner}
             {21} {A Wandering Skeleton}
             {22} {A Vampire}
+            {23} {Ninja Warrior}
+            {24} {An Usher}
         }
         {Ratings} 
         {
@@ -6518,6 +6537,8 @@
             {94} {Wyvern}
             {95} {A Vampire}
             {96} {Shadow Guard}
+            {97} {Mischievous Ruffian}
+            {98} {Ninja Warrior}
         }
         {Ratings} 
         {
@@ -9227,20 +9248,22 @@
         }
         {Mobs} 
         {
-            {1} {Ema Garage Foreman}
-            {2} {EMA Driver}
-            {3} {EMA Mechanic}
+            {1} {Ema Mechanic}
+            {2} {Ema Driver}
+            {3} {Ema Garage Foreman}
             {4} {Ema Guard}
-            {5} {Ema Research Assistant}
-            {6} {Ema Scientist}
-            {7} {Ema Admin}
+            {5} {Ema Scientist}
+            {6} {Ema Engineer}
+            {7} {Ema Research Assistant}
             {8} {Ema Director}
             {9} {Ema Worker}
+            {10} {Ema Admin}
+            {11} {Ema Agent}
         }
         {Ratings} 
         {
-            {1} {12}
-            {2} {20}
+            {1} {20}
+            {2} {12}
         }
         {Wizard} {Rumor}
     }
@@ -11625,11 +11648,11 @@
             {4} {Frost}
             {5} {Vitality}
             {6} {Burn}
-            {7} {M516 Patroller}
-            {8} {Compound Guard}
-            {9} {Gencorps Officer}
-            {10} {Strike Guard}
-            {11} {Ed 1000}
+            {7} {Compound Guard}
+            {8} {Strike Guard}
+            {9} {Ed 1000}
+            {10} {M516 Patroller}
+            {11} {Gencorps Officer}
         }
         {Ratings} 
         {
@@ -11657,14 +11680,15 @@
         {
             {1} {Mutated Human}
             {2} {Professor Bramatin}
-            {3} {Security Drone}
-            {4} {Radioactive Rat}
-            {5} {Mutant Rat}
-            {6} {Mutant Mouse}
-            {7} {The Construction Foreman}
-            {8} {Burly Construction Worker}
-            {9} {A Large Metal Backhoe}
-            {10} {A Large Metal Bulldozer}
+            {3} {The Construction Foreman}
+            {4} {Burly Construction Worker}
+            {5} {A Large Metal Backhoe}
+            {6} {A Large Metal Bulldozer}
+            {7} {Security Drone}
+            {8} {Mutant Rat}
+            {9} {Radioactive Rat}
+            {10} {Mutant Mouse}
+            {11} {Radioactive Mouse}
         }
         {Ratings} 
         {
@@ -12628,8 +12652,9 @@
             {58} {Gencorps Officer}
             {59} {Samurai Guard}
             {60} {Mother}
-            {61} {A Vampire}
-            {62} {Yakuza Guard}
+            {61} {Yakuza Guard}
+            {62} {Peasant}
+            {63} {A Vampire}
         }
         {Ratings} 
         {
@@ -12651,11 +12676,11 @@
         }
         {Mobs} 
         {
-            {1} {Acid Cloud}
-            {2} {Wandering Adventurer}
-            {3} {Harpy Warrior}
-            {4} {Harpy}
-            {5} {Harpy Guard}
+            {1} {Wandering Adventurer}
+            {2} {Harpy Guard}
+            {3} {Harpy}
+            {4} {Acid Cloud}
+            {5} {Harpy Warrior}
         }
         {Ratings} 
         {
@@ -14677,28 +14702,28 @@
         }
         {Mobs} 
         {
-            {1} {Gargoyle}
-            {2} {A Priestess of Kourlyn}
-            {3} {e}
-            {4} {A Shade}
-            {5} {ow}
-            {6} {wraith}
-            {7} {A Mistwraith}
-            {8} {An Imp}
-            {9} {The Nameless One}
-            {10} {A Shadow}
-            {11} {The High Priestess of Kourlyn}
-            {12} {Shadow}
-            {13} {Shade}
-            {14} {High Priestess}
-            {15} {Nameless One}
-            {16} {Vivaror}
-            {17} {Djinn}
-            {18} {Cohesard}
-            {19} {Effriit}
-            {20} {Aviarol}
-            {21} {Imp}
-            {22} {Mistwraith}
+            {1} {A Priestess of Kourlyn}
+            {2} {e}
+            {3} {A Shade}
+            {4} {ow}
+            {5} {wraith}
+            {6} {A Mistwraith}
+            {7} {An Imp}
+            {8} {The Nameless One}
+            {9} {A Shadow}
+            {10} {The High Priestess of Kourlyn}
+            {11} {High Priestess}
+            {12} {Nameless One}
+            {13} {Cohesard}
+            {14} {Vivaror}
+            {15} {Aviarol}
+            {16} {Gargoyle}
+            {17} {Shadow}
+            {18} {Shade}
+            {19} {Imp}
+            {20} {Mistwraith}
+            {21} {Effriit}
+            {22} {Djinn}
         }
         {Ratings} 
         {
@@ -14783,10 +14808,12 @@
             {2} {A skulking male Marauder}
             {3} {A filthy female Marauder}
             {4} {A scuzzy male Marauder}
-            {5} {Marauder}
-            {6} {A heavily armed attack drone}
-            {7} {Dramp}
-            {8} {A Ruffles Potato chip}
+            {5} {A heavily armed attack drone}
+            {6} {A Ruffles Potato chip}
+            {7} {Celery}
+            {8} {Marauder}
+            {9} {Robot}
+            {10} {Dramp}
         }
         {Ratings} 
         {
@@ -15908,8 +15935,8 @@
         {
             {1} {Giant Praying Mantis}
             {2} {Flying Praying Mantis}
-            {3} {Huge Praying Mantis}
-            {4} {Praying Mantis}
+            {3} {Praying Mantis}
+            {4} {Huge Praying Mantis}
         }
         {Ratings} 
         {
@@ -16661,9 +16688,12 @@
         }
         {Mobs} 
         {
-            {1} {Bill Gates}
+            {1} {Employee}
             {2} {Guard}
-            {3} {Janitor}
+            {3} {Bill Gates}
+            {4} {Janitor}
+            {5} {Dock Worker}
+            {6} {Assembly Worker}
         }
         {Ratings} 
         {
@@ -16721,9 +16751,11 @@
         }
         {Mobs} 
         {
-            {1} {Machine Gunner}
-            {2} {Outpost Guard}
-            {3} {Outpost Trooper}
+            {1} {Outpost Guard}
+            {2} {Outpost Trooper}
+            {3} {Oilfield Worker}
+            {4} {Mr}
+            {5} {Machine Gunner}
         }
         {Ratings} 
         {
@@ -17068,24 +17100,25 @@
             {2} {Cyrax}
             {3} {Toshiro Mifune}
             {4} {Kano}
-            {5} {Peasant}
-            {6} {Bolo Yeung}
-            {7} {Oriental Dragon}
-            {8} {Brandon Lee}
-            {9} {Samurai Guard}
-            {10} {Sho Kosugi}
-            {11} {Bruce Lee}
-            {12} {Ogre Magi}
-            {13} {Danny Inosato}
-            {14} {Oriental Vampire}
-            {15} {Female Peasant}
-            {16} {Male Peasant}
-            {17} {Yakuza Guard}
-            {18} {Yakuza Thug}
-            {19} {Samurai Warrior}
-            {20} {A Vampire}
-            {21} {Monk}
+            {5} {Bolo Yeung}
+            {6} {Oriental Dragon}
+            {7} {Brandon Lee}
+            {8} {Samurai Guard}
+            {9} {Bruce Lee}
+            {10} {Ogre Magi}
+            {11} {Danny Inosato}
+            {12} {Oriental Vampire}
+            {13} {Female Peasant}
+            {14} {Male Peasant}
+            {15} {Yakuza Guard}
+            {16} {Yakuza Thug}
+            {17} {Samurai Warrior}
+            {18} {A Vampire}
+            {19} {Monk}
+            {20} {Sho Kosugi}
+            {21} {Mischievous Ruffian}
             {22} {Ninja Warrior}
+            {23} {Peasant}
         }
         {Ratings} 
         {
@@ -18049,13 +18082,27 @@
             {25} {Boring, braided bandit}
             {26} {Old, tube-faced bandit}
             {27} {Philosophical, clean-shaved bandit}
-            {28} {Disgusting, square-faced bandit}
-            {29} {Scary, mohawk-haired bandit}
-            {30} {Old, clean-shaved bandit}
-            {31} {Pimpled, big-nosed bandit}
-            {32} {Large wolf}
-            {33} {Small wolf}
-            {34} {Bill the Wanderer}
+            {28} {Scary, mohawk-haired bandit}
+            {29} {Old, clean-shaved bandit}
+            {30} {Pimpled, big-nosed bandit}
+            {31} {Small wolf}
+            {32} {Bill the Wanderer}
+            {33} {Huge Wolf}
+            {34} {Large Wolf}
+            {35} {Sad, Bald Bandit}
+            {36} {Disgusting, Square-faced Bandit}
+            {37} {Heavy, Flat-faced Bandit}
+            {38} {Flirtatious, Dread-locked Bandit}
+            {39} {Sneaky, Black-haired Bandit}
+            {40} {Well-built, Blue-eyed Bandit}
+            {41} {Heavy, Wing-eared Bandit}
+            {42} {Ugly, Brown-haired Bandit}
+            {43} {Philosophical, Blue-eyed Bandit}
+            {44} {Scared, White-haired Bandit}
+            {45} {Small, Brown-haired Bandit}
+            {46} {Grinning, Wing-eared Bandit}
+            {47} {Smiling, Flat-faced Bandit}
+            {48} {Ugly, Toothless Bandit}
         }
         {Ratings} 
         {
@@ -18738,18 +18785,19 @@
             {4} {Bee}
             {5} {Predator}
             {6} {Beast}
-            {7} {Dog}
-            {8} {Janitor}
-            {9} {A short punk with purple hair}
-            {10} {Clerk of NASTAR}
-            {11} {Robotic sparring partner}
-            {12} {Fighting Master}
-            {13} {Master}
-            {14} {Guard}
-            {15} {Camera}
-            {16} {5-armed Guard}
-            {17} {Video-Camera}
-            {18} {4-Armed Guard}
+            {7} {A short punk with purple hair}
+            {8} {Clerk of NASTAR}
+            {9} {Robotic sparring partner}
+            {10} {Fighting Master}
+            {11} {5-armed Guard}
+            {12} {Video-Camera}
+            {13} {4-Armed Guard}
+            {14} {Clerk}
+            {15} {Janitor}
+            {16} {Dog}
+            {17} {Camera}
+            {18} {Master}
+            {19} {Guard}
         }
         {Ratings} 
         {
@@ -19064,6 +19112,8 @@
             {58} {A Vampire}
             {59} {Baby Dragon}
             {60} {A Ghoul}
+            {61} {Ninja Warrior}
+            {62} {Compound Guard}
         }
         {Ratings} 
         {
@@ -19286,38 +19336,40 @@
             {8} {Fierce Lego Pirate}
             {9} {Hairy Lego Pirate}
             {10} {A Medium Orange Lego Bird}
-            {11} {Spot the Lego Dog}
-            {12} {Eliza the Lego Cat}
-            {13} {A Small Orange Lego Bird}
-            {14} {A Small Lego Cockroach}
-            {15} {A Medium Purple Lego Bird}
-            {16} {A Medium Red Lego Bird}
-            {17} {A Medium Yellow Lego Bird}
-            {18} {A Gigantic Lego Roach}
-            {19} {Lego Airstrip Attendant}
-            {20} {Bartrem, the Lego Bartender}
-            {21} {Lego Pirate}
-            {22} {Ruffled Lego Pirate}
-            {23} {A Small Green Lego Bird}
-            {24} {A Medium Blue Lego Bird}
-            {25} {A Small Yellow Lego Bird}
-            {26} {A Small Red Lego Bird}
-            {27} {A Small Plastic Lego Roach}
-            {28} {A Lego Cockroach}
-            {29} {Ted, the Lego Toyshop Clerk}
-            {30} {Eliza, the lego Cat}
-            {31} {Lego Crocodile}
-            {32} {Legoland Resort Receptionist}
-            {33} {Spot, the lego Dog}
-            {34} {Lego Cockroach}
-            {35} {Huge Lego Cockroach}
-            {36} {Baby Lego Cockroach}
+            {11} {A Small Orange Lego Bird}
+            {12} {A Small Lego Cockroach}
+            {13} {A Medium Purple Lego Bird}
+            {14} {A Medium Red Lego Bird}
+            {15} {A Medium Yellow Lego Bird}
+            {16} {A Gigantic Lego Roach}
+            {17} {Lego Airstrip Attendant}
+            {18} {Bartrem, the Lego Bartender}
+            {19} {Ruffled Lego Pirate}
+            {20} {A Small Green Lego Bird}
+            {21} {A Medium Blue Lego Bird}
+            {22} {A Small Yellow Lego Bird}
+            {23} {A Small Red Lego Bird}
+            {24} {A Small Plastic Lego Roach}
+            {25} {A Lego Cockroach}
+            {26} {Ted, the Lego Toyshop Clerk}
+            {27} {Eliza, the lego Cat}
+            {28} {Legoland Resort Receptionist}
+            {29} {Spot, the lego Dog}
+            {30} {Lego Cockroach}
+            {31} {Huge Lego Cockroach}
+            {32} {Baby Lego Cockroach}
+            {33} {Eliza the Lego Cat}
+            {34} {Spot the Lego Dog}
+            {35} {Legoland Receptionist}
+            {36} {Lego Crocodile}
+            {37} {Lego Pirate}
+            {38} {Slinky Lego Pirate}
         }
         {Ratings} 
         {
-            {1} {33}
-            {2} {11}
-            {3} {6}
+            {1} {11}
+            {2} {6}
+            {3} {33}
         }
         {Wizard} {Vermillion}
     }
@@ -21168,6 +21220,12 @@
             {156} {Cerberus}
             {157} {Rabid Wolf}
             {158} {Angry Audience Member}
+            {159} {Djinn}
+            {160} {Mistwraith}
+            {161} {Shadow}
+            {162} {High Priestess}
+            {163} {Nameless One}
+            {164} {Imp}
         }
     }
     {Pinnacle Arena} 
@@ -21643,20 +21701,20 @@
         }
         {Mobs} 
         {
-            {1} {Creature}
-            {2} {Survivor}
-            {3} {Sludge}
-            {4} {Fred}
-            {5} {Al}
-            {6} {Jeffrey Walters}
-            {7} {Dave Landers}
-            {8} {Pittbull}
-            {9} {Private Barnes}
-            {10} {Tank}
-            {11} {Colonel Browning}
-            {12} {Slug}
-            {13} {Plant}
-            {14} {Antibody}
+            {1} {Survivor}
+            {2} {Sludge}
+            {3} {Dave Landers}
+            {4} {Private Barnes}
+            {5} {Tank}
+            {6} {Colonel Browning}
+            {7} {Slug}
+            {8} {Creature}
+            {9} {Plant}
+            {10} {Fred}
+            {11} {Al}
+            {12} {Jeffrey Walters}
+            {13} {Antibody}
+            {14} {Pittbull}
         }
         {Ratings} 
         {
@@ -21785,16 +21843,16 @@
             {32} {Black Patrol Guard}
             {33} {Black Patrol Leader}
             {34} {Stag}
-            {35} {Chamber Guardian}
-            {36} {Toyota-chrysler Jackrabbit 2050}
-            {37} {A Typical Female Driver}
-            {38} {Faerie Lizard}
-            {39} {Baby Dragon}
-            {40} {Sylvan Elf}
-            {41} {Shadow Guard}
-            {42} {Queen's Elite Guardswoman}
-            {43} {Sylvan Demon}
-            {44} {Wyvern}
+            {35} {Toyota-chrysler Jackrabbit 2050}
+            {36} {A Typical Female Driver}
+            {37} {Faerie Lizard}
+            {38} {Sylvan Elf}
+            {39} {Shadow Guard}
+            {40} {Sylvan Demon}
+            {41} {Wyvern}
+            {42} {Chamber Guardian}
+            {43} {Baby Dragon}
+            {44} {Queen's Elite Guardswoman}
         }
         {Ratings} 
         {
@@ -23575,19 +23633,24 @@
             {5} {The Verbeeg Chieftain}
             {6} {A dangerous Verbeeg Sentinel}
             {7} {A bulky Verbeeg}
-            {8} {Verbeeg cook}
-            {9} {Ice Golem}
-            {10} {A cave bat}
-            {11} {Azalin}
-            {12} {Lesser Ice Demon}
-            {13} {Ice Demon}
+            {8} {A cave bat}
+            {9} {Azalin}
+            {10} {Lesser Ice Demon}
+            {11} {Ice Demon}
+            {12} {Ice Weasel}
+            {13} {Verbeeg Cook}
+            {14} {Ice Golem}
+            {15} {Biggrin}
+            {16} {Verbeeg Chieftain}
+            {17} {Verbeeg Sentinel}
+            {18} {Verbeeg}
         }
         {Ratings} 
         {
-            {1} {1}
-            {2} {21}
-            {3} {18}
-            {4} {12}
+            {1} {21}
+            {2} {18}
+            {3} {12}
+            {4} {1}
         }
         {Wizard} {Vexorg}
     }
@@ -26144,59 +26207,59 @@
             {125} {Brianna's Jugger Support Mech}
             {126} {Taleast the Psicorps Major General}
             {127} {Avariel the Valithyn}
-            {128} {Guard}
-            {129} {Undead}
-            {130} {A tank named Shaguar}
-            {131} {A honey bee}
-            {132} {A spider}
-            {133} {A maggot}
-            {134} {The TICK}
-            {135} {A flea}
-            {136} {A bilbo}
-            {137} {A dragonfly}
-            {138} {A earwig}
-            {139} {A mosquito}
-            {140} {A locust}
-            {141} {A centipede}
-            {142} {A june bug}
-            {143} {Whiskeyjack the striped squirrel}
-            {144} {Korlat}
-            {145} {Grimshanks, Kirwan's Rampaging Blood Monkey}
-            {146} {A small wandering spider}
-            {147} {Voodoo's Jugger Support Mech}
-            {148} {John Lennon}
-            {149} {-=BoT=- Liskerlol :: Pathfinder for Wasted Lands}
-            {150} {Yoko}
-            {151} {Paul !attacking Cable!}
-            {152} {A Beast Owlbear}
-            {153} {A Fey Dryad}
-            {154} {A Demon Hellhound}
-            {155} {Paul  !attacking Cable!}
-            {156} {George   !attacking Cable!}
-            {157} {Ringo !attacking Cable!}
-            {158} {John !attacking Cable!}
-            {159} {A tank named Nacelle}
-            {160} {A fleet-footed mongoose}
-            {161} {Ellegon's Jugger Support Mech}
-            {162} {Maxx, Ivar's Havanese}
-            {163} {Neelix, Ellegon's Irish Wolfhound}
-            {164} {Actress}
-            {165} {A campy film director}
-            {166} {KrUsTy ThE ClOwN}
-            {167} {Sideshow Mel}
-            {168} {A crazed kid in the audience}
-            {169} {A Springfield Studios gatepost guard}
-            {170} {Ned Flanders}
-            {171} {Ned's Guardian Angel}
-            {172} {Santa's Little Helper}
-            {173} {Homer Simpson}
-            {174} {Bart is playing 3K}
-            {175} {A generically animated Springfield citizen}
-            {176} {A two-headed dog}
-            {177} {A three-eyed squirrel}
-            {178} {Maude Flanders}
-            {179} {Todd Flanders}
-            {180} {Rod Flanders}
+            {128} {Undead}
+            {129} {A tank named Shaguar}
+            {130} {A honey bee}
+            {131} {A spider}
+            {132} {A maggot}
+            {133} {The TICK}
+            {134} {A flea}
+            {135} {A bilbo}
+            {136} {A dragonfly}
+            {137} {A earwig}
+            {138} {A mosquito}
+            {139} {A locust}
+            {140} {A centipede}
+            {141} {A june bug}
+            {142} {Whiskeyjack the striped squirrel}
+            {143} {Korlat}
+            {144} {Grimshanks, Kirwan's Rampaging Blood Monkey}
+            {145} {A small wandering spider}
+            {146} {Voodoo's Jugger Support Mech}
+            {147} {John Lennon}
+            {148} {-=BoT=- Liskerlol :: Pathfinder for Wasted Lands}
+            {149} {Yoko}
+            {150} {Paul !attacking Cable!}
+            {151} {A Beast Owlbear}
+            {152} {A Fey Dryad}
+            {153} {A Demon Hellhound}
+            {154} {Paul  !attacking Cable!}
+            {155} {George   !attacking Cable!}
+            {156} {Ringo !attacking Cable!}
+            {157} {John !attacking Cable!}
+            {158} {A tank named Nacelle}
+            {159} {A fleet-footed mongoose}
+            {160} {Ellegon's Jugger Support Mech}
+            {161} {Maxx, Ivar's Havanese}
+            {162} {Neelix, Ellegon's Irish Wolfhound}
+            {163} {A campy film director}
+            {164} {KrUsTy ThE ClOwN}
+            {165} {Sideshow Mel}
+            {166} {A crazed kid in the audience}
+            {167} {A Springfield Studios gatepost guard}
+            {168} {Santa's Little Helper}
+            {169} {Homer Simpson}
+            {170} {Bart is playing 3K}
+            {171} {A generically animated Springfield citizen}
+            {172} {A two-headed dog}
+            {173} {A three-eyed squirrel}
+            {174} {Maude Flanders}
+            {175} {Todd Flanders}
+            {176} {Rod Flanders}
+            {177} {Guard}
+            {178} {Actress}
+            {179} {Ned Flanders}
+            {180} {Ned's Guardian Angel}
         }
         {Ratings} 
         {
@@ -29589,6 +29652,9 @@
             {1} {Soy Nut}
             {2} {The Tofurky of Death}
             {3} {Tofu Storm Trooper}
+            {4} {Fat Man}
+            {5} {Slim Lady}
+            {6} {Miso Elemental}
         }
         {Ratings} 
         {
@@ -31314,8 +31380,8 @@
             {6} {Tournament Judge}
             {7} {Skittlebrau Player}
             {8} {Deuces Wild Player}
-            {9} {Team Deuces Wild Player}
-            {10} {Team Skittlebrau Player}
+            {9} {Team Skittlebrau Player}
+            {10} {Team Deuces Wild Player}
         }
         {Ratings} 
         {
@@ -31743,70 +31809,72 @@
         }
         {Mobs} 
         {
-            {1} {Zan}
-            {2} {Prophet}
-            {3} {A colossal bull gator}
-            {4} {Gator}
-            {5} {Soukan}
-            {6} {A massive bare-knuckle gangmember <^>}
-            {7} {A masked streetfighter gangmember}
-            {8} {Kalfu}
-            {9} {Morts}
-            {10} {A lean, kickboxer gangmember}
-            {11} {Boula}
-            {12} {An aging boxer gangmember}
-            {13} {Govi}
-            {14} {A gangmember clad in white}
-            {15} {Akocha}
-            {16} {Legba}
-            {17} {Nawouke}
-            {18} {Templar Drone  <!.>}
-            {19} {Templar Drone  <!>}
-            {20} {Mr}
-            {21} {Madjawe}
-            {22} {Scout Drone}
-            {23} {Atala}
-            {24} {Templar Drone  <?>}
-            {25} {Templar Drone  <.>}
-            {26} {A hulking figure in the dark <^>}
-            {27} {A dreadlocked, immense gangmember <^>}
-            {28} {A dreadlocked, muscular gangmember <^>}
-            {29} {A youthful gangmember}
-            {30} {A wizened old gangmember <^>}
-            {31} {A wiry scavenger mechanic <^>}
-            {32} {A devastatingly beautiful gangmember <^>}
-            {33} {A hulking figure in the dark}
-            {34} {An amazonian gangmember}
-            {35} {A wizened old gangmember}
-            {36} {A wiry scavenger mechanic}
-            {37} {A slow, lumbering gangmember}
-            {38} {A devastatingly beautiful gangmember}
-            {39} {A tiny green snake}
-            {40} {A giggly voodoo priestess}
-            {41} {A heavily scarred trapper}
-            {42} {A capricious voodoo hounsis}
-            {43} {Wysath, Medals Archivist}
-            {44} {Kili-kili}
-            {45} {Ozando}
-            {46} {Miyan}
-            {47} {Kanlikan}
-            {48} {Loray}
-            {49} {Makaya}
-            {50} {Loko}
-            {51} {A grizzled, burly gangmember}
-            {52} {A dreadlocked, toned gangmember}
-            {53} {A dreadlocked, muscular gangmember}
-            {54} {Roach}
-            {55} {A twitching, crazed gangmember}
-            {56} {A wild-eyed bone reader}
-            {57} {An elegant voodoo apprentice}
-            {58} {Brigitte}
-            {59} {A dreadlocked, immense gangmember}
-            {60} {A small, serpentine gangmember}
-            {61} {A gentle, radiant young woman}
-            {62} {Laveau}
-            {63} {Canzo}
-            {64} {Snake}
+            {1} {Prophet}
+            {2} {A colossal bull gator}
+            {3} {Gator}
+            {4} {Soukan}
+            {5} {A massive bare-knuckle gangmember <^>}
+            {6} {A masked streetfighter gangmember}
+            {7} {Kalfu}
+            {8} {Morts}
+            {9} {A lean, kickboxer gangmember}
+            {10} {Boula}
+            {11} {An aging boxer gangmember}
+            {12} {Govi}
+            {13} {A gangmember clad in white}
+            {14} {Templar Drone  <!.>}
+            {15} {Templar Drone  <!>}
+            {16} {Mr}
+            {17} {Madjawe}
+            {18} {Scout Drone}
+            {19} {Atala}
+            {20} {Templar Drone  <?>}
+            {21} {Templar Drone  <.>}
+            {22} {A hulking figure in the dark <^>}
+            {23} {A dreadlocked, immense gangmember <^>}
+            {24} {A dreadlocked, muscular gangmember <^>}
+            {25} {A youthful gangmember}
+            {26} {A wizened old gangmember <^>}
+            {27} {A wiry scavenger mechanic <^>}
+            {28} {A devastatingly beautiful gangmember <^>}
+            {29} {A hulking figure in the dark}
+            {30} {An amazonian gangmember}
+            {31} {A wizened old gangmember}
+            {32} {A wiry scavenger mechanic}
+            {33} {A slow, lumbering gangmember}
+            {34} {A devastatingly beautiful gangmember}
+            {35} {A tiny green snake}
+            {36} {A giggly voodoo priestess}
+            {37} {A heavily scarred trapper}
+            {38} {A capricious voodoo hounsis}
+            {39} {Wysath, Medals Archivist}
+            {40} {Loray}
+            {41} {Makaya}
+            {42} {Loko}
+            {43} {A grizzled, burly gangmember}
+            {44} {A dreadlocked, toned gangmember}
+            {45} {A dreadlocked, muscular gangmember}
+            {46} {Roach}
+            {47} {A twitching, crazed gangmember}
+            {48} {A wild-eyed bone reader}
+            {49} {An elegant voodoo apprentice}
+            {50} {Brigitte}
+            {51} {A dreadlocked, immense gangmember}
+            {52} {A small, serpentine gangmember}
+            {53} {A gentle, radiant young woman}
+            {54} {Laveau}
+            {55} {Canzo}
+            {56} {Snake}
+            {57} {Akocha}
+            {58} {Zan}
+            {59} {Legba}
+            {60} {Nawouke}
+            {61} {Kanlikan}
+            {62} {N'toro}
+            {63} {Miyan}
+            {64} {Kili-kili}
+            {65} {Ozando}
+            {66} {Abikou}
         }
         {Ratings} 
         {

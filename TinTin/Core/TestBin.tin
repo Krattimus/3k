@@ -4,6 +4,19 @@
 
 #var shop {};
 
+#action {The Mortician shoves %1 coins into your hand and wheels the corpses away}
+{
+        .logChat {<108>[Coins]<088> Made (<038>%1<088>)};
+};
+#action {You made %1 coins!}
+{
+        .logChat {<108>[Coins]<088> Made (<038>%1<088>)};
+};
+
+#action {You are carrying %1 coins in loose change}
+{
+        .logChat {<108>[Coins]<088> Carrying (<038>%1<088>)};
+};
 
 #alias .superPatrol
 {
@@ -70,7 +83,7 @@
 
 #alias .13
 {
-        .goPatrolling fire_giant_lair;
+        .goPatrolling kourlyn;
 };
 
 
@@ -119,11 +132,11 @@
         #showme    .6    bombfreaks_abbey            35k;
         #showme    .7    carnegie                    45k;
         #showme    .8    ultimate_tournament         35k;
-        #showme    .9    catacombs                   75k;
+        #showme    .9    catacombs                   75k+;
         #showme    .10   hippie_commune              17k; 
         #showme    .11   orc_village                 17k; 
         #showme    .12   durhals_ant_caves           30k;
-        #showme    .13   fire_giant_lair            ??;
+        #showme    .13   kourlyn                     50k+;
         #draw Yellow scroll line 1 1 1 80;
         #showme Slower patrols;
         #draw Yellow scroll line 1 1 1 80;
@@ -151,7 +164,7 @@
 };
 #alias .shop
 {
-        .stop;
+        .mapAnchor;
         #var shop {%1};
         .go $shops[%1];
         sell all;
@@ -159,6 +172,7 @@
 
 #alias .morgue
 {
+        .mapAnchor;
         .go morgue;
         sell coffin;
         #20 {wrap};
@@ -167,6 +181,7 @@
 
 #alias .bank
 {
+        .stop;
         .go bank;
         deposit all;
 };

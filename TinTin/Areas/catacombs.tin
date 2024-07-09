@@ -53,6 +53,20 @@
 	kill ghoul;
 	#var patroller[canWalk] 0;
 } {1};
+
+#action {The statue moves to block your way.}
+{
+	aa;
+	#map undo;
+	#path move backward;
+};
+
+#action {The %1 bars your way %2}
+{
+	aa;
+	#map undo;
+	#path move backward;
+};
 /******************************************************************************
 	Additional scripting used for this area
 

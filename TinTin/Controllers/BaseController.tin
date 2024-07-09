@@ -185,17 +185,19 @@
 {
 	#var found[mob] 1;
 	#var event[foundMobName] %1;
+	#var event[foundMobNameOG] %1;
+	#replace event[foundMobName] {{\\x7B.*\\x7D}} {};
+    #replace event[foundMobName] {{\(.*\)}} {};
+    #replace event[foundMobName] {{\[.*\]}} {};	
+	#format {event[foundMobName]} {%p} {$event[foundMobName]};
 
-	#if { @containsNoCase{{%0}{attacking you}} }
+	#if { @containsNoCase{{$event[foundMobName]}{attacking you}} }
 	{
-		#local attackedBy @substr{{%1}{0}{@indexOf{{%1}{attacking you}}}};
+		#var attackedBy @substr{{$event[foundMobName]}{0}{@indexOf{{$event[foundMobName]}{attacking you}}}};
 		#var event[attackedBy] $attackedBy;
 		#var event[foundMobName] $attackedBy;
 	};
 
-	#replace event[foundMobName] {{\\x7B.*\\x7D}} {};
-    #replace event[foundMobName] {{\(.*\)}} {};
-    #replace event[foundMobName] {{\[.*\]}} {};	
 	#format {event[foundMobName]} {%p} {$event[foundMobName]};
 	.triggerEvent onMobFound;
 
