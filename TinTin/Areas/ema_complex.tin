@@ -1,0 +1,37 @@
+#class {bot} {open}
+
+
+/******************************************************************************
+	Data to be used for this patrol
+*******************************************************************************/
+#var patrol[startingLocation] 16127;
+#var patrol[area] {Kord Mutual};
+#var patrol[path] { e;e;n;w;w;n;e;e;n;w;w;s;e;e;s;w;w;s;e;e;n;n;s;w;w;n;e;n;e;e;s;w;w;s;n;e;e;s;w;s;w;w;n;e;e;n;w;w;s;s;e;e;e;n;n;w;w;s;s;w;w;e;e;n;n;e;s;s;w;w; };
+
+#action {The driver gets out of the}{aa;};
+/******************************************************************************
+	What to attack
+*******************************************************************************/
+#var patrol[shouldKillList] 
+{
+	{An Aztech Uno}{uno}
+	{A BMW Poleis attacking you}{bmw}
+	{Toyota-chrysler}{car}
+	{Mitsubishi Nightliner}{itsubishi}
+	{A five-year-old delinquent}{kid}
+	{Ares Roadster}{roadster}
+	{Giant Mack Truck}{human}
+	{Plymouth Duster}{human}
+	{driver}{driver}
+	{Porsche 944 turbo}{car}
+};
+
+#action {You find a small passcard inside the drawer} {.doBehaviorPatrol;};
+
+/******************************************************************************
+	Additional scripting used for this area
+
+			...
+
+*******************************************************************************/
+#class {bot} {close}
