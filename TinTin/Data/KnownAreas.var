@@ -4525,6 +4525,7 @@
             {111} {A Rabbit}
             {112} {Snake}
             {113} {A Vampire}
+            {114} {Team Skittlebrau Player}
         }
         {Ratings} 
         {
@@ -7773,6 +7774,7 @@
             {67} {Yakuza Thug}
             {68} {Mother}
             {69} {Young Orc}
+            {70} {Worshipper}
         }
         {Ratings} 
         {
@@ -10917,14 +10919,14 @@
             {81} {Guard private}
             {82} {A highborn}
             {83} {Brown wolf}
-            {84} {Lind Barroom}
-            {85} {Tinny the guard}
-            {86} {Guard sergeant}
-            {87} {A small ruffled dog}
-            {88} {A distressed merchant}
-            {89} {A servant}
-            {90} {A housewife}
-            {91} {A sleek black cat}
+            {84} {Tinny the guard}
+            {85} {Guard sergeant}
+            {86} {A small ruffled dog}
+            {87} {A distressed merchant}
+            {88} {A servant}
+            {89} {A housewife}
+            {90} {A sleek black cat}
+            {91} {Lind Barroom}
         }
         {Ratings} 
         {
@@ -11651,8 +11653,8 @@
             {7} {Compound Guard}
             {8} {Strike Guard}
             {9} {Ed 1000}
-            {10} {M516 Patroller}
-            {11} {Gencorps Officer}
+            {10} {Gencorps Officer}
+            {11} {M516 Patroller}
         }
         {Ratings} 
         {
@@ -12216,8 +12218,8 @@
             {3} {Orcish patrol guard}
             {4} {guard}
             {5} {A large timber wolf}
-            {6} {Orc}
-            {7} {Orcish guard}
+            {6} {Orcish guard}
+            {7} {Orc}
         }
     }
     {Guiles Mansion} 
@@ -12237,11 +12239,15 @@
             {3} {A demonic priest}
             {4} {An elite orc guard}
             {5} {A supreme orc guard}
-            {6} {Demonic Priest}
-            {7} {Orcish guard}
-            {8} {Orc}
-            {9} {Gnome slave}
-            {10} {An orc mage}
+            {6} {Orcish guard}
+            {7} {An orc mage}
+            {8} {Captain}
+            {9} {Gnome Slave}
+            {10} {Orc}
+            {11} {Orc Mage}
+            {12} {Supreme Orc Guard}
+            {13} {Elite Orc Guard}
+            {14} {Demonic Priest}
         }
     }
     {Guiles forest} 
@@ -12286,8 +12292,8 @@
         }
         {Ratings} 
         {
-            {1} {24}
-            {2} {30}
+            {1} {30}
+            {2} {24}
         }
         {Wizard} {Aztec}
     }
@@ -12610,51 +12616,52 @@
             {16} {Snake}
             {17} {Vicious Rogue}
             {18} {Gwenyth}
-            {19} {Chester}
-            {20} {Young Mother}
-            {21} {Child}
-            {22} {Janie}
-            {23} {Merchant}
-            {24} {Innkeeper}
-            {25} {Troubadour}
-            {26} {A Guard}
-            {27} {Large Woman}
-            {28} {A large porcupine}
-            {29} {Corristo the Wandering Traveler}
-            {30} {Rocky the Tough}
-            {31} {An Eager Merchant}
-            {32} {Cold Tiro has a Halibut by the tail!}
-            {33} {A short yellow-armoured creature}
-            {34} {A blue-armoured elite}
-            {35} {Elite}
-            {36} {A Frail Looking Man}
-            {37} {Mean Beastie}
-            {38} {Beastie}
-            {39} {eastie}
-            {40} {A Pheasant}
-            {41} {A Quiet Deer}
-            {42} {Rivald the Ranger}
-            {43} {A Rabbit}
-            {44} {A Gardener}
-            {45} {A Harfain Guard}
-            {46} {Chester Felman, a Carpenter}
-            {47} {A Carpenter}
-            {48} {A Farmer}
-            {49} {A sly rogue}
-            {50} {A Wealthy Merchant}
-            {51} {A Young Woman}
-            {52} {A Townsperson}
-            {53} {Malvard, the Trader}
-            {54} {Wyvern}
-            {55} {Mischievous Ruffian}
-            {56} {Tough Looking Brigand}
-            {57} {Sally}
-            {58} {Gencorps Officer}
-            {59} {Samurai Guard}
-            {60} {Mother}
-            {61} {Yakuza Guard}
-            {62} {Peasant}
-            {63} {A Vampire}
+            {19} {Young Mother}
+            {20} {Child}
+            {21} {Janie}
+            {22} {Innkeeper}
+            {23} {Troubadour}
+            {24} {A Guard}
+            {25} {Large Woman}
+            {26} {A large porcupine}
+            {27} {Corristo the Wandering Traveler}
+            {28} {Rocky the Tough}
+            {29} {An Eager Merchant}
+            {30} {Cold Tiro has a Halibut by the tail!}
+            {31} {A short yellow-armoured creature}
+            {32} {A blue-armoured elite}
+            {33} {Elite}
+            {34} {A Frail Looking Man}
+            {35} {Mean Beastie}
+            {36} {Beastie}
+            {37} {eastie}
+            {38} {A Pheasant}
+            {39} {A Quiet Deer}
+            {40} {Rivald the Ranger}
+            {41} {A Rabbit}
+            {42} {A Gardener}
+            {43} {A Harfain Guard}
+            {44} {Chester Felman, a Carpenter}
+            {45} {A sly rogue}
+            {46} {A Wealthy Merchant}
+            {47} {Malvard, the Trader}
+            {48} {Wyvern}
+            {49} {Mischievous Ruffian}
+            {50} {Tough Looking Brigand}
+            {51} {Sally}
+            {52} {Gencorps Officer}
+            {53} {Samurai Guard}
+            {54} {Mother}
+            {55} {Yakuza Guard}
+            {56} {Peasant}
+            {57} {A Vampire}
+            {58} {Imp}
+            {59} {Chester}
+            {60} {A Farmer}
+            {61} {A Carpenter}
+            {62} {A Young Woman}
+            {63} {Merchant}
+            {64} {A Townsperson}
         }
         {Ratings} 
         {
@@ -14718,12 +14725,13 @@
             {14} {Vivaror}
             {15} {Aviarol}
             {16} {Gargoyle}
-            {17} {Shadow}
-            {18} {Shade}
-            {19} {Imp}
-            {20} {Mistwraith}
-            {21} {Effriit}
-            {22} {Djinn}
+            {17} {Shade}
+            {18} {Effriit}
+            {19} {Djinn}
+            {20} {Shadow}
+            {21} {Priestess}
+            {22} {Imp}
+            {23} {Mistwraith}
         }
         {Ratings} 
         {
@@ -17105,20 +17113,20 @@
             {7} {Brandon Lee}
             {8} {Samurai Guard}
             {9} {Bruce Lee}
-            {10} {Ogre Magi}
-            {11} {Danny Inosato}
-            {12} {Oriental Vampire}
-            {13} {Female Peasant}
-            {14} {Male Peasant}
-            {15} {Yakuza Guard}
-            {16} {Yakuza Thug}
-            {17} {Samurai Warrior}
-            {18} {A Vampire}
-            {19} {Monk}
-            {20} {Sho Kosugi}
-            {21} {Mischievous Ruffian}
-            {22} {Ninja Warrior}
-            {23} {Peasant}
+            {10} {Danny Inosato}
+            {11} {Oriental Vampire}
+            {12} {Female Peasant}
+            {13} {Male Peasant}
+            {14} {Yakuza Guard}
+            {15} {Yakuza Thug}
+            {16} {Samurai Warrior}
+            {17} {A Vampire}
+            {18} {Monk}
+            {19} {Sho Kosugi}
+            {20} {Mischievous Ruffian}
+            {21} {Ninja Warrior}
+            {22} {Peasant}
+            {23} {Ogre Magi}
         }
         {Ratings} 
         {
@@ -21292,7 +21300,8 @@
             {11} {Queen's Elite Guardswoman}
             {12} {Child}
             {13} {Strike Guard}
-            {14} {Mugger}
+            {14} {Lind Barroom}
+            {15} {Mugger}
         }
         {Ratings} 
         {
@@ -21831,28 +21840,28 @@
             {20} {Ogre}
             {21} {id}
             {22} {Cave Lizard}
-            {23} {Lesser Demon}
-            {24} {Courier}
-            {25} {Black Patrol Captain}
-            {26} {Wild Stag}
-            {27} {Warrior of the Mist}
-            {28} {Rabid Wolf}
-            {29} {Evil Templar}
-            {30} {Templar}
-            {31} {Ragged Peasant}
-            {32} {Black Patrol Guard}
-            {33} {Black Patrol Leader}
-            {34} {Stag}
-            {35} {Toyota-chrysler Jackrabbit 2050}
-            {36} {A Typical Female Driver}
-            {37} {Faerie Lizard}
-            {38} {Sylvan Elf}
-            {39} {Shadow Guard}
-            {40} {Sylvan Demon}
-            {41} {Wyvern}
-            {42} {Chamber Guardian}
-            {43} {Baby Dragon}
-            {44} {Queen's Elite Guardswoman}
+            {23} {Courier}
+            {24} {Black Patrol Captain}
+            {25} {Wild Stag}
+            {26} {Warrior of the Mist}
+            {27} {Rabid Wolf}
+            {28} {Evil Templar}
+            {29} {Templar}
+            {30} {Ragged Peasant}
+            {31} {Black Patrol Guard}
+            {32} {Black Patrol Leader}
+            {33} {Stag}
+            {34} {Toyota-chrysler Jackrabbit 2050}
+            {35} {A Typical Female Driver}
+            {36} {Faerie Lizard}
+            {37} {Sylvan Elf}
+            {38} {Shadow Guard}
+            {39} {Sylvan Demon}
+            {40} {Baby Dragon}
+            {41} {Queen's Elite Guardswoman}
+            {42} {Wyvern}
+            {43} {Lesser Demon}
+            {44} {Chamber Guardian}
         }
         {Ratings} 
         {
@@ -21912,23 +21921,23 @@
             {11} {Green Dragon Beast}
             {12} {Sylvan Demon}
             {13} {White Dragon Beast}
-            {14} {Shadow Guard}
-            {15} {Drow Patrol Guard}
-            {16} {Cave Lizard}
-            {17} {Lizard}
-            {18} {Lesser Demon}
-            {19} {Rabid Wolf}
-            {20} {Wild Stag}
-            {21} {Ragged Peasant}
-            {22} {Sylvan Elf}
-            {23} {Queen's Elite Guardswoman}
-            {24} {Cleric of Lathander}
-            {25} {Faerie Lizard}
-            {26} {Baby Dragon}
-            {27} {Stag}
-            {28} {Black Patrol Guard}
-            {29} {Black Patrol Leader}
-            {30} {Wyvern}
+            {14} {Drow Patrol Guard}
+            {15} {Cave Lizard}
+            {16} {Lizard}
+            {17} {Rabid Wolf}
+            {18} {Wild Stag}
+            {19} {Ragged Peasant}
+            {20} {Sylvan Elf}
+            {21} {Queen's Elite Guardswoman}
+            {22} {Cleric of Lathander}
+            {23} {Baby Dragon}
+            {24} {Stag}
+            {25} {Black Patrol Guard}
+            {26} {Black Patrol Leader}
+            {27} {Faerie Lizard}
+            {28} {Wyvern}
+            {29} {Shadow Guard}
+            {30} {Lesser Demon}
         }
         {Ratings} 
         {
@@ -28359,6 +28368,7 @@
             {115} {A Vampire}
             {116} {Guard Sergeant}
             {117} {A Housewife}
+            {118} {Gargoyle}
         }
         {Ratings} 
         {
@@ -29546,8 +29556,8 @@
             {5} {Mean Dwarf}
             {6} {A Troll Bartender}
             {7} {Faerie Lizard}
-            {8} {Mugger}
-            {9} {Ninja Warrior}
+            {8} {Ninja Warrior}
+            {9} {Mugger}
         }
         {Ratings} 
         {
@@ -30522,17 +30532,21 @@
         }
         {Mobs} 
         {
-            {1} {Janbee Leafwind}
+            {1} {Delbo Brookenbill}
             {2} {Twyla Brookenbill}
             {3} {Melmo Brookenbill}
             {4} {Happilot Wishwell}
             {5} {Yeddo Pondwander}
-            {6} {Delbo Brookenbill}
-            {7} {Synda Wagglerun}
-            {8} {Wumda Wagglerun}
-            {9} {Mayor Bowbil Took}
-            {10} {Qulp Twiggirt}
-            {11} {Glasla Gondolot}
+            {6} {Janbee Leafwind}
+            {7} {Dangee Leafwind}
+            {8} {Pyma Wagglerun}
+            {9} {Jumpa Wagglerun}
+            {10} {Synda Wagglerun}
+            {11} {Wumda Wagglerun}
+            {12} {Lylah Hoppinstop}
+            {13} {Glasla Gondolot}
+            {14} {Qulp Twiggirt}
+            {15} {Mayor Bowbil Took}
         }
         {Ratings} 
         {
@@ -31382,6 +31396,8 @@
             {8} {Deuces Wild Player}
             {9} {Team Skittlebrau Player}
             {10} {Team Deuces Wild Player}
+            {11} {An Usher}
+            {12} {A Giant Rat}
         }
         {Ratings} 
         {
@@ -32404,6 +32420,7 @@
             {86} {Black Wolf}
             {87} {A Vampire}
             {88} {Gencorps Officer}
+            {89} {Wyvern}
         }
         {Ratings} 
         {
