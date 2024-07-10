@@ -2,8 +2,8 @@
 
 #VARIABLE {char}
 {
-    {area} {Carnegie Hall}
-    {currentRoomID} {2160}
+    {area} {Pinnacle's Residential Complex}
+    {currentRoomID} {152}
     {guild} {Monk}
     {isResting} {0}
     {login} {look}

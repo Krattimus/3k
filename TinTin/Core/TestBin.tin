@@ -164,7 +164,7 @@
 };
 #alias .shop
 {
-        .mapAnchor;
+        .stop;
         #var shop {%1};
         .go $shops[%1];
         sell all;
@@ -172,7 +172,7 @@
 
 #alias .morgue
 {
-        .mapAnchor;
+        .stop;
         .go morgue;
         sell coffin;
         #20 {wrap};
