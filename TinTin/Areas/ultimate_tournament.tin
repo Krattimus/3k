@@ -32,6 +32,11 @@
 	.doBehaviorPatrol;
 };
 
+#action {You have no disc.}
+{
+	.doBehaviorPatrol;
+};
+
 #action {You drop Game Disc.}
 {
 	.doBehaviorPatrol;

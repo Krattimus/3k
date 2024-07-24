@@ -143,11 +143,9 @@
 ************************************************************/
 #function isFilteredFromPickup
 {
-    #if { @startsWith{{%0}{The bashed up}} } { #return 1; };
-	#if { @startsWith{{%0}{The sliced up}} } { #return 1; };
-	#if { @startsWith{{%0}{The brainless}} } { #return 1; };		
-	#if { @startsWith{{%0}{slain corpse}} } { #return 1; };
+	#if { @startsWith{{%0}{A Glowing Sign}} } { #return 1; };
 	#if { @startsWith{{%0}{A sign}} } { #return 1; };
+	#if { @startsWith{{%0}{A large chest}} } { #return 1; };
 	#if { @startsWith{{%0}{Talon Airship}} } { #return 1; };
 	#if { @startsWith{{%0}{board containing}} } { #return 1; };
 	#if { @startsWith{{%0}{A Black Tank}} } { #return 1; };

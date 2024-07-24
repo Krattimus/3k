@@ -2,6 +2,33 @@
 #class {testbin} {kill}
 #class {testbin} {open}
 
+
+#alias .mapDirsTo
+{
+        #var savedID $currentRoomID;
+        #var destination %1;
+        #var pathToWalk {};
+
+        #map go 1;
+        #map at {$destination} #map get roomvnum roomid;
+        #map find $roomid;
+        #path save forward pathToWalk;
+
+        #map get roomname {currentName};
+        #map get roomarea {currentArea};
+        #map at {$destination} #map get roomname {destName};
+        #map at {$destination} #map get roomarea {destArea};
+
+        #draw Yellow scroll line 1 1 1 80;
+        #showme Directions from $currentName in $currentArea to $destName in $destArea;
+        #draw Yellow scroll line 1 1 1 80;
+        #showme $pathToWalk;
+
+        #map go $savedID;
+};
+
+
+
 #var shop {};
 
 #action {The Mortician shoves %1 coins into your hand and wheels the corpses away}
@@ -11,6 +38,16 @@
 #action {You made %1 coins!}
 {
         .logChat {<108>[Coins]<088> Made (<038>%1<088>)};
+};
+
+#action {Thank you %1, your new balance is: %2 coins.}
+{
+        .logChat {<108>[Coins]<088> Bank (<038>%2<088>)};
+};
+
+#action {You have %1 coins in the bank.}
+{
+        .logChat {<108>[Coins]<088> Bank (<038>%1<088>)};
 };
 
 #action {You are carrying %1 coins in loose change}
@@ -154,6 +191,32 @@
         #showme    harfain      katin           luddite         mews;
         #showme    nethack      sydermans       tencho          wayhaven;
         #showme    xaxis;
+};
+
+
+#alias .zodiacNext
+{
+        archway;left;left;archway;aa;
+};
+
+#alias .zodiacGems
+{
+        #24 {search rainbow;search mark; left;};
+};
+
+#alias .zodiacFlags
+{
+        forward;push red flag; push blue flag; push white flag; push green flag;
+};
+
+#alias .zodiacForge
+{
+	place small ruby in groove 1;place small emerald in groove 2;place small diamond in groove 3;place medium diamond in groove 4;forge;
+	place medium ruby in groove 1;place medium emerald in groove 2;place small sapphire in groove 3;place medium sapphire in groove 4;forge;
+	place large sapphire in groove 1;place large diamond in groove 2;place large ruby in groove 3;place huge ruby in groove 4;forge;
+	place huge sapphire in groove 1;place huge diamond in groove 2;place large emerald in groove 3;place huge emerald in groove 4;forge;
+	place ruby in groove 1; place sapphire in groove 2; place diamond in groove 3; place emerald in groove 4; forge;
+
 };
 
 #alias .all

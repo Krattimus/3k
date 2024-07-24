@@ -2,8 +2,8 @@
 
 #VARIABLE {char}
 {
-    {area} {Pinnacle's Residential Complex}
-    {currentRoomID} {152}
+    {area} {Aegis Global}
+    {currentRoomID} {2822}
     {guild} {Monk}
     {isResting} {0}
     {login} {look}
